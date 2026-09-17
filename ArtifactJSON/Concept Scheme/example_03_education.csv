@@ -1,0 +1,246 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CONCEPT_SCHEME
+"[""source_report""]",source_report,string,example_03_education.pdf
+"[""source_sha256""]",source_sha256,string,e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6
+"[""principles_file""]",principles_file,string,01_CONCEPT_SCHEME.txt
+"[""principles_sha256""]",principles_sha256,string,618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Concept glossary
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_Glossary_Version_2_1
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The fetched SDMX Glossary excerpt identifies Cross-Domain Concepts as reusable concepts that should conform to specified names, IDs, representations and codelists. It specifically states that the Observation Status term has Concept ID OBS_STATUS and Codelist ID CL_OBS_STATUS. The excerpt also lists terms including Education level, Frequency of observation, Indicator and Reference area, but does not provide full concept scheme identifiers or complete definitions for all concepts used here."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Registry catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_Global_Registry_Codelists
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The fetched SDMX Global Registry page shows a codelist search/catalog interface and other structural artefact areas including Concept Schemes and Codelists. The supplied excerpt does not confirm particular codelist versions or code mappings for sex, units, education level, wealth quintile, or observation status values in the report."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,UNESCO Institute for Statistics / UNESCO
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Education classification
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,ISCED
+"[""standard_references"",2,""version""]",version,string,not confirmed
+"[""standard_references"",2,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied reference catalog identifies UNESCO ISCED as the authoritative source to check for education level classification. No fetched official ISCED excerpt or mapping table was supplied, and the report itself says education-level labels require ISCED mapping review."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,UNSD
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",3,""evidence""]",evidence,string,"The fetched UN M49 excerpt lists country and area entries. The report does not provide a reference area or country dimension, so UN M49 is not used in the proposed concept scheme."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,The report gives no reference area; REF_AREA is therefore not included even though it is a common SDMX concept.
+"[""limitations"",1]",1,string,"The report uses years 2024 and 2025 but does not explicitly state observation frequency; FREQ is not included, while TIME_PERIOD is represented as a year."
+"[""limitations"",2]",2,string,Education-level labels require ISCED mapping review; no confirmed ISCED code mapping or version is available from the supplied evidence.
+"[""limitations"",3]",3,string,Wealth quintiles are explicitly survey-specific and should not be silently mapped to a standard income classification.
+"[""limitations"",4]",4,string,"The supplied official-source evidence confirms OBS_STATUS as an SDMX concept/codelist example, but it does not confirm exact mappings for Final, Provisional, or Modelled estimate."
+"[""limitations"",5]",5,string,"Exact SDMX concept scheme IDs and versions for SEX, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE and INDICATOR were not confirmed by the supplied external evidence; they are retained as candidate SDMX/common concepts where semantically appropriate."
+"[""limitations"",6]",6,string,"The report contains reference metadata text, but exact mappings to a global reference metadata concept scheme were not confirmed from supplied external evidence."
+"[""concept_schemes""]",concept_schemes,array,
+"[""concept_schemes"",0]",0,object,
+"[""concept_schemes"",0,""scheme_id""]",scheme_id,string,CS_EDU_PARTICIPATION_COMPLETION_DATA
+"[""concept_schemes"",0,""name""]",name,string,Education participation and completion data concepts
+"[""concept_schemes"",0,""agency_id""]",agency_id,string,SYNTHETIC_MINISTRY_OF_LEARNING
+"[""concept_schemes"",0,""version""]",version,string,1.0
+"[""concept_schemes"",0,""concepts""]",concepts,array,
+"[""concept_schemes"",0,""concepts"",0]",0,object,
+"[""concept_schemes"",0,""concepts"",0,""concept_id""]",concept_id,string,INDICATOR
+"[""concept_schemes"",0,""concepts"",0,""name""]",name,string,Indicator
+"[""concept_schemes"",0,""concepts"",0,""definition""]",definition,string,"The education statistic being measured, distinguishing enrollment headcount from completion rate."
+"[""concept_schemes"",0,""concepts"",0,""context""]",context,string,Used because the report contains at least two statistical measures with different meanings: administrative enrollment counts and modelled completion rates.
+"[""concept_schemes"",0,""concepts"",0,""recommended_representation""]",recommended_representation,string,Codelist; local education indicator list unless an authoritative education-domain indicator list is confirmed later.
+"[""concept_schemes"",0,""concepts"",0,""standard_source_agency""]",standard_source_agency,string,SDMX candidate; local domain representation required
+"[""concept_schemes"",0,""concepts"",0,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",0,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",0,""local_notes""]",local_notes,string,"The SDMX Glossary excerpt lists Indicator, but the exact reusable SDMX concept scheme ID/version was not confirmed. Candidate values implied by the report are enrollment count and lower-secondary completion rate."
+"[""concept_schemes"",0,""concepts"",0,""evidence_quote""]",evidence_quote,string,Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.
+"[""concept_schemes"",0,""concepts"",1]",1,object,
+"[""concept_schemes"",0,""concepts"",1,""concept_id""]",concept_id,string,EDUCATION_LEVEL
+"[""concept_schemes"",0,""concepts"",1,""name""]",name,string,Education level
+"[""concept_schemes"",0,""concepts"",1,""definition""]",definition,string,Education cycle or level to which an education observation refers.
+"[""concept_schemes"",0,""concepts"",1,""context""]",context,string,"Used for enrollment counts by Primary, Lower secondary and Upper secondary, and relevant to completion rates for the stated lower-secondary cycle."
+"[""concept_schemes"",0,""concepts"",1,""recommended_representation""]",recommended_representation,string,Codelist; UNESCO ISCED candidate after mapping review; otherwise local education-level codelist pending review.
+"[""concept_schemes"",0,""concepts"",1,""standard_source_agency""]",standard_source_agency,string,UNESCO Institute for Statistics / UNESCO candidate
+"[""concept_schemes"",0,""concepts"",1,""standard_scheme_id""]",standard_scheme_id,string,ISCED not confirmed
+"[""concept_schemes"",0,""concepts"",1,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",1,""source_url""]",source_url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""concept_schemes"",0,""concepts"",1,""local_notes""]",local_notes,string,Do not confirm ISCED mappings from the labels alone. The report explicitly requires ISCED mapping review.
+"[""concept_schemes"",0,""concepts"",1,""evidence_quote""]",evidence_quote,string,Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""concept_schemes"",0,""concepts"",2]",2,object,
+"[""concept_schemes"",0,""concepts"",2,""concept_id""]",concept_id,string,WEALTH_QUINTILE
+"[""concept_schemes"",0,""concepts"",2,""name""]",name,string,Wealth quintile
+"[""concept_schemes"",0,""concepts"",2,""definition""]",definition,string,Survey-specific wealth quintile used to disaggregate completion-rate estimates.
+"[""concept_schemes"",0,""concepts"",2,""context""]",context,string,Used only for lower-secondary completion rates from the household survey estimates.
+"[""concept_schemes"",0,""concepts"",2,""recommended_representation""]",recommended_representation,string,Local codelist; do not map to a standard income or wealth classification without separate evidence.
+"[""concept_schemes"",0,""concepts"",2,""standard_source_agency""]",standard_source_agency,string,LOCAL
+"[""concept_schemes"",0,""concepts"",2,""standard_scheme_id""]",standard_scheme_id,string,not applicable
+"[""concept_schemes"",0,""concepts"",2,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",2,""source_url""]",source_url,string,not stated
+"[""concept_schemes"",0,""concepts"",2,""local_notes""]",local_notes,string,"The report warns that wealth quintiles are survey-specific. Candidate local values appearing in the report are Lowest quintile, Middle quintile and Highest quintile."
+"[""concept_schemes"",0,""concepts"",2,""evidence_quote""]",evidence_quote,string,Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""concept_schemes"",0,""concepts"",3]",3,object,
+"[""concept_schemes"",0,""concepts"",3,""concept_id""]",concept_id,string,SEX
+"[""concept_schemes"",0,""concepts"",3,""name""]",name,string,Sex
+"[""concept_schemes"",0,""concepts"",3,""definition""]",definition,string,Sex category used for disaggregation of education observations.
+"[""concept_schemes"",0,""concepts"",3,""context""]",context,string,"Used for both enrollment and completion-rate observations. The report includes Female and Male, and enrollment also includes Total."
+"[""concept_schemes"",0,""concepts"",3,""recommended_representation""]",recommended_representation,string,"Codelist; SDMX CL_SEX candidate, with review needed for treatment of Total as an aggregate category."
+"[""concept_schemes"",0,""concepts"",3,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",3,""standard_scheme_id""]",standard_scheme_id,string,CL_SEX not confirmed
+"[""concept_schemes"",0,""concepts"",3,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",3,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""concept_schemes"",0,""concepts"",3,""local_notes""]",local_notes,string,"Semantic use matches the common SDMX SEX concept, but the supplied registry excerpt does not confirm CL_SEX details or version."
+"[""concept_schemes"",0,""concepts"",3,""evidence_quote""]",evidence_quote,string,    Education level                 Sex                             Year                             Value                               Unit                               Status
+"[""concept_schemes"",0,""concepts"",4]",4,object,
+"[""concept_schemes"",0,""concepts"",4,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""concept_schemes"",0,""concepts"",4,""name""]",name,string,Time period
+"[""concept_schemes"",0,""concepts"",4,""definition""]",definition,string,The calendar year to which the observation refers.
+"[""concept_schemes"",0,""concepts"",4,""context""]",context,string,Used for the Year column in both tables. The report contains observations for 2024 and 2025.
+"[""concept_schemes"",0,""concepts"",4,""recommended_representation""]",recommended_representation,string,"Time period, year format; not a codelist."
+"[""concept_schemes"",0,""concepts"",4,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",4,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",4,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",4,""local_notes""]",local_notes,string,The report labels this field Year. FREQ is not included because frequency is not explicitly stated.
+"[""concept_schemes"",0,""concepts"",4,""evidence_quote""]",evidence_quote,string,    Education level                 Sex                             Year                             Value                               Unit                               Status
+"[""concept_schemes"",0,""concepts"",5]",5,object,
+"[""concept_schemes"",0,""concepts"",5,""concept_id""]",concept_id,string,OBS_VALUE
+"[""concept_schemes"",0,""concepts"",5,""name""]",name,string,Observation value
+"[""concept_schemes"",0,""concepts"",5,""definition""]",definition,string,Numeric value of the measured education statistic.
+"[""concept_schemes"",0,""concepts"",5,""context""]",context,string,"Carries enrollment headcounts and completion percentages, with interpretation determined by the indicator and unit."
+"[""concept_schemes"",0,""concepts"",5,""recommended_representation""]",recommended_representation,string,Numeric decimal.
+"[""concept_schemes"",0,""concepts"",5,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",5,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",5,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",5,""local_notes""]",local_notes,string,Do not store formatted strings such as percentages in OBS_VALUE; the unit is represented separately by UNIT_MEASURE.
+"[""concept_schemes"",0,""concepts"",5,""evidence_quote""]",evidence_quote,string,    Education level                 Sex                             Year                             Value                               Unit                               Status
+"[""concept_schemes"",0,""concepts"",6]",6,object,
+"[""concept_schemes"",0,""concepts"",6,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""concept_schemes"",0,""concepts"",6,""name""]",name,string,Unit of measure
+"[""concept_schemes"",0,""concepts"",6,""definition""]",definition,string,Unit in which the observation value is expressed.
+"[""concept_schemes"",0,""concepts"",6,""context""]",context,string,The report uses Students for enrollment counts and Percent for completion rates.
+"[""concept_schemes"",0,""concepts"",6,""recommended_representation""]",recommended_representation,string,Codelist; authoritative unit list should be checked before creating local unit codes.
+"[""concept_schemes"",0,""concepts"",6,""standard_source_agency""]",standard_source_agency,string,SDMX candidate / domain unit list not confirmed
+"[""concept_schemes"",0,""concepts"",6,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",6,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",6,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""concept_schemes"",0,""concepts"",6,""local_notes""]",local_notes,string,Exact standard unit codelist and code mappings for Students and Percent were not confirmed from supplied evidence.
+"[""concept_schemes"",0,""concepts"",6,""evidence_quote""]",evidence_quote,string,    Wealth quintile                  Sex                             Year                             Value                               Unit                               Status
+"[""concept_schemes"",0,""concepts"",7]",7,object,
+"[""concept_schemes"",0,""concepts"",7,""concept_id""]",concept_id,string,OBS_STATUS
+"[""concept_schemes"",0,""concepts"",7,""name""]",name,string,Observation status
+"[""concept_schemes"",0,""concepts"",7,""definition""]",definition,string,"Status, finality or estimation qualification associated with an observation value."
+"[""concept_schemes"",0,""concepts"",7,""context""]",context,string,"Used for Final, Provisional and Modelled estimate status values in the report."
+"[""concept_schemes"",0,""concepts"",7,""recommended_representation""]",recommended_representation,string,"Codelist; SDMX CL_OBS_STATUS is confirmed as a standard codelist ID in the supplied SDMX Glossary excerpt, but local value mapping must be reviewed."
+"[""concept_schemes"",0,""concepts"",7,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",7,""standard_scheme_id""]",standard_scheme_id,string,OBS_STATUS / CL_OBS_STATUS
+"[""concept_schemes"",0,""concepts"",7,""standard_version""]",standard_version,string,2.1 glossary evidence; codelist version not confirmed
+"[""concept_schemes"",0,""concepts"",7,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",7,""local_notes""]",local_notes,string,"Final, Provisional and Modelled estimate may not map one-to-one to standard observation-status codes without code-level verification."
+"[""concept_schemes"",0,""concepts"",7,""evidence_quote""]",evidence_quote,string,Footnote: All completion rates are modelled estimates.
+"[""concept_schemes"",1]",1,object,
+"[""concept_schemes"",1,""scheme_id""]",scheme_id,string,CS_EDU_PARTICIPATION_COMPLETION_METADATA
+"[""concept_schemes"",1,""name""]",name,string,Education participation and completion reference metadata concepts
+"[""concept_schemes"",1,""agency_id""]",agency_id,string,SYNTHETIC_MINISTRY_OF_LEARNING
+"[""concept_schemes"",1,""version""]",version,string,1.0
+"[""concept_schemes"",1,""concepts""]",concepts,array,
+"[""concept_schemes"",1,""concepts"",0]",0,object,
+"[""concept_schemes"",1,""concepts"",0,""concept_id""]",concept_id,string,METHODOLOGY
+"[""concept_schemes"",1,""concepts"",0,""name""]",name,string,Methodology
+"[""concept_schemes"",1,""concepts"",0,""definition""]",definition,string,Text describing how the reported statistics are compiled or estimated.
+"[""concept_schemes"",1,""concepts"",0,""context""]",context,string,Reference metadata for distinguishing administrative headcount enrollment from modelled household-survey completion estimates.
+"[""concept_schemes"",1,""concepts"",0,""recommended_representation""]",recommended_representation,string,String / reference metadata text.
+"[""concept_schemes"",1,""concepts"",0,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""concept_schemes"",1,""concepts"",0,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",1,""concepts"",0,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",1,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",1,""concepts"",0,""local_notes""]",local_notes,string,Exact reusable reference metadata concept mapping was not confirmed from supplied evidence.
+"[""concept_schemes"",1,""concepts"",0,""evidence_quote""]",evidence_quote,string,Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.
+"[""concept_schemes"",1,""concepts"",1]",1,object,
+"[""concept_schemes"",1,""concepts"",1,""concept_id""]",concept_id,string,SOURCE_DESCRIPTION
+"[""concept_schemes"",1,""concepts"",1,""name""]",name,string,Source description
+"[""concept_schemes"",1,""concepts"",1,""definition""]",definition,string,Text identifying the data systems or surveys from which the statistics are derived.
+"[""concept_schemes"",1,""concepts"",1,""context""]",context,string,Reference metadata for the administrative and household-survey sources used in the report.
+"[""concept_schemes"",1,""concepts"",1,""recommended_representation""]",recommended_representation,string,String / reference metadata text.
+"[""concept_schemes"",1,""concepts"",1,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""concept_schemes"",1,""concepts"",1,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",1,""concepts"",1,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",1,""concepts"",1,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",1,""concepts"",1,""local_notes""]",local_notes,string,Could later be mapped to a standard source or data source metadata concept if confirmed.
+"[""concept_schemes"",1,""concepts"",1,""evidence_quote""]",evidence_quote,string,Synthetic Education Management Information System and Synthetic Household Learning Survey.
+"[""concept_schemes"",1,""concepts"",2]",2,object,
+"[""concept_schemes"",1,""concepts"",2,""concept_id""]",concept_id,string,STATISTICAL_DEFINITIONS
+"[""concept_schemes"",1,""concepts"",2,""name""]",name,string,Statistical definitions
+"[""concept_schemes"",1,""concepts"",2,""definition""]",definition,string,Text giving the source definitions of the reported statistics.
+"[""concept_schemes"",1,""concepts"",2,""context""]",context,string,Reference metadata for enrollment counts and completion rates.
+"[""concept_schemes"",1,""concepts"",2,""recommended_representation""]",recommended_representation,string,String / reference metadata text.
+"[""concept_schemes"",1,""concepts"",2,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""concept_schemes"",1,""concepts"",2,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",1,""concepts"",2,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",1,""concepts"",2,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",1,""concepts"",2,""local_notes""]",local_notes,string,Kept separate from coded data concepts because the report provides narrative definitions.
+"[""concept_schemes"",1,""concepts"",2,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""concept_schemes"",1,""concepts"",3]",3,object,
+"[""concept_schemes"",1,""concepts"",3,""concept_id""]",concept_id,string,LIMITATIONS
+"[""concept_schemes"",1,""concepts"",3,""name""]",name,string,Caveats and limitations
+"[""concept_schemes"",1,""concepts"",3,""definition""]",definition,string,"Text describing known constraints, caveats or limitations affecting interpretation."
+"[""concept_schemes"",1,""concepts"",3,""context""]",context,string,Reference metadata for ISCED mapping needs and survey-specific wealth quintiles.
+"[""concept_schemes"",1,""concepts"",3,""recommended_representation""]",recommended_representation,string,String / reference metadata text.
+"[""concept_schemes"",1,""concepts"",3,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""concept_schemes"",1,""concepts"",3,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",1,""concepts"",3,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",1,""concepts"",3,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",1,""concepts"",3,""local_notes""]",local_notes,string,The exact standard metadata concept for limitations was not confirmed from supplied evidence.
+"[""concept_schemes"",1,""concepts"",3,""evidence_quote""]",evidence_quote,string,Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""concept_schemes"",1,""concepts"",4]",4,object,
+"[""concept_schemes"",1,""concepts"",4,""concept_id""]",concept_id,string,REVISION_POLICY
+"[""concept_schemes"",1,""concepts"",4,""name""]",name,string,Revision policy
+"[""concept_schemes"",1,""concepts"",4,""definition""]",definition,string,Text describing whether and why reported values may be revised.
+"[""concept_schemes"",1,""concepts"",4,""context""]",context,string,Reference metadata for final administrative counts and revised modelled completion estimates.
+"[""concept_schemes"",1,""concepts"",4,""recommended_representation""]",recommended_representation,string,String / reference metadata text.
+"[""concept_schemes"",1,""concepts"",4,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""concept_schemes"",1,""concepts"",4,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",1,""concepts"",4,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",1,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",1,""concepts"",4,""local_notes""]",local_notes,string,Could later be aligned with a standard data revision metadata concept if confirmed.
+"[""concept_schemes"",1,""concepts"",4,""evidence_quote""]",evidence_quote,string,Administrative counts become final after duplicate removal. Modelled completion estimates may change with revised survey weights.
+"[""concept_schemes"",1,""concepts"",5]",5,object,
+"[""concept_schemes"",1,""concepts"",5,""concept_id""]",concept_id,string,CONFIDENTIALITY_NOTE
+"[""concept_schemes"",1,""concepts"",5,""name""]",name,string,Confidentiality note
+"[""concept_schemes"",1,""concepts"",5,""definition""]",definition,string,Text describing confidentiality characteristics of the report or dataset.
+"[""concept_schemes"",1,""concepts"",5,""context""]",context,string,Reference metadata stating that the report is synthetic and contains no person-level or confidential data.
+"[""concept_schemes"",1,""concepts"",5,""recommended_representation""]",recommended_representation,string,String / reference metadata text.
+"[""concept_schemes"",1,""concepts"",5,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""concept_schemes"",1,""concepts"",5,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",1,""concepts"",5,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",1,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",1,""concepts"",5,""local_notes""]",local_notes,string,Do not confuse this narrative confidentiality note with observation-level confidentiality status unless a coded attribute is later required.
+"[""concept_schemes"",1,""concepts"",5,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""concept_schemes"",1,""concepts"",6]",6,object,
+"[""concept_schemes"",1,""concepts"",6,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""concept_schemes"",1,""concepts"",6,""name""]",name,string,Publication date
+"[""concept_schemes"",1,""concepts"",6,""definition""]",definition,string,Date on which the report was published.
+"[""concept_schemes"",1,""concepts"",6,""context""]",context,string,Reference metadata for the report publication date.
+"[""concept_schemes"",1,""concepts"",6,""recommended_representation""]",recommended_representation,string,Date.
+"[""concept_schemes"",1,""concepts"",6,""standard_source_agency""]",standard_source_agency,string,LOCAL
+"[""concept_schemes"",1,""concepts"",6,""standard_scheme_id""]",standard_scheme_id,string,not applicable
+"[""concept_schemes"",1,""concepts"",6,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",1,""concepts"",6,""source_url""]",source_url,string,not stated
+"[""concept_schemes"",1,""concepts"",6,""local_notes""]",local_notes,string,No exact SDMX standard concept ID/version for this report-level date was confirmed from supplied evidence.
+"[""concept_schemes"",1,""concepts"",6,""evidence_quote""]",evidence_quote,string,Publication date: 12 June 2026

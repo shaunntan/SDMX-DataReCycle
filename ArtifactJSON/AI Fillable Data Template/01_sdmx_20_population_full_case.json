@@ -1,0 +1,201 @@
+{
+  "artifact_type": "AI_FILLABLE_DATA_TEMPLATE",
+  "source_report": "01_sdmx_20_population_full_case.xml",
+  "source_sha256": "dd0724ffd8c77e88517d69bd90c9694c94efe3e8f23db55189665b7e7a8a378d",
+  "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+  "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "templates": [
+    {
+      "template_id": "TPL_DSD_POP",
+      "dsd_id": "DSD_POP",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_POP_FREQ",
+          "description": "Mechanically imported XML template column FREQ."
+        },
+        {
+          "column_id": "REF_AREA",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_POP_REF_AREA",
+          "description": "Mechanically imported XML template column REF_AREA."
+        },
+        {
+          "column_id": "INDICATOR",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_POP_INDICATOR",
+          "description": "Mechanically imported XML template column INDICATOR."
+        },
+        {
+          "column_id": "AGE_GROUP",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_POP_AGE_GROUP",
+          "description": "Mechanically imported XML template column AGE_GROUP."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "ObservationalTimePeriod",
+          "codelist_id": null,
+          "description": "Mechanically imported XML template column TIME_PERIOD."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Number",
+          "codelist_id": null,
+          "description": "Mechanically imported XML template column OBS_VALUE."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_POP_UNIT",
+          "description": "Mechanically imported XML template column UNIT_MEASURE."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": false,
+          "data_type": "String",
+          "codelist_id": "CL_POP_OBS_STATUS",
+          "description": "Mechanically imported XML template column OBS_STATUS."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "DSD_POP",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "KR"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "POP_TOTAL"
+            },
+            {
+              "column_id": "AGE_GROUP",
+              "value": "ALL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": "51712619"
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "A"
+            }
+          ],
+          "evidence_quote": "A"
+        },
+        {
+          "dsd_id": "DSD_POP",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "KR"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "POP_GROWTH"
+            },
+            {
+              "column_id": "AGE_GROUP",
+              "value": "ALL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": "-0.14"
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PC"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "A"
+            }
+          ],
+          "evidence_quote": "A"
+        },
+        {
+          "dsd_id": "DSD_POP",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "JP"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "POP_TOTAL"
+            },
+            {
+              "column_id": "AGE_GROUP",
+              "value": "ALL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": "124516650"
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "A"
+            }
+          ],
+          "evidence_quote": "A"
+        }
+      ]
+    }
+  ]
+}

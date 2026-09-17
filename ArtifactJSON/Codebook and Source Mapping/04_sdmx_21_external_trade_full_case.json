@@ -1,0 +1,323 @@
+{
+  "artifact_type": "CODEBOOK_AND_SOURCE_MAPPING",
+  "source_report": "04_sdmx_21_external_trade_full_case.xml",
+  "source_sha256": "d67c55d4a879120a8b471479157d48475620e2b1f1536f3193f84677503eb720",
+  "principles_file": "08_CODEBOOK_AND_SOURCE_MAPPING.txt",
+  "principles_sha256": "999d6556922403d8315a0a0558da149e83e7c3b8f29779d9d346959966d76b74",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "fields": [
+    {
+      "field_id": "FREQ",
+      "name": "Frequency",
+      "definition": "Field FREQ mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_TRD_FREQ",
+      "codelist_id": "CL_TRD_FREQ",
+      "required": true,
+      "example": "M",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "REF_AREA",
+      "name": "Reference area",
+      "definition": "Field REF_AREA mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_TRD_REF_AREA",
+      "codelist_id": "CL_TRD_REF_AREA",
+      "required": true,
+      "example": "KR",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "INDICATOR",
+      "name": "Trade flow",
+      "definition": "Field INDICATOR mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_TRD_INDICATOR",
+      "codelist_id": "CL_TRD_INDICATOR",
+      "required": true,
+      "example": "EXPORTS",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "PARTNER",
+      "name": "Partner area",
+      "definition": "Field PARTNER mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_TRD_PARTNER",
+      "codelist_id": "CL_TRD_PARTNER",
+      "required": true,
+      "example": "WORLD",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "TIME_PERIOD",
+      "name": "Time period",
+      "definition": "Field TIME_PERIOD mechanically imported from the XML template.",
+      "role": "TIME",
+      "representation": "String",
+      "codelist_id": null,
+      "required": true,
+      "example": "2026-01",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "OBS_VALUE",
+      "name": "Observation value",
+      "definition": "Field OBS_VALUE mechanically imported from the XML template.",
+      "role": "MEASURE",
+      "representation": "Number",
+      "codelist_id": null,
+      "required": true,
+      "example": "55600.2",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "UNIT_MEASURE",
+      "name": "Unit of measure",
+      "definition": "Field UNIT_MEASURE mechanically imported from the XML template.",
+      "role": "ATTRIBUTE",
+      "representation": "Coded by CL_TRD_UNIT",
+      "codelist_id": "CL_TRD_UNIT",
+      "required": true,
+      "example": "USD_MN",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "OBS_STATUS",
+      "name": "Observation status",
+      "definition": "Field OBS_STATUS mechanically imported from the XML template.",
+      "role": "ATTRIBUTE",
+      "representation": "Coded by CL_TRD_OBS_STATUS",
+      "codelist_id": "CL_TRD_OBS_STATUS",
+      "required": false,
+      "example": "P",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    }
+  ],
+  "source_value_mappings": [
+    {
+      "source_value": "Reporter",
+      "source_context": "XML FieldMappings",
+      "target_field": "REF_AREA",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Reporter"
+    },
+    {
+      "source_value": "Flow",
+      "source_context": "XML FieldMappings",
+      "target_field": "INDICATOR",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Flow"
+    },
+    {
+      "source_value": "Partner",
+      "source_context": "XML FieldMappings",
+      "target_field": "PARTNER",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Partner"
+    },
+    {
+      "source_value": "Month",
+      "source_context": "XML FieldMappings",
+      "target_field": "TIME_PERIOD",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Month"
+    },
+    {
+      "source_value": "Trade value",
+      "source_context": "XML FieldMappings",
+      "target_field": "OBS_VALUE",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Trade value"
+    },
+    {
+      "source_value": "Unit",
+      "source_context": "XML FieldMappings",
+      "target_field": "UNIT_MEASURE",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Unit"
+    },
+    {
+      "source_value": "Korea, Republic of",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "KR",
+      "target_code_label": "Korea, Republic of",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Korea, Republic of"
+    },
+    {
+      "source_value": "Japan",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "JP",
+      "target_code_label": "Japan",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Japan"
+    },
+    {
+      "source_value": "United States",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "US",
+      "target_code_label": "United States",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "United States"
+    },
+    {
+      "source_value": "Exports",
+      "source_context": "XML ValueMappings for INDICATOR",
+      "target_field": "INDICATOR",
+      "target_code": "EXPORTS",
+      "target_code_label": "Exports",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_INDICATOR",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Exports"
+    },
+    {
+      "source_value": "Imports",
+      "source_context": "XML ValueMappings for INDICATOR",
+      "target_field": "INDICATOR",
+      "target_code": "IMPORTS",
+      "target_code_label": "Imports",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_INDICATOR",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Imports"
+    },
+    {
+      "source_value": "Trade balance",
+      "source_context": "XML ValueMappings for INDICATOR",
+      "target_field": "INDICATOR",
+      "target_code": "BALANCE",
+      "target_code_label": "Trade balance",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_INDICATOR",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Trade balance"
+    },
+    {
+      "source_value": "World",
+      "source_context": "XML ValueMappings for PARTNER",
+      "target_field": "PARTNER",
+      "target_code": "WORLD",
+      "target_code_label": "World",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_PARTNER",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "World"
+    },
+    {
+      "source_value": "China",
+      "source_context": "XML ValueMappings for PARTNER",
+      "target_field": "PARTNER",
+      "target_code": "CN",
+      "target_code_label": "China",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_PARTNER",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "China"
+    },
+    {
+      "source_value": "United States",
+      "source_context": "XML ValueMappings for PARTNER",
+      "target_field": "PARTNER",
+      "target_code": "US",
+      "target_code_label": "United States",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_PARTNER",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "United States"
+    },
+    {
+      "source_value": "European Union (27)",
+      "source_context": "XML ValueMappings for PARTNER",
+      "target_field": "PARTNER",
+      "target_code": "EU27",
+      "target_code_label": "European Union (27)",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_TRD_PARTNER",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "European Union (27)"
+    },
+    {
+      "source_value": "Data source",
+      "source_context": "XML MetadataMappings",
+      "target_field": "SOURCE",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_TRD",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Data source"
+    },
+    {
+      "source_value": "Methodological notes",
+      "source_context": "XML MetadataMappings",
+      "target_field": "METHODOLOGY",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_TRD",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Methodological notes"
+    },
+    {
+      "source_value": "Source URL",
+      "source_context": "XML MetadataMappings",
+      "target_field": "SOURCE_URL",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_TRD",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Source URL"
+    }
+  ],
+  "unresolved": []
+}

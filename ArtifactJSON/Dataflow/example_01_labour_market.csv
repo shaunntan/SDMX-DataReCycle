@@ -1,0 +1,66 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DATAFLOW
+"[""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""source_sha256""]",source_sha256,string,fb3bd37fc247c713e56b54ba1e234b1d05501d32a34d31b3ad2f1ebf6395c0e9
+"[""principles_file""]",principles_file,string,04_DATAFLOW.txt
+"[""principles_sha256""]",principles_sha256,string,0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX 2.0 Information Model / Dataflow
+"[""standard_references"",0,""version""]",version,string,2.0
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",0,""evidence""]",evidence,string,"The SDMX 2.0 materials are the requested target standard for this package. The supplied SDMX 2.0-oriented principles define a Dataflow as a logical flow or dataset using a particular DSD / Key Family, and the report-to-structure modelling uses that role to identify logical disseminated datasets rather than visual tables."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Registry artefact category
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,Dataflows
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The fetched SDMX Global Registry interface excerpt lists Dataflows among SDMX structural artefact categories, confirming that dataflows are a recognised SDMX registry artefact category. The excerpt does not provide details of a specific dataflow for this report."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX 2.0 Information Model / Key Family
+"[""standard_references"",2,""version""]",version,string,2.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,The accepted related DSD / Key Family artifact was modelled against SDMX 2.0 Key Family practice. The present Dataflow artifact references those accepted Key Families as the structural definitions used by each logical dataset.
+"[""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,The report names the maintaining organisation as Synthetic Labour Observatory but does not provide a formal SDMX agency identifier; Synthetic_Labour_Observatory is therefore a local normalized agency identifier derived from the report label.
+"[""limitations"",1]",1,string,"The report does not provide formal Dataflow IDs, versions or operational subset constraints; IDs and version 1.0 are proposed local artefact metadata."
+"[""limitations"",2]",2,string,"The Dataflows reference accepted related Key Families, but no externally registered SDMX Dataflow or Key Family for this synthetic report was supplied."
+"[""limitations"",3]",3,string,The report contains only one publication instance with 2025 observations; the Dataflow names and IDs intentionally omit the year because no evidence indicates separate year-specific flows.
+"[""limitations"",4]",4,string,Exact standard codelist versions and some code mappings remain limitations of the accepted DSD artifact and are not resolved at Dataflow level.
+"[""dataflows""]",dataflows,array,
+"[""dataflows"",0]",0,object,
+"[""dataflows"",0,""dataflow_id""]",dataflow_id,string,DF_SYNTHETIC_UNEMPLOYMENT_RATE_Q
+"[""dataflows"",0,""name""]",name,string,Quarterly unemployment rate by region and sex
+"[""dataflows"",0,""agency_id""]",agency_id,string,Synthetic_Labour_Observatory
+"[""dataflows"",0,""version""]",version,string,1.0
+"[""dataflows"",0,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""dataflows"",0,""dsd_agency_id""]",dsd_agency_id,string,Synthetic_Labour_Observatory
+"[""dataflows"",0,""dsd_version""]",dsd_version,string,1.0
+"[""dataflows"",0,""description""]",description,string,"Logical dataset for quarterly unemployment-rate observations from synthetic survey estimates for persons aged 15-64, with unemployment rate measured as unemployed persons as a percentage of the labour force and broken down by region, sex and quarter."
+"[""dataflows"",0,""coverage""]",coverage,string,"Synthetic unemployment-rate estimates for Northland, Centralia and South Coast; sex labels Women, Men and Total; quarters 2025-Q1 and 2025-Q2 shown in the report; unit Percent; status Final or Provisional. Total sex coverage includes respondents outside the displayed women/men categories and must not be inferred by summing displayed rows."
+"[""dataflows"",0,""evidence_quote""]",evidence_quote,string,"Table 1. Unemployment rate by region, sex and quarter"
+"[""dataflows"",1]",1,object,
+"[""dataflows"",1,""dataflow_id""]",dataflow_id,string,DF_SYNTHETIC_JOB_VACANCIES_M
+"[""dataflows"",1,""name""]",name,string,Monthly job vacancies by industry
+"[""dataflows"",1,""agency_id""]",agency_id,string,Synthetic_Labour_Observatory
+"[""dataflows"",1,""version""]",version,string,1.0
+"[""dataflows"",1,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M
+"[""dataflows"",1,""dsd_agency_id""]",dsd_agency_id,string,Synthetic_Labour_Observatory
+"[""dataflows"",1,""dsd_version""]",dsd_version,string,1.0
+"[""dataflows"",1,""description""]",description,string,"Logical dataset for monthly job-vacancy counts compiled independently from a synthetic employer survey, with a job vacancy defined as an unfilled position available for immediate recruitment and observations broken down by local industry aggregate and month."
+"[""dataflows"",1,""coverage""]",coverage,string,"Synthetic job-vacancy counts for Manufacturing, Construction and Information services; months 2025-01, 2025-02 and 2025-03 shown in the report; unit Open positions; adjustment Seasonally adjusted. Industry labels are local aggregates and are not confirmed ISIC categories."
+"[""dataflows"",1,""evidence_quote""]",evidence_quote,string,Table 2. Job vacancies by industry and month

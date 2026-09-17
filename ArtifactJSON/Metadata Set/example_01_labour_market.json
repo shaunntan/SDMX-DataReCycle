@@ -1,0 +1,260 @@
+{
+  "artifact_type": "Metadata Set",
+  "source_report": "example_01_labour_market.pdf",
+  "source_sha256": "fb3bd37fc247c713e56b54ba1e234b1d05501d32a34d31b3ad2f1ebf6395c0e9",
+  "principles_file": "06_METADATA_SET.txt",
+  "principles_sha256": "78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Guideline",
+      "artifact_id": "Standardising Reference Metadata Reporting in SDMX",
+      "version": "1.0",
+      "url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+      "evidence": "Supplied reference catalog identifies this SDMX guideline as a source for reference metadata vocabulary and reporting practice; no fetched official-source excerpt confirming the exact concept IDs used in this metadata set was supplied.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary",
+      "artifact_id": "SDMX_Glossary",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "Fetched official-source excerpt confirms the SDMX Glossary Version 2.1 includes entries for Metadata Set, Metadata Structure Definition, Metadata update, Institutional mandate, Labour force status, and a Geographical coverage entry with Concept ID COVERAGE_GEO and recommended representation String/Codelist.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry",
+      "artifact_id": "SDMX_Global_Registry_Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "Fetched official-source excerpt confirms the SDMX Global Registry provides a codelist catalogue and includes metadata-related artefact categories such as Metadata Structures and Metadataflow.",
+      "verification_status": "CONFIRMED"
+    }
+  ],
+  "limitations": [
+    "Exact SDMX Global Reference Metadata Concept Scheme identifiers and versions are not confirmed from the supplied fetched external evidence for most metadata concepts; the concept IDs follow the accepted MSD for this package and remain candidate/local where noted there.",
+    "No contact point is stated in the supplied report context, so CONTACT is not populated as a metadata value.",
+    "No metadata update date distinct from the publication date is stated in the supplied report context, so META_UPDATE is not populated as a metadata value.",
+    "Geographic coverage is derived only from region labels appearing in the table; no authoritative geographic classification or code mapping is confirmed for Northland, Centralia or South Coast.",
+    "Industry labels are retained as local aggregate wording from the report; no ISIC mapping is asserted.",
+    "Observation-level status values such as Final and Provisional are not converted into reference metadata except where the source report provides table-level or dataflow-level notes and revision-policy text."
+  ],
+  "metadata_sets": [
+    {
+      "metadata_set_id": "MS_LABOUR_MARKET_REPORT_2025",
+      "msd_id": "MSD_LABOUR_MARKET_REFERENCE_METADATA",
+      "target_id": "REPORT_example_01_labour_market",
+      "target_type": "REPORT",
+      "values": [
+        {
+          "concept_id": "REPORT_TITLE",
+          "value": "Quarterly Labour Market Bulletin 2025",
+          "evidence_quote": "Quarterly Labour Market Bulletin 2025",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "PUBLISHER",
+          "value": "Synthetic Labour Observatory",
+          "evidence_quote": "Synthetic Labour Observatory",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "PUBLICATION_DATE",
+          "value": "2026-08-20",
+          "evidence_quote": "Publication date: 20 August 2026",
+          "source_location": "chunk 1, page 1"
+        }
+      ]
+    },
+    {
+      "metadata_set_id": "MS_DF_UNEMPLOYMENT_RATE_REFERENCE_METADATA",
+      "msd_id": "MSD_LABOUR_MARKET_REFERENCE_METADATA",
+      "target_id": "DF_SYNTHETIC_UNEMPLOYMENT_RATE_Q",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "value": "Unemployment rate by region, sex and quarter.",
+          "evidence_quote": "Table 1. Unemployment rate by region, sex and quarter",
+          "source_location": "chunk 3, page 2"
+        },
+        {
+          "concept_id": "STATISTICAL_POP",
+          "value": "Persons aged 15-64.",
+          "evidence_quote": "Unemployment rates are synthetic survey estimates for persons aged 15-64.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "value": "Region dimension values shown in the report include Northland, Centralia and South Coast.",
+          "evidence_quote": "Northland                     Women                            2025-Q1                                7.8                                    Percent                                    Final\n\n     Northland                     Women                            2025-Q2                                8.0                                    Percent                                   Provisional\n\n     Northland                      Men                              2025-Q1                                9.4                                    Percent                                    Final\n\n     Northland                      Men                              2025-Q2                                9.0                                    Percent                                   Provisional\n\n     Northland                                 Total                              2025-Q1                                4.8                                    Percent                                    Final\n\n     Northland                                 Total                              2025-Q2                                7.0                                    Percent                                   Provisional\n\n     Centralia                      Women                            2025-Q1                                9.0                                    Percent                                    Final\n\n     Centralia                      Women                            2025-Q2                                7.4                                    Percent                                   Provisional\n\n     Centralia                       Men                              2025-Q1                                7.8                                    Percent                                    Final\n\n     Centralia                       Men                              2025-Q2                                7.5                                    Percent                                   Provisional\n\n     Centralia                                  Total                              2025-Q1                                8.2                                    Percent                                    Final\n\n     Centralia                                  Total                              2025-Q2                                7.6                                    Percent                                   Provisional\n\n     South Coast                   Women                            2025-Q1                                5.5                                    Percent                                    Final",
+          "source_location": "chunk 3, page 2"
+        },
+        {
+          "concept_id": "COVERAGE_TIME",
+          "value": "Quarterly observations shown for 2025-Q1 to 2025-Q2.",
+          "evidence_quote": "Northland                     Women                            2025-Q1                                7.8                                    Percent                                    Final\n\n     Northland                     Women                            2025-Q2                                8.0                                    Percent                                   Provisional",
+          "source_location": "chunk 3, page 2"
+        },
+        {
+          "concept_id": "CONCEPTS_DEFINITIONS",
+          "value": "Unemployment rate is unemployed persons as a percentage of the labour force.",
+          "evidence_quote": "Unemployment rate is unemployed persons as a percentage of the labour force.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "value": "Synthetic Labour Force Survey.",
+          "evidence_quote": "Synthetic Labour Force Survey and Synthetic Establishment Vacancy Survey.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Unemployment rates are synthetic survey estimates for persons aged 15-64.",
+          "evidence_quote": "Unemployment rates are synthetic survey estimates for persons aged 15-64.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "value": "Provisional quarterly estimates are revised after annual weighting.",
+          "evidence_quote": "Provisional quarterly estimates are revised after annual weighting.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "CONF",
+          "value": "All records and values are synthetic. No person-level or confidential data are included.",
+          "evidence_quote": "All records and values are synthetic. No person-level or confidential data are included.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "value": "Quarterly rates and monthly vacancy counts represent different statistical structures.",
+          "evidence_quote": "Quarterly rates and monthly vacancy counts represent different statistical structures.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "value": "Total sex coverage includes respondents outside the displayed women/men categories; it must not be inferred by summing displayed rows.",
+          "evidence_quote": "Total sex coverage includes respondents outside the displayed women/men categories;\nit must not be inferred by summing displayed rows.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "COMPARABILITY",
+          "value": "Quarterly rates and monthly vacancy counts represent different statistical structures.",
+          "evidence_quote": "Quarterly rates and monthly vacancy counts represent different statistical structures.",
+          "source_location": "chunk 1, page 1"
+        }
+      ]
+    },
+    {
+      "metadata_set_id": "MS_DATASET_UNEMPLOYMENT_RATE_TABLE_NOTE",
+      "msd_id": "MSD_LABOUR_MARKET_REFERENCE_METADATA",
+      "target_id": "DATASET_TABLE_1_UNEMPLOYMENT_RATE",
+      "target_type": "DATASET",
+      "values": [
+        {
+          "concept_id": "TABLE_NOTE",
+          "value": "2025-Q2 rates are provisional.",
+          "evidence_quote": "Footnote: 2025-Q2 rates are provisional.",
+          "source_location": "chunk 3, page 2"
+        }
+      ]
+    },
+    {
+      "metadata_set_id": "MS_DF_JOB_VACANCIES_REFERENCE_METADATA",
+      "msd_id": "MSD_LABOUR_MARKET_REFERENCE_METADATA",
+      "target_id": "DF_SYNTHETIC_JOB_VACANCIES_M",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "value": "Job vacancies by industry and month.",
+          "evidence_quote": "Table 2. Job vacancies by industry and month",
+          "source_location": "chunk 4, page 3"
+        },
+        {
+          "concept_id": "COVERAGE_TIME",
+          "value": "Monthly observations shown for 2025-01 to 2025-03; the report states vacancy counts use a monthly reference period.",
+          "evidence_quote": "Manufacturing                               2025-01                                  2993                                 Open positions                                 Seasonally adjusted\n\n     Manufacturing                               2025-02                                  4162                                 Open positions                                 Seasonally adjusted\n\n     Manufacturing                               2025-03                                  2479                                 Open positions                                 Seasonally adjusted",
+          "source_location": "chunk 4, page 3"
+        },
+        {
+          "concept_id": "CONCEPTS_DEFINITIONS",
+          "value": "A job vacancy is an unfilled position available for immediate recruitment.",
+          "evidence_quote": "A job vacancy is an unfilled position available for immediate recruitment.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "value": "Synthetic Establishment Vacancy Survey.",
+          "evidence_quote": "Synthetic Labour Force Survey and Synthetic Establishment Vacancy Survey.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Vacancy counts are compiled independently from a synthetic employer survey and use a monthly reference period.",
+          "evidence_quote": "Vacancy counts are compiled independently from a synthetic employer survey and use a\nmonthly reference period.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "value": "Final vacancy counts may be corrected for reporting errors.",
+          "evidence_quote": "Final vacancy counts may be corrected for reporting errors.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "CONF",
+          "value": "All records and values are synthetic. No person-level or confidential data are included.",
+          "evidence_quote": "All records and values are synthetic. No person-level or confidential data are included.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "value": "Quarterly rates and monthly vacancy counts represent different statistical structures.",
+          "evidence_quote": "Quarterly rates and monthly vacancy counts represent different statistical structures.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "value": "Industry labels are local aggregates and are not confirmed ISIC categories.",
+          "evidence_quote": "Footnote: Industry labels are local aggregates and are not confirmed ISIC categories.",
+          "source_location": "chunk 4, page 3"
+        },
+        {
+          "concept_id": "COMPARABILITY",
+          "value": "Quarterly rates and monthly vacancy counts represent different statistical structures.",
+          "evidence_quote": "Quarterly rates and monthly vacancy counts represent different statistical structures.",
+          "source_location": "chunk 1, page 1"
+        },
+        {
+          "concept_id": "CLASS_SYSTEM_NOTE",
+          "value": "Industry labels are local aggregates and are not confirmed ISIC categories.",
+          "evidence_quote": "Footnote: Industry labels are local aggregates and are not confirmed ISIC categories.",
+          "source_location": "chunk 4, page 3"
+        }
+      ]
+    },
+    {
+      "metadata_set_id": "MS_DATASET_JOB_VACANCIES_TABLE_NOTE",
+      "msd_id": "MSD_LABOUR_MARKET_REFERENCE_METADATA",
+      "target_id": "DATASET_TABLE_2_JOB_VACANCIES",
+      "target_type": "DATASET",
+      "values": [
+        {
+          "concept_id": "TABLE_NOTE",
+          "value": "Industry labels are local aggregates and are not confirmed ISIC categories.",
+          "evidence_quote": "Footnote: Industry labels are local aggregates and are not confirmed ISIC categories.",
+          "source_location": "chunk 4, page 3"
+        }
+      ]
+    }
+  ]
+}

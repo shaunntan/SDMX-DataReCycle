@@ -1,0 +1,556 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODEBOOK_AND_SOURCE_TO_SDMX_MAPPING
+"[""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""source_sha256""]",source_sha256,string,71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5
+"[""principles_file""]",principles_file,string,08_CODEBOOK_AND_SOURCE_MAPPING.txt
+"[""principles_sha256""]",principles_sha256,string,999d6556922403d8315a0a0558da149e83e7c3b8f29779d9d346959966d76b74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept guidance
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied official-source excerpt states that SDMX Cross-Domain Concepts support reuse in statistical data and metadata exchange and gives Observation Status as concept ID OBS_STATUS with codelist ID CL_OBS_STATUS as an example. It does not confirm exact concept scheme IDs or versions for all common concepts used here and does not confirm code mappings for Final, Provisional, or Survey estimate."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist catalogue
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied official-source excerpt confirms that the SDMX Global Registry includes a searchable codelist catalogue and codelist-detail functions. It does not confirm the detailed entries, versions, agencies, or code definitions for CL_FREQ, CL_OBS_STATUS, or other specific codelists relevant to this report."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist candidate
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",2,""version""]",version,string,not confirmed
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The accepted codelists artifact includes candidate CL_FREQ codes M and A, but the supplied registry excerpt does not confirm the CL_FREQ item, agency, version, or code definitions, so M and A remain candidate frequency mappings pending production verification."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist candidate
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",3,""version""]",version,string,not confirmed
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,"The supplied SDMX Glossary excerpt confirms OBS_STATUS and gives CL_OBS_STATUS as its associated codelist example. No supplied external evidence confirms exact CL_OBS_STATUS code values or definitions, so report status values are mapped to the governed local report-status codelist rather than to confirmed SDMX CL_OBS_STATUS codes."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,UNSD / SDMX
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Classification / codelist candidate
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,COICOP / CL_COICOP_2018
+"[""standard_references"",4,""version""]",version,string,not confirmed
+"[""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""standard_references"",4,""evidence""]",evidence,string,"The shared reference catalogue identifies COICOP and SDMX CL_COICOP_2018 as candidate sources for consumption-purpose classifications. The report states that the consumption divisions resemble COICOP but does not confirm the revision, and no official code-level COICOP evidence was supplied."
+"[""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",5]",5,object,
+"[""standard_references"",5,""agency""]",agency,string,ISO
+"[""standard_references"",5,""artifact_type""]",artifact_type,string,Currency code standard candidate
+"[""standard_references"",5,""artifact_id""]",artifact_id,string,ISO_4217
+"[""standard_references"",5,""version""]",version,string,not confirmed
+"[""standard_references"",5,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""standard_references"",5,""evidence""]",evidence,string,"The shared reference catalogue identifies ISO 4217 as the standard to check for currency identity. The report states only that values are in local currency and explicitly says that the local currency is not named, so no ISO 4217 currency code can be assigned from the supplied evidence."
+"[""standard_references"",5,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",6]",6,object,
+"[""standard_references"",6,""agency""]",agency,string,UNSD
+"[""standard_references"",6,""artifact_type""]",artifact_type,string,Geographic code reference
+"[""standard_references"",6,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",6,""version""]",version,string,not stated
+"[""standard_references"",6,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",6,""evidence""]",evidence,string,"The supplied UN M49 excerpt shows country and area entries with numeric and alpha codes. The report does not state a reference area, so no REF_AREA field or area mapping is included in this operational codebook."
+"[""standard_references"",6,""verification_status""]",verification_status,string,CONFIRMED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,This codebook covers two distinct statistical structures: KF_SYNTH_CPI_DIVISION_MONTHLY for monthly CPI by consumption division and KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL for annual household spending by residence type and expenditure quintile.
+"[""limitations"",1]",1,string,"Local codelist references are aligned to the accepted CODELISTS artifact: CL_LOCAL_CPI_DIVISION, CL_LOCAL_RESIDENCE, CL_LOCAL_EXPENDITURE_QUINTILE, CL_LOCAL_UNIT_MEASURE, and CL_LOCAL_REPORT_STATUS."
+"[""limitations"",2]",2,string,"The exact SDMX concept scheme IDs and versions for common concepts such as FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE, OBS_STATUS, BASE_PERIOD, ESTIMATION_TYPE, and STAT_UNIT were not confirmed by the supplied external evidence."
+"[""limitations"",3]",3,string,"The exact SDMX CL_FREQ agency, version, and code definitions were not supplied. FREQ=M and FREQ=A are candidate standard mappings and must be verified before production automation."
+"[""limitations"",4]",4,string,"The report status values Final and Provisional are mapped to governed local CL_LOCAL_REPORT_STATUS codes, not to confirmed SDMX CL_OBS_STATUS codes."
+"[""limitations"",5]",5,string,Survey estimate is modelled as ESTIMATION_TYPE using the governed local CL_LOCAL_REPORT_STATUS code SURVEY_ESTIMATE and is not treated as an SDMX observation-status code.
+"[""limitations"",6]",6,string,"The CPI source unit string Index, 2023=100 is mapped to the governed local unit code IDX_2023_100. BASE_PERIOD=2023 is retained only as an optional derived CPI qualifier for template clarity, not as a replacement for the governed unit code."
+"[""limitations"",7]",7,string,Consumption divisions are local because the report says they resemble COICOP but the revision is not confirmed.
+"[""limitations"",8]",8,string,"The local currency is not named, so household spending values cannot be mapped to a confirmed ISO 4217 currency code."
+"[""limitations"",9]",9,string,The report does not state a reference area or country; REF_AREA is not included and remains a production gap if geographic identification is required.
+"[""limitations"",10]",10,string,Residence type categories Urban and Rural are not mapped to a standard degree-of-urbanisation codelist because the report does not define classification criteria.
+"[""limitations"",11]",11,string,The report shows only lowest and highest expenditure quintiles. Intermediate quintile codes are not created without evidence.
+"[""fields""]",fields,array,
+"[""fields"",0]",0,object,
+"[""fields"",0,""field_id""]",field_id,string,FREQ
+"[""fields"",0,""name""]",name,string,Frequency
+"[""fields"",0,""definition""]",definition,string,"Frequency at which observations are measured or reported. Applies_to=[KF_SYNTH_CPI_DIVISION_MONTHLY,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL]. Structure-specific required rule: mandatory for both structures; missing is not allowed. CPI uses M; household spending uses A. These are candidate SDMX CL_FREQ mappings pending registry verification."
+"[""fields"",0,""role""]",role,string,DIMENSION
+"[""fields"",0,""representation""]",representation,string,"Coded. codelist_agency=SDMX; codelist_id=CL_FREQ; codelist_version=not confirmed; attachment_level=dimension key; allowed_values={M: Monthly, A: Annual}; data_type=String."
+"[""fields"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""fields"",0,""required""]",required,boolean,true
+"[""fields"",0,""example""]",example,string,M
+"[""fields"",0,""source_standard""]",source_standard,string,SDMX candidate cross-domain concept and candidate CL_FREQ
+"[""fields"",0,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",1]",1,object,
+"[""fields"",1,""field_id""]",field_id,string,CONSUMPTION_DIVISION
+"[""fields"",1,""name""]",name,string,Consumption division
+"[""fields"",1,""definition""]",definition,string,"Consumption-purpose division used to classify CPI observations. Applies_to=[KF_SYNTH_CPI_DIVISION_MONTHLY]. Structure-specific required rule: mandatory for CPI rows; not applicable to household-spending rows. The report states that divisions resemble COICOP, but the COICOP revision is not confirmed."
+"[""fields"",1,""role""]",role,string,DIMENSION
+"[""fields"",1,""representation""]",representation,string,"Coded local codelist. codelist_agency=SYNTH_NSI_LOCAL; codelist_id=CL_LOCAL_CPI_DIVISION; codelist_version=1.0; attachment_level=dimension key; allowed_values={FOOD_NAB: Food and non-alcoholic beverages, HOUS_UTIL: Housing and utilities, TRANSPORT: Transport}; data_type=String."
+"[""fields"",1,""codelist_id""]",codelist_id,string,CL_LOCAL_CPI_DIVISION
+"[""fields"",1,""required""]",required,boolean,true
+"[""fields"",1,""example""]",example,string,FOOD_NAB
+"[""fields"",1,""source_standard""]",source_standard,string,Governed local codelist; COICOP candidate not confirmed
+"[""fields"",1,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""fields"",2]",2,object,
+"[""fields"",2,""field_id""]",field_id,string,RESIDENCE_TYPE
+"[""fields"",2,""name""]",name,string,Residence type
+"[""fields"",2,""definition""]",definition,string,Residence type category used to disaggregate household spending survey estimates. Applies_to=[KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL]. Structure-specific required rule: mandatory for household-spending rows; not applicable to CPI rows. This field_id follows the accepted concept scheme concept RESIDENCE_TYPE.
+"[""fields"",2,""role""]",role,string,DIMENSION
+"[""fields"",2,""representation""]",representation,string,"Coded local codelist. codelist_agency=SYNTH_NSI_LOCAL; codelist_id=CL_LOCAL_RESIDENCE; codelist_version=1.0; attachment_level=dimension key; allowed_values={URBAN: Urban, RURAL: Rural}; data_type=String."
+"[""fields"",2,""codelist_id""]",codelist_id,string,CL_LOCAL_RESIDENCE
+"[""fields"",2,""required""]",required,boolean,true
+"[""fields"",2,""example""]",example,string,URBAN
+"[""fields"",2,""source_standard""]",source_standard,string,Governed local codelist; no confirmed standard residence or degree-of-urbanisation mapping
+"[""fields"",2,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""fields"",3]",3,object,
+"[""fields"",3,""field_id""]",field_id,string,EXPENDITURE_QUINTILE
+"[""fields"",3,""name""]",name,string,Expenditure quintile
+"[""fields"",3,""definition""]",definition,string,Household expenditure distribution quintile used to disaggregate household spending estimates; the report says quintiles are defined within the synthetic survey distribution. Applies_to=[KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL]. Structure-specific required rule: mandatory for household-spending rows; not applicable to CPI rows. Only lowest and highest quintiles are evidenced.
+"[""fields"",3,""role""]",role,string,DIMENSION
+"[""fields"",3,""representation""]",representation,string,"Coded local codelist. codelist_agency=SYNTH_NSI_LOCAL; codelist_id=CL_LOCAL_EXPENDITURE_QUINTILE; codelist_version=1.0; attachment_level=dimension key; allowed_values={LOWEST: Lowest quintile, HIGHEST: Highest quintile}; data_type=String."
+"[""fields"",3,""codelist_id""]",codelist_id,string,CL_LOCAL_EXPENDITURE_QUINTILE
+"[""fields"",3,""required""]",required,boolean,true
+"[""fields"",3,""example""]",example,string,LOWEST
+"[""fields"",3,""source_standard""]",source_standard,string,Governed local codelist
+"[""fields"",3,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""fields"",4]",4,object,
+"[""fields"",4,""field_id""]",field_id,string,TIME_PERIOD
+"[""fields"",4,""name""]",name,string,Time period
+"[""fields"",4,""definition""]",definition,string,"Observation time period. Applies_to=[KF_SYNTH_CPI_DIVISION_MONTHLY,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL]. Structure-specific required rule: mandatory for both structures; missing is not allowed. CPI uses monthly periods from the source Month column; household spending uses annual periods from the source Year column."
+"[""fields"",4,""role""]",role,string,TIME
+"[""fields"",4,""representation""]",representation,string,"Uncoded time period. codelist_agency=null; codelist_id=null; codelist_version=null; attachment_level=dimension key/time dimension; allowed_values=not enumerated; CPI format=YYYY-MM, example=2025-01; household-spending format=YYYY, example=2024; data_type=TimePeriod."
+"[""fields"",4,""codelist_id""]",codelist_id,null,
+"[""fields"",4,""required""]",required,boolean,true
+"[""fields"",4,""example""]",example,string,2025-01
+"[""fields"",4,""source_standard""]",source_standard,string,SDMX candidate common time-period concept; exact concept scheme/version not confirmed
+"[""fields"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""fields"",5]",5,object,
+"[""fields"",5,""field_id""]",field_id,string,OBS_VALUE
+"[""fields"",5,""name""]",name,string,Observation value
+"[""fields"",5,""definition""]",definition,string,"Numeric value of the measured variable: CPI index value for the CPI structure or mean monthly consumption expenditure per household for the household-spending structure. Applies_to=[KF_SYNTH_CPI_DIVISION_MONTHLY,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL]. Structure-specific required rule: mandatory for both structures; missing is not allowed. Source household values containing comma thousands separators must be normalised before loading as numeric values."
+"[""fields"",5,""role""]",role,string,MEASURE
+"[""fields"",5,""representation""]",representation,string,"Numeric decimal. codelist_agency=null; codelist_id=null; codelist_version=null; attachment_level=primary measure; allowed_values=not enumerated; CPI examples include 108.92; household-spending examples include 7072 after parsing 7,072; data_type=Decimal."
+"[""fields"",5,""codelist_id""]",codelist_id,null,
+"[""fields"",5,""required""]",required,boolean,true
+"[""fields"",5,""example""]",example,string,108.92
+"[""fields"",5,""source_standard""]",source_standard,string,SDMX candidate common observation-value concept; exact concept scheme/version not confirmed
+"[""fields"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""fields"",6]",6,object,
+"[""fields"",6,""field_id""]",field_id,string,UNIT_MEASURE
+"[""fields"",6,""name""]",name,string,Unit of measure
+"[""fields"",6,""definition""]",definition,string,"Unit in which the observation value is expressed. Applies_to=[KF_SYNTH_CPI_DIVISION_MONTHLY,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL]. Structure-specific required rule: mandatory dataset-level attribute for both structures; missing is not allowed. CPI uses the governed source-preserving unit code IDX_2023_100; household spending uses LCU_PER_HH_PER_MONTH. Currency identity is unresolved because the report does not name the local currency."
+"[""fields"",6,""role""]",role,string,ATTRIBUTE
+"[""fields"",6,""representation""]",representation,string,"Coded local unit codelist. codelist_agency=SYNTH_NSI_LOCAL; codelist_id=CL_LOCAL_UNIT_MEASURE; codelist_version=1.0; attachment_level=dataset attribute; allowed_values={IDX_2023_100: Index, 2023=100, LCU_PER_HH_PER_MONTH: Local currency per household per month}; data_type=String."
+"[""fields"",6,""codelist_id""]",codelist_id,string,CL_LOCAL_UNIT_MEASURE
+"[""fields"",6,""required""]",required,boolean,true
+"[""fields"",6,""example""]",example,string,IDX_2023_100
+"[""fields"",6,""source_standard""]",source_standard,string,Governed local codelist; SDMX UNIT_MEASURE concept candidate; ISO 4217 currency unresolved
+"[""fields"",6,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""fields"",7]",7,object,
+"[""fields"",7,""field_id""]",field_id,string,BASE_PERIOD
+"[""fields"",7,""name""]",name,string,Base period
+"[""fields"",7,""definition""]",definition,string,"Optional derived CPI qualifier identifying the base period embedded in the CPI unit string. Applies_to=[KF_SYNTH_CPI_DIVISION_MONTHLY]. Structure-specific required rule: optional for CPI template rows because UNIT_MEASURE=IDX_2023_100 already preserves the governed combined unit; not applicable to household-spending rows. If populated, use 2023."
+"[""fields"",7,""role""]",role,string,ATTRIBUTE
+"[""fields"",7,""representation""]",representation,string,Uncoded time-period/string attribute. codelist_agency=null; codelist_id=null; codelist_version=null; attachment_level=dataset attribute or metadata; allowed_values={2023}; data_type=String.
+"[""fields"",7,""codelist_id""]",codelist_id,null,
+"[""fields"",7,""required""]",required,boolean,false
+"[""fields"",7,""example""]",example,string,2023
+"[""fields"",7,""source_standard""]",source_standard,string,Local derived qualifier; no confirmed standard concept/version supplied
+"[""fields"",7,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""fields"",8]",8,object,
+"[""fields"",8,""field_id""]",field_id,string,OBS_STATUS
+"[""fields"",8,""name""]",name,string,Observation status
+"[""fields"",8,""definition""]",definition,string,"Status label attached to CPI observations, preserving whether each CPI index is final or provisional according to the report. Applies_to=[KF_SYNTH_CPI_DIVISION_MONTHLY]. Structure-specific required rule: mandatory observation-level attribute for CPI rows; not applicable to household-spending rows. Mapping to SDMX CL_OBS_STATUS remains unresolved."
+"[""fields"",8,""role""]",role,string,ATTRIBUTE
+"[""fields"",8,""representation""]",representation,string,"Coded local report-status codelist restricted to CPI release-status values. codelist_agency=SYNTH_NSI_LOCAL; codelist_id=CL_LOCAL_REPORT_STATUS; codelist_version=1.0; attachment_level=observation attribute; allowed_values={FINAL: Final, PROVISIONAL: Provisional}; data_type=String."
+"[""fields"",8,""codelist_id""]",codelist_id,string,CL_LOCAL_REPORT_STATUS
+"[""fields"",8,""required""]",required,boolean,true
+"[""fields"",8,""example""]",example,string,FINAL
+"[""fields"",8,""source_standard""]",source_standard,string,Governed local codelist; SDMX OBS_STATUS / CL_OBS_STATUS candidate not confirmed for source codes
+"[""fields"",8,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""fields"",9]",9,object,
+"[""fields"",9,""field_id""]",field_id,string,ESTIMATION_TYPE
+"[""fields"",9,""name""]",name,string,Estimation type
+"[""fields"",9,""definition""]",definition,string,Qualifier identifying household spending values as survey estimates. Applies_to=[KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL]. Structure-specific required rule: mandatory dataset-level attribute for household-spending rows or dataset metadata; not applicable to CPI rows. The source value Survey estimate is governed locally and is not treated as an SDMX observation-status code.
+"[""fields"",9,""role""]",role,string,ATTRIBUTE
+"[""fields"",9,""representation""]",representation,string,Coded local report-status codelist restricted to the survey-estimate qualifier. codelist_agency=SYNTH_NSI_LOCAL; codelist_id=CL_LOCAL_REPORT_STATUS; codelist_version=1.0; attachment_level=dataset attribute; allowed_values={SURVEY_ESTIMATE: Survey estimate}; data_type=String.
+"[""fields"",9,""codelist_id""]",codelist_id,string,CL_LOCAL_REPORT_STATUS
+"[""fields"",9,""required""]",required,boolean,true
+"[""fields"",9,""example""]",example,string,SURVEY_ESTIMATE
+"[""fields"",9,""source_standard""]",source_standard,string,Governed local codelist used as an estimation-type qualifier; no confirmed standard estimation-type codelist
+"[""fields"",9,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""fields"",10]",10,object,
+"[""fields"",10,""field_id""]",field_id,string,STAT_UNIT
+"[""fields"",10,""name""]",name,string,Statistical unit
+"[""fields"",10,""definition""]",definition,string,Entity about which household spending is measured; for the household-spending structure the statistic is per household. Applies_to=[KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL]. Structure-specific required rule: optional descriptive attribute for household-spending rows or metadata; not applicable to CPI rows.
+"[""fields"",10,""role""]",role,string,ATTRIBUTE
+"[""fields"",10,""representation""]",representation,string,Controlled string. codelist_agency=null; codelist_id=null; codelist_version=null; attachment_level=dataset attribute or metadata; allowed_values={household}; data_type=String.
+"[""fields"",10,""codelist_id""]",codelist_id,null,
+"[""fields"",10,""required""]",required,boolean,false
+"[""fields"",10,""example""]",example,string,household
+"[""fields"",10,""source_standard""]",source_standard,string,Local report-derived attribute; no confirmed standard concept/version supplied
+"[""fields"",10,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""source_value_mappings""]",source_value_mappings,array,
+"[""source_value_mappings"",0]",0,object,
+"[""source_value_mappings"",0,""source_value""]",source_value,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""source_value_mappings"",0,""source_context""]",source_context,string,Methodology statement; derives CPI structure scope and monthly frequency
+"[""source_value_mappings"",0,""target_field""]",target_field,string,FREQ
+"[""source_value_mappings"",0,""target_code""]",target_code,string,M
+"[""source_value_mappings"",0,""target_code_label""]",target_code_label,string,Monthly
+"[""source_value_mappings"",0,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",0,""target_standard""]",target_standard,string,SDMX CL_FREQ candidate; version and code definition not confirmed
+"[""source_value_mappings"",0,""notes""]",notes,string,"Derives monthly frequency for KF_SYNTH_CPI_DIVISION_MONTHLY. Verify the selected CL_FREQ agency, version, and M code definition before production automation."
+"[""source_value_mappings"",0,""evidence_quote""]",evidence_quote,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""source_value_mappings"",1]",1,object,
+"[""source_value_mappings"",1,""source_value""]",source_value,string,Household spending is an annual survey estimate by residence and expenditure quintile and is not a CPI observation.
+"[""source_value_mappings"",1,""source_context""]",source_context,string,Methodology statement; derives household-spending structure scope and annual frequency
+"[""source_value_mappings"",1,""target_field""]",target_field,string,FREQ
+"[""source_value_mappings"",1,""target_code""]",target_code,string,A
+"[""source_value_mappings"",1,""target_code_label""]",target_code_label,string,Annual
+"[""source_value_mappings"",1,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",1,""target_standard""]",target_standard,string,SDMX CL_FREQ candidate; version and code definition not confirmed
+"[""source_value_mappings"",1,""notes""]",notes,string,"Derives annual frequency for KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL and confirms that it should not be treated as a CPI observation. Verify the selected CL_FREQ agency, version, and A code definition before production automation."
+"[""source_value_mappings"",1,""evidence_quote""]",evidence_quote,string,Household spending is an annual survey estimate by residence and expenditure quintile
+"[""source_value_mappings"",2]",2,object,
+"[""source_value_mappings"",2,""source_value""]",source_value,string,Food and non-alcoholic beverages
+"[""source_value_mappings"",2,""source_context""]",source_context,string,Table 1 Division column
+"[""source_value_mappings"",2,""target_field""]",target_field,string,CONSUMPTION_DIVISION
+"[""source_value_mappings"",2,""target_code""]",target_code,string,FOOD_NAB
+"[""source_value_mappings"",2,""target_code_label""]",target_code_label,string,Food and non-alcoholic beverages
+"[""source_value_mappings"",2,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",2,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_CPI_DIVISION v1.0
+"[""source_value_mappings"",2,""notes""]",notes,string,Exact mapping to a governed local CPI division code. Not mapped to COICOP because the report says the revision is not confirmed.
+"[""source_value_mappings"",2,""evidence_quote""]",evidence_quote,string,Food and non-alcoholic beverages
+"[""source_value_mappings"",3]",3,object,
+"[""source_value_mappings"",3,""source_value""]",source_value,string,Housing and utilities
+"[""source_value_mappings"",3,""source_context""]",source_context,string,Table 1 Division column
+"[""source_value_mappings"",3,""target_field""]",target_field,string,CONSUMPTION_DIVISION
+"[""source_value_mappings"",3,""target_code""]",target_code,string,HOUS_UTIL
+"[""source_value_mappings"",3,""target_code_label""]",target_code_label,string,Housing and utilities
+"[""source_value_mappings"",3,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",3,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_CPI_DIVISION v1.0
+"[""source_value_mappings"",3,""notes""]",notes,string,Exact mapping to a governed local CPI division code. Not mapped to COICOP because the report says the revision is not confirmed.
+"[""source_value_mappings"",3,""evidence_quote""]",evidence_quote,string,Housing and utilities
+"[""source_value_mappings"",4]",4,object,
+"[""source_value_mappings"",4,""source_value""]",source_value,string,Transport
+"[""source_value_mappings"",4,""source_context""]",source_context,string,Table 1 Division column
+"[""source_value_mappings"",4,""target_field""]",target_field,string,CONSUMPTION_DIVISION
+"[""source_value_mappings"",4,""target_code""]",target_code,string,TRANSPORT
+"[""source_value_mappings"",4,""target_code_label""]",target_code_label,string,Transport
+"[""source_value_mappings"",4,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",4,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_CPI_DIVISION v1.0
+"[""source_value_mappings"",4,""notes""]",notes,string,Exact mapping to a governed local CPI division code. Not mapped to COICOP because the report says the revision is not confirmed.
+"[""source_value_mappings"",4,""evidence_quote""]",evidence_quote,string,Transport
+"[""source_value_mappings"",5]",5,object,
+"[""source_value_mappings"",5,""source_value""]",source_value,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""source_value_mappings"",5,""source_context""]",source_context,string,Caveats and limitations statement
+"[""source_value_mappings"",5,""target_field""]",target_field,string,CONSUMPTION_DIVISION
+"[""source_value_mappings"",5,""target_code""]",target_code,null,
+"[""source_value_mappings"",5,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",5,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",5,""target_standard""]",target_standard,string,UNSD COICOP / SDMX CL_COICOP_2018 candidate
+"[""source_value_mappings"",5,""notes""]",notes,string,Prevents confirmed COICOP mapping without further revision and scope verification.
+"[""source_value_mappings"",5,""evidence_quote""]",evidence_quote,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""source_value_mappings"",6]",6,object,
+"[""source_value_mappings"",6,""source_value""]",source_value,string,Month
+"[""source_value_mappings"",6,""source_context""]",source_context,string,Table 1 column header
+"[""source_value_mappings"",6,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",6,""target_code""]",target_code,null,
+"[""source_value_mappings"",6,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",6,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",6,""target_standard""]",target_standard,string,SDMX TIME_PERIOD candidate concept; no codelist
+"[""source_value_mappings"",6,""notes""]",notes,string,The source Month column is the CPI observation time period. Values in this column should be represented as monthly time periods in YYYY-MM form.
+"[""source_value_mappings"",6,""evidence_quote""]",evidence_quote,string,Month
+"[""source_value_mappings"",7]",7,object,
+"[""source_value_mappings"",7,""source_value""]",source_value,string,2025-01
+"[""source_value_mappings"",7,""source_context""]",source_context,string,Table 1 Month column example
+"[""source_value_mappings"",7,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",7,""target_code""]",target_code,null,
+"[""source_value_mappings"",7,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",7,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",7,""target_standard""]",target_standard,string,Time period representation
+"[""source_value_mappings"",7,""notes""]",notes,string,"Monthly time-period value copied as a time value, not a codelist code."
+"[""source_value_mappings"",7,""evidence_quote""]",evidence_quote,string,2025-01
+"[""source_value_mappings"",8]",8,object,
+"[""source_value_mappings"",8,""source_value""]",source_value,string,2025-04
+"[""source_value_mappings"",8,""source_context""]",source_context,string,Table 1 Month column example with provisional status
+"[""source_value_mappings"",8,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",8,""target_code""]",target_code,null,
+"[""source_value_mappings"",8,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",8,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",8,""target_standard""]",target_standard,string,Time period representation
+"[""source_value_mappings"",8,""notes""]",notes,string,"Monthly time-period value copied as a time value, not a codelist code."
+"[""source_value_mappings"",8,""evidence_quote""]",evidence_quote,string,2025-04
+"[""source_value_mappings"",9]",9,object,
+"[""source_value_mappings"",9,""source_value""]",source_value,string,Index
+"[""source_value_mappings"",9,""source_context""]",source_context,string,Table 1 Index column header
+"[""source_value_mappings"",9,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",9,""target_code""]",target_code,null,
+"[""source_value_mappings"",9,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",9,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",9,""target_standard""]",target_standard,string,SDMX OBS_VALUE candidate concept; numeric measure
+"[""source_value_mappings"",9,""notes""]",notes,string,The source Index column carries the CPI numeric observation value.
+"[""source_value_mappings"",9,""evidence_quote""]",evidence_quote,string,Index
+"[""source_value_mappings"",10]",10,object,
+"[""source_value_mappings"",10,""source_value""]",source_value,string,108.92
+"[""source_value_mappings"",10,""source_context""]",source_context,string,Table 1 Index column example
+"[""source_value_mappings"",10,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",10,""target_code""]",target_code,null,
+"[""source_value_mappings"",10,""target_code_label""]",target_code_label,string,108.92
+"[""source_value_mappings"",10,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",10,""target_standard""]",target_standard,string,Numeric decimal measure representation
+"[""source_value_mappings"",10,""notes""]",notes,string,CPI numeric value is copied as a decimal measure with no value conversion.
+"[""source_value_mappings"",10,""evidence_quote""]",evidence_quote,string,108.92
+"[""source_value_mappings"",11]",11,object,
+"[""source_value_mappings"",11,""source_value""]",source_value,string,"Index, 2023=100"
+"[""source_value_mappings"",11,""source_context""]",source_context,string,Table 1 Unit column
+"[""source_value_mappings"",11,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",11,""target_code""]",target_code,string,IDX_2023_100
+"[""source_value_mappings"",11,""target_code_label""]",target_code_label,string,"Index, 2023=100"
+"[""source_value_mappings"",11,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",11,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_UNIT_MEASURE v1.0
+"[""source_value_mappings"",11,""notes""]",notes,string,Uses the governed source-preserving unit code from the accepted local unit codelist. BASE_PERIOD=2023 may be derived as an optional qualifier but does not replace this unit code.
+"[""source_value_mappings"",11,""evidence_quote""]",evidence_quote,string,"Index, 2023=100"
+"[""source_value_mappings"",12]",12,object,
+"[""source_value_mappings"",12,""source_value""]",source_value,string,"Index, 2023=100"
+"[""source_value_mappings"",12,""source_context""]",source_context,string,Table 1 Unit column; optional base-period qualifier
+"[""source_value_mappings"",12,""target_field""]",target_field,string,BASE_PERIOD
+"[""source_value_mappings"",12,""target_code""]",target_code,null,
+"[""source_value_mappings"",12,""target_code_label""]",target_code_label,string,2023
+"[""source_value_mappings"",12,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",12,""target_standard""]",target_standard,string,Local BASE_PERIOD attribute; no codelist
+"[""source_value_mappings"",12,""notes""]",notes,string,"Optional CPI qualifier derived from the governed unit string. Because UNIT_MEASURE uses IDX_2023_100, this qualifier is optional metadata rather than mandatory unit splitting."
+"[""source_value_mappings"",12,""evidence_quote""]",evidence_quote,string,"Index, 2023=100"
+"[""source_value_mappings"",13]",13,object,
+"[""source_value_mappings"",13,""source_value""]",source_value,string,CPI measures price change relative to 2023=100.
+"[""source_value_mappings"",13,""source_context""]",source_context,string,Definitions statement
+"[""source_value_mappings"",13,""target_field""]",target_field,string,BASE_PERIOD
+"[""source_value_mappings"",13,""target_code""]",target_code,null,
+"[""source_value_mappings"",13,""target_code_label""]",target_code_label,string,2023
+"[""source_value_mappings"",13,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",13,""target_standard""]",target_standard,string,Local BASE_PERIOD attribute; no codelist
+"[""source_value_mappings"",13,""notes""]",notes,string,Supports optional BASE_PERIOD=2023 for CPI observations or dataset metadata.
+"[""source_value_mappings"",13,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100.
+"[""source_value_mappings"",14]",14,object,
+"[""source_value_mappings"",14,""source_value""]",source_value,string,Final
+"[""source_value_mappings"",14,""source_context""]",source_context,string,Table 1 Status column
+"[""source_value_mappings"",14,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",14,""target_code""]",target_code,string,FINAL
+"[""source_value_mappings"",14,""target_code_label""]",target_code_label,string,Final
+"[""source_value_mappings"",14,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",14,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_REPORT_STATUS v1.0; SDMX CL_OBS_STATUS mapping unresolved
+"[""source_value_mappings"",14,""notes""]",notes,string,Exact mapping to governed local report-status code for CPI observations. Do not automatically map to a standard SDMX observation-status code without verifying CL_OBS_STATUS code definitions.
+"[""source_value_mappings"",14,""evidence_quote""]",evidence_quote,string,Final
+"[""source_value_mappings"",15]",15,object,
+"[""source_value_mappings"",15,""source_value""]",source_value,string,Provisional
+"[""source_value_mappings"",15,""source_context""]",source_context,string,Table 1 Status column
+"[""source_value_mappings"",15,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",15,""target_code""]",target_code,string,PROVISIONAL
+"[""source_value_mappings"",15,""target_code_label""]",target_code_label,string,Provisional
+"[""source_value_mappings"",15,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",15,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_REPORT_STATUS v1.0; SDMX CL_OBS_STATUS mapping unresolved
+"[""source_value_mappings"",15,""notes""]",notes,string,Exact mapping to governed local report-status code for CPI observations. Do not automatically map to a standard SDMX observation-status code without verifying CL_OBS_STATUS code definitions.
+"[""source_value_mappings"",15,""evidence_quote""]",evidence_quote,string,Provisional
+"[""source_value_mappings"",16]",16,object,
+"[""source_value_mappings"",16,""source_value""]",source_value,string,The latest CPI month is provisional.
+"[""source_value_mappings"",16,""source_context""]",source_context,string,Revision policy statement
+"[""source_value_mappings"",16,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",16,""target_code""]",target_code,string,PROVISIONAL
+"[""source_value_mappings"",16,""target_code_label""]",target_code_label,string,Provisional
+"[""source_value_mappings"",16,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",16,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_REPORT_STATUS v1.0; SDMX CL_OBS_STATUS mapping unresolved
+"[""source_value_mappings"",16,""notes""]",notes,string,"Supports assigning provisional status to the latest CPI month in the reported period, with the table footnote identifying April 2025 indices as provisional."
+"[""source_value_mappings"",16,""evidence_quote""]",evidence_quote,string,The latest CPI month is provisional.
+"[""source_value_mappings"",17]",17,object,
+"[""source_value_mappings"",17,""source_value""]",source_value,string,Residence
+"[""source_value_mappings"",17,""source_context""]",source_context,string,Table 2 column header
+"[""source_value_mappings"",17,""target_field""]",target_field,string,RESIDENCE_TYPE
+"[""source_value_mappings"",17,""target_code""]",target_code,null,
+"[""source_value_mappings"",17,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",17,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",17,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_RESIDENCE v1.0
+"[""source_value_mappings"",17,""notes""]",notes,string,The source Residence column maps to concept-scheme field RESIDENCE_TYPE. Not mapped to degree of urbanisation without classification criteria.
+"[""source_value_mappings"",17,""evidence_quote""]",evidence_quote,string,Residence
+"[""source_value_mappings"",18]",18,object,
+"[""source_value_mappings"",18,""source_value""]",source_value,string,Urban
+"[""source_value_mappings"",18,""source_context""]",source_context,string,Table 2 Residence column
+"[""source_value_mappings"",18,""target_field""]",target_field,string,RESIDENCE_TYPE
+"[""source_value_mappings"",18,""target_code""]",target_code,string,URBAN
+"[""source_value_mappings"",18,""target_code_label""]",target_code_label,string,Urban
+"[""source_value_mappings"",18,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",18,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_RESIDENCE v1.0
+"[""source_value_mappings"",18,""notes""]",notes,string,Exact mapping to local residence category. No standard degree-of-urbanisation mapping is confirmed.
+"[""source_value_mappings"",18,""evidence_quote""]",evidence_quote,string,Urban
+"[""source_value_mappings"",19]",19,object,
+"[""source_value_mappings"",19,""source_value""]",source_value,string,Rural
+"[""source_value_mappings"",19,""source_context""]",source_context,string,Table 2 Residence column
+"[""source_value_mappings"",19,""target_field""]",target_field,string,RESIDENCE_TYPE
+"[""source_value_mappings"",19,""target_code""]",target_code,string,RURAL
+"[""source_value_mappings"",19,""target_code_label""]",target_code_label,string,Rural
+"[""source_value_mappings"",19,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",19,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_RESIDENCE v1.0
+"[""source_value_mappings"",19,""notes""]",notes,string,Exact mapping to local residence category. No standard degree-of-urbanisation mapping is confirmed.
+"[""source_value_mappings"",19,""evidence_quote""]",evidence_quote,string,Rural
+"[""source_value_mappings"",20]",20,object,
+"[""source_value_mappings"",20,""source_value""]",source_value,string,Expenditure quintile
+"[""source_value_mappings"",20,""source_context""]",source_context,string,Table 2 column header
+"[""source_value_mappings"",20,""target_field""]",target_field,string,EXPENDITURE_QUINTILE
+"[""source_value_mappings"",20,""target_code""]",target_code,null,
+"[""source_value_mappings"",20,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",20,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",20,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_EXPENDITURE_QUINTILE v1.0
+"[""source_value_mappings"",20,""notes""]",notes,string,The source column is the household-spending expenditure-quintile dimension.
+"[""source_value_mappings"",20,""evidence_quote""]",evidence_quote,string,Expenditure quintile
+"[""source_value_mappings"",21]",21,object,
+"[""source_value_mappings"",21,""source_value""]",source_value,string,Lowest quintile
+"[""source_value_mappings"",21,""source_context""]",source_context,string,Table 2 Expenditure quintile column
+"[""source_value_mappings"",21,""target_field""]",target_field,string,EXPENDITURE_QUINTILE
+"[""source_value_mappings"",21,""target_code""]",target_code,string,LOWEST
+"[""source_value_mappings"",21,""target_code_label""]",target_code_label,string,Lowest quintile
+"[""source_value_mappings"",21,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",21,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_EXPENDITURE_QUINTILE v1.0
+"[""source_value_mappings"",21,""notes""]",notes,string,Exact mapping to local quintile code using the report's survey-distribution definition.
+"[""source_value_mappings"",21,""evidence_quote""]",evidence_quote,string,Lowest quintile
+"[""source_value_mappings"",22]",22,object,
+"[""source_value_mappings"",22,""source_value""]",source_value,string,Highest quintile
+"[""source_value_mappings"",22,""source_context""]",source_context,string,Table 2 Expenditure quintile column
+"[""source_value_mappings"",22,""target_field""]",target_field,string,EXPENDITURE_QUINTILE
+"[""source_value_mappings"",22,""target_code""]",target_code,string,HIGHEST
+"[""source_value_mappings"",22,""target_code_label""]",target_code_label,string,Highest quintile
+"[""source_value_mappings"",22,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",22,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_EXPENDITURE_QUINTILE v1.0
+"[""source_value_mappings"",22,""notes""]",notes,string,Exact mapping to local quintile code using the report's survey-distribution definition.
+"[""source_value_mappings"",22,""evidence_quote""]",evidence_quote,string,Highest quintile
+"[""source_value_mappings"",23]",23,object,
+"[""source_value_mappings"",23,""source_value""]",source_value,string,Footnote: Quintiles are defined within the synthetic survey distribution.
+"[""source_value_mappings"",23,""source_context""]",source_context,string,Table 2 footnote
+"[""source_value_mappings"",23,""target_field""]",target_field,string,EXPENDITURE_QUINTILE
+"[""source_value_mappings"",23,""target_code""]",target_code,null,
+"[""source_value_mappings"",23,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",23,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",23,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_EXPENDITURE_QUINTILE v1.0
+"[""source_value_mappings"",23,""notes""]",notes,string,Provides local definition context for expenditure-quintile codes rather than adding a separate code.
+"[""source_value_mappings"",23,""evidence_quote""]",evidence_quote,string,Footnote: Quintiles are defined within the synthetic survey distribution.
+"[""source_value_mappings"",24]",24,object,
+"[""source_value_mappings"",24,""source_value""]",source_value,string,Year
+"[""source_value_mappings"",24,""source_context""]",source_context,string,Table 2 column header
+"[""source_value_mappings"",24,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",24,""target_code""]",target_code,null,
+"[""source_value_mappings"",24,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",24,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",24,""target_standard""]",target_standard,string,SDMX TIME_PERIOD candidate concept; no codelist
+"[""source_value_mappings"",24,""notes""]",notes,string,The source Year column is the household-spending observation time period. Values such as 2024 should be represented as annual time periods.
+"[""source_value_mappings"",24,""evidence_quote""]",evidence_quote,string,Year
+"[""source_value_mappings"",25]",25,object,
+"[""source_value_mappings"",25,""source_value""]",source_value,string,2024
+"[""source_value_mappings"",25,""source_context""]",source_context,string,Table 2 Year column value
+"[""source_value_mappings"",25,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",25,""target_code""]",target_code,null,
+"[""source_value_mappings"",25,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",25,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",25,""target_standard""]",target_standard,string,Time period representation
+"[""source_value_mappings"",25,""notes""]",notes,string,"Annual time-period value copied as a time value, not a codelist code."
+"[""source_value_mappings"",25,""evidence_quote""]",evidence_quote,string,2024
+"[""source_value_mappings"",26]",26,object,
+"[""source_value_mappings"",26,""source_value""]",source_value,string,Value
+"[""source_value_mappings"",26,""source_context""]",source_context,string,Table 2 Value column header
+"[""source_value_mappings"",26,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",26,""target_code""]",target_code,null,
+"[""source_value_mappings"",26,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",26,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",26,""target_standard""]",target_standard,string,SDMX OBS_VALUE candidate concept; numeric measure
+"[""source_value_mappings"",26,""notes""]",notes,string,The source Value column carries the household-spending numeric observation value. Values with comma thousands separators must be normalised before loading.
+"[""source_value_mappings"",26,""evidence_quote""]",evidence_quote,string,Value
+"[""source_value_mappings"",27]",27,object,
+"[""source_value_mappings"",27,""source_value""]",source_value,string,"7,072"
+"[""source_value_mappings"",27,""source_context""]",source_context,string,Table 2 Value column example
+"[""source_value_mappings"",27,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",27,""target_code""]",target_code,null,
+"[""source_value_mappings"",27,""target_code_label""]",target_code_label,string,7072
+"[""source_value_mappings"",27,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",27,""target_standard""]",target_standard,string,Numeric decimal measure representation
+"[""source_value_mappings"",27,""notes""]",notes,string,Remove the thousands separator to load as numeric value 7072. No unit conversion is implied.
+"[""source_value_mappings"",27,""evidence_quote""]",evidence_quote,string,"7,072"
+"[""source_value_mappings"",28]",28,object,
+"[""source_value_mappings"",28,""source_value""]",source_value,string,"2,734"
+"[""source_value_mappings"",28,""source_context""]",source_context,string,Table 2 Value column example
+"[""source_value_mappings"",28,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",28,""target_code""]",target_code,null,
+"[""source_value_mappings"",28,""target_code_label""]",target_code_label,string,2734
+"[""source_value_mappings"",28,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",28,""target_standard""]",target_standard,string,Numeric decimal measure representation
+"[""source_value_mappings"",28,""notes""]",notes,string,Remove the thousands separator to load as numeric value 2734. No unit conversion is implied.
+"[""source_value_mappings"",28,""evidence_quote""]",evidence_quote,string,"2,734"
+"[""source_value_mappings"",29]",29,object,
+"[""source_value_mappings"",29,""source_value""]",source_value,string,Local currency per household per month
+"[""source_value_mappings"",29,""source_context""]",source_context,string,Table 2 Unit column
+"[""source_value_mappings"",29,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",29,""target_code""]",target_code,string,LCU_PER_HH_PER_MONTH
+"[""source_value_mappings"",29,""target_code_label""]",target_code_label,string,Local currency per household per month
+"[""source_value_mappings"",29,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",29,""target_standard""]",target_standard,string,Governed local codelist CL_LOCAL_UNIT_MEASURE v1.0
+"[""source_value_mappings"",29,""notes""]",notes,string,Exact local unit mapping. No ISO 4217 currency code is assigned because the report does not name the local currency.
+"[""source_value_mappings"",29,""evidence_quote""]",evidence_quote,string,Local currency per household per month
+"[""source_value_mappings"",30]",30,object,
+"[""source_value_mappings"",30,""source_value""]",source_value,string,The report does not name the local currency.
+"[""source_value_mappings"",30,""source_context""]",source_context,string,Caveats and limitations statement
+"[""source_value_mappings"",30,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",30,""target_code""]",target_code,null,
+"[""source_value_mappings"",30,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",30,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",30,""target_standard""]",target_standard,string,ISO 4217 candidate
+"[""source_value_mappings"",30,""notes""]",notes,string,Specific currency identity remains unresolved; do not infer an ISO 4217 code.
+"[""source_value_mappings"",30,""evidence_quote""]",evidence_quote,string,The report does not name the local currency.
+"[""source_value_mappings"",31]",31,object,
+"[""source_value_mappings"",31,""source_value""]",source_value,string,Survey estimate
+"[""source_value_mappings"",31,""source_context""]",source_context,string,Table 2 Status column
+"[""source_value_mappings"",31,""target_field""]",target_field,string,ESTIMATION_TYPE
+"[""source_value_mappings"",31,""target_code""]",target_code,string,SURVEY_ESTIMATE
+"[""source_value_mappings"",31,""target_code_label""]",target_code_label,string,Survey estimate
+"[""source_value_mappings"",31,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",31,""target_standard""]",target_standard,string,"Governed local codelist CL_LOCAL_REPORT_STATUS v1.0, used as estimation-type qualifier"
+"[""source_value_mappings"",31,""notes""]",notes,string,Mapped as a governed local estimation-type qualifier for household spending rather than as OBS_STATUS. The same governed local report-status codelist contains this code with survey-estimate semantics.
+"[""source_value_mappings"",31,""evidence_quote""]",evidence_quote,string,Survey estimate
+"[""source_value_mappings"",32]",32,object,
+"[""source_value_mappings"",32,""source_value""]",source_value,string,Survey estimates are subject to sampling error.
+"[""source_value_mappings"",32,""source_context""]",source_context,string,Caveats and limitations statement
+"[""source_value_mappings"",32,""target_field""]",target_field,string,ESTIMATION_TYPE
+"[""source_value_mappings"",32,""target_code""]",target_code,string,SURVEY_ESTIMATE
+"[""source_value_mappings"",32,""target_code_label""]",target_code_label,string,Survey estimate
+"[""source_value_mappings"",32,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",32,""target_standard""]",target_standard,string,"Governed local codelist CL_LOCAL_REPORT_STATUS v1.0, used as estimation-type qualifier"
+"[""source_value_mappings"",32,""notes""]",notes,string,Supports preserving the survey-estimate qualifier and related caveat in metadata or as a structural attribute.
+"[""source_value_mappings"",32,""evidence_quote""]",evidence_quote,string,Survey estimates are subject to sampling error.
+"[""source_value_mappings"",33]",33,object,
+"[""source_value_mappings"",33,""source_value""]",source_value,string,Household spending is mean monthly consumption expenditure per household.
+"[""source_value_mappings"",33,""source_context""]",source_context,string,Definitions statement
+"[""source_value_mappings"",33,""target_field""]",target_field,string,STAT_UNIT
+"[""source_value_mappings"",33,""target_code""]",target_code,null,
+"[""source_value_mappings"",33,""target_code_label""]",target_code_label,string,household
+"[""source_value_mappings"",33,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",33,""target_standard""]",target_standard,string,Local controlled string; no confirmed standard codelist
+"[""source_value_mappings"",33,""notes""]",notes,string,Derives the household statistical unit for household-spending observations.
+"[""source_value_mappings"",33,""evidence_quote""]",evidence_quote,string,Household spending is mean monthly consumption expenditure per household.
+"[""unresolved""]",unresolved,array,
+"[""unresolved"",0]",0,string,"Confirm exact SDMX concept scheme IDs and versions for FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE, OBS_STATUS, BASE_PERIOD, ESTIMATION_TYPE, and STAT_UNIT before production registration."
+"[""unresolved"",1]",1,string,"Verify SDMX CL_FREQ agency, version, and code definitions for M and A before treating frequency mappings as confirmed automatic standard mappings."
+"[""unresolved"",2]",2,string,Verify whether Final and Provisional should map to specific SDMX CL_OBS_STATUS codes. Current mapping is only to governed local CL_LOCAL_REPORT_STATUS codes.
+"[""unresolved"",3]",3,string,"Confirm whether the DSD artifact should be updated to replace its prior CL_SYNTH_* local codelist references with the accepted governed codelists used here: CL_LOCAL_CPI_DIVISION, CL_LOCAL_RESIDENCE, CL_LOCAL_EXPENDITURE_QUINTILE, CL_LOCAL_UNIT_MEASURE, and CL_LOCAL_REPORT_STATUS."
+"[""unresolved"",4]",4,string,Confirm whether the DSD artifact should be updated to replace concept_id RESIDENCE with RESIDENCE_TYPE to match the accepted concept scheme and this codebook.
+"[""unresolved"",5]",5,string,"Confirm the COICOP revision and exact codes for Food and non-alcoholic beverages, Housing and utilities, and Transport if an authoritative consumption-purpose classification is required."
+"[""unresolved"",6]",6,string,Identify the unnamed local currency before assigning an ISO 4217 currency code or a standard monetary unit.
+"[""unresolved"",7]",7,string,"Confirm whether Urban and Rural follow a standard residence, urban/rural, or degree-of-urbanisation classification before mapping to any external codelist."
+"[""unresolved"",8]",8,string,No reference area is stated in the report; add REF_AREA only if a reporting geography is supplied externally and an appropriate area codelist is selected.
+"[""unresolved"",9]",9,string,Only lowest and highest expenditure quintiles are evidenced; do not create middle-quintile codes without source evidence.

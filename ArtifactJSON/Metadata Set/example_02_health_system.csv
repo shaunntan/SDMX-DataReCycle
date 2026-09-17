@@ -1,0 +1,225 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,METADATA_SET
+"[""source_report""]",source_report,string,example_02_health_system.pdf
+"[""source_sha256""]",source_sha256,string,5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23
+"[""principles_file""]",principles_file,string,06_METADATA_SET.txt
+"[""principles_sha256""]",principles_sha256,string,78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY_2_1
+"[""standard_references"",0,""version""]",version,string,"2.1, December 2020"
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"Supplied official-source excerpt shows SDMX Glossary entries including Metadata Structure Definition, Metadata Set, Metadata update, and a cross-domain concept entry for Geographical coverage with Concept ID COVERAGE_GEO and recommended representation String; Codelist."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Global Registry catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS_AND_METADATA
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,Supplied official-source excerpt shows the SDMX Global Registry interface includes Codelists and Metadata / Metadata Structures among searchable artefact categories; it does not confirm any specific health-domain codelist or metadata concept scheme version for this report.
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Reference metadata guideline
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",2,""version""]",version,string,1.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,"The guideline URL is supplied in the principles as a recommended source for SDMX reference metadata concepts, but no fetched external excerpt confirming exact concept IDs, definitions and versions from that guideline was supplied in the evidence package."
+"[""standard_references"",2,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,UNSD
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",3,""evidence""]",evidence,string,"Supplied official-source excerpt shows UN M49 country and area entries with numeric and alpha codes. The report areas Northland, Centralia and South Coast are synthetic/local area labels and are not confirmed as UN M49 areas from the supplied excerpt."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"No report contact details are stated, so CONTACT is not populated as a metadata value."
+"[""limitations"",1]",1,string,"No source URL or persistent report URL is stated in the supplied report context, so SOURCE_URL is not populated as a metadata value."
+"[""limitations"",2]",2,string,"No metadata update date is stated separately from the publication date, so META_UPDATE is not populated as a metadata value."
+"[""limitations"",3]",3,string,No legal or institutional mandate is stated in the report.
+"[""limitations"",4]",4,string,Exact SDMX Global Reference Metadata Concept Scheme IDs and versions are not confirmed from supplied external evidence for most metadata concepts; candidate/local concept IDs from the accepted MSD are used without asserting confirmed standard reuse.
+"[""limitations"",5]",5,string,The report states that cause labels resemble broad ICD families but no ICD version is confirmed; no ICD version is asserted in these metadata values.
+"[""limitations"",6]",6,string,"The geographic area labels Northland, Centralia and South Coast are synthetic/local labels and are not mapped to UN M49 or ISO 3166."
+"[""limitations"",7]",7,string,Target dataflow identifiers are practical local identifiers for this extraction because no accepted DATAFLOW artifact was supplied in the prompt.
+"[""metadata_sets""]",metadata_sets,array,
+"[""metadata_sets"",0]",0,object,
+"[""metadata_sets"",0,""metadata_set_id""]",metadata_set_id,string,MS_HEALTH_REPORT_REFERENCE_METADATA_2026
+"[""metadata_sets"",0,""msd_id""]",msd_id,string,MSD_HEALTH_REPORT_REFERENCE_METADATA
+"[""metadata_sets"",0,""target_id""]",target_id,string,example_02_health_system.pdf
+"[""metadata_sets"",0,""target_type""]",target_type,string,REPORT
+"[""metadata_sets"",0,""values""]",values,array,
+"[""metadata_sets"",0,""values"",0]",0,object,
+"[""metadata_sets"",0,""values"",0,""concept_id""]",concept_id,string,REPORT_TITLE
+"[""metadata_sets"",0,""values"",0,""value""]",value,string,Health Outcomes and Capacity Report
+"[""metadata_sets"",0,""values"",0,""evidence_quote""]",evidence_quote,string,Health Outcomes and Capacity Report
+"[""metadata_sets"",0,""values"",0,""source_location""]",source_location,string,"Chunk 1, page 1"
+"[""metadata_sets"",0,""values"",1]",1,object,
+"[""metadata_sets"",0,""values"",1,""concept_id""]",concept_id,string,PUBLISHER
+"[""metadata_sets"",0,""values"",1,""value""]",value,string,Synthetic Public Health Agency
+"[""metadata_sets"",0,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Public Health Agency
+"[""metadata_sets"",0,""values"",1,""source_location""]",source_location,string,"Chunk 1, page 1"
+"[""metadata_sets"",0,""values"",2]",2,object,
+"[""metadata_sets"",0,""values"",2,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""metadata_sets"",0,""values"",2,""value""]",value,string,2026-07-03
+"[""metadata_sets"",0,""values"",2,""evidence_quote""]",evidence_quote,string,Publication date: 3 July 2026
+"[""metadata_sets"",0,""values"",2,""source_location""]",source_location,string,"Chunk 1, page 1"
+"[""metadata_sets"",1]",1,object,
+"[""metadata_sets"",1,""metadata_set_id""]",metadata_set_id,string,MS_MORTALITY_REFERENCE_METADATA_2026
+"[""metadata_sets"",1,""msd_id""]",msd_id,string,MSD_MORTALITY_REFERENCE_METADATA
+"[""metadata_sets"",1,""target_id""]",target_id,string,DF_HEALTH_REGISTERED_DEATHS
+"[""metadata_sets"",1,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",1,""values""]",values,array,
+"[""metadata_sets"",1,""values"",0]",0,object,
+"[""metadata_sets"",1,""values"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_sets"",1,""values"",0,""value""]",value,string,"Registered deaths by area, cause, age and year."
+"[""metadata_sets"",1,""values"",0,""evidence_quote""]",evidence_quote,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""metadata_sets"",1,""values"",0,""source_location""]",source_location,string,"Chunk 3, page 2"
+"[""metadata_sets"",1,""values"",1]",1,object,
+"[""metadata_sets"",1,""values"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_sets"",1,""values"",1,""value""]",value,string,Synthetic Civil Registration System.
+"[""metadata_sets"",1,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Civil Registration System and Synthetic Facility Census.
+"[""metadata_sets"",1,""values"",1,""source_location""]",source_location,string,"Chunk 1, page 1, Source description"
+"[""metadata_sets"",1,""values"",2]",2,object,
+"[""metadata_sets"",1,""values"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_sets"",1,""values"",2,""value""]",value,string,Deaths are synthetic registered events classified by underlying cause and age group.
+"[""metadata_sets"",1,""values"",2,""evidence_quote""]",evidence_quote,string,"Deaths are synthetic registered events classified by underlying cause and age group. Hospital beds are a year-end stock measure collected from facilities and should not
+share the mortality DSD."
+"[""metadata_sets"",1,""values"",2,""source_location""]",source_location,string,"Chunk 1, page 1, Methodology"
+"[""metadata_sets"",1,""values"",3]",3,object,
+"[""metadata_sets"",1,""values"",3,""concept_id""]",concept_id,string,STAT_CONC_DEF
+"[""metadata_sets"",1,""values"",3,""value""]",value,string,Registered deaths count events during the calendar year.
+"[""metadata_sets"",1,""values"",3,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.
+"[""metadata_sets"",1,""values"",3,""source_location""]",source_location,string,"Chunk 1, page 1, Definitions"
+"[""metadata_sets"",1,""values"",4]",4,object,
+"[""metadata_sets"",1,""values"",4,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_sets"",1,""values"",4,""value""]",value,string,Northland
+"[""metadata_sets"",1,""values"",4,""evidence_quote""]",evidence_quote,string,Northland                           Circulatory diseases              45-64                         2023                         266                            Deaths                              Final
+"[""metadata_sets"",1,""values"",4,""source_location""]",source_location,string,"Chunk 3, page 2, Table 1"
+"[""metadata_sets"",1,""values"",5]",5,object,
+"[""metadata_sets"",1,""values"",5,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_sets"",1,""values"",5,""value""]",value,string,Centralia
+"[""metadata_sets"",1,""values"",5,""evidence_quote""]",evidence_quote,string,Centralia                            Circulatory diseases              45-64                         2023                         157                            Deaths                              Final
+"[""metadata_sets"",1,""values"",5,""source_location""]",source_location,string,"Chunk 3, page 2, Table 1"
+"[""metadata_sets"",1,""values"",6]",6,object,
+"[""metadata_sets"",1,""values"",6,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_sets"",1,""values"",6,""value""]",value,string,South Coast
+"[""metadata_sets"",1,""values"",6,""evidence_quote""]",evidence_quote,string,South Coast                         Circulatory diseases              45-64                         2023                         702                            Deaths                              Final
+"[""metadata_sets"",1,""values"",6,""source_location""]",source_location,string,"Chunk 3, page 2, Table 1"
+"[""metadata_sets"",1,""values"",7]",7,object,
+"[""metadata_sets"",1,""values"",7,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_sets"",1,""values"",7,""value""]",value,string,2023
+"[""metadata_sets"",1,""values"",7,""evidence_quote""]",evidence_quote,string,Northland                           Circulatory diseases              45-64                         2023                         266                            Deaths                              Final
+"[""metadata_sets"",1,""values"",7,""source_location""]",source_location,string,"Chunk 3, page 2, Table 1"
+"[""metadata_sets"",1,""values"",8]",8,object,
+"[""metadata_sets"",1,""values"",8,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_sets"",1,""values"",8,""value""]",value,string,2024
+"[""metadata_sets"",1,""values"",8,""evidence_quote""]",evidence_quote,string,Northland                           Circulatory diseases              45-64                         2024                         567                            Deaths                             Provisional
+"[""metadata_sets"",1,""values"",8,""source_location""]",source_location,string,"Chunk 3, page 2, Table 1"
+"[""metadata_sets"",1,""values"",9]",9,object,
+"[""metadata_sets"",1,""values"",9,""concept_id""]",concept_id,string,REFERENCE_PERIOD_DETAIL
+"[""metadata_sets"",1,""values"",9,""value""]",value,string,Deaths count events during the calendar year.
+"[""metadata_sets"",1,""values"",9,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.
+"[""metadata_sets"",1,""values"",9,""source_location""]",source_location,string,"Chunk 1, page 1, Definitions"
+"[""metadata_sets"",1,""values"",10]",10,object,
+"[""metadata_sets"",1,""values"",10,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_sets"",1,""values"",10,""value""]",value,string,Provisional death counts are revised when late registrations arrive.
+"[""metadata_sets"",1,""values"",10,""evidence_quote""]",evidence_quote,string,Provisional death counts are revised when late registrations arrive. Estimated bed counts are replaced after facility validation.
+"[""metadata_sets"",1,""values"",10,""source_location""]",source_location,string,"Chunk 1, page 1, Revision policy"
+"[""metadata_sets"",1,""values"",11]",11,object,
+"[""metadata_sets"",1,""values"",11,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_sets"",1,""values"",11,""value""]",value,string,Cause labels resemble broad ICD families but no ICD version is confirmed.
+"[""metadata_sets"",1,""values"",11,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.
+"[""metadata_sets"",1,""values"",11,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",1,""values"",12]",12,object,
+"[""metadata_sets"",1,""values"",12,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_sets"",1,""values"",12,""value""]",value,string,2024 death counts are provisional.
+"[""metadata_sets"",1,""values"",12,""evidence_quote""]",evidence_quote,string,Footnote: 2024 death counts are provisional.
+"[""metadata_sets"",1,""values"",12,""source_location""]",source_location,string,"Chunk 3, page 2, Table 1 footnote"
+"[""metadata_sets"",1,""values"",13]",13,object,
+"[""metadata_sets"",1,""values"",13,""concept_id""]",concept_id,string,COMPARABILITY
+"[""metadata_sets"",1,""values"",13,""value""]",value,string,"Cause labels resemble broad ICD families, but no ICD version is confirmed, limiting cause-classification comparability."
+"[""metadata_sets"",1,""values"",13,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.
+"[""metadata_sets"",1,""values"",13,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",1,""values"",14]",14,object,
+"[""metadata_sets"",1,""values"",14,""concept_id""]",concept_id,string,CONF
+"[""metadata_sets"",1,""values"",14,""value""]",value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",1,""values"",14,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",1,""values"",14,""source_location""]",source_location,string,"Chunk 1, page 1, Confidentiality"
+"[""metadata_sets"",2]",2,object,
+"[""metadata_sets"",2,""metadata_set_id""]",metadata_set_id,string,MS_HOSPITAL_CAPACITY_REFERENCE_METADATA_2026
+"[""metadata_sets"",2,""msd_id""]",msd_id,string,MSD_HOSPITAL_CAPACITY_REFERENCE_METADATA
+"[""metadata_sets"",2,""target_id""]",target_id,string,DF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""metadata_sets"",2,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",2,""values""]",values,array,
+"[""metadata_sets"",2,""values"",0]",0,object,
+"[""metadata_sets"",2,""values"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_sets"",2,""values"",0,""value""]",value,string,Available hospital beds by ownership.
+"[""metadata_sets"",2,""values"",0,""evidence_quote""]",evidence_quote,string,Table 2. Available hospital beds by ownership
+"[""metadata_sets"",2,""values"",0,""source_location""]",source_location,string,"Chunk 4, page 3"
+"[""metadata_sets"",2,""values"",1]",1,object,
+"[""metadata_sets"",2,""values"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_sets"",2,""values"",1,""value""]",value,string,Synthetic Facility Census.
+"[""metadata_sets"",2,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Civil Registration System and Synthetic Facility Census.
+"[""metadata_sets"",2,""values"",1,""source_location""]",source_location,string,"Chunk 1, page 1, Source description"
+"[""metadata_sets"",2,""values"",2]",2,object,
+"[""metadata_sets"",2,""values"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_sets"",2,""values"",2,""value""]",value,string,Hospital beds are a year-end stock measure collected from facilities and should not share the mortality DSD.
+"[""metadata_sets"",2,""values"",2,""evidence_quote""]",evidence_quote,string,"Deaths are synthetic registered events classified by underlying cause and age group. Hospital beds are a year-end stock measure collected from facilities and should not
+share the mortality DSD."
+"[""metadata_sets"",2,""values"",2,""source_location""]",source_location,string,"Chunk 1, page 1, Methodology"
+"[""metadata_sets"",2,""values"",3]",3,object,
+"[""metadata_sets"",2,""values"",3,""concept_id""]",concept_id,string,STAT_CONC_DEF
+"[""metadata_sets"",2,""values"",3,""value""]",value,string,Available beds are staffed beds available on 31 December.
+"[""metadata_sets"",2,""values"",3,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.
+"[""metadata_sets"",2,""values"",3,""source_location""]",source_location,string,"Chunk 1, page 1, Definitions"
+"[""metadata_sets"",2,""values"",4]",4,object,
+"[""metadata_sets"",2,""values"",4,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_sets"",2,""values"",4,""value""]",value,string,2023
+"[""metadata_sets"",2,""values"",4,""evidence_quote""]",evidence_quote,string,Public                                    2023                                     1677                                    Beds                                               Final
+"[""metadata_sets"",2,""values"",4,""source_location""]",source_location,string,"Chunk 4, page 3, Table 2"
+"[""metadata_sets"",2,""values"",5]",5,object,
+"[""metadata_sets"",2,""values"",5,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_sets"",2,""values"",5,""value""]",value,string,2024
+"[""metadata_sets"",2,""values"",5,""evidence_quote""]",evidence_quote,string,Public                                    2024                                     1419                                    Beds                                               Final
+"[""metadata_sets"",2,""values"",5,""source_location""]",source_location,string,"Chunk 4, page 3, Table 2"
+"[""metadata_sets"",2,""values"",6]",6,object,
+"[""metadata_sets"",2,""values"",6,""concept_id""]",concept_id,string,REFERENCE_PERIOD_DETAIL
+"[""metadata_sets"",2,""values"",6,""value""]",value,string,Available beds are measured as staffed beds available on 31 December.
+"[""metadata_sets"",2,""values"",6,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.
+"[""metadata_sets"",2,""values"",6,""source_location""]",source_location,string,"Chunk 1, page 1, Definitions"
+"[""metadata_sets"",2,""values"",7]",7,object,
+"[""metadata_sets"",2,""values"",7,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_sets"",2,""values"",7,""value""]",value,string,Estimated bed counts are replaced after facility validation.
+"[""metadata_sets"",2,""values"",7,""evidence_quote""]",evidence_quote,string,Provisional death counts are revised when late registrations arrive. Estimated bed counts are replaced after facility validation.
+"[""metadata_sets"",2,""values"",7,""source_location""]",source_location,string,"Chunk 1, page 1, Revision policy"
+"[""metadata_sets"",2,""values"",8]",8,object,
+"[""metadata_sets"",2,""values"",8,""concept_id""]",concept_id,string,COMPLETENESS
+"[""metadata_sets"",2,""values"",8,""value""]",value,string,Private-sector bed reporting is incomplete in 2024.
+"[""metadata_sets"",2,""values"",8,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.
+"[""metadata_sets"",2,""values"",8,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",2,""values"",9]",9,object,
+"[""metadata_sets"",2,""values"",9,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_sets"",2,""values"",9,""value""]",value,string,Private-sector bed reporting is incomplete in 2024.
+"[""metadata_sets"",2,""values"",9,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.
+"[""metadata_sets"",2,""values"",9,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",2,""values"",10]",10,object,
+"[""metadata_sets"",2,""values"",10,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_sets"",2,""values"",10,""value""]",value,string,Private for-profit 2024 values are estimated.
+"[""metadata_sets"",2,""values"",10,""evidence_quote""]",evidence_quote,string,Footnote: Private for-profit 2024 values are estimated.
+"[""metadata_sets"",2,""values"",10,""source_location""]",source_location,string,"Chunk 4, page 3, Table 2 footnote"
+"[""metadata_sets"",2,""values"",11]",11,object,
+"[""metadata_sets"",2,""values"",11,""concept_id""]",concept_id,string,CONF
+"[""metadata_sets"",2,""values"",11,""value""]",value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",2,""values"",11,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",2,""values"",11,""source_location""]",source_location,string,"Chunk 1, page 1, Confidentiality"

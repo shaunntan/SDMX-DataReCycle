@@ -1,0 +1,176 @@
+CODEBOOK AND SOURCE-TO-SDMX MAPPING
+===================================
+
+1. Definition
+-------------
+This is the operational dictionary connecting:
+- the report's terminology;
+- the selected SDMX concepts;
+- the selected codelists/codes;
+- the AI-fillable template.
+
+It is not a single formal SDMX 2.0 artefact, but it is essential for a reliable
+report-to-SDMX workflow.
+
+2. Best practices
+-----------------
+A. The codebook must be authoritative for the template.
+The AI should not infer the meaning of a column from its name alone.
+
+B. For every field document:
+- concept ID;
+- name;
+- definition;
+- DSD role;
+- representation;
+- codelist and version;
+- allowed/missing rules;
+- example;
+- standard source;
+- source URL.
+
+C. Maintain explicit source mappings.
+Examples:
+"Women"        -> SEX=<standard female code>
+"yearly"       -> FREQ=A
+"France"       -> REF_AREA=<chosen area code>
+"per cent"     -> UNIT_MEASURE=<chosen percent code>
+
+D. A mapping is semantic, not just lexical.
+"Total" cannot be mapped until its scope is known.
+
+E. Preserve many-to-one and one-to-many mappings explicitly.
+Some source categories may need transformation rather than direct mapping.
+
+F. Record classification versions.
+"Manufacturing" under one ISIC revision must not be assumed identical to another
+revision without checking.
+
+G. Record mapping type:
+EXACT
+BROADER
+NARROWER
+DERIVED
+LOCAL_EQUIVALENT
+UNRESOLVED
+
+For automatic filling, only EXACT (and explicitly approved deterministic mappings)
+should be applied without further review.
+
+H. Do not create a new target code inside the mapping file without also creating
+and governing it in its proper codelist.
+
+3. Example: field codebook
+--------------------------
+FIELD_ID      ROLE       REPRESENTATION  CODELIST       DEFINITION
+------------  ---------  --------------  -------------  -------------------------
+REF_AREA      DIMENSION  Coded           CL_AREA        Reference geography
+FREQ          DIMENSION  Coded           CL_FREQ        Observation frequency
+TIME_PERIOD   TIME       Time            -              Observation period
+OBS_VALUE     MEASURE    Numeric         -              Measured value
+OBS_STATUS    ATTRIBUTE  Coded           CL_OBS_STATUS  Observation status
+
+4. Example: source mapping
+--------------------------
+SOURCE_TEXT     SOURCE_CONTEXT        TARGET_FIELD  TARGET_CODE  MAPPING_TYPE
+--------------  --------------------  ------------  -----------  ------------
+Annual          table header          FREQ          A            EXACT
+France          geography row         REF_AREA      FRA          EXACT*
+Women           sex breakdown         SEX           <code>       EXACT*
+Manufacturing   activity breakdown    ACTIVITY      <code>       CHECK VERSION
+
+*The exact target code must come from the chosen codelist/version. Do not copy the
+example code without verifying the selected standard.
+
+5. Recommended formats
+----------------------
+Best working format:
+- XLSX with separate sheets:
+  FIELDS
+  CODELISTS
+  SOURCE_VALUE_MAPPINGS
+  EXTERNAL_STANDARDS
+  UNRESOLVED
+
+Machine format:
+- CSV per table or JSON.
+
+Recommended FIELDS columns:
+FIELD_ID
+NAME
+DEFINITION
+ROLE
+REPRESENTATION
+CODELIST_AGENCY
+CODELIST_ID
+CODELIST_VERSION
+REQUIRED
+ATTACHMENT_LEVEL
+EXAMPLE
+SOURCE_STANDARD
+SOURCE_URL
+NOTES
+
+Recommended SOURCE_VALUE_MAPPINGS columns:
+SOURCE_VALUE
+SOURCE_CONTEXT
+TARGET_FIELD
+TARGET_CODE
+TARGET_CODE_LABEL
+MAPPING_TYPE
+SOURCE_STANDARD
+TARGET_STANDARD
+NOTES
+
+6. External-source search order
+-------------------------------
+1. SDMX Glossary/cross-domain concepts.
+2. SDMX Global Registry.
+3. International custodian of the classification.
+4. Domain international organisation.
+5. Regional official classification.
+6. National/institutional official classification.
+7. New local code only if no semantically suitable code exists.
+
+7. Acceptance checks
+--------------------
+[ ] Every template field is documented.
+[ ] Every coded field identifies a codelist and version.
+[ ] Every automatic source mapping has a semantic justification.
+[ ] Classification revisions are recorded.
+[ ] Unknowns are marked unresolved, not invented.
+[ ] Newly created codes are governed in a codelist.
+[ ] External sources are recorded with URLs.
+
+CORE OFFICIAL SOURCES (checked 2026-09-16)
+-----------------------------------------------
+SDMX 2.0 standards landing page
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+SDMX 2.0 Information Model
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+SDMX 2.0 Implementor's Guide
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+SDMX Guidelines
+https://sdmx.org/guidelines/
+
+Guidelines for the Design of Data Structure Definitions
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+SDMX Glossary 2.1
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Standardising Reference Metadata Reporting in SDMX
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Global Registry - Codelists
+https://registry.sdmx.org/items/codelist.html
+
+IMPORTANT
+---------
+This package targets SDMX 2.0 as requested. In SDMX 2.0 the formal term for a
+Data Structure Definition is "Key Family". Later SDMX statistical guidelines are
+used here only for modelling good practice where the recommendation is compatible
+with the SDMX 2.0 information model.

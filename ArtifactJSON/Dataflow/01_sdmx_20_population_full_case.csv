@@ -1,0 +1,24 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DATAFLOW
+"[""source_report""]",source_report,string,01_sdmx_20_population_full_case.xml
+"[""source_sha256""]",source_sha256,string,dd0724ffd8c77e88517d69bd90c9694c94efe3e8f23db55189665b7e7a8a378d
+"[""principles_file""]",principles_file,string,04_DATAFLOW.txt
+"[""principles_sha256""]",principles_sha256,string,0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""standard_references""]",standard_references,array,
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,Mechanically converted from XML; no AI interpretation was used.
+"[""limitations"",1]",1,string,Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure.
+"[""dataflows""]",dataflows,array,
+"[""dataflows"",0]",0,object,
+"[""dataflows"",0,""dataflow_id""]",dataflow_id,string,DF_POP
+"[""dataflows"",0,""name""]",name,string,Population Statistics
+"[""dataflows"",0,""agency_id""]",agency_id,string,DEMO
+"[""dataflows"",0,""version""]",version,string,1.0
+"[""dataflows"",0,""dsd_id""]",dsd_id,string,DSD_POP
+"[""dataflows"",0,""dsd_agency_id""]",dsd_agency_id,string,DEMO
+"[""dataflows"",0,""dsd_version""]",dsd_version,string,1.0
+"[""dataflows"",0,""description""]",description,string,Population Statistics
+"[""dataflows"",0,""coverage""]",coverage,string,Population Statistics
+"[""dataflows"",0,""evidence_quote""]",evidence_quote,string,Population Statistics

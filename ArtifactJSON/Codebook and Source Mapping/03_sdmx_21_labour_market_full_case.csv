@@ -1,0 +1,273 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODEBOOK_AND_SOURCE_MAPPING
+"[""source_report""]",source_report,string,03_sdmx_21_labour_market_full_case.xml
+"[""source_sha256""]",source_sha256,string,51affdd8ac40d4b0b42f1debed99a36090d477e85d40a3b35dd62c2f65868752
+"[""principles_file""]",principles_file,string,08_CODEBOOK_AND_SOURCE_MAPPING.txt
+"[""principles_sha256""]",principles_sha256,string,999d6556922403d8315a0a0558da149e83e7c3b8f29779d9d346959966d76b74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""standard_references""]",standard_references,array,
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,Mechanically converted from XML; no AI interpretation was used.
+"[""limitations"",1]",1,string,Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure.
+"[""fields""]",fields,array,
+"[""fields"",0]",0,object,
+"[""fields"",0,""field_id""]",field_id,string,FREQ
+"[""fields"",0,""name""]",name,string,Frequency
+"[""fields"",0,""definition""]",definition,string,Field FREQ mechanically imported from the XML template.
+"[""fields"",0,""role""]",role,string,DIMENSION
+"[""fields"",0,""representation""]",representation,string,Coded by CL_LAB_FREQ
+"[""fields"",0,""codelist_id""]",codelist_id,string,CL_LAB_FREQ
+"[""fields"",0,""required""]",required,boolean,true
+"[""fields"",0,""example""]",example,string,M
+"[""fields"",0,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""fields"",0,""source_url""]",source_url,string,not stated in XML
+"[""fields"",1]",1,object,
+"[""fields"",1,""field_id""]",field_id,string,REF_AREA
+"[""fields"",1,""name""]",name,string,Reference area
+"[""fields"",1,""definition""]",definition,string,Field REF_AREA mechanically imported from the XML template.
+"[""fields"",1,""role""]",role,string,DIMENSION
+"[""fields"",1,""representation""]",representation,string,Coded by CL_LAB_REF_AREA
+"[""fields"",1,""codelist_id""]",codelist_id,string,CL_LAB_REF_AREA
+"[""fields"",1,""required""]",required,boolean,true
+"[""fields"",1,""example""]",example,string,KR
+"[""fields"",1,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""fields"",1,""source_url""]",source_url,string,not stated in XML
+"[""fields"",2]",2,object,
+"[""fields"",2,""field_id""]",field_id,string,INDICATOR
+"[""fields"",2,""name""]",name,string,Labour-market indicator
+"[""fields"",2,""definition""]",definition,string,Field INDICATOR mechanically imported from the XML template.
+"[""fields"",2,""role""]",role,string,DIMENSION
+"[""fields"",2,""representation""]",representation,string,Coded by CL_LAB_INDICATOR
+"[""fields"",2,""codelist_id""]",codelist_id,string,CL_LAB_INDICATOR
+"[""fields"",2,""required""]",required,boolean,true
+"[""fields"",2,""example""]",example,string,UNE_RATE
+"[""fields"",2,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""fields"",2,""source_url""]",source_url,string,not stated in XML
+"[""fields"",3]",3,object,
+"[""fields"",3,""field_id""]",field_id,string,SEX
+"[""fields"",3,""name""]",name,string,Sex
+"[""fields"",3,""definition""]",definition,string,Field SEX mechanically imported from the XML template.
+"[""fields"",3,""role""]",role,string,DIMENSION
+"[""fields"",3,""representation""]",representation,string,Coded by CL_LAB_SEX
+"[""fields"",3,""codelist_id""]",codelist_id,string,CL_LAB_SEX
+"[""fields"",3,""required""]",required,boolean,true
+"[""fields"",3,""example""]",example,string,_T
+"[""fields"",3,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""fields"",3,""source_url""]",source_url,string,not stated in XML
+"[""fields"",4]",4,object,
+"[""fields"",4,""field_id""]",field_id,string,TIME_PERIOD
+"[""fields"",4,""name""]",name,string,Time period
+"[""fields"",4,""definition""]",definition,string,Field TIME_PERIOD mechanically imported from the XML template.
+"[""fields"",4,""role""]",role,string,TIME
+"[""fields"",4,""representation""]",representation,string,String
+"[""fields"",4,""codelist_id""]",codelist_id,null,
+"[""fields"",4,""required""]",required,boolean,true
+"[""fields"",4,""example""]",example,string,2026-01
+"[""fields"",4,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""fields"",4,""source_url""]",source_url,string,not stated in XML
+"[""fields"",5]",5,object,
+"[""fields"",5,""field_id""]",field_id,string,OBS_VALUE
+"[""fields"",5,""name""]",name,string,Observation value
+"[""fields"",5,""definition""]",definition,string,Field OBS_VALUE mechanically imported from the XML template.
+"[""fields"",5,""role""]",role,string,MEASURE
+"[""fields"",5,""representation""]",representation,string,Number
+"[""fields"",5,""codelist_id""]",codelist_id,null,
+"[""fields"",5,""required""]",required,boolean,true
+"[""fields"",5,""example""]",example,string,3.7
+"[""fields"",5,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""fields"",5,""source_url""]",source_url,string,not stated in XML
+"[""fields"",6]",6,object,
+"[""fields"",6,""field_id""]",field_id,string,UNIT_MEASURE
+"[""fields"",6,""name""]",name,string,Unit of measure
+"[""fields"",6,""definition""]",definition,string,Field UNIT_MEASURE mechanically imported from the XML template.
+"[""fields"",6,""role""]",role,string,ATTRIBUTE
+"[""fields"",6,""representation""]",representation,string,Coded by CL_LAB_UNIT
+"[""fields"",6,""codelist_id""]",codelist_id,string,CL_LAB_UNIT
+"[""fields"",6,""required""]",required,boolean,true
+"[""fields"",6,""example""]",example,string,PC
+"[""fields"",6,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""fields"",6,""source_url""]",source_url,string,not stated in XML
+"[""fields"",7]",7,object,
+"[""fields"",7,""field_id""]",field_id,string,OBS_STATUS
+"[""fields"",7,""name""]",name,string,Observation status
+"[""fields"",7,""definition""]",definition,string,Field OBS_STATUS mechanically imported from the XML template.
+"[""fields"",7,""role""]",role,string,ATTRIBUTE
+"[""fields"",7,""representation""]",representation,string,Coded by CL_LAB_OBS_STATUS
+"[""fields"",7,""codelist_id""]",codelist_id,string,CL_LAB_OBS_STATUS
+"[""fields"",7,""required""]",required,boolean,false
+"[""fields"",7,""example""]",example,string,A
+"[""fields"",7,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""fields"",7,""source_url""]",source_url,string,not stated in XML
+"[""source_value_mappings""]",source_value_mappings,array,
+"[""source_value_mappings"",0]",0,object,
+"[""source_value_mappings"",0,""source_value""]",source_value,string,Country
+"[""source_value_mappings"",0,""source_context""]",source_context,string,XML FieldMappings
+"[""source_value_mappings"",0,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",0,""target_code""]",target_code,null,
+"[""source_value_mappings"",0,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",0,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",0,""target_standard""]",target_standard,string,Accepted XML codebook field
+"[""source_value_mappings"",0,""notes""]",notes,string,Mechanically imported field mapping.
+"[""source_value_mappings"",0,""evidence_quote""]",evidence_quote,string,Country
+"[""source_value_mappings"",1]",1,object,
+"[""source_value_mappings"",1,""source_value""]",source_value,string,Indicator
+"[""source_value_mappings"",1,""source_context""]",source_context,string,XML FieldMappings
+"[""source_value_mappings"",1,""target_field""]",target_field,string,INDICATOR
+"[""source_value_mappings"",1,""target_code""]",target_code,null,
+"[""source_value_mappings"",1,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",1,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",1,""target_standard""]",target_standard,string,Accepted XML codebook field
+"[""source_value_mappings"",1,""notes""]",notes,string,Mechanically imported field mapping.
+"[""source_value_mappings"",1,""evidence_quote""]",evidence_quote,string,Indicator
+"[""source_value_mappings"",2]",2,object,
+"[""source_value_mappings"",2,""source_value""]",source_value,string,Sex
+"[""source_value_mappings"",2,""source_context""]",source_context,string,XML FieldMappings
+"[""source_value_mappings"",2,""target_field""]",target_field,string,SEX
+"[""source_value_mappings"",2,""target_code""]",target_code,null,
+"[""source_value_mappings"",2,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",2,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",2,""target_standard""]",target_standard,string,Accepted XML codebook field
+"[""source_value_mappings"",2,""notes""]",notes,string,Mechanically imported field mapping.
+"[""source_value_mappings"",2,""evidence_quote""]",evidence_quote,string,Sex
+"[""source_value_mappings"",3]",3,object,
+"[""source_value_mappings"",3,""source_value""]",source_value,string,Period
+"[""source_value_mappings"",3,""source_context""]",source_context,string,XML FieldMappings
+"[""source_value_mappings"",3,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",3,""target_code""]",target_code,null,
+"[""source_value_mappings"",3,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",3,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",3,""target_standard""]",target_standard,string,Accepted XML codebook field
+"[""source_value_mappings"",3,""notes""]",notes,string,Mechanically imported field mapping.
+"[""source_value_mappings"",3,""evidence_quote""]",evidence_quote,string,Period
+"[""source_value_mappings"",4]",4,object,
+"[""source_value_mappings"",4,""source_value""]",source_value,string,Rate
+"[""source_value_mappings"",4,""source_context""]",source_context,string,XML FieldMappings
+"[""source_value_mappings"",4,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",4,""target_code""]",target_code,null,
+"[""source_value_mappings"",4,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",4,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",4,""target_standard""]",target_standard,string,Accepted XML codebook field
+"[""source_value_mappings"",4,""notes""]",notes,string,Mechanically imported field mapping.
+"[""source_value_mappings"",4,""evidence_quote""]",evidence_quote,string,Rate
+"[""source_value_mappings"",5]",5,object,
+"[""source_value_mappings"",5,""source_value""]",source_value,string,Status
+"[""source_value_mappings"",5,""source_context""]",source_context,string,XML FieldMappings
+"[""source_value_mappings"",5,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",5,""target_code""]",target_code,null,
+"[""source_value_mappings"",5,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",5,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",5,""target_standard""]",target_standard,string,Accepted XML codebook field
+"[""source_value_mappings"",5,""notes""]",notes,string,Mechanically imported field mapping.
+"[""source_value_mappings"",5,""evidence_quote""]",evidence_quote,string,Status
+"[""source_value_mappings"",6]",6,object,
+"[""source_value_mappings"",6,""source_value""]",source_value,string,"Korea, Republic of"
+"[""source_value_mappings"",6,""source_context""]",source_context,string,XML ValueMappings for REF_AREA
+"[""source_value_mappings"",6,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",6,""target_code""]",target_code,string,KR
+"[""source_value_mappings"",6,""target_code_label""]",target_code_label,string,"Korea, Republic of"
+"[""source_value_mappings"",6,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",6,""target_standard""]",target_standard,string,CL_LAB_REF_AREA
+"[""source_value_mappings"",6,""notes""]",notes,string,Mechanically imported value mapping.
+"[""source_value_mappings"",6,""evidence_quote""]",evidence_quote,string,"Korea, Republic of"
+"[""source_value_mappings"",7]",7,object,
+"[""source_value_mappings"",7,""source_value""]",source_value,string,Japan
+"[""source_value_mappings"",7,""source_context""]",source_context,string,XML ValueMappings for REF_AREA
+"[""source_value_mappings"",7,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",7,""target_code""]",target_code,string,JP
+"[""source_value_mappings"",7,""target_code_label""]",target_code_label,string,Japan
+"[""source_value_mappings"",7,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",7,""target_standard""]",target_standard,string,CL_LAB_REF_AREA
+"[""source_value_mappings"",7,""notes""]",notes,string,Mechanically imported value mapping.
+"[""source_value_mappings"",7,""evidence_quote""]",evidence_quote,string,Japan
+"[""source_value_mappings"",8]",8,object,
+"[""source_value_mappings"",8,""source_value""]",source_value,string,United States
+"[""source_value_mappings"",8,""source_context""]",source_context,string,XML ValueMappings for REF_AREA
+"[""source_value_mappings"",8,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",8,""target_code""]",target_code,string,US
+"[""source_value_mappings"",8,""target_code_label""]",target_code_label,string,United States
+"[""source_value_mappings"",8,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",8,""target_standard""]",target_standard,string,CL_LAB_REF_AREA
+"[""source_value_mappings"",8,""notes""]",notes,string,Mechanically imported value mapping.
+"[""source_value_mappings"",8,""evidence_quote""]",evidence_quote,string,United States
+"[""source_value_mappings"",9]",9,object,
+"[""source_value_mappings"",9,""source_value""]",source_value,string,Unemployment rate
+"[""source_value_mappings"",9,""source_context""]",source_context,string,XML ValueMappings for INDICATOR
+"[""source_value_mappings"",9,""target_field""]",target_field,string,INDICATOR
+"[""source_value_mappings"",9,""target_code""]",target_code,string,UNE_RATE
+"[""source_value_mappings"",9,""target_code_label""]",target_code_label,string,Unemployment rate
+"[""source_value_mappings"",9,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",9,""target_standard""]",target_standard,string,CL_LAB_INDICATOR
+"[""source_value_mappings"",9,""notes""]",notes,string,Mechanically imported value mapping.
+"[""source_value_mappings"",9,""evidence_quote""]",evidence_quote,string,Unemployment rate
+"[""source_value_mappings"",10]",10,object,
+"[""source_value_mappings"",10,""source_value""]",source_value,string,Employment rate
+"[""source_value_mappings"",10,""source_context""]",source_context,string,XML ValueMappings for INDICATOR
+"[""source_value_mappings"",10,""target_field""]",target_field,string,INDICATOR
+"[""source_value_mappings"",10,""target_code""]",target_code,string,EMP_RATE
+"[""source_value_mappings"",10,""target_code_label""]",target_code_label,string,Employment rate
+"[""source_value_mappings"",10,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",10,""target_standard""]",target_standard,string,CL_LAB_INDICATOR
+"[""source_value_mappings"",10,""notes""]",notes,string,Mechanically imported value mapping.
+"[""source_value_mappings"",10,""evidence_quote""]",evidence_quote,string,Employment rate
+"[""source_value_mappings"",11]",11,object,
+"[""source_value_mappings"",11,""source_value""]",source_value,string,Total
+"[""source_value_mappings"",11,""source_context""]",source_context,string,XML ValueMappings for SEX
+"[""source_value_mappings"",11,""target_field""]",target_field,string,SEX
+"[""source_value_mappings"",11,""target_code""]",target_code,string,_T
+"[""source_value_mappings"",11,""target_code_label""]",target_code_label,string,Total
+"[""source_value_mappings"",11,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",11,""target_standard""]",target_standard,string,CL_LAB_SEX
+"[""source_value_mappings"",11,""notes""]",notes,string,Mechanically imported value mapping.
+"[""source_value_mappings"",11,""evidence_quote""]",evidence_quote,string,Total
+"[""source_value_mappings"",12]",12,object,
+"[""source_value_mappings"",12,""source_value""]",source_value,string,Male
+"[""source_value_mappings"",12,""source_context""]",source_context,string,XML ValueMappings for SEX
+"[""source_value_mappings"",12,""target_field""]",target_field,string,SEX
+"[""source_value_mappings"",12,""target_code""]",target_code,string,M
+"[""source_value_mappings"",12,""target_code_label""]",target_code_label,string,Male
+"[""source_value_mappings"",12,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",12,""target_standard""]",target_standard,string,CL_LAB_SEX
+"[""source_value_mappings"",12,""notes""]",notes,string,Mechanically imported value mapping.
+"[""source_value_mappings"",12,""evidence_quote""]",evidence_quote,string,Male
+"[""source_value_mappings"",13]",13,object,
+"[""source_value_mappings"",13,""source_value""]",source_value,string,Female
+"[""source_value_mappings"",13,""source_context""]",source_context,string,XML ValueMappings for SEX
+"[""source_value_mappings"",13,""target_field""]",target_field,string,SEX
+"[""source_value_mappings"",13,""target_code""]",target_code,string,F
+"[""source_value_mappings"",13,""target_code_label""]",target_code_label,string,Female
+"[""source_value_mappings"",13,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",13,""target_standard""]",target_standard,string,CL_LAB_SEX
+"[""source_value_mappings"",13,""notes""]",notes,string,Mechanically imported value mapping.
+"[""source_value_mappings"",13,""evidence_quote""]",evidence_quote,string,Female
+"[""source_value_mappings"",14]",14,object,
+"[""source_value_mappings"",14,""source_value""]",source_value,string,Data source
+"[""source_value_mappings"",14,""source_context""]",source_context,string,XML MetadataMappings
+"[""source_value_mappings"",14,""target_field""]",target_field,string,SOURCE
+"[""source_value_mappings"",14,""target_code""]",target_code,null,
+"[""source_value_mappings"",14,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",14,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",14,""target_standard""]",target_standard,string,MSD_LAB
+"[""source_value_mappings"",14,""notes""]",notes,string,Mechanically imported metadata mapping.
+"[""source_value_mappings"",14,""evidence_quote""]",evidence_quote,string,Data source
+"[""source_value_mappings"",15]",15,object,
+"[""source_value_mappings"",15,""source_value""]",source_value,string,Methodological notes
+"[""source_value_mappings"",15,""source_context""]",source_context,string,XML MetadataMappings
+"[""source_value_mappings"",15,""target_field""]",target_field,string,METHODOLOGY
+"[""source_value_mappings"",15,""target_code""]",target_code,null,
+"[""source_value_mappings"",15,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",15,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",15,""target_standard""]",target_standard,string,MSD_LAB
+"[""source_value_mappings"",15,""notes""]",notes,string,Mechanically imported metadata mapping.
+"[""source_value_mappings"",15,""evidence_quote""]",evidence_quote,string,Methodological notes
+"[""source_value_mappings"",16]",16,object,
+"[""source_value_mappings"",16,""source_value""]",source_value,string,Source URL
+"[""source_value_mappings"",16,""source_context""]",source_context,string,XML MetadataMappings
+"[""source_value_mappings"",16,""target_field""]",target_field,string,SOURCE_URL
+"[""source_value_mappings"",16,""target_code""]",target_code,null,
+"[""source_value_mappings"",16,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",16,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",16,""target_standard""]",target_standard,string,MSD_LAB
+"[""source_value_mappings"",16,""notes""]",notes,string,Mechanically imported metadata mapping.
+"[""source_value_mappings"",16,""evidence_quote""]",evidence_quote,string,Source URL
+"[""unresolved""]",unresolved,array,

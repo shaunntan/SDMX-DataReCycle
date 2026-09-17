@@ -1,0 +1,137 @@
+{
+  "artifact_type": "DSD_KEY_FAMILY",
+  "source_report": "02_sdmx_20_consumer_prices_full_case.xml",
+  "source_sha256": "e41976478f67b8426a33a2457c4705df89c2d00027855c16cb0eab12727f4e2e",
+  "principles_file": "03_DSD_KEY_FAMILY.txt",
+  "principles_sha256": "b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "data_structures": [
+    {
+      "dsd_id": "DSD_CPI",
+      "name": "Consumer Price Statistics Key Family",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "statistical_scope": "Consumer Price Statistics",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_CPI_FREQ",
+          "codelist_agency": null,
+          "codelist_id": "CL_CPI_FREQ",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Consumer Price Statistics Key Family"
+        },
+        {
+          "position": 2,
+          "concept_id": "REF_AREA",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_CPI_REF_AREA",
+          "codelist_agency": null,
+          "codelist_id": "CL_CPI_REF_AREA",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Consumer Price Statistics Key Family"
+        },
+        {
+          "position": 3,
+          "concept_id": "INDICATOR",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_CPI_INDICATOR",
+          "codelist_agency": null,
+          "codelist_id": "CL_CPI_INDICATOR",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Consumer Price Statistics Key Family"
+        },
+        {
+          "position": 4,
+          "concept_id": "PRODUCT_GROUP",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_CPI_PRODUCT_GROUP",
+          "codelist_agency": null,
+          "codelist_id": "CL_CPI_PRODUCT_GROUP",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Consumer Price Statistics Key Family"
+        },
+        {
+          "position": 5,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "String",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML TimeDimension.",
+          "evidence_quote": "Consumer Price Statistics Key Family"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Double",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Double",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML PrimaryMeasure.",
+          "evidence_quote": "Consumer Price Statistics Key Family"
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Coded by CL_CPI_UNIT",
+          "codelist_agency": null,
+          "codelist_id": "CL_CPI_UNIT",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "OBSERVATION",
+          "notes": "Mechanically extracted from XML Attribute.",
+          "evidence_quote": "Consumer Price Statistics Key Family"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "representation": "Coded by CL_CPI_OBS_STATUS",
+          "codelist_agency": null,
+          "codelist_id": "CL_CPI_OBS_STATUS",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "CONDITIONAL",
+          "attachment_level": "OBSERVATION",
+          "notes": "Mechanically extracted from XML Attribute.",
+          "evidence_quote": "Consumer Price Statistics Key Family"
+        }
+      ]
+    }
+  ],
+  "structure_separation_rationale": "Each distinct DSD/Key Family present in the XML is preserved as a separate structure."
+}

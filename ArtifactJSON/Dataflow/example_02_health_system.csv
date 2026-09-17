@@ -1,0 +1,67 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DATAFLOW
+"[""source_report""]",source_report,string,example_02_health_system.pdf
+"[""source_sha256""]",source_sha256,string,5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23
+"[""principles_file""]",principles_file,string,04_DATAFLOW.txt
+"[""principles_sha256""]",principles_sha256,string,0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Structural metadata artefact catalog
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Global Registry
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied SDMX Global Registry excerpt lists Data Structures and Dataflows among SDMX structural artefact categories, supporting the distinction between DSD/Key Family artefacts and Dataflow artefacts. It does not provide the formal SDMX 2.0 Information Model definition or a domain-specific health dataflow."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Concepts / cross-domain concepts
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX Glossary / Cross-Domain Concepts
+"[""standard_references"",1,""version""]",version,string,2.1
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied glossary excerpt supports reuse of SDMX cross-domain concepts and references common statistical concepts such as geographical coverage, reference area and observation status. This is relevant to the DSDs referenced by the dataflows, but it does not confirm any health-specific dataflow identifiers."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,SDMX 2.0 technical standard
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX 2.0 Information Model
+"[""standard_references"",2,""version""]",version,string,2.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,"The source was listed in the supplied principles as a core official source for SDMX 2.0 artefact definitions, including dataflows and Key Family mechanics. No fetched excerpt from the Information Model was supplied in the prompt, so the exact formal dataflow definition is not independently confirmed here."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,The report is synthetic and states that all records and values are synthetic; dataflow agency and identifiers are therefore proposed local catalogue artefacts rather than confirmed production identifiers.
+"[""limitations"",1]",1,string,No existing official health-system dataflow identifiers were supplied or confirmed for the Synthetic Public Health Agency.
+"[""limitations"",2]",2,string,The exact SDMX 2.0 Information Model text defining Dataflow was not included in the fetched official-source evidence; the modelling follows the supplied DATAFLOW principles and the accepted DSD artefact.
+"[""limitations"",3]",3,string,Coverage is inferred from the report tables and methodology; the report does not state whether the shown areas and ownership categories are exhaustive for the agency's full statistical programme.
+"[""limitations"",4]",4,string,"Cause labels resemble broad ICD families but no ICD version is confirmed, so the mortality dataflow references the local broad-cause DSD rather than an ICD-based structure."
+"[""limitations"",5]",5,string,Private-sector bed reporting is incomplete in 2024 and the private for-profit 2024 bed value is estimated; this is a data-quality caveat for the hospital-bed dataflow.
+"[""dataflows""]",dataflows,array,
+"[""dataflows"",0]",0,object,
+"[""dataflows"",0,""dataflow_id""]",dataflow_id,string,DF_HEALTH_REGISTERED_DEATHS
+"[""dataflows"",0,""name""]",name,string,"Registered deaths by area, cause and age"
+"[""dataflows"",0,""agency_id""]",agency_id,string,SYN_PHA
+"[""dataflows"",0,""version""]",version,string,1.0
+"[""dataflows"",0,""dsd_id""]",dsd_id,string,KF_HEALTH_REGISTERED_DEATHS
+"[""dataflows"",0,""dsd_agency_id""]",dsd_agency_id,string,SYN_PHA
+"[""dataflows"",0,""dsd_version""]",dsd_version,string,1.0
+"[""dataflows"",0,""description""]",description,string,"Logical dataset for synthetic registered death event counts during the calendar year, classified by reference area, broad underlying cause, age group and time period, with unit and observation status attributes as defined in the referenced Key Family."
+"[""dataflows"",0,""coverage""]",coverage,string,"Synthetic registered deaths shown for Northland, Centralia and South Coast; broad causes Circulatory diseases and Neoplasms; age groups 45-64 and 65+; annual observations for 2023 and 2024. Source described as Synthetic Civil Registration System. 2024 death counts are provisional."
+"[""dataflows"",0,""evidence_quote""]",evidence_quote,string,Deaths are synthetic registered events classified by underlying cause and age group.
+"[""dataflows"",1]",1,object,
+"[""dataflows"",1,""dataflow_id""]",dataflow_id,string,DF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""dataflows"",1,""name""]",name,string,Available hospital beds by ownership
+"[""dataflows"",1,""agency_id""]",agency_id,string,SYN_PHA
+"[""dataflows"",1,""version""]",version,string,1.0
+"[""dataflows"",1,""dsd_id""]",dsd_id,string,KF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""dataflows"",1,""dsd_agency_id""]",dsd_agency_id,string,SYN_PHA
+"[""dataflows"",1,""dsd_version""]",dsd_version,string,1.0
+"[""dataflows"",1,""description""]",description,string,"Logical dataset for year-end stock counts of available staffed hospital beds collected from facilities, classified by ownership category and time period, with unit and observation status attributes as defined in the referenced Key Family."
+"[""dataflows"",1,""coverage""]",coverage,string,"Synthetic facility bed counts by ownership categories Public, Private non-profit and Private for-profit; annual observations for 2023 and 2024; stock measured as beds available on 31 December. Source described as Synthetic Facility Census. Private-sector bed reporting is incomplete in 2024 and private for-profit 2024 values are estimated."
+"[""dataflows"",1,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.

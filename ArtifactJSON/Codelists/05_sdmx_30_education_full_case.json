@@ -1,0 +1,219 @@
+{
+  "artifact_type": "CODELISTS",
+  "source_report": "05_sdmx_30_education_full_case.xml",
+  "source_sha256": "bde4885296220119913bea8c4105b0fdb48a58fb35d1bb47a373cc1eaf4c19dd",
+  "principles_file": "02_CODELISTS.txt",
+  "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "codelists": [
+    {
+      "codelist_id": "CL_EDU_FREQ",
+      "name": "Frequency",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "A",
+          "name": "Annual",
+          "definition": "Annual",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Annual",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_EDU_REF_AREA",
+      "name": "Reference area",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "KR",
+          "name": "Korea, Republic of",
+          "definition": "Korea, Republic of",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Korea, Republic of",
+          "local_creation_justification": null
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "definition": "Japan",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Japan",
+          "local_creation_justification": null
+        },
+        {
+          "code": "US",
+          "name": "United States",
+          "definition": "United States",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "United States",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_EDU_INDICATOR",
+      "name": "Education indicator",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "ENROL",
+          "name": "Enrolment",
+          "definition": "Enrolment",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Enrolment",
+          "local_creation_justification": null
+        },
+        {
+          "code": "GRAD",
+          "name": "Graduates",
+          "definition": "Graduates",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Graduates",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_EDU_EDU_LEVEL",
+      "name": "Education level",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "PRI",
+          "name": "Primary",
+          "definition": "Primary",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Primary",
+          "local_creation_justification": null
+        },
+        {
+          "code": "LSEC",
+          "name": "Lower secondary",
+          "definition": "Lower secondary",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Lower secondary",
+          "local_creation_justification": null
+        },
+        {
+          "code": "USEC",
+          "name": "Upper secondary",
+          "definition": "Upper secondary",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Upper secondary",
+          "local_creation_justification": null
+        },
+        {
+          "code": "TER",
+          "name": "Tertiary",
+          "definition": "Tertiary",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Tertiary",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_EDU_UNIT",
+      "name": "Unit of measure",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "PS",
+          "name": "Persons",
+          "definition": "Persons",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Persons",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_EDU_OBS_STATUS",
+      "name": "Observation status",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "A",
+          "name": "Normal value",
+          "definition": "Normal value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Normal value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "E",
+          "name": "Estimated value",
+          "definition": "Estimated value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Estimated value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "P",
+          "name": "Provisional value",
+          "definition": "Provisional value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Provisional value",
+          "local_creation_justification": null
+        }
+      ]
+    }
+  ]
+}

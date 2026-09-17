@@ -1,0 +1,246 @@
+{
+  "artifact_type": "CODELISTS",
+  "source_report": "06_sdmx_30_energy_full_case.xml",
+  "source_sha256": "59417aaf0971ab0f67d10c74607096ed92ede9e93fe55d656093e93631c5aeb8",
+  "principles_file": "02_CODELISTS.txt",
+  "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "codelists": [
+    {
+      "codelist_id": "CL_ENE_FREQ",
+      "name": "Frequency",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "M",
+          "name": "Monthly",
+          "definition": "Monthly",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Monthly",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_ENE_REF_AREA",
+      "name": "Reference area",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "KR",
+          "name": "Korea, Republic of",
+          "definition": "Korea, Republic of",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Korea, Republic of",
+          "local_creation_justification": null
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "definition": "Japan",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Japan",
+          "local_creation_justification": null
+        },
+        {
+          "code": "US",
+          "name": "United States",
+          "definition": "United States",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "United States",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_ENE_INDICATOR",
+      "name": "Energy indicator",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "ELEC_GEN",
+          "name": "Electricity generation",
+          "definition": "Electricity generation",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Electricity generation",
+          "local_creation_justification": null
+        },
+        {
+          "code": "ELEC_CONS",
+          "name": "Electricity consumption",
+          "definition": "Electricity consumption",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Electricity consumption",
+          "local_creation_justification": null
+        },
+        {
+          "code": "RENEW_SHARE",
+          "name": "Renewable share of generation",
+          "definition": "Renewable share of generation",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Renewable share of generation",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_ENE_ENERGY_SOURCE",
+      "name": "Energy source",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "ALL",
+          "name": "All sources",
+          "definition": "All sources",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "All sources",
+          "local_creation_justification": null
+        },
+        {
+          "code": "COAL",
+          "name": "Coal",
+          "definition": "Coal",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Coal",
+          "local_creation_justification": null
+        },
+        {
+          "code": "GAS",
+          "name": "Natural gas",
+          "definition": "Natural gas",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Natural gas",
+          "local_creation_justification": null
+        },
+        {
+          "code": "NUCLEAR",
+          "name": "Nuclear",
+          "definition": "Nuclear",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Nuclear",
+          "local_creation_justification": null
+        },
+        {
+          "code": "RENEW",
+          "name": "Renewables",
+          "definition": "Renewables",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Renewables",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_ENE_UNIT",
+      "name": "Unit of measure",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "GWH",
+          "name": "Gigawatt-hours",
+          "definition": "Gigawatt-hours",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Gigawatt-hours",
+          "local_creation_justification": null
+        },
+        {
+          "code": "PC",
+          "name": "Percent",
+          "definition": "Percent",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Percent",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_ENE_OBS_STATUS",
+      "name": "Observation status",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "A",
+          "name": "Normal value",
+          "definition": "Normal value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Normal value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "E",
+          "name": "Estimated value",
+          "definition": "Estimated value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Estimated value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "P",
+          "name": "Provisional value",
+          "definition": "Provisional value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Provisional value",
+          "local_creation_justification": null
+        }
+      ]
+    }
+  ]
+}

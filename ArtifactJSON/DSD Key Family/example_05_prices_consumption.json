@@ -1,0 +1,297 @@
+{
+  "artifact_type": "DSD / Key Family",
+  "source_report": "example_05_prices_consumption.pdf",
+  "source_sha256": "71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5",
+  "principles_file": "03_DSD_KEY_FAMILY.txt",
+  "principles_sha256": "b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist catalog",
+      "artifact_id": "SDMX Global Registry codelists catalog",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied registry excerpt shows the official SDMX registry interface includes a searchable Codelists area and structure export functions, but it does not confirm any specific codelist entry, agency, version, or code mapping for this report.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / Cross-domain concept guidance",
+      "artifact_id": "SDMX Glossary 2.1",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The supplied glossary excerpt states that cross-domain concepts support reuse across organisations and gives Observation Status as an example with concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. The excerpt does not confirm the exact code mappings for the report values Final or Provisional, and it does not support treating Survey estimate as an observation-status code.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_FREQ",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied registry excerpt confirms the existence of a registry codelist search/catalog, but it does not itself confirm the CL_FREQ item, its maintenance agency, version, or codes. CL_FREQ remains a candidate standard codelist to verify before production use.",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic code reference",
+      "artifact_id": "UN M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The supplied UN M49 excerpt shows country and area entries with numeric and alpha codes, but the report does not state a reference area, so no REF_AREA codelist is applied in the DSDs.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNSD / SDMX candidate",
+      "artifact_type": "Classification / codelist candidate",
+      "artifact_id": "COICOP / CL_COICOP_2018",
+      "version": "not confirmed",
+      "url": "https://unstats.un.org/unsd/classifications/coicop",
+      "evidence": "The supplied package references COICOP as the relevant consumption classification source, but no supplied external evidence confirms the report's consumption divisions correspond to a particular COICOP revision or codelist version.",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Concept and codelist candidate",
+      "artifact_id": "DEG_URB / CL_DEG_URB",
+      "version": "not confirmed",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied shared reference catalog lists DEG_URB as a common SDMX dimension candidate and CL_DEG_URB as a standard source to check. The supplied official registry excerpt does not confirm the exact codelist entry, version, definitions, or that the report's Urban/Rural labels follow degree-of-urbanisation semantics.",
+      "verification_status": "UNVERIFIED"
+    }
+  ],
+  "limitations": [
+    "The report does not state a reference area or country; REF_AREA is therefore not included, and any production implementation should add it if the reporting geography is later supplied.",
+    "Consumption divisions are not mapped to COICOP because the report explicitly says the revision is not confirmed.",
+    "The report does not name the local currency, so the household spending unit must remain a local-currency unit without ISO 4217 currency coding.",
+    "Exact SDMX codelist versions and code mappings for FREQ, UNIT_MEASURE and OBS_STATUS were not confirmed from the supplied external evidence.",
+    "The report statuses Final and Provisional are retained as source/local CPI status values; mapping to standard SDMX observation-status codes requires separate verification.",
+    "The household status value Survey estimate is modelled as an estimation-type qualifier rather than OBS_STATUS because it is constant in the shown household table and describes the survey-estimate nature of the data.",
+    "Urban/Rural residence is not mapped to SDMX DEG_URB / CL_DEG_URB because the report does not define the residence classification or confirm degree-of-urbanisation semantics; mapping requires source-institution confirmation.",
+    "Household expenditure quintile definitions are only described as being within the synthetic survey distribution; exact cut-off methodology is not included in the DSD.",
+    "All records and values are synthetic, limiting the applicability of the structures as production statistical artefacts without institutional validation."
+  ],
+  "data_structures": [
+    {
+      "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+      "name": "Consumer price index by consumption division and month",
+      "agency_id": "Synthetic_National_Statistics_Institute",
+      "version": "1.0",
+      "statistical_scope": "Monthly CPI fixed-basket index by consumption division, measuring price change relative to 2023=100.",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Coded frequency; candidate use of SDMX CL_FREQ",
+          "codelist_agency": "SDMX",
+          "codelist_id": "CL_FREQ",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Frequency is monthly for this structure. Exact CL_FREQ version and code mapping are not confirmed in supplied external evidence.",
+          "evidence_quote": "The CPI is a monthly fixed-basket index classified by consumption division."
+        },
+        {
+          "position": 2,
+          "concept_id": "CONSUMPTION_DIVISION",
+          "role": "DIMENSION",
+          "representation": "Coded local consumption division list",
+          "codelist_agency": "Synthetic_National_Statistics_Institute",
+          "codelist_id": "CL_SYNTH_CONSUMPTION_DIVISION",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Local dimension because COICOP resemblance is noted but revision is not confirmed. Source values include Food and non-alcoholic beverages, Housing and utilities, and Transport.",
+          "evidence_quote": "Consumption divisions resemble COICOP but the revision is not confirmed."
+        },
+        {
+          "position": 3,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "Monthly time period in YYYY-MM form",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "TimePeriod",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Time is represented explicitly as the observation month.",
+          "evidence_quote": "Table 1. Consumer price index by division and month"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Numeric decimal index value",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Decimal",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Primary measure holds the CPI index value.",
+          "evidence_quote": "CPI measures price change relative to 2023=100."
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Coded local unit list with plain index unit",
+          "codelist_agency": "Synthetic_National_Statistics_Institute",
+          "codelist_id": "CL_SYNTH_UNIT_MEASURE",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "Unit is modelled as a plain index unit for parsimony and reuse; the base period qualifier is held separately in BASE_PERIOD. No authoritative unit codelist mapping is confirmed from supplied evidence.",
+          "evidence_quote": "Index, 2023=100"
+        },
+        {
+          "position": null,
+          "concept_id": "BASE_PERIOD",
+          "role": "ATTRIBUTE",
+          "representation": "Uncoded reference/base period text",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "Base period qualifies the index and is constant for the CPI structure. This avoids making UNIT_MEASURE carry both the unit and the base-period qualifier.",
+          "evidence_quote": "CPI measures price change relative to 2023=100."
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "representation": "Coded local observation status list; standard OBS_STATUS concept candidate",
+          "codelist_agency": "Synthetic_National_Statistics_Institute",
+          "codelist_id": "CL_SYNTH_CPI_OBS_STATUS",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "OBSERVATION",
+          "notes": "Source statuses vary by observation month. Mapping of Final and Provisional to SDMX CL_OBS_STATUS is not confirmed from supplied external evidence.",
+          "evidence_quote": "Footnote: April 2025 indices are provisional."
+        }
+      ]
+    },
+    {
+      "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+      "name": "Mean household spending by residence and expenditure quintile",
+      "agency_id": "Synthetic_National_Statistics_Institute",
+      "version": "1.0",
+      "statistical_scope": "Annual survey estimate of mean monthly consumption expenditure per household by residence and expenditure quintile.",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Coded frequency; candidate use of SDMX CL_FREQ",
+          "codelist_agency": "SDMX",
+          "codelist_id": "CL_FREQ",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Frequency is annual for this survey structure. Exact CL_FREQ version and code mapping are not confirmed in supplied external evidence.",
+          "evidence_quote": "Household spending is an annual survey estimate by residence and expenditure quintile and is\nnot a CPI observation."
+        },
+        {
+          "position": 2,
+          "concept_id": "RESIDENCE",
+          "role": "DIMENSION",
+          "representation": "Coded local residence classification",
+          "codelist_agency": "Synthetic_National_Statistics_Institute",
+          "codelist_id": "CL_SYNTH_RESIDENCE",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Residence is a statistical breakdown for the household spending observations. Source values shown are Urban and Rural. This is retained as a local dimension rather than mapped to SDMX DEG_URB / CL_DEG_URB because the report does not define the residence classification or confirm degree-of-urbanisation semantics.",
+          "evidence_quote": "Table 2. Mean household spending by residence and quintile"
+        },
+        {
+          "position": 3,
+          "concept_id": "EXPENDITURE_QUINTILE",
+          "role": "DIMENSION",
+          "representation": "Coded local expenditure quintile list",
+          "codelist_agency": "Synthetic_National_Statistics_Institute",
+          "codelist_id": "CL_SYNTH_EXPENDITURE_QUINTILE",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "The report only shows lowest and highest quintile values; the structure represents the expenditure-quintile breakdown generally but local code definitions must preserve the source survey definition.",
+          "evidence_quote": "Footnote: Quintiles are defined within the synthetic survey distribution."
+        },
+        {
+          "position": 4,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "Annual time period in YYYY form",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "TimePeriod",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Time is represented explicitly as the survey year.",
+          "evidence_quote": "Year"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Numeric decimal monetary value",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Decimal",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Primary measure holds mean monthly consumption expenditure per household.",
+          "evidence_quote": "Household spending is mean monthly consumption expenditure per household."
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Coded local unit list",
+          "codelist_agency": "Synthetic_National_Statistics_Institute",
+          "codelist_id": "CL_SYNTH_UNIT_MEASURE",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "The unit is constant in the household spending table. The report does not name the local currency, so ISO 4217 currency coding is not possible from supplied evidence.",
+          "evidence_quote": "Local currency per household per month"
+        },
+        {
+          "position": null,
+          "concept_id": "ESTIMATION_TYPE",
+          "role": "ATTRIBUTE",
+          "representation": "Coded local estimation type list",
+          "codelist_agency": "Synthetic_National_Statistics_Institute",
+          "codelist_id": "CL_SYNTH_ESTIMATION_TYPE",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "The source value Survey estimate is treated as a dataset-level estimation-type qualifier, not as OBS_STATUS, because the report describes household spending generally as a survey estimate and all displayed rows share this qualifier.",
+          "evidence_quote": "Survey estimate"
+        }
+      ]
+    }
+  ],
+  "structure_separation_rationale": "Two DSDs are retained because the report distinguishes CPI from household spending and states that household spending is not a CPI observation. The CPI structure is monthly, indexed to 2023=100 and classified by consumption division; the household spending structure is annual, monetary, survey-based and broken down by residence and expenditure quintile."
+}

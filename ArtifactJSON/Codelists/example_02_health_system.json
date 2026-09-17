@@ -1,0 +1,273 @@
+{
+  "artifact_type": "CODELISTS",
+  "source_report": "example_02_health_system.pdf",
+  "source_sha256": "5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23",
+  "principles_file": "02_CODELISTS.txt",
+  "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist catalog",
+      "artifact_id": "SDMX Global Registry - Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The fetched SDMX Global Registry page is a codelist catalog with search, latest version, codelist details, references, changelog, and export functions. The supplied excerpt does not confirm specific code memberships or versions for the health report categories.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic code system",
+      "artifact_id": "UN M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The fetched UN M49 excerpt shows country and area names with numeric and alpha codes. The supplied evidence does not contain Northland, Centralia, or South Coast, so the report's synthetic areas are not confirmed as UN M49 areas.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_OBS_STATUS",
+      "version": "not confirmed",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The shared SDMX guidance identifies CL_OBS_STATUS as the standard observation status codelist and the fetched registry page confirms that the registry provides codelist details. However, the supplied external evidence does not provide the actual CL_OBS_STATUS code list or code definitions, so mappings for Final, Provisional, and Estimated remain candidate mappings only.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_AREA",
+      "version": "not confirmed",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The shared SDMX guidance identifies CL_AREA as a reference area codelist to check first. The supplied external evidence does not confirm whether the synthetic report areas exist in CL_AREA or any domain area list.",
+      "verification_status": "CANDIDATE"
+    }
+  ],
+  "limitations": [
+    "The report is synthetic; local codelists are proposed from report categories and should be governed before production use.",
+    "Cause labels resemble ICD families, but the report explicitly states that no ICD version is confirmed; therefore cause codes are local and not mapped to ICD.",
+    "The supplied external evidence confirms the existence of the SDMX registry and UN M49 source, but not specific SDMX codelist versions or code-level definitions for all candidate mappings.",
+    "The report does not state an authoritative code system for area, age group, ownership, unit measure, cause, or status categories.",
+    "Private-sector bed reporting is incomplete in 2024, which affects interpretation of hospital-bed observations but does not create a separate codelist code."
+  ],
+  "codelists": [
+    {
+      "codelist_id": "CL_HEALTH_AREA_LOCAL",
+      "name": "Synthetic health reporting areas",
+      "agency_id": "SYNTH_PH_AGENCY",
+      "version": "1.0-proposed",
+      "source_url": "example_02_health_system.pdf",
+      "maintenance_status": "PROPOSED_LOCAL",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local codelist for the synthetic areas appearing in the registered deaths table. Reuse of UN M49, ISO 3166, or SDMX CL_AREA is not confirmed from the supplied evidence.",
+      "codes": [
+        {
+          "code": "NORTHLAND",
+          "name": "Northland",
+          "definition": "Synthetic reporting area used in the registered deaths table.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Northland",
+          "local_creation_justification": "The report contains this area as a statistical reporting category, and no authoritative external area code for it is confirmed in the supplied evidence."
+        },
+        {
+          "code": "CENTRALIA",
+          "name": "Centralia",
+          "definition": "Synthetic reporting area used in the registered deaths table.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Centralia",
+          "local_creation_justification": "The report contains this area as a statistical reporting category, and no authoritative external area code for it is confirmed in the supplied evidence."
+        },
+        {
+          "code": "SOUTH_COAST",
+          "name": "South Coast",
+          "definition": "Synthetic reporting area used in the registered deaths table.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "South Coast",
+          "local_creation_justification": "The report contains this area as a statistical reporting category, and no authoritative external area code for it is confirmed in the supplied evidence."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_HEALTH_CAUSE_LOCAL",
+      "name": "Underlying cause categories for registered deaths",
+      "agency_id": "SYNTH_PH_AGENCY",
+      "version": "1.0-proposed",
+      "source_url": "example_02_health_system.pdf",
+      "maintenance_status": "PROPOSED_LOCAL",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local cause codelist for the mortality structure only. The report warns that labels resemble ICD families but gives no confirmed ICD version, so ICD codes are not reused.",
+      "codes": [
+        {
+          "code": "CIRCULATORY_DISEASES",
+          "name": "Circulatory diseases",
+          "definition": "Report category for registered deaths classified by underlying cause; not confirmed as an ICD category or ICD-version-specific grouping.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Circulatory diseases",
+          "local_creation_justification": "The report states: \"Cause labels resemble broad ICD families but no ICD version is confirmed.\""
+        },
+        {
+          "code": "NEOPLASMS",
+          "name": "Neoplasms",
+          "definition": "Report category for registered deaths classified by underlying cause; not confirmed as an ICD category or ICD-version-specific grouping.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Neoplasms",
+          "local_creation_justification": "The report states: \"Cause labels resemble broad ICD families but no ICD version is confirmed.\""
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_HEALTH_AGE_GROUP_LOCAL",
+      "name": "Age groups for registered deaths",
+      "agency_id": "SYNTH_PH_AGENCY",
+      "version": "1.0-proposed",
+      "source_url": "example_02_health_system.pdf",
+      "maintenance_status": "PROPOSED_LOCAL",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local codelist for the age groups used in the mortality structure. No domain standard age codelist is confirmed by the supplied evidence, and exact ages are not reported.",
+      "codes": [
+        {
+          "code": "Y45T64",
+          "name": "45-64",
+          "definition": "Persons aged from 45 through 64 years, as represented by the report's age-group label.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "45-64",
+          "local_creation_justification": "The report contains this age group as a statistical category, and no semantically equivalent authoritative age-group code is confirmed in the supplied evidence."
+        },
+        {
+          "code": "Y65_PLUS",
+          "name": "65+",
+          "definition": "Persons aged 65 years and over, as represented by the report's age-group label.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "65+",
+          "local_creation_justification": "The report contains this age group as a statistical category, and no semantically equivalent authoritative age-group code is confirmed in the supplied evidence."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_HEALTH_OWNERSHIP_LOCAL",
+      "name": "Hospital ownership categories",
+      "agency_id": "SYNTH_PH_AGENCY",
+      "version": "1.0-proposed",
+      "source_url": "example_02_health_system.pdf",
+      "maintenance_status": "PROPOSED_LOCAL",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local codelist for ownership categories in the hospital beds structure. These categories should not be applied to the mortality structure unless separately justified.",
+      "codes": [
+        {
+          "code": "PUBLIC",
+          "name": "Public",
+          "definition": "Hospital ownership category labelled Public in the available hospital beds table.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Public",
+          "local_creation_justification": "The report contains this ownership category, and no authoritative ownership classification is confirmed in the supplied evidence."
+        },
+        {
+          "code": "PRIVATE_NON_PROFIT",
+          "name": "Private non-profit",
+          "definition": "Hospital ownership category labelled Private non-profit in the available hospital beds table.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Private non-profit",
+          "local_creation_justification": "The report contains this ownership category, and no authoritative ownership classification is confirmed in the supplied evidence."
+        },
+        {
+          "code": "PRIVATE_FOR_PROFIT",
+          "name": "Private for-profit",
+          "definition": "Hospital ownership category labelled Private for-profit in the available hospital beds table.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Private for-profit",
+          "local_creation_justification": "The report contains this ownership category, and no authoritative ownership classification is confirmed in the supplied evidence."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_HEALTH_UNIT_MEASURE_LOCAL",
+      "name": "Units of measure in the health report",
+      "agency_id": "SYNTH_PH_AGENCY",
+      "version": "1.0-proposed",
+      "source_url": "example_02_health_system.pdf",
+      "maintenance_status": "PROPOSED_LOCAL",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local unit codelist for the two units appearing in the report. A domain unit codelist should be searched before production implementation.",
+      "codes": [
+        {
+          "code": "DEATHS",
+          "name": "Deaths",
+          "definition": "Count of registered death events during the calendar year.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Deaths",
+          "local_creation_justification": "The report uses this unit for registered deaths, and no authoritative domain unit code is confirmed in the supplied evidence."
+        },
+        {
+          "code": "BEDS",
+          "name": "Beds",
+          "definition": "Count of staffed beds available on 31 December.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Beds",
+          "local_creation_justification": "The report uses this unit for available hospital beds, and no authoritative domain unit code is confirmed in the supplied evidence."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_HEALTH_OBS_STATUS_LOCAL",
+      "name": "Observation status labels in the health report",
+      "agency_id": "SYNTH_PH_AGENCY",
+      "version": "1.0-proposed",
+      "source_url": "example_02_health_system.pdf",
+      "maintenance_status": "CANDIDATE_MAPPING",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local representation of the status labels appearing in the report. Mapping to SDMX CL_OBS_STATUS is plausible but not confirmed because supplied external evidence does not include code-level CL_OBS_STATUS definitions.",
+      "codes": [
+        {
+          "code": "FINAL",
+          "name": "Final",
+          "definition": "Observation reported as final in the source table.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Final",
+          "local_creation_justification": "The report contains this status label; code-level mapping to an authoritative observation-status code is not confirmed in the supplied evidence."
+        },
+        {
+          "code": "PROVISIONAL",
+          "name": "Provisional",
+          "definition": "Death-count observation subject to revision when late registrations arrive.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Provisional",
+          "local_creation_justification": "The report contains this status label and states: \"Provisional death counts are revised when late registrations arrive.\""
+        },
+        {
+          "code": "ESTIMATED",
+          "name": "Estimated",
+          "definition": "Hospital-bed observation reported as estimated and replaced after facility validation.",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Estimated",
+          "local_creation_justification": "The report contains this status label and states: \"Estimated bed counts are replaced after facility validation.\""
+        }
+      ]
+    }
+  ]
+}

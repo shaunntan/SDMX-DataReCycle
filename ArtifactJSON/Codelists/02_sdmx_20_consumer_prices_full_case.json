@@ -1,0 +1,219 @@
+{
+  "artifact_type": "CODELISTS",
+  "source_report": "02_sdmx_20_consumer_prices_full_case.xml",
+  "source_sha256": "e41976478f67b8426a33a2457c4705df89c2d00027855c16cb0eab12727f4e2e",
+  "principles_file": "02_CODELISTS.txt",
+  "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "codelists": [
+    {
+      "codelist_id": "CL_CPI_FREQ",
+      "name": "Frequency",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "M",
+          "name": "Monthly",
+          "definition": "Monthly",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Monthly",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_CPI_REF_AREA",
+      "name": "Reference area",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "KR",
+          "name": "Korea, Republic of",
+          "definition": "Korea, Republic of",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Korea, Republic of",
+          "local_creation_justification": null
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "definition": "Japan",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Japan",
+          "local_creation_justification": null
+        },
+        {
+          "code": "US",
+          "name": "United States",
+          "definition": "United States",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "United States",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_CPI_INDICATOR",
+      "name": "Price indicator",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "CPI_INDEX",
+          "name": "Consumer price index",
+          "definition": "Consumer price index",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Consumer price index",
+          "local_creation_justification": null
+        },
+        {
+          "code": "CPI_YOY",
+          "name": "Year-on-year CPI change",
+          "definition": "Year-on-year CPI change",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Year-on-year CPI change",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_CPI_PRODUCT_GROUP",
+      "name": "Product group",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "ALL",
+          "name": "All-items CPI",
+          "definition": "All-items CPI",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "All-items CPI",
+          "local_creation_justification": null
+        },
+        {
+          "code": "FOOD",
+          "name": "Food and non-alcoholic beverages",
+          "definition": "Food and non-alcoholic beverages",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Food and non-alcoholic beverages",
+          "local_creation_justification": null
+        },
+        {
+          "code": "HOUSING",
+          "name": "Housing and utilities",
+          "definition": "Housing and utilities",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Housing and utilities",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_CPI_UNIT",
+      "name": "Unit of measure",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "IDX",
+          "name": "Index",
+          "definition": "Index",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Index",
+          "local_creation_justification": null
+        },
+        {
+          "code": "PC",
+          "name": "Percent",
+          "definition": "Percent",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Percent",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_CPI_OBS_STATUS",
+      "name": "Observation status",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "A",
+          "name": "Normal value",
+          "definition": "Normal value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Normal value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "E",
+          "name": "Estimated value",
+          "definition": "Estimated value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Estimated value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "P",
+          "name": "Provisional value",
+          "definition": "Provisional value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Provisional value",
+          "local_creation_justification": null
+        }
+      ]
+    }
+  ]
+}

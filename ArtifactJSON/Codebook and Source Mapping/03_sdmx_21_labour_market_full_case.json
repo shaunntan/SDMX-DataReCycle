@@ -1,0 +1,301 @@
+{
+  "artifact_type": "CODEBOOK_AND_SOURCE_MAPPING",
+  "source_report": "03_sdmx_21_labour_market_full_case.xml",
+  "source_sha256": "51affdd8ac40d4b0b42f1debed99a36090d477e85d40a3b35dd62c2f65868752",
+  "principles_file": "08_CODEBOOK_AND_SOURCE_MAPPING.txt",
+  "principles_sha256": "999d6556922403d8315a0a0558da149e83e7c3b8f29779d9d346959966d76b74",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "fields": [
+    {
+      "field_id": "FREQ",
+      "name": "Frequency",
+      "definition": "Field FREQ mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_LAB_FREQ",
+      "codelist_id": "CL_LAB_FREQ",
+      "required": true,
+      "example": "M",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "REF_AREA",
+      "name": "Reference area",
+      "definition": "Field REF_AREA mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_LAB_REF_AREA",
+      "codelist_id": "CL_LAB_REF_AREA",
+      "required": true,
+      "example": "KR",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "INDICATOR",
+      "name": "Labour-market indicator",
+      "definition": "Field INDICATOR mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_LAB_INDICATOR",
+      "codelist_id": "CL_LAB_INDICATOR",
+      "required": true,
+      "example": "UNE_RATE",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "SEX",
+      "name": "Sex",
+      "definition": "Field SEX mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_LAB_SEX",
+      "codelist_id": "CL_LAB_SEX",
+      "required": true,
+      "example": "_T",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "TIME_PERIOD",
+      "name": "Time period",
+      "definition": "Field TIME_PERIOD mechanically imported from the XML template.",
+      "role": "TIME",
+      "representation": "String",
+      "codelist_id": null,
+      "required": true,
+      "example": "2026-01",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "OBS_VALUE",
+      "name": "Observation value",
+      "definition": "Field OBS_VALUE mechanically imported from the XML template.",
+      "role": "MEASURE",
+      "representation": "Number",
+      "codelist_id": null,
+      "required": true,
+      "example": "3.7",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "UNIT_MEASURE",
+      "name": "Unit of measure",
+      "definition": "Field UNIT_MEASURE mechanically imported from the XML template.",
+      "role": "ATTRIBUTE",
+      "representation": "Coded by CL_LAB_UNIT",
+      "codelist_id": "CL_LAB_UNIT",
+      "required": true,
+      "example": "PC",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "OBS_STATUS",
+      "name": "Observation status",
+      "definition": "Field OBS_STATUS mechanically imported from the XML template.",
+      "role": "ATTRIBUTE",
+      "representation": "Coded by CL_LAB_OBS_STATUS",
+      "codelist_id": "CL_LAB_OBS_STATUS",
+      "required": false,
+      "example": "A",
+      "source_standard": "SDMX XML 2.1",
+      "source_url": "not stated in XML"
+    }
+  ],
+  "source_value_mappings": [
+    {
+      "source_value": "Country",
+      "source_context": "XML FieldMappings",
+      "target_field": "REF_AREA",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Country"
+    },
+    {
+      "source_value": "Indicator",
+      "source_context": "XML FieldMappings",
+      "target_field": "INDICATOR",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Indicator"
+    },
+    {
+      "source_value": "Sex",
+      "source_context": "XML FieldMappings",
+      "target_field": "SEX",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Sex"
+    },
+    {
+      "source_value": "Period",
+      "source_context": "XML FieldMappings",
+      "target_field": "TIME_PERIOD",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Period"
+    },
+    {
+      "source_value": "Rate",
+      "source_context": "XML FieldMappings",
+      "target_field": "OBS_VALUE",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Rate"
+    },
+    {
+      "source_value": "Status",
+      "source_context": "XML FieldMappings",
+      "target_field": "OBS_STATUS",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Status"
+    },
+    {
+      "source_value": "Korea, Republic of",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "KR",
+      "target_code_label": "Korea, Republic of",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_LAB_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Korea, Republic of"
+    },
+    {
+      "source_value": "Japan",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "JP",
+      "target_code_label": "Japan",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_LAB_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Japan"
+    },
+    {
+      "source_value": "United States",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "US",
+      "target_code_label": "United States",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_LAB_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "United States"
+    },
+    {
+      "source_value": "Unemployment rate",
+      "source_context": "XML ValueMappings for INDICATOR",
+      "target_field": "INDICATOR",
+      "target_code": "UNE_RATE",
+      "target_code_label": "Unemployment rate",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_LAB_INDICATOR",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Unemployment rate"
+    },
+    {
+      "source_value": "Employment rate",
+      "source_context": "XML ValueMappings for INDICATOR",
+      "target_field": "INDICATOR",
+      "target_code": "EMP_RATE",
+      "target_code_label": "Employment rate",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_LAB_INDICATOR",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Employment rate"
+    },
+    {
+      "source_value": "Total",
+      "source_context": "XML ValueMappings for SEX",
+      "target_field": "SEX",
+      "target_code": "_T",
+      "target_code_label": "Total",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_LAB_SEX",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Total"
+    },
+    {
+      "source_value": "Male",
+      "source_context": "XML ValueMappings for SEX",
+      "target_field": "SEX",
+      "target_code": "M",
+      "target_code_label": "Male",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_LAB_SEX",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Male"
+    },
+    {
+      "source_value": "Female",
+      "source_context": "XML ValueMappings for SEX",
+      "target_field": "SEX",
+      "target_code": "F",
+      "target_code_label": "Female",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_LAB_SEX",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Female"
+    },
+    {
+      "source_value": "Data source",
+      "source_context": "XML MetadataMappings",
+      "target_field": "SOURCE",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_LAB",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Data source"
+    },
+    {
+      "source_value": "Methodological notes",
+      "source_context": "XML MetadataMappings",
+      "target_field": "METHODOLOGY",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_LAB",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Methodological notes"
+    },
+    {
+      "source_value": "Source URL",
+      "source_context": "XML MetadataMappings",
+      "target_field": "SOURCE_URL",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_LAB",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Source URL"
+    }
+  ],
+  "unresolved": []
+}

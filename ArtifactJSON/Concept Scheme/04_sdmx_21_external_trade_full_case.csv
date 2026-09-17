@@ -1,0 +1,151 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CONCEPT_SCHEME
+"[""source_report""]",source_report,string,04_sdmx_21_external_trade_full_case.xml
+"[""source_sha256""]",source_sha256,string,d67c55d4a879120a8b471479157d48475620e2b1f1536f3193f84677503eb720
+"[""principles_file""]",principles_file,string,01_CONCEPT_SCHEME.txt
+"[""principles_sha256""]",principles_sha256,string,618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""standard_references""]",standard_references,array,
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,Mechanically converted from XML; no AI interpretation was used.
+"[""limitations"",1]",1,string,Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure.
+"[""concept_schemes""]",concept_schemes,array,
+"[""concept_schemes"",0]",0,object,
+"[""concept_schemes"",0,""scheme_id""]",scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""name""]",name,string,External Trade Statistics concepts
+"[""concept_schemes"",0,""agency_id""]",agency_id,string,DEMO
+"[""concept_schemes"",0,""version""]",version,string,1.0
+"[""concept_schemes"",0,""concepts""]",concepts,array,
+"[""concept_schemes"",0,""concepts"",0]",0,object,
+"[""concept_schemes"",0,""concepts"",0,""concept_id""]",concept_id,string,FREQ
+"[""concept_schemes"",0,""concepts"",0,""name""]",name,string,Frequency
+"[""concept_schemes"",0,""concepts"",0,""definition""]",definition,string,Frequency
+"[""concept_schemes"",0,""concepts"",0,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",0,""recommended_representation""]",recommended_representation,string,Coded or structured according to the governing DSD
+"[""concept_schemes"",0,""concepts"",0,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",0,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",0,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",0,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",0,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",0,""evidence_quote""]",evidence_quote,string,Frequency
+"[""concept_schemes"",0,""concepts"",1]",1,object,
+"[""concept_schemes"",0,""concepts"",1,""concept_id""]",concept_id,string,REF_AREA
+"[""concept_schemes"",0,""concepts"",1,""name""]",name,string,Reference area
+"[""concept_schemes"",0,""concepts"",1,""definition""]",definition,string,Reference area
+"[""concept_schemes"",0,""concepts"",1,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",1,""recommended_representation""]",recommended_representation,string,Coded or structured according to the governing DSD
+"[""concept_schemes"",0,""concepts"",1,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",1,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",1,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",1,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",1,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",1,""evidence_quote""]",evidence_quote,string,Reference area
+"[""concept_schemes"",0,""concepts"",2]",2,object,
+"[""concept_schemes"",0,""concepts"",2,""concept_id""]",concept_id,string,INDICATOR
+"[""concept_schemes"",0,""concepts"",2,""name""]",name,string,Trade flow
+"[""concept_schemes"",0,""concepts"",2,""definition""]",definition,string,Trade flow
+"[""concept_schemes"",0,""concepts"",2,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",2,""recommended_representation""]",recommended_representation,string,Coded or structured according to the governing DSD
+"[""concept_schemes"",0,""concepts"",2,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",2,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",2,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",2,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",2,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",2,""evidence_quote""]",evidence_quote,string,Trade flow
+"[""concept_schemes"",0,""concepts"",3]",3,object,
+"[""concept_schemes"",0,""concepts"",3,""concept_id""]",concept_id,string,PARTNER
+"[""concept_schemes"",0,""concepts"",3,""name""]",name,string,Partner area
+"[""concept_schemes"",0,""concepts"",3,""definition""]",definition,string,Partner area
+"[""concept_schemes"",0,""concepts"",3,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",3,""recommended_representation""]",recommended_representation,string,Coded or structured according to the governing DSD
+"[""concept_schemes"",0,""concepts"",3,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",3,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",3,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",3,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",3,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",3,""evidence_quote""]",evidence_quote,string,Partner area
+"[""concept_schemes"",0,""concepts"",4]",4,object,
+"[""concept_schemes"",0,""concepts"",4,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""concept_schemes"",0,""concepts"",4,""name""]",name,string,Time period
+"[""concept_schemes"",0,""concepts"",4,""definition""]",definition,string,Time period
+"[""concept_schemes"",0,""concepts"",4,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",4,""recommended_representation""]",recommended_representation,string,Observational time period
+"[""concept_schemes"",0,""concepts"",4,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",4,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",4,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",4,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",4,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",4,""evidence_quote""]",evidence_quote,string,Time period
+"[""concept_schemes"",0,""concepts"",5]",5,object,
+"[""concept_schemes"",0,""concepts"",5,""concept_id""]",concept_id,string,OBS_VALUE
+"[""concept_schemes"",0,""concepts"",5,""name""]",name,string,Observation value
+"[""concept_schemes"",0,""concepts"",5,""definition""]",definition,string,Observation value
+"[""concept_schemes"",0,""concepts"",5,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",5,""recommended_representation""]",recommended_representation,string,Numeric
+"[""concept_schemes"",0,""concepts"",5,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",5,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",5,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",5,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",5,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",5,""evidence_quote""]",evidence_quote,string,Observation value
+"[""concept_schemes"",0,""concepts"",6]",6,object,
+"[""concept_schemes"",0,""concepts"",6,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""concept_schemes"",0,""concepts"",6,""name""]",name,string,Unit of measure
+"[""concept_schemes"",0,""concepts"",6,""definition""]",definition,string,Unit of measure
+"[""concept_schemes"",0,""concepts"",6,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",6,""recommended_representation""]",recommended_representation,string,Coded or structured according to the governing DSD
+"[""concept_schemes"",0,""concepts"",6,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",6,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",6,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",6,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",6,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",6,""evidence_quote""]",evidence_quote,string,Unit of measure
+"[""concept_schemes"",0,""concepts"",7]",7,object,
+"[""concept_schemes"",0,""concepts"",7,""concept_id""]",concept_id,string,OBS_STATUS
+"[""concept_schemes"",0,""concepts"",7,""name""]",name,string,Observation status
+"[""concept_schemes"",0,""concepts"",7,""definition""]",definition,string,Observation status
+"[""concept_schemes"",0,""concepts"",7,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",7,""recommended_representation""]",recommended_representation,string,Coded or structured according to the governing DSD
+"[""concept_schemes"",0,""concepts"",7,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",7,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",7,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",7,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",7,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",7,""evidence_quote""]",evidence_quote,string,Observation status
+"[""concept_schemes"",0,""concepts"",8]",8,object,
+"[""concept_schemes"",0,""concepts"",8,""concept_id""]",concept_id,string,SOURCE
+"[""concept_schemes"",0,""concepts"",8,""name""]",name,string,Source
+"[""concept_schemes"",0,""concepts"",8,""definition""]",definition,string,Source
+"[""concept_schemes"",0,""concepts"",8,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",8,""recommended_representation""]",recommended_representation,string,String
+"[""concept_schemes"",0,""concepts"",8,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",8,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",8,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",8,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",8,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",8,""evidence_quote""]",evidence_quote,string,Source
+"[""concept_schemes"",0,""concepts"",9]",9,object,
+"[""concept_schemes"",0,""concepts"",9,""concept_id""]",concept_id,string,METHODOLOGY
+"[""concept_schemes"",0,""concepts"",9,""name""]",name,string,Methodology
+"[""concept_schemes"",0,""concepts"",9,""definition""]",definition,string,Methodology
+"[""concept_schemes"",0,""concepts"",9,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",9,""recommended_representation""]",recommended_representation,string,String
+"[""concept_schemes"",0,""concepts"",9,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",9,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",9,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",9,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",9,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",9,""evidence_quote""]",evidence_quote,string,Methodology
+"[""concept_schemes"",0,""concepts"",10]",10,object,
+"[""concept_schemes"",0,""concepts"",10,""concept_id""]",concept_id,string,SOURCE_URL
+"[""concept_schemes"",0,""concepts"",10,""name""]",name,string,Source URL
+"[""concept_schemes"",0,""concepts"",10,""definition""]",definition,string,Source URL
+"[""concept_schemes"",0,""concepts"",10,""context""]",context,string,Imported from XML concept scheme CS_TRD
+"[""concept_schemes"",0,""concepts"",10,""recommended_representation""]",recommended_representation,string,String
+"[""concept_schemes"",0,""concepts"",10,""standard_source_agency""]",standard_source_agency,string,DEMO
+"[""concept_schemes"",0,""concepts"",10,""standard_scheme_id""]",standard_scheme_id,string,CS_TRD
+"[""concept_schemes"",0,""concepts"",10,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",10,""source_url""]",source_url,string,not stated in XML
+"[""concept_schemes"",0,""concepts"",10,""local_notes""]",local_notes,string,Mechanically imported from SDMX XML.
+"[""concept_schemes"",0,""concepts"",10,""evidence_quote""]",evidence_quote,string,Source URL

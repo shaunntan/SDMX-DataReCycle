@@ -1,0 +1,183 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODELISTS
+"[""source_report""]",source_report,string,03_sdmx_21_labour_market_full_case.xml
+"[""source_sha256""]",source_sha256,string,51affdd8ac40d4b0b42f1debed99a36090d477e85d40a3b35dd62c2f65868752
+"[""principles_file""]",principles_file,string,02_CODELISTS.txt
+"[""principles_sha256""]",principles_sha256,string,5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""standard_references""]",standard_references,array,
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,Mechanically converted from XML; no AI interpretation was used.
+"[""limitations"",1]",1,string,Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure.
+"[""codelists""]",codelists,array,
+"[""codelists"",0]",0,object,
+"[""codelists"",0,""codelist_id""]",codelist_id,string,CL_LAB_FREQ
+"[""codelists"",0,""name""]",name,string,Frequency
+"[""codelists"",0,""agency_id""]",agency_id,string,DEMO
+"[""codelists"",0,""version""]",version,string,1.0
+"[""codelists"",0,""source_url""]",source_url,string,not stated in XML
+"[""codelists"",0,""maintenance_status""]",maintenance_status,string,AUTHORITATIVE_REFERENCE
+"[""codelists"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",0,""date_checked""]",date_checked,string,2026-09-17
+"[""codelists"",0,""scope_notes""]",scope_notes,string,Mechanically imported from the supplied SDMX XML.
+"[""codelists"",0,""codes""]",codes,array,
+"[""codelists"",0,""codes"",0]",0,object,
+"[""codelists"",0,""codes"",0,""code""]",code,string,M
+"[""codelists"",0,""codes"",0,""name""]",name,string,Monthly
+"[""codelists"",0,""codes"",0,""definition""]",definition,string,Monthly
+"[""codelists"",0,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",0,""evidence_quote""]",evidence_quote,string,Monthly
+"[""codelists"",0,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",1]",1,object,
+"[""codelists"",1,""codelist_id""]",codelist_id,string,CL_LAB_REF_AREA
+"[""codelists"",1,""name""]",name,string,Reference area
+"[""codelists"",1,""agency_id""]",agency_id,string,DEMO
+"[""codelists"",1,""version""]",version,string,1.0
+"[""codelists"",1,""source_url""]",source_url,string,not stated in XML
+"[""codelists"",1,""maintenance_status""]",maintenance_status,string,AUTHORITATIVE_REFERENCE
+"[""codelists"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",1,""date_checked""]",date_checked,string,2026-09-17
+"[""codelists"",1,""scope_notes""]",scope_notes,string,Mechanically imported from the supplied SDMX XML.
+"[""codelists"",1,""codes""]",codes,array,
+"[""codelists"",1,""codes"",0]",0,object,
+"[""codelists"",1,""codes"",0,""code""]",code,string,KR
+"[""codelists"",1,""codes"",0,""name""]",name,string,"Korea, Republic of"
+"[""codelists"",1,""codes"",0,""definition""]",definition,string,"Korea, Republic of"
+"[""codelists"",1,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",1,""codes"",0,""evidence_quote""]",evidence_quote,string,"Korea, Republic of"
+"[""codelists"",1,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",1,""codes"",1]",1,object,
+"[""codelists"",1,""codes"",1,""code""]",code,string,JP
+"[""codelists"",1,""codes"",1,""name""]",name,string,Japan
+"[""codelists"",1,""codes"",1,""definition""]",definition,string,Japan
+"[""codelists"",1,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",1,""codes"",1,""evidence_quote""]",evidence_quote,string,Japan
+"[""codelists"",1,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",1,""codes"",2]",2,object,
+"[""codelists"",1,""codes"",2,""code""]",code,string,US
+"[""codelists"",1,""codes"",2,""name""]",name,string,United States
+"[""codelists"",1,""codes"",2,""definition""]",definition,string,United States
+"[""codelists"",1,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",1,""codes"",2,""evidence_quote""]",evidence_quote,string,United States
+"[""codelists"",1,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",2]",2,object,
+"[""codelists"",2,""codelist_id""]",codelist_id,string,CL_LAB_INDICATOR
+"[""codelists"",2,""name""]",name,string,Labour-market indicator
+"[""codelists"",2,""agency_id""]",agency_id,string,DEMO
+"[""codelists"",2,""version""]",version,string,1.0
+"[""codelists"",2,""source_url""]",source_url,string,not stated in XML
+"[""codelists"",2,""maintenance_status""]",maintenance_status,string,AUTHORITATIVE_REFERENCE
+"[""codelists"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",2,""date_checked""]",date_checked,string,2026-09-17
+"[""codelists"",2,""scope_notes""]",scope_notes,string,Mechanically imported from the supplied SDMX XML.
+"[""codelists"",2,""codes""]",codes,array,
+"[""codelists"",2,""codes"",0]",0,object,
+"[""codelists"",2,""codes"",0,""code""]",code,string,UNE_RATE
+"[""codelists"",2,""codes"",0,""name""]",name,string,Unemployment rate
+"[""codelists"",2,""codes"",0,""definition""]",definition,string,Unemployment rate
+"[""codelists"",2,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",2,""codes"",0,""evidence_quote""]",evidence_quote,string,Unemployment rate
+"[""codelists"",2,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",2,""codes"",1]",1,object,
+"[""codelists"",2,""codes"",1,""code""]",code,string,EMP_RATE
+"[""codelists"",2,""codes"",1,""name""]",name,string,Employment rate
+"[""codelists"",2,""codes"",1,""definition""]",definition,string,Employment rate
+"[""codelists"",2,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",2,""codes"",1,""evidence_quote""]",evidence_quote,string,Employment rate
+"[""codelists"",2,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",3]",3,object,
+"[""codelists"",3,""codelist_id""]",codelist_id,string,CL_LAB_SEX
+"[""codelists"",3,""name""]",name,string,Sex
+"[""codelists"",3,""agency_id""]",agency_id,string,DEMO
+"[""codelists"",3,""version""]",version,string,1.0
+"[""codelists"",3,""source_url""]",source_url,string,not stated in XML
+"[""codelists"",3,""maintenance_status""]",maintenance_status,string,AUTHORITATIVE_REFERENCE
+"[""codelists"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",3,""date_checked""]",date_checked,string,2026-09-17
+"[""codelists"",3,""scope_notes""]",scope_notes,string,Mechanically imported from the supplied SDMX XML.
+"[""codelists"",3,""codes""]",codes,array,
+"[""codelists"",3,""codes"",0]",0,object,
+"[""codelists"",3,""codes"",0,""code""]",code,string,_T
+"[""codelists"",3,""codes"",0,""name""]",name,string,Total
+"[""codelists"",3,""codes"",0,""definition""]",definition,string,Total
+"[""codelists"",3,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",3,""codes"",0,""evidence_quote""]",evidence_quote,string,Total
+"[""codelists"",3,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",3,""codes"",1]",1,object,
+"[""codelists"",3,""codes"",1,""code""]",code,string,M
+"[""codelists"",3,""codes"",1,""name""]",name,string,Male
+"[""codelists"",3,""codes"",1,""definition""]",definition,string,Male
+"[""codelists"",3,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",3,""codes"",1,""evidence_quote""]",evidence_quote,string,Male
+"[""codelists"",3,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",3,""codes"",2]",2,object,
+"[""codelists"",3,""codes"",2,""code""]",code,string,F
+"[""codelists"",3,""codes"",2,""name""]",name,string,Female
+"[""codelists"",3,""codes"",2,""definition""]",definition,string,Female
+"[""codelists"",3,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",3,""codes"",2,""evidence_quote""]",evidence_quote,string,Female
+"[""codelists"",3,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",4]",4,object,
+"[""codelists"",4,""codelist_id""]",codelist_id,string,CL_LAB_UNIT
+"[""codelists"",4,""name""]",name,string,Unit of measure
+"[""codelists"",4,""agency_id""]",agency_id,string,DEMO
+"[""codelists"",4,""version""]",version,string,1.0
+"[""codelists"",4,""source_url""]",source_url,string,not stated in XML
+"[""codelists"",4,""maintenance_status""]",maintenance_status,string,AUTHORITATIVE_REFERENCE
+"[""codelists"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",4,""date_checked""]",date_checked,string,2026-09-17
+"[""codelists"",4,""scope_notes""]",scope_notes,string,Mechanically imported from the supplied SDMX XML.
+"[""codelists"",4,""codes""]",codes,array,
+"[""codelists"",4,""codes"",0]",0,object,
+"[""codelists"",4,""codes"",0,""code""]",code,string,PC
+"[""codelists"",4,""codes"",0,""name""]",name,string,Percent
+"[""codelists"",4,""codes"",0,""definition""]",definition,string,Percent
+"[""codelists"",4,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",4,""codes"",0,""evidence_quote""]",evidence_quote,string,Percent
+"[""codelists"",4,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",5]",5,object,
+"[""codelists"",5,""codelist_id""]",codelist_id,string,CL_LAB_OBS_STATUS
+"[""codelists"",5,""name""]",name,string,Observation status
+"[""codelists"",5,""agency_id""]",agency_id,string,DEMO
+"[""codelists"",5,""version""]",version,string,1.0
+"[""codelists"",5,""source_url""]",source_url,string,not stated in XML
+"[""codelists"",5,""maintenance_status""]",maintenance_status,string,AUTHORITATIVE_REFERENCE
+"[""codelists"",5,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",5,""date_checked""]",date_checked,string,2026-09-17
+"[""codelists"",5,""scope_notes""]",scope_notes,string,Mechanically imported from the supplied SDMX XML.
+"[""codelists"",5,""codes""]",codes,array,
+"[""codelists"",5,""codes"",0]",0,object,
+"[""codelists"",5,""codes"",0,""code""]",code,string,A
+"[""codelists"",5,""codes"",0,""name""]",name,string,Normal value
+"[""codelists"",5,""codes"",0,""definition""]",definition,string,Normal value
+"[""codelists"",5,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",0,""evidence_quote""]",evidence_quote,string,Normal value
+"[""codelists"",5,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",5,""codes"",1]",1,object,
+"[""codelists"",5,""codes"",1,""code""]",code,string,E
+"[""codelists"",5,""codes"",1,""name""]",name,string,Estimated value
+"[""codelists"",5,""codes"",1,""definition""]",definition,string,Estimated value
+"[""codelists"",5,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",1,""evidence_quote""]",evidence_quote,string,Estimated value
+"[""codelists"",5,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",5,""codes"",2]",2,object,
+"[""codelists"",5,""codes"",2,""code""]",code,string,P
+"[""codelists"",5,""codes"",2,""name""]",name,string,Provisional value
+"[""codelists"",5,""codes"",2,""definition""]",definition,string,Provisional value
+"[""codelists"",5,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",2,""evidence_quote""]",evidence_quote,string,Provisional value
+"[""codelists"",5,""codes"",2,""local_creation_justification""]",local_creation_justification,null,

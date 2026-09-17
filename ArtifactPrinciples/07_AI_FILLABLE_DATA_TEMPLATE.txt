@@ -1,0 +1,164 @@
+AI-FILLABLE DATA TEMPLATE
+=========================
+
+1. Definition
+-------------
+This is not a formal SDMX 2.0 artefact. It is the practical tabular interface that
+an AI will fill after the DSD is designed.
+
+The template should be derived directly from the DSD so that every row can later
+be validated and converted to SDMX data.
+
+Recommended principle:
+ONE ROW = ONE OBSERVATION.
+
+2. Best practices
+-----------------
+A. Use the DSD's concept IDs as column names.
+This avoids an extra semantic translation step.
+
+B. Use long/normalised format rather than reproducing report layouts.
+Do not make one column per year if TIME_PERIOD is the time dimension.
+
+C. Include every DSD dimension, the primary measure, and the attributes needed at
+the observation level or required for loading.
+
+D. Enforce codelists.
+The AI should output codes, not free-text labels, for coded fields.
+
+E. Unknown values should not be silently invented.
+If a valid code cannot be found, route the item to an unresolved-value process.
+The design of that audit process can be added later.
+
+F. Keep report provenance/audit columns outside the statistical core if added later.
+
+G. Never let blank mean multiple things.
+Define the treatment of:
+- not applicable;
+- missing;
+- confidential;
+- not available;
+- zero;
+- suppressed.
+
+Use OBS_STATUS / CONF_STATUS and domain rules rather than ambiguous blanks when
+the standard permits.
+
+H. Keep numeric OBS_VALUE numeric; do not append units into the value.
+BAD: "78.4%"
+BETTER: OBS_VALUE=78.4 and UNIT_MEASURE=<percent code>.
+
+I. Keep TIME_PERIOD machine-readable and consistent with FREQ.
+
+J. Validate before converting to SDMX.
+
+3. Example: how it looks
+------------------------
+CSV:
+
+FREQ,REF_AREA,INDICATOR,SEX,AGE,TIME_PERIOD,OBS_VALUE,UNIT_MEASURE,UNIT_MULT,OBS_STATUS
+A,FRA,EMP_RATE,F,Y25T54,2024,78.4,PC,0,A
+A,DEU,EMP_RATE,F,Y25T54,2024,80.1,PC,0,A
+
+This is a much better AI target than:
+
+Country,Women 25-54 2023,Women 25-54 2024
+France,77.9,78.4
+Germany,79.7,80.1
+
+because the first form makes each statistical coordinate explicit.
+
+4. Preferred formats
+--------------------
+Primary:
+- CSV for simple interchange and model output.
+- XLSX when human reviewers need dropdowns/instructions.
+- JSON when nested metadata or API workflows are required.
+
+The canonical data model should still be DSD-driven, even if the working template
+is XLSX/CSV.
+
+5. Recommended template layers
+------------------------------
+CORE STATISTICAL COLUMNS
+All DSD dimensions
+TIME_PERIOD
+OBS_VALUE
+required observation attributes
+
+SERIES/DATASET ATTRIBUTES
+Either:
+- repeated in each row for simplicity; or
+- stored in a separate series/dataset table to avoid duplication.
+
+CODEBOOK
+A separate file/table should explain each column and allowed codes.
+
+6. Validation rules
+-------------------
+Structural:
+- all mandatory columns present;
+- no unexpected columns in strict mode;
+- correct data types.
+
+Code validation:
+- every coded value exists in its codelist/version.
+
+Key validation:
+- no duplicate observations for the same full dimensional key + TIME_PERIOD.
+
+Temporal:
+- TIME_PERIOD syntax is compatible with FREQ.
+
+Measure:
+- OBS_VALUE has allowed type/range where defined.
+
+Attribute:
+- required status/unit fields are populated;
+- codes are valid.
+
+Cross-field/business:
+- combinations are permitted by the DSD/dataflow/domain rules.
+
+7. Acceptance checks
+--------------------
+[ ] One row represents one observation.
+[ ] Column names are SDMX concept IDs.
+[ ] Coded fields contain codes, not labels.
+[ ] Units are separate from values.
+[ ] Time is a field, not spread across columns.
+[ ] Duplicate keys can be detected.
+[ ] Template can be mechanically mapped to the DSD.
+
+CORE OFFICIAL SOURCES (checked 2026-09-16)
+-----------------------------------------------
+SDMX 2.0 standards landing page
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+SDMX 2.0 Information Model
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+SDMX 2.0 Implementor's Guide
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+SDMX Guidelines
+https://sdmx.org/guidelines/
+
+Guidelines for the Design of Data Structure Definitions
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+SDMX Glossary 2.1
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Standardising Reference Metadata Reporting in SDMX
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Global Registry - Codelists
+https://registry.sdmx.org/items/codelist.html
+
+IMPORTANT
+---------
+This package targets SDMX 2.0 as requested. In SDMX 2.0 the formal term for a
+Data Structure Definition is "Key Family". Later SDMX statistical guidelines are
+used here only for modelling good practice where the recommendation is compatible
+with the SDMX 2.0 information model.

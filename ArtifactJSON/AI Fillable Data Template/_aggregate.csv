@@ -1,0 +1,1554 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_key""]",artifact_key,string,AI_FILLABLE_DATA_TEMPLATE
+"[""artifact_name""]",artifact_name,string,AI-FILLABLE DATA TEMPLATE
+"[""principles_file""]",principles_file,string,07_AI_FILLABLE_DATA_TEMPLATE.txt
+"[""principles_sha256""]",principles_sha256,string,3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b
+"[""principles_corpus_sha256""]",principles_corpus_sha256,string,bf4329570a317b193d7c65defd1a72280f56372e9e68b0fd99287d90be2aafb8
+"[""best_practice_chunk_ids""]",best_practice_chunk_ids,array,
+"[""best_practice_chunk_ids"",0]",0,integer,1
+"[""best_practice_chunk_ids"",1]",1,integer,2
+"[""best_practice_chunk_ids"",2]",2,integer,3
+"[""best_practice_chunk_ids"",3]",3,integer,6
+"[""best_practice_chunk_ids"",4]",4,integer,7
+"[""best_practice_chunk_ids"",5]",5,integer,8
+"[""best_practice_chunk_ids"",6]",6,integer,25
+"[""best_practice_chunk_ids"",7]",7,integer,26
+"[""best_practice_chunk_ids"",8]",8,integer,27
+"[""best_practice_chunk_ids"",9]",9,integer,28
+"[""best_practice_chunk_ids"",10]",10,integer,32
+"[""best_practice_chunk_ids"",11]",11,integer,33
+"[""best_practice_chunk_ids"",12]",12,integer,34
+"[""best_practice_chunk_ids"",13]",13,integer,35
+"[""best_practice_chunk_ids"",14]",14,integer,36
+"[""best_practice_chunk_ids"",15]",15,integer,37
+"[""best_practice_chunk_ids"",16]",16,integer,38
+"[""best_practice_chunk_ids"",17]",17,integer,39
+"[""best_practice_chunk_ids"",18]",18,integer,40
+"[""aggregate_version""]",aggregate_version,integer,2
+"[""created_at""]",created_at,string,2026-09-17T00:49:53.480387+00:00
+"[""updated_at""]",updated_at,string,2026-09-17T00:55:15.746707+00:00
+"[""update_mode""]",update_mode,string,INCREMENTAL
+"[""contributions""]",contributions,array,
+"[""contributions"",0]",0,object,
+"[""contributions"",0,""source_report""]",source_report,string,01_sdmx_20_population_full_case.xml
+"[""contributions"",0,""source_json_path""]",source_json_path,string,Artifact JSON\AI Fillable Data Template\01_sdmx_20_population_full_case.json
+"[""contributions"",0,""json_sha256""]",json_sha256,string,c9d3b0fa688585511487dec52cef3ddd8bbb1ea60ce41f92dd2ee22f2e1d5376
+"[""contributions"",1]",1,object,
+"[""contributions"",1,""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""contributions"",1,""source_json_path""]",source_json_path,string,Artifact JSON\AI Fillable Data Template\example_01_labour_market.json
+"[""contributions"",1,""json_sha256""]",json_sha256,string,590df0bb6ff164feb09a093c91902a4d46db797039ffebe96a9c937b5078425a
+"[""contributions"",2]",2,object,
+"[""contributions"",2,""source_report""]",source_report,string,example_02_health_system.pdf
+"[""contributions"",2,""source_json_path""]",source_json_path,string,Artifact JSON\AI Fillable Data Template\example_02_health_system.json
+"[""contributions"",2,""json_sha256""]",json_sha256,string,269072ff42e6dfae16303eb5ae7767fe7714629aaa36450bfd25e3dabd28eae6
+"[""contributions"",3]",3,object,
+"[""contributions"",3,""source_report""]",source_report,string,example_03_education.pdf
+"[""contributions"",3,""source_json_path""]",source_json_path,string,Artifact JSON\AI Fillable Data Template\example_03_education.json
+"[""contributions"",3,""json_sha256""]",json_sha256,string,60b317cda83a0012695d1b78100c85d06fb4bb0f5c0a5a8f1b1f7fb49b3725a6
+"[""contributions"",4]",4,object,
+"[""contributions"",4,""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""contributions"",4,""source_json_path""]",source_json_path,string,Artifact JSON\AI Fillable Data Template\example_04_agriculture.json
+"[""contributions"",4,""json_sha256""]",json_sha256,string,1fcd49f7475e60af5c64dc1107b7a51abd0e72a27288840e0c0d84dfbf605a25
+"[""contributions"",5]",5,object,
+"[""contributions"",5,""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""contributions"",5,""source_json_path""]",source_json_path,string,Artifact JSON\AI Fillable Data Template\example_05_prices_consumption.json
+"[""contributions"",5,""json_sha256""]",json_sha256,string,0fa469efdd643d298b3adc9d59c12220dd2c9b29c9974592d5976f36953100eb
+"[""optimizer_attempts""]",optimizer_attempts,integer,3
+"[""validator_direct_correction""]",validator_direct_correction,boolean,true
+"[""inspector_review""]",inspector_review,object,
+"[""inspector_review"",""valid""]",valid,boolean,true
+"[""inspector_review"",""covered_source_reports""]",covered_source_reports,array,
+"[""inspector_review"",""covered_source_reports"",0]",0,string,01_sdmx_20_population_full_case.xml
+"[""inspector_review"",""covered_source_reports"",1]",1,string,example_01_labour_market.pdf
+"[""inspector_review"",""covered_source_reports"",2]",2,string,example_02_health_system.pdf
+"[""inspector_review"",""covered_source_reports"",3]",3,string,example_03_education.pdf
+"[""inspector_review"",""covered_source_reports"",4]",4,string,example_04_agriculture.pdf
+"[""inspector_review"",""covered_source_reports"",5]",5,string,example_05_prices_consumption.pdf
+"[""inspector_review"",""missing_source_reports""]",missing_source_reports,array,
+"[""inspector_review"",""missing_requirements""]",missing_requirements,array,
+"[""inspector_review"",""redundancies_remaining""]",redundancies_remaining,array,
+"[""inspector_review"",""schema_issues""]",schema_issues,array,
+"[""inspector_review"",""repair_instructions""]",repair_instructions,array,
+"[""optimized_artifact""]",optimized_artifact,object,
+"[""optimized_artifact"",""artifact_type""]",artifact_type,string,AI-FILLABLE DATA TEMPLATE
+"[""optimized_artifact"",""source_report""]",source_report,string,AGGREGATE::AI_FILLABLE_DATA_TEMPLATE
+"[""optimized_artifact"",""source_sha256""]",source_sha256,string,96394cc835751ca68894b26e278701edbbee586ce0fd978a030af0fccc41f683
+"[""optimized_artifact"",""principles_file""]",principles_file,string,07_AI_FILLABLE_DATA_TEMPLATE.txt
+"[""optimized_artifact"",""principles_sha256""]",principles_sha256,string,3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b
+"[""optimized_artifact"",""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""optimized_artifact"",""retrieved_chunk_ids"",0]",0,integer,1
+"[""optimized_artifact"",""retrieved_chunk_ids"",1]",1,integer,2
+"[""optimized_artifact"",""retrieved_chunk_ids"",2]",2,integer,3
+"[""optimized_artifact"",""retrieved_chunk_ids"",3]",3,integer,6
+"[""optimized_artifact"",""retrieved_chunk_ids"",4]",4,integer,7
+"[""optimized_artifact"",""retrieved_chunk_ids"",5]",5,integer,8
+"[""optimized_artifact"",""retrieved_chunk_ids"",6]",6,integer,25
+"[""optimized_artifact"",""retrieved_chunk_ids"",7]",7,integer,26
+"[""optimized_artifact"",""retrieved_chunk_ids"",8]",8,integer,27
+"[""optimized_artifact"",""retrieved_chunk_ids"",9]",9,integer,28
+"[""optimized_artifact"",""retrieved_chunk_ids"",10]",10,integer,32
+"[""optimized_artifact"",""retrieved_chunk_ids"",11]",11,integer,33
+"[""optimized_artifact"",""retrieved_chunk_ids"",12]",12,integer,34
+"[""optimized_artifact"",""retrieved_chunk_ids"",13]",13,integer,35
+"[""optimized_artifact"",""retrieved_chunk_ids"",14]",14,integer,36
+"[""optimized_artifact"",""retrieved_chunk_ids"",15]",15,integer,37
+"[""optimized_artifact"",""retrieved_chunk_ids"",16]",16,integer,38
+"[""optimized_artifact"",""retrieved_chunk_ids"",17]",17,integer,39
+"[""optimized_artifact"",""retrieved_chunk_ids"",18]",18,integer,40
+"[""optimized_artifact"",""standard_references""]",standard_references,array,
+"[""optimized_artifact"",""standard_references"",0]",0,object,
+"[""optimized_artifact"",""standard_references"",0,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",0,""artifact_type""]",artifact_type,string,Technical standard
+"[""optimized_artifact"",""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX 2.0 Information Model / Key Family
+"[""optimized_artifact"",""standard_references"",0,""version""]",version,string,2.0
+"[""optimized_artifact"",""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""optimized_artifact"",""standard_references"",0,""evidence""]",evidence,string,"Target standard for DSD / Key Family modelling. Templates are derived from accepted dimensions, TIME_PERIOD, OBS_VALUE and observation attributes so each row can later be validated and converted to SDMX data."
+"[""optimized_artifact"",""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",1]",1,object,
+"[""optimized_artifact"",""standard_references"",1,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",1,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""optimized_artifact"",""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX Glossary / Cross-Domain Concepts
+"[""optimized_artifact"",""standard_references"",1,""version""]",version,string,2.1
+"[""optimized_artifact"",""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""standard_references"",1,""evidence""]",evidence,string,"Supports reuse of common concept identifiers such as REF_AREA, FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE, OBS_STATUS, SEX, AGE, ACTIVITY, EDUCATION_LEVEL and PRODUCT. Exact local-label mappings remain unresolved where stated."
+"[""optimized_artifact"",""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",2]",2,object,
+"[""optimized_artifact"",""standard_references"",2,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist catalogue
+"[""optimized_artifact"",""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX Global Registry Codelists
+"[""optimized_artifact"",""standard_references"",2,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",2,""evidence""]",evidence,string,"Registry catalogue supports checking codelist details, references, changelog and exports. Supplied evidence does not confirm exact versions or code contents for candidate CL_FREQ, CL_SEX, CL_OBS_STATUS, CL_SEASONAL_ADJUST or unit codelists."
+"[""optimized_artifact"",""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",3]",3,object,
+"[""optimized_artifact"",""standard_references"",3,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",3,""artifact_type""]",artifact_type,string,Geographical classification
+"[""optimized_artifact"",""standard_references"",3,""artifact_id""]",artifact_id,string,UN M49
+"[""optimized_artifact"",""standard_references"",3,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""optimized_artifact"",""standard_references"",3,""evidence""]",evidence,string,"UN M49 is an authoritative country/area source. Synthetic/local areas Northland, Centralia and South Coast are not confirmed UN M49 areas; local area codelists are retained where the source supplies geography."
+"[""optimized_artifact"",""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",4]",4,object,
+"[""optimized_artifact"",""standard_references"",4,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",4,""artifact_type""]",artifact_type,string,Economic activity classification candidate
+"[""optimized_artifact"",""standard_references"",4,""artifact_id""]",artifact_id,string,ISIC
+"[""optimized_artifact"",""standard_references"",4,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""optimized_artifact"",""standard_references"",4,""evidence""]",evidence,string,"Relevant source for labour vacancy ACTIVITY review. Vacancy labels Manufacturing, Construction and Information services are local aggregates and are not confirmed ISIC categories; REF_AREA is omitted because the source did not state geography for that table."
+"[""optimized_artifact"",""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",5]",5,object,
+"[""optimized_artifact"",""standard_references"",5,""agency""]",agency,string,WHO
+"[""optimized_artifact"",""standard_references"",5,""artifact_type""]",artifact_type,string,Cause-of-death classification candidate
+"[""optimized_artifact"",""standard_references"",5,""artifact_id""]",artifact_id,string,ICD
+"[""optimized_artifact"",""standard_references"",5,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",5,""url""]",url,string,https://www.who.int/standards/classifications/classification-of-diseases
+"[""optimized_artifact"",""standard_references"",5,""evidence""]",evidence,string,Relevant source for health cause-of-death review. Local cause categories CIRCULATORY_DISEASES and NEOPLASMS are broad report categories and are not confirmed ICD codes.
+"[""optimized_artifact"",""standard_references"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",6]",6,object,
+"[""optimized_artifact"",""standard_references"",6,""agency""]",agency,string,UNESCO UIS
+"[""optimized_artifact"",""standard_references"",6,""artifact_type""]",artifact_type,string,Education classification candidate
+"[""optimized_artifact"",""standard_references"",6,""artifact_id""]",artifact_id,string,ISCED
+"[""optimized_artifact"",""standard_references"",6,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",6,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""optimized_artifact"",""standard_references"",6,""evidence""]",evidence,string,"Relevant source for education-level review. Local codes PRIMARY, LOWER_SECONDARY and UPPER_SECONDARY remain under SML local codelist governance pending confirmed ISCED mapping."
+"[""optimized_artifact"",""standard_references"",6,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",7]",7,object,
+"[""optimized_artifact"",""standard_references"",7,""agency""]",agency,string,FAO / UNSD
+"[""optimized_artifact"",""standard_references"",7,""artifact_type""]",artifact_type,string,Crop and product classification candidates
+"[""optimized_artifact"",""standard_references"",7,""artifact_id""]",artifact_id,string,FAO/CPC candidate crop and fertilizer sources
+"[""optimized_artifact"",""standard_references"",7,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",7,""url""]",url,string,https://unstats.un.org/unsd/classifications/
+"[""optimized_artifact"",""standard_references"",7,""evidence""]",evidence,string,Relevant candidate sources for crops and fertilizer products. Crop names require classification review; fertilizer products are not verified CPC codes and remain local market product codes.
+"[""optimized_artifact"",""standard_references"",7,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",8]",8,object,
+"[""optimized_artifact"",""standard_references"",8,""agency""]",agency,string,UNSD / SDMX
+"[""optimized_artifact"",""standard_references"",8,""artifact_type""]",artifact_type,string,Consumption classification candidate
+"[""optimized_artifact"",""standard_references"",8,""artifact_id""]",artifact_id,string,COICOP / CL_COICOP_2018
+"[""optimized_artifact"",""standard_references"",8,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",8,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""optimized_artifact"",""standard_references"",8,""evidence""]",evidence,string,"Relevant source for CPI consumption divisions. The report says divisions resemble COICOP but the revision is not confirmed, so local CPI consumption-division codes are retained."
+"[""optimized_artifact"",""standard_references"",8,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""standard_references"",9]",9,object,
+"[""optimized_artifact"",""standard_references"",9,""agency""]",agency,string,ISO
+"[""optimized_artifact"",""standard_references"",9,""artifact_type""]",artifact_type,string,Currency standard candidate
+"[""optimized_artifact"",""standard_references"",9,""artifact_id""]",artifact_id,string,ISO 4217
+"[""optimized_artifact"",""standard_references"",9,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",9,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""optimized_artifact"",""standard_references"",9,""evidence""]",evidence,string,"Relevant source for currency identity. Agriculture fertilizer prices and household-spending values use deliberately unnamed local currency units, so no ISO 4217 code is assigned."
+"[""optimized_artifact"",""standard_references"",9,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""limitations""]",limitations,array,
+"[""optimized_artifact"",""limitations"",0]",0,string,Source-to-template coverage: 01_sdmx_20_population_full_case.xml -> TPL_DSD_POP; example_01_labour_market.pdf -> TPL_SYNTHETIC_LABOUR_UNEMP_RATE_Q and TPL_SYNTHETIC_LABOUR_VACANCIES_M; example_02_health_system.pdf -> TPL_HEALTH_REGISTERED_DEATHS and TPL_HEALTH_AVAILABLE_HOSPITAL_BEDS; example_03_education.pdf -> TPL_EDU_ENROLLMENT and TPL_EDU_LOWER_SECONDARY_COMPLETION; example_04_agriculture.pdf -> TPL_AGR_CROP_AREA_PRODUCTION_LONG and TPL_AGR_FERTILIZER_RETAIL_PRICE_LONG; example_05_prices_consumption.pdf -> TPL_SYNTH_CPI_DIVISION_MONTHLY_AI_FILL and TPL_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL_AI_FILL.
+"[""optimized_artifact"",""limitations"",1]",1,string,"This aggregate is a reusable cross-report design and a filled aggregate preserving accepted per-report observation semantics; one row equals one observation, OBS_VALUE remains numeric, and units, base periods, statuses and estimation qualifiers are outside OBS_VALUE."
+"[""optimized_artifact"",""limitations"",2]",2,string,Mechanically converted XML population rows used no AI interpretation; fields absent from the XML are marked not stated or inferred only from XML structure. Population OBS_VALUE values are numeric after conversion.
+"[""optimized_artifact"",""limitations"",3]",3,string,"Shared SDMX concept identifiers are reused, but report-specific codelists are not renamed or merged unless semantic equivalence, version and governance are proven."
+"[""optimized_artifact"",""limitations"",4]",4,string,"Exact versions and code memberships for candidate SDMX codelists CL_FREQ, CL_SEX, CL_OBS_STATUS and CL_SEASONAL_ADJUST remain unconfirmed and must be registry-validated before strict production exchange."
+"[""optimized_artifact"",""limitations"",5]",5,string,Labour unemployment-rate observations have constant source scope persons aged 15-64. AGE is intentionally not a dimension because the source does not vary age scope.
+"[""optimized_artifact"",""limitations"",6]",6,string,"Labour unemployment SEX uses local CL_SYN_SEX_COVERAGE values WOMEN, MEN and TOTAL. TOTAL is report-defined coverage and must not be inferred by summing Women and Men."
+"[""optimized_artifact"",""limitations"",7]",7,string,Labour vacancy ACTIVITY values are local aggregates not confirmed to ISIC. REF_AREA is omitted from the vacancy template because the source table did not state geography.
+"[""optimized_artifact"",""limitations"",8]",8,string,Health local validation references are preserved: SYNTH_PH_AGENCY codelists with *_LOCAL suffixes and version 1.0-proposed. All health-system records are synthetic/non-production.
+"[""optimized_artifact"",""limitations"",9]",9,string,Private-sector hospital-bed reporting is incomplete in 2024; this specifically explains OBS_STATUS=ESTIMATED for OWNERSHIP=PRIVATE_FOR_PROFIT in 2024.
+"[""optimized_artifact"",""limitations"",10]",10,string,Education local validation references are preserved: SML local codelists with version 1.0-draft. Alternate local codelist IDs in other structural artifacts should be reconciled before production publication.
+"[""optimized_artifact"",""limitations"",11]",11,string,"Education SEX preserves accepted binding to candidate SDMX CL_SEX values F, M and _T; these must be registry-validated before production exchange."
+"[""optimized_artifact"",""limitations"",12]",12,string,"The education source supplies no UNIT_MULT, DECIMALS, CONF_STATUS or additional observation-level quality flag beyond printed Unit and Status columns; these fields are not invented."
+"[""optimized_artifact"",""limitations"",13]",13,string,The education completion-rate template is fixed to lower-secondary completion because the current source supplies only lower-secondary completion observations.
+"[""optimized_artifact"",""limitations"",14]",14,string,"Agriculture templates include no decimals, unit multiplier, confidentiality status or explicit reporting-agency columns in the accepted DSD components; these fields are not invented."
+"[""optimized_artifact"",""limitations"",15]",15,string,"Agriculture crop names require classification review, fertilizer products are not verified CPC codes, fertilizer local currency is deliberately unnamed, and status labels FINAL, FORECAST and OBSERVED are retained in local status codelists pending confirmed CL_OBS_STATUS mapping."
+"[""optimized_artifact"",""limitations"",16]",16,string,"Synthetic/local areas Northland, Centralia and South Coast are not confirmed external geographic codes; local area codelists are preserved where geography is supplied."
+"[""optimized_artifact"",""limitations"",17]",17,string,Prices/consumption report states no reference area/country; REF_AREA is omitted and should be added only if later supplied.
+"[""optimized_artifact"",""limitations"",18]",18,string,"CPI modelling uses UNIT_MEASURE=IDX as the plain index unit while BASE_PERIOD separately carries 2023=100, avoiding duplicate base-period semantics."
+"[""optimized_artifact"",""limitations"",19]",19,string,Consumption divisions are local because COICOP revision is not confirmed. Household-spending residence categories are local. Household-spending unit uses unnamed local currency and cannot be converted to ISO 4217 without further evidence.
+"[""optimized_artifact"",""limitations"",20]",20,string,Only LOWEST and HIGHEST expenditure quintiles are evidenced in the prices/consumption extract; no middle-quintile household-spending rows are inferred.
+"[""optimized_artifact"",""limitations"",21]",21,string,"Survey estimates are subject to sampling error and household estimates are revised only for processing errors or new calibration weights; these are reference-metadata caveats, not observation dimensions."
+"[""optimized_artifact"",""limitations"",22]",22,string,Duplicate-key checks should use each template's full dimensional key plus TIME_PERIOD; coded values should be checked against the codelist/version named in the relevant column description before production loading.
+"[""optimized_artifact"",""templates""]",templates,array,
+"[""optimized_artifact"",""templates"",0]",0,object,
+"[""optimized_artifact"",""templates"",0,""template_id""]",template_id,string,TPL_DSD_POP
+"[""optimized_artifact"",""templates"",0,""dsd_id""]",dsd_id,string,DSD_POP
+"[""optimized_artifact"",""templates"",0,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",0,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",0,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",0,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",0,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",0,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",0,""columns"",0,""codelist_id""]",codelist_id,string,CL_POP_FREQ
+"[""optimized_artifact"",""templates"",0,""columns"",0,""description""]",description,string,Mechanically imported XML frequency column. Observed value A. Local XML codelist; no AI interpretation.
+"[""optimized_artifact"",""templates"",0,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",0,""columns"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",0,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",0,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",0,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",0,""columns"",1,""codelist_id""]",codelist_id,string,CL_POP_REF_AREA
+"[""optimized_artifact"",""templates"",0,""columns"",1,""description""]",description,string,Mechanically imported XML reference-area column. Observed values KR and JP from XML; external mapping not reinterpreted.
+"[""optimized_artifact"",""templates"",0,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",0,""columns"",2,""column_id""]",column_id,string,INDICATOR
+"[""optimized_artifact"",""templates"",0,""columns"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",0,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",0,""columns"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",0,""columns"",2,""codelist_id""]",codelist_id,string,CL_POP_INDICATOR
+"[""optimized_artifact"",""templates"",0,""columns"",2,""description""]",description,string,Mechanically imported XML population indicator. Observed values POP_TOTAL and POP_GROWTH.
+"[""optimized_artifact"",""templates"",0,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",0,""columns"",3,""column_id""]",column_id,string,AGE_GROUP
+"[""optimized_artifact"",""templates"",0,""columns"",3,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",0,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",0,""columns"",3,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",0,""columns"",3,""codelist_id""]",codelist_id,string,CL_POP_AGE_GROUP
+"[""optimized_artifact"",""templates"",0,""columns"",3,""description""]",description,string,Mechanically imported XML age-group column. Observed value ALL.
+"[""optimized_artifact"",""templates"",0,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",0,""columns"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",0,""columns"",4,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",0,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",0,""columns"",4,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""templates"",0,""columns"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",0,""columns"",4,""description""]",description,string,Mechanically imported XML observation period.
+"[""optimized_artifact"",""templates"",0,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",0,""columns"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",0,""columns"",5,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",0,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",0,""columns"",5,""data_type""]",data_type,string,Number
+"[""optimized_artifact"",""templates"",0,""columns"",5,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",0,""columns"",5,""description""]",description,string,Numeric population observation value mechanically converted from XML text.
+"[""optimized_artifact"",""templates"",0,""columns"",6]",6,object,
+"[""optimized_artifact"",""templates"",0,""columns"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",0,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",0,""columns"",6,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",0,""columns"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",0,""columns"",6,""codelist_id""]",codelist_id,string,CL_POP_UNIT
+"[""optimized_artifact"",""templates"",0,""columns"",6,""description""]",description,string,Mechanically imported XML unit. Observed values PS for persons and PC for percent.
+"[""optimized_artifact"",""templates"",0,""columns"",7]",7,object,
+"[""optimized_artifact"",""templates"",0,""columns"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",0,""columns"",7,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",0,""columns"",7,""required""]",required,boolean,false
+"[""optimized_artifact"",""templates"",0,""columns"",7,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",0,""columns"",7,""codelist_id""]",codelist_id,string,CL_POP_OBS_STATUS
+"[""optimized_artifact"",""templates"",0,""columns"",7,""description""]",description,string,Mechanically imported XML status. Observed value A; status meaning not further interpreted.
+"[""optimized_artifact"",""templates"",0,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",0,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""dsd_id""]",dsd_id,string,DSD_POP
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",1,""value""]",value,string,KR
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",2,""column_id""]",column_id,string,INDICATOR
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",2,""value""]",value,string,POP_TOTAL
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",3,""column_id""]",column_id,string,AGE_GROUP
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",3,""value""]",value,string,ALL
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",4,""value""]",value,string,2023
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",5,""value""]",value,integer,51712619
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",6,""value""]",value,string,PS
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",0,""observations"",0,""values"",7,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",0,""observations"",0,""evidence_quote""]",evidence_quote,string,A
+"[""optimized_artifact"",""templates"",0,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""dsd_id""]",dsd_id,string,DSD_POP
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",1,""value""]",value,string,KR
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",2,""column_id""]",column_id,string,INDICATOR
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",2,""value""]",value,string,POP_GROWTH
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",3,""column_id""]",column_id,string,AGE_GROUP
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",3,""value""]",value,string,ALL
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",4,""value""]",value,string,2023
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",5,""value""]",value,number,-0.14
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",6,""value""]",value,string,PC
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",0,""observations"",1,""values"",7,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",0,""observations"",1,""evidence_quote""]",evidence_quote,string,A
+"[""optimized_artifact"",""templates"",0,""observations"",2]",2,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""dsd_id""]",dsd_id,string,DSD_POP
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values""]",values,array,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",1,""value""]",value,string,JP
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",2,""column_id""]",column_id,string,INDICATOR
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",2,""value""]",value,string,POP_TOTAL
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",3,""column_id""]",column_id,string,AGE_GROUP
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",3,""value""]",value,string,ALL
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",4,""value""]",value,string,2023
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",5,""value""]",value,integer,124516650
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",6,""value""]",value,string,PS
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",0,""observations"",2,""values"",7,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",0,""observations"",2,""evidence_quote""]",evidence_quote,string,A
+"[""optimized_artifact"",""templates"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""template_id""]",template_id,string,TPL_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""templates"",1,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""templates"",1,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",1,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",1,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",1,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",1,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",1,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",1,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",1,""columns"",0,""description""]",description,string,"Frequency; use Q for quarterly. Candidate SDMX CL_FREQ mapping, version not confirmed."
+"[""optimized_artifact"",""templates"",1,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""columns"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",1,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",1,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",1,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",1,""columns"",1,""codelist_id""]",codelist_id,string,CL_SYN_REF_AREA_LM
+"[""optimized_artifact"",""templates"",1,""columns"",1,""description""]",description,string,"Synthetic local labour-market region; allowed NORTHLAND, CENTRALIA, SOUTH_COAST; not confirmed UN M49."
+"[""optimized_artifact"",""templates"",1,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",1,""columns"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",1,""columns"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",1,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",1,""columns"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",1,""columns"",2,""codelist_id""]",codelist_id,string,CL_SYN_SEX_COVERAGE
+"[""optimized_artifact"",""templates"",1,""columns"",2,""description""]",description,string,"Local sex/coverage; allowed WOMEN, MEN, TOTAL. TOTAL is report-defined and must not be summed from WOMEN and MEN."
+"[""optimized_artifact"",""templates"",1,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",1,""columns"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",1,""columns"",3,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",1,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",1,""columns"",3,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""templates"",1,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",1,""columns"",3,""description""]",description,string,"Quarterly period such as 2025-Q1. Source age scope is persons aged 15-64 and is constant, so AGE is not a dimension."
+"[""optimized_artifact"",""templates"",1,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",1,""columns"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",1,""columns"",4,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",1,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",1,""columns"",4,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""templates"",1,""columns"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",1,""columns"",4,""description""]",description,string,Numeric unemployment rate.
+"[""optimized_artifact"",""templates"",1,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",1,""columns"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",1,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",1,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",1,""columns"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",1,""columns"",5,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE_LM
+"[""optimized_artifact"",""templates"",1,""columns"",5,""description""]",description,string,Allowed value PERCENT.
+"[""optimized_artifact"",""templates"",1,""columns"",6]",6,object,
+"[""optimized_artifact"",""templates"",1,""columns"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",1,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",1,""columns"",6,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",1,""columns"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",1,""columns"",6,""codelist_id""]",codelist_id,string,CL_SYN_REPORT_STATUS
+"[""optimized_artifact"",""templates"",1,""columns"",6,""description""]",description,string,"Allowed local values FINAL, PROVISIONAL; mapping to SDMX CL_OBS_STATUS unconfirmed."
+"[""optimized_artifact"",""templates"",1,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",1,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",0,""value""]",value,string,Q
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",1,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",2,""value""]",value,string,WOMEN
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",3,""value""]",value,string,2025-Q1
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",4,""value""]",value,number,7.8
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",5,""value""]",value,string,PERCENT
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",1,""observations"",0,""values"",6,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",1,""observations"",0,""evidence_quote""]",evidence_quote,string,Northland Women 2025-Q1 7.8 Percent Final
+"[""optimized_artifact"",""templates"",1,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",0,""value""]",value,string,Q
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",1,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",2,""value""]",value,string,WOMEN
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",3,""value""]",value,string,2025-Q2
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",4,""value""]",value,number,8.0
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",5,""value""]",value,string,PERCENT
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",1,""observations"",1,""values"",6,""value""]",value,string,PROVISIONAL
+"[""optimized_artifact"",""templates"",1,""observations"",1,""evidence_quote""]",evidence_quote,string,Northland Women 2025-Q2 8.0 Percent Provisional
+"[""optimized_artifact"",""templates"",1,""observations"",2]",2,object,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values""]",values,array,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",0,""value""]",value,string,Q
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",1,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",2,""value""]",value,string,MEN
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",3,""value""]",value,string,2025-Q1
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",4,""value""]",value,number,9.4
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",5,""value""]",value,string,PERCENT
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",1,""observations"",2,""values"",6,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",1,""observations"",2,""evidence_quote""]",evidence_quote,string,Northland Men 2025-Q1 9.4 Percent Final
+"[""optimized_artifact"",""templates"",1,""observations"",3]",3,object,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values""]",values,array,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",0,""value""]",value,string,Q
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",1,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",2,""value""]",value,string,MEN
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",3,""value""]",value,string,2025-Q2
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",4,""value""]",value,number,9.0
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",5,""value""]",value,string,PERCENT
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",1,""observations"",3,""values"",6,""value""]",value,string,PROVISIONAL
+"[""optimized_artifact"",""templates"",1,""observations"",3,""evidence_quote""]",evidence_quote,string,Northland Men 2025-Q2 9.0 Percent Provisional
+"[""optimized_artifact"",""templates"",1,""observations"",4]",4,object,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values""]",values,array,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",0,""value""]",value,string,Q
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",1,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",2,""value""]",value,string,TOTAL
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",3,""value""]",value,string,2025-Q1
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",4,""value""]",value,number,4.8
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",5,""value""]",value,string,PERCENT
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",1,""observations"",4,""values"",6,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",1,""observations"",4,""evidence_quote""]",evidence_quote,string,Northland Total 2025-Q1 4.8 Percent Final
+"[""optimized_artifact"",""templates"",1,""observations"",5]",5,object,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values""]",values,array,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",0,""value""]",value,string,Q
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",1,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",2,""value""]",value,string,TOTAL
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",3,""value""]",value,string,2025-Q2
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",4,""value""]",value,number,7.0
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",5,""value""]",value,string,PERCENT
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",1,""observations"",5,""values"",6,""value""]",value,string,PROVISIONAL
+"[""optimized_artifact"",""templates"",1,""observations"",5,""evidence_quote""]",evidence_quote,string,Northland Total 2025-Q2 7.0 Percent Provisional
+"[""optimized_artifact"",""templates"",2]",2,object,
+"[""optimized_artifact"",""templates"",2,""template_id""]",template_id,string,TPL_SYNTHETIC_LABOUR_VACANCIES_M
+"[""optimized_artifact"",""templates"",2,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M
+"[""optimized_artifact"",""templates"",2,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",2,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",2,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",2,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",2,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",2,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",2,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",2,""columns"",0,""description""]",description,string,"Frequency; use M for monthly vacancy observations. Candidate SDMX CL_FREQ mapping, version not confirmed."
+"[""optimized_artifact"",""templates"",2,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",2,""columns"",1,""column_id""]",column_id,string,ACTIVITY
+"[""optimized_artifact"",""templates"",2,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",2,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",2,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",2,""columns"",1,""codelist_id""]",codelist_id,string,CL_SYN_ACTIVITY_LOCAL
+"[""optimized_artifact"",""templates"",2,""columns"",1,""description""]",description,string,"Local aggregate activity; allowed MANUFACTURING, CONSTRUCTION, INFORMATION_SERVICES. Not confirmed ISIC."
+"[""optimized_artifact"",""templates"",2,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",2,""columns"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",2,""columns"",2,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",2,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",2,""columns"",2,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""templates"",2,""columns"",2,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",2,""columns"",2,""description""]",description,string,Monthly period such as 2025-01. REF_AREA is omitted because the source did not state geography for this table.
+"[""optimized_artifact"",""templates"",2,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",2,""columns"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",2,""columns"",3,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",2,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",2,""columns"",3,""data_type""]",data_type,string,Integer
+"[""optimized_artifact"",""templates"",2,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",2,""columns"",3,""description""]",description,string,Numeric job-vacancy count.
+"[""optimized_artifact"",""templates"",2,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",2,""columns"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",2,""columns"",4,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",2,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",2,""columns"",4,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",2,""columns"",4,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE_LM
+"[""optimized_artifact"",""templates"",2,""columns"",4,""description""]",description,string,Allowed value OPEN_POSITIONS.
+"[""optimized_artifact"",""templates"",2,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",2,""columns"",5,""column_id""]",column_id,string,SEASONAL_ADJUST
+"[""optimized_artifact"",""templates"",2,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",2,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",2,""columns"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",2,""columns"",5,""codelist_id""]",codelist_id,string,CL_SYN_SEASONAL_ADJUSTMENT
+"[""optimized_artifact"",""templates"",2,""columns"",5,""description""]",description,string,Allowed local value SEASONALLY_ADJUSTED; candidate mapping to SDMX CL_SEASONAL_ADJUST unconfirmed.
+"[""optimized_artifact"",""templates"",2,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",2,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",2,""observations"",0,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",0,""value""]",value,string,M
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",1,""column_id""]",column_id,string,ACTIVITY
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",1,""value""]",value,string,MANUFACTURING
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",2,""value""]",value,string,2025-01
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",3,""value""]",value,integer,2993
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",4,""value""]",value,string,OPEN_POSITIONS
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",5,""column_id""]",column_id,string,SEASONAL_ADJUST
+"[""optimized_artifact"",""templates"",2,""observations"",0,""values"",5,""value""]",value,string,SEASONALLY_ADJUSTED
+"[""optimized_artifact"",""templates"",2,""observations"",0,""evidence_quote""]",evidence_quote,string,Manufacturing 2025-01 2993 Open positions Seasonally adjusted
+"[""optimized_artifact"",""templates"",2,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",2,""observations"",1,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",0,""value""]",value,string,M
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",1,""column_id""]",column_id,string,ACTIVITY
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",1,""value""]",value,string,CONSTRUCTION
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",2,""value""]",value,string,2025-01
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",3,""value""]",value,integer,1343
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",4,""value""]",value,string,OPEN_POSITIONS
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",5,""column_id""]",column_id,string,SEASONAL_ADJUST
+"[""optimized_artifact"",""templates"",2,""observations"",1,""values"",5,""value""]",value,string,SEASONALLY_ADJUSTED
+"[""optimized_artifact"",""templates"",2,""observations"",1,""evidence_quote""]",evidence_quote,string,Construction 2025-01 1343 Open positions Seasonally adjusted
+"[""optimized_artifact"",""templates"",2,""observations"",2]",2,object,
+"[""optimized_artifact"",""templates"",2,""observations"",2,""dsd_id""]",dsd_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values""]",values,array,
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",0,""value""]",value,string,M
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",1,""column_id""]",column_id,string,ACTIVITY
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",1,""value""]",value,string,INFORMATION_SERVICES
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",2,""value""]",value,string,2025-01
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",3,""value""]",value,integer,1009
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",4,""value""]",value,string,OPEN_POSITIONS
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",5,""column_id""]",column_id,string,SEASONAL_ADJUST
+"[""optimized_artifact"",""templates"",2,""observations"",2,""values"",5,""value""]",value,string,SEASONALLY_ADJUSTED
+"[""optimized_artifact"",""templates"",2,""observations"",2,""evidence_quote""]",evidence_quote,string,Information services 2025-01 1009 Open positions Seasonally adjusted
+"[""optimized_artifact"",""templates"",3]",3,object,
+"[""optimized_artifact"",""templates"",3,""template_id""]",template_id,string,TPL_HEALTH_REGISTERED_DEATHS
+"[""optimized_artifact"",""templates"",3,""dsd_id""]",dsd_id,string,KF_HEALTH_REGISTERED_DEATHS
+"[""optimized_artifact"",""templates"",3,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",3,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",3,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",3,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",3,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",3,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",3,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",3,""columns"",0,""description""]",description,string,Annual frequency A; candidate SDMX CL_FREQ version not confirmed.
+"[""optimized_artifact"",""templates"",3,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",3,""columns"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",3,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",3,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",3,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",3,""columns"",1,""codelist_id""]",codelist_id,string,CL_HEALTH_AREA_LOCAL
+"[""optimized_artifact"",""templates"",3,""columns"",1,""description""]",description,string,"SYNTH_PH_AGENCY:CL_HEALTH_AREA_LOCAL:1.0-proposed. Allowed NORTHLAND, CENTRALIA, SOUTH_COAST; synthetic local areas not confirmed UN M49."
+"[""optimized_artifact"",""templates"",3,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",3,""columns"",2,""column_id""]",column_id,string,CAUSE_OF_DEATH
+"[""optimized_artifact"",""templates"",3,""columns"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",3,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",3,""columns"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",3,""columns"",2,""codelist_id""]",codelist_id,string,CL_HEALTH_CAUSE_LOCAL
+"[""optimized_artifact"",""templates"",3,""columns"",2,""description""]",description,string,"SYNTH_PH_AGENCY:CL_HEALTH_CAUSE_LOCAL:1.0-proposed. Allowed CIRCULATORY_DISEASES, NEOPLASMS; broad local categories not confirmed ICD."
+"[""optimized_artifact"",""templates"",3,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",3,""columns"",3,""column_id""]",column_id,string,AGE
+"[""optimized_artifact"",""templates"",3,""columns"",3,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",3,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",3,""columns"",3,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",3,""columns"",3,""codelist_id""]",codelist_id,string,CL_HEALTH_AGE_GROUP_LOCAL
+"[""optimized_artifact"",""templates"",3,""columns"",3,""description""]",description,string,"SYNTH_PH_AGENCY:CL_HEALTH_AGE_GROUP_LOCAL:1.0-proposed. Allowed Y45T64, Y65_PLUS."
+"[""optimized_artifact"",""templates"",3,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",3,""columns"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",3,""columns"",4,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",3,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",3,""columns"",4,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""templates"",3,""columns"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",3,""columns"",4,""description""]",description,string,Reference year.
+"[""optimized_artifact"",""templates"",3,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",3,""columns"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",3,""columns"",5,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",3,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",3,""columns"",5,""data_type""]",data_type,string,Integer
+"[""optimized_artifact"",""templates"",3,""columns"",5,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",3,""columns"",5,""description""]",description,string,Registered deaths count; synthetic/non-production.
+"[""optimized_artifact"",""templates"",3,""columns"",6]",6,object,
+"[""optimized_artifact"",""templates"",3,""columns"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",3,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",3,""columns"",6,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",3,""columns"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",3,""columns"",6,""codelist_id""]",codelist_id,string,CL_HEALTH_UNIT_MEASURE_LOCAL
+"[""optimized_artifact"",""templates"",3,""columns"",6,""description""]",description,string,SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed. Allowed DEATHS.
+"[""optimized_artifact"",""templates"",3,""columns"",7]",7,object,
+"[""optimized_artifact"",""templates"",3,""columns"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",3,""columns"",7,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",3,""columns"",7,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",3,""columns"",7,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",3,""columns"",7,""codelist_id""]",codelist_id,string,CL_HEALTH_OBS_STATUS_LOCAL
+"[""optimized_artifact"",""templates"",3,""columns"",7,""description""]",description,string,"SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed. Allowed FINAL, PROVISIONAL for this template."
+"[""optimized_artifact"",""templates"",3,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",3,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""dsd_id""]",dsd_id,string,KF_HEALTH_REGISTERED_DEATHS
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",1,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",2,""column_id""]",column_id,string,CAUSE_OF_DEATH
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",2,""value""]",value,string,CIRCULATORY_DISEASES
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",3,""column_id""]",column_id,string,AGE
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",3,""value""]",value,string,Y45T64
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",4,""value""]",value,string,2023
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",5,""value""]",value,integer,266
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",6,""value""]",value,string,DEATHS
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",3,""observations"",0,""values"",7,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",3,""observations"",0,""evidence_quote""]",evidence_quote,string,Northland Circulatory diseases 45-64 2023 266 Deaths Final
+"[""optimized_artifact"",""templates"",3,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""dsd_id""]",dsd_id,string,KF_HEALTH_REGISTERED_DEATHS
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",1,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",2,""column_id""]",column_id,string,CAUSE_OF_DEATH
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",2,""value""]",value,string,NEOPLASMS
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",3,""column_id""]",column_id,string,AGE
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",3,""value""]",value,string,Y65_PLUS
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",4,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",5,""value""]",value,integer,111
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",6,""value""]",value,string,DEATHS
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",3,""observations"",1,""values"",7,""value""]",value,string,PROVISIONAL
+"[""optimized_artifact"",""templates"",3,""observations"",1,""evidence_quote""]",evidence_quote,string,Northland Neoplasms 65+ 2024 111 Deaths Provisional
+"[""optimized_artifact"",""templates"",3,""observations"",2]",2,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""dsd_id""]",dsd_id,string,KF_HEALTH_REGISTERED_DEATHS
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values""]",values,array,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",1,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",1,""value""]",value,string,SOUTH_COAST
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",2,""column_id""]",column_id,string,CAUSE_OF_DEATH
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",2,""value""]",value,string,NEOPLASMS
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",3,""column_id""]",column_id,string,AGE
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",3,""value""]",value,string,Y65_PLUS
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",4,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",5,""value""]",value,integer,707
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",6,""value""]",value,string,DEATHS
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",3,""observations"",2,""values"",7,""value""]",value,string,PROVISIONAL
+"[""optimized_artifact"",""templates"",3,""observations"",2,""evidence_quote""]",evidence_quote,string,South Coast Neoplasms 65+ 2024 707 Deaths Provisional
+"[""optimized_artifact"",""templates"",4]",4,object,
+"[""optimized_artifact"",""templates"",4,""template_id""]",template_id,string,TPL_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""optimized_artifact"",""templates"",4,""dsd_id""]",dsd_id,string,KF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""optimized_artifact"",""templates"",4,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",4,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",4,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",4,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",4,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",4,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",4,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",4,""columns"",0,""description""]",description,string,Annual frequency A; candidate SDMX CL_FREQ version not confirmed.
+"[""optimized_artifact"",""templates"",4,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",4,""columns"",1,""column_id""]",column_id,string,OWNERSHIP
+"[""optimized_artifact"",""templates"",4,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",4,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",4,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",4,""columns"",1,""codelist_id""]",codelist_id,string,CL_HEALTH_OWNERSHIP_LOCAL
+"[""optimized_artifact"",""templates"",4,""columns"",1,""description""]",description,string,"SYNTH_PH_AGENCY:CL_HEALTH_OWNERSHIP_LOCAL:1.0-proposed. Allowed PUBLIC, PRIVATE_NON_PROFIT, PRIVATE_FOR_PROFIT."
+"[""optimized_artifact"",""templates"",4,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",4,""columns"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",4,""columns"",2,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",4,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",4,""columns"",2,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""templates"",4,""columns"",2,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",4,""columns"",2,""description""]",description,string,Reference year.
+"[""optimized_artifact"",""templates"",4,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",4,""columns"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",4,""columns"",3,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",4,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",4,""columns"",3,""data_type""]",data_type,string,Integer
+"[""optimized_artifact"",""templates"",4,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",4,""columns"",3,""description""]",description,string,Available staffed hospital beds count; synthetic/non-production.
+"[""optimized_artifact"",""templates"",4,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",4,""columns"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",4,""columns"",4,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",4,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",4,""columns"",4,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",4,""columns"",4,""codelist_id""]",codelist_id,string,CL_HEALTH_UNIT_MEASURE_LOCAL
+"[""optimized_artifact"",""templates"",4,""columns"",4,""description""]",description,string,SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed. Allowed BEDS.
+"[""optimized_artifact"",""templates"",4,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",4,""columns"",5,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",4,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",4,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",4,""columns"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",4,""columns"",5,""codelist_id""]",codelist_id,string,CL_HEALTH_OBS_STATUS_LOCAL
+"[""optimized_artifact"",""templates"",4,""columns"",5,""description""]",description,string,"SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed. Allowed FINAL, ESTIMATED. ESTIMATED for PRIVATE_FOR_PROFIT 2024 reflects incomplete private-sector reporting."
+"[""optimized_artifact"",""templates"",4,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",4,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",4,""observations"",0,""dsd_id""]",dsd_id,string,KF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",1,""column_id""]",column_id,string,OWNERSHIP
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",1,""value""]",value,string,PUBLIC
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",2,""value""]",value,string,2023
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",3,""value""]",value,integer,1677
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",4,""value""]",value,string,BEDS
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",5,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",4,""observations"",0,""values"",5,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",4,""observations"",0,""evidence_quote""]",evidence_quote,string,Public 2023 1677 Beds Final
+"[""optimized_artifact"",""templates"",4,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",4,""observations"",1,""dsd_id""]",dsd_id,string,KF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",1,""column_id""]",column_id,string,OWNERSHIP
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",1,""value""]",value,string,PRIVATE_FOR_PROFIT
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",2,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",3,""value""]",value,integer,2083
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",4,""value""]",value,string,BEDS
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",5,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",4,""observations"",1,""values"",5,""value""]",value,string,ESTIMATED
+"[""optimized_artifact"",""templates"",4,""observations"",1,""evidence_quote""]",evidence_quote,string,Private for-profit 2024 2083 Beds Estimated
+"[""optimized_artifact"",""templates"",5]",5,object,
+"[""optimized_artifact"",""templates"",5,""template_id""]",template_id,string,TPL_EDU_ENROLLMENT
+"[""optimized_artifact"",""templates"",5,""dsd_id""]",dsd_id,string,KF_EDU_ENROLLMENT
+"[""optimized_artifact"",""templates"",5,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",5,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",5,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",5,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",5,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",5,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",5,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",5,""columns"",0,""description""]",description,string,Annual frequency A; candidate SDMX CL_FREQ version not confirmed.
+"[""optimized_artifact"",""templates"",5,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",5,""columns"",1,""column_id""]",column_id,string,EDUCATION_LEVEL
+"[""optimized_artifact"",""templates"",5,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",5,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",5,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",5,""columns"",1,""codelist_id""]",codelist_id,string,CL_EDUCATION_LEVEL_LOCAL
+"[""optimized_artifact"",""templates"",5,""columns"",1,""description""]",description,string,"SML:CL_EDUCATION_LEVEL_LOCAL:1.0-draft. Allowed PRIMARY, LOWER_SECONDARY, UPPER_SECONDARY; pending ISCED mapping review."
+"[""optimized_artifact"",""templates"",5,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",5,""columns"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",5,""columns"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",5,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",5,""columns"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",5,""columns"",2,""codelist_id""]",codelist_id,string,CL_SEX
+"[""optimized_artifact"",""templates"",5,""columns"",2,""description""]",description,string,"Candidate SDMX CL_SEX values F, M, _T; version/code contents must be registry-validated."
+"[""optimized_artifact"",""templates"",5,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",5,""columns"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",5,""columns"",3,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",5,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",5,""columns"",3,""data_type""]",data_type,string,GregorianYear
+"[""optimized_artifact"",""templates"",5,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",5,""columns"",3,""description""]",description,string,Calendar year.
+"[""optimized_artifact"",""templates"",5,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",5,""columns"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",5,""columns"",4,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",5,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",5,""columns"",4,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""templates"",5,""columns"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",5,""columns"",4,""description""]",description,string,"Numeric enrollment count; no UNIT_MULT, DECIMALS, CONF_STATUS or extra quality flag supplied."
+"[""optimized_artifact"",""templates"",5,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",5,""columns"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",5,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",5,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",5,""columns"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",5,""columns"",5,""codelist_id""]",codelist_id,string,CL_EDU_UNIT_MEASURE_LOCAL
+"[""optimized_artifact"",""templates"",5,""columns"",5,""description""]",description,string,SML:CL_EDU_UNIT_MEASURE_LOCAL:1.0-draft. Allowed STUDENTS for this template.
+"[""optimized_artifact"",""templates"",5,""columns"",6]",6,object,
+"[""optimized_artifact"",""templates"",5,""columns"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",5,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",5,""columns"",6,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",5,""columns"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",5,""columns"",6,""codelist_id""]",codelist_id,string,CL_EDU_OBS_STATUS_LOCAL
+"[""optimized_artifact"",""templates"",5,""columns"",6,""description""]",description,string,"SML:CL_EDU_OBS_STATUS_LOCAL:1.0-draft. Allowed FINAL, PROVISIONAL for this template."
+"[""optimized_artifact"",""templates"",5,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",5,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""dsd_id""]",dsd_id,string,KF_EDU_ENROLLMENT
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",1,""column_id""]",column_id,string,EDUCATION_LEVEL
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",1,""value""]",value,string,PRIMARY
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",2,""value""]",value,string,F
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",3,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",4,""value""]",value,integer,78748
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",5,""value""]",value,string,STUDENTS
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",5,""observations"",0,""values"",6,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",5,""observations"",0,""evidence_quote""]",evidence_quote,string,Primary Female 2024 78748 Students Final
+"[""optimized_artifact"",""templates"",5,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""dsd_id""]",dsd_id,string,KF_EDU_ENROLLMENT
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",1,""column_id""]",column_id,string,EDUCATION_LEVEL
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",1,""value""]",value,string,UPPER_SECONDARY
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",2,""value""]",value,string,_T
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",3,""value""]",value,string,2025
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",4,""value""]",value,integer,129161
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",5,""value""]",value,string,STUDENTS
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",5,""observations"",1,""values"",6,""value""]",value,string,PROVISIONAL
+"[""optimized_artifact"",""templates"",5,""observations"",1,""evidence_quote""]",evidence_quote,string,Upper secondary Total 2025 129161 Students Provisional
+"[""optimized_artifact"",""templates"",6]",6,object,
+"[""optimized_artifact"",""templates"",6,""template_id""]",template_id,string,TPL_EDU_LOWER_SECONDARY_COMPLETION
+"[""optimized_artifact"",""templates"",6,""dsd_id""]",dsd_id,string,KF_EDU_LOWER_SECONDARY_COMPLETION
+"[""optimized_artifact"",""templates"",6,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",6,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",6,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",6,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",6,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",6,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",6,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",6,""columns"",0,""description""]",description,string,Annual frequency A; candidate SDMX CL_FREQ version not confirmed.
+"[""optimized_artifact"",""templates"",6,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",6,""columns"",1,""column_id""]",column_id,string,WEALTH_QUINTILE
+"[""optimized_artifact"",""templates"",6,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",6,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",6,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",6,""columns"",1,""codelist_id""]",codelist_id,string,CL_WEALTH_QUINTILE_SURVEY_LOCAL
+"[""optimized_artifact"",""templates"",6,""columns"",1,""description""]",description,string,"SML:CL_WEALTH_QUINTILE_SURVEY_LOCAL:1.0-draft. Allowed LOWEST_QUINTILE, MIDDLE_QUINTILE, HIGHEST_QUINTILE."
+"[""optimized_artifact"",""templates"",6,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",6,""columns"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",6,""columns"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",6,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",6,""columns"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",6,""columns"",2,""codelist_id""]",codelist_id,string,CL_SEX
+"[""optimized_artifact"",""templates"",6,""columns"",2,""description""]",description,string,Candidate SDMX CL_SEX values F and M; must be registry-validated.
+"[""optimized_artifact"",""templates"",6,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",6,""columns"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",6,""columns"",3,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",6,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",6,""columns"",3,""data_type""]",data_type,string,GregorianYear
+"[""optimized_artifact"",""templates"",6,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",6,""columns"",3,""description""]",description,string,Calendar year. Template fixed to lower-secondary completion because only lower-secondary completion rows are supplied.
+"[""optimized_artifact"",""templates"",6,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",6,""columns"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",6,""columns"",4,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",6,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",6,""columns"",4,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""templates"",6,""columns"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",6,""columns"",4,""description""]",description,string,Numeric lower-secondary completion rate.
+"[""optimized_artifact"",""templates"",6,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",6,""columns"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",6,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",6,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",6,""columns"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",6,""columns"",5,""codelist_id""]",codelist_id,string,CL_EDU_UNIT_MEASURE_LOCAL
+"[""optimized_artifact"",""templates"",6,""columns"",5,""description""]",description,string,SML:CL_EDU_UNIT_MEASURE_LOCAL:1.0-draft. Allowed PERCENT for this template.
+"[""optimized_artifact"",""templates"",6,""columns"",6]",6,object,
+"[""optimized_artifact"",""templates"",6,""columns"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",6,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",6,""columns"",6,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",6,""columns"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",6,""columns"",6,""codelist_id""]",codelist_id,string,CL_EDU_OBS_STATUS_LOCAL
+"[""optimized_artifact"",""templates"",6,""columns"",6,""description""]",description,string,SML:CL_EDU_OBS_STATUS_LOCAL:1.0-draft. Allowed MODELLED_ESTIMATE for this template.
+"[""optimized_artifact"",""templates"",6,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",6,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""dsd_id""]",dsd_id,string,KF_EDU_LOWER_SECONDARY_COMPLETION
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",1,""column_id""]",column_id,string,WEALTH_QUINTILE
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",1,""value""]",value,string,LOWEST_QUINTILE
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",2,""value""]",value,string,F
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",3,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",4,""value""]",value,number,64.0
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",5,""value""]",value,string,PERCENT
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",6,""observations"",0,""values"",6,""value""]",value,string,MODELLED_ESTIMATE
+"[""optimized_artifact"",""templates"",6,""observations"",0,""evidence_quote""]",evidence_quote,string,Lowest quintile Female 2024 64.0 Percent Modelled estimate
+"[""optimized_artifact"",""templates"",6,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""dsd_id""]",dsd_id,string,KF_EDU_LOWER_SECONDARY_COMPLETION
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",1,""column_id""]",column_id,string,WEALTH_QUINTILE
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",1,""value""]",value,string,HIGHEST_QUINTILE
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",2,""column_id""]",column_id,string,SEX
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",2,""value""]",value,string,M
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",3,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",4,""value""]",value,number,91.7
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",5,""value""]",value,string,PERCENT
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",6,""observations"",1,""values"",6,""value""]",value,string,MODELLED_ESTIMATE
+"[""optimized_artifact"",""templates"",6,""observations"",1,""evidence_quote""]",evidence_quote,string,Highest quintile Male 2024 91.7 Percent Modelled estimate
+"[""optimized_artifact"",""templates"",7]",7,object,
+"[""optimized_artifact"",""templates"",7,""template_id""]",template_id,string,TPL_AGR_CROP_AREA_PRODUCTION_LONG
+"[""optimized_artifact"",""templates"",7,""dsd_id""]",dsd_id,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""optimized_artifact"",""templates"",7,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",7,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",7,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",7,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",7,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",7,""columns"",0,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",7,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",7,""columns"",0,""description""]",description,string,Annual frequency A; CL_FREQ version not confirmed.
+"[""optimized_artifact"",""templates"",7,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",7,""columns"",1,""column_id""]",column_id,string,CROP
+"[""optimized_artifact"",""templates"",7,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",7,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",7,""columns"",1,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",7,""columns"",1,""codelist_id""]",codelist_id,string,CL_CROP_LOCAL
+"[""optimized_artifact"",""templates"",7,""columns"",1,""description""]",description,string,"Local crop code; observed RICE, MAIZE, CASSAVA; crop names require classification review."
+"[""optimized_artifact"",""templates"",7,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",7,""columns"",2,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",7,""columns"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",7,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",7,""columns"",2,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",7,""columns"",2,""codelist_id""]",codelist_id,string,CL_AGR_REGION_LOCAL
+"[""optimized_artifact"",""templates"",7,""columns"",2,""description""]",description,string,"Local agriculture region; observed NORTHLAND, CENTRALIA, SOUTH_COAST; not confirmed UN M49."
+"[""optimized_artifact"",""templates"",7,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",7,""columns"",3,""column_id""]",column_id,string,INDICATOR
+"[""optimized_artifact"",""templates"",7,""columns"",3,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",7,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",7,""columns"",3,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",7,""columns"",3,""codelist_id""]",codelist_id,string,CL_AGR_CROP_INDICATOR
+"[""optimized_artifact"",""templates"",7,""columns"",3,""description""]",description,string,Allowed HARVESTED_AREA or PRODUCTION.
+"[""optimized_artifact"",""templates"",7,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",7,""columns"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",7,""columns"",4,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",7,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",7,""columns"",4,""data_type""]",data_type,string,GregorianYear
+"[""optimized_artifact"",""templates"",7,""columns"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",7,""columns"",4,""description""]",description,string,Annual reference period.
+"[""optimized_artifact"",""templates"",7,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",7,""columns"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",7,""columns"",5,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",7,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",7,""columns"",5,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""templates"",7,""columns"",5,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",7,""columns"",5,""description""]",description,string,Numeric crop value; units separate.
+"[""optimized_artifact"",""templates"",7,""columns"",6]",6,object,
+"[""optimized_artifact"",""templates"",7,""columns"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",7,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",7,""columns"",6,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",7,""columns"",6,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",7,""columns"",6,""codelist_id""]",codelist_id,string,CL_AGR_UNIT_MEASURE_LOCAL
+"[""optimized_artifact"",""templates"",7,""columns"",6,""description""]",description,string,Allowed HECTARES for HARVESTED_AREA and TONNES for PRODUCTION.
+"[""optimized_artifact"",""templates"",7,""columns"",7]",7,object,
+"[""optimized_artifact"",""templates"",7,""columns"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",7,""columns"",7,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",7,""columns"",7,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",7,""columns"",7,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",7,""columns"",7,""codelist_id""]",codelist_id,string,CL_AGR_OBS_STATUS_LOCAL
+"[""optimized_artifact"",""templates"",7,""columns"",7,""description""]",description,string,Allowed FINAL or FORECAST; mapping to SDMX CL_OBS_STATUS unconfirmed.
+"[""optimized_artifact"",""templates"",7,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",7,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""dsd_id""]",dsd_id,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",1,""column_id""]",column_id,string,CROP
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",1,""value""]",value,string,RICE
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",2,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",2,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",3,""column_id""]",column_id,string,INDICATOR
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",3,""value""]",value,string,HARVESTED_AREA
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",4,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",5,""value""]",value,integer,60388
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",6,""value""]",value,string,HECTARES
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",7,""observations"",0,""values"",7,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",7,""observations"",0,""evidence_quote""]",evidence_quote,string,Rice Northland 2024 60388 Hectares 315315 Tonnes Final
+"[""optimized_artifact"",""templates"",7,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""dsd_id""]",dsd_id,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",1,""column_id""]",column_id,string,CROP
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",1,""value""]",value,string,RICE
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",2,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",2,""value""]",value,string,NORTHLAND
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",3,""column_id""]",column_id,string,INDICATOR
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",3,""value""]",value,string,PRODUCTION
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",4,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",5,""value""]",value,integer,315315
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",6,""value""]",value,string,TONNES
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",7,""observations"",1,""values"",7,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",7,""observations"",1,""evidence_quote""]",evidence_quote,string,Rice Northland 2024 60388 Hectares 315315 Tonnes Final
+"[""optimized_artifact"",""templates"",7,""observations"",2]",2,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""dsd_id""]",dsd_id,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values""]",values,array,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",1,""column_id""]",column_id,string,CROP
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",1,""value""]",value,string,CASSAVA
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",2,""column_id""]",column_id,string,REF_AREA
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",2,""value""]",value,string,SOUTH_COAST
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",3,""column_id""]",column_id,string,INDICATOR
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",3,""value""]",value,string,PRODUCTION
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",4,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",4,""value""]",value,string,2025
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",5,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",5,""value""]",value,integer,100775
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",6,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",6,""value""]",value,string,TONNES
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",7]",7,object,
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",7,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",7,""observations"",2,""values"",7,""value""]",value,string,FORECAST
+"[""optimized_artifact"",""templates"",7,""observations"",2,""evidence_quote""]",evidence_quote,string,Cassava South Coast 2025 87375 Hectares 100775 Tonnes Forecast
+"[""optimized_artifact"",""templates"",8]",8,object,
+"[""optimized_artifact"",""templates"",8,""template_id""]",template_id,string,TPL_AGR_FERTILIZER_RETAIL_PRICE_LONG
+"[""optimized_artifact"",""templates"",8,""dsd_id""]",dsd_id,string,KF_AGR_FERTILIZER_RETAIL_PRICE
+"[""optimized_artifact"",""templates"",8,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",8,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",8,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",8,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",8,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",8,""columns"",0,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",8,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",8,""columns"",0,""description""]",description,string,Monthly frequency M; CL_FREQ version not confirmed.
+"[""optimized_artifact"",""templates"",8,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",8,""columns"",1,""column_id""]",column_id,string,PRODUCT
+"[""optimized_artifact"",""templates"",8,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",8,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",8,""columns"",1,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",8,""columns"",1,""codelist_id""]",codelist_id,string,CL_FERTILIZER_PRODUCT_LOCAL
+"[""optimized_artifact"",""templates"",8,""columns"",1,""description""]",description,string,"Local fertilizer market product; observed UREA, COMPOUND_NPK; not verified CPC codes."
+"[""optimized_artifact"",""templates"",8,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",8,""columns"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",8,""columns"",2,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",8,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",8,""columns"",2,""data_type""]",data_type,string,GregorianMonth
+"[""optimized_artifact"",""templates"",8,""columns"",2,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",8,""columns"",2,""description""]",description,string,Monthly reference period.
+"[""optimized_artifact"",""templates"",8,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",8,""columns"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",8,""columns"",3,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",8,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",8,""columns"",3,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""templates"",8,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",8,""columns"",3,""description""]",description,string,Numeric retail price only.
+"[""optimized_artifact"",""templates"",8,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",8,""columns"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",8,""columns"",4,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",8,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",8,""columns"",4,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",8,""columns"",4,""codelist_id""]",codelist_id,string,CL_FERTILIZER_UNIT_LOCAL
+"[""optimized_artifact"",""templates"",8,""columns"",4,""description""]",description,string,Allowed LOCAL_CURRENCY_PER_50KG_BAG; currency deliberately unnamed and not ISO 4217-mapped.
+"[""optimized_artifact"",""templates"",8,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",8,""columns"",5,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",8,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",8,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",8,""columns"",5,""data_type""]",data_type,string,String (coded)
+"[""optimized_artifact"",""templates"",8,""columns"",5,""codelist_id""]",codelist_id,string,CL_PRICE_OBS_STATUS_LOCAL
+"[""optimized_artifact"",""templates"",8,""columns"",5,""description""]",description,string,Allowed OBSERVED; mapping to SDMX CL_OBS_STATUS unconfirmed.
+"[""optimized_artifact"",""templates"",8,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",8,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",8,""observations"",0,""dsd_id""]",dsd_id,string,KF_AGR_FERTILIZER_RETAIL_PRICE
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",0,""value""]",value,string,M
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",1,""column_id""]",column_id,string,PRODUCT
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",1,""value""]",value,string,UREA
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",2,""value""]",value,string,2025-01
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",3,""value""]",value,number,313.28
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",4,""value""]",value,string,LOCAL_CURRENCY_PER_50KG_BAG
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",5,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",8,""observations"",0,""values"",5,""value""]",value,string,OBSERVED
+"[""optimized_artifact"",""templates"",8,""observations"",0,""evidence_quote""]",evidence_quote,string,Urea 2025-01 313.28 Local currency per 50 kg bag Observed
+"[""optimized_artifact"",""templates"",8,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",8,""observations"",1,""dsd_id""]",dsd_id,string,KF_AGR_FERTILIZER_RETAIL_PRICE
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",0,""value""]",value,string,M
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",1,""column_id""]",column_id,string,PRODUCT
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",1,""value""]",value,string,COMPOUND_NPK
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",2,""value""]",value,string,2025-04
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",3,""value""]",value,number,275.86
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",4,""value""]",value,string,LOCAL_CURRENCY_PER_50KG_BAG
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",5,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",8,""observations"",1,""values"",5,""value""]",value,string,OBSERVED
+"[""optimized_artifact"",""templates"",8,""observations"",1,""evidence_quote""]",evidence_quote,string,Compound NPK 2025-04 275.86 Local currency per 50 kg bag Observed
+"[""optimized_artifact"",""templates"",9]",9,object,
+"[""optimized_artifact"",""templates"",9,""template_id""]",template_id,string,TPL_SYNTH_CPI_DIVISION_MONTHLY_AI_FILL
+"[""optimized_artifact"",""templates"",9,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""optimized_artifact"",""templates"",9,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",9,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",9,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",9,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",9,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",9,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",9,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",9,""columns"",0,""description""]",description,string,Monthly frequency M; candidate CL_FREQ mapping pending registry verification.
+"[""optimized_artifact"",""templates"",9,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",9,""columns"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""optimized_artifact"",""templates"",9,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",9,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",9,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",9,""columns"",1,""codelist_id""]",codelist_id,string,CL_SYNTH_CONSUMPTION_DIVISION
+"[""optimized_artifact"",""templates"",9,""columns"",1,""description""]",description,string,"Local CPI consumption division; observed FOOD_NAB, HOUS_UTIL, TRANSPORT. Resembles COICOP but revision not confirmed."
+"[""optimized_artifact"",""templates"",9,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",9,""columns"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",9,""columns"",2,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",9,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",9,""columns"",2,""data_type""]",data_type,string,TimePeriod
+"[""optimized_artifact"",""templates"",9,""columns"",2,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",9,""columns"",2,""description""]",description,string,Monthly period YYYY-MM. REF_AREA omitted because no area/country supplied.
+"[""optimized_artifact"",""templates"",9,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",9,""columns"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",9,""columns"",3,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",9,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",9,""columns"",3,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""templates"",9,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",9,""columns"",3,""description""]",description,string,Numeric CPI index value; no unit/base text.
+"[""optimized_artifact"",""templates"",9,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",9,""columns"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",9,""columns"",4,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",9,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",9,""columns"",4,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",9,""columns"",4,""codelist_id""]",codelist_id,string,CL_SYNTH_UNIT_MEASURE
+"[""optimized_artifact"",""templates"",9,""columns"",4,""description""]",description,string,Plain index unit IDX; base period is held separately in BASE_PERIOD.
+"[""optimized_artifact"",""templates"",9,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",9,""columns"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""optimized_artifact"",""templates"",9,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",9,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",9,""columns"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",9,""columns"",5,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",9,""columns"",5,""description""]",description,string,Use 2023=100 for shown CPI rows.
+"[""optimized_artifact"",""templates"",9,""columns"",6]",6,object,
+"[""optimized_artifact"",""templates"",9,""columns"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",9,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",9,""columns"",6,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",9,""columns"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",9,""columns"",6,""codelist_id""]",codelist_id,string,CL_SYNTH_CPI_OBS_STATUS
+"[""optimized_artifact"",""templates"",9,""columns"",6,""description""]",description,string,"Allowed FINAL, PROVISIONAL; SURVEY_ESTIMATE is not a CPI OBS_STATUS."
+"[""optimized_artifact"",""templates"",9,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",9,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",0,""value""]",value,string,M
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",1,""value""]",value,string,FOOD_NAB
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",2,""value""]",value,string,2025-01
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",3,""value""]",value,number,108.92
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",4,""value""]",value,string,IDX
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",5,""value""]",value,string,2023=100
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",9,""observations"",0,""values"",6,""value""]",value,string,FINAL
+"[""optimized_artifact"",""templates"",9,""observations"",0,""evidence_quote""]",evidence_quote,string,"Food and non-alcoholic beverages 2025-01 108.92 Index, 2023=100 Final"
+"[""optimized_artifact"",""templates"",9,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",0,""value""]",value,string,M
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",1,""value""]",value,string,TRANSPORT
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",2,""value""]",value,string,2025-04
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",3,""value""]",value,number,111.7
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",4,""value""]",value,string,IDX
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",5,""value""]",value,string,2023=100
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""optimized_artifact"",""templates"",9,""observations"",1,""values"",6,""value""]",value,string,PROVISIONAL
+"[""optimized_artifact"",""templates"",9,""observations"",1,""evidence_quote""]",evidence_quote,string,"Transport 2025-04 111.70 Index, 2023=100 Provisional"
+"[""optimized_artifact"",""templates"",10]",10,object,
+"[""optimized_artifact"",""templates"",10,""template_id""]",template_id,string,TPL_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL_AI_FILL
+"[""optimized_artifact"",""templates"",10,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""optimized_artifact"",""templates"",10,""columns""]",columns,array,
+"[""optimized_artifact"",""templates"",10,""columns"",0]",0,object,
+"[""optimized_artifact"",""templates"",10,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",10,""columns"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",10,""columns"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",10,""columns"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",10,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""templates"",10,""columns"",0,""description""]",description,string,Annual frequency A; candidate CL_FREQ mapping pending registry verification.
+"[""optimized_artifact"",""templates"",10,""columns"",1]",1,object,
+"[""optimized_artifact"",""templates"",10,""columns"",1,""column_id""]",column_id,string,RESIDENCE
+"[""optimized_artifact"",""templates"",10,""columns"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",10,""columns"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",10,""columns"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",10,""columns"",1,""codelist_id""]",codelist_id,string,CL_SYNTH_RESIDENCE
+"[""optimized_artifact"",""templates"",10,""columns"",1,""description""]",description,string,"Local residence category; observed URBAN, RURAL."
+"[""optimized_artifact"",""templates"",10,""columns"",2]",2,object,
+"[""optimized_artifact"",""templates"",10,""columns"",2,""column_id""]",column_id,string,EXPENDITURE_QUINTILE
+"[""optimized_artifact"",""templates"",10,""columns"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""templates"",10,""columns"",2,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",10,""columns"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",10,""columns"",2,""codelist_id""]",codelist_id,string,CL_SYNTH_EXPENDITURE_QUINTILE
+"[""optimized_artifact"",""templates"",10,""columns"",2,""description""]",description,string,"Local expenditure quintile; only LOWEST and HIGHEST are evidenced, no middle rows inferred."
+"[""optimized_artifact"",""templates"",10,""columns"",3]",3,object,
+"[""optimized_artifact"",""templates"",10,""columns"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",10,""columns"",3,""role""]",role,string,TIME
+"[""optimized_artifact"",""templates"",10,""columns"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",10,""columns"",3,""data_type""]",data_type,string,TimePeriod
+"[""optimized_artifact"",""templates"",10,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",10,""columns"",3,""description""]",description,string,Annual period YYYY. REF_AREA omitted because no area/country supplied.
+"[""optimized_artifact"",""templates"",10,""columns"",4]",4,object,
+"[""optimized_artifact"",""templates"",10,""columns"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",10,""columns"",4,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""templates"",10,""columns"",4,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",10,""columns"",4,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""templates"",10,""columns"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""templates"",10,""columns"",4,""description""]",description,string,Numeric mean monthly consumption expenditure per household; no currency text.
+"[""optimized_artifact"",""templates"",10,""columns"",5]",5,object,
+"[""optimized_artifact"",""templates"",10,""columns"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",10,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",10,""columns"",5,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",10,""columns"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",10,""columns"",5,""codelist_id""]",codelist_id,string,CL_SYNTH_UNIT_MEASURE
+"[""optimized_artifact"",""templates"",10,""columns"",5,""description""]",description,string,LCU_PER_HH_PER_MONTH because the report does not name the currency; not ISO 4217-mapped.
+"[""optimized_artifact"",""templates"",10,""columns"",6]",6,object,
+"[""optimized_artifact"",""templates"",10,""columns"",6,""column_id""]",column_id,string,ESTIMATION_TYPE
+"[""optimized_artifact"",""templates"",10,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""templates"",10,""columns"",6,""required""]",required,boolean,true
+"[""optimized_artifact"",""templates"",10,""columns"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""templates"",10,""columns"",6,""codelist_id""]",codelist_id,string,CL_SYNTH_ESTIMATION_TYPE
+"[""optimized_artifact"",""templates"",10,""columns"",6,""description""]",description,string,"Allowed SURVEY_ESTIMATE; sampling error is reference metadata, not a dimension."
+"[""optimized_artifact"",""templates"",10,""observations""]",observations,array,
+"[""optimized_artifact"",""templates"",10,""observations"",0]",0,object,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values""]",values,array,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",1,""column_id""]",column_id,string,RESIDENCE
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",1,""value""]",value,string,URBAN
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",2,""column_id""]",column_id,string,EXPENDITURE_QUINTILE
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",2,""value""]",value,string,LOWEST
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",3,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",4,""value""]",value,integer,7072
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",5,""value""]",value,string,LCU_PER_HH_PER_MONTH
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",6,""column_id""]",column_id,string,ESTIMATION_TYPE
+"[""optimized_artifact"",""templates"",10,""observations"",0,""values"",6,""value""]",value,string,SURVEY_ESTIMATE
+"[""optimized_artifact"",""templates"",10,""observations"",0,""evidence_quote""]",evidence_quote,string,"Urban Lowest quintile 2024 7,072 Local currency per household per month Survey estimate"
+"[""optimized_artifact"",""templates"",10,""observations"",1]",1,object,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values""]",values,array,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",0]",0,object,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",0,""value""]",value,string,A
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",1]",1,object,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",1,""column_id""]",column_id,string,RESIDENCE
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",1,""value""]",value,string,RURAL
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",2]",2,object,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",2,""column_id""]",column_id,string,EXPENDITURE_QUINTILE
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",2,""value""]",value,string,HIGHEST
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",3]",3,object,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",3,""value""]",value,string,2024
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",4]",4,object,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",4,""value""]",value,integer,2499
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",5]",5,object,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",5,""value""]",value,string,LCU_PER_HH_PER_MONTH
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",6]",6,object,
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",6,""column_id""]",column_id,string,ESTIMATION_TYPE
+"[""optimized_artifact"",""templates"",10,""observations"",1,""values"",6,""value""]",value,string,SURVEY_ESTIMATE
+"[""optimized_artifact"",""templates"",10,""observations"",1,""evidence_quote""]",evidence_quote,string,"Rural Highest quintile 2024 2,499 Local currency per household per month Survey estimate"

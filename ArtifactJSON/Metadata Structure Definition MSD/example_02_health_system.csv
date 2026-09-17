@@ -1,0 +1,368 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,METADATA_STRUCTURE_DEFINITION
+"[""source_report""]",source_report,string,example_02_health_system.pdf
+"[""source_sha256""]",source_sha256,string,5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23
+"[""principles_file""]",principles_file,string,05_METADATA_STRUCTURE_DEFINITION_MSD.txt
+"[""principles_sha256""]",principles_sha256,string,f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY_2_1
+"[""standard_references"",0,""version""]",version,string,"2.1, December 2020"
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"Supplied official-source excerpt shows SDMX Glossary entries including Metadata Structure Definition, Metadata Set, Metadata update, and a cross-domain concept entry for Geographical coverage with Concept ID COVERAGE_GEO and recommended representation String; Codelist."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Global Registry catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS_AND_METADATA
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,Supplied official-source excerpt shows the SDMX Global Registry interface includes Codelists and Metadata / Metadata Structures among searchable artefact categories; it does not confirm any specific health-domain codelist or metadata concept scheme version for this report.
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Reference metadata guideline
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",2,""version""]",version,string,1.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,"The guideline URL is supplied in the principles as a recommended source for SDMX reference metadata concepts, but no fetched external excerpt confirming exact concept IDs, definitions and versions from that guideline was supplied in the evidence package."
+"[""standard_references"",2,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,UNSD
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",3,""evidence""]",evidence,string,"Supplied official-source excerpt shows UN M49 country and area entries with numeric and alpha codes. The report areas Northland, Centralia and South Coast are synthetic/local area labels and are not confirmed as UN M49 areas from the supplied excerpt."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The report provides reference-metadata values for title, publisher, publication date, methodology, source description, definitions, caveats, revision policy and confidentiality, but it does not provide contact details, source URL, legal mandate or metadata update date."
+"[""limitations"",1]",1,string,"Exact SDMX Global Reference Metadata Concept Scheme IDs and versions are not confirmed from supplied external evidence for most candidate concepts such as DATA_REV, CONF, COMPLETENESS, CONTACT and COMPILING_ORG; these are treated as candidate mappings rather than confirmed reuse."
+"[""limitations"",2]",2,string,The report explicitly indicates that mortality and hospital beds should not share the mortality DSD; this MSD therefore separates mortality and hospital-capacity metadata while retaining common report-level metadata.
+"[""limitations"",3]",3,string,"Cause labels are only described as resembling broad ICD families; no ICD version is confirmed, so the MSD includes limitation and definition metadata rather than asserting an ICD classification."
+"[""limitations"",4]",4,string,Geographic labels in the report are synthetic/local and are not confirmed against UN M49 or ISO 3166 from the supplied evidence.
+"[""limitations"",5]",5,string,This artifact defines metadata structures only; actual metadata values belong in a separate Metadata Set.
+"[""metadata_structures""]",metadata_structures,array,
+"[""metadata_structures"",0]",0,object,
+"[""metadata_structures"",0,""msd_id""]",msd_id,string,MSD_HEALTH_REPORT_REFERENCE_METADATA
+"[""metadata_structures"",0,""name""]",name,string,Health Outcomes and Capacity Report reference metadata
+"[""metadata_structures"",0,""agency_id""]",agency_id,string,SYNTHETIC_PUBLIC_HEALTH_AGENCY
+"[""metadata_structures"",0,""version""]",version,string,1.0-draft
+"[""metadata_structures"",0,""concepts""]",concepts,array,
+"[""metadata_structures"",0,""concepts"",0]",0,object,
+"[""metadata_structures"",0,""concepts"",0,""concept_id""]",concept_id,string,REPORT_TITLE
+"[""metadata_structures"",0,""concepts"",0,""name""]",name,string,Report title
+"[""metadata_structures"",0,""concepts"",0,""definition""]",definition,string,Title or name of the publication to which the metadata applies.
+"[""metadata_structures"",0,""concepts"",0,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",0,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,"Extract the publication title from the cover or page heading. In this report, use the health outcomes and capacity report title rather than the file-name-like document title if both are captured separately in a metadata set."
+"[""metadata_structures"",0,""concepts"",0,""source_standard""]",source_standard,string,LOCAL concept; no exact confirmed SDMX concept ID supplied in external evidence
+"[""metadata_structures"",0,""concepts"",0,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",1]",1,object,
+"[""metadata_structures"",0,""concepts"",1,""concept_id""]",concept_id,string,PUBLISHER
+"[""metadata_structures"",0,""concepts"",1,""name""]",name,string,Publisher
+"[""metadata_structures"",0,""concepts"",1,""definition""]",definition,string,Organisation responsible for publishing the report.
+"[""metadata_structures"",0,""concepts"",1,""representation""]",representation,string,Text or organisation identifier where a confirmed organisation scheme exists
+"[""metadata_structures"",0,""concepts"",1,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",1,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,Extract the publishing organisation named near the report title.
+"[""metadata_structures"",0,""concepts"",1,""source_standard""]",source_standard,string,LOCAL concept; possible mapping to SDMX organisation metadata requires confirmation
+"[""metadata_structures"",0,""concepts"",1,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",2]",2,object,
+"[""metadata_structures"",0,""concepts"",2,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""metadata_structures"",0,""concepts"",2,""name""]",name,string,Publication date
+"[""metadata_structures"",0,""concepts"",2,""definition""]",definition,string,Date on which the report or publication was issued.
+"[""metadata_structures"",0,""concepts"",2,""representation""]",representation,string,Date
+"[""metadata_structures"",0,""concepts"",2,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",2,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Extract the publication date from the report front matter and normalise to an ISO date in the metadata set while preserving the source text there if required.
+"[""metadata_structures"",0,""concepts"",2,""source_standard""]",source_standard,string,LOCAL concept; no exact confirmed SDMX concept ID supplied in external evidence
+"[""metadata_structures"",0,""concepts"",2,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",3]",3,object,
+"[""metadata_structures"",0,""concepts"",3,""concept_id""]",concept_id,string,SOURCE_URL
+"[""metadata_structures"",0,""concepts"",3,""name""]",name,string,Source URL
+"[""metadata_structures"",0,""concepts"",3,""definition""]",definition,string,Web location or persistent identifier from which the report or data source can be accessed.
+"[""metadata_structures"",0,""concepts"",3,""representation""]",representation,string,URI as text
+"[""metadata_structures"",0,""concepts"",3,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",3,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",3,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,Populate only if a URL or persistent identifier is stated in the report or provenance. The supplied report context does not state one.
+"[""metadata_structures"",0,""concepts"",3,""source_standard""]",source_standard,string,LOCAL concept
+"[""metadata_structures"",0,""concepts"",3,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",4]",4,object,
+"[""metadata_structures"",0,""concepts"",4,""concept_id""]",concept_id,string,CONTACT
+"[""metadata_structures"",0,""concepts"",4,""name""]",name,string,Contact
+"[""metadata_structures"",0,""concepts"",4,""definition""]",definition,string,"Contact point for questions about the report, data or metadata."
+"[""metadata_structures"",0,""concepts"",4,""representation""]",representation,string,"Text; may be structured as name, organisation, email and role if available"
+"[""metadata_structures"",0,""concepts"",4,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",4,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",4,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,Extract only if a contact point is explicitly stated. The supplied report context does not state contact information.
+"[""metadata_structures"",0,""concepts"",4,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept scheme/version not confirmed from supplied external evidence
+"[""metadata_structures"",0,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",0,""concepts"",5]",5,object,
+"[""metadata_structures"",0,""concepts"",5,""concept_id""]",concept_id,string,META_UPDATE
+"[""metadata_structures"",0,""concepts"",5,""name""]",name,string,Metadata update
+"[""metadata_structures"",0,""concepts"",5,""definition""]",definition,string,Date or statement indicating when the reference metadata was last updated or certified.
+"[""metadata_structures"",0,""concepts"",5,""representation""]",representation,string,Date or text
+"[""metadata_structures"",0,""concepts"",5,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",5,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",5,""target_attachment""]",target_attachment,string,METADATA
+"[""metadata_structures"",0,""concepts"",5,""extraction_guidance""]",extraction_guidance,string,"Extract if the report states a metadata update date. If absent, record as not stated in the metadata set rather than inferring it from the publication date."
+"[""metadata_structures"",0,""concepts"",5,""source_standard""]",source_standard,string,SDMX Glossary 2.1 concept candidate; supplied excerpt confirms the term Metadata update but not a complete implementation context for this report
+"[""metadata_structures"",0,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1]",1,object,
+"[""metadata_structures"",1,""msd_id""]",msd_id,string,MSD_MORTALITY_REFERENCE_METADATA
+"[""metadata_structures"",1,""name""]",name,string,Registered deaths reference metadata
+"[""metadata_structures"",1,""agency_id""]",agency_id,string,SYNTHETIC_PUBLIC_HEALTH_AGENCY
+"[""metadata_structures"",1,""version""]",version,string,1.0-draft
+"[""metadata_structures"",1,""concepts""]",concepts,array,
+"[""metadata_structures"",1,""concepts"",0]",0,object,
+"[""metadata_structures"",1,""concepts"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_structures"",1,""concepts"",0,""name""]",name,string,Data description
+"[""metadata_structures"",1,""concepts"",0,""definition""]",definition,string,Summary of the statistical content and main variables covered by the mortality dataflow.
+"[""metadata_structures"",1,""concepts"",0,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,"Describe the mortality table content without turning methodology into dimensions. Use the report sections and the table heading for registered deaths by area, cause, age and year."
+"[""metadata_structures"",1,""concepts"",0,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept ID not confirmed from supplied external evidence
+"[""metadata_structures"",1,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""metadata_structures"",1,""concepts"",1]",1,object,
+"[""metadata_structures"",1,""concepts"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_structures"",1,""concepts"",1,""name""]",name,string,Source data
+"[""metadata_structures"",1,""concepts"",1,""definition""]",definition,string,Description of the data source used to compile the mortality dataflow.
+"[""metadata_structures"",1,""concepts"",1,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",1,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"Extract the mortality source from the Source description section. Keep narrative source details as reference metadata, not as a statistical dimension."
+"[""metadata_structures"",1,""concepts"",1,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept ID/version not confirmed from supplied external evidence
+"[""metadata_structures"",1,""concepts"",1,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""metadata_structures"",1,""concepts"",2]",2,object,
+"[""metadata_structures"",1,""concepts"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_structures"",1,""concepts"",2,""name""]",name,string,Methodology
+"[""metadata_structures"",1,""concepts"",2,""definition""]",definition,string,"Methods, classifications, timing and compilation approach used to produce registered death counts."
+"[""metadata_structures"",1,""concepts"",2,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",2,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Extract the mortality-specific methodology. Preserve the statement that deaths are synthetic registered events classified by underlying cause and age group; do not force this narrative into DSD dimensions beyond the actual statistical dimensions.
+"[""metadata_structures"",1,""concepts"",2,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept ID/version not confirmed from supplied external evidence
+"[""metadata_structures"",1,""concepts"",2,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""metadata_structures"",1,""concepts"",3]",3,object,
+"[""metadata_structures"",1,""concepts"",3,""concept_id""]",concept_id,string,STAT_CONC_DEF
+"[""metadata_structures"",1,""concepts"",3,""name""]",name,string,Statistical concepts and definitions
+"[""metadata_structures"",1,""concepts"",3,""definition""]",definition,string,Definitions of key statistical concepts used in the mortality dataflow.
+"[""metadata_structures"",1,""concepts"",3,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",3,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",3,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,Extract the definition of registered deaths from the Definitions section and any relevant table footnotes.
+"[""metadata_structures"",1,""concepts"",3,""source_standard""]",source_standard,string,LOCAL concept; possible SDMX reference metadata mapping not confirmed from supplied external evidence
+"[""metadata_structures"",1,""concepts"",3,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",4]",4,object,
+"[""metadata_structures"",1,""concepts"",4,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_structures"",1,""concepts"",4,""name""]",name,string,Geographical coverage
+"[""metadata_structures"",1,""concepts"",4,""definition""]",definition,string,Geographic scope or territorial coverage of the mortality dataflow.
+"[""metadata_structures"",1,""concepts"",4,""representation""]",representation,string,String; codelist if an authoritative and semantically appropriate geographic list is confirmed
+"[""metadata_structures"",1,""concepts"",4,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",4,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,"Extract the set or description of areas covered by the mortality table. Because Northland, Centralia and South Coast are synthetic/local labels, do not map to UN M49 or ISO 3166 without additional evidence."
+"[""metadata_structures"",1,""concepts"",4,""source_standard""]",source_standard,string,SDMX Glossary 2.1 cross-domain concept confirmed in supplied excerpt
+"[""metadata_structures"",1,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",5]",5,object,
+"[""metadata_structures"",1,""concepts"",5,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_structures"",1,""concepts"",5,""name""]",name,string,Time coverage
+"[""metadata_structures"",1,""concepts"",5,""definition""]",definition,string,Time period covered by the mortality dataflow.
+"[""metadata_structures"",1,""concepts"",5,""representation""]",representation,string,Text or time period range
+"[""metadata_structures"",1,""concepts"",5,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",5,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",5,""extraction_guidance""]",extraction_guidance,string,Extract the years shown for registered deaths and any statement about the calendar-year basis of the death counts.
+"[""metadata_structures"",1,""concepts"",5,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept ID/version not confirmed from supplied external evidence
+"[""metadata_structures"",1,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",6]",6,object,
+"[""metadata_structures"",1,""concepts"",6,""concept_id""]",concept_id,string,REFERENCE_PERIOD_DETAIL
+"[""metadata_structures"",1,""concepts"",6,""name""]",name,string,Reference period detail
+"[""metadata_structures"",1,""concepts"",6,""definition""]",definition,string,Narrative qualification of how the reference period is interpreted for the mortality measure.
+"[""metadata_structures"",1,""concepts"",6,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",6,""required""]",required,boolean,false
+"[""metadata_structures"",1,""concepts"",6,""usage_status""]",usage_status,string,CONDITIONAL
+"[""metadata_structures"",1,""concepts"",6,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",6,""extraction_guidance""]",extraction_guidance,string,"Use when the report states a specific period convention, such as deaths counted during the calendar year."
+"[""metadata_structures"",1,""concepts"",6,""source_standard""]",source_standard,string,LOCAL concept; related to reference-period metadata but exact SDMX reference-metadata concept not confirmed
+"[""metadata_structures"",1,""concepts"",6,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",7]",7,object,
+"[""metadata_structures"",1,""concepts"",7,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_structures"",1,""concepts"",7,""name""]",name,string,Data revision
+"[""metadata_structures"",1,""concepts"",7,""definition""]",definition,string,Policy or practice for revising mortality data after initial release.
+"[""metadata_structures"",1,""concepts"",7,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",7,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",7,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",7,""extraction_guidance""]",extraction_guidance,string,"Extract the mortality revision policy, especially treatment of provisional death counts and late registrations."
+"[""metadata_structures"",1,""concepts"",7,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; listed in supplied principles but exact scheme/version not confirmed from supplied external evidence
+"[""metadata_structures"",1,""concepts"",7,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",8]",8,object,
+"[""metadata_structures"",1,""concepts"",8,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_structures"",1,""concepts"",8,""name""]",name,string,Limitations and caveats
+"[""metadata_structures"",1,""concepts"",8,""definition""]",definition,string,"Known limitations, caveats and recommended cautions for interpreting the mortality dataflow."
+"[""metadata_structures"",1,""concepts"",8,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",8,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",8,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",8,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",8,""extraction_guidance""]",extraction_guidance,string,"Extract mortality-specific caveats, including provisional 2024 death counts and the unconfirmed ICD version for broad cause labels."
+"[""metadata_structures"",1,""concepts"",8,""source_standard""]",source_standard,string,LOCAL concept; possible mapping to recommended uses and limitations in SDMX reference metadata requires confirmation
+"[""metadata_structures"",1,""concepts"",8,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",9]",9,object,
+"[""metadata_structures"",1,""concepts"",9,""concept_id""]",concept_id,string,COMPARABILITY
+"[""metadata_structures"",1,""concepts"",9,""name""]",name,string,Comparability
+"[""metadata_structures"",1,""concepts"",9,""definition""]",definition,string,"Information affecting comparison of mortality statistics across areas, years or classifications."
+"[""metadata_structures"",1,""concepts"",9,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",9,""required""]",required,boolean,false
+"[""metadata_structures"",1,""concepts"",9,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",1,""concepts"",9,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",9,""extraction_guidance""]",extraction_guidance,string,"Populate when the report states information affecting comparability. For this report, the absence of a confirmed ICD version is relevant to cause-classification comparability."
+"[""metadata_structures"",1,""concepts"",9,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact scheme/version not confirmed from supplied external evidence
+"[""metadata_structures"",1,""concepts"",9,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",10]",10,object,
+"[""metadata_structures"",1,""concepts"",10,""concept_id""]",concept_id,string,CONF
+"[""metadata_structures"",1,""concepts"",10,""name""]",name,string,Confidentiality
+"[""metadata_structures"",1,""concepts"",10,""definition""]",definition,string,"Confidentiality status, policy or disclosure-control information applicable to the mortality dataflow."
+"[""metadata_structures"",1,""concepts"",10,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",10,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",10,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",10,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",10,""extraction_guidance""]",extraction_guidance,string,Extract the confidentiality statement from the report. Do not infer person-level confidentiality risks beyond the synthetic-data statement.
+"[""metadata_structures"",1,""concepts"",10,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact scheme/version not confirmed from supplied external evidence
+"[""metadata_structures"",1,""concepts"",10,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",2]",2,object,
+"[""metadata_structures"",2,""msd_id""]",msd_id,string,MSD_HOSPITAL_CAPACITY_REFERENCE_METADATA
+"[""metadata_structures"",2,""name""]",name,string,Available hospital beds reference metadata
+"[""metadata_structures"",2,""agency_id""]",agency_id,string,SYNTHETIC_PUBLIC_HEALTH_AGENCY
+"[""metadata_structures"",2,""version""]",version,string,1.0-draft
+"[""metadata_structures"",2,""concepts""]",concepts,array,
+"[""metadata_structures"",2,""concepts"",0]",0,object,
+"[""metadata_structures"",2,""concepts"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_structures"",2,""concepts"",0,""name""]",name,string,Data description
+"[""metadata_structures"",2,""concepts"",0,""definition""]",definition,string,Summary of the statistical content and main variables covered by the hospital-capacity dataflow.
+"[""metadata_structures"",2,""concepts"",0,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,Describe the hospital beds table content separately from the mortality dataflow. The report states hospital beds should not share the mortality DSD.
+"[""metadata_structures"",2,""concepts"",0,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept ID not confirmed from supplied external evidence
+"[""metadata_structures"",2,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""metadata_structures"",2,""concepts"",1]",1,object,
+"[""metadata_structures"",2,""concepts"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_structures"",2,""concepts"",1,""name""]",name,string,Source data
+"[""metadata_structures"",2,""concepts"",1,""definition""]",definition,string,Description of the data source used to compile the hospital-capacity dataflow.
+"[""metadata_structures"",2,""concepts"",1,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",1,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"Extract the facility source from the Source description section, keeping it as narrative metadata."
+"[""metadata_structures"",2,""concepts"",1,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept ID/version not confirmed from supplied external evidence
+"[""metadata_structures"",2,""concepts"",1,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""metadata_structures"",2,""concepts"",2]",2,object,
+"[""metadata_structures"",2,""concepts"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_structures"",2,""concepts"",2,""name""]",name,string,Methodology
+"[""metadata_structures"",2,""concepts"",2,""definition""]",definition,string,"Methods, timing and compilation approach used to produce available hospital bed counts."
+"[""metadata_structures"",2,""concepts"",2,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",2,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,"Extract the bed-specific methodology, including that hospital beds are a year-end stock measure collected from facilities."
+"[""metadata_structures"",2,""concepts"",2,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept ID/version not confirmed from supplied external evidence
+"[""metadata_structures"",2,""concepts"",2,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""metadata_structures"",2,""concepts"",3]",3,object,
+"[""metadata_structures"",2,""concepts"",3,""concept_id""]",concept_id,string,STAT_CONC_DEF
+"[""metadata_structures"",2,""concepts"",3,""name""]",name,string,Statistical concepts and definitions
+"[""metadata_structures"",2,""concepts"",3,""definition""]",definition,string,Definitions of key statistical concepts used in the hospital-capacity dataflow.
+"[""metadata_structures"",2,""concepts"",3,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",3,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",3,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,"Extract the definition of available beds from the Definitions section, preserving the staffed-beds and 31 December details."
+"[""metadata_structures"",2,""concepts"",3,""source_standard""]",source_standard,string,LOCAL concept; possible SDMX reference metadata mapping not confirmed from supplied external evidence
+"[""metadata_structures"",2,""concepts"",3,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",4]",4,object,
+"[""metadata_structures"",2,""concepts"",4,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_structures"",2,""concepts"",4,""name""]",name,string,Time coverage
+"[""metadata_structures"",2,""concepts"",4,""definition""]",definition,string,Time period covered by the hospital-capacity dataflow.
+"[""metadata_structures"",2,""concepts"",4,""representation""]",representation,string,Text or time period range
+"[""metadata_structures"",2,""concepts"",4,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",4,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,Extract the years shown for available hospital beds and the 31 December stock-measure timing convention.
+"[""metadata_structures"",2,""concepts"",4,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact concept ID/version not confirmed from supplied external evidence
+"[""metadata_structures"",2,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",2,""concepts"",5]",5,object,
+"[""metadata_structures"",2,""concepts"",5,""concept_id""]",concept_id,string,REFERENCE_PERIOD_DETAIL
+"[""metadata_structures"",2,""concepts"",5,""name""]",name,string,Reference period detail
+"[""metadata_structures"",2,""concepts"",5,""definition""]",definition,string,Narrative qualification of how the reference period is interpreted for the hospital bed stock measure.
+"[""metadata_structures"",2,""concepts"",5,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",5,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",5,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",5,""extraction_guidance""]",extraction_guidance,string,"Use for the year-end stock convention, specifically the 31 December reference point for staffed beds."
+"[""metadata_structures"",2,""concepts"",5,""source_standard""]",source_standard,string,LOCAL concept; related to reference-period metadata but exact SDMX reference-metadata concept not confirmed
+"[""metadata_structures"",2,""concepts"",5,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",6]",6,object,
+"[""metadata_structures"",2,""concepts"",6,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_structures"",2,""concepts"",6,""name""]",name,string,Data revision
+"[""metadata_structures"",2,""concepts"",6,""definition""]",definition,string,Policy or practice for revising hospital-capacity data after initial release.
+"[""metadata_structures"",2,""concepts"",6,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",6,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",6,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",6,""extraction_guidance""]",extraction_guidance,string,Extract the revision practice for estimated bed counts being replaced after facility validation.
+"[""metadata_structures"",2,""concepts"",6,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; listed in supplied principles but exact scheme/version not confirmed from supplied external evidence
+"[""metadata_structures"",2,""concepts"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",2,""concepts"",7]",7,object,
+"[""metadata_structures"",2,""concepts"",7,""concept_id""]",concept_id,string,COMPLETENESS
+"[""metadata_structures"",2,""concepts"",7,""name""]",name,string,Completeness
+"[""metadata_structures"",2,""concepts"",7,""definition""]",definition,string,Information on completeness of hospital-capacity reporting or coverage.
+"[""metadata_structures"",2,""concepts"",7,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",7,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",7,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",7,""extraction_guidance""]",extraction_guidance,string,"Extract statements on incomplete private-sector bed reporting, including the specific year affected if stated."
+"[""metadata_structures"",2,""concepts"",7,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact scheme/version not confirmed from supplied external evidence
+"[""metadata_structures"",2,""concepts"",7,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",2,""concepts"",8]",8,object,
+"[""metadata_structures"",2,""concepts"",8,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_structures"",2,""concepts"",8,""name""]",name,string,Limitations and caveats
+"[""metadata_structures"",2,""concepts"",8,""definition""]",definition,string,"Known limitations, caveats and recommended cautions for interpreting the hospital-capacity dataflow."
+"[""metadata_structures"",2,""concepts"",8,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",8,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",8,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",8,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",8,""extraction_guidance""]",extraction_guidance,string,"Extract bed-specific caveats, including incomplete private-sector reporting and the estimated status of private for-profit 2024 values."
+"[""metadata_structures"",2,""concepts"",8,""source_standard""]",source_standard,string,LOCAL concept; possible mapping to recommended uses and limitations in SDMX reference metadata requires confirmation
+"[""metadata_structures"",2,""concepts"",8,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",9]",9,object,
+"[""metadata_structures"",2,""concepts"",9,""concept_id""]",concept_id,string,CONF
+"[""metadata_structures"",2,""concepts"",9,""name""]",name,string,Confidentiality
+"[""metadata_structures"",2,""concepts"",9,""definition""]",definition,string,"Confidentiality status, policy or disclosure-control information applicable to the hospital-capacity dataflow."
+"[""metadata_structures"",2,""concepts"",9,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",9,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",9,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",9,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",9,""extraction_guidance""]",extraction_guidance,string,Extract the confidentiality statement from the report. Preserve the synthetic-data nature of the report in the metadata set.
+"[""metadata_structures"",2,""concepts"",9,""source_standard""]",source_standard,string,SDMX reference metadata concept candidate; exact scheme/version not confirmed from supplied external evidence
+"[""metadata_structures"",2,""concepts"",9,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm

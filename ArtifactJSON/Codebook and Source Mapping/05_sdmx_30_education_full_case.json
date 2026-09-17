@@ -1,0 +1,312 @@
+{
+  "artifact_type": "CODEBOOK_AND_SOURCE_MAPPING",
+  "source_report": "05_sdmx_30_education_full_case.xml",
+  "source_sha256": "bde4885296220119913bea8c4105b0fdb48a58fb35d1bb47a373cc1eaf4c19dd",
+  "principles_file": "08_CODEBOOK_AND_SOURCE_MAPPING.txt",
+  "principles_sha256": "999d6556922403d8315a0a0558da149e83e7c3b8f29779d9d346959966d76b74",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "fields": [
+    {
+      "field_id": "FREQ",
+      "name": "Frequency",
+      "definition": "Field FREQ mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_EDU_FREQ",
+      "codelist_id": "CL_EDU_FREQ",
+      "required": true,
+      "example": "A",
+      "source_standard": "SDMX XML 3.0",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "REF_AREA",
+      "name": "Reference area",
+      "definition": "Field REF_AREA mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_EDU_REF_AREA",
+      "codelist_id": "CL_EDU_REF_AREA",
+      "required": true,
+      "example": "KR",
+      "source_standard": "SDMX XML 3.0",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "INDICATOR",
+      "name": "Education indicator",
+      "definition": "Field INDICATOR mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_EDU_INDICATOR",
+      "codelist_id": "CL_EDU_INDICATOR",
+      "required": true,
+      "example": "ENROL",
+      "source_standard": "SDMX XML 3.0",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "EDU_LEVEL",
+      "name": "Education level",
+      "definition": "Field EDU_LEVEL mechanically imported from the XML template.",
+      "role": "DIMENSION",
+      "representation": "Coded by CL_EDU_EDU_LEVEL",
+      "codelist_id": "CL_EDU_EDU_LEVEL",
+      "required": true,
+      "example": "TER",
+      "source_standard": "SDMX XML 3.0",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "TIME_PERIOD",
+      "name": "Time period",
+      "definition": "Field TIME_PERIOD mechanically imported from the XML template.",
+      "role": "TIME",
+      "representation": "String",
+      "codelist_id": null,
+      "required": true,
+      "example": "2025",
+      "source_standard": "SDMX XML 3.0",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "OBS_VALUE",
+      "name": "Observation value",
+      "definition": "Field OBS_VALUE mechanically imported from the XML template.",
+      "role": "MEASURE",
+      "representation": "Number",
+      "codelist_id": null,
+      "required": true,
+      "example": "2894500",
+      "source_standard": "SDMX XML 3.0",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "UNIT_MEASURE",
+      "name": "Unit of measure",
+      "definition": "Field UNIT_MEASURE mechanically imported from the XML template.",
+      "role": "ATTRIBUTE",
+      "representation": "Coded by CL_EDU_UNIT",
+      "codelist_id": "CL_EDU_UNIT",
+      "required": true,
+      "example": "PS",
+      "source_standard": "SDMX XML 3.0",
+      "source_url": "not stated in XML"
+    },
+    {
+      "field_id": "OBS_STATUS",
+      "name": "Observation status",
+      "definition": "Field OBS_STATUS mechanically imported from the XML template.",
+      "role": "ATTRIBUTE",
+      "representation": "Coded by CL_EDU_OBS_STATUS",
+      "codelist_id": "CL_EDU_OBS_STATUS",
+      "required": false,
+      "example": "A",
+      "source_standard": "SDMX XML 3.0",
+      "source_url": "not stated in XML"
+    }
+  ],
+  "source_value_mappings": [
+    {
+      "source_value": "Country",
+      "source_context": "XML FieldMappings",
+      "target_field": "REF_AREA",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Country"
+    },
+    {
+      "source_value": "Metric",
+      "source_context": "XML FieldMappings",
+      "target_field": "INDICATOR",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Metric"
+    },
+    {
+      "source_value": "Education level",
+      "source_context": "XML FieldMappings",
+      "target_field": "EDU_LEVEL",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Education level"
+    },
+    {
+      "source_value": "Academic year",
+      "source_context": "XML FieldMappings",
+      "target_field": "TIME_PERIOD",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Academic year"
+    },
+    {
+      "source_value": "Count",
+      "source_context": "XML FieldMappings",
+      "target_field": "OBS_VALUE",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Count"
+    },
+    {
+      "source_value": "Unit",
+      "source_context": "XML FieldMappings",
+      "target_field": "UNIT_MEASURE",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "Accepted XML codebook field",
+      "notes": "Mechanically imported field mapping.",
+      "evidence_quote": "Unit"
+    },
+    {
+      "source_value": "Korea, Republic of",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "KR",
+      "target_code_label": "Korea, Republic of",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Korea, Republic of"
+    },
+    {
+      "source_value": "Japan",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "JP",
+      "target_code_label": "Japan",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Japan"
+    },
+    {
+      "source_value": "United States",
+      "source_context": "XML ValueMappings for REF_AREA",
+      "target_field": "REF_AREA",
+      "target_code": "US",
+      "target_code_label": "United States",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_REF_AREA",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "United States"
+    },
+    {
+      "source_value": "Enrolment",
+      "source_context": "XML ValueMappings for INDICATOR",
+      "target_field": "INDICATOR",
+      "target_code": "ENROL",
+      "target_code_label": "Enrolment",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_INDICATOR",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Enrolment"
+    },
+    {
+      "source_value": "Graduates",
+      "source_context": "XML ValueMappings for INDICATOR",
+      "target_field": "INDICATOR",
+      "target_code": "GRAD",
+      "target_code_label": "Graduates",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_INDICATOR",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Graduates"
+    },
+    {
+      "source_value": "Primary",
+      "source_context": "XML ValueMappings for EDU_LEVEL",
+      "target_field": "EDU_LEVEL",
+      "target_code": "PRI",
+      "target_code_label": "Primary",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_EDU_LEVEL",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Primary"
+    },
+    {
+      "source_value": "Lower secondary",
+      "source_context": "XML ValueMappings for EDU_LEVEL",
+      "target_field": "EDU_LEVEL",
+      "target_code": "LSEC",
+      "target_code_label": "Lower secondary",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_EDU_LEVEL",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Lower secondary"
+    },
+    {
+      "source_value": "Upper secondary",
+      "source_context": "XML ValueMappings for EDU_LEVEL",
+      "target_field": "EDU_LEVEL",
+      "target_code": "USEC",
+      "target_code_label": "Upper secondary",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_EDU_LEVEL",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Upper secondary"
+    },
+    {
+      "source_value": "Tertiary",
+      "source_context": "XML ValueMappings for EDU_LEVEL",
+      "target_field": "EDU_LEVEL",
+      "target_code": "TER",
+      "target_code_label": "Tertiary",
+      "mapping_type": "EXACT",
+      "target_standard": "CL_EDU_EDU_LEVEL",
+      "notes": "Mechanically imported value mapping.",
+      "evidence_quote": "Tertiary"
+    },
+    {
+      "source_value": "Data source",
+      "source_context": "XML MetadataMappings",
+      "target_field": "SOURCE",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_EDU",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Data source"
+    },
+    {
+      "source_value": "Methodological notes",
+      "source_context": "XML MetadataMappings",
+      "target_field": "METHODOLOGY",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_EDU",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Methodological notes"
+    },
+    {
+      "source_value": "Source URL",
+      "source_context": "XML MetadataMappings",
+      "target_field": "SOURCE_URL",
+      "target_code": null,
+      "target_code_label": null,
+      "mapping_type": "EXACT",
+      "target_standard": "MSD_EDU",
+      "notes": "Mechanically imported metadata mapping.",
+      "evidence_quote": "Source URL"
+    }
+  ],
+  "unresolved": []
+}

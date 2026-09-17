@@ -1,0 +1,242 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DSD / KEY FAMILY
+"[""source_report""]",source_report,string,example_02_health_system.pdf
+"[""source_sha256""]",source_sha256,string,5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23
+"[""principles_file""]",principles_file,string,03_DSD_KEY_FAMILY.txt
+"[""principles_sha256""]",principles_sha256,string,b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Concepts / cross-domain concepts
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Glossary / Cross-Domain Concepts
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied glossary excerpt describes SDMX cross-domain concepts for reuse, gives Observation Status as concept ID OBS_STATUS with codelist ID CL_OBS_STATUS, and refers to Reference area as a DSD dimension. This supports reuse of common SDMX concept identifiers where semantically appropriate, but does not confirm all codelist versions or codes used here."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX Global Registry Codelists
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied registry excerpt confirms that the SDMX Global Registry provides a codelist catalog searchable by identifier, name and latest version. It does not provide detailed entries for CL_FREQ, CL_OBS_STATUS, CL_UNIT_MULT, CL_DECIMALS or unit codelists in the supplied evidence."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,UNSD
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Geographical classification
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,UN M49
+"[""standard_references"",2,""version""]",version,string,not stated
+"[""standard_references"",2,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied UN M49 excerpt lists recognized countries and areas with numeric and alpha-3 codes, for example France, Germany, India and the United States of America. The report areas Northland, Centralia and South Coast are synthetic/local and no UN M49 mapping is confirmed from the supplied evidence."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The report states that all records and values are synthetic, so proposed agency and local codelist identifiers are structural placeholders rather than production-maintained artefacts."
+"[""limitations"",1]",1,string,"Cause labels resemble broad ICD families, but no ICD version is confirmed; therefore cause is modelled with a local broad cause codelist rather than an ICD codelist."
+"[""limitations"",2]",2,string,"Northland, Centralia and South Coast are not confirmed as standard geographical areas in the supplied official-source evidence; REF_AREA therefore uses a local area codelist."
+"[""limitations"",3]",3,string,"Exact SDMX codelist versions and detailed code mappings for frequency, observation status and units were not confirmed from the supplied external evidence."
+"[""limitations"",4]",4,string,"Private-sector bed reporting is incomplete in 2024, which is a data-quality caveat outside the DSD except for the observation status attribute."
+"[""limitations"",5]",5,string,"The report does not provide sex, detailed population, denominator, facility type, or subnational geography for the hospital bed table."
+"[""data_structures""]",data_structures,array,
+"[""data_structures"",0]",0,object,
+"[""data_structures"",0,""dsd_id""]",dsd_id,string,KF_HEALTH_REGISTERED_DEATHS
+"[""data_structures"",0,""name""]",name,string,"Registered deaths by area, cause, age and year"
+"[""data_structures"",0,""agency_id""]",agency_id,string,SYN_PHA
+"[""data_structures"",0,""version""]",version,string,1.0
+"[""data_structures"",0,""statistical_scope""]",statistical_scope,string,"Counts of synthetic registered death events during the calendar year, classified by reference area, broad underlying cause, age group and year."
+"[""data_structures"",0,""components""]",components,array,
+"[""data_structures"",0,""components"",0]",0,object,
+"[""data_structures"",0,""components"",0,""position""]",position,integer,1
+"[""data_structures"",0,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""data_structures"",0,""components"",0,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",0,""representation""]",representation,string,Codelist
+"[""data_structures"",0,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""data_structures"",0,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""data_structures"",0,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""data_structures"",0,""components"",0,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",0,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",0,""notes""]",notes,string,Annual frequency is inferred from the report's use of calendar-year death counts and year values. Exact SDMX CL_FREQ version/code is not confirmed in supplied external evidence.
+"[""data_structures"",0,""components"",0,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year.
+"[""data_structures"",0,""components"",1]",1,object,
+"[""data_structures"",0,""components"",1,""position""]",position,integer,2
+"[""data_structures"",0,""components"",1,""concept_id""]",concept_id,string,REF_AREA
+"[""data_structures"",0,""components"",1,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",1,""representation""]",representation,string,Codelist
+"[""data_structures"",0,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_PHA
+"[""data_structures"",0,""components"",1,""codelist_id""]",codelist_id,string,CL_HEALTH_AREA
+"[""data_structures"",0,""components"",1,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",0,""components"",1,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",1,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",1,""notes""]",notes,string,"Reference area values are local/synthetic report areas such as Northland, Centralia and South Coast; no standard area mapping is confirmed."
+"[""data_structures"",0,""components"",1,""evidence_quote""]",evidence_quote,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""data_structures"",0,""components"",2]",2,object,
+"[""data_structures"",0,""components"",2,""position""]",position,integer,3
+"[""data_structures"",0,""components"",2,""concept_id""]",concept_id,string,CAUSE_OF_DEATH
+"[""data_structures"",0,""components"",2,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",2,""representation""]",representation,string,Codelist
+"[""data_structures"",0,""components"",2,""codelist_agency""]",codelist_agency,string,SYN_PHA
+"[""data_structures"",0,""components"",2,""codelist_id""]",codelist_id,string,CL_BROAD_CAUSE_OF_DEATH
+"[""data_structures"",0,""components"",2,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",0,""components"",2,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",2,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",2,""notes""]",notes,string,Local broad cause dimension. ICD mapping is not confirmed and must not be assumed.
+"[""data_structures"",0,""components"",2,""evidence_quote""]",evidence_quote,string,Deaths are synthetic registered events classified by underlying cause and age group.
+"[""data_structures"",0,""components"",3]",3,object,
+"[""data_structures"",0,""components"",3,""position""]",position,integer,4
+"[""data_structures"",0,""components"",3,""concept_id""]",concept_id,string,AGE
+"[""data_structures"",0,""components"",3,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",3,""representation""]",representation,string,Codelist
+"[""data_structures"",0,""components"",3,""codelist_agency""]",codelist_agency,string,SYN_PHA
+"[""data_structures"",0,""components"",3,""codelist_id""]",codelist_id,string,CL_HEALTH_AGE_GROUP
+"[""data_structures"",0,""components"",3,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",0,""components"",3,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",3,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",3,""notes""]",notes,string,Age groups are report-specific groups observed as 45-64 and 65+. A domain-standard age codelist was not confirmed from supplied evidence.
+"[""data_structures"",0,""components"",3,""evidence_quote""]",evidence_quote,string,Deaths are synthetic registered events classified by underlying cause and age group.
+"[""data_structures"",0,""components"",4]",4,object,
+"[""data_structures"",0,""components"",4,""position""]",position,integer,5
+"[""data_structures"",0,""components"",4,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""data_structures"",0,""components"",4,""role""]",role,string,TIME
+"[""data_structures"",0,""components"",4,""representation""]",representation,string,Time period
+"[""data_structures"",0,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",4,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",4,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",4,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""data_structures"",0,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",4,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",4,""notes""]",notes,string,The report presents year values 2023 and 2024; model year as TIME_PERIOD rather than separate year columns.
+"[""data_structures"",0,""components"",4,""evidence_quote""]",evidence_quote,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""data_structures"",0,""components"",5]",5,object,
+"[""data_structures"",0,""components"",5,""position""]",position,null,
+"[""data_structures"",0,""components"",5,""concept_id""]",concept_id,string,OBS_VALUE
+"[""data_structures"",0,""components"",5,""role""]",role,string,MEASURE
+"[""data_structures"",0,""components"",5,""representation""]",representation,string,Numeric
+"[""data_structures"",0,""components"",5,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",5,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",5,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",5,""data_type""]",data_type,string,Integer
+"[""data_structures"",0,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",5,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",5,""notes""]",notes,string,Primary measure is the registered death count for the dimensional key and time period.
+"[""data_structures"",0,""components"",5,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year.
+"[""data_structures"",0,""components"",6]",6,object,
+"[""data_structures"",0,""components"",6,""position""]",position,null,
+"[""data_structures"",0,""components"",6,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""data_structures"",0,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",6,""representation""]",representation,string,Codelist
+"[""data_structures"",0,""components"",6,""codelist_agency""]",codelist_agency,string,SYN_PHA
+"[""data_structures"",0,""components"",6,""codelist_id""]",codelist_id,string,CL_HEALTH_UNIT_MEASURE
+"[""data_structures"",0,""components"",6,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",0,""components"",6,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",6,""attachment_level""]",attachment_level,string,DATASET
+"[""data_structures"",0,""components"",6,""notes""]",notes,string,Unit is constant for this structure as deaths; no authoritative unit codelist mapping was confirmed from supplied external evidence.
+"[""data_structures"",0,""components"",6,""evidence_quote""]",evidence_quote,string,Deaths are synthetic registered events classified by underlying cause and age group.
+"[""data_structures"",0,""components"",7]",7,object,
+"[""data_structures"",0,""components"",7,""position""]",position,null,
+"[""data_structures"",0,""components"",7,""concept_id""]",concept_id,string,OBS_STATUS
+"[""data_structures"",0,""components"",7,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",7,""representation""]",representation,string,Codelist
+"[""data_structures"",0,""components"",7,""codelist_agency""]",codelist_agency,string,SYN_PHA
+"[""data_structures"",0,""components"",7,""codelist_id""]",codelist_id,string,CL_HEALTH_OBS_STATUS
+"[""data_structures"",0,""components"",7,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",0,""components"",7,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",7,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""data_structures"",0,""components"",7,""notes""]",notes,string,Observation status distinguishes final and provisional death counts. Mapping to SDMX CL_OBS_STATUS is a candidate only because exact code details were not supplied.
+"[""data_structures"",0,""components"",7,""evidence_quote""]",evidence_quote,string,Footnote: 2024 death counts are provisional.
+"[""data_structures"",1]",1,object,
+"[""data_structures"",1,""dsd_id""]",dsd_id,string,KF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""data_structures"",1,""name""]",name,string,Available hospital beds by ownership
+"[""data_structures"",1,""agency_id""]",agency_id,string,SYN_PHA
+"[""data_structures"",1,""version""]",version,string,1.0
+"[""data_structures"",1,""statistical_scope""]",statistical_scope,string,Year-end stock count of available staffed hospital beds by ownership category and year.
+"[""data_structures"",1,""components""]",components,array,
+"[""data_structures"",1,""components"",0]",0,object,
+"[""data_structures"",1,""components"",0,""position""]",position,integer,1
+"[""data_structures"",1,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""data_structures"",1,""components"",0,""role""]",role,string,DIMENSION
+"[""data_structures"",1,""components"",0,""representation""]",representation,string,Codelist
+"[""data_structures"",1,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""data_structures"",1,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""data_structures"",1,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""data_structures"",1,""components"",0,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",0,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",0,""notes""]",notes,string,Annual frequency is inferred from year values and the 31 December stock definition. Exact SDMX CL_FREQ version/code is not confirmed in supplied external evidence.
+"[""data_structures"",1,""components"",0,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.
+"[""data_structures"",1,""components"",1]",1,object,
+"[""data_structures"",1,""components"",1,""position""]",position,integer,2
+"[""data_structures"",1,""components"",1,""concept_id""]",concept_id,string,OWNERSHIP
+"[""data_structures"",1,""components"",1,""role""]",role,string,DIMENSION
+"[""data_structures"",1,""components"",1,""representation""]",representation,string,Codelist
+"[""data_structures"",1,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_PHA
+"[""data_structures"",1,""components"",1,""codelist_id""]",codelist_id,string,CL_HOSPITAL_OWNERSHIP
+"[""data_structures"",1,""components"",1,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",1,""components"",1,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",1,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",1,""notes""]",notes,string,"Local ownership categories observed in the report include Public, Private non-profit and Private for-profit. No external standard ownership classification was confirmed from supplied evidence."
+"[""data_structures"",1,""components"",1,""evidence_quote""]",evidence_quote,string,Table 2. Available hospital beds by ownership
+"[""data_structures"",1,""components"",2]",2,object,
+"[""data_structures"",1,""components"",2,""position""]",position,integer,3
+"[""data_structures"",1,""components"",2,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""data_structures"",1,""components"",2,""role""]",role,string,TIME
+"[""data_structures"",1,""components"",2,""representation""]",representation,string,Time period
+"[""data_structures"",1,""components"",2,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",1,""components"",2,""codelist_id""]",codelist_id,null,
+"[""data_structures"",1,""components"",2,""codelist_version""]",codelist_version,null,
+"[""data_structures"",1,""components"",2,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""data_structures"",1,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",2,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",2,""notes""]",notes,string,The report presents year values 2023 and 2024; model year as TIME_PERIOD rather than separate year columns.
+"[""data_structures"",1,""components"",2,""evidence_quote""]",evidence_quote,string,Table 2. Available hospital beds by ownership
+"[""data_structures"",1,""components"",3]",3,object,
+"[""data_structures"",1,""components"",3,""position""]",position,null,
+"[""data_structures"",1,""components"",3,""concept_id""]",concept_id,string,OBS_VALUE
+"[""data_structures"",1,""components"",3,""role""]",role,string,MEASURE
+"[""data_structures"",1,""components"",3,""representation""]",representation,string,Numeric
+"[""data_structures"",1,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",1,""components"",3,""codelist_id""]",codelist_id,null,
+"[""data_structures"",1,""components"",3,""codelist_version""]",codelist_version,null,
+"[""data_structures"",1,""components"",3,""data_type""]",data_type,string,Integer
+"[""data_structures"",1,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",3,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",3,""notes""]",notes,string,Primary measure is the stock count of available staffed beds for the ownership category and time period.
+"[""data_structures"",1,""components"",3,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.
+"[""data_structures"",1,""components"",4]",4,object,
+"[""data_structures"",1,""components"",4,""position""]",position,null,
+"[""data_structures"",1,""components"",4,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""data_structures"",1,""components"",4,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",1,""components"",4,""representation""]",representation,string,Codelist
+"[""data_structures"",1,""components"",4,""codelist_agency""]",codelist_agency,string,SYN_PHA
+"[""data_structures"",1,""components"",4,""codelist_id""]",codelist_id,string,CL_HEALTH_UNIT_MEASURE
+"[""data_structures"",1,""components"",4,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",1,""components"",4,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",4,""attachment_level""]",attachment_level,string,DATASET
+"[""data_structures"",1,""components"",4,""notes""]",notes,string,Unit is constant for this structure as beds; no authoritative unit codelist mapping was confirmed from supplied external evidence.
+"[""data_structures"",1,""components"",4,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.
+"[""data_structures"",1,""components"",5]",5,object,
+"[""data_structures"",1,""components"",5,""position""]",position,null,
+"[""data_structures"",1,""components"",5,""concept_id""]",concept_id,string,OBS_STATUS
+"[""data_structures"",1,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",1,""components"",5,""representation""]",representation,string,Codelist
+"[""data_structures"",1,""components"",5,""codelist_agency""]",codelist_agency,string,SYN_PHA
+"[""data_structures"",1,""components"",5,""codelist_id""]",codelist_id,string,CL_HEALTH_OBS_STATUS
+"[""data_structures"",1,""components"",5,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",1,""components"",5,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",5,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""data_structures"",1,""components"",5,""notes""]",notes,string,Observation status distinguishes final and estimated bed counts. Mapping to SDMX CL_OBS_STATUS is a candidate only because exact code details were not supplied.
+"[""data_structures"",1,""components"",5,""evidence_quote""]",evidence_quote,string,Footnote: Private for-profit 2024 values are estimated.
+"[""structure_separation_rationale""]",structure_separation_rationale,string,"Two key families are required because the report explicitly distinguishes registered deaths as event counts by area, cause and age from hospital beds as a year-end facility stock by ownership, and states that hospital beds should not share the mortality DSD."

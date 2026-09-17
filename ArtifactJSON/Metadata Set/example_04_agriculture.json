@@ -1,0 +1,346 @@
+{
+  "artifact_type": "METADATA_SET",
+  "source_report": "example_04_agriculture.pdf",
+  "source_sha256": "0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f",
+  "principles_file": "06_METADATA_SET.txt",
+  "principles_sha256": "78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Technical standard",
+      "artifact_id": "SDMX_2_0_INFORMATION_MODEL",
+      "version": "2.0",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf",
+      "evidence": "The supplied reference package identifies the SDMX 2.0 Information Model as the technical basis for SDMX 2.0 artefacts, including metadata structures and metadata sets. No fetched excerpt confirming detailed metadata-set fields was supplied.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / cross-domain concept reference",
+      "artifact_id": "SDMX_GLOSSARY",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The fetched glossary excerpt confirms SDMX glossary coverage of metadata-related terms including Metadata Set, Metadata Structure Definition, Metadata update, Institutional mandate, and the cross-domain concept Geographical coverage with Concept ID COVERAGE_GEO and recommended representation String; Codelist.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Reference metadata guideline",
+      "artifact_id": "STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX",
+      "version": "1.0",
+      "url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+      "evidence": "The supplied principles identify this guideline as SDMX reference-metadata guidance and state that it provides a standard list of reference metadata concepts. No fetched excerpt from the guideline confirming individual concept IDs for this report was supplied.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry catalogue",
+      "artifact_id": "SDMX_GLOBAL_REGISTRY_CODELISTS_AND_METADATA_STRUCTURES",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The fetched registry excerpt shows that the SDMX Global Registry provides searchable structural artefact categories including Codelists and Metadata Structures. It does not confirm a specific reusable metadata set for this agriculture report.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic classification",
+      "artifact_id": "UN_M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The fetched UN M49 excerpt confirms that UN M49 provides country and area codes. It does not confirm suitability for the report's synthetic subnational regions Northland, Centralia, and South Coast.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "ISO",
+      "artifact_type": "Currency code standard",
+      "artifact_id": "ISO_4217",
+      "version": "not stated",
+      "url": "https://www.iso.org/standard/64758.html",
+      "evidence": "The supplied reference catalogue identifies ISO 4217 as the standard source for currency identity. The report deliberately leaves the local currency unnamed, so no ISO 4217 currency code can be confirmed for the price dataflow.",
+      "verification_status": "CANDIDATE"
+    }
+  ],
+  "limitations": [
+    "The report does not provide a source URL, contact point, edition number, metadata update date, legal or institutional mandate, sampling design details, imputation methods, seasonal adjustment information, accuracy measures, timeliness measures, or completeness measures.",
+    "The report-level CONTACT and META_UPDATE values are omitted from the metadata set because the schema requires evidence_quote text and the report contains no verbatim statement for these missing values.",
+    "The fertilizer retail price DATA_REV value is omitted from the fertilizer-price metadata set because no fertilizer-price-specific revision policy is stated in the report and the schema requires evidence_quote text.",
+    "The report states that crop names are common labels and require classification review; no authoritative crop classification mapping is confirmed.",
+    "The report states that fertilizer products are local market categories and not verified CPC codes; no authoritative product classification mapping is confirmed.",
+    "The report states that the local currency is deliberately unnamed, so ISO 4217 currency-code metadata cannot be completed from the report.",
+    "The report uses synthetic regions, but no authoritative geographic classification for Northland, Centralia, or South Coast is provided.",
+    "Exact SDMX Global Reference Metadata Concept Scheme IDs for several metadata values were not confirmed from supplied external evidence; local concept IDs from the accepted MSD are used where necessary.",
+    "The target dataflow identifiers are local identifiers for this extraction because no formal dataflow artefact identifiers were supplied in the report evidence."
+  ],
+  "metadata_sets": [
+    {
+      "metadata_set_id": "METASET_AGRI_REPORT_1_0",
+      "msd_id": "MSD_AGRI_REPORT_1_0",
+      "target_id": "example_04_agriculture.pdf",
+      "target_type": "REPORT",
+      "values": [
+        {
+          "concept_id": "REPORT_TITLE",
+          "value": "Crop Production and Input Prices",
+          "evidence_quote": "Crop Production and Input Prices",
+          "source_location": "Page 1"
+        },
+        {
+          "concept_id": "PUBLISHER",
+          "value": "Synthetic Agricultural Statistics Bureau",
+          "evidence_quote": "Synthetic Agricultural Statistics Bureau",
+          "source_location": "Page 1"
+        },
+        {
+          "concept_id": "PUBLICATION_DATE",
+          "value": "2026-05-28",
+          "evidence_quote": "Publication date: 28 May 2026",
+          "source_location": "Page 1"
+        },
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "value": "Report covering crop area and production as annual farm-survey aggregates and fertilizer retail prices from a monthly outlet panel; the report contains separate crop production and input price structures.",
+          "evidence_quote": "Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.",
+          "source_location": "Page 1, Methodology"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "value": "Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.",
+          "evidence_quote": "Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.",
+          "source_location": "Page 1, Source description"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.",
+          "evidence_quote": "Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.",
+          "source_location": "Page 1, Methodology"
+        },
+        {
+          "concept_id": "STAT_CONCEPTS_DEF",
+          "value": "Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.",
+          "evidence_quote": "Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.",
+          "source_location": "Page 1, Definitions"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "value": "Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.",
+          "evidence_quote": "Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.",
+          "source_location": "Page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "value": "2025 area and production are forecasts.",
+          "evidence_quote": "Footnote: 2025 area and production are forecasts.",
+          "source_location": "Page 2, Table 1 footnote"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "value": "Products are local market categories, not verified CPC codes.",
+          "evidence_quote": "Footnote: Products are local market categories, not verified CPC codes.",
+          "source_location": "Page 3, Table 2 footnote"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "value": "Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.",
+          "evidence_quote": "Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.",
+          "source_location": "Page 1, Revision policy"
+        },
+        {
+          "concept_id": "CONF",
+          "value": "All records and values are synthetic. No person-level or confidential data are included.",
+          "evidence_quote": "All records and values are synthetic. No person-level or confidential data are included.",
+          "source_location": "Page 1, Confidentiality"
+        }
+      ]
+    },
+    {
+      "metadata_set_id": "METASET_CROP_AREA_PRODUCTION_1_0",
+      "msd_id": "MSD_CROP_AREA_PRODUCTION_1_0",
+      "target_id": "DF_AGR_CROP_AREA_PRODUCTION",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "value": "Annual crop area and production by crop, region, and year.",
+          "evidence_quote": "Table 1. Crop area and production by region",
+          "source_location": "Page 2, Table 1"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "value": "Synthetic Annual Farm Survey.",
+          "evidence_quote": "Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.",
+          "source_location": "Page 1, Source description"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Crop area and production are annual farm-survey aggregates.",
+          "evidence_quote": "Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.",
+          "source_location": "Page 1, Methodology"
+        },
+        {
+          "concept_id": "STAT_CONCEPTS_DEF",
+          "value": "Harvested area counts hectares harvested. Production is crop output in metric tonnes.",
+          "evidence_quote": "Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.",
+          "source_location": "Page 1, Definitions"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "value": "Northland is included as a reported region; no authoritative geographic classification for this synthetic region is provided.",
+          "evidence_quote": "Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final",
+          "source_location": "Page 2, Table 1"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "value": "Centralia is included as a reported region; no authoritative geographic classification for this synthetic region is provided.",
+          "evidence_quote": "Rice                           Centralia                  2024                     37859                       Hectares                  260371                   Tonnes                         Final",
+          "source_location": "Page 2, Table 1"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "value": "South Coast is included as a reported region; no authoritative geographic classification for this synthetic region is provided.",
+          "evidence_quote": "Rice                       South Coast                2024                     97629                       Hectares                  413952                   Tonnes                         Final",
+          "source_location": "Page 2, Table 1"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD",
+          "value": "Year 2024 is included in the crop area and production data.",
+          "evidence_quote": "Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final",
+          "source_location": "Page 2, Table 1"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD",
+          "value": "Year 2025 is included in the crop area and production data, and 2025 area and production are forecasts.",
+          "evidence_quote": "Footnote: 2025 area and production are forecasts.",
+          "source_location": "Page 2, Table 1 footnote"
+        },
+        {
+          "concept_id": "CLASSIFICATION_STATUS",
+          "value": "Crop names are common labels and require classification review.",
+          "evidence_quote": "Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.",
+          "source_location": "Page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "value": "Crop names are common labels and require classification review; forecast production is not observed output.",
+          "evidence_quote": "Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.",
+          "source_location": "Page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "value": "2025 area and production are forecasts.",
+          "evidence_quote": "Footnote: 2025 area and production are forecasts.",
+          "source_location": "Page 2, Table 1 footnote"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "value": "Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.",
+          "evidence_quote": "Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.",
+          "source_location": "Page 1, Revision policy"
+        },
+        {
+          "concept_id": "CONF",
+          "value": "All records and values are synthetic. No person-level or confidential data are included.",
+          "evidence_quote": "All records and values are synthetic. No person-level or confidential data are included.",
+          "source_location": "Page 1, Confidentiality"
+        }
+      ]
+    },
+    {
+      "metadata_set_id": "METASET_FERTILIZER_RETAIL_PRICES_1_0",
+      "msd_id": "MSD_FERTILIZER_RETAIL_PRICES_1_0",
+      "target_id": "DF_AGR_FERTILIZER_RETAIL_PRICE",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "value": "Monthly fertilizer retail prices by product and month.",
+          "evidence_quote": "Table 2. Fertilizer retail prices by month",
+          "source_location": "Page 3, Table 2"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "value": "Synthetic Agricultural Price Panel.",
+          "evidence_quote": "Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.",
+          "source_location": "Page 1, Source description"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.",
+          "evidence_quote": "Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.",
+          "source_location": "Page 1, Methodology"
+        },
+        {
+          "concept_id": "STAT_CONCEPTS_DEF",
+          "value": "Retail price is the median observed price per 50 kg bag.",
+          "evidence_quote": "Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.",
+          "source_location": "Page 1, Definitions"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD",
+          "value": "Month 2025-01 is included in the fertilizer retail price data.",
+          "evidence_quote": "Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed",
+          "source_location": "Page 3, Table 2"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD",
+          "value": "Month 2025-02 is included in the fertilizer retail price data.",
+          "evidence_quote": "Urea                                       2025-02                                     270.81                                         Local currency per 50 kg bag                  Observed",
+          "source_location": "Page 3, Table 2"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD",
+          "value": "Month 2025-03 is included in the fertilizer retail price data.",
+          "evidence_quote": "Urea                                       2025-03                                     401.31                                         Local currency per 50 kg bag                  Observed",
+          "source_location": "Page 3, Table 2"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD",
+          "value": "Month 2025-04 is included in the fertilizer retail price data.",
+          "evidence_quote": "Urea                                       2025-04                                     384.34                                         Local currency per 50 kg bag                  Observed",
+          "source_location": "Page 3, Table 2"
+        },
+        {
+          "concept_id": "CLASSIFICATION_STATUS",
+          "value": "Products are local market categories, not verified CPC codes.",
+          "evidence_quote": "Footnote: Products are local market categories, not verified CPC codes.",
+          "source_location": "Page 3, Table 2 footnote"
+        },
+        {
+          "concept_id": "CURRENCY_INFORMATION",
+          "value": "Prices are reported in local currency per 50 kg bag.",
+          "evidence_quote": "Local currency per 50 kg bag",
+          "source_location": "Page 3, Table 2, Unit column"
+        },
+        {
+          "concept_id": "CURRENCY_INFORMATION",
+          "value": "The local currency is deliberately unnamed, so no ISO 4217 code is confirmed from the report.",
+          "evidence_quote": "The local currency is deliberately unnamed.",
+          "source_location": "Page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "value": "Products are local market categories, not verified CPC codes.",
+          "evidence_quote": "Footnote: Products are local market categories, not verified CPC codes.",
+          "source_location": "Page 3, Table 2 footnote"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "value": "The local currency is deliberately unnamed.",
+          "evidence_quote": "The local currency is deliberately unnamed.",
+          "source_location": "Page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "CONF",
+          "value": "All records and values are synthetic. No person-level or confidential data are included.",
+          "evidence_quote": "All records and values are synthetic. No person-level or confidential data are included.",
+          "source_location": "Page 1, Confidentiality"
+        }
+      ]
+    }
+  ]
+}

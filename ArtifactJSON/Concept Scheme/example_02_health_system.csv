@@ -1,0 +1,269 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CONCEPT_SCHEME
+"[""source_report""]",source_report,string,example_02_health_system.pdf
+"[""source_sha256""]",source_sha256,string,5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23
+"[""principles_file""]",principles_file,string,01_CONCEPT_SCHEME.txt
+"[""principles_sha256""]",principles_sha256,string,618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY_2_1
+"[""standard_references"",0,""version""]",version,string,2.1 December 2020
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied official-source excerpt identifies the SDMX Glossary 2.1 as a source for cross-domain concepts and states that cross-domain concepts should conform to specified names, IDs, representations and codelists. It explicitly gives OBS_STATUS as the concept ID for Observation Status and CL_OBS_STATUS as the associated codelist ID."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Registry catalogue
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,The supplied official-source excerpt shows the SDMX Global Registry codelist catalogue interface and confirms that codelists can be searched and inspected there; it does not confirm specific health-domain codelists for this report.
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,UNSD
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",2,""version""]",version,string,not stated in supplied evidence
+"[""standard_references"",2,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied official-source excerpt shows UN M49 entries for countries and areas with numeric and alpha codes. The report areas are synthetic subnational-looking labels, so no direct UN M49 mapping is confirmed."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,The report explicitly states that the mortality and hospital-bed data should not share the same DSD; the concept scheme therefore includes concepts for two distinct statistical structures without treating each table as a separate concept scheme.
+"[""limitations"",1]",1,string,"Cause-of-death labels resemble broad ICD families, but no ICD version is confirmed in the report, so CAUSE_OF_DEATH is kept as a local/domain concept rather than a confirmed ICD concept."
+"[""limitations"",2]",2,string,"The reported areas are synthetic labels; no authoritative geographic code system or version is confirmed for Northland, Centralia, or South Coast."
+"[""limitations"",3]",3,string,Hospital ownership categories are not linked to an external ownership-sector classification in the supplied evidence.
+"[""limitations"",4]",4,string,Exact SDMX cross-domain concept scheme identifiers and versions are not confirmed for all common concepts in the supplied official-source excerpts; gaps are preserved in local notes.
+"[""limitations"",5]",5,string,"The report provides observation statuses Final, Provisional, and Estimated, but no authoritative status-code mapping is confirmed beyond the general SDMX OBS_STATUS concept evidence."
+"[""limitations"",6]",6,string,"The report gives calendar years and a year-end stock definition for beds, but does not provide a separate frequency field."
+"[""concept_schemes""]",concept_schemes,array,
+"[""concept_schemes"",0]",0,object,
+"[""concept_schemes"",0,""scheme_id""]",scheme_id,string,CS_HEALTH_SYSTEM_REPORT
+"[""concept_schemes"",0,""name""]",name,string,Health Outcomes and Capacity Report Concept Scheme
+"[""concept_schemes"",0,""agency_id""]",agency_id,string,SYNTHETIC_PUBLIC_HEALTH_AGENCY
+"[""concept_schemes"",0,""version""]",version,string,1.0
+"[""concept_schemes"",0,""concepts""]",concepts,array,
+"[""concept_schemes"",0,""concepts"",0]",0,object,
+"[""concept_schemes"",0,""concepts"",0,""concept_id""]",concept_id,string,REF_AREA
+"[""concept_schemes"",0,""concepts"",0,""name""]",name,string,Reference area
+"[""concept_schemes"",0,""concepts"",0,""definition""]",definition,string,Area to which the registered-deaths observation refers.
+"[""concept_schemes"",0,""concepts"",0,""context""]",context,string,Used for mortality observations by area; report area labels are synthetic and no standard geographic coding is confirmed.
+"[""concept_schemes"",0,""concepts"",0,""recommended_representation""]",recommended_representation,string,Codelist; local synthetic area codelist unless an authoritative geographic mapping is later confirmed.
+"[""concept_schemes"",0,""concepts"",0,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",0,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",0,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",0,""local_notes""]",local_notes,string,"Candidate reuse of SDMX REF_AREA based on semantic equivalence to an area of observation. UN M49 is confirmed as an external geographic standard source, but the report's synthetic areas are not confirmed UN M49 areas."
+"[""concept_schemes"",0,""concepts"",0,""evidence_quote""]",evidence_quote,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""concept_schemes"",0,""concepts"",1]",1,object,
+"[""concept_schemes"",0,""concepts"",1,""concept_id""]",concept_id,string,CAUSE_OF_DEATH
+"[""concept_schemes"",0,""concepts"",1,""name""]",name,string,Cause of death
+"[""concept_schemes"",0,""concepts"",1,""definition""]",definition,string,Underlying cause category used to classify registered death events.
+"[""concept_schemes"",0,""concepts"",1,""context""]",context,string,Used only in the mortality structure. The report warns that labels resemble ICD families but no ICD version is confirmed.
+"[""concept_schemes"",0,""concepts"",1,""recommended_representation""]",recommended_representation,string,Codelist; local broad cause-of-death codelist pending confirmation of an ICD version or other health classification.
+"[""concept_schemes"",0,""concepts"",1,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",1,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_HEALTH_SYSTEM_CAUSE_OF_DEATH
+"[""concept_schemes"",0,""concepts"",1,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",1,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",1,""local_notes""]",local_notes,string,Local/domain concept. Do not map to ICD without additional evidence because the report explicitly states that no ICD version is confirmed.
+"[""concept_schemes"",0,""concepts"",1,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed.
+"[""concept_schemes"",0,""concepts"",2]",2,object,
+"[""concept_schemes"",0,""concepts"",2,""concept_id""]",concept_id,string,AGE
+"[""concept_schemes"",0,""concepts"",2,""name""]",name,string,Age group
+"[""concept_schemes"",0,""concepts"",2,""definition""]",definition,string,Age group used to disaggregate registered-deaths observations.
+"[""concept_schemes"",0,""concepts"",2,""context""]",context,string,"Used only in the mortality structure, with reported groups such as 45-64 and 65+."
+"[""concept_schemes"",0,""concepts"",2,""recommended_representation""]",recommended_representation,string,Codelist; local age-group codelist unless a domain age codelist is later confirmed.
+"[""concept_schemes"",0,""concepts"",2,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",2,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",2,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",2,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",2,""local_notes""]",local_notes,string,Candidate reuse of SDMX AGE; exact standard concept scheme/version and suitable age codelist are not confirmed by the supplied external evidence.
+"[""concept_schemes"",0,""concepts"",2,""evidence_quote""]",evidence_quote,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""concept_schemes"",0,""concepts"",3]",3,object,
+"[""concept_schemes"",0,""concepts"",3,""concept_id""]",concept_id,string,OWNERSHIP
+"[""concept_schemes"",0,""concepts"",3,""name""]",name,string,Ownership
+"[""concept_schemes"",0,""concepts"",3,""definition""]",definition,string,Ownership category of the hospital or facility capacity being measured.
+"[""concept_schemes"",0,""concepts"",3,""context""]",context,string,Used for available hospital beds by ownership; not used in the mortality structure.
+"[""concept_schemes"",0,""concepts"",3,""recommended_representation""]",recommended_representation,string,Codelist; local ownership codelist based on report categories unless an authoritative health-facility ownership classification is later confirmed.
+"[""concept_schemes"",0,""concepts"",3,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",3,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_HEALTH_SYSTEM_OWNERSHIP
+"[""concept_schemes"",0,""concepts"",3,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",3,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",3,""local_notes""]",local_notes,string,Local concept. No external ownership classification or version is confirmed in supplied evidence.
+"[""concept_schemes"",0,""concepts"",3,""evidence_quote""]",evidence_quote,string,Table 2. Available hospital beds by ownership
+"[""concept_schemes"",0,""concepts"",4]",4,object,
+"[""concept_schemes"",0,""concepts"",4,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""concept_schemes"",0,""concepts"",4,""name""]",name,string,Time period
+"[""concept_schemes"",0,""concepts"",4,""definition""]",definition,string,Reference year to which the observation refers.
+"[""concept_schemes"",0,""concepts"",4,""context""]",context,string,Deaths count events during the calendar year; available beds are a stock measure at 31 December of the year.
+"[""concept_schemes"",0,""concepts"",4,""recommended_representation""]",recommended_representation,string,Time period; annual year format such as 2023 or 2024.
+"[""concept_schemes"",0,""concepts"",4,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",4,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",4,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",4,""local_notes""]",local_notes,string,Candidate reuse of SDMX TIME_PERIOD. The report has a Year column but no separate frequency field.
+"[""concept_schemes"",0,""concepts"",4,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.
+"[""concept_schemes"",0,""concepts"",5]",5,object,
+"[""concept_schemes"",0,""concepts"",5,""concept_id""]",concept_id,string,OBS_VALUE
+"[""concept_schemes"",0,""concepts"",5,""name""]",name,string,Observation value
+"[""concept_schemes"",0,""concepts"",5,""definition""]",definition,string,Numeric value reported for the measured health outcome or capacity variable.
+"[""concept_schemes"",0,""concepts"",5,""context""]",context,string,Represents death-event counts in the mortality structure and staffed-bed counts in the capacity structure.
+"[""concept_schemes"",0,""concepts"",5,""recommended_representation""]",recommended_representation,string,Numeric integer count.
+"[""concept_schemes"",0,""concepts"",5,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",5,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",5,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",5,""local_notes""]",local_notes,string,Candidate reuse of SDMX OBS_VALUE; exact standard concept scheme/version not confirmed by supplied external evidence.
+"[""concept_schemes"",0,""concepts"",5,""evidence_quote""]",evidence_quote,string,    Area                     Cause                   Age                        Year                        Value                         Unit                          Status
+"[""concept_schemes"",0,""concepts"",6]",6,object,
+"[""concept_schemes"",0,""concepts"",6,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""concept_schemes"",0,""concepts"",6,""name""]",name,string,Unit of measure
+"[""concept_schemes"",0,""concepts"",6,""definition""]",definition,string,Unit in which the observation value is expressed.
+"[""concept_schemes"",0,""concepts"",6,""context""]",context,string,Report units are Deaths for mortality counts and Beds for hospital capacity counts.
+"[""concept_schemes"",0,""concepts"",6,""recommended_representation""]",recommended_representation,string,Codelist; local unit codelist with Deaths and Beds unless an authoritative unit codelist mapping is confirmed.
+"[""concept_schemes"",0,""concepts"",6,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",6,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",6,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",6,""local_notes""]",local_notes,string,Candidate reuse of SDMX UNIT_MEASURE; no exact standard unit codes are confirmed in supplied evidence.
+"[""concept_schemes"",0,""concepts"",6,""evidence_quote""]",evidence_quote,string,    Ownership                             Year                                   Value                                      Unit                                      Status
+"[""concept_schemes"",0,""concepts"",7]",7,object,
+"[""concept_schemes"",0,""concepts"",7,""concept_id""]",concept_id,string,OBS_STATUS
+"[""concept_schemes"",0,""concepts"",7,""name""]",name,string,Observation status
+"[""concept_schemes"",0,""concepts"",7,""definition""]",definition,string,Status or quality information attached to the reported observation value.
+"[""concept_schemes"",0,""concepts"",7,""context""]",context,string,"Used for Final, Provisional, and Estimated values. Provisional deaths and estimated beds have different revision implications."
+"[""concept_schemes"",0,""concepts"",7,""recommended_representation""]",recommended_representation,string,"Codelist; candidate SDMX CL_OBS_STATUS mapping, with local status codelist until code-level mapping is confirmed."
+"[""concept_schemes"",0,""concepts"",7,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",7,""standard_scheme_id""]",standard_scheme_id,string,SDMX Glossary cross-domain concepts
+"[""concept_schemes"",0,""concepts"",7,""standard_version""]",standard_version,string,2.1 December 2020
+"[""concept_schemes"",0,""concepts"",7,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",7,""local_notes""]",local_notes,string,"The supplied official-source evidence confirms OBS_STATUS as a concept ID and CL_OBS_STATUS as its associated codelist ID, but it does not confirm mappings for the report values Final, Provisional, and Estimated."
+"[""concept_schemes"",0,""concepts"",7,""evidence_quote""]",evidence_quote,string,Footnote: 2024 death counts are provisional.
+"[""concept_schemes"",0,""concepts"",8]",8,object,
+"[""concept_schemes"",0,""concepts"",8,""concept_id""]",concept_id,string,MORTALITY_MEASURE
+"[""concept_schemes"",0,""concepts"",8,""name""]",name,string,Registered deaths measure
+"[""concept_schemes"",0,""concepts"",8,""definition""]",definition,string,Measure of synthetic registered death events during the calendar year.
+"[""concept_schemes"",0,""concepts"",8,""context""]",context,string,Identifies the mortality statistical structure and should not be merged with the hospital-bed capacity structure.
+"[""concept_schemes"",0,""concepts"",8,""recommended_representation""]",recommended_representation,string,Concept/measure descriptor; value represented numerically through OBS_VALUE with UNIT_MEASURE equal to Deaths.
+"[""concept_schemes"",0,""concepts"",8,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",8,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_HEALTH_SYSTEM_MEASURES
+"[""concept_schemes"",0,""concepts"",8,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",8,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",8,""local_notes""]",local_notes,string,Local measure concept documenting the semantics of the mortality observations; not a table-layout concept.
+"[""concept_schemes"",0,""concepts"",8,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year.
+"[""concept_schemes"",0,""concepts"",9]",9,object,
+"[""concept_schemes"",0,""concepts"",9,""concept_id""]",concept_id,string,BED_CAPACITY_MEASURE
+"[""concept_schemes"",0,""concepts"",9,""name""]",name,string,Available beds measure
+"[""concept_schemes"",0,""concepts"",9,""definition""]",definition,string,Measure of staffed hospital beds available on 31 December.
+"[""concept_schemes"",0,""concepts"",9,""context""]",context,string,Identifies the hospital capacity statistical structure and should not share the mortality DSD.
+"[""concept_schemes"",0,""concepts"",9,""recommended_representation""]",recommended_representation,string,Concept/measure descriptor; value represented numerically through OBS_VALUE with UNIT_MEASURE equal to Beds.
+"[""concept_schemes"",0,""concepts"",9,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",9,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_HEALTH_SYSTEM_MEASURES
+"[""concept_schemes"",0,""concepts"",9,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",9,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",9,""local_notes""]",local_notes,string,Local measure concept documenting the semantics of the bed-capacity observations; not a table-layout concept.
+"[""concept_schemes"",0,""concepts"",9,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.
+"[""concept_schemes"",0,""concepts"",10]",10,object,
+"[""concept_schemes"",0,""concepts"",10,""concept_id""]",concept_id,string,METHODOLOGY
+"[""concept_schemes"",0,""concepts"",10,""name""]",name,string,Methodology
+"[""concept_schemes"",0,""concepts"",10,""definition""]",definition,string,Methodological description of how the reported statistics are defined or collected.
+"[""concept_schemes"",0,""concepts"",10,""context""]",context,string,Reference metadata concept for the report methodology section.
+"[""concept_schemes"",0,""concepts"",10,""recommended_representation""]",recommended_representation,string,Text string.
+"[""concept_schemes"",0,""concepts"",10,""standard_source_agency""]",standard_source_agency,string,not confirmed
+"[""concept_schemes"",0,""concepts"",10,""standard_scheme_id""]",standard_scheme_id,string,Global reference metadata concept scheme candidate; exact concept ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",10,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",10,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",10,""local_notes""]",local_notes,string,"Reference metadata concept. A standard metadata concept may exist, but the exact SDMX metadata concept ID is not confirmed by supplied external evidence."
+"[""concept_schemes"",0,""concepts"",10,""evidence_quote""]",evidence_quote,string,"Deaths are synthetic registered events classified by underlying cause and age group. Hospital beds are a year-end stock measure collected from facilities and should not
+share the mortality DSD."
+"[""concept_schemes"",0,""concepts"",11]",11,object,
+"[""concept_schemes"",0,""concepts"",11,""concept_id""]",concept_id,string,SOURCE_DESC
+"[""concept_schemes"",0,""concepts"",11,""name""]",name,string,Source description
+"[""concept_schemes"",0,""concepts"",11,""definition""]",definition,string,Description of source systems or collections used for the report data.
+"[""concept_schemes"",0,""concepts"",11,""context""]",context,string,Reference metadata concept for the source description section.
+"[""concept_schemes"",0,""concepts"",11,""recommended_representation""]",recommended_representation,string,Text string.
+"[""concept_schemes"",0,""concepts"",11,""standard_source_agency""]",standard_source_agency,string,not confirmed
+"[""concept_schemes"",0,""concepts"",11,""standard_scheme_id""]",standard_scheme_id,string,Global reference metadata concept scheme candidate; exact concept ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",11,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",11,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",11,""local_notes""]",local_notes,string,Reference metadata concept. The report names synthetic data sources but no standard metadata concept ID is confirmed.
+"[""concept_schemes"",0,""concepts"",11,""evidence_quote""]",evidence_quote,string,Synthetic Civil Registration System and Synthetic Facility Census.
+"[""concept_schemes"",0,""concepts"",12]",12,object,
+"[""concept_schemes"",0,""concepts"",12,""concept_id""]",concept_id,string,DEFINITIONS
+"[""concept_schemes"",0,""concepts"",12,""name""]",name,string,Definitions
+"[""concept_schemes"",0,""concepts"",12,""definition""]",definition,string,Narrative definitions of reported measures and terms.
+"[""concept_schemes"",0,""concepts"",12,""context""]",context,string,Reference metadata concept holding the report definitions for deaths and available beds.
+"[""concept_schemes"",0,""concepts"",12,""recommended_representation""]",recommended_representation,string,Text string.
+"[""concept_schemes"",0,""concepts"",12,""standard_source_agency""]",standard_source_agency,string,not confirmed
+"[""concept_schemes"",0,""concepts"",12,""standard_scheme_id""]",standard_scheme_id,string,Global reference metadata concept scheme candidate; exact concept ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",12,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",12,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",12,""local_notes""]",local_notes,string,Reference metadata concept. Exact standard metadata mapping is not confirmed in supplied evidence.
+"[""concept_schemes"",0,""concepts"",12,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.
+"[""concept_schemes"",0,""concepts"",13]",13,object,
+"[""concept_schemes"",0,""concepts"",13,""concept_id""]",concept_id,string,CAVEATS_LIMITATIONS
+"[""concept_schemes"",0,""concepts"",13,""name""]",name,string,Caveats and limitations
+"[""concept_schemes"",0,""concepts"",13,""definition""]",definition,string,"Known caveats, limitations, or coverage issues affecting interpretation of the data."
+"[""concept_schemes"",0,""concepts"",13,""context""]",context,string,Reference metadata concept for the report caveats and limitations section.
+"[""concept_schemes"",0,""concepts"",13,""recommended_representation""]",recommended_representation,string,Text string.
+"[""concept_schemes"",0,""concepts"",13,""standard_source_agency""]",standard_source_agency,string,not confirmed
+"[""concept_schemes"",0,""concepts"",13,""standard_scheme_id""]",standard_scheme_id,string,Global reference metadata concept scheme candidate; exact concept ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",13,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",13,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",13,""local_notes""]",local_notes,string,"Reference metadata concept. It records limitations explicitly stated by the report, including unconfirmed ICD version and incomplete private-sector bed reporting."
+"[""concept_schemes"",0,""concepts"",13,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.
+"[""concept_schemes"",0,""concepts"",14]",14,object,
+"[""concept_schemes"",0,""concepts"",14,""concept_id""]",concept_id,string,REVISION_POLICY
+"[""concept_schemes"",0,""concepts"",14,""name""]",name,string,Revision policy
+"[""concept_schemes"",0,""concepts"",14,""definition""]",definition,string,Policy or rule describing how provisional or estimated values are revised.
+"[""concept_schemes"",0,""concepts"",14,""context""]",context,string,Reference metadata concept explaining how provisional death counts and estimated bed counts are later updated.
+"[""concept_schemes"",0,""concepts"",14,""recommended_representation""]",recommended_representation,string,Text string.
+"[""concept_schemes"",0,""concepts"",14,""standard_source_agency""]",standard_source_agency,string,not confirmed
+"[""concept_schemes"",0,""concepts"",14,""standard_scheme_id""]",standard_scheme_id,string,Global reference metadata concept scheme candidate; exact concept ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",14,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",14,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",14,""local_notes""]",local_notes,string,Reference metadata concept. Exact standard metadata mapping is not confirmed in supplied evidence.
+"[""concept_schemes"",0,""concepts"",14,""evidence_quote""]",evidence_quote,string,Provisional death counts are revised when late registrations arrive. Estimated bed counts are replaced after facility validation.
+"[""concept_schemes"",0,""concepts"",15]",15,object,
+"[""concept_schemes"",0,""concepts"",15,""concept_id""]",concept_id,string,CONFIDENTIALITY
+"[""concept_schemes"",0,""concepts"",15,""name""]",name,string,Confidentiality
+"[""concept_schemes"",0,""concepts"",15,""definition""]",definition,string,Confidentiality statement for the report data.
+"[""concept_schemes"",0,""concepts"",15,""context""]",context,string,Reference metadata concept noting that records and values are synthetic and contain no person-level confidential data.
+"[""concept_schemes"",0,""concepts"",15,""recommended_representation""]",recommended_representation,string,Text string.
+"[""concept_schemes"",0,""concepts"",15,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",15,""standard_scheme_id""]",standard_scheme_id,string,Global reference metadata concept scheme candidate; exact concept ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",15,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",15,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",15,""local_notes""]",local_notes,string,"The supplied glossary excerpt mentions CONF as a reference metadata concept to check only in package guidance, but no exact external standard metadata concept mapping is confirmed here."
+"[""concept_schemes"",0,""concepts"",15,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""concept_schemes"",0,""concepts"",16]",16,object,
+"[""concept_schemes"",0,""concepts"",16,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""concept_schemes"",0,""concepts"",16,""name""]",name,string,Publication date
+"[""concept_schemes"",0,""concepts"",16,""definition""]",definition,string,Date on which the report was published.
+"[""concept_schemes"",0,""concepts"",16,""context""]",context,string,Reference metadata concept for report-level publication timing.
+"[""concept_schemes"",0,""concepts"",16,""recommended_representation""]",recommended_representation,string,Date.
+"[""concept_schemes"",0,""concepts"",16,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",16,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_HEALTH_SYSTEM_METADATA
+"[""concept_schemes"",0,""concepts"",16,""standard_version""]",standard_version,string,1.0
+"[""concept_schemes"",0,""concepts"",16,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""concept_schemes"",0,""concepts"",16,""local_notes""]",local_notes,string,Local report metadata concept; no standard concept mapping confirmed in supplied evidence.
+"[""concept_schemes"",0,""concepts"",16,""evidence_quote""]",evidence_quote,string,Publication date: 3 July 2026
+"[""concept_schemes"",0,""concepts"",17]",17,object,
+"[""concept_schemes"",0,""concepts"",17,""concept_id""]",concept_id,string,COMPILING_ORG
+"[""concept_schemes"",0,""concepts"",17,""name""]",name,string,Compiling organisation
+"[""concept_schemes"",0,""concepts"",17,""definition""]",definition,string,Organisation responsible for compiling or publishing the report.
+"[""concept_schemes"",0,""concepts"",17,""context""]",context,string,Reference metadata concept for the agency named on the report title page.
+"[""concept_schemes"",0,""concepts"",17,""recommended_representation""]",recommended_representation,string,String or organisation codelist if an organisation scheme is later defined.
+"[""concept_schemes"",0,""concepts"",17,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",17,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",17,""standard_version""]",standard_version,string,not confirmed in supplied evidence
+"[""concept_schemes"",0,""concepts"",17,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",17,""local_notes""]",local_notes,string,"Candidate reuse of COMPILING_ORG from common SDMX concept guidance, but exact external standard concept evidence is not confirmed in the supplied official-source excerpts."
+"[""concept_schemes"",0,""concepts"",17,""evidence_quote""]",evidence_quote,string,Synthetic Public Health Agency

@@ -1,0 +1,52 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,METADATA_STRUCTURE_DEFINITION_MSD
+"[""source_report""]",source_report,string,01_sdmx_20_population_full_case.xml
+"[""source_sha256""]",source_sha256,string,dd0724ffd8c77e88517d69bd90c9694c94efe3e8f23db55189665b7e7a8a378d
+"[""principles_file""]",principles_file,string,05_METADATA_STRUCTURE_DEFINITION_MSD.txt
+"[""principles_sha256""]",principles_sha256,string,f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""standard_references""]",standard_references,array,
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,Mechanically converted from XML; no AI interpretation was used.
+"[""limitations"",1]",1,string,Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure.
+"[""metadata_structures""]",metadata_structures,array,
+"[""metadata_structures"",0]",0,object,
+"[""metadata_structures"",0,""msd_id""]",msd_id,string,MSD_POP
+"[""metadata_structures"",0,""name""]",name,string,Population Statistics Reference Metadata
+"[""metadata_structures"",0,""agency_id""]",agency_id,string,DEMO
+"[""metadata_structures"",0,""version""]",version,string,1.0
+"[""metadata_structures"",0,""concepts""]",concepts,array,
+"[""metadata_structures"",0,""concepts"",0]",0,object,
+"[""metadata_structures"",0,""concepts"",0,""concept_id""]",concept_id,string,SOURCE
+"[""metadata_structures"",0,""concepts"",0,""name""]",name,string,Source
+"[""metadata_structures"",0,""concepts"",0,""definition""]",definition,string,Metadata concept SOURCE imported from MSD_POP.
+"[""metadata_structures"",0,""concepts"",0,""representation""]",representation,string,String
+"[""metadata_structures"",0,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",0,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report.
+"[""metadata_structures"",0,""concepts"",0,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""metadata_structures"",0,""concepts"",0,""source_url""]",source_url,string,not stated in XML
+"[""metadata_structures"",0,""concepts"",1]",1,object,
+"[""metadata_structures"",0,""concepts"",1,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_structures"",0,""concepts"",1,""name""]",name,string,Methodology
+"[""metadata_structures"",0,""concepts"",1,""definition""]",definition,string,Metadata concept METHODOLOGY imported from MSD_POP.
+"[""metadata_structures"",0,""concepts"",1,""representation""]",representation,string,String
+"[""metadata_structures"",0,""concepts"",1,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",1,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",0,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report.
+"[""metadata_structures"",0,""concepts"",1,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""metadata_structures"",0,""concepts"",1,""source_url""]",source_url,string,not stated in XML
+"[""metadata_structures"",0,""concepts"",2]",2,object,
+"[""metadata_structures"",0,""concepts"",2,""concept_id""]",concept_id,string,SOURCE_URL
+"[""metadata_structures"",0,""concepts"",2,""name""]",name,string,Source Url
+"[""metadata_structures"",0,""concepts"",2,""definition""]",definition,string,Metadata concept SOURCE_URL imported from MSD_POP.
+"[""metadata_structures"",0,""concepts"",2,""representation""]",representation,string,String
+"[""metadata_structures"",0,""concepts"",2,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",2,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",0,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report.
+"[""metadata_structures"",0,""concepts"",2,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""metadata_structures"",0,""concepts"",2,""source_url""]",source_url,string,not stated in XML

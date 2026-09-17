@@ -1,0 +1,41 @@
+{
+  "artifact_type": "METADATA_SET",
+  "source_report": "02_sdmx_20_consumer_prices_full_case.xml",
+  "source_sha256": "e41976478f67b8426a33a2457c4705df89c2d00027855c16cb0eab12727f4e2e",
+  "principles_file": "06_METADATA_SET.txt",
+  "principles_sha256": "78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "metadata_sets": [
+    {
+      "metadata_set_id": "CPI_METADATA_SET",
+      "msd_id": "MSD_CPI",
+      "target_id": "DF_CPI",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "SOURCE",
+          "value": "Illustrative monthly consumer-price collection.",
+          "evidence_quote": "Illustrative monthly consumer-price collection.",
+          "source_location": "XML metadata attribute SOURCE"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Prices are aggregated to product groups; index levels and year-on-year changes are carried as separate indicators.",
+          "evidence_quote": "Prices are aggregated to product groups; index levels and year-on-year changes are carried as separate indicators.",
+          "source_location": "XML metadata attribute METHODOLOGY"
+        },
+        {
+          "concept_id": "SOURCE_URL",
+          "value": "https://example.org/consumer_prices/source",
+          "evidence_quote": "https://example.org/consumer_prices/source",
+          "source_location": "XML metadata attribute SOURCE_URL"
+        }
+      ]
+    }
+  ]
+}

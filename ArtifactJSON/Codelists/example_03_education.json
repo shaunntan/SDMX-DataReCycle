@@ -1,0 +1,275 @@
+{
+  "artifact_type": "CODELISTS",
+  "source_report": "example_03_education.pdf",
+  "source_sha256": "e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6",
+  "principles_file": "02_CODELISTS.txt",
+  "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist registry catalogue",
+      "artifact_id": "SDMX Global Registry - Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The official registry codelist catalogue was fetched and confirms that the SDMX Global Registry provides a Codelists listing/export interface. The supplied excerpt does not confirm exact versions or code contents for candidate codelists such as CL_SEX or CL_OBS_STATUS.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary",
+      "artifact_id": "SDMX Glossary Version 2.1",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The supplied official-source excerpt states that a codelist ID is the unique identifier for the codelist associated with a concept and gives CL_OBS_STATUS as an example for Observation Status. It supports SDMX codelist modelling but does not provide the actual report-category code mappings.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNESCO-UIS",
+      "artifact_type": "Classification",
+      "artifact_id": "ISCED",
+      "version": "not stated",
+      "url": "https://www.uis.unesco.org/en/methods-and-tools/isced",
+      "evidence": "The shared reference catalog identifies UNESCO ISCED as the international reference for education level. The report states that education-level labels require ISCED mapping review, and no supplied external evidence confirms exact ISCED codes or version for Primary, Lower secondary, and Upper secondary.",
+      "verification_status": "CANDIDATE"
+    }
+  ],
+  "limitations": [
+    "The supplied external evidence does not confirm exact SDMX CL_SEX codes, versions, or definitions; report sex labels are therefore held as local candidate mappings rather than asserted as authoritative SDMX codes.",
+    "The report explicitly states that education-level labels require ISCED mapping review; no ISCED version or code mapping is confirmed in the supplied evidence.",
+    "The report explicitly states that wealth quintiles are survey-specific and should not be silently mapped to a standard income classification; only the three reported quintile labels are represented.",
+    "No authoritative unit-measure codelist or code values for Students and Percent were confirmed from supplied external evidence.",
+    "Observation status values Final, Provisional, and Modelled estimate may have candidate mappings to SDMX observation-status concepts, but exact authoritative codes were not confirmed.",
+    "The report does not state a reference area, so no geographic codelist is created.",
+    "The report is synthetic and provides limited methodological detail for category boundaries, especially sex total scope and wealth-quintile construction."
+  ],
+  "codelists": [
+    {
+      "codelist_id": "CL_EDU_INDICATOR_LOCAL",
+      "name": "Education report statistical indicators",
+      "agency_id": "SYNTH_MIN_LEARNING",
+      "version": "2025-report",
+      "source_url": "example_03_education.pdf",
+      "maintenance_status": "PROPOSED_LOCAL",
+      "verification_status": "CANDIDATE",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local indicator list preserving the two distinct statistical measures described in the report: enrollment administrative headcount and lower-secondary completion rate. No authoritative indicator codelist was confirmed from supplied evidence.",
+      "codes": [
+        {
+          "code": "ENROLLMENT_COUNT",
+          "name": "Enrollment count",
+          "definition": "Administrative headcount of learners registered on census day, reported by education level, sex and year.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Enrollment is an administrative headcount by education level.",
+          "local_creation_justification": "Created as a local report indicator because the supplied evidence does not confirm an authoritative education indicator codelist or code for this measure."
+        },
+        {
+          "code": "LOWER_SECONDARY_COMPLETION_RATE",
+          "name": "Lower-secondary completion rate",
+          "definition": "Percentage of the relevant cohort completing the lower-secondary education cycle, reported by wealth quintile, sex and year.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Table 2. Lower-secondary completion by wealth quintile",
+          "local_creation_justification": "Created as a local report indicator because the supplied evidence does not confirm an authoritative education indicator codelist or code for this measure."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_EDUCATION_LEVEL_REPORT_LOCAL",
+      "name": "Report education-level labels",
+      "agency_id": "SYNTH_MIN_LEARNING",
+      "version": "2025-report",
+      "source_url": "example_03_education.pdf",
+      "maintenance_status": "CANDIDATE_MAPPING",
+      "verification_status": "CANDIDATE",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local holding list for education-level labels appearing in the enrollment table. Candidate mapping to UNESCO ISCED is required before production use; the report itself warns that mapping requires review.",
+      "codes": [
+        {
+          "code": "PRIMARY",
+          "name": "Primary",
+          "definition": "Report education-level label Primary; exact ISCED mapping is not established in the supplied evidence.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Primary                            Female                            2024                              78748                                 Students                                  Final",
+          "local_creation_justification": "Created locally because the report contains a genuine education-level category but states that ISCED mapping requires review, and no confirmed ISCED code/version was supplied."
+        },
+        {
+          "code": "LOWER_SECONDARY",
+          "name": "Lower secondary",
+          "definition": "Report education-level label Lower secondary; exact ISCED mapping is not established in the supplied evidence.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Lower secondary                    Female                            2024                              115063                                Students                                  Final",
+          "local_creation_justification": "Created locally because the report contains a genuine education-level category but states that ISCED mapping requires review, and no confirmed ISCED code/version was supplied."
+        },
+        {
+          "code": "UPPER_SECONDARY",
+          "name": "Upper secondary",
+          "definition": "Report education-level label Upper secondary; exact ISCED mapping is not established in the supplied evidence.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Upper secondary                    Female                            2024                              129817                                Students                                  Final",
+          "local_creation_justification": "Created locally because the report contains a genuine education-level category but states that ISCED mapping requires review, and no confirmed ISCED code/version was supplied."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_SEX_REPORT_LOCAL",
+      "name": "Report sex categories",
+      "agency_id": "SYNTH_MIN_LEARNING",
+      "version": "2025-report",
+      "source_url": "example_03_education.pdf",
+      "maintenance_status": "CANDIDATE_MAPPING",
+      "verification_status": "CANDIDATE",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local holding list for sex labels used in the report. Candidate mapping to SDMX CL_SEX should be verified against the authoritative registry before production use. Total appears in the enrollment table, while the completion table shows Female and Male only.",
+      "codes": [
+        {
+          "code": "FEMALE",
+          "name": "Female",
+          "definition": "Report sex category labelled Female.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Primary                            Female                            2024                              78748                                 Students                                  Final",
+          "local_creation_justification": "Created locally because the supplied external evidence does not confirm exact SDMX CL_SEX code identifiers or version."
+        },
+        {
+          "code": "MALE",
+          "name": "Male",
+          "definition": "Report sex category labelled Male.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Primary                             Male                              2024                              106731                                Students                                  Final",
+          "local_creation_justification": "Created locally because the supplied external evidence does not confirm exact SDMX CL_SEX code identifiers or version."
+        },
+        {
+          "code": "TOTAL",
+          "name": "Total",
+          "definition": "Aggregate over reported sex categories for enrollment rows; exact inclusion rules are not further stated in the report.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Primary                                   Total                              2024                              58913                                 Students                                  Final",
+          "local_creation_justification": "Created locally because the supplied external evidence does not confirm exact SDMX CL_SEX total-code identifier or scope, and the report does not define total inclusion rules."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_WEALTH_QUINTILE_REPORT_LOCAL",
+      "name": "Survey-specific wealth quintile labels",
+      "agency_id": "SYNTH_MIN_LEARNING",
+      "version": "2025-report",
+      "source_url": "example_03_education.pdf",
+      "maintenance_status": "PROPOSED_LOCAL",
+      "verification_status": "CANDIDATE",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Survey-specific wealth-quintile labels used for lower-secondary completion rates. The report warns that these should not be silently mapped to a standard income classification. Only the three labels present in the report are included; missing second and fourth quintile categories are not invented.",
+      "codes": [
+        {
+          "code": "LOWEST_QUINTILE",
+          "name": "Lowest quintile",
+          "definition": "Report wealth-quintile label Lowest quintile; survey-specific construction is not further defined in the supplied evidence.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Lowest quintile                      Female                            2024                                  64.0                                  Percent                              Modelled estimate",
+          "local_creation_justification": "Created locally because the report states the wealth quintiles are survey-specific and should not be silently mapped to a standard income classification."
+        },
+        {
+          "code": "MIDDLE_QUINTILE",
+          "name": "Middle quintile",
+          "definition": "Report wealth-quintile label Middle quintile; survey-specific construction is not further defined in the supplied evidence.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Middle quintile                       Female                            2024                                  89.8                                  Percent                              Modelled estimate",
+          "local_creation_justification": "Created locally because the report states the wealth quintiles are survey-specific and should not be silently mapped to a standard income classification."
+        },
+        {
+          "code": "HIGHEST_QUINTILE",
+          "name": "Highest quintile",
+          "definition": "Report wealth-quintile label Highest quintile; survey-specific construction is not further defined in the supplied evidence.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Highest quintile                      Female                            2024                                  70.7                                  Percent                              Modelled estimate",
+          "local_creation_justification": "Created locally because the report states the wealth quintiles are survey-specific and should not be silently mapped to a standard income classification."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_UNIT_MEASURE_EDU_REPORT_LOCAL",
+      "name": "Report unit labels",
+      "agency_id": "SYNTH_MIN_LEARNING",
+      "version": "2025-report",
+      "source_url": "example_03_education.pdf",
+      "maintenance_status": "PROPOSED_LOCAL",
+      "verification_status": "CANDIDATE",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local unit labels as printed in the report. No authoritative domain unit codelist or exact code mapping was confirmed from supplied external evidence.",
+      "codes": [
+        {
+          "code": "STUDENTS",
+          "name": "Students",
+          "definition": "Unit for enrollment counts of learners registered on census day.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Enrollment counts learners registered on census day.",
+          "local_creation_justification": "Created locally because no authoritative unit-measure code for Students was confirmed from supplied evidence."
+        },
+        {
+          "code": "PERCENT",
+          "name": "Percent",
+          "definition": "Unit for completion rate expressed as a percentage of the relevant cohort completing the stated education cycle.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Completion rate is the percentage of the relevant cohort completing the stated education cycle.",
+          "local_creation_justification": "Created locally because no authoritative unit-measure code for Percent was confirmed from supplied evidence."
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_OBS_STATUS_EDU_REPORT_LOCAL",
+      "name": "Report value-status labels",
+      "agency_id": "SYNTH_MIN_LEARNING",
+      "version": "2025-report",
+      "source_url": "example_03_education.pdf",
+      "maintenance_status": "CANDIDATE_MAPPING",
+      "verification_status": "CANDIDATE",
+      "date_checked": "2026-09-16",
+      "scope_notes": "Local holding list for status labels printed in the report. Candidate mappings to SDMX CL_OBS_STATUS or related quality/estimation attributes should be verified; Modelled estimate may not be purely an observation-status category.",
+      "codes": [
+        {
+          "code": "FINAL",
+          "name": "Final",
+          "definition": "Administrative count status indicating values become final after duplicate removal.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Administrative counts become final after duplicate removal.",
+          "local_creation_justification": "Created locally because the supplied evidence does not confirm exact authoritative SDMX observation-status code mapping."
+        },
+        {
+          "code": "PROVISIONAL",
+          "name": "Provisional",
+          "definition": "Enrollment status used for 2025 values identified as provisional.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Footnote: 2025 enrollment is provisional.",
+          "local_creation_justification": "Created locally because the supplied evidence does not confirm exact authoritative SDMX observation-status code mapping."
+        },
+        {
+          "code": "MODELLED_ESTIMATE",
+          "name": "Modelled estimate",
+          "definition": "Status label for completion-rate values that are modelled estimates and may change with revised survey weights.",
+          "parent_code": null,
+          "status": "PROPOSED_LOCAL",
+          "evidence_quote": "Footnote: All completion rates are modelled estimates.",
+          "local_creation_justification": "Created locally because the supplied evidence does not confirm exact authoritative SDMX observation-status code mapping, and this category may require modelling-method metadata rather than a simple observation-status code."
+        }
+      ]
+    }
+  ]
+}

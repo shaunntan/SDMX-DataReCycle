@@ -1,0 +1,137 @@
+{
+  "artifact_type": "DSD_KEY_FAMILY",
+  "source_report": "01_sdmx_20_population_full_case.xml",
+  "source_sha256": "dd0724ffd8c77e88517d69bd90c9694c94efe3e8f23db55189665b7e7a8a378d",
+  "principles_file": "03_DSD_KEY_FAMILY.txt",
+  "principles_sha256": "b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "data_structures": [
+    {
+      "dsd_id": "DSD_POP",
+      "name": "Population Statistics Key Family",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "statistical_scope": "Population Statistics",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_POP_FREQ",
+          "codelist_agency": null,
+          "codelist_id": "CL_POP_FREQ",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Population Statistics Key Family"
+        },
+        {
+          "position": 2,
+          "concept_id": "REF_AREA",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_POP_REF_AREA",
+          "codelist_agency": null,
+          "codelist_id": "CL_POP_REF_AREA",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Population Statistics Key Family"
+        },
+        {
+          "position": 3,
+          "concept_id": "INDICATOR",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_POP_INDICATOR",
+          "codelist_agency": null,
+          "codelist_id": "CL_POP_INDICATOR",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Population Statistics Key Family"
+        },
+        {
+          "position": 4,
+          "concept_id": "AGE_GROUP",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_POP_AGE_GROUP",
+          "codelist_agency": null,
+          "codelist_id": "CL_POP_AGE_GROUP",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Population Statistics Key Family"
+        },
+        {
+          "position": 5,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "String",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML TimeDimension.",
+          "evidence_quote": "Population Statistics Key Family"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Double",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Double",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML PrimaryMeasure.",
+          "evidence_quote": "Population Statistics Key Family"
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Coded by CL_POP_UNIT",
+          "codelist_agency": null,
+          "codelist_id": "CL_POP_UNIT",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "OBSERVATION",
+          "notes": "Mechanically extracted from XML Attribute.",
+          "evidence_quote": "Population Statistics Key Family"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "representation": "Coded by CL_POP_OBS_STATUS",
+          "codelist_agency": null,
+          "codelist_id": "CL_POP_OBS_STATUS",
+          "codelist_version": null,
+          "data_type": "String",
+          "usage_status": "CONDITIONAL",
+          "attachment_level": "OBSERVATION",
+          "notes": "Mechanically extracted from XML Attribute.",
+          "evidence_quote": "Population Statistics Key Family"
+        }
+      ]
+    }
+  ],
+  "structure_separation_rationale": "Each distinct DSD/Key Family present in the XML is preserved as a separate structure."
+}

@@ -1,0 +1,249 @@
+CODELISTS
+=========
+
+1. Definition
+-------------
+A Codelist is a predefined set of codes used as valid values for a coded concept.
+
+Examples:
+FREQ:
+  A = Annual
+  Q = Quarterly
+  M = Monthly
+
+SEX:
+  codes representing the sex categories defined by the chosen standard.
+
+A Codelist answers: "Which values are allowed for this coded concept?"
+
+2. Best practices
+-----------------
+A. REUSE BEFORE CREATION.
+   Search suitable existing codelists before creating a new one.
+
+B. Check semantic suitability, not just code labels.
+   A code named TOTAL may have different inclusion/exclusion rules in two lists.
+
+C. In SDMX DSD design, dimensions should normally be coded; time is the main
+   exception. Attributes may be coded or uncoded.
+
+D. Do not clone a large standard list simply because the report uses a subset.
+   Prefer to reference the authoritative list and control the permitted subset in
+   the dataflow/validation layer where practicable.
+
+E. Do not recycle codes.
+   Once a code has had a meaning, do not later assign the same code to a different
+   meaning.
+
+F. Keep codes stable and language-neutral.
+   Human labels can be multilingual; code identities should not depend on language.
+
+G. Every code should have:
+   - code ID;
+   - name/label;
+   - definition or explanatory note where needed;
+   - status (active/deprecated if your governance supports it);
+   - source standard;
+   - source version;
+   - mapping notes when source terminology differs.
+
+H. Treat classifications as versioned standards.
+   ISIC Rev.4 and ISIC Rev.5, for example, are not interchangeable merely because
+   many codes look similar.
+
+I. Avoid mixing classification systems in one field without an explicit model.
+   Example: do not combine ISO country codes, custom regions and arbitrary report
+   groupings without documenting the system and hierarchy.
+
+J. Create a new code only when:
+   1) no equivalent authoritative code exists;
+   2) the source report contains a genuine statistical category;
+   3) its meaning can be defined;
+   4) the decision is documented.
+
+3. Example: how it looks
+------------------------
+Human-readable table:
+
+CODE   NAME          DEFINITION/SCOPE
+-----  ------------  --------------------------------
+A      Annual        Once per year
+Q      Quarterly     Once per quarter
+M      Monthly       Once per month
+
+Illustrative SDMX-ML-style skeleton:
+
+<CodeList id="CL_EXAMPLE" agencyID="MY_AGENCY" version="1.0">
+  <Code value="A">
+    <Description xml:lang="en">Annual</Description>
+  </Code>
+  <Code value="Q">
+    <Description xml:lang="en">Quarterly</Description>
+  </Code>
+</CodeList>
+
+4. Formal / practical formats
+-----------------------------
+Formal SDMX 2.0:
+- SDMX-ML XML structure message.
+
+Practical working formats:
+- CSV/XLSX table with columns:
+  CODE
+  NAME
+  DEFINITION
+  PARENT_CODE (if needed)
+  SOURCE_AGENCY
+  SOURCE_CODELIST
+  SOURCE_VERSION
+  SOURCE_URL
+  STATUS
+  NOTES
+
+5. SDMX Global Registry codelists worth checking first
+------------------------------------------------------
+The following were present under the SDMX maintenance agency in the Global
+Registry when checked on 2026-09-16. Versions can change; always verify the
+registry at implementation time.
+
+CL_AREA                 Reference area
+CL_FREQ                 Frequency
+CL_OBS_STATUS           Observation status
+CL_CONF_STATUS          Confidentiality status
+CL_DECIMALS             Decimals
+CL_SEX                  Sex
+CL_UNIT_MULT            Unit multiplier
+CL_SEASONAL_ADJUST      Seasonal adjustment
+CL_BREAK_REASON         Reason for break in time series
+CL_OCCUPATION           Occupation
+CL_DEG_URB              Degree of urbanisation
+CL_CIVIL_STATUS         Civil / marital status
+CL_STATISTICAL_OPERATION Statistical operation
+CL_TIME_FORMAT          Time format
+CL_TIME_PER_COLLECT     Time period - collection
+CL_TIMETRANS            Time transformation
+CL_TIMETRANS_TYPE       Time transformation type
+CL_TIMETRANS_PER        Time transformation period
+CL_COICOP_2018          COICOP 2018
+CL_COFOG_1999           COFOG 1999
+CL_COPNI_1999           COPNI 1999
+CL_COPP_1999            COPP 1999
+
+Registry:
+https://registry.sdmx.org/items/codelist.html
+
+Important:
+The registry also contains codelists maintained by Eurostat, UNSD, UIS,
+IAEG-SDGs and other agencies. A non-SDMX-agency list can be the right choice if
+it is the authoritative domain standard.
+
+6. Important concepts where the correct code source depends on domain
+----------------------------------------------------------------------
+REF_AREA
+- First search the SDMX Global Registry for the relevant domain DSD/codelist.
+- Also consider UN M49 and ISO 3166.
+- Do not assume ISO codes are always the exact reporting-area convention.
+
+AGE
+- There is no single universal age-group codelist suitable for every dataset.
+- Search domain codelists (e.g. SDG/UIS) and preserve the report's true grouping.
+- Exact age and grouped age are different representations.
+
+UNIT_MEASURE
+- Search the domain's existing SDMX structure and registry.
+- UNSD and Eurostat maintain unit codelists for particular statistical domains.
+- Do not invent a generic unit code if an established domain unit exists.
+
+ACTIVITY
+- Use the relevant version of ISIC for international economic activity where
+  appropriate, or an authorised regional/national derivative such as NACE.
+
+OCCUPATION
+- International reference: ILO ISCO.
+- The SDMX Registry also contains CL_OCCUPATION.
+
+EDUCATION_LEVEL
+- International reference: UNESCO ISCED.
+
+PRODUCT / COMMODITY
+- Depending on the phenomenon: CPC, HS, CPA, or another recognised classification.
+- Do not treat these classifications as interchangeable.
+
+CURRENCY
+- International reference: ISO 4217 where currency identity is required.
+
+7. Authoritative code/classification sources
+--------------------------------------------
+SDMX Global Registry
+https://registry.sdmx.org/items/codelist.html
+
+UN M49 geographic codes
+https://unstats.un.org/unsd/methodology/m49/
+
+ISO 3166 country/subdivision codes
+https://www.iso.org/iso-3166-country-codes.html
+
+UNSD international classifications
+https://unstats.un.org/unsd/classifications/unsdclassifications
+
+UNSD economic classifications (ISIC, CPC, HS resources, correspondence tables)
+https://unstats.un.org/unsd/classifications/Econ
+
+COICOP
+https://unstats.un.org/unsd/classifications/coicop
+
+ILO ISCO
+https://isco.ilo.org/
+
+UNESCO ISCED
+https://www.uis.unesco.org/en/methods-and-tools/isced
+
+Eurostat RAMON
+https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ramon
+
+ISO 4217 currencies
+https://www.iso.org/standard/64758.html
+
+8. Acceptance checks
+--------------------
+[ ] Each coded field points to one explicit codelist/version.
+[ ] Reuse search was performed and documented.
+[ ] Codes have stable identities and clear labels.
+[ ] No code was invented merely to match report formatting.
+[ ] Aggregates/totals have defined scope.
+[ ] Classification version is recorded.
+[ ] Source and URL are recorded.
+[ ] Mappings from report labels to codes are explicit.
+
+CORE OFFICIAL SOURCES (checked 2026-09-16)
+-----------------------------------------------
+SDMX 2.0 standards landing page
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+SDMX 2.0 Information Model
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+SDMX 2.0 Implementor's Guide
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+SDMX Guidelines
+https://sdmx.org/guidelines/
+
+Guidelines for the Design of Data Structure Definitions
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+SDMX Glossary 2.1
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Standardising Reference Metadata Reporting in SDMX
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Global Registry - Codelists
+https://registry.sdmx.org/items/codelist.html
+
+IMPORTANT
+---------
+This package targets SDMX 2.0 as requested. In SDMX 2.0 the formal term for a
+Data Structure Definition is "Key Family". Later SDMX statistical guidelines are
+used here only for modelling good practice where the recommendation is compatible
+with the SDMX 2.0 information model.

@@ -1,0 +1,41 @@
+{
+  "artifact_type": "METADATA_SET",
+  "source_report": "03_sdmx_21_labour_market_full_case.xml",
+  "source_sha256": "51affdd8ac40d4b0b42f1debed99a36090d477e85d40a3b35dd62c2f65868752",
+  "principles_file": "06_METADATA_SET.txt",
+  "principles_sha256": "78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "metadata_sets": [
+    {
+      "metadata_set_id": "LAB_METADATA_SET",
+      "msd_id": "MSD_LAB",
+      "target_id": "DF_LAB",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "SOURCE",
+          "value": "Illustrative labour-force survey.",
+          "evidence_quote": "Illustrative labour-force survey.",
+          "source_location": "XML metadata attribute SOURCE"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Rates are represented as percentages and are disaggregated by sex.",
+          "evidence_quote": "Rates are represented as percentages and are disaggregated by sex.",
+          "source_location": "XML metadata attribute METHODOLOGY"
+        },
+        {
+          "concept_id": "SOURCE_URL",
+          "value": "https://example.org/labour_market/source",
+          "evidence_quote": "https://example.org/labour_market/source",
+          "source_location": "XML metadata attribute SOURCE_URL"
+        }
+      ]
+    }
+  ]
+}

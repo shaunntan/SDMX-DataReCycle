@@ -1,0 +1,518 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODEBOOK_AND_SOURCE_MAPPING
+"[""source_report""]",source_report,string,example_02_health_system.pdf
+"[""source_sha256""]",source_sha256,string,5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23
+"[""principles_file""]",principles_file,string,08_CODEBOOK_AND_SOURCE_MAPPING.txt
+"[""principles_sha256""]",principles_sha256,string,999d6556922403d8315a0a0558da149e83e7c3b8f29779d9d346959966d76b74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY_2_1
+"[""standard_references"",0,""version""]",version,string,2.1 December 2020
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied official-source excerpt identifies SDMX cross-domain concepts and states that commonly used concepts should conform to specified names, IDs, representations and codelists. It explicitly gives OBS_STATUS as the concept ID for Observation Status and CL_OBS_STATUS as its associated codelist ID. The excerpt also refers to Reference area as a DSD dimension in an example."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist catalogue
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied official-source excerpt confirms that the SDMX Global Registry provides a searchable catalogue of codelists with details, references, changelog and export functions. It does not confirm code-level details or versions for the health report's local categories."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,UNSD
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",2,""version""]",version,string,not stated in supplied evidence
+"[""standard_references"",2,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied official-source excerpt shows UN M49 entries for countries and areas with numeric and alpha codes. The report areas Northland, Centralia and South Coast are not confirmed as UN M49 areas in the supplied evidence."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",3,""version""]",version,string,not confirmed in supplied evidence
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,"The supplied SDMX glossary evidence confirms the concept ID OBS_STATUS and associated codelist ID CL_OBS_STATUS, while the supplied registry evidence confirms that codelists can be searched. The supplied external evidence does not confirm actual CL_OBS_STATUS code membership or definitions for Final, Provisional or Estimated."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,SDMX
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",4,""version""]",version,string,not confirmed in supplied evidence
+"[""standard_references"",4,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",4,""evidence""]",evidence,string,"Common SDMX guidance lists FREQ as a common field using SDMX CL_FREQ, and the registry evidence confirms that codelists can be searched. The supplied external evidence does not confirm the exact CL_FREQ version or annual-frequency code definition."
+"[""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,This codebook covers structural data fields for two distinct accepted SDMX 2.0 Key Families: KF_HEALTH_REGISTERED_DEATHS and KF_HEALTH_AVAILABLE_HOSPITAL_BEDS. It preserves the report's explicit statement that hospital beds should not share the mortality DSD.
+"[""limitations"",1]",1,string,"Per-DSD requiredness, attachment level, allowed values, missing rules and not-applicable rules are encoded in each field's representation string as JSON_PROPERTIES to remain compatible with the strict response schema."
+"[""limitations"",2]",2,string,"Codelist identifier reconciliation decision: the codebook uses the governed codelist IDs from the accepted CODELISTS artefact: CL_HEALTH_AREA_LOCAL, CL_HEALTH_CAUSE_LOCAL, CL_HEALTH_AGE_GROUP_LOCAL, CL_HEALTH_OWNERSHIP_LOCAL, CL_HEALTH_UNIT_MEASURE_LOCAL and CL_HEALTH_OBS_STATUS_LOCAL. Divergent DSD-local names are treated as aliases only: CL_HEALTH_AREA -> CL_HEALTH_AREA_LOCAL; CL_BROAD_CAUSE_OF_DEATH -> CL_HEALTH_CAUSE_LOCAL; CL_HEALTH_AGE_GROUP -> CL_HEALTH_AGE_GROUP_LOCAL; CL_HOSPITAL_OWNERSHIP -> CL_HEALTH_OWNERSHIP_LOCAL; CL_HEALTH_UNIT_MEASURE -> CL_HEALTH_UNIT_MEASURE_LOCAL; CL_HEALTH_OBS_STATUS -> CL_HEALTH_OBS_STATUS_LOCAL."
+"[""limitations"",3]",3,string,Table-to-Key-Family routing is represented in source_value_mappings using target_field DATA_STRUCTURE_ROUTING. Table 1 routes to KF_HEALTH_REGISTERED_DEATHS with fixed dataset-level UNIT_MEASURE=DEATHS. Table 2 routes to KF_HEALTH_AVAILABLE_HOSPITAL_BEDS with fixed dataset-level UNIT_MEASURE=BEDS.
+"[""limitations"",4]",4,string,"Report-level methodology, source description, definitions, caveats and limitations, revision policy, confidentiality, publication date and compiling organisation are mapped in source_value_mappings as reference metadata targets prefixed by MSD:. They are not observation attributes and are not DSD components in this codebook."
+"[""limitations"",5]",5,string,"UNIT_MEASURE is a dataset-level attribute in the accepted structures. Repetition of Deaths or Beds in a flat table is source-table denormalisation, not observation-level attachment."
+"[""limitations"",6]",6,string,"Cause-of-death labels resemble broad ICD families, but no ICD version is confirmed; mappings to ICD remain unresolved and local cause codes are used."
+"[""limitations"",7]",7,string,"Northland, Centralia and South Coast are synthetic/local report areas and are not confirmed as UN M49, ISO 3166 or SDMX CL_AREA codes in the supplied evidence."
+"[""limitations"",8]",8,string,"Annual frequency is semantically derived from calendar-year and 31 December wording, but the exact SDMX CL_FREQ code and version are not confirmed; FREQ has no allowed auto-fill code until verified."
+"[""limitations"",9]",9,string,"Private-sector bed reporting is incomplete in 2024; this caveat affects interpretation and is carried as reference metadata, not resolved by changing a structural code."
+"[""fields""]",fields,array,
+"[""fields"",0]",0,object,
+"[""fields"",0,""field_id""]",field_id,string,FREQ
+"[""fields"",0,""name""]",name,string,Frequency
+"[""fields"",0,""definition""]",definition,string,"Frequency of observation. Required in both accepted structures. Annual semantics are derived from calendar-year death counts and 31 December hospital bed stock, but the exact SDMX CL_FREQ code and version are not confirmed; an AI filler must not invent or silently auto-fill a standard frequency code."
+"[""fields"",0,""role""]",role,string,DIMENSION
+"[""fields"",0,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""REQUIRED"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""REQUIRED""},""codelist_agency"":""SDMX"",""codelist_id"":""CL_FREQ"",""codelist_version"":""not confirmed"",""attachment_level"":""DIMENSION"",""allowed_values"":[],""mapping_status"":""UNRESOLVED"",""candidate_semantics"":""annual"",""auto_fill"":false,""missing_rules"":""Do not populate with a standard code until CL_FREQ version and annual code are verified; flag for resolver."",""not_applicable_rules"":""Not applicable to neither accepted structure; FREQ is structurally required in both.""}"
+"[""fields"",0,""codelist_id""]",codelist_id,string,SDMX:CL_FREQ:not confirmed
+"[""fields"",0,""required""]",required,boolean,true
+"[""fields"",0,""example""]",example,string,UNRESOLVED_ANNUAL_CANDIDATE
+"[""fields"",0,""source_standard""]",source_standard,string,SDMX candidate CL_FREQ; exact code/version unconfirmed
+"[""fields"",0,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",1]",1,object,
+"[""fields"",1,""field_id""]",field_id,string,REF_AREA
+"[""fields"",1,""name""]",name,string,Reference area
+"[""fields"",1,""definition""]",definition,string,Synthetic reporting area to which a registered-deaths observation refers. Required for KF_HEALTH_REGISTERED_DEATHS and not applicable for KF_HEALTH_AVAILABLE_HOSPITAL_BEDS.
+"[""fields"",1,""role""]",role,string,DIMENSION
+"[""fields"",1,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""REQUIRED"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""NOT_APPLICABLE""},""codelist_agency"":""SYNTH_PH_AGENCY"",""codelist_id"":""CL_HEALTH_AREA_LOCAL"",""codelist_version"":""1.0-proposed"",""attachment_level"":""DIMENSION"",""allowed_values"":[""NORTHLAND"",""CENTRALIA"",""SOUTH_COAST""],""mapping_status"":""LOCAL_EQUIVALENT"",""auto_fill"":true,""missing_rules"":""Required for every mortality observation; if Area is blank, reject or flag row as incomplete."",""not_applicable_rules"":""Must be blank or omitted for hospital-bed observations; do not fill with total or unknown.""}"
+"[""fields"",1,""codelist_id""]",codelist_id,string,SYNTH_PH_AGENCY:CL_HEALTH_AREA_LOCAL:1.0-proposed
+"[""fields"",1,""required""]",required,boolean,true
+"[""fields"",1,""example""]",example,string,NORTHLAND
+"[""fields"",1,""source_standard""]",source_standard,string,Local governed codelist; DSD alias CL_HEALTH_AREA reconciled to CL_HEALTH_AREA_LOCAL
+"[""fields"",1,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""fields"",2]",2,object,
+"[""fields"",2,""field_id""]",field_id,string,CAUSE_OF_DEATH
+"[""fields"",2,""name""]",name,string,Cause of death
+"[""fields"",2,""definition""]",definition,string,Underlying cause category used to classify registered death events. Required for KF_HEALTH_REGISTERED_DEATHS and not applicable for KF_HEALTH_AVAILABLE_HOSPITAL_BEDS. Labels are local broad categories because no ICD version is confirmed.
+"[""fields"",2,""role""]",role,string,DIMENSION
+"[""fields"",2,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""REQUIRED"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""NOT_APPLICABLE""},""codelist_agency"":""SYNTH_PH_AGENCY"",""codelist_id"":""CL_HEALTH_CAUSE_LOCAL"",""codelist_version"":""1.0-proposed"",""attachment_level"":""DIMENSION"",""allowed_values"":[""CIRCULATORY_DISEASES"",""NEOPLASMS""],""mapping_status"":""LOCAL_EQUIVALENT"",""auto_fill"":true,""missing_rules"":""Required for every mortality observation; if Cause is blank, reject or flag row as incomplete."",""not_applicable_rules"":""Must be blank or omitted for hospital-bed observations."",""external_mapping_rule"":""Do not map to ICD unless an ICD version and code scope are later confirmed.""}"
+"[""fields"",2,""codelist_id""]",codelist_id,string,SYNTH_PH_AGENCY:CL_HEALTH_CAUSE_LOCAL:1.0-proposed
+"[""fields"",2,""required""]",required,boolean,true
+"[""fields"",2,""example""]",example,string,CIRCULATORY_DISEASES
+"[""fields"",2,""source_standard""]",source_standard,string,Local governed codelist; DSD alias CL_BROAD_CAUSE_OF_DEATH reconciled to CL_HEALTH_CAUSE_LOCAL; ICD unresolved
+"[""fields"",2,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""fields"",3]",3,object,
+"[""fields"",3,""field_id""]",field_id,string,AGE
+"[""fields"",3,""name""]",name,string,Age group
+"[""fields"",3,""definition""]",definition,string,Age group used to disaggregate registered-deaths observations. Required for KF_HEALTH_REGISTERED_DEATHS and not applicable for KF_HEALTH_AVAILABLE_HOSPITAL_BEDS.
+"[""fields"",3,""role""]",role,string,DIMENSION
+"[""fields"",3,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""REQUIRED"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""NOT_APPLICABLE""},""codelist_agency"":""SYNTH_PH_AGENCY"",""codelist_id"":""CL_HEALTH_AGE_GROUP_LOCAL"",""codelist_version"":""1.0-proposed"",""attachment_level"":""DIMENSION"",""allowed_values"":[""Y45T64"",""Y65_PLUS""],""mapping_status"":""LOCAL_EQUIVALENT"",""auto_fill"":true,""missing_rules"":""Required for every mortality observation; if Age is blank, reject or flag row as incomplete."",""not_applicable_rules"":""Must be blank or omitted for hospital-bed observations.""}"
+"[""fields"",3,""codelist_id""]",codelist_id,string,SYNTH_PH_AGENCY:CL_HEALTH_AGE_GROUP_LOCAL:1.0-proposed
+"[""fields"",3,""required""]",required,boolean,true
+"[""fields"",3,""example""]",example,string,Y45T64
+"[""fields"",3,""source_standard""]",source_standard,string,Local governed codelist; DSD alias CL_HEALTH_AGE_GROUP reconciled to CL_HEALTH_AGE_GROUP_LOCAL
+"[""fields"",3,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""fields"",4]",4,object,
+"[""fields"",4,""field_id""]",field_id,string,OWNERSHIP
+"[""fields"",4,""name""]",name,string,Ownership
+"[""fields"",4,""definition""]",definition,string,Ownership category of the hospital capacity being measured. Required for KF_HEALTH_AVAILABLE_HOSPITAL_BEDS and not applicable for KF_HEALTH_REGISTERED_DEATHS.
+"[""fields"",4,""role""]",role,string,DIMENSION
+"[""fields"",4,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""NOT_APPLICABLE"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""REQUIRED""},""codelist_agency"":""SYNTH_PH_AGENCY"",""codelist_id"":""CL_HEALTH_OWNERSHIP_LOCAL"",""codelist_version"":""1.0-proposed"",""attachment_level"":""DIMENSION"",""allowed_values"":[""PUBLIC"",""PRIVATE_NON_PROFIT"",""PRIVATE_FOR_PROFIT""],""mapping_status"":""LOCAL_EQUIVALENT"",""auto_fill"":true,""missing_rules"":""Required for every hospital-bed observation; if Ownership is blank, reject or flag row as incomplete."",""not_applicable_rules"":""Must be blank or omitted for registered-deaths observations.""}"
+"[""fields"",4,""codelist_id""]",codelist_id,string,SYNTH_PH_AGENCY:CL_HEALTH_OWNERSHIP_LOCAL:1.0-proposed
+"[""fields"",4,""required""]",required,boolean,true
+"[""fields"",4,""example""]",example,string,PRIVATE_FOR_PROFIT
+"[""fields"",4,""source_standard""]",source_standard,string,Local governed codelist; DSD alias CL_HOSPITAL_OWNERSHIP reconciled to CL_HEALTH_OWNERSHIP_LOCAL
+"[""fields"",4,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""fields"",5]",5,object,
+"[""fields"",5,""field_id""]",field_id,string,TIME_PERIOD
+"[""fields"",5,""name""]",name,string,Time period
+"[""fields"",5,""definition""]",definition,string,Reference year to which the observation refers. Required in both accepted structures. Deaths count events during the calendar year and hospital beds are a stock measure at 31 December.
+"[""fields"",5,""role""]",role,string,TIME
+"[""fields"",5,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""REQUIRED"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""REQUIRED""},""codelist_agency"":null,""codelist_id"":null,""codelist_version"":null,""attachment_level"":""TIME_DIMENSION"",""allowed_values"":[""2023"",""2024""],""data_type"":""ObservationalTimePeriod annual year"",""mapping_status"":""EXACT"",""auto_fill"":true,""missing_rules"":""Required for every observation; if Year is blank or not a valid annual year, reject or flag row as incomplete."",""not_applicable_rules"":""Not applicable to neither accepted structure; TIME_PERIOD is required in both.""}"
+"[""fields"",5,""codelist_id""]",codelist_id,null,
+"[""fields"",5,""required""]",required,boolean,true
+"[""fields"",5,""example""]",example,string,2024
+"[""fields"",5,""source_standard""]",source_standard,string,SDMX candidate TIME_PERIOD cross-domain concept; exact concept scheme/version unconfirmed
+"[""fields"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""fields"",6]",6,object,
+"[""fields"",6,""field_id""]",field_id,string,OBS_VALUE
+"[""fields"",6,""name""]",name,string,Observation value
+"[""fields"",6,""definition""]",definition,string,Numeric value reported for the measured health outcome or capacity variable: registered death count or available staffed bed count. Required in both accepted structures.
+"[""fields"",6,""role""]",role,string,MEASURE
+"[""fields"",6,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""REQUIRED"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""REQUIRED""},""codelist_agency"":null,""codelist_id"":null,""codelist_version"":null,""attachment_level"":""PRIMARY_MEASURE"",""allowed_values"":[],""data_type"":""Integer"",""mapping_status"":""EXACT"",""auto_fill"":true,""missing_rules"":""Required for every observation; if Value is blank or non-numeric, reject or flag row as incomplete. Do not store formatted strings in OBS_VALUE."",""not_applicable_rules"":""Not applicable to neither accepted structure; OBS_VALUE is required in both.""}"
+"[""fields"",6,""codelist_id""]",codelist_id,null,
+"[""fields"",6,""required""]",required,boolean,true
+"[""fields"",6,""example""]",example,string,567
+"[""fields"",6,""source_standard""]",source_standard,string,SDMX candidate OBS_VALUE cross-domain concept; exact concept scheme/version unconfirmed
+"[""fields"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""fields"",7]",7,object,
+"[""fields"",7,""field_id""]",field_id,string,UNIT_MEASURE
+"[""fields"",7,""name""]",name,string,Unit of measure
+"[""fields"",7,""definition""]",definition,string,Dataset-level attribute identifying the unit in which OBS_VALUE is expressed. In KF_HEALTH_REGISTERED_DEATHS the fixed dataset-level value is DEATHS. In KF_HEALTH_AVAILABLE_HOSPITAL_BEDS the fixed dataset-level value is BEDS. Repetition in source rows is denormalisation only.
+"[""fields"",7,""role""]",role,string,ATTRIBUTE
+"[""fields"",7,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""REQUIRED_FIXED_DEATHS"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""REQUIRED_FIXED_BEDS""},""codelist_agency"":""SYNTH_PH_AGENCY"",""codelist_id"":""CL_HEALTH_UNIT_MEASURE_LOCAL"",""codelist_version"":""1.0-proposed"",""attachment_level"":""DATASET"",""allowed_values"":[""DEATHS"",""BEDS""],""fixed_values"":{""KF_HEALTH_REGISTERED_DEATHS"":""DEATHS"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""BEDS""},""mapping_status"":""LOCAL_EQUIVALENT"",""auto_fill"":true,""missing_rules"":""Populate from structure routing if source Unit is omitted; if source Unit conflicts with the routed structure, reject or flag row."",""not_applicable_rules"":""Applicable to both structures only at dataset attachment level; do not attach as observation-level status.""}"
+"[""fields"",7,""codelist_id""]",codelist_id,string,SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed
+"[""fields"",7,""required""]",required,boolean,true
+"[""fields"",7,""example""]",example,string,DEATHS
+"[""fields"",7,""source_standard""]",source_standard,string,Local governed codelist; DSD alias CL_HEALTH_UNIT_MEASURE reconciled to CL_HEALTH_UNIT_MEASURE_LOCAL
+"[""fields"",7,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""fields"",8]",8,object,
+"[""fields"",8,""field_id""]",field_id,string,OBS_STATUS
+"[""fields"",8,""name""]",name,string,Observation status
+"[""fields"",8,""definition""]",definition,string,Observation-level status attached to the observation value. Required in both accepted structures. Local status codes are used because code-level mappings to SDMX CL_OBS_STATUS are not confirmed in supplied evidence.
+"[""fields"",8,""role""]",role,string,ATTRIBUTE
+"[""fields"",8,""representation""]",representation,string,"JSON_PROPERTIES:{""applies_to"":{""KF_HEALTH_REGISTERED_DEATHS"":""REQUIRED"",""KF_HEALTH_AVAILABLE_HOSPITAL_BEDS"":""REQUIRED""},""codelist_agency"":""SYNTH_PH_AGENCY"",""codelist_id"":""CL_HEALTH_OBS_STATUS_LOCAL"",""codelist_version"":""1.0-proposed"",""attachment_level"":""OBSERVATION"",""allowed_values"":[""FINAL"",""PROVISIONAL"",""ESTIMATED""],""mapping_status"":""LOCAL_EQUIVALENT_WITH_SDMX_CANDIDATE_UNRESOLVED"",""auto_fill"":true,""missing_rules"":""Required for every observation; if Status is blank, use explicit table footnote only where it unambiguously applies, otherwise flag row."",""not_applicable_rules"":""Not applicable to neither accepted structure; OBS_STATUS is required in both."",""external_mapping_rule"":""Do not map FINAL, PROVISIONAL or ESTIMATED to SDMX CL_OBS_STATUS codes until code-level definitions are verified.""}"
+"[""fields"",8,""codelist_id""]",codelist_id,string,SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed
+"[""fields"",8,""required""]",required,boolean,true
+"[""fields"",8,""example""]",example,string,PROVISIONAL
+"[""fields"",8,""source_standard""]",source_standard,string,Local governed codelist; DSD alias CL_HEALTH_OBS_STATUS reconciled to CL_HEALTH_OBS_STATUS_LOCAL; SDMX CL_OBS_STATUS candidate unresolved
+"[""fields"",8,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",9]",9,object,
+"[""fields"",9,""field_id""]",field_id,string,DATA_STRUCTURE_ROUTING
+"[""fields"",9,""name""]",name,string,Data structure routing
+"[""fields"",9,""definition""]",definition,string,Routes each source table to its semantically corresponding accepted DSD.
+"[""fields"",9,""role""]",role,string,ATTRIBUTE
+"[""fields"",9,""representation""]",representation,string,Identifier of an accepted DSD
+"[""fields"",9,""codelist_id""]",codelist_id,null,
+"[""fields"",9,""required""]",required,boolean,true
+"[""fields"",9,""example""]",example,string,KF_HEALTH_REGISTERED_DEATHS
+"[""fields"",9,""source_standard""]",source_standard,string,Local implementation mapping constrained by the accepted DSD artifacts
+"[""fields"",9,""source_url""]",source_url,string,not stated
+"[""source_value_mappings""]",source_value_mappings,array,
+"[""source_value_mappings"",0]",0,object,
+"[""source_value_mappings"",0,""source_value""]",source_value,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""source_value_mappings"",0,""source_context""]",source_context,string,Page 2 table title and mortality table columns
+"[""source_value_mappings"",0,""target_field""]",target_field,string,DATA_STRUCTURE_ROUTING
+"[""source_value_mappings"",0,""target_code""]",target_code,string,KF_HEALTH_REGISTERED_DEATHS
+"[""source_value_mappings"",0,""target_code_label""]",target_code_label,string,"Registered deaths by area, cause, age and year"
+"[""source_value_mappings"",0,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",0,""target_standard""]",target_standard,string,Accepted SDMX 2.0 Key Family
+"[""source_value_mappings"",0,""notes""]",notes,string,"Route all rows from Table 1 to KF_HEALTH_REGISTERED_DEATHS. Required fields are FREQ, REF_AREA, CAUSE_OF_DEATH, AGE, TIME_PERIOD, OBS_VALUE, dataset-level UNIT_MEASURE fixed to DEATHS, and observation-level OBS_STATUS."
+"[""source_value_mappings"",0,""evidence_quote""]",evidence_quote,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""source_value_mappings"",1]",1,object,
+"[""source_value_mappings"",1,""source_value""]",source_value,string,Table 2. Available hospital beds by ownership
+"[""source_value_mappings"",1,""source_context""]",source_context,string,Page 3 table title and hospital beds table columns
+"[""source_value_mappings"",1,""target_field""]",target_field,string,DATA_STRUCTURE_ROUTING
+"[""source_value_mappings"",1,""target_code""]",target_code,string,KF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""source_value_mappings"",1,""target_code_label""]",target_code_label,string,Available hospital beds by ownership
+"[""source_value_mappings"",1,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",1,""target_standard""]",target_standard,string,Accepted SDMX 2.0 Key Family
+"[""source_value_mappings"",1,""notes""]",notes,string,"Route all rows from Table 2 to KF_HEALTH_AVAILABLE_HOSPITAL_BEDS. Required fields are FREQ, OWNERSHIP, TIME_PERIOD, OBS_VALUE, dataset-level UNIT_MEASURE fixed to BEDS, and observation-level OBS_STATUS."
+"[""source_value_mappings"",1,""evidence_quote""]",evidence_quote,string,Table 2. Available hospital beds by ownership
+"[""source_value_mappings"",2]",2,object,
+"[""source_value_mappings"",2,""source_value""]",source_value,string,Registered deaths count events during the calendar year.
+"[""source_value_mappings"",2,""source_context""]",source_context,string,Definitions section and mortality structure
+"[""source_value_mappings"",2,""target_field""]",target_field,string,FREQ
+"[""source_value_mappings"",2,""target_code""]",target_code,null,
+"[""source_value_mappings"",2,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",2,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",2,""target_standard""]",target_standard,string,SDMX CL_FREQ candidate; exact code/version unresolved
+"[""source_value_mappings"",2,""notes""]",notes,string,"Candidate semantics are annual, but allowed_values for FREQ remain empty and auto_fill=false until the authoritative CL_FREQ version and annual code are verified."
+"[""source_value_mappings"",2,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year.
+"[""source_value_mappings"",3]",3,object,
+"[""source_value_mappings"",3,""source_value""]",source_value,string,Available beds are staffed beds available on 31 December.
+"[""source_value_mappings"",3,""source_context""]",source_context,string,Definitions section and hospital capacity structure
+"[""source_value_mappings"",3,""target_field""]",target_field,string,FREQ
+"[""source_value_mappings"",3,""target_code""]",target_code,null,
+"[""source_value_mappings"",3,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",3,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",3,""target_standard""]",target_standard,string,SDMX CL_FREQ candidate; exact code/version unresolved
+"[""source_value_mappings"",3,""notes""]",notes,string,"Candidate semantics are annual/year-end, but allowed_values for FREQ remain empty and auto_fill=false until the authoritative CL_FREQ version and annual code are verified."
+"[""source_value_mappings"",3,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.
+"[""source_value_mappings"",4]",4,object,
+"[""source_value_mappings"",4,""source_value""]",source_value,string,Northland
+"[""source_value_mappings"",4,""source_context""]",source_context,string,Table 1 Area column
+"[""source_value_mappings"",4,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",4,""target_code""]",target_code,string,NORTHLAND
+"[""source_value_mappings"",4,""target_code_label""]",target_code_label,string,Northland
+"[""source_value_mappings"",4,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",4,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_AREA_LOCAL:1.0-proposed
+"[""source_value_mappings"",4,""notes""]",notes,string,"Local synthetic reporting-area code; no UN M49, ISO 3166 or SDMX CL_AREA mapping is confirmed."
+"[""source_value_mappings"",4,""evidence_quote""]",evidence_quote,string,Northland
+"[""source_value_mappings"",5]",5,object,
+"[""source_value_mappings"",5,""source_value""]",source_value,string,Centralia
+"[""source_value_mappings"",5,""source_context""]",source_context,string,Table 1 Area column
+"[""source_value_mappings"",5,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",5,""target_code""]",target_code,string,CENTRALIA
+"[""source_value_mappings"",5,""target_code_label""]",target_code_label,string,Centralia
+"[""source_value_mappings"",5,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",5,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_AREA_LOCAL:1.0-proposed
+"[""source_value_mappings"",5,""notes""]",notes,string,"Local synthetic reporting-area code; no UN M49, ISO 3166 or SDMX CL_AREA mapping is confirmed."
+"[""source_value_mappings"",5,""evidence_quote""]",evidence_quote,string,Centralia
+"[""source_value_mappings"",6]",6,object,
+"[""source_value_mappings"",6,""source_value""]",source_value,string,South Coast
+"[""source_value_mappings"",6,""source_context""]",source_context,string,Table 1 Area column
+"[""source_value_mappings"",6,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",6,""target_code""]",target_code,string,SOUTH_COAST
+"[""source_value_mappings"",6,""target_code_label""]",target_code_label,string,South Coast
+"[""source_value_mappings"",6,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",6,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_AREA_LOCAL:1.0-proposed
+"[""source_value_mappings"",6,""notes""]",notes,string,"Local synthetic reporting-area code; no UN M49, ISO 3166 or SDMX CL_AREA mapping is confirmed."
+"[""source_value_mappings"",6,""evidence_quote""]",evidence_quote,string,South Coast
+"[""source_value_mappings"",7]",7,object,
+"[""source_value_mappings"",7,""source_value""]",source_value,string,Circulatory diseases
+"[""source_value_mappings"",7,""source_context""]",source_context,string,Table 1 Cause column
+"[""source_value_mappings"",7,""target_field""]",target_field,string,CAUSE_OF_DEATH
+"[""source_value_mappings"",7,""target_code""]",target_code,string,CIRCULATORY_DISEASES
+"[""source_value_mappings"",7,""target_code_label""]",target_code_label,string,Circulatory diseases
+"[""source_value_mappings"",7,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",7,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_CAUSE_LOCAL:1.0-proposed
+"[""source_value_mappings"",7,""notes""]",notes,string,Local broad cause code. Do not map to ICD without a confirmed ICD version.
+"[""source_value_mappings"",7,""evidence_quote""]",evidence_quote,string,Circulatory diseases
+"[""source_value_mappings"",8]",8,object,
+"[""source_value_mappings"",8,""source_value""]",source_value,string,Neoplasms
+"[""source_value_mappings"",8,""source_context""]",source_context,string,Table 1 Cause column
+"[""source_value_mappings"",8,""target_field""]",target_field,string,CAUSE_OF_DEATH
+"[""source_value_mappings"",8,""target_code""]",target_code,string,NEOPLASMS
+"[""source_value_mappings"",8,""target_code_label""]",target_code_label,string,Neoplasms
+"[""source_value_mappings"",8,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",8,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_CAUSE_LOCAL:1.0-proposed
+"[""source_value_mappings"",8,""notes""]",notes,string,Local broad cause code. Do not map to ICD without a confirmed ICD version.
+"[""source_value_mappings"",8,""evidence_quote""]",evidence_quote,string,Neoplasms
+"[""source_value_mappings"",9]",9,object,
+"[""source_value_mappings"",9,""source_value""]",source_value,string,Cause labels resemble broad ICD families but no ICD version is confirmed.
+"[""source_value_mappings"",9,""source_context""]",source_context,string,Caveats and limitations section
+"[""source_value_mappings"",9,""target_field""]",target_field,string,CAUSE_OF_DEATH
+"[""source_value_mappings"",9,""target_code""]",target_code,null,
+"[""source_value_mappings"",9,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",9,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",9,""target_standard""]",target_standard,string,ICD candidate; version not confirmed
+"[""source_value_mappings"",9,""notes""]",notes,string,This report statement explicitly prevents confirmed ICD mapping for cause categories.
+"[""source_value_mappings"",9,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed.
+"[""source_value_mappings"",10]",10,object,
+"[""source_value_mappings"",10,""source_value""]",source_value,string,45-64
+"[""source_value_mappings"",10,""source_context""]",source_context,string,Table 1 Age column
+"[""source_value_mappings"",10,""target_field""]",target_field,string,AGE
+"[""source_value_mappings"",10,""target_code""]",target_code,string,Y45T64
+"[""source_value_mappings"",10,""target_code_label""]",target_code_label,string,45-64
+"[""source_value_mappings"",10,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",10,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_AGE_GROUP_LOCAL:1.0-proposed
+"[""source_value_mappings"",10,""notes""]",notes,string,Local age-group code for persons aged 45 through 64 as represented by the report label; no authoritative age codelist mapping is confirmed.
+"[""source_value_mappings"",10,""evidence_quote""]",evidence_quote,string,45-64
+"[""source_value_mappings"",11]",11,object,
+"[""source_value_mappings"",11,""source_value""]",source_value,string,65+
+"[""source_value_mappings"",11,""source_context""]",source_context,string,Table 1 Age column
+"[""source_value_mappings"",11,""target_field""]",target_field,string,AGE
+"[""source_value_mappings"",11,""target_code""]",target_code,string,Y65_PLUS
+"[""source_value_mappings"",11,""target_code_label""]",target_code_label,string,65+
+"[""source_value_mappings"",11,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",11,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_AGE_GROUP_LOCAL:1.0-proposed
+"[""source_value_mappings"",11,""notes""]",notes,string,Local age-group code for persons aged 65 and over as represented by the report label; no authoritative age codelist mapping is confirmed.
+"[""source_value_mappings"",11,""evidence_quote""]",evidence_quote,string,65+
+"[""source_value_mappings"",12]",12,object,
+"[""source_value_mappings"",12,""source_value""]",source_value,string,Public
+"[""source_value_mappings"",12,""source_context""]",source_context,string,Table 2 Ownership column
+"[""source_value_mappings"",12,""target_field""]",target_field,string,OWNERSHIP
+"[""source_value_mappings"",12,""target_code""]",target_code,string,PUBLIC
+"[""source_value_mappings"",12,""target_code_label""]",target_code_label,string,Public
+"[""source_value_mappings"",12,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",12,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_OWNERSHIP_LOCAL:1.0-proposed
+"[""source_value_mappings"",12,""notes""]",notes,string,Local hospital ownership code; no external ownership classification is confirmed.
+"[""source_value_mappings"",12,""evidence_quote""]",evidence_quote,string,Public
+"[""source_value_mappings"",13]",13,object,
+"[""source_value_mappings"",13,""source_value""]",source_value,string,Private non-profit
+"[""source_value_mappings"",13,""source_context""]",source_context,string,Table 2 Ownership column
+"[""source_value_mappings"",13,""target_field""]",target_field,string,OWNERSHIP
+"[""source_value_mappings"",13,""target_code""]",target_code,string,PRIVATE_NON_PROFIT
+"[""source_value_mappings"",13,""target_code_label""]",target_code_label,string,Private non-profit
+"[""source_value_mappings"",13,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",13,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_OWNERSHIP_LOCAL:1.0-proposed
+"[""source_value_mappings"",13,""notes""]",notes,string,Local hospital ownership code; no external ownership classification is confirmed.
+"[""source_value_mappings"",13,""evidence_quote""]",evidence_quote,string,Private non-profit
+"[""source_value_mappings"",14]",14,object,
+"[""source_value_mappings"",14,""source_value""]",source_value,string,Private for-profit
+"[""source_value_mappings"",14,""source_context""]",source_context,string,Table 2 Ownership column
+"[""source_value_mappings"",14,""target_field""]",target_field,string,OWNERSHIP
+"[""source_value_mappings"",14,""target_code""]",target_code,string,PRIVATE_FOR_PROFIT
+"[""source_value_mappings"",14,""target_code_label""]",target_code_label,string,Private for-profit
+"[""source_value_mappings"",14,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",14,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_OWNERSHIP_LOCAL:1.0-proposed
+"[""source_value_mappings"",14,""notes""]",notes,string,Local hospital ownership code; no external ownership classification is confirmed.
+"[""source_value_mappings"",14,""evidence_quote""]",evidence_quote,string,Private for-profit
+"[""source_value_mappings"",15]",15,object,
+"[""source_value_mappings"",15,""source_value""]",source_value,string,2023
+"[""source_value_mappings"",15,""source_context""]",source_context,string,Table 1 and Table 2 Year column
+"[""source_value_mappings"",15,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",15,""target_code""]",target_code,string,2023
+"[""source_value_mappings"",15,""target_code_label""]",target_code_label,string,2023
+"[""source_value_mappings"",15,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",15,""target_standard""]",target_standard,string,SDMX time-period representation
+"[""source_value_mappings"",15,""notes""]",notes,string,Year value is represented directly as the observation time period.
+"[""source_value_mappings"",15,""evidence_quote""]",evidence_quote,string,2023
+"[""source_value_mappings"",16]",16,object,
+"[""source_value_mappings"",16,""source_value""]",source_value,string,2024
+"[""source_value_mappings"",16,""source_context""]",source_context,string,Table 1 and Table 2 Year column
+"[""source_value_mappings"",16,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",16,""target_code""]",target_code,string,2024
+"[""source_value_mappings"",16,""target_code_label""]",target_code_label,string,2024
+"[""source_value_mappings"",16,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",16,""target_standard""]",target_standard,string,SDMX time-period representation
+"[""source_value_mappings"",16,""notes""]",notes,string,Year value is represented directly as the observation time period.
+"[""source_value_mappings"",16,""evidence_quote""]",evidence_quote,string,2024
+"[""source_value_mappings"",17]",17,object,
+"[""source_value_mappings"",17,""source_value""]",source_value,string,Value
+"[""source_value_mappings"",17,""source_context""]",source_context,string,Table 1 and Table 2 Value column header
+"[""source_value_mappings"",17,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",17,""target_code""]",target_code,null,
+"[""source_value_mappings"",17,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",17,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",17,""target_standard""]",target_standard,string,SDMX OBS_VALUE candidate concept
+"[""source_value_mappings"",17,""notes""]",notes,string,The source column supplies the numeric observation value. Exact SDMX concept scheme/version is not confirmed in supplied external evidence.
+"[""source_value_mappings"",17,""evidence_quote""]",evidence_quote,string,Value
+"[""source_value_mappings"",18]",18,object,
+"[""source_value_mappings"",18,""source_value""]",source_value,string,Deaths
+"[""source_value_mappings"",18,""source_context""]",source_context,string,Table 1 Unit column; fixed dataset-level unit for KF_HEALTH_REGISTERED_DEATHS
+"[""source_value_mappings"",18,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",18,""target_code""]",target_code,string,DEATHS
+"[""source_value_mappings"",18,""target_code_label""]",target_code_label,string,Deaths
+"[""source_value_mappings"",18,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",18,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed
+"[""source_value_mappings"",18,""notes""]",notes,string,Local dataset-level unit code for registered-deaths observations; repetition in table rows is source-table denormalisation.
+"[""source_value_mappings"",18,""evidence_quote""]",evidence_quote,string,Deaths
+"[""source_value_mappings"",19]",19,object,
+"[""source_value_mappings"",19,""source_value""]",source_value,string,Beds
+"[""source_value_mappings"",19,""source_context""]",source_context,string,Table 2 Unit column; fixed dataset-level unit for KF_HEALTH_AVAILABLE_HOSPITAL_BEDS
+"[""source_value_mappings"",19,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",19,""target_code""]",target_code,string,BEDS
+"[""source_value_mappings"",19,""target_code_label""]",target_code_label,string,Beds
+"[""source_value_mappings"",19,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",19,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed
+"[""source_value_mappings"",19,""notes""]",notes,string,Local dataset-level unit code for available staffed-bed observations; repetition in table rows is source-table denormalisation.
+"[""source_value_mappings"",19,""evidence_quote""]",evidence_quote,string,Beds
+"[""source_value_mappings"",20]",20,object,
+"[""source_value_mappings"",20,""source_value""]",source_value,string,Final
+"[""source_value_mappings"",20,""source_context""]",source_context,string,Table 1 and Table 2 Status column
+"[""source_value_mappings"",20,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",20,""target_code""]",target_code,string,FINAL
+"[""source_value_mappings"",20,""target_code_label""]",target_code_label,string,Final
+"[""source_value_mappings"",20,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",20,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed; SDMX CL_OBS_STATUS candidate unresolved
+"[""source_value_mappings"",20,""notes""]",notes,string,"Local observation-status code. A mapping to SDMX CL_OBS_STATUS may exist, but code-level evidence is not supplied."
+"[""source_value_mappings"",20,""evidence_quote""]",evidence_quote,string,Final
+"[""source_value_mappings"",21]",21,object,
+"[""source_value_mappings"",21,""source_value""]",source_value,string,Provisional
+"[""source_value_mappings"",21,""source_context""]",source_context,string,Table 1 Status column
+"[""source_value_mappings"",21,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",21,""target_code""]",target_code,string,PROVISIONAL
+"[""source_value_mappings"",21,""target_code_label""]",target_code_label,string,Provisional
+"[""source_value_mappings"",21,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",21,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed; SDMX CL_OBS_STATUS candidate unresolved
+"[""source_value_mappings"",21,""notes""]",notes,string,Local observation-status code for 2024 death counts subject to revision when late registrations arrive.
+"[""source_value_mappings"",21,""evidence_quote""]",evidence_quote,string,Provisional
+"[""source_value_mappings"",22]",22,object,
+"[""source_value_mappings"",22,""source_value""]",source_value,string,Estimated
+"[""source_value_mappings"",22,""source_context""]",source_context,string,Table 2 Status column
+"[""source_value_mappings"",22,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",22,""target_code""]",target_code,string,ESTIMATED
+"[""source_value_mappings"",22,""target_code_label""]",target_code_label,string,Estimated
+"[""source_value_mappings"",22,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",22,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed; SDMX CL_OBS_STATUS candidate unresolved
+"[""source_value_mappings"",22,""notes""]",notes,string,"Local observation-status code for the private for-profit 2024 bed value, replaced after facility validation."
+"[""source_value_mappings"",22,""evidence_quote""]",evidence_quote,string,Estimated
+"[""source_value_mappings"",23]",23,object,
+"[""source_value_mappings"",23,""source_value""]",source_value,string,Footnote: 2024 death counts are provisional.
+"[""source_value_mappings"",23,""source_context""]",source_context,string,Table 1 footnote
+"[""source_value_mappings"",23,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",23,""target_code""]",target_code,string,PROVISIONAL
+"[""source_value_mappings"",23,""target_code_label""]",target_code_label,string,Provisional
+"[""source_value_mappings"",23,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",23,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed
+"[""source_value_mappings"",23,""notes""]",notes,string,The footnote supports applying the local provisional observation status to 2024 registered-deaths observations.
+"[""source_value_mappings"",23,""evidence_quote""]",evidence_quote,string,Footnote: 2024 death counts are provisional.
+"[""source_value_mappings"",24]",24,object,
+"[""source_value_mappings"",24,""source_value""]",source_value,string,Footnote: Private for-profit 2024 values are estimated.
+"[""source_value_mappings"",24,""source_context""]",source_context,string,Table 2 footnote
+"[""source_value_mappings"",24,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",24,""target_code""]",target_code,string,ESTIMATED
+"[""source_value_mappings"",24,""target_code_label""]",target_code_label,string,Estimated
+"[""source_value_mappings"",24,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",24,""target_standard""]",target_standard,string,SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed
+"[""source_value_mappings"",24,""notes""]",notes,string,The footnote supports applying the local estimated observation status to the 2024 private for-profit bed observation.
+"[""source_value_mappings"",24,""evidence_quote""]",evidence_quote,string,Footnote: Private for-profit 2024 values are estimated.
+"[""source_value_mappings"",25]",25,object,
+"[""source_value_mappings"",25,""source_value""]",source_value,string,Deaths are synthetic registered events classified by underlying cause and age group. Hospital beds are a year-end stock measure collected from facilities and should not share the mortality DSD.
+"[""source_value_mappings"",25,""source_context""]",source_context,string,Methodology section
+"[""source_value_mappings"",25,""target_field""]",target_field,string,METHODOLOGY
+"[""source_value_mappings"",25,""target_code""]",target_code,null,
+"[""source_value_mappings"",25,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",25,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",25,""target_standard""]",target_standard,string,Reference metadata concept METHODOLOGY in accepted concept scheme/MSD candidate
+"[""source_value_mappings"",25,""notes""]",notes,string,Reference metadata mapping only; do not model as a DSD observation attribute.
+"[""source_value_mappings"",25,""evidence_quote""]",evidence_quote,string,"Deaths are synthetic registered events classified by underlying cause and age group. Hospital beds are a year-end stock measure collected from facilities and should not
+share the mortality DSD."
+"[""source_value_mappings"",26]",26,object,
+"[""source_value_mappings"",26,""source_value""]",source_value,string,Synthetic Civil Registration System and Synthetic Facility Census.
+"[""source_value_mappings"",26,""source_context""]",source_context,string,Source description section
+"[""source_value_mappings"",26,""target_field""]",target_field,string,SOURCE_DATA
+"[""source_value_mappings"",26,""target_code""]",target_code,null,
+"[""source_value_mappings"",26,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",26,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",26,""target_standard""]",target_standard,string,Reference metadata concept SOURCE_DESC in accepted concept scheme/MSD candidate
+"[""source_value_mappings"",26,""notes""]",notes,string,Reference metadata mapping only; do not model as a DSD observation attribute.
+"[""source_value_mappings"",26,""evidence_quote""]",evidence_quote,string,Synthetic Civil Registration System and Synthetic Facility Census.
+"[""source_value_mappings"",27]",27,object,
+"[""source_value_mappings"",27,""source_value""]",source_value,string,Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.
+"[""source_value_mappings"",27,""source_context""]",source_context,string,Definitions section
+"[""source_value_mappings"",27,""target_field""]",target_field,string,STAT_CONC_DEF
+"[""source_value_mappings"",27,""target_code""]",target_code,null,
+"[""source_value_mappings"",27,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",27,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",27,""target_standard""]",target_standard,string,Reference metadata concept DEFINITIONS in accepted concept scheme/MSD candidate
+"[""source_value_mappings"",27,""notes""]",notes,string,"Reference metadata mapping only; structural implications are separately represented by FREQ candidate semantics, TIME_PERIOD, and fixed unit rules."
+"[""source_value_mappings"",27,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.
+"[""source_value_mappings"",28]",28,object,
+"[""source_value_mappings"",28,""source_value""]",source_value,string,Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.
+"[""source_value_mappings"",28,""source_context""]",source_context,string,Caveats and limitations section
+"[""source_value_mappings"",28,""target_field""]",target_field,string,LIMITATIONS
+"[""source_value_mappings"",28,""target_code""]",target_code,null,
+"[""source_value_mappings"",28,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",28,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",28,""target_standard""]",target_standard,string,Reference metadata concept CAVEATS_LIMITATIONS in accepted concept scheme/MSD candidate
+"[""source_value_mappings"",28,""notes""]",notes,string,Reference metadata mapping only; do not create ICD mappings or special structural codes from this text.
+"[""source_value_mappings"",28,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.
+"[""source_value_mappings"",29]",29,object,
+"[""source_value_mappings"",29,""source_value""]",source_value,string,Provisional death counts are revised when late registrations arrive. Estimated bed counts are replaced after facility validation.
+"[""source_value_mappings"",29,""source_context""]",source_context,string,Revision policy section
+"[""source_value_mappings"",29,""target_field""]",target_field,string,DATA_REV
+"[""source_value_mappings"",29,""target_code""]",target_code,null,
+"[""source_value_mappings"",29,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",29,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",29,""target_standard""]",target_standard,string,Reference metadata concept REVISION_POLICY in accepted concept scheme/MSD candidate
+"[""source_value_mappings"",29,""notes""]",notes,string,Reference metadata mapping only; observation-level status remains OBS_STATUS with local codes.
+"[""source_value_mappings"",29,""evidence_quote""]",evidence_quote,string,Provisional death counts are revised when late registrations arrive. Estimated bed counts are replaced after facility validation.
+"[""source_value_mappings"",30]",30,object,
+"[""source_value_mappings"",30,""source_value""]",source_value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""source_value_mappings"",30,""source_context""]",source_context,string,Confidentiality section
+"[""source_value_mappings"",30,""target_field""]",target_field,string,CONF
+"[""source_value_mappings"",30,""target_code""]",target_code,null,
+"[""source_value_mappings"",30,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",30,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",30,""target_standard""]",target_standard,string,Reference metadata concept CONFIDENTIALITY in accepted concept scheme/MSD candidate
+"[""source_value_mappings"",30,""notes""]",notes,string,Reference metadata mapping only; do not model as an observation attribute.
+"[""source_value_mappings"",30,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""source_value_mappings"",31]",31,object,
+"[""source_value_mappings"",31,""source_value""]",source_value,string,Publication date: 3 July 2026
+"[""source_value_mappings"",31,""source_context""]",source_context,string,Report title page
+"[""source_value_mappings"",31,""target_field""]",target_field,string,PUBLICATION_DATE
+"[""source_value_mappings"",31,""target_code""]",target_code,null,
+"[""source_value_mappings"",31,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",31,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",31,""target_standard""]",target_standard,string,Reference metadata concept PUBLICATION_DATE in accepted concept scheme/MSD candidate
+"[""source_value_mappings"",31,""notes""]",notes,string,Reference metadata mapping only; date normalization can be 2026-07-03 in the metadata set if ISO date representation is required.
+"[""source_value_mappings"",31,""evidence_quote""]",evidence_quote,string,Publication date: 3 July 2026
+"[""source_value_mappings"",32]",32,object,
+"[""source_value_mappings"",32,""source_value""]",source_value,string,Synthetic Public Health Agency
+"[""source_value_mappings"",32,""source_context""]",source_context,string,Report title page / compiling organisation
+"[""source_value_mappings"",32,""target_field""]",target_field,string,PUBLISHER
+"[""source_value_mappings"",32,""target_code""]",target_code,null,
+"[""source_value_mappings"",32,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",32,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",32,""target_standard""]",target_standard,string,Reference metadata concept COMPILING_ORG in accepted concept scheme/MSD candidate
+"[""source_value_mappings"",32,""notes""]",notes,string,Reference metadata mapping only; no organisation-scheme code is confirmed in supplied evidence.
+"[""source_value_mappings"",32,""evidence_quote""]",evidence_quote,string,Synthetic Public Health Agency
+"[""unresolved""]",unresolved,array,
+"[""unresolved"",0]",0,string,"Exact SDMX CL_FREQ version and annual frequency code are not confirmed in the supplied external evidence; FREQ has candidate_semantics=annual, allowed_values=[], mapping_status=UNRESOLVED and auto_fill=false."
+"[""unresolved"",1]",1,string,"Exact code-level mappings from local statuses FINAL, PROVISIONAL and ESTIMATED to SDMX CL_OBS_STATUS are not confirmed in the supplied external evidence."
+"[""unresolved"",2]",2,string,No ICD version is confirmed for Circulatory diseases or Neoplasms; ICD mappings must remain unresolved.
+"[""unresolved"",3]",3,string,"No authoritative geographic code mappings are confirmed for Northland, Centralia or South Coast."
+"[""unresolved"",4]",4,string,No authoritative external codelist is confirmed for the age groups 45-64 and 65+.
+"[""unresolved"",5]",5,string,"No authoritative external codelist is confirmed for hospital ownership categories Public, Private non-profit and Private for-profit."
+"[""unresolved"",6]",6,string,No authoritative external unit codes are confirmed for Deaths and Beds.
+"[""unresolved"",7]",7,string,"Exact SDMX concept scheme IDs and versions are not confirmed for all reused candidate concepts such as REF_AREA, FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE and AGE."
+"[""unresolved"",8]",8,string,"Exact SDMX reference metadata concept IDs and versions are not confirmed for Methodology, Source description, Definitions, Caveats and limitations, Revision policy, Confidentiality, Publication date and Compiling organisation; the mapping targets the accepted local/reference metadata concepts pending MSD verification."
+"[""unresolved"",9]",9,string,"DSD codelist names in the accepted DSD artefact differ from the governed CODELISTS artefact. This codebook resolves the difference by using the governed *_LOCAL codelist IDs and treating the DSD names as aliases, but the DSD artefact should be updated in a future harmonisation pass."

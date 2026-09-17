@@ -1,0 +1,166 @@
+{
+  "artifact_type": "CONCEPT_SCHEME",
+  "source_report": "05_sdmx_30_education_full_case.xml",
+  "source_sha256": "bde4885296220119913bea8c4105b0fdb48a58fb35d1bb47a373cc1eaf4c19dd",
+  "principles_file": "01_CONCEPT_SCHEME.txt",
+  "principles_sha256": "618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "concept_schemes": [
+    {
+      "scheme_id": "CS_EDU",
+      "name": "Education Statistics concepts",
+      "agency_id": "DEMO",
+      "version": "1.0.0",
+      "concepts": [
+        {
+          "concept_id": "FREQ",
+          "name": "Frequency",
+          "definition": "Frequency",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Frequency"
+        },
+        {
+          "concept_id": "REF_AREA",
+          "name": "Reference area",
+          "definition": "Reference area",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Reference area"
+        },
+        {
+          "concept_id": "INDICATOR",
+          "name": "Education indicator",
+          "definition": "Education indicator",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Education indicator"
+        },
+        {
+          "concept_id": "EDU_LEVEL",
+          "name": "Education level",
+          "definition": "Education level",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Education level"
+        },
+        {
+          "concept_id": "TIME_PERIOD",
+          "name": "Time period",
+          "definition": "Time period",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "Observational time period",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Time period"
+        },
+        {
+          "concept_id": "OBS_VALUE",
+          "name": "Observation value",
+          "definition": "Observation value",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "Numeric",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Observation value"
+        },
+        {
+          "concept_id": "UNIT_MEASURE",
+          "name": "Unit of measure",
+          "definition": "Unit of measure",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Unit of measure"
+        },
+        {
+          "concept_id": "OBS_STATUS",
+          "name": "Observation status",
+          "definition": "Observation status",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Observation status"
+        },
+        {
+          "concept_id": "SOURCE",
+          "name": "Source",
+          "definition": "Source",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "String",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Source"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Methodology",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "String",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Methodology"
+        },
+        {
+          "concept_id": "SOURCE_URL",
+          "name": "Source URL",
+          "definition": "Source URL",
+          "context": "Imported from XML concept scheme CS_EDU",
+          "recommended_representation": "String",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_EDU",
+          "standard_version": "1.0.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Source URL"
+        }
+      ]
+    }
+  ]
+}

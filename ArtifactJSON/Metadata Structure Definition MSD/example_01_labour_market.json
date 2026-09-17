@@ -1,0 +1,297 @@
+{
+  "artifact_type": "Metadata Structure Definition",
+  "source_report": "example_01_labour_market.pdf",
+  "source_sha256": "fb3bd37fc247c713e56b54ba1e234b1d05501d32a34d31b3ad2f1ebf6395c0e9",
+  "principles_file": "05_METADATA_STRUCTURE_DEFINITION_MSD.txt",
+  "principles_sha256": "f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Guideline",
+      "artifact_id": "Standardising Reference Metadata Reporting in SDMX",
+      "version": "1.0",
+      "url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+      "evidence": "Supplied principles identify this guideline as the source for a standard list of reference metadata concepts; no fetched excerpt confirming the exact concept list was supplied in the official-source evidence.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary",
+      "artifact_id": "SDMX_Glossary",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "Fetched official-source excerpt shows the SDMX Glossary Version 2.1 contains reference-metadata and cross-domain concepts including Metadata Structure Definition, Metadata update, Institutional mandate, Labour force status and a Geographical coverage entry with Concept ID COVERAGE_GEO and recommended representation String/Codelist.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry",
+      "artifact_id": "SDMX_Global_Registry_Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "Fetched official-source excerpt confirms the SDMX Global Registry has a Codelists catalogue and metadata-related artefact categories including Metadata Structures and Metadataflow.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Classification",
+      "artifact_id": "UN_M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "Fetched official-source excerpt shows UN M49 country and area entries with numeric and alpha codes; the report regions are synthetic/local, so this source is not confirmed as applicable to the report's region labels.",
+      "verification_status": "CONFIRMED"
+    }
+  ],
+  "limitations": [
+    "This artifact defines the MSD only; actual reference metadata values from the report should be represented in a separate Metadata Set.",
+    "Exact SDMX Global Reference Metadata Concept Scheme concept IDs and versions could not be confirmed for all proposed metadata concepts from the supplied external evidence; local IDs or candidate mappings are retained where necessary.",
+    "The supplied evidence confirms COVERAGE_GEO in the SDMX Glossary excerpt, but most other SDMX reference-metadata concept IDs used here are treated as candidate mappings because the fetched evidence did not provide their exact definitions and representations.",
+    "Observation-specific provisional/final status is excluded from this MSD and should be handled in the DSD/data template using an observation or status attribute where applicable.",
+    "The report states that quarterly unemployment rates and monthly vacancy counts are different statistical structures; this MSD supports report-level and dataflow-level reference metadata without treating each table as a separate MSD.",
+    "No contact point and no metadata update date distinct from the publication date are stated in the supplied report context; corresponding concepts are optional and guidance instructs use of 'not stated' only if a metadata set requires a value."
+  ],
+  "metadata_structures": [
+    {
+      "msd_id": "MSD_LABOUR_MARKET_REFERENCE_METADATA",
+      "name": "Reference metadata structure for the Quarterly Labour Market Bulletin 2025",
+      "agency_id": "SYNTHETIC_LABOUR_OBSERVATORY",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "REPORT_TITLE",
+          "name": "Report title",
+          "definition": "Title of the statistical publication or report being described.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the publication title from the report cover or page heading. In the supplied report context the title appears on page 1 as the labour market bulletin title.",
+          "source_standard": "Local concept; candidate for mapping to SDMX reference metadata publication/title concept if exact standard ID is confirmed later.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "PUBLISHER",
+          "name": "Publisher",
+          "definition": "Organisation presented by the report as responsible for publishing the statistical bulletin.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the named organisation appearing with the publication title. Do not infer legal mandate or compilation responsibility unless separately stated.",
+          "source_standard": "Local concept; candidate for mapping to SDMX reference metadata publisher/disseminating agency concept if exact standard ID is confirmed later.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "PUBLICATION_DATE",
+          "name": "Publication date",
+          "definition": "Date on which the report or bulletin was published.",
+          "representation": "Date",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the date following the publication-date label. Preserve the stated calendar date and convert to ISO date only in the metadata set if required by implementation rules.",
+          "source_standard": "Local concept; candidate for mapping to SDMX reference metadata publication date concept if exact standard ID is confirmed later.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "name": "Data description",
+          "definition": "Narrative description of the statistical content covered by the dataflow or dataset.",
+          "representation": "Multilingual text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Describe the relevant statistical content without copying observation values. For this report, distinguish unemployment-rate content from job-vacancy content because the report states they use different statistical structures.",
+          "source_standard": "Candidate SDMX reference metadata concept from Standardising Reference Metadata Reporting in SDMX; exact concept ID/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "STATISTICAL_POP",
+          "name": "Statistical population",
+          "definition": "Population or universe represented by the statistical results.",
+          "representation": "Multilingual text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract population statements from methodology. Apply to the unemployment-rate dataflow where the report states the age coverage for persons; use 'not stated' for the vacancy dataflow if no population or universe beyond employer survey coverage is provided in the metadata set.",
+          "source_standard": "Candidate SDMX reference metadata concept from reference metadata guidance; exact concept ID/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "name": "Geographical coverage",
+          "definition": "Geographic coverage of the dataflow, distinct from the reference-area dimension values used to identify observations.",
+          "representation": "String or codelist when an authoritative area vocabulary is confirmed",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use free text for the current report because the region labels are synthetic/local and no authoritative area classification is confirmed. Do not map Northland, Centralia or South Coast to UN M49 or ISO 3166 without external confirmation.",
+          "source_standard": "SDMX Glossary 2.1 cross-domain concept; fetched excerpt confirms Concept ID COVERAGE_GEO and recommended representation String/Codelist.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "COVERAGE_TIME",
+          "name": "Temporal coverage",
+          "definition": "Time period or range covered by the dataflow or dataset, described as reference metadata rather than as individual observation time values.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For each dataflow, summarize the period covered by the observations and reference-period convention. The unemployment-rate dataflow is quarterly; the vacancy dataflow uses a monthly reference period.",
+          "source_standard": "Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "CONCEPTS_DEFINITIONS",
+          "name": "Concepts and definitions",
+          "definition": "Definitions of key statistical concepts used in the dataflow or report.",
+          "representation": "Multilingual text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the definition text for unemployment rate and job vacancy from the report's Definitions section. Keep the definitions as narrative metadata and do not convert them into observation values or dimensions.",
+          "source_standard": "Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "name": "Source data",
+          "definition": "Statistical source data, surveys, registers or administrative sources used to compile the dataflow.",
+          "representation": "Multilingual text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the source descriptions for the relevant dataflow. The report names separate survey sources for unemployment rates and vacancy counts; preserve this separation in metadata values.",
+          "source_standard": "Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Narrative information on survey estimation, compilation, reference period and other methods used to produce the statistics.",
+          "representation": "Multilingual text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract methodology narrative from the Methodology section. Preserve the distinction between synthetic survey estimates for unemployment rates and independently compiled vacancy counts from the employer survey. Do not force methodology into statistical dimensions.",
+          "source_standard": "Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "name": "Data revision",
+          "definition": "Policy or practice for revising, correcting or finalising reported statistical data.",
+          "representation": "Multilingual text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the Revision policy section. Record the distinct treatment of provisional quarterly estimates and final vacancy counts in the metadata values for the relevant dataflows. Do not use this concept for individual observation-status flags.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate; supplied principles list DATA_REV as a confirmed SDMX reference-metadata concept, but no fetched external excerpt confirming its exact definition/version was supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "CONF",
+          "name": "Confidentiality",
+          "definition": "Confidentiality policy or confidentiality treatment applicable to the statistics or source records.",
+          "representation": "Multilingual text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the Confidentiality section. For this synthetic report, preserve the statement that records and values are synthetic and that no person-level or confidential data are included.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate; supplied principles list CONF as a confirmed SDMX reference-metadata concept, but no fetched external excerpt confirming its exact definition/version was supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "name": "Caveats and limitations",
+          "definition": "Caveats, warnings, recommended limitations or restrictions on interpretation of the statistical data.",
+          "representation": "Multilingual text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the Caveats and limitations section and any dataflow-level footnotes that affect interpretation. Preserve the warning that total sex coverage must not be inferred by summing displayed women/men rows. Exclude individual observation-status information that belongs in structural data attributes.",
+          "source_standard": "Local concept; candidate for mapping to a Global Reference Metadata concept for recommended uses and limitations if the exact ID/version is confirmed later.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "COMPARABILITY",
+          "name": "Comparability",
+          "definition": "Information affecting comparability between dataflows, series, groups or time periods.",
+          "representation": "Multilingual text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use when the report states differences that affect comparability. In this report, the quarterly unemployment rates and monthly vacancy counts are different statistical structures and should not be treated as a single comparable series without qualification.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate; supplied principles list COMPARABILITY as a confirmed SDMX reference-metadata concept, but no fetched external excerpt confirming its exact definition/version was supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "TABLE_NOTE",
+          "name": "Table or dataset note",
+          "definition": "Explanatory note from the source report that qualifies a table, dataset, or dataflow as a whole and is not an individual observation status flag.",
+          "representation": "Multilingual text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATASET",
+          "extraction_guidance": "Extract only table-level or dataset-level explanatory notes that affect interpretation. Do not use this concept for observation-specific provisional/final flags; those belong in the data structure as status attributes. The vacancy table note about local industry aggregates may be captured here or in CLASS_SYSTEM_NOTE.",
+          "source_standard": "Local concept; no exact SDMX reference metadata concept ID confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "CLASS_SYSTEM_NOTE",
+          "name": "Classification-system note",
+          "definition": "Narrative note describing whether displayed categories use, do not use, or are not confirmed against an authoritative classification.",
+          "representation": "Multilingual text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use when the report warns that local labels are not confirmed against an international classification. For the vacancy dataflow, record the industry-label caveat and do not assert ISIC coding.",
+          "source_standard": "Local concept; no exact SDMX reference metadata concept ID confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "TIMELINESS",
+          "name": "Timeliness",
+          "definition": "Information about the timing of statistical release, publication timing, availability, or release lag relative to the reference period where stated.",
+          "representation": "Multilingual text",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use only if timeliness information can be derived from explicit publication date and reference periods or stated release timing. Do not treat provisional/final observation status as timeliness; record provisionality through observation-status attributes and revision practices through DATA_REV.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate; supplied principles list TIMELINESS as a confirmed SDMX reference-metadata concept, but no fetched external excerpt confirming its exact definition/version was supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "CONTACT",
+          "name": "Contact",
+          "definition": "Contact point for questions about the statistics or metadata.",
+          "representation": "Text",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Populate only if a contact person, office, email, telephone number or contact URL is stated. The supplied report context does not state a contact point, so metadata values should record 'not stated' if required by the metadata-set implementation.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate; supplied principles list CONTACT as a confirmed SDMX reference-metadata concept, but no fetched external excerpt confirming its exact definition/version was supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "META_UPDATE",
+          "name": "Metadata update",
+          "definition": "Date or information indicating when the metadata were last updated or certified.",
+          "representation": "Date or text",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "METADATA",
+          "extraction_guidance": "Populate only if the report or metadata process states a metadata update date. Do not automatically substitute the publication date unless implementation rules define them as equivalent and the metadata set records that assumption.",
+          "source_standard": "SDMX Glossary 2.1; fetched excerpt confirms that the glossary contains Metadata update entries, but the exact representation and concept version for this implementation should be verified before production use.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    }
+  ]
+}

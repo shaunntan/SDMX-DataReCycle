@@ -1,0 +1,27 @@
+{
+  "artifact_type": "DATAFLOW",
+  "source_report": "01_sdmx_20_population_full_case.xml",
+  "source_sha256": "dd0724ffd8c77e88517d69bd90c9694c94efe3e8f23db55189665b7e7a8a378d",
+  "principles_file": "04_DATAFLOW.txt",
+  "principles_sha256": "0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "dataflows": [
+    {
+      "dataflow_id": "DF_POP",
+      "name": "Population Statistics",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "dsd_id": "DSD_POP",
+      "dsd_agency_id": "DEMO",
+      "dsd_version": "1.0",
+      "description": "Population Statistics",
+      "coverage": "Population Statistics",
+      "evidence_quote": "Population Statistics"
+    }
+  ]
+}

@@ -1,0 +1,1490 @@
+{
+  "artifact_key": "CODELISTS",
+  "artifact_name": "CODELISTS",
+  "principles_file": "02_CODELISTS.txt",
+  "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+  "principles_corpus_sha256": "bf4329570a317b193d7c65defd1a72280f56372e9e68b0fd99287d90be2aafb8",
+  "best_practice_chunk_ids": [
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    27,
+    28,
+    29,
+    31,
+    32,
+    33,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    47,
+    48,
+    49
+  ],
+  "aggregate_version": 4,
+  "created_at": "2026-09-16T23:15:25.253216+00:00",
+  "updated_at": "2026-09-16T23:47:48.802491+00:00",
+  "update_mode": "INCREMENTAL",
+  "contributions": [
+    {
+      "source_report": "01_sdmx_20_population_full_case.xml",
+      "source_json_path": "Artifact JSON\\Codelists\\01_sdmx_20_population_full_case.json",
+      "json_sha256": "10ee3ef7371ed869999ef3da5392c3d87f9120d84e3306a3638ebef2c59af0a5"
+    },
+    {
+      "source_report": "02_sdmx_20_consumer_prices_full_case.xml",
+      "source_json_path": "Artifact JSON\\Codelists\\02_sdmx_20_consumer_prices_full_case.json",
+      "json_sha256": "0b6fa9ebdbe771a3d25a78fc5c5e5fc3a96a1aed4e1e32755d168b355039bbad"
+    },
+    {
+      "source_report": "03_sdmx_21_labour_market_full_case.xml",
+      "source_json_path": "Artifact JSON\\Codelists\\03_sdmx_21_labour_market_full_case.json",
+      "json_sha256": "391a44e0724f19262af4861f355ddb9e3f4c4bbacb161e0011532b9138b30383"
+    },
+    {
+      "source_report": "04_sdmx_21_external_trade_full_case.xml",
+      "source_json_path": "Artifact JSON\\Codelists\\04_sdmx_21_external_trade_full_case.json",
+      "json_sha256": "3a01b5e7086498324effdeaac5943455516ed04408dc0d2cd5f5fe08dd1a4421"
+    },
+    {
+      "source_report": "05_sdmx_30_education_full_case.xml",
+      "source_json_path": "Artifact JSON\\Codelists\\05_sdmx_30_education_full_case.json",
+      "json_sha256": "a37cd890611b873bebf4ac466e17ef45f7c5334a239dd3ce22cea568ada78934"
+    },
+    {
+      "source_report": "06_sdmx_30_energy_full_case.xml",
+      "source_json_path": "Artifact JSON\\Codelists\\06_sdmx_30_energy_full_case.json",
+      "json_sha256": "e46763005bd2057d77f4c8e73122ccced0c5b234d6d036ea26782f6b640ece25"
+    },
+    {
+      "source_report": "example_01_labour_market.pdf",
+      "source_json_path": "Artifact JSON\\Codelists\\example_01_labour_market.json",
+      "json_sha256": "a960c48aa792cd402494903f91c00db4b8d1f53f4ceb9f6d3e92814822c6798e"
+    },
+    {
+      "source_report": "example_02_health_system.pdf",
+      "source_json_path": "Artifact JSON\\Codelists\\example_02_health_system.json",
+      "json_sha256": "44fa63568fa666b4b3aff34a141a0cf50e692f9623f05e80c72a85127cc29c81"
+    },
+    {
+      "source_report": "example_03_education.pdf",
+      "source_json_path": "Artifact JSON\\Codelists\\example_03_education.json",
+      "json_sha256": "4d97fed506c47de24dbd8a75dbec9185621f378b896a30e9c5ce693ee549ba65"
+    },
+    {
+      "source_report": "example_04_agriculture.pdf",
+      "source_json_path": "Artifact JSON\\Codelists\\example_04_agriculture.json",
+      "json_sha256": "d55f476c109b3a2d5156ef9488fd1a966bdec2119a2ef5c602dcb6d6d5d61a3d"
+    },
+    {
+      "source_report": "example_05_prices_consumption.pdf",
+      "source_json_path": "Artifact JSON\\Codelists\\example_05_prices_consumption.json",
+      "json_sha256": "39687d88993c37b840d51dafb1db656c1d9f17c24b45bf5e525e554a613806ed"
+    }
+  ],
+  "optimizer_attempts": 1,
+  "validator_direct_correction": false,
+  "inspector_review": {
+    "valid": true,
+    "covered_source_reports": [
+      "01_sdmx_20_population_full_case.xml",
+      "02_sdmx_20_consumer_prices_full_case.xml",
+      "03_sdmx_21_labour_market_full_case.xml",
+      "04_sdmx_21_external_trade_full_case.xml",
+      "05_sdmx_30_education_full_case.xml",
+      "06_sdmx_30_energy_full_case.xml",
+      "example_01_labour_market.pdf",
+      "example_02_health_system.pdf",
+      "example_03_education.pdf",
+      "example_04_agriculture.pdf",
+      "example_05_prices_consumption.pdf"
+    ],
+    "missing_source_reports": [],
+    "missing_requirements": [],
+    "redundancies_remaining": [],
+    "schema_issues": [],
+    "repair_instructions": []
+  },
+  "optimized_artifact": {
+    "artifact_type": "CODELISTS",
+    "source_report": "AGGREGATE::CODELISTS",
+    "source_sha256": "e5b63705fab06d0b98459ee6ec8d1c37c92750e6832ea1b89dc86a76f9ebfbd3",
+    "principles_file": "02_CODELISTS.txt",
+    "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+    "retrieved_chunk_ids": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      47,
+      48,
+      49
+    ],
+    "standard_references": [
+      {
+        "agency": "SDMX",
+        "artifact_type": "Registry catalog",
+        "artifact_id": "SDMX Global Registry - Codelists",
+        "version": "not stated in supplied excerpt",
+        "url": "https://registry.sdmx.org/items/codelist.html",
+        "evidence": "The principles identify the SDMX Global Registry codelist catalog as the authoritative first search point for SDMX codelists.",
+        "verification_status": "CONFIRMED"
+      },
+      {
+        "agency": "SDMX",
+        "artifact_type": "Codelist",
+        "artifact_id": "CL_FREQ",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://registry.sdmx.org/items/codelist.html",
+        "evidence": "The principles identify CL_FREQ as an SDMX Global Registry codelist worth checking. Covered reports require annual, quarterly and monthly values.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "SDMX",
+        "artifact_type": "Codelist",
+        "artifact_id": "CL_SEX",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://registry.sdmx.org/items/codelist.html",
+        "evidence": "The principles identify CL_SEX as an SDMX Global Registry codelist worth checking. Local sex and sex-coverage codes are retained pending exact code/version verification.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "SDMX",
+        "artifact_type": "Codelist",
+        "artifact_id": "CL_OBS_STATUS",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://registry.sdmx.org/items/codelist.html",
+        "evidence": "The principles identify CL_OBS_STATUS as a standard candidate for observation status. Exact code-level mappings were not confirmed for all report labels.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "SDMX",
+        "artifact_type": "Codelist",
+        "artifact_id": "CL_SEASONAL_ADJUST",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://registry.sdmx.org/items/codelist.html",
+        "evidence": "The principles identify CL_SEASONAL_ADJUST as an SDMX Global Registry codelist worth checking. Labour vacancy counts use a seasonally adjusted value.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "SDMX",
+        "artifact_type": "Codelist",
+        "artifact_id": "CL_AREA",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://registry.sdmx.org/items/codelist.html",
+        "evidence": "The principles identify CL_AREA as a reference area codelist to check. DEMO XML areas and synthetic areas are not asserted to match CL_AREA without verification.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "UNSD",
+        "artifact_type": "Geographic code system",
+        "artifact_id": "UN M49",
+        "version": "not stated in supplied excerpt",
+        "url": "https://unstats.un.org/unsd/methodology/m49/",
+        "evidence": "UN M49 is identified as an authoritative geographic code source. DEMO and synthetic areas were not verified against UN M49.",
+        "verification_status": "CONFIRMED"
+      },
+      {
+        "agency": "UNSD",
+        "artifact_type": "Classification",
+        "artifact_id": "ISIC",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://unstats.un.org/unsd/classifications/Econ",
+        "evidence": "UNSD economic classifications are identified as the place to check ISIC. Labour industry labels are local aggregates and not confirmed ISIC categories.",
+        "verification_status": "UNVERIFIED"
+      },
+      {
+        "agency": "UNESCO-UIS",
+        "artifact_type": "Classification",
+        "artifact_id": "ISCED",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://www.uis.unesco.org/en/methods-and-tools/isced",
+        "evidence": "UNESCO ISCED is the international reference for education level. Education-level labels require review before authoritative mapping.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "UNSD",
+        "artifact_type": "Classification",
+        "artifact_id": "CPC and other economic/product classifications",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://unstats.un.org/unsd/classifications/Econ",
+        "evidence": "UNSD economic classifications are authoritative sources for products and commodities. Crop and fertilizer values require classification review.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "UNSD / SDMX",
+        "artifact_type": "Classification / Codelist candidate",
+        "artifact_id": "COICOP / CL_COICOP_2018",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://unstats.un.org/unsd/classifications/coicop",
+        "evidence": "COICOP is the relevant consumption-purpose classification to check for CPI divisions; the reports do not confirm revision or exact codes.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "ISO",
+        "artifact_type": "Currency standard candidate",
+        "artifact_id": "ISO 4217",
+        "version": "not confirmed from supplied official-source evidence",
+        "url": "https://www.iso.org/standard/64758.html",
+        "evidence": "ISO 4217 is the standard source when currency identity is required. Trade XML states US dollars; agriculture and prices reports use unnamed local currency.",
+        "verification_status": "CANDIDATE"
+      }
+    ],
+    "limitations": [
+      "Exact SDMX Global Registry versions and code memberships for CL_FREQ, CL_SEX, CL_OBS_STATUS, CL_SEASONAL_ADJUST, CL_AREA and CL_COICOP_2018 were not confirmed in the supplied official-source evidence.",
+      "XML codelists from DEMO SDMX files were mechanically converted and represented through consolidated aggregate codelists with explicit source-codelist mappings in scope notes and code evidence. Consolidated aggregate codelist IDs are not original DEMO artefact IDs.",
+      "Northland, Centralia and South Coast are local synthetic reference areas and have no confirmed authoritative geography mapping.",
+      "Trade partner areas include countries and aggregates such as World and EU27. They are kept in a partner-area codelist separate from reference area to avoid confusing semantic roles.",
+      "Female/Women and Male/Men are consolidated as local sex-category candidates, but total-sex categories are kept distinct where report scope differs or is undefined.",
+      "Percent is consolidated as a common mathematical unit. Persons, students, deaths, beds, open positions, hectares, tonnes, GWh, generic index, base-2023 index, million US dollars and currency-denominated local units remain distinct where their statistical units differ.",
+      "Education level labels from DEMO XML and PDF reports are label-consolidated only as local/candidate mappings; no ISCED version or exact code mapping is confirmed.",
+      "Cause labels resemble ICD families, education levels resemble ISCED categories, industry labels resemble activity categories, crop and fertilizer labels resemble product classifications, CPI divisions resemble COICOP categories, and energy-source labels resemble energy classifications, but no authoritative classification versions or mappings were confirmed.",
+      "Wealth quintiles and expenditure quintiles are survey-specific and are not merged because they describe different distributions. Only quintile labels appearing in the source reports are represented; missing intermediate quintiles must not be invented.",
+      "Modelled estimate, survey estimate, observed, forecast, final, provisional, estimated and normal status labels may require methodology metadata as well as observation-status coding; they are retained as local status labels pending SDMX CL_OBS_STATUS verification.",
+      "Private-sector hospital-bed reporting is incomplete in 2024; this is an interpretive limitation for the health report and not a separate codelist category.",
+      "Hospital ownership categories are scoped to the hospital-beds structure and should not be applied to mortality data unless separately justified.",
+      "The agriculture and prices reports use unnamed local currency units, so ISO 4217 currency coding cannot be confirmed for those units."
+    ],
+    "codelists": [
+      {
+        "codelist_id": "CL_FREQ",
+        "name": "Frequency",
+        "agency_id": "SDMX_CANDIDATE_WITH_LOCAL_MAPPINGS",
+        "version": "aggregate-1.1-draft",
+        "source_url": "https://registry.sdmx.org/items/codelist.html",
+        "maintenance_status": "CANDIDATE_MAPPING",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Reusable frequency list. Candidate mapping to SDMX CL_FREQ. XML mappings include CL_POP_FREQ.A, CL_EDU_FREQ.A -> A; CL_CPI_FREQ.M, CL_LAB_FREQ.M, CL_TRD_FREQ.M, CL_ENE_FREQ.M -> M. Also covers annual health, education, agriculture and household spending; quarterly PDF unemployment rates; monthly PDF vacancy, fertilizer price and CPI observations.",
+        "codes": [
+          {
+            "code": "A",
+            "name": "Annual",
+            "definition": "Observation frequency once per year.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_POP_FREQ and CL_EDU_FREQ: A Annual; PDF reports include observations reported by calendar year/year.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "Q",
+            "name": "Quarterly",
+            "definition": "Observation frequency once per quarter.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "PDF labour report: quarterly unemployment rates.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "M",
+            "name": "Monthly",
+            "definition": "Observation frequency once per month.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_CPI_FREQ, CL_LAB_FREQ, CL_TRD_FREQ and CL_ENE_FREQ: M Monthly; PDF reports include monthly fertilizer retail prices, CPI and vacancy counts.",
+            "local_creation_justification": null
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_SYN_INDICATOR",
+        "name": "Cross-report statistical indicators",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.2-draft",
+        "source_url": "not stated in source files; derived from supplied reports",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Reusable aggregate indicator list preserving distinct phenomena from six DEMO XML files and five PDF reports. Explicit mappings include CL_POP_INDICATOR.POP_TOTAL/POP_GROWTH, CL_CPI_INDICATOR.CPI_INDEX/CPI_YOY, CL_LAB_INDICATOR.UNE_RATE/EMP_RATE, CL_TRD_INDICATOR.EXPORTS/IMPORTS/BALANCE, CL_EDU_INDICATOR.ENROL/GRAD, and CL_ENE_INDICATOR.ELEC_GEN/ELEC_CONS/RENEW_SHARE. PDF indicators are retained where definitions or scope differ from XML indicators.",
+        "codes": [
+          {
+            "code": "POP_TOTAL",
+            "name": "Total population",
+            "definition": "Total population indicator from the DEMO population XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_POP_INDICATOR: POP_TOTAL Total population.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "POP_GROWTH",
+            "name": "Population growth rate",
+            "definition": "Population growth rate indicator from the DEMO population XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_POP_INDICATOR: POP_GROWTH Population growth rate.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "CPI_INDEX_DEMO",
+            "name": "Consumer price index, DEMO XML",
+            "definition": "Consumer price index indicator from the DEMO consumer-prices XML; base and product-group scope follow the XML DSD/dataflow context.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_CPI_INDICATOR: CPI_INDEX Consumer price index.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "CPI_YOY",
+            "name": "Year-on-year CPI change",
+            "definition": "Year-on-year change in the consumer price index from the DEMO consumer-prices XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_CPI_INDICATOR: CPI_YOY Year-on-year CPI change.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "UNE_RATE_DEMO",
+            "name": "Unemployment rate, DEMO XML",
+            "definition": "Unemployment rate indicator from the DEMO labour-market XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_LAB_INDICATOR: UNE_RATE Unemployment rate.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "EMP_RATE",
+            "name": "Employment rate",
+            "definition": "Employment rate indicator from the DEMO labour-market XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_LAB_INDICATOR: EMP_RATE Employment rate.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "TRD_EXPORTS",
+            "name": "Exports",
+            "definition": "External trade flow for exports from the DEMO external-trade XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_TRD_INDICATOR: EXPORTS Exports.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "TRD_IMPORTS",
+            "name": "Imports",
+            "definition": "External trade flow for imports from the DEMO external-trade XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_TRD_INDICATOR: IMPORTS Imports.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "TRD_BALANCE",
+            "name": "Trade balance",
+            "definition": "External trade balance indicator from the DEMO external-trade XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_TRD_INDICATOR: BALANCE Trade balance.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "ENROL_DEMO",
+            "name": "Enrolment, DEMO XML",
+            "definition": "Enrolment education indicator from the DEMO education XML; census-day and population scope are not further stated in the XML codelist.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_EDU_INDICATOR: ENROL Enrolment.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "GRAD_DEMO",
+            "name": "Graduates, DEMO XML",
+            "definition": "Graduates education indicator from the DEMO education XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_EDU_INDICATOR: GRAD Graduates.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "ELEC_GEN",
+            "name": "Electricity generation",
+            "definition": "Electricity generation indicator from the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_INDICATOR: ELEC_GEN Electricity generation.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "ELEC_CONS",
+            "name": "Electricity consumption",
+            "definition": "Electricity consumption indicator from the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_INDICATOR: ELEC_CONS Electricity consumption.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "RENEW_SHARE",
+            "name": "Renewable share of generation",
+            "definition": "Share of electricity generation from renewable sources, from the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_INDICATOR: RENEW_SHARE Renewable share of generation.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "UNEMP_RATE",
+            "name": "Unemployment rate, PDF labour survey",
+            "definition": "Unemployed persons as a percentage of the labour force; PDF report scope is synthetic survey estimates for persons aged 15-64.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Unemployment rate is unemployed persons as a percentage of the labour force.",
+            "local_creation_justification": "Kept distinct from UNE_RATE_DEMO because the PDF supplies explicit survey/age scope not present in the XML codelist."
+          },
+          {
+            "code": "JOB_VACANCIES",
+            "name": "Job vacancies",
+            "definition": "Count of unfilled positions available for immediate recruitment.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "A job vacancy is an unfilled position available for immediate recruitment.",
+            "local_creation_justification": "No confirmed domain SDMX indicator code was supplied."
+          },
+          {
+            "code": "REGISTERED_DEATHS",
+            "name": "Registered deaths",
+            "definition": "Count of registered death events during the calendar year, classified by area, underlying cause and age group.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Deaths; registered deaths table; Provisional death counts are revised when late registrations arrive.",
+            "local_creation_justification": "No confirmed health indicator code was supplied."
+          },
+          {
+            "code": "AVAILABLE_HOSPITAL_BEDS",
+            "name": "Available staffed hospital beds",
+            "definition": "Count of staffed hospital beds available on 31 December, classified by ownership.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Count of staffed beds available on 31 December.",
+            "local_creation_justification": "No confirmed health indicator code was supplied."
+          },
+          {
+            "code": "ENROLLMENT_COUNT",
+            "name": "Enrollment count, PDF education report",
+            "definition": "Administrative headcount of learners registered on census day, by education level, sex and year.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Enrollment counts learners registered on census day.",
+            "local_creation_justification": "Kept distinct from ENROL_DEMO because the PDF supplies census-day and administrative-count scope not present in the XML codelist."
+          },
+          {
+            "code": "LOWER_SECONDARY_COMPLETION_RATE",
+            "name": "Lower-secondary completion rate",
+            "definition": "Percentage of the relevant cohort completing the lower-secondary education cycle.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Completion rate is the percentage of the relevant cohort completing the stated education cycle.",
+            "local_creation_justification": "No confirmed education indicator code was supplied."
+          },
+          {
+            "code": "HARVESTED_AREA",
+            "name": "Harvested area",
+            "definition": "Area of crop harvested, measured in hectares in the agriculture report.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Harvested area counts hectares harvested.",
+            "local_creation_justification": "No confirmed agriculture indicator code was supplied."
+          },
+          {
+            "code": "CROP_PRODUCTION",
+            "name": "Crop production",
+            "definition": "Crop output, measured in metric tonnes in the agriculture report.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Production is crop output in metric tonnes.",
+            "local_creation_justification": "No confirmed agriculture indicator code was supplied."
+          },
+          {
+            "code": "FERTILIZER_RETAIL_PRICE",
+            "name": "Fertilizer retail price",
+            "definition": "Median observed fertilizer retail price per 50 kg bag in an unnamed local currency.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Retail price is the median observed price per 50 kg bag.",
+            "local_creation_justification": "No confirmed agriculture price indicator code was supplied."
+          },
+          {
+            "code": "CPI_LOCAL_BASE2023",
+            "name": "Consumer price index, local PDF base 2023=100",
+            "definition": "Monthly fixed-basket consumer price index classified by local consumption division, with base 2023=100 in the PDF prices report.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "The CPI is a monthly fixed-basket index classified by consumption division; Index, 2023=100.",
+            "local_creation_justification": "Kept distinct from CPI_INDEX_DEMO because the PDF states a specific base and local division classification."
+          },
+          {
+            "code": "MEAN_MONTHLY_HH_CONS_EXP",
+            "name": "Mean monthly household consumption expenditure",
+            "definition": "Annual household-spending survey estimate of mean monthly consumption expenditure per household, classified by residence and expenditure quintile.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Household spending is an annual survey estimate by residence and expenditure quintile and is not a CPI observation.",
+            "local_creation_justification": "No confirmed household-expenditure indicator code was supplied."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_DEMO_REF_AREA",
+        "name": "DEMO XML reference areas",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.1-draft",
+        "source_url": "not stated in XML",
+        "maintenance_status": "LOCAL_CONSTRAINT",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Consolidates identical reference-area value domains from DEMO XML codelists. Mappings: CL_POP_REF_AREA, CL_CPI_REF_AREA, CL_LAB_REF_AREA, CL_TRD_REF_AREA, CL_EDU_REF_AREA and CL_ENE_REF_AREA codes KR/JP/US map to these aggregate codes. Not asserted to be SDMX CL_AREA, ISO 3166 or UN M49 without verification.",
+        "codes": [
+          {
+            "code": "KR",
+            "name": "Korea, Republic of",
+            "definition": "Reference area labelled Korea, Republic of in the DEMO XML files.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML reference-area codelists: KR Korea, Republic of.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "JP",
+            "name": "Japan",
+            "definition": "Reference area labelled Japan in the DEMO XML files.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML reference-area codelists: JP Japan.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "definition": "Reference area labelled United States in the DEMO XML files.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML reference-area codelists: US United States.",
+            "local_creation_justification": null
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_SYN_REF_AREA",
+        "name": "Synthetic PDF reporting/reference areas",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.0-draft",
+        "source_url": "not stated in PDF extracts",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Local reference-area list for synthetic areas appearing in labour, health and agriculture PDF reports. Kept separate from DEMO XML countries to avoid mixing geographic code systems without an explicit hierarchy.",
+        "codes": [
+          {
+            "code": "NORTHLAND",
+            "name": "Northland",
+            "definition": "Local synthetic reporting/reference area used in labour, health and agriculture reports.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Northland",
+            "local_creation_justification": "No authoritative area code was confirmed."
+          },
+          {
+            "code": "CENTRALIA",
+            "name": "Centralia",
+            "definition": "Local synthetic reporting/reference area used in labour, health and agriculture reports.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Centralia",
+            "local_creation_justification": "No authoritative area code was confirmed."
+          },
+          {
+            "code": "SOUTH_COAST",
+            "name": "South Coast",
+            "definition": "Local synthetic reporting/reference area used in labour, health and agriculture reports.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "South Coast",
+            "local_creation_justification": "No authoritative area code was confirmed."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_DEMO_PARTNER_AREA",
+        "name": "DEMO external-trade partner areas",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.0-draft",
+        "source_url": "04_sdmx_21_external_trade_full_case.xml",
+        "maintenance_status": "LOCAL_CONSTRAINT",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Partner-area value domain from the DEMO external-trade XML. Kept separate from reference area because counterpart/partner area is a different semantic role and includes aggregates.",
+        "codes": [
+          {
+            "code": "WORLD",
+            "name": "World",
+            "definition": "Partner-area aggregate labelled World in the external-trade XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_TRD_PARTNER: WORLD World.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "CN",
+            "name": "China",
+            "definition": "Partner area labelled China in the external-trade XML; exact geographic code system not verified.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_TRD_PARTNER: CN China.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "definition": "Partner area labelled United States in the external-trade XML; exact geographic code system not verified.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_TRD_PARTNER: US United States.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "EU27",
+            "name": "European Union (27)",
+            "definition": "Partner-area aggregate labelled European Union (27) in the external-trade XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_TRD_PARTNER: EU27 European Union (27).",
+            "local_creation_justification": null
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_SYN_SEX_COVERAGE",
+        "name": "Sex and sex-coverage categories",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.1-draft",
+        "source_url": "not stated in source files; derived from supplied reports",
+        "maintenance_status": "CANDIDATE_MAPPING",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Local holding list for sex categories. Explicit XML source mappings: CL_LAB_SEX.F -> FEMALE; CL_LAB_SEX.M -> MALE; CL_LAB_SEX._T -> TOTAL_SEX_DEMO. Female/Women and Male/Men are candidate mappings to SDMX CL_SEX. Total categories are not merged where inclusion rules differ.",
+        "codes": [
+          {
+            "code": "FEMALE",
+            "name": "Female / Women",
+            "definition": "Persons classified as female/women. XML labour source label is Female; PDF source labels include Women and Female.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML CL_LAB_SEX: F Female; PDF labels: Women; Female.",
+            "local_creation_justification": "Exact SDMX CL_SEX code identifiers/version were not confirmed."
+          },
+          {
+            "code": "MALE",
+            "name": "Male / Men",
+            "definition": "Persons classified as male/men. XML labour source label is Male; PDF source labels include Men and Male.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML CL_LAB_SEX: M Male; PDF labels: Men; Male.",
+            "local_creation_justification": "Exact SDMX CL_SEX code identifiers/version were not confirmed."
+          },
+          {
+            "code": "TOTAL_SEX_DEMO",
+            "name": "Total sex, DEMO XML scope",
+            "definition": "Total sex category from the DEMO labour-market XML. Inclusion rules are not further stated in the XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_LAB_SEX: _T Total.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "TOTAL_INCL_OTHER_LM",
+            "name": "Total sex coverage including other respondents",
+            "definition": "PDF labour-report total sex coverage; includes respondents outside displayed women/men categories and must not be inferred by summing displayed rows.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Total sex coverage includes respondents outside the displayed women/men categories; it must not be inferred by summing displayed rows.",
+            "local_creation_justification": "Special total coverage may not match a standard total-sex code."
+          },
+          {
+            "code": "TOTAL_SEX_UNSPECIFIED_EDU",
+            "name": "Total sex coverage, education report scope not further specified",
+            "definition": "Education-report aggregate over reported sex categories for enrollment rows; exact inclusion rules are not further stated.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Primary Total 2024 ... Students Final.",
+            "local_creation_justification": "Kept separate from labour totals because scope is not defined as equivalent."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_SYN_UNIT_MEASURE",
+        "name": "Cross-report units of measure",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.2-draft",
+        "source_url": "not stated in source files; derived from supplied reports",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Local unit list. XML mappings include CL_POP_UNIT.PS and CL_EDU_UNIT.PS -> PERSONS; CL_POP_UNIT.PC, CL_CPI_UNIT.PC, CL_LAB_UNIT.PC and CL_ENE_UNIT.PC -> PERCENT; CL_CPI_UNIT.IDX -> INDEX; CL_TRD_UNIT.USD_MN -> USD_MN; CL_ENE_UNIT.GWH -> GWH. Percent is consolidated across reports; index units with different base-period specificity and currency-denominated local units are kept distinct.",
+        "codes": [
+          {
+            "code": "PERSONS",
+            "name": "Persons",
+            "definition": "Unit for counts of persons in DEMO population and education XML files.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_POP_UNIT: PS Persons; XML CL_EDU_UNIT: PS Persons.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "PERCENT",
+            "name": "Percent",
+            "definition": "Unit for values expressed as percentages, including population growth, CPI change, employment/unemployment rates, completion rates and renewable share of generation.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML unit codelists: PC Percent; PDF reports: Percent.",
+            "local_creation_justification": "No confirmed authoritative unit-measure code for Percent was supplied."
+          },
+          {
+            "code": "INDEX",
+            "name": "Index",
+            "definition": "Generic index unit from the DEMO consumer-prices XML, with base period not specified in the codelist label.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_CPI_UNIT: IDX Index.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "USD_MN",
+            "name": "Million US dollars",
+            "definition": "Monetary unit for DEMO external-trade values, expressed in million US dollars.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_TRD_UNIT: USD_MN Million US dollars.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "GWH",
+            "name": "Gigawatt-hours",
+            "definition": "Energy unit for electricity generation and consumption values in the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_UNIT: GWH Gigawatt-hours.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "OPEN_POSITIONS",
+            "name": "Open positions",
+            "definition": "Unit for counts of job vacancies/open positions.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Open positions.",
+            "local_creation_justification": "No confirmed authoritative unit-measure code was supplied."
+          },
+          {
+            "code": "DEATHS",
+            "name": "Deaths",
+            "definition": "Unit for counts of registered death events during the calendar year.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Deaths.",
+            "local_creation_justification": "No confirmed domain unit code was supplied."
+          },
+          {
+            "code": "BEDS",
+            "name": "Beds",
+            "definition": "Unit for counts of staffed hospital beds available on 31 December.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Beds; Count of staffed beds available on 31 December.",
+            "local_creation_justification": "No confirmed domain unit code was supplied."
+          },
+          {
+            "code": "STUDENTS",
+            "name": "Students",
+            "definition": "Unit for enrollment counts of learners registered on census day in the PDF education report.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Enrollment counts learners registered on census day; Students.",
+            "local_creation_justification": "Kept distinct from PERSONS because the PDF unit is learner/student headcount with report-specific education scope."
+          },
+          {
+            "code": "HECTARES",
+            "name": "Hectares",
+            "definition": "Unit used for harvested crop area.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Harvested area counts hectares harvested.",
+            "local_creation_justification": "No exact authoritative unit codelist/code was confirmed."
+          },
+          {
+            "code": "TONNES",
+            "name": "Tonnes",
+            "definition": "Unit used for crop production; the agriculture report defines production as metric tonnes.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Production is crop output in metric tonnes.",
+            "local_creation_justification": "No exact authoritative unit codelist/code was confirmed."
+          },
+          {
+            "code": "LOCAL_CURRENCY_PER_50KG_BAG",
+            "name": "Local currency per 50 kg bag",
+            "definition": "Price unit for fertilizer retail prices; currency identity is not named.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "The local currency is deliberately unnamed.",
+            "local_creation_justification": "Currency identity is withheld, preventing ISO 4217 mapping."
+          },
+          {
+            "code": "IDX_2023_100",
+            "name": "Index, 2023=100",
+            "definition": "Index unit for PDF CPI values measuring price change relative to base year 2023=100.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Index, 2023=100.",
+            "local_creation_justification": "Base-period-specific index unit; no authoritative domain unit code/version was confirmed."
+          },
+          {
+            "code": "LCU_PER_HH_PER_MONTH",
+            "name": "Local currency per household per month",
+            "definition": "Unit for mean monthly consumption expenditure per household, denominated in unnamed local currency.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Local currency per household per month.",
+            "local_creation_justification": "Unnamed currency prevents ISO 4217 coding."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_SYN_OBS_STATUS",
+        "name": "Cross-report observation/value status labels",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.2-draft",
+        "source_url": "not stated in source files; derived from supplied reports",
+        "maintenance_status": "CANDIDATE_MAPPING",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Local holding list for status labels appearing across reports. XML mappings: A from population, CPI, labour, trade, education and energy observation-status codelists -> NORMAL; E -> ESTIMATED; P -> PROVISIONAL. Mapping to SDMX CL_OBS_STATUS must be verified before production use.",
+        "codes": [
+          {
+            "code": "NORMAL",
+            "name": "Normal value",
+            "definition": "Observation reported as a normal value in DEMO XML observation-status codelists.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML observation-status codelists: A Normal value.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "FINAL",
+            "name": "Final",
+            "definition": "Observation reported as final in source tables. Source-specific uses include education administrative counts becoming final after duplicate removal, finalized crop area and production records, and CPI observations not marked provisional/finalised where stated.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Final; Administrative counts become final after duplicate removal; finalized crop area and production records.",
+            "local_creation_justification": "Exact mapping to an authoritative SDMX observation-status code was not confirmed."
+          },
+          {
+            "code": "PROVISIONAL",
+            "name": "Provisional",
+            "definition": "Observation subject to later revision. Source-specific uses include DEMO XML provisional values, 2025-Q2 labour rates, death counts revised when late registrations arrive, 2025 education enrollment and the latest CPI month.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML observation-status codelists: P Provisional value; PDF footnotes mark provisional observations.",
+            "local_creation_justification": "Exact mapping to an authoritative SDMX observation-status code was not confirmed."
+          },
+          {
+            "code": "ESTIMATED",
+            "name": "Estimated value",
+            "definition": "Observation reported as estimated, including DEMO XML estimated values and hospital-bed counts replaced after facility validation.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML observation-status codelists: E Estimated value; Estimated bed counts are replaced after facility validation.",
+            "local_creation_justification": "Exact mapping to an authoritative SDMX observation-status code was not confirmed."
+          },
+          {
+            "code": "MODELLED_ESTIMATE",
+            "name": "Modelled estimate",
+            "definition": "Completion-rate value that is a modelled estimate and may change with revised survey weights.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Footnote: All completion rates are modelled estimates.",
+            "local_creation_justification": "May require modelling-method metadata as well as status coding."
+          },
+          {
+            "code": "FORECAST",
+            "name": "Forecast",
+            "definition": "Status for crop area and production values forecast for 2025, not observed output.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Footnote: 2025 area and production are forecasts.",
+            "local_creation_justification": "Exact authoritative observation-status mapping was not confirmed."
+          },
+          {
+            "code": "OBSERVED",
+            "name": "Observed",
+            "definition": "Status used for fertilizer retail price observations from the monthly outlet panel.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Fertilizer retail prices come from a monthly outlet panel; Observed.",
+            "local_creation_justification": "Exact authoritative observation-status mapping was not confirmed."
+          },
+          {
+            "code": "SURVEY_ESTIMATE",
+            "name": "Survey estimate",
+            "definition": "Status label for household-spending survey estimates subject to sampling error.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Survey estimate; Household spending is an annual survey estimate by residence and expenditure quintile.",
+            "local_creation_justification": "Not confirmed as an SDMX observation-status code."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_SYN_SEASONAL_ADJUSTMENT",
+        "name": "Seasonal adjustment status used in reports",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.0-draft",
+        "source_url": "example_01_labour_market.pdf",
+        "maintenance_status": "CANDIDATE_MAPPING",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Local constrained list for the labour vacancy table's adjustment column. Candidate mapping to SDMX CL_SEASONAL_ADJUST should be verified.",
+        "codes": [
+          {
+            "code": "SEASONALLY_ADJUSTED",
+            "name": "Seasonally adjusted",
+            "definition": "Observation reported after seasonal adjustment; used for vacancy-count observations.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Seasonally adjusted.",
+            "local_creation_justification": "Exact SDMX CL_SEASONAL_ADJUST mapping was not confirmed."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_SYN_ACTIVITY_LOCAL",
+        "name": "Local industry aggregates used in vacancy table",
+        "agency_id": "SYNTHETIC_LABOUR_OBSERVATORY",
+        "version": "1.0-draft",
+        "source_url": "example_01_labour_market.pdf",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Local activity/industry aggregate list for labour vacancy counts. The report states labels are local aggregates and not confirmed ISIC categories.",
+        "codes": [
+          {
+            "code": "MANUFACTURING",
+            "name": "Manufacturing",
+            "definition": "Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Manufacturing.",
+            "local_creation_justification": "Industry labels are local aggregates and not confirmed ISIC categories."
+          },
+          {
+            "code": "CONSTRUCTION",
+            "name": "Construction",
+            "definition": "Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Construction.",
+            "local_creation_justification": "Industry labels are local aggregates and not confirmed ISIC categories."
+          },
+          {
+            "code": "INFORMATION_SERVICES",
+            "name": "Information services",
+            "definition": "Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Information services.",
+            "local_creation_justification": "Industry labels are local aggregates and not confirmed ISIC categories."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_AGE_GROUP_REPORT",
+        "name": "Age groups used in source reports",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.0-draft",
+        "source_url": "not stated in source files; derived from supplied reports",
+        "maintenance_status": "LOCAL_CONSTRAINT",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Consolidated age-group list for DEMO population XML and PDF health mortality. Explicit XML mapping: CL_POP_AGE_GROUP.ALL -> ALL; Y0T14 -> Y0T14; Y15T64 -> Y15T64; Y_GE65 -> Y65_PLUS. Health mortality source maps 45-64 -> Y45T64 and 65+ -> Y65_PLUS. No universal authoritative age codelist was confirmed.",
+        "codes": [
+          {
+            "code": "ALL",
+            "name": "All ages",
+            "definition": "Aggregate over all ages as used in the DEMO population XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_POP_AGE_GROUP: ALL All ages.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "Y0T14",
+            "name": "0-14 years",
+            "definition": "Persons aged from 0 through 14 years.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_POP_AGE_GROUP: Y0T14 0–14 years.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "Y15T64",
+            "name": "15-64 years",
+            "definition": "Persons aged from 15 through 64 years.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_POP_AGE_GROUP: Y15T64 15–64 years.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "Y45T64",
+            "name": "45-64 years",
+            "definition": "Persons aged from 45 through 64 years, as represented by the health report's age-group label.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "45-64.",
+            "local_creation_justification": "No semantically equivalent authoritative age-group code was confirmed."
+          },
+          {
+            "code": "Y65_PLUS",
+            "name": "65 years and over",
+            "definition": "Persons aged 65 years and over.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML CL_POP_AGE_GROUP: Y_GE65 65 years and over; health report: 65+.",
+            "local_creation_justification": "Aggregate code chosen to harmonise equivalent source labels Y_GE65 and 65+ while retaining mapping evidence."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_HEALTH_CAUSE_LOCAL",
+        "name": "Underlying cause categories for registered deaths",
+        "agency_id": "SYNTH_PH_AGENCY",
+        "version": "1.0-proposed",
+        "source_url": "example_02_health_system.pdf",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Local cause codelist for mortality only. Labels resemble ICD families but no ICD version is confirmed.",
+        "codes": [
+          {
+            "code": "CIRCULATORY_DISEASES",
+            "name": "Circulatory diseases",
+            "definition": "Report category for registered deaths classified by underlying cause; not confirmed as an ICD-version-specific grouping.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Circulatory diseases.",
+            "local_creation_justification": "No ICD version is confirmed."
+          },
+          {
+            "code": "NEOPLASMS",
+            "name": "Neoplasms",
+            "definition": "Report category for registered deaths classified by underlying cause; not confirmed as an ICD-version-specific grouping.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Neoplasms.",
+            "local_creation_justification": "No ICD version is confirmed."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_HEALTH_OWNERSHIP_LOCAL",
+        "name": "Hospital ownership categories",
+        "agency_id": "SYNTH_PH_AGENCY",
+        "version": "1.0-proposed",
+        "source_url": "example_02_health_system.pdf",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Local codelist for ownership categories in the hospital-beds structure. These categories are for hospital beds and should not be applied to mortality data unless separately justified. Private-sector hospital-bed reporting is incomplete in 2024; this is a data/interpretive caveat, not a separate ownership code.",
+        "codes": [
+          {
+            "code": "PUBLIC",
+            "name": "Public",
+            "definition": "Hospital ownership category labelled Public in the available hospital beds table.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Public.",
+            "local_creation_justification": "No authoritative ownership classification was confirmed."
+          },
+          {
+            "code": "PRIVATE_NON_PROFIT",
+            "name": "Private non-profit",
+            "definition": "Hospital ownership category labelled Private non-profit in the available hospital beds table.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Private non-profit.",
+            "local_creation_justification": "No authoritative ownership classification was confirmed."
+          },
+          {
+            "code": "PRIVATE_FOR_PROFIT",
+            "name": "Private for-profit",
+            "definition": "Hospital ownership category labelled Private for-profit in the available hospital beds table.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Private for-profit.",
+            "local_creation_justification": "No authoritative ownership classification was confirmed."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_EDUCATION_LEVEL_REPORT_LOCAL",
+        "name": "Report education-level labels",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.1-draft",
+        "source_url": "not stated in source files; derived from supplied education XML and PDF reports",
+        "maintenance_status": "CANDIDATE_MAPPING",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Local holding list for education-level labels. XML mappings: CL_EDU_EDU_LEVEL.PRI -> PRIMARY; LSEC -> LOWER_SECONDARY; USEC -> UPPER_SECONDARY; TER -> TERTIARY. PDF education mappings use PRIMARY, LOWER_SECONDARY and UPPER_SECONDARY. Candidate mapping to UNESCO ISCED is required before production use.",
+        "codes": [
+          {
+            "code": "PRIMARY",
+            "name": "Primary",
+            "definition": "Education-level label Primary; exact ISCED mapping is not established.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML CL_EDU_EDU_LEVEL: PRI Primary; PDF education report: Primary.",
+            "local_creation_justification": "ISCED mapping requires review and no confirmed ISCED code/version was supplied."
+          },
+          {
+            "code": "LOWER_SECONDARY",
+            "name": "Lower secondary",
+            "definition": "Education-level label Lower secondary; exact ISCED mapping is not established.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML CL_EDU_EDU_LEVEL: LSEC Lower secondary; PDF education report: Lower secondary.",
+            "local_creation_justification": "ISCED mapping requires review and no confirmed ISCED code/version was supplied."
+          },
+          {
+            "code": "UPPER_SECONDARY",
+            "name": "Upper secondary",
+            "definition": "Education-level label Upper secondary; exact ISCED mapping is not established.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML CL_EDU_EDU_LEVEL: USEC Upper secondary; PDF education report: Upper secondary.",
+            "local_creation_justification": "ISCED mapping requires review and no confirmed ISCED code/version was supplied."
+          },
+          {
+            "code": "TERTIARY",
+            "name": "Tertiary",
+            "definition": "Education-level label Tertiary from the DEMO education XML; exact ISCED mapping is not established.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_EDU_EDU_LEVEL: TER Tertiary.",
+            "local_creation_justification": null
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_WEALTH_QUINTILE_REPORT_LOCAL",
+        "name": "Survey-specific wealth quintile labels",
+        "agency_id": "SYNTH_MIN_LEARNING",
+        "version": "2025-report",
+        "source_url": "example_03_education.pdf",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Survey-specific wealth-quintile labels for lower-secondary completion rates. Only labels present in the report are included; missing second and fourth quintiles are not invented.",
+        "codes": [
+          {
+            "code": "LOWEST_QUINTILE",
+            "name": "Lowest quintile",
+            "definition": "Report wealth-quintile label Lowest quintile; survey-specific construction not further defined.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Lowest quintile Female 2024 ... Percent Modelled estimate.",
+            "local_creation_justification": "Wealth quintiles are survey-specific and not silently mapped to an income classification."
+          },
+          {
+            "code": "MIDDLE_QUINTILE",
+            "name": "Middle quintile",
+            "definition": "Report wealth-quintile label Middle quintile; survey-specific construction not further defined.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Middle quintile Female 2024 ... Percent Modelled estimate.",
+            "local_creation_justification": "Wealth quintiles are survey-specific and not silently mapped to an income classification."
+          },
+          {
+            "code": "HIGHEST_QUINTILE",
+            "name": "Highest quintile",
+            "definition": "Report wealth-quintile label Highest quintile; survey-specific construction not further defined.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Highest quintile Female 2024 ... Percent Modelled estimate.",
+            "local_creation_justification": "Wealth quintiles are survey-specific and not silently mapped to an income classification."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_AGRI_CROP_LOCAL",
+        "name": "Crop common labels requiring classification review",
+        "agency_id": "SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU",
+        "version": "1.0",
+        "source_url": "example_04_agriculture.pdf",
+        "maintenance_status": "CANDIDATE_MAPPING",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Report crop values are preserved as common labels pending review against an authoritative product or crop classification.",
+        "codes": [
+          {
+            "code": "RICE",
+            "name": "Rice",
+            "definition": "Common crop label used in the report; authoritative classification code not confirmed.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Rice Northland 2024 ... Hectares ... Tonnes Final.",
+            "local_creation_justification": "Crop names require classification review; no confirmed authoritative code was supplied."
+          },
+          {
+            "code": "MAIZE",
+            "name": "Maize",
+            "definition": "Common crop label used in the report; authoritative classification code not confirmed.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Maize Northland 2024 ... Hectares ... Tonnes Final.",
+            "local_creation_justification": "Crop names require classification review; no confirmed authoritative code was supplied."
+          },
+          {
+            "code": "CASSAVA",
+            "name": "Cassava",
+            "definition": "Common crop label used in the report; authoritative classification code not confirmed.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Cassava Northland 2024 ... Hectares ... Tonnes Final.",
+            "local_creation_justification": "Crop names require classification review; no confirmed authoritative code was supplied."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_AGRI_FERTILIZER_PRODUCT_LOCAL",
+        "name": "Fertilizer local market product categories",
+        "agency_id": "SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU",
+        "version": "1.0",
+        "source_url": "example_04_agriculture.pdf",
+        "maintenance_status": "CANDIDATE_MAPPING",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Fertilizer product values are local market categories and are not verified CPC codes.",
+        "codes": [
+          {
+            "code": "UREA",
+            "name": "Urea",
+            "definition": "Local market fertilizer product category used in the price table; CPC mapping not confirmed.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Urea 2025-01 ... Local currency per 50 kg bag Observed.",
+            "local_creation_justification": "Product is a local market category and not a verified CPC code."
+          },
+          {
+            "code": "COMPOUND_NPK",
+            "name": "Compound NPK",
+            "definition": "Local market fertilizer product category used in the price table; CPC mapping not confirmed.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Compound NPK 2025-01 ... Local currency per 50 kg bag Observed.",
+            "local_creation_justification": "Product is a local market category and not a verified CPC code."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_CPI_PRODUCT_GROUP_REPORT",
+        "name": "CPI product/consumption groups used in source reports",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.0-draft",
+        "source_url": "not stated in source files; derived from supplied reports",
+        "maintenance_status": "CANDIDATE_MAPPING",
+        "verification_status": "CANDIDATE",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Consolidates CPI product-group/division labels from DEMO consumer-prices XML and the PDF prices report where labels are semantically equivalent. Explicit XML mappings: CL_CPI_PRODUCT_GROUP.ALL -> ALL_ITEMS; FOOD -> FOOD_NAB; HOUSING -> HOUS_UTIL. PDF mappings: CL_LOCAL_CPI_DIVISION.FOOD_NAB, HOUS_UTIL and TRANSPORT retain the same aggregate codes. Values resemble COICOP/CL_COICOP_2018 but revision is not confirmed.",
+        "codes": [
+          {
+            "code": "ALL_ITEMS",
+            "name": "All-items CPI",
+            "definition": "Aggregate CPI product group covering all items in the DEMO consumer-prices XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_CPI_PRODUCT_GROUP: ALL All-items CPI.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "FOOD_NAB",
+            "name": "Food and non-alcoholic beverages",
+            "definition": "CPI product group/consumption division labelled Food and non-alcoholic beverages; formal COICOP code and revision not confirmed.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML CL_CPI_PRODUCT_GROUP: FOOD Food and non-alcoholic beverages; PDF CPI division: Food and non-alcoholic beverages.",
+            "local_creation_justification": "No confirmed COICOP revision or code was supplied."
+          },
+          {
+            "code": "HOUS_UTIL",
+            "name": "Housing and utilities",
+            "definition": "CPI product group/consumption division labelled Housing and utilities; formal COICOP code and revision not confirmed.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "XML CL_CPI_PRODUCT_GROUP: HOUSING Housing and utilities; PDF CPI division: Housing and utilities.",
+            "local_creation_justification": "No confirmed COICOP revision or code was supplied."
+          },
+          {
+            "code": "TRANSPORT",
+            "name": "Transport",
+            "definition": "PDF CPI consumption division labelled Transport; formal COICOP code and revision not confirmed.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Transport.",
+            "local_creation_justification": "No confirmed COICOP revision or code was supplied."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_ENERGY_SOURCE_DEMO",
+        "name": "DEMO energy source categories",
+        "agency_id": "SYNTHETIC_AGGREGATE",
+        "version": "1.0-draft",
+        "source_url": "06_sdmx_30_energy_full_case.xml",
+        "maintenance_status": "LOCAL_CONSTRAINT",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-17",
+        "scope_notes": "Energy-source value domain mechanically imported from the DEMO energy XML and consolidated as an aggregate reusable list. No authoritative external energy classification mapping is asserted.",
+        "codes": [
+          {
+            "code": "ALL",
+            "name": "All sources",
+            "definition": "Aggregate over all energy sources as used in the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_ENERGY_SOURCE: ALL All sources.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "COAL",
+            "name": "Coal",
+            "definition": "Energy source labelled Coal in the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_ENERGY_SOURCE: COAL Coal.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "GAS",
+            "name": "Natural gas",
+            "definition": "Energy source labelled Natural gas in the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_ENERGY_SOURCE: GAS Natural gas.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "NUCLEAR",
+            "name": "Nuclear",
+            "definition": "Energy source labelled Nuclear in the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_ENERGY_SOURCE: NUCLEAR Nuclear.",
+            "local_creation_justification": null
+          },
+          {
+            "code": "RENEW",
+            "name": "Renewables",
+            "definition": "Energy source category labelled Renewables in the DEMO energy XML.",
+            "parent_code": null,
+            "status": "ACTIVE",
+            "evidence_quote": "XML CL_ENE_ENERGY_SOURCE: RENEW Renewables.",
+            "local_creation_justification": null
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_LOCAL_RESIDENCE",
+        "name": "Local residence category",
+        "agency_id": "SYNTH_NSI_LOCAL",
+        "version": "1.0",
+        "source_url": "example_05_prices_consumption.pdf",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Local residence categories in the household-spending survey table. Not defined as an official degree-of-urbanisation classification.",
+        "codes": [
+          {
+            "code": "URBAN",
+            "name": "Urban",
+            "definition": "Residence category for household-spending survey estimates; exact criteria not stated.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Urban.",
+            "local_creation_justification": "No authoritative residence or degree-of-urbanisation code was confirmed."
+          },
+          {
+            "code": "RURAL",
+            "name": "Rural",
+            "definition": "Residence category for household-spending survey estimates; exact criteria not stated.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Rural.",
+            "local_creation_justification": "No authoritative residence or degree-of-urbanisation code was confirmed."
+          }
+        ]
+      },
+      {
+        "codelist_id": "CL_LOCAL_EXPENDITURE_QUINTILE",
+        "name": "Local expenditure quintile category",
+        "agency_id": "SYNTH_NSI_LOCAL",
+        "version": "1.0",
+        "source_url": "example_05_prices_consumption.pdf",
+        "maintenance_status": "PROPOSED_LOCAL",
+        "verification_status": "CONFIRMED",
+        "date_checked": "2026-09-16",
+        "scope_notes": "Local expenditure-quintile categories present in the household-spending table. Not merged with education wealth quintiles because the distribution is expenditure, not wealth. Only lowest and highest quintiles appear; missing intermediate quintiles are not invented.",
+        "codes": [
+          {
+            "code": "LOWEST",
+            "name": "Lowest quintile",
+            "definition": "Lowest expenditure quintile within the synthetic survey distribution.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Lowest quintile.",
+            "local_creation_justification": "Survey-specific quintile definition; no authoritative external quintile codelist was confirmed."
+          },
+          {
+            "code": "HIGHEST",
+            "name": "Highest quintile",
+            "definition": "Highest expenditure quintile within the synthetic survey distribution.",
+            "parent_code": null,
+            "status": "PROPOSED_LOCAL",
+            "evidence_quote": "Highest quintile.",
+            "local_creation_justification": "Survey-specific quintile definition; no authoritative external quintile codelist was confirmed."
+          }
+        ]
+      }
+    ]
+  }
+}

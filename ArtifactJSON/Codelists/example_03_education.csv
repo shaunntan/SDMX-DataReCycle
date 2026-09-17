@@ -1,0 +1,240 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODELISTS
+"[""source_report""]",source_report,string,example_03_education.pdf
+"[""source_sha256""]",source_sha256,string,e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6
+"[""principles_file""]",principles_file,string,02_CODELISTS.txt
+"[""principles_sha256""]",principles_sha256,string,5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Codelist registry catalogue
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Global Registry - Codelists
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,The official registry codelist catalogue was fetched and confirms that the SDMX Global Registry provides a Codelists listing/export interface. The supplied excerpt does not confirm exact versions or code contents for candidate codelists such as CL_SEX or CL_OBS_STATUS.
+"[""standard_references"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Glossary
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX Glossary Version 2.1
+"[""standard_references"",1,""version""]",version,string,2.1
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",1,""evidence""]",evidence,string,The supplied official-source excerpt states that a codelist ID is the unique identifier for the codelist associated with a concept and gives CL_OBS_STATUS as an example for Observation Status. It supports SDMX codelist modelling but does not provide the actual report-category code mappings.
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,UNESCO-UIS
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Classification
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,ISCED
+"[""standard_references"",2,""version""]",version,string,not stated
+"[""standard_references"",2,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""standard_references"",2,""evidence""]",evidence,string,"The shared reference catalog identifies UNESCO ISCED as the international reference for education level. The report states that education-level labels require ISCED mapping review, and no supplied external evidence confirms exact ISCED codes or version for Primary, Lower secondary, and Upper secondary."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The supplied external evidence does not confirm exact SDMX CL_SEX codes, versions, or definitions; report sex labels are therefore held as local candidate mappings rather than asserted as authoritative SDMX codes."
+"[""limitations"",1]",1,string,The report explicitly states that education-level labels require ISCED mapping review; no ISCED version or code mapping is confirmed in the supplied evidence.
+"[""limitations"",2]",2,string,The report explicitly states that wealth quintiles are survey-specific and should not be silently mapped to a standard income classification; only the three reported quintile labels are represented.
+"[""limitations"",3]",3,string,No authoritative unit-measure codelist or code values for Students and Percent were confirmed from supplied external evidence.
+"[""limitations"",4]",4,string,"Observation status values Final, Provisional, and Modelled estimate may have candidate mappings to SDMX observation-status concepts, but exact authoritative codes were not confirmed."
+"[""limitations"",5]",5,string,"The report does not state a reference area, so no geographic codelist is created."
+"[""limitations"",6]",6,string,"The report is synthetic and provides limited methodological detail for category boundaries, especially sex total scope and wealth-quintile construction."
+"[""codelists""]",codelists,array,
+"[""codelists"",0]",0,object,
+"[""codelists"",0,""codelist_id""]",codelist_id,string,CL_EDU_INDICATOR_LOCAL
+"[""codelists"",0,""name""]",name,string,Education report statistical indicators
+"[""codelists"",0,""agency_id""]",agency_id,string,SYNTH_MIN_LEARNING
+"[""codelists"",0,""version""]",version,string,2025-report
+"[""codelists"",0,""source_url""]",source_url,string,example_03_education.pdf
+"[""codelists"",0,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",0,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",0,""scope_notes""]",scope_notes,string,Local indicator list preserving the two distinct statistical measures described in the report: enrollment administrative headcount and lower-secondary completion rate. No authoritative indicator codelist was confirmed from supplied evidence.
+"[""codelists"",0,""codes""]",codes,array,
+"[""codelists"",0,""codes"",0]",0,object,
+"[""codelists"",0,""codes"",0,""code""]",code,string,ENROLLMENT_COUNT
+"[""codelists"",0,""codes"",0,""name""]",name,string,Enrollment count
+"[""codelists"",0,""codes"",0,""definition""]",definition,string,"Administrative headcount of learners registered on census day, reported by education level, sex and year."
+"[""codelists"",0,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",0,""codes"",0,""evidence_quote""]",evidence_quote,string,Enrollment is an administrative headcount by education level.
+"[""codelists"",0,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Created as a local report indicator because the supplied evidence does not confirm an authoritative education indicator codelist or code for this measure.
+"[""codelists"",0,""codes"",1]",1,object,
+"[""codelists"",0,""codes"",1,""code""]",code,string,LOWER_SECONDARY_COMPLETION_RATE
+"[""codelists"",0,""codes"",1,""name""]",name,string,Lower-secondary completion rate
+"[""codelists"",0,""codes"",1,""definition""]",definition,string,"Percentage of the relevant cohort completing the lower-secondary education cycle, reported by wealth quintile, sex and year."
+"[""codelists"",0,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",0,""codes"",1,""evidence_quote""]",evidence_quote,string,Table 2. Lower-secondary completion by wealth quintile
+"[""codelists"",0,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Created as a local report indicator because the supplied evidence does not confirm an authoritative education indicator codelist or code for this measure.
+"[""codelists"",1]",1,object,
+"[""codelists"",1,""codelist_id""]",codelist_id,string,CL_EDUCATION_LEVEL_REPORT_LOCAL
+"[""codelists"",1,""name""]",name,string,Report education-level labels
+"[""codelists"",1,""agency_id""]",agency_id,string,SYNTH_MIN_LEARNING
+"[""codelists"",1,""version""]",version,string,2025-report
+"[""codelists"",1,""source_url""]",source_url,string,example_03_education.pdf
+"[""codelists"",1,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",1,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",1,""scope_notes""]",scope_notes,string,Local holding list for education-level labels appearing in the enrollment table. Candidate mapping to UNESCO ISCED is required before production use; the report itself warns that mapping requires review.
+"[""codelists"",1,""codes""]",codes,array,
+"[""codelists"",1,""codes"",0]",0,object,
+"[""codelists"",1,""codes"",0,""code""]",code,string,PRIMARY
+"[""codelists"",1,""codes"",0,""name""]",name,string,Primary
+"[""codelists"",1,""codes"",0,""definition""]",definition,string,Report education-level label Primary; exact ISCED mapping is not established in the supplied evidence.
+"[""codelists"",1,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",1,""codes"",0,""evidence_quote""]",evidence_quote,string,Primary                            Female                            2024                              78748                                 Students                                  Final
+"[""codelists"",1,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"Created locally because the report contains a genuine education-level category but states that ISCED mapping requires review, and no confirmed ISCED code/version was supplied."
+"[""codelists"",1,""codes"",1]",1,object,
+"[""codelists"",1,""codes"",1,""code""]",code,string,LOWER_SECONDARY
+"[""codelists"",1,""codes"",1,""name""]",name,string,Lower secondary
+"[""codelists"",1,""codes"",1,""definition""]",definition,string,Report education-level label Lower secondary; exact ISCED mapping is not established in the supplied evidence.
+"[""codelists"",1,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",1,""codes"",1,""evidence_quote""]",evidence_quote,string,Lower secondary                    Female                            2024                              115063                                Students                                  Final
+"[""codelists"",1,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"Created locally because the report contains a genuine education-level category but states that ISCED mapping requires review, and no confirmed ISCED code/version was supplied."
+"[""codelists"",1,""codes"",2]",2,object,
+"[""codelists"",1,""codes"",2,""code""]",code,string,UPPER_SECONDARY
+"[""codelists"",1,""codes"",2,""name""]",name,string,Upper secondary
+"[""codelists"",1,""codes"",2,""definition""]",definition,string,Report education-level label Upper secondary; exact ISCED mapping is not established in the supplied evidence.
+"[""codelists"",1,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",1,""codes"",2,""evidence_quote""]",evidence_quote,string,Upper secondary                    Female                            2024                              129817                                Students                                  Final
+"[""codelists"",1,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"Created locally because the report contains a genuine education-level category but states that ISCED mapping requires review, and no confirmed ISCED code/version was supplied."
+"[""codelists"",2]",2,object,
+"[""codelists"",2,""codelist_id""]",codelist_id,string,CL_SEX_REPORT_LOCAL
+"[""codelists"",2,""name""]",name,string,Report sex categories
+"[""codelists"",2,""agency_id""]",agency_id,string,SYNTH_MIN_LEARNING
+"[""codelists"",2,""version""]",version,string,2025-report
+"[""codelists"",2,""source_url""]",source_url,string,example_03_education.pdf
+"[""codelists"",2,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",2,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",2,""scope_notes""]",scope_notes,string,"Local holding list for sex labels used in the report. Candidate mapping to SDMX CL_SEX should be verified against the authoritative registry before production use. Total appears in the enrollment table, while the completion table shows Female and Male only."
+"[""codelists"",2,""codes""]",codes,array,
+"[""codelists"",2,""codes"",0]",0,object,
+"[""codelists"",2,""codes"",0,""code""]",code,string,FEMALE
+"[""codelists"",2,""codes"",0,""name""]",name,string,Female
+"[""codelists"",2,""codes"",0,""definition""]",definition,string,Report sex category labelled Female.
+"[""codelists"",2,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",2,""codes"",0,""evidence_quote""]",evidence_quote,string,Primary                            Female                            2024                              78748                                 Students                                  Final
+"[""codelists"",2,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Created locally because the supplied external evidence does not confirm exact SDMX CL_SEX code identifiers or version.
+"[""codelists"",2,""codes"",1]",1,object,
+"[""codelists"",2,""codes"",1,""code""]",code,string,MALE
+"[""codelists"",2,""codes"",1,""name""]",name,string,Male
+"[""codelists"",2,""codes"",1,""definition""]",definition,string,Report sex category labelled Male.
+"[""codelists"",2,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",2,""codes"",1,""evidence_quote""]",evidence_quote,string,Primary                             Male                              2024                              106731                                Students                                  Final
+"[""codelists"",2,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Created locally because the supplied external evidence does not confirm exact SDMX CL_SEX code identifiers or version.
+"[""codelists"",2,""codes"",2]",2,object,
+"[""codelists"",2,""codes"",2,""code""]",code,string,TOTAL
+"[""codelists"",2,""codes"",2,""name""]",name,string,Total
+"[""codelists"",2,""codes"",2,""definition""]",definition,string,Aggregate over reported sex categories for enrollment rows; exact inclusion rules are not further stated in the report.
+"[""codelists"",2,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",2,""codes"",2,""evidence_quote""]",evidence_quote,string,Primary                                   Total                              2024                              58913                                 Students                                  Final
+"[""codelists"",2,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"Created locally because the supplied external evidence does not confirm exact SDMX CL_SEX total-code identifier or scope, and the report does not define total inclusion rules."
+"[""codelists"",3]",3,object,
+"[""codelists"",3,""codelist_id""]",codelist_id,string,CL_WEALTH_QUINTILE_REPORT_LOCAL
+"[""codelists"",3,""name""]",name,string,Survey-specific wealth quintile labels
+"[""codelists"",3,""agency_id""]",agency_id,string,SYNTH_MIN_LEARNING
+"[""codelists"",3,""version""]",version,string,2025-report
+"[""codelists"",3,""source_url""]",source_url,string,example_03_education.pdf
+"[""codelists"",3,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",3,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",3,""scope_notes""]",scope_notes,string,Survey-specific wealth-quintile labels used for lower-secondary completion rates. The report warns that these should not be silently mapped to a standard income classification. Only the three labels present in the report are included; missing second and fourth quintile categories are not invented.
+"[""codelists"",3,""codes""]",codes,array,
+"[""codelists"",3,""codes"",0]",0,object,
+"[""codelists"",3,""codes"",0,""code""]",code,string,LOWEST_QUINTILE
+"[""codelists"",3,""codes"",0,""name""]",name,string,Lowest quintile
+"[""codelists"",3,""codes"",0,""definition""]",definition,string,Report wealth-quintile label Lowest quintile; survey-specific construction is not further defined in the supplied evidence.
+"[""codelists"",3,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",3,""codes"",0,""evidence_quote""]",evidence_quote,string,Lowest quintile                      Female                            2024                                  64.0                                  Percent                              Modelled estimate
+"[""codelists"",3,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Created locally because the report states the wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""codelists"",3,""codes"",1]",1,object,
+"[""codelists"",3,""codes"",1,""code""]",code,string,MIDDLE_QUINTILE
+"[""codelists"",3,""codes"",1,""name""]",name,string,Middle quintile
+"[""codelists"",3,""codes"",1,""definition""]",definition,string,Report wealth-quintile label Middle quintile; survey-specific construction is not further defined in the supplied evidence.
+"[""codelists"",3,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",3,""codes"",1,""evidence_quote""]",evidence_quote,string,Middle quintile                       Female                            2024                                  89.8                                  Percent                              Modelled estimate
+"[""codelists"",3,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Created locally because the report states the wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""codelists"",3,""codes"",2]",2,object,
+"[""codelists"",3,""codes"",2,""code""]",code,string,HIGHEST_QUINTILE
+"[""codelists"",3,""codes"",2,""name""]",name,string,Highest quintile
+"[""codelists"",3,""codes"",2,""definition""]",definition,string,Report wealth-quintile label Highest quintile; survey-specific construction is not further defined in the supplied evidence.
+"[""codelists"",3,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",3,""codes"",2,""evidence_quote""]",evidence_quote,string,Highest quintile                      Female                            2024                                  70.7                                  Percent                              Modelled estimate
+"[""codelists"",3,""codes"",2,""local_creation_justification""]",local_creation_justification,string,Created locally because the report states the wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""codelists"",4]",4,object,
+"[""codelists"",4,""codelist_id""]",codelist_id,string,CL_UNIT_MEASURE_EDU_REPORT_LOCAL
+"[""codelists"",4,""name""]",name,string,Report unit labels
+"[""codelists"",4,""agency_id""]",agency_id,string,SYNTH_MIN_LEARNING
+"[""codelists"",4,""version""]",version,string,2025-report
+"[""codelists"",4,""source_url""]",source_url,string,example_03_education.pdf
+"[""codelists"",4,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",4,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",4,""scope_notes""]",scope_notes,string,Local unit labels as printed in the report. No authoritative domain unit codelist or exact code mapping was confirmed from supplied external evidence.
+"[""codelists"",4,""codes""]",codes,array,
+"[""codelists"",4,""codes"",0]",0,object,
+"[""codelists"",4,""codes"",0,""code""]",code,string,STUDENTS
+"[""codelists"",4,""codes"",0,""name""]",name,string,Students
+"[""codelists"",4,""codes"",0,""definition""]",definition,string,Unit for enrollment counts of learners registered on census day.
+"[""codelists"",4,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",4,""codes"",0,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day.
+"[""codelists"",4,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Created locally because no authoritative unit-measure code for Students was confirmed from supplied evidence.
+"[""codelists"",4,""codes"",1]",1,object,
+"[""codelists"",4,""codes"",1,""code""]",code,string,PERCENT
+"[""codelists"",4,""codes"",1,""name""]",name,string,Percent
+"[""codelists"",4,""codes"",1,""definition""]",definition,string,Unit for completion rate expressed as a percentage of the relevant cohort completing the stated education cycle.
+"[""codelists"",4,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",4,""codes"",1,""evidence_quote""]",evidence_quote,string,Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""codelists"",4,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Created locally because no authoritative unit-measure code for Percent was confirmed from supplied evidence.
+"[""codelists"",5]",5,object,
+"[""codelists"",5,""codelist_id""]",codelist_id,string,CL_OBS_STATUS_EDU_REPORT_LOCAL
+"[""codelists"",5,""name""]",name,string,Report value-status labels
+"[""codelists"",5,""agency_id""]",agency_id,string,SYNTH_MIN_LEARNING
+"[""codelists"",5,""version""]",version,string,2025-report
+"[""codelists"",5,""source_url""]",source_url,string,example_03_education.pdf
+"[""codelists"",5,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",5,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",5,""scope_notes""]",scope_notes,string,Local holding list for status labels printed in the report. Candidate mappings to SDMX CL_OBS_STATUS or related quality/estimation attributes should be verified; Modelled estimate may not be purely an observation-status category.
+"[""codelists"",5,""codes""]",codes,array,
+"[""codelists"",5,""codes"",0]",0,object,
+"[""codelists"",5,""codes"",0,""code""]",code,string,FINAL
+"[""codelists"",5,""codes"",0,""name""]",name,string,Final
+"[""codelists"",5,""codes"",0,""definition""]",definition,string,Administrative count status indicating values become final after duplicate removal.
+"[""codelists"",5,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",5,""codes"",0,""evidence_quote""]",evidence_quote,string,Administrative counts become final after duplicate removal.
+"[""codelists"",5,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Created locally because the supplied evidence does not confirm exact authoritative SDMX observation-status code mapping.
+"[""codelists"",5,""codes"",1]",1,object,
+"[""codelists"",5,""codes"",1,""code""]",code,string,PROVISIONAL
+"[""codelists"",5,""codes"",1,""name""]",name,string,Provisional
+"[""codelists"",5,""codes"",1,""definition""]",definition,string,Enrollment status used for 2025 values identified as provisional.
+"[""codelists"",5,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",5,""codes"",1,""evidence_quote""]",evidence_quote,string,Footnote: 2025 enrollment is provisional.
+"[""codelists"",5,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Created locally because the supplied evidence does not confirm exact authoritative SDMX observation-status code mapping.
+"[""codelists"",5,""codes"",2]",2,object,
+"[""codelists"",5,""codes"",2,""code""]",code,string,MODELLED_ESTIMATE
+"[""codelists"",5,""codes"",2,""name""]",name,string,Modelled estimate
+"[""codelists"",5,""codes"",2,""definition""]",definition,string,Status label for completion-rate values that are modelled estimates and may change with revised survey weights.
+"[""codelists"",5,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",5,""codes"",2,""evidence_quote""]",evidence_quote,string,Footnote: All completion rates are modelled estimates.
+"[""codelists"",5,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"Created locally because the supplied evidence does not confirm exact authoritative SDMX observation-status code mapping, and this category may require modelling-method metadata rather than a simple observation-status code."

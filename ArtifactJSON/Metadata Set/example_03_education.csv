@@ -1,0 +1,225 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,METADATA_SET
+"[""source_report""]",source_report,string,example_03_education.pdf
+"[""source_sha256""]",source_sha256,string,e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6
+"[""principles_file""]",principles_file,string,06_METADATA_SET.txt
+"[""principles_sha256""]",principles_sha256,string,78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"Fetched official-source excerpt identifies SDMX Glossary Version 2.1 and includes entries for Metadata Set, Metadata Structure Definition, Metadata update, Institutional mandate, Education level, and Geographical coverage; the excerpt also confirms cross-domain concept ID COVERAGE_GEO with recommended representation String; Codelist."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Guideline
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",1,""version""]",version,string,1.0
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",1,""evidence""]",evidence,string,The supplied principles identify this guideline as the SDMX reference metadata guideline and as a source for a standard list of reference metadata concepts; no fetched excerpt in the supplied context confirms the exact concept inventory or version details beyond the citation.
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX_2_0_INFORMATION_MODEL
+"[""standard_references"",2,""version""]",version,string,2.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied principles identify the SDMX 2.0 Information Model as the formal source for SDMX 2.0 artefact definitions, including metadata structures and metadata sets; no fetched excerpt in the supplied context confirms detailed metadata-set mechanics."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Registry catalog
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,Fetched official-source excerpt shows the SDMX Global Registry interface with Codelists and Metadata Structures among searchable artefact types; it does not confirm any education-specific metadata concept or codelist for this report.
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,UNESCO-UIS
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Classification reference
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,ISCED
+"[""standard_references"",4,""version""]",version,string,not stated
+"[""standard_references"",4,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""standard_references"",4,""evidence""]",evidence,string,The shared source catalog lists UNESCO ISCED as the authoritative source to check for education level classifications. No fetched external excerpt confirming applicable ISCED codes or revision was supplied.
+"[""standard_references"",4,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The supplied report context does not state contact information, geographic coverage, source URL, legal or institutional mandate, or a metadata update date distinct from the publication date; these gaps are not converted into evidence-bearing metadata values."
+"[""limitations"",1]",1,string,The exact SDMX Global Reference Metadata Concept Scheme artefact ID and version were not confirmed from supplied external evidence for most metadata concepts; the metadata set therefore uses the accepted local MSD concept IDs and preserves SDMX mappings as candidate where appropriate.
+"[""limitations"",2]",2,string,The metadata-set target identifiers for dataflows and datasets are local identifiers because no accepted DATAFLOW or DATASET artifact was supplied in this prompt.
+"[""limitations"",3]",3,string,"Education-level labels require ISCED mapping review, so no confirmed ISCED mapping is asserted in this metadata set."
+"[""limitations"",4]",4,string,Wealth quintiles are survey-specific according to the report and are not silently mapped to a standard income classification.
+"[""limitations"",5]",5,string,Enrollment and completion are kept as separate dataflow-level metadata targets because the report states different methods and source semantics for administrative enrollment headcounts and modelled household-survey completion estimates.
+"[""limitations"",6]",6,string,Dataset-level status footnotes are represented separately from dataflow-level metadata to match the accepted MSD target attachment for STATUS_NOTE.
+"[""metadata_sets""]",metadata_sets,array,
+"[""metadata_sets"",0]",0,object,
+"[""metadata_sets"",0,""metadata_set_id""]",metadata_set_id,string,MS_EDU_REPORT_REFMETA_2025
+"[""metadata_sets"",0,""msd_id""]",msd_id,string,MSD_EDU_REPORT_REFMETA
+"[""metadata_sets"",0,""target_id""]",target_id,string,example_03_education.pdf
+"[""metadata_sets"",0,""target_type""]",target_type,string,REPORT
+"[""metadata_sets"",0,""values""]",values,array,
+"[""metadata_sets"",0,""values"",0]",0,object,
+"[""metadata_sets"",0,""values"",0,""concept_id""]",concept_id,string,REPORT_TITLE
+"[""metadata_sets"",0,""values"",0,""value""]",value,string,Education Participation and Completion 2025
+"[""metadata_sets"",0,""values"",0,""evidence_quote""]",evidence_quote,string,Education Participation and Completion 2025
+"[""metadata_sets"",0,""values"",0,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",0,""values"",1]",1,object,
+"[""metadata_sets"",0,""values"",1,""concept_id""]",concept_id,string,PUBLISHER
+"[""metadata_sets"",0,""values"",1,""value""]",value,string,Synthetic Ministry of Learning
+"[""metadata_sets"",0,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Ministry of Learning
+"[""metadata_sets"",0,""values"",1,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",0,""values"",2]",2,object,
+"[""metadata_sets"",0,""values"",2,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""metadata_sets"",0,""values"",2,""value""]",value,string,2026-06-12
+"[""metadata_sets"",0,""values"",2,""evidence_quote""]",evidence_quote,string,Publication date: 12 June 2026
+"[""metadata_sets"",0,""values"",2,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",1]",1,object,
+"[""metadata_sets"",1,""metadata_set_id""]",metadata_set_id,string,MS_EDU_ENROLLMENT_REFMETA_2025
+"[""metadata_sets"",1,""msd_id""]",msd_id,string,MSD_EDU_DATAFLOW_REFMETA
+"[""metadata_sets"",1,""target_id""]",target_id,string,DF_EDU_ENROLLMENT
+"[""metadata_sets"",1,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",1,""values""]",values,array,
+"[""metadata_sets"",1,""values"",0]",0,object,
+"[""metadata_sets"",1,""values"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_sets"",1,""values"",0,""value""]",value,string,"Enrollment by education level, sex and year."
+"[""metadata_sets"",1,""values"",0,""evidence_quote""]",evidence_quote,string,"Table 1. Enrollment by education level, sex and year"
+"[""metadata_sets"",1,""values"",0,""source_location""]",source_location,string,"Chunk 3, PAGE 2"
+"[""metadata_sets"",1,""values"",1]",1,object,
+"[""metadata_sets"",1,""values"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_sets"",1,""values"",1,""value""]",value,string,Synthetic Education Management Information System; enrollment is described as an administrative headcount by education level.
+"[""metadata_sets"",1,""values"",1,""evidence_quote""]",evidence_quote,string,"Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.
+Source description
+Synthetic Education Management Information System and Synthetic Household Learning Survey."
+"[""metadata_sets"",1,""values"",1,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",1,""values"",2]",2,object,
+"[""metadata_sets"",1,""values"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_sets"",1,""values"",2,""value""]",value,string,Enrollment is an administrative headcount by education level.
+"[""metadata_sets"",1,""values"",2,""evidence_quote""]",evidence_quote,string,Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.
+"[""metadata_sets"",1,""values"",2,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",1,""values"",3]",3,object,
+"[""metadata_sets"",1,""values"",3,""concept_id""]",concept_id,string,STAT_CONCEPT_DEF
+"[""metadata_sets"",1,""values"",3,""value""]",value,string,Enrollment counts learners registered on census day.
+"[""metadata_sets"",1,""values"",3,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""metadata_sets"",1,""values"",3,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",1,""values"",4]",4,object,
+"[""metadata_sets"",1,""values"",4,""concept_id""]",concept_id,string,STATISTICAL_UNIT
+"[""metadata_sets"",1,""values"",4,""value""]",value,string,Learners registered on census day.
+"[""metadata_sets"",1,""values"",4,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""metadata_sets"",1,""values"",4,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",1,""values"",5]",5,object,
+"[""metadata_sets"",1,""values"",5,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_sets"",1,""values"",5,""value""]",value,string,2024 and 2025
+"[""metadata_sets"",1,""values"",5,""evidence_quote""]",evidence_quote,string,"Primary                            Female                            2024                              78748                                 Students                                  Final
+
+     Primary                            Female                            2025                              118162                                Students                                  Provisional"
+"[""metadata_sets"",1,""values"",5,""source_location""]",source_location,string,"Chunk 3, PAGE 2"
+"[""metadata_sets"",1,""values"",6]",6,object,
+"[""metadata_sets"",1,""values"",6,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_sets"",1,""values"",6,""value""]",value,string,Administrative counts become final after duplicate removal.
+"[""metadata_sets"",1,""values"",6,""evidence_quote""]",evidence_quote,string,Administrative counts become final after duplicate removal. Modelled completion estimates may change with revised survey weights.
+"[""metadata_sets"",1,""values"",6,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",1,""values"",7]",7,object,
+"[""metadata_sets"",1,""values"",7,""concept_id""]",concept_id,string,CONF
+"[""metadata_sets"",1,""values"",7,""value""]",value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",1,""values"",7,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",1,""values"",7,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",1,""values"",8]",8,object,
+"[""metadata_sets"",1,""values"",8,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_sets"",1,""values"",8,""value""]",value,string,Education-level labels require ISCED mapping review.
+"[""metadata_sets"",1,""values"",8,""evidence_quote""]",evidence_quote,string,Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""metadata_sets"",1,""values"",8,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",1,""values"",9]",9,object,
+"[""metadata_sets"",1,""values"",9,""concept_id""]",concept_id,string,COMPARABILITY
+"[""metadata_sets"",1,""values"",9,""value""]",value,string,Education-level labels require ISCED mapping review.
+"[""metadata_sets"",1,""values"",9,""evidence_quote""]",evidence_quote,string,Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""metadata_sets"",1,""values"",9,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",2]",2,object,
+"[""metadata_sets"",2,""metadata_set_id""]",metadata_set_id,string,MS_EDU_LOWER_SECONDARY_COMPLETION_REFMETA_2025
+"[""metadata_sets"",2,""msd_id""]",msd_id,string,MSD_EDU_DATAFLOW_REFMETA
+"[""metadata_sets"",2,""target_id""]",target_id,string,DF_EDU_LOWER_SECONDARY_COMPLETION
+"[""metadata_sets"",2,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",2,""values""]",values,array,
+"[""metadata_sets"",2,""values"",0]",0,object,
+"[""metadata_sets"",2,""values"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_sets"",2,""values"",0,""value""]",value,string,"Lower-secondary completion by wealth quintile, sex and year."
+"[""metadata_sets"",2,""values"",0,""evidence_quote""]",evidence_quote,string,"Table 2. Lower-secondary completion by wealth quintile
+
+    Wealth quintile                  Sex                             Year                             Value                               Unit                               Status"
+"[""metadata_sets"",2,""values"",0,""source_location""]",source_location,string,"Chunk 4, PAGE 3"
+"[""metadata_sets"",2,""values"",1]",1,object,
+"[""metadata_sets"",2,""values"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_sets"",2,""values"",1,""value""]",value,string,Synthetic Household Learning Survey; completion rates are described as separately modelled household-survey estimates by wealth quintile and sex.
+"[""metadata_sets"",2,""values"",1,""evidence_quote""]",evidence_quote,string,"Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.
+Source description
+Synthetic Education Management Information System and Synthetic Household Learning Survey."
+"[""metadata_sets"",2,""values"",1,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",2,""values"",2]",2,object,
+"[""metadata_sets"",2,""values"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_sets"",2,""values"",2,""value""]",value,string,Completion rates are separately modelled household-survey estimates by wealth quintile and sex.
+"[""metadata_sets"",2,""values"",2,""evidence_quote""]",evidence_quote,string,Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.
+"[""metadata_sets"",2,""values"",2,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",2,""values"",3]",3,object,
+"[""metadata_sets"",2,""values"",3,""concept_id""]",concept_id,string,STAT_CONCEPT_DEF
+"[""metadata_sets"",2,""values"",3,""value""]",value,string,Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""metadata_sets"",2,""values"",3,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""metadata_sets"",2,""values"",3,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",2,""values"",4]",4,object,
+"[""metadata_sets"",2,""values"",4,""concept_id""]",concept_id,string,STATISTICAL_UNIT
+"[""metadata_sets"",2,""values"",4,""value""]",value,string,The relevant cohort for the stated education cycle.
+"[""metadata_sets"",2,""values"",4,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""metadata_sets"",2,""values"",4,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",2,""values"",5]",5,object,
+"[""metadata_sets"",2,""values"",5,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_sets"",2,""values"",5,""value""]",value,string,2024
+"[""metadata_sets"",2,""values"",5,""evidence_quote""]",evidence_quote,string,Lowest quintile                      Female                            2024                                  64.0                                  Percent                              Modelled estimate
+"[""metadata_sets"",2,""values"",5,""source_location""]",source_location,string,"Chunk 4, PAGE 3"
+"[""metadata_sets"",2,""values"",6]",6,object,
+"[""metadata_sets"",2,""values"",6,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_sets"",2,""values"",6,""value""]",value,string,Modelled completion estimates may change with revised survey weights.
+"[""metadata_sets"",2,""values"",6,""evidence_quote""]",evidence_quote,string,Administrative counts become final after duplicate removal. Modelled completion estimates may change with revised survey weights.
+"[""metadata_sets"",2,""values"",6,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",2,""values"",7]",7,object,
+"[""metadata_sets"",2,""values"",7,""concept_id""]",concept_id,string,CONF
+"[""metadata_sets"",2,""values"",7,""value""]",value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",2,""values"",7,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",2,""values"",7,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",2,""values"",8]",8,object,
+"[""metadata_sets"",2,""values"",8,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_sets"",2,""values"",8,""value""]",value,string,Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""metadata_sets"",2,""values"",8,""evidence_quote""]",evidence_quote,string,Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""metadata_sets"",2,""values"",8,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",2,""values"",9]",9,object,
+"[""metadata_sets"",2,""values"",9,""concept_id""]",concept_id,string,COMPARABILITY
+"[""metadata_sets"",2,""values"",9,""value""]",value,string,Education-level labels require ISCED mapping review; wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""metadata_sets"",2,""values"",9,""evidence_quote""]",evidence_quote,string,Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""metadata_sets"",2,""values"",9,""source_location""]",source_location,string,"Chunk 1, PAGE 1"
+"[""metadata_sets"",3]",3,object,
+"[""metadata_sets"",3,""metadata_set_id""]",metadata_set_id,string,MS_EDU_ENROLLMENT_DATASET_STATUS_2025
+"[""metadata_sets"",3,""msd_id""]",msd_id,string,MSD_EDU_DATAFLOW_REFMETA
+"[""metadata_sets"",3,""target_id""]",target_id,string,DS_EDU_ENROLLMENT_TABLE1
+"[""metadata_sets"",3,""target_type""]",target_type,string,DATASET
+"[""metadata_sets"",3,""values""]",values,array,
+"[""metadata_sets"",3,""values"",0]",0,object,
+"[""metadata_sets"",3,""values"",0,""concept_id""]",concept_id,string,STATUS_NOTE
+"[""metadata_sets"",3,""values"",0,""value""]",value,string,2025 enrollment is provisional.
+"[""metadata_sets"",3,""values"",0,""evidence_quote""]",evidence_quote,string,Footnote: 2025 enrollment is provisional.
+"[""metadata_sets"",3,""values"",0,""source_location""]",source_location,string,"Chunk 3, PAGE 2"
+"[""metadata_sets"",4]",4,object,
+"[""metadata_sets"",4,""metadata_set_id""]",metadata_set_id,string,MS_EDU_LOWER_SECONDARY_COMPLETION_DATASET_STATUS_2025
+"[""metadata_sets"",4,""msd_id""]",msd_id,string,MSD_EDU_DATAFLOW_REFMETA
+"[""metadata_sets"",4,""target_id""]",target_id,string,DS_EDU_LOWER_SECONDARY_COMPLETION_TABLE2
+"[""metadata_sets"",4,""target_type""]",target_type,string,DATASET
+"[""metadata_sets"",4,""values""]",values,array,
+"[""metadata_sets"",4,""values"",0]",0,object,
+"[""metadata_sets"",4,""values"",0,""concept_id""]",concept_id,string,STATUS_NOTE
+"[""metadata_sets"",4,""values"",0,""value""]",value,string,All completion rates are modelled estimates.
+"[""metadata_sets"",4,""values"",0,""evidence_quote""]",evidence_quote,string,Footnote: All completion rates are modelled estimates.
+"[""metadata_sets"",4,""values"",0,""source_location""]",source_location,string,"Chunk 4, PAGE 3"

@@ -1,0 +1,138 @@
+DATAFLOW
+========
+
+1. Definition
+-------------
+A Dataflow identifies a logical flow/dataset that uses a particular DSD / Key
+Family.
+
+The DSD tells us what a valid dataset CAN look like.
+The Dataflow tells us which logical dataset is being reported/disseminated using
+that structure.
+
+One DSD can support several Dataflows.
+
+2. Best practices
+-----------------
+A. Do not create a Dataflow automatically for every report table.
+
+B. Create a Dataflow when there is a meaningful logical dataset:
+   - a separately maintained/reportable set;
+   - a distinct thematic flow;
+   - a distinct collection/dissemination responsibility;
+   - a meaningful subset of a common DSD that users should address as a dataset.
+
+C. Reuse one DSD across several Dataflows when their structural dimensions,
+measure and attributes are the same.
+
+D. Name Dataflows for statistical content, not file names.
+   BAD: TABLE_7, SHEET2, REPORT2024.
+   BETTER: ANNUAL_EMPLOYMENT_RATES.
+
+E. Keep edition/year out of the Dataflow ID unless a new flow really is created.
+Time belongs in the data.
+
+F. Record:
+- ID
+- name
+- description
+- maintenance agency
+- version
+- DSD / Key Family reference
+- scope/coverage
+- any subset rules used operationally
+
+G. If a flow only uses a subset of a common codelist, prefer subset/constraint
+logic rather than duplicating the DSD solely for that reason.
+
+3. Example: how it looks
+------------------------
+DSD:
+KF_LABOUR_MARKET
+
+Dataflows:
+DF_EMPLOYMENT_RATE
+DF_UNEMPLOYMENT_RATE
+DF_LABOUR_FORCE_PARTICIPATION
+
+All three could use the same Key Family if their dimensions/attributes are the
+same and INDICATOR distinguishes the measures appropriately. Depending on the
+design, they might instead be one broader Dataflow; the choice should reflect the
+real logical dataset rather than report layout.
+
+Illustrative SDMX-ML-style skeleton:
+
+<Dataflow id="DF_EMPLOYMENT" agencyID="MY_AGENCY" version="1.0">
+  <Name xml:lang="en">Employment indicators</Name>
+  <KeyFamilyRef>MY_AGENCY:KF_LABOUR_MARKET(1.0)</KeyFamilyRef>
+</Dataflow>
+
+This is illustrative, not schema-complete.
+
+4. Formal / practical formats
+-----------------------------
+Formal SDMX 2.0:
+- SDMX-ML XML structure message.
+
+Practical catalog:
+DATAFLOW_ID
+NAME
+DESCRIPTION
+AGENCY
+VERSION
+DSD_ID
+DSD_VERSION
+SCOPE
+REPORT_SECTIONS
+NOTES
+
+5. Questions to decide whether two tables need one or two Dataflows
+-------------------------------------------------------------------
+- Do they represent the same logical dataset?
+- Are they maintained/released together?
+- Do they share the same DSD?
+- Is the difference merely a filter/pivot?
+- Would a user reasonably request them as separate datasets?
+- Does one have a materially different population/scope that deserves its own flow?
+
+6. Acceptance checks
+--------------------
+[ ] Dataflow reflects a logical dataset, not a visual table.
+[ ] It references the correct DSD.
+[ ] Name and description are stable across publication years.
+[ ] Scope is documented.
+[ ] Multiple Dataflows sharing one DSD are used deliberately.
+[ ] A new DSD was not created merely to represent a subset.
+
+CORE OFFICIAL SOURCES (checked 2026-09-16)
+-----------------------------------------------
+SDMX 2.0 standards landing page
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+SDMX 2.0 Information Model
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+SDMX 2.0 Implementor's Guide
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+SDMX Guidelines
+https://sdmx.org/guidelines/
+
+Guidelines for the Design of Data Structure Definitions
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+SDMX Glossary 2.1
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Standardising Reference Metadata Reporting in SDMX
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Global Registry - Codelists
+https://registry.sdmx.org/items/codelist.html
+
+IMPORTANT
+---------
+This package targets SDMX 2.0 as requested. In SDMX 2.0 the formal term for a
+Data Structure Definition is "Key Family". Later SDMX statistical guidelines are
+used here only for modelling good practice where the recommendation is compatible
+with the SDMX 2.0 information model.

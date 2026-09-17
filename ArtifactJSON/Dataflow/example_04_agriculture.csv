@@ -1,0 +1,83 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DATAFLOW
+"[""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""source_sha256""]",source_sha256,string,0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f
+"[""principles_file""]",principles_file,string,04_DATAFLOW.txt
+"[""principles_sha256""]",principles_sha256,string,0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Registry artifact catalog
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,Dataflows
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,"The fetched official SDMX registry excerpt lists Dataflows among SDMX registry artifact categories, confirming that dataflows are recognized SDMX structural artifacts. The excerpt does not provide a specific dataflow definition, version, or report-specific artifact."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX 2.0 Information Model
+"[""standard_references"",1,""version""]",version,string,2.0
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",1,""evidence""]",evidence,string,"The SDMX 2.0 Information Model is identified in the supplied principles as the formal source for SDMX 2.0 artifact mechanics, including dataflows and Key Families. No fetched excerpt was supplied that confirms exact clauses or identifiers for the report-specific draft dataflows."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Guidance
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,Guidelines for the Design of Data Structure Definitions
+"[""standard_references"",2,""version""]",version,string,1.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,The supplied principles identify the SDMX DSD design guidelines as modelling guidance compatible with SDMX 2.0 practice. No fetched excerpt was supplied to confirm exact guideline text for these dataflow decisions.
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Local draft Key Family reference
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""standard_references"",3,""version""]",version,string,1.0-draft
+"[""standard_references"",3,""url""]",url,string,https://example.invalid/sdmx/synthetic-agricultural-statistics-bureau/KF_AGR_CROP_AREA_PRODUCTION/1.0-draft
+"[""standard_references"",3,""evidence""]",evidence,string,This dataflow references the accepted related local draft Key Family for annual crop area and production. The URL is a placeholder because no authoritative registry URL for the local draft artifact was supplied.
+"[""standard_references"",3,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Local draft Key Family reference
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,KF_AGR_FERTILIZER_RETAIL_PRICE
+"[""standard_references"",4,""version""]",version,string,1.0-draft
+"[""standard_references"",4,""url""]",url,string,https://example.invalid/sdmx/synthetic-agricultural-statistics-bureau/KF_AGR_FERTILIZER_RETAIL_PRICE/1.0-draft
+"[""standard_references"",4,""evidence""]",evidence,string,This dataflow references the accepted related local draft Key Family for monthly fertilizer retail prices. The URL is a placeholder because no authoritative registry URL for the local draft artifact was supplied.
+"[""standard_references"",4,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,No authoritative SDMX registry identifiers or URLs were supplied for the two local draft dataflows or their local Key Families.
+"[""limitations"",1]",1,string,The exact SDMX 2.0 Information Model clauses for Dataflow and Key Family references were not included in the fetched external evidence excerpts.
+"[""limitations"",2]",2,string,The maintenance agency is inferred from the report publisher name; no formal SDMX agency scheme identifier is supplied in the report.
+"[""limitations"",3]",3,string,"Crop names require classification review, and fertilizer products are local market categories rather than verified CPC codes; these gaps affect constraints and mappings but do not require separate dataflows beyond the two logical datasets identified."
+"[""limitations"",4]",4,string,"The local currency is deliberately unnamed, so the fertilizer price dataflow cannot be fully constrained to an ISO 4217-denominated unit from the supplied evidence."
+"[""limitations"",5]",5,string,"No operational subset rules, reporting constraints, or category scheme placements are stated for either dataflow."
+"[""dataflows""]",dataflows,array,
+"[""dataflows"",0]",0,object,
+"[""dataflows"",0,""dataflow_id""]",dataflow_id,string,DF_AGR_CROP_AREA_PRODUCTION
+"[""dataflows"",0,""name""]",name,string,Crop area and production by crop and region
+"[""dataflows"",0,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""dataflows"",0,""version""]",version,string,1.0-draft
+"[""dataflows"",0,""dsd_id""]",dsd_id,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""dataflows"",0,""dsd_agency_id""]",dsd_agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""dataflows"",0,""dsd_version""]",dsd_version,string,1.0-draft
+"[""dataflows"",0,""description""]",description,string,"Logical dataset for annual farm-survey crop harvested area and production aggregates by crop, region, year, and indicator, using a common crop area/production Key Family rather than separate dataflows for area and production columns."
+"[""dataflows"",0,""coverage""]",coverage,string,"Annual observations for crop area and production shown for Rice, Maize, and Cassava; regions Northland, Centralia, and South Coast; years 2024 and 2025; status values Final and Forecast as reported."
+"[""dataflows"",0,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""dataflows"",1]",1,object,
+"[""dataflows"",1,""dataflow_id""]",dataflow_id,string,DF_AGR_FERTILIZER_RETAIL_PRICE
+"[""dataflows"",1,""name""]",name,string,Fertilizer retail prices by product and month
+"[""dataflows"",1,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""dataflows"",1,""version""]",version,string,1.0-draft
+"[""dataflows"",1,""dsd_id""]",dsd_id,string,KF_AGR_FERTILIZER_RETAIL_PRICE
+"[""dataflows"",1,""dsd_agency_id""]",dsd_agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""dataflows"",1,""dsd_version""]",dsd_version,string,1.0-draft
+"[""dataflows"",1,""description""]",description,string,"Logical dataset for monthly fertilizer retail price observations by local fertilizer product category, using the fertilizer retail price Key Family and kept separate from the annual crop production flow because the report identifies it as a separate price structure."
+"[""dataflows"",1,""coverage""]",coverage,string,Monthly observations for fertilizer products Urea and Compound NPK; months 2025-01 through 2025-04; price unit reported as local currency per 50 kg bag; status value Observed as reported.
+"[""dataflows"",1,""evidence_quote""]",evidence_quote,string,Table 2. Fertilizer retail prices by month

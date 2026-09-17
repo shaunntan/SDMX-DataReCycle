@@ -1,0 +1,125 @@
+SOURCE REFERENCE CATALOG
+========================
+
+This file lists authoritative places to search while constructing Concept Schemes,
+Codelists, DSDs and metadata.
+
+1. SDMX 2.0 technical standard
+------------------------------
+Landing page:
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+Information Model:
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+Implementor's Guide:
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+Use for:
+- formal SDMX 2.0 artefact definitions;
+- Key Family/DSD mechanics;
+- SDMX-ML structures;
+- metadata structures;
+- dataflows.
+
+2. SDMX statistical/modelling guidance
+---------------------------------------
+Guidelines:
+https://sdmx.org/guidelines/
+
+DSD design:
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+Glossary:
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Reference metadata:
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+Use for:
+- concept reuse;
+- dimension vs attribute decisions;
+- codelist reuse;
+- reference metadata vocabulary;
+- terminology.
+
+3. SDMX Global Registry
+-----------------------
+Codelist catalog:
+https://registry.sdmx.org/items/codelist.html
+
+Use for:
+- existing SDMX codelists;
+- domain codelists maintained by international agencies;
+- identifying agency/version;
+- checking whether a local code list is actually necessary.
+
+4. Geography
+------------
+UN M49:
+https://unstats.un.org/unsd/methodology/m49/
+
+ISO 3166:
+https://www.iso.org/iso-3166-country-codes.html
+
+Rule:
+Choose according to statistical semantics. Do not automatically prefer one simply
+because the report says "country".
+
+5. Economic/social classifications
+----------------------------------
+UNSD classifications:
+https://unstats.un.org/unsd/classifications/unsdclassifications
+
+UNSD economic classifications:
+https://unstats.un.org/unsd/classifications/Econ
+
+COICOP:
+https://unstats.un.org/unsd/classifications/coicop
+
+ILO ISCO:
+https://isco.ilo.org/
+
+UNESCO ISCED:
+https://www.uis.unesco.org/en/methods-and-tools/isced
+
+Eurostat RAMON:
+https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ramon
+
+Use for:
+- economic activity;
+- products;
+- consumption;
+- occupation;
+- education;
+- correspondence tables between revisions/related classifications.
+
+6. Currency
+-----------
+ISO 4217:
+https://www.iso.org/standard/64758.html
+
+7. Search procedure before creating a new code
+----------------------------------------------
+Step 1  Search the SDMX Global Registry.
+Step 2  Search the relevant classification custodian.
+Step 3  Search existing international SDMX structures in the same domain.
+Step 4  Search relevant regional standards.
+Step 5  Search the source institution's published classifications/codebooks.
+Step 6  Compare definitions/scopes, not only labels/codes.
+Step 7  Record why candidates were accepted or rejected.
+Step 8  Create a new local code only when no adequate equivalent exists.
+
+8. Evidence to record for every reused artefact
+-----------------------------------------------
+SOURCE_AGENCY
+ARTEFACT_TYPE
+ARTEFACT_ID
+VERSION
+URL
+DATE_CHECKED
+DEFINITION/SCOPE
+WHY_REUSED
+ANY_LOCAL_MAPPING
+
+Research snapshot date: 2026-09-16.

@@ -1,0 +1,489 @@
+{
+  "artifact_type": "METADATA_STRUCTURE_DEFINITION_MSD",
+  "source_report": "example_04_agriculture.pdf",
+  "source_sha256": "0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f",
+  "principles_file": "05_METADATA_STRUCTURE_DEFINITION_MSD.txt",
+  "principles_sha256": "f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Technical standard",
+      "artifact_id": "SDMX_2_0_INFORMATION_MODEL",
+      "version": "2.0",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf",
+      "evidence": "The SDMX 2.0 Information Model is identified in the supplied reference package as the technical basis for SDMX 2.0 artefacts, including metadata structures and metadata sets. No fetched excerpt confirming detailed MSD fields was supplied.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / cross-domain concept reference",
+      "artifact_id": "SDMX_GLOSSARY",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The fetched glossary excerpt confirms SDMX glossary coverage of metadata-related terms including Metadata Structure Definition, Metadata Set, Metadata update, Institutional mandate, and the cross-domain concept Geographical coverage with Concept ID COVERAGE_GEO and recommended representation String; Codelist.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Reference metadata guideline",
+      "artifact_id": "STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX",
+      "version": "1.0",
+      "url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+      "evidence": "The supplied principles identify this guideline as SDMX reference-metadata guidance and state that it provides a standard list of reference metadata concepts. No fetched excerpt from the guideline confirming individual concept IDs for this report was supplied.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry catalogue",
+      "artifact_id": "SDMX_GLOBAL_REGISTRY_CODELISTS_AND_METADATA_STRUCTURES",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The fetched registry excerpt shows that the SDMX Global Registry provides searchable structural artefact categories including Codelists and Metadata Structures. It does not confirm a specific reusable MSD for this agriculture report.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic classification",
+      "artifact_id": "UN_M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The fetched UN M49 excerpt confirms that UN M49 provides country and area codes. It does not confirm suitability for the report's synthetic subnational regions Northland, Centralia, and South Coast.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "ISO",
+      "artifact_type": "Currency code standard",
+      "artifact_id": "ISO_4217",
+      "version": "not stated",
+      "url": "https://www.iso.org/standard/64758.html",
+      "evidence": "The supplied reference catalogue identifies ISO 4217 as the standard source for currency identity. The report deliberately leaves the local currency unnamed, so no ISO 4217 currency code can be confirmed for the price dataflow.",
+      "verification_status": "CANDIDATE"
+    }
+  ],
+  "limitations": [
+    "The report does not provide a source URL, contact point, edition number, metadata update date, legal or institutional mandate, sampling design details, imputation methods, seasonal adjustment information, accuracy measures, timeliness measures, or completeness measures.",
+    "The publisher is stated, but no contact details are provided.",
+    "The report states that crop names are common labels and require classification review; no authoritative crop classification mapping is confirmed.",
+    "The report states that fertilizer products are local market categories and not verified CPC codes; no authoritative product classification mapping is confirmed.",
+    "The report states that the local currency is deliberately unnamed, so ISO 4217 currency-code metadata cannot be completed from the report.",
+    "The report uses synthetic regions, but no authoritative geographic classification for Northland, Centralia, or South Coast is provided.",
+    "Exact SDMX Global Reference Metadata Concept Scheme IDs for several useful concepts such as publication title, publication date, source data, methodology, definitions, limitations, and classification-review status were not confirmed by supplied external evidence; local concepts are used where necessary.",
+    "Concept IDs CONTACT, DATA_REV, CONF, and META_UPDATE are listed in the supplied principles as SDMX reference-metadata concepts, but the fetched external excerpts only directly confirm metadata update terminology and do not provide full external definitions for all of these IDs."
+  ],
+  "metadata_structures": [
+    {
+      "msd_id": "MSD_AGRI_REPORT_1_0",
+      "name": "Crop Production and Input Prices report reference metadata structure",
+      "agency_id": "SYNTH_AGRI_BUREAU",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "REPORT_TITLE",
+          "name": "Report title",
+          "definition": "Title of the statistical report or publication.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the visible publication title from page 1. Use the report title rather than the pipeline filename.",
+          "source_standard": "Local concept; exact SDMX reference-metadata concept ID for report or publication title was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "PUBLISHER",
+          "name": "Publisher",
+          "definition": "Organisation responsible for publishing the report.",
+          "representation": "Text; coded organisation representation may be introduced if an authoritative organisation scheme is supplied.",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the organisation named below the report title on page 1.",
+          "source_standard": "Local concept; candidate relation to SDMX organisation metadata concepts, but exact publisher concept ID was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "PUBLICATION_DATE",
+          "name": "Publication date",
+          "definition": "Date on which the report was published.",
+          "representation": "Date",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the date after the label 'Publication date:' on page 1.",
+          "source_standard": "Local concept; exact SDMX reference-metadata concept ID for publication date was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "name": "Data description",
+          "definition": "Narrative description of the statistical content covered by a report, dataflow, dataset, series, or metadata object.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Describe the overall report scope using the title, methodology, source description, and table headings. Preserve the distinction between crop area and production statistics and fertilizer retail price statistics.",
+          "source_standard": "Local concept; candidate mapping to SDMX data-description or statistical-presentation metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "name": "Source data",
+          "definition": "Description of the data sources used to compile the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the Source description section on page 1, retaining the distinct sources for the annual farm survey and the agricultural price panel.",
+          "source_standard": "Local concept; candidate mapping to an SDMX source-data metadata concept was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Narrative description of methods used to produce or compile the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the Methodology paragraph from page 1. Preserve the distinction between annual farm-survey aggregates and the separate monthly outlet-panel price structure.",
+          "source_standard": "Local concept; candidate mapping to SDMX methodology metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "STAT_CONCEPTS_DEF",
+          "name": "Statistical concepts and definitions",
+          "definition": "Definitions of the main statistical concepts used in the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the Definitions paragraph from page 1, including harvested area, production, and retail price definitions.",
+          "source_standard": "Local concept; candidate mapping to SDMX statistical-concepts-and-definitions metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "name": "Recommended uses and limitations",
+          "definition": "Warnings, caveats, classification limitations, and recommended limits on interpretation or use.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the Caveats and limitations paragraph from page 1 and relevant table footnotes from pages 2 and 3.",
+          "source_standard": "Local concept; candidate mapping to SDMX recommended-uses-and-limitations metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "name": "Data revision",
+          "definition": "Policy or practice describing whether and how data are revised.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the Revision policy paragraph from page 1. Do not model forecast, provisional, or final status only as reference metadata if those states are needed as observation-level status attributes in the DSD.",
+          "source_standard": "SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "CONF",
+          "name": "Confidentiality",
+          "definition": "Information on confidentiality, disclosure control, and whether confidential data are included.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the Confidentiality paragraph from page 1.",
+          "source_standard": "SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "CONTACT",
+          "name": "Contact",
+          "definition": "Contact point for enquiries about the report or metadata.",
+          "representation": "Text; coded contact representation may be introduced if an authoritative contact or organisation scheme is supplied.",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "If the report supplies a contact point, extract it. For this source, absence of a contact belongs in the Metadata Set or extraction log, not in the MSD definition.",
+          "source_standard": "SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "META_UPDATE",
+          "name": "Metadata update",
+          "definition": "Date on which the reference metadata were last updated.",
+          "representation": "Date",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "METADATA",
+          "extraction_guidance": "Extract a separate metadata update date only if supplied. Do not substitute the publication date unless the reporting process confirms equivalence; absence should be handled in the Metadata Set using the implementation's missing-value convention.",
+          "source_standard": "SDMX Glossary 2.1 terminology confirmed by fetched excerpt for Metadata update; concept ID META_UPDATE is also listed in the supplied principles.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    },
+    {
+      "msd_id": "MSD_CROP_AREA_PRODUCTION_1_0",
+      "name": "Crop area and production dataflow reference metadata structure",
+      "agency_id": "SYNTH_AGRI_BUREAU",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "name": "Data description",
+          "definition": "Narrative description of the statistical content covered by a report, dataflow, dataset, series, or metadata object.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop area and production dataflow, use Table 1 heading and page 1 methodology to describe annual crop area and production by crop, region, and year.",
+          "source_standard": "Local concept; candidate mapping to SDMX data-description or statistical-presentation metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "name": "Source data",
+          "definition": "Description of the data sources used to compile the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, extract the crop-relevant source, Synthetic Annual Farm Survey, and relate it to the page 1 statement that crop area and production are annual farm-survey aggregates.",
+          "source_standard": "Local concept; candidate mapping to an SDMX source-data metadata concept was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Narrative description of methods used to produce or compile the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, extract the crop-relevant part of the methodology: crop area and production are annual farm-survey aggregates.",
+          "source_standard": "Local concept; candidate mapping to SDMX methodology metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "STAT_CONCEPTS_DEF",
+          "name": "Statistical concepts and definitions",
+          "definition": "Definitions of the main statistical concepts used in the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, extract the definitions of harvested area and production from page 1. Do not include the fertilizer retail price definition in crop-specific metadata.",
+          "source_standard": "Local concept; candidate mapping to SDMX statistical-concepts-and-definitions metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "name": "Geographical coverage",
+          "definition": "Territorial or geographic coverage of the statistics, distinct from any reference-area dimension used in statistical data.",
+          "representation": "String; codelist may be used only if an authoritative geographic classification is supplied.",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, describe coverage from Table 1 region labels Northland, Centralia, and South Coast. State in metadata values that the report does not provide an authoritative geographic classification for these synthetic regions.",
+          "source_standard": "SDMX Glossary 2.1 cross-domain concept confirmed in fetched excerpt for Concept ID COVERAGE_GEO.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD",
+          "name": "Reference period coverage",
+          "definition": "Time period covered by the statistics as described in reference metadata.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, use Table 1 years 2024 and 2025 and the footnote that 2025 area and production are forecasts.",
+          "source_standard": "Local concept; exact SDMX reference-metadata concept ID for reference-period coverage was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "CLASSIFICATION_STATUS",
+          "name": "Classification review status",
+          "definition": "Information on whether reported labels or categories have been mapped to an authoritative classification.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, extract the crop-name caveat from page 1 and record that crop names are common labels requiring classification review.",
+          "source_standard": "Local concept introduced because no confirmed SDMX reference-metadata concept ID for this specific classification-review caveat was supplied.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "name": "Recommended uses and limitations",
+          "definition": "Warnings, caveats, classification limitations, and recommended limits on interpretation or use.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, extract crop-relevant limitations: crop names require classification review, forecast production is not observed output, and the Table 1 footnote states that 2025 area and production are forecasts.",
+          "source_standard": "Local concept; candidate mapping to SDMX recommended-uses-and-limitations metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "name": "Data revision",
+          "definition": "Policy or practice describing whether and how data are revised.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, extract the page 1 revision policy and relate it to crop forecasts in Table 1.",
+          "source_standard": "SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "CONF",
+          "name": "Confidentiality",
+          "definition": "Information on confidentiality, disclosure control, and whether confidential data are included.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the crop dataflow, use the report confidentiality statement from page 1.",
+          "source_standard": "SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    },
+    {
+      "msd_id": "MSD_FERTILIZER_RETAIL_PRICES_1_0",
+      "name": "Fertilizer retail prices dataflow reference metadata structure",
+      "agency_id": "SYNTH_AGRI_BUREAU",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "name": "Data description",
+          "definition": "Narrative description of the statistical content covered by a report, dataflow, dataset, series, or metadata object.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the fertilizer retail prices dataflow, use Table 2 heading and page 1 methodology to describe monthly fertilizer retail prices by product and month.",
+          "source_standard": "Local concept; candidate mapping to SDMX data-description or statistical-presentation metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "name": "Source data",
+          "definition": "Description of the data sources used to compile the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the price dataflow, extract the price-relevant source, Synthetic Agricultural Price Panel, and relate it to the page 1 statement that fertilizer retail prices come from a monthly outlet panel.",
+          "source_standard": "Local concept; candidate mapping to an SDMX source-data metadata concept was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Narrative description of methods used to produce or compile the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the price dataflow, extract the price-relevant part of the methodology: fertilizer retail prices come from a monthly outlet panel and form a separate price structure.",
+          "source_standard": "Local concept; candidate mapping to SDMX methodology metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "STAT_CONCEPTS_DEF",
+          "name": "Statistical concepts and definitions",
+          "definition": "Definitions of the main statistical concepts used in the statistics.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the fertilizer price dataflow, extract the page 1 definition that retail price is the median observed price per 50 kg bag.",
+          "source_standard": "Local concept; candidate mapping to SDMX statistical-concepts-and-definitions metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD",
+          "name": "Reference period coverage",
+          "definition": "Time period covered by the statistics as described in reference metadata.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the fertilizer retail prices dataflow, use Table 2 months 2025-01 through 2025-04.",
+          "source_standard": "Local concept; exact SDMX reference-metadata concept ID for reference-period coverage was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "CLASSIFICATION_STATUS",
+          "name": "Classification review status",
+          "definition": "Information on whether reported labels or categories have been mapped to an authoritative classification.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the fertilizer price dataflow, extract the Table 2 footnote that products are local market categories and not verified CPC codes.",
+          "source_standard": "Local concept introduced because no confirmed SDMX reference-metadata concept ID for this specific classification-review caveat was supplied.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "CURRENCY_INFORMATION",
+          "name": "Currency information",
+          "definition": "Information on the currency or monetary unit used for price statistics.",
+          "representation": "Text; ISO 4217 code only if the currency is identified by the source or by later authoritative mapping.",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the fertilizer price dataflow, extract that the unit is local currency per 50 kg bag and preserve the limitation that the local currency is deliberately unnamed.",
+          "source_standard": "Local concept; ISO 4217 is a candidate standard for currency identity but no currency code is confirmed for this report.",
+          "source_url": "https://www.iso.org/standard/64758.html"
+        },
+        {
+          "concept_id": "RECOMMENDED_USES_AND_LIMITATIONS",
+          "name": "Recommended uses and limitations",
+          "definition": "Warnings, caveats, classification limitations, and recommended limits on interpretation or use.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the fertilizer price dataflow, extract limitations that fertilizer product categories are local market categories, CPC codes are not verified, and the local currency is deliberately unnamed.",
+          "source_standard": "Local concept; candidate mapping to SDMX recommended-uses-and-limitations metadata was not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "CONF",
+          "name": "Confidentiality",
+          "definition": "Information on confidentiality, disclosure control, and whether confidential data are included.",
+          "representation": "Text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the fertilizer price dataflow, use the report confidentiality statement from page 1.",
+          "source_standard": "SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "name": "Data revision",
+          "definition": "Policy or practice describing whether and how data are revised.",
+          "representation": "Text",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the fertilizer price dataflow, extract a revision policy only if it is explicitly applicable to price observations. Do not assume that the crop forecast revision policy applies to fertilizer prices.",
+          "source_standard": "SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "artifact_type": "DSD / KEY FAMILY",
+  "source_report": "example_02_health_system.pdf",
+  "source_sha256": "5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23",
+  "principles_file": "03_DSD_KEY_FAMILY.txt",
+  "principles_sha256": "b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Concepts / cross-domain concepts",
+      "artifact_id": "SDMX Glossary / Cross-Domain Concepts",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The supplied glossary excerpt describes SDMX cross-domain concepts for reuse, gives Observation Status as concept ID OBS_STATUS with codelist ID CL_OBS_STATUS, and refers to Reference area as a DSD dimension. This supports reuse of common SDMX concept identifiers where semantically appropriate, but does not confirm all codelist versions or codes used here.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist catalog",
+      "artifact_id": "SDMX Global Registry Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied registry excerpt confirms that the SDMX Global Registry provides a codelist catalog searchable by identifier, name and latest version. It does not provide detailed entries for CL_FREQ, CL_OBS_STATUS, CL_UNIT_MULT, CL_DECIMALS or unit codelists in the supplied evidence.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographical classification",
+      "artifact_id": "UN M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The supplied UN M49 excerpt lists recognized countries and areas with numeric and alpha-3 codes, for example France, Germany, India and the United States of America. The report areas Northland, Centralia and South Coast are synthetic/local and no UN M49 mapping is confirmed from the supplied evidence.",
+      "verification_status": "CANDIDATE"
+    }
+  ],
+  "limitations": [
+    "The report states that all records and values are synthetic, so proposed agency and local codelist identifiers are structural placeholders rather than production-maintained artefacts.",
+    "Cause labels resemble broad ICD families, but no ICD version is confirmed; therefore cause is modelled with a local broad cause codelist rather than an ICD codelist.",
+    "Northland, Centralia and South Coast are not confirmed as standard geographical areas in the supplied official-source evidence; REF_AREA therefore uses a local area codelist.",
+    "Exact SDMX codelist versions and detailed code mappings for frequency, observation status and units were not confirmed from the supplied external evidence.",
+    "Private-sector bed reporting is incomplete in 2024, which is a data-quality caveat outside the DSD except for the observation status attribute.",
+    "The report does not provide sex, detailed population, denominator, facility type, or subnational geography for the hospital bed table."
+  ],
+  "data_structures": [
+    {
+      "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+      "name": "Registered deaths by area, cause, age and year",
+      "agency_id": "SYN_PHA",
+      "version": "1.0",
+      "statistical_scope": "Counts of synthetic registered death events during the calendar year, classified by reference area, broad underlying cause, age group and year.",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Codelist",
+          "codelist_agency": "SDMX",
+          "codelist_id": "CL_FREQ",
+          "codelist_version": "not confirmed",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Annual frequency is inferred from the report's use of calendar-year death counts and year values. Exact SDMX CL_FREQ version/code is not confirmed in supplied external evidence.",
+          "evidence_quote": "Registered deaths count events during the calendar year."
+        },
+        {
+          "position": 2,
+          "concept_id": "REF_AREA",
+          "role": "DIMENSION",
+          "representation": "Codelist",
+          "codelist_agency": "SYN_PHA",
+          "codelist_id": "CL_HEALTH_AREA",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Reference area values are local/synthetic report areas such as Northland, Centralia and South Coast; no standard area mapping is confirmed.",
+          "evidence_quote": "Table 1. Registered deaths by area, cause, age and year"
+        },
+        {
+          "position": 3,
+          "concept_id": "CAUSE_OF_DEATH",
+          "role": "DIMENSION",
+          "representation": "Codelist",
+          "codelist_agency": "SYN_PHA",
+          "codelist_id": "CL_BROAD_CAUSE_OF_DEATH",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Local broad cause dimension. ICD mapping is not confirmed and must not be assumed.",
+          "evidence_quote": "Deaths are synthetic registered events classified by underlying cause and age group."
+        },
+        {
+          "position": 4,
+          "concept_id": "AGE",
+          "role": "DIMENSION",
+          "representation": "Codelist",
+          "codelist_agency": "SYN_PHA",
+          "codelist_id": "CL_HEALTH_AGE_GROUP",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Age groups are report-specific groups observed as 45-64 and 65+. A domain-standard age codelist was not confirmed from supplied evidence.",
+          "evidence_quote": "Deaths are synthetic registered events classified by underlying cause and age group."
+        },
+        {
+          "position": 5,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "Time period",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "ObservationalTimePeriod",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "The report presents year values 2023 and 2024; model year as TIME_PERIOD rather than separate year columns.",
+          "evidence_quote": "Table 1. Registered deaths by area, cause, age and year"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Numeric",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Integer",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Primary measure is the registered death count for the dimensional key and time period.",
+          "evidence_quote": "Registered deaths count events during the calendar year."
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Codelist",
+          "codelist_agency": "SYN_PHA",
+          "codelist_id": "CL_HEALTH_UNIT_MEASURE",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "Unit is constant for this structure as deaths; no authoritative unit codelist mapping was confirmed from supplied external evidence.",
+          "evidence_quote": "Deaths are synthetic registered events classified by underlying cause and age group."
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "representation": "Codelist",
+          "codelist_agency": "SYN_PHA",
+          "codelist_id": "CL_HEALTH_OBS_STATUS",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "OBSERVATION",
+          "notes": "Observation status distinguishes final and provisional death counts. Mapping to SDMX CL_OBS_STATUS is a candidate only because exact code details were not supplied.",
+          "evidence_quote": "Footnote: 2024 death counts are provisional."
+        }
+      ]
+    },
+    {
+      "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+      "name": "Available hospital beds by ownership",
+      "agency_id": "SYN_PHA",
+      "version": "1.0",
+      "statistical_scope": "Year-end stock count of available staffed hospital beds by ownership category and year.",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Codelist",
+          "codelist_agency": "SDMX",
+          "codelist_id": "CL_FREQ",
+          "codelist_version": "not confirmed",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Annual frequency is inferred from year values and the 31 December stock definition. Exact SDMX CL_FREQ version/code is not confirmed in supplied external evidence.",
+          "evidence_quote": "Available beds are staffed beds available on 31 December."
+        },
+        {
+          "position": 2,
+          "concept_id": "OWNERSHIP",
+          "role": "DIMENSION",
+          "representation": "Codelist",
+          "codelist_agency": "SYN_PHA",
+          "codelist_id": "CL_HOSPITAL_OWNERSHIP",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Local ownership categories observed in the report include Public, Private non-profit and Private for-profit. No external standard ownership classification was confirmed from supplied evidence.",
+          "evidence_quote": "Table 2. Available hospital beds by ownership"
+        },
+        {
+          "position": 3,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "Time period",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "ObservationalTimePeriod",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "The report presents year values 2023 and 2024; model year as TIME_PERIOD rather than separate year columns.",
+          "evidence_quote": "Table 2. Available hospital beds by ownership"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Numeric",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Integer",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Primary measure is the stock count of available staffed beds for the ownership category and time period.",
+          "evidence_quote": "Available beds are staffed beds available on 31 December."
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Codelist",
+          "codelist_agency": "SYN_PHA",
+          "codelist_id": "CL_HEALTH_UNIT_MEASURE",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "Unit is constant for this structure as beds; no authoritative unit codelist mapping was confirmed from supplied external evidence.",
+          "evidence_quote": "Available beds are staffed beds available on 31 December."
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "representation": "Codelist",
+          "codelist_agency": "SYN_PHA",
+          "codelist_id": "CL_HEALTH_OBS_STATUS",
+          "codelist_version": "1.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "OBSERVATION",
+          "notes": "Observation status distinguishes final and estimated bed counts. Mapping to SDMX CL_OBS_STATUS is a candidate only because exact code details were not supplied.",
+          "evidence_quote": "Footnote: Private for-profit 2024 values are estimated."
+        }
+      ]
+    }
+  ],
+  "structure_separation_rationale": "Two key families are required because the report explicitly distinguishes registered deaths as event counts by area, cause and age from hospital beds as a year-end facility stock by ownership, and states that hospital beds should not share the mortality DSD."
+}

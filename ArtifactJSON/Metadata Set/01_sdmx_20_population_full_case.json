@@ -1,0 +1,41 @@
+{
+  "artifact_type": "METADATA_SET",
+  "source_report": "01_sdmx_20_population_full_case.xml",
+  "source_sha256": "dd0724ffd8c77e88517d69bd90c9694c94efe3e8f23db55189665b7e7a8a378d",
+  "principles_file": "06_METADATA_SET.txt",
+  "principles_sha256": "78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "metadata_sets": [
+    {
+      "metadata_set_id": "POP_METADATA_SET",
+      "msd_id": "MSD_POP",
+      "target_id": "DF_POP",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "SOURCE",
+          "value": "Illustrative national population register and census tables.",
+          "evidence_quote": "Illustrative national population register and census tables.",
+          "source_location": "XML metadata attribute SOURCE"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Annual population estimates are organised by reference area and age group; growth is represented as a percentage change.",
+          "evidence_quote": "Annual population estimates are organised by reference area and age group; growth is represented as a percentage change.",
+          "source_location": "XML metadata attribute METHODOLOGY"
+        },
+        {
+          "concept_id": "SOURCE_URL",
+          "value": "https://example.org/population/source",
+          "evidence_quote": "https://example.org/population/source",
+          "source_location": "XML metadata attribute SOURCE_URL"
+        }
+      ]
+    }
+  ]
+}

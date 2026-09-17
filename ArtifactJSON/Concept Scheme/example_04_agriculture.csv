@@ -1,0 +1,254 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CONCEPT_SCHEME
+"[""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""source_sha256""]",source_sha256,string,0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f
+"[""principles_file""]",principles_file,string,01_CONCEPT_SCHEME.txt
+"[""principles_sha256""]",principles_sha256,string,618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept reference
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied official-source excerpt identifies the SDMX Glossary Version 2.1 and describes cross-domain concepts as reusable concepts with specified IDs, names, representations and codelists. The excerpt includes relevant terminology such as frequency of observation, indicator, measure, reference area and metadata concepts, but it does not provide full formal definitions or exact concept-scheme artefact identifiers for every concept reused here."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied official-source excerpt confirms that the SDMX Global Registry provides a searchable codelist catalog and export functions. It does not confirm exact codelist contents or versions for the report-specific status, unit, product, crop or region values."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,UNSD
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",2,""version""]",version,string,not stated
+"[""standard_references"",2,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied official-source excerpt shows UN M49 country or area entries with numeric and alpha codes. The report uses synthetic regions, so no direct mapping to UN M49 is confirmed."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Reference metadata guidance
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",3,""version""]",version,string,1.0
+"[""standard_references"",3,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",3,""evidence""]",evidence,string,"The supplied reference package names this SDMX document as a source for standardising reference metadata reporting, but no fetched external excerpt was supplied here to confirm exact metadata concept IDs or definitions for methodology, source data, revisions, confidentiality or limitations."
+"[""standard_references"",3,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,Exact formal SDMX cross-domain concept scheme ID and version were not confirmed from the supplied external evidence; SDMX mappings are therefore recorded as candidate mappings where appropriate.
+"[""limitations"",1]",1,string,Crop names are common labels and the report explicitly says they require classification review; no authoritative crop classification mapping is confirmed.
+"[""limitations"",2]",2,string,"Fertilizer products are local market categories and the report explicitly says they are not verified CPC codes; PRODUCT is used as the reusable statistical concept, but product codes remain local pending classification review."
+"[""limitations"",3]",3,string,"The local currency used in fertilizer price units is deliberately unnamed, so currency identity cannot be standardized from the report."
+"[""limitations"",4]",4,string,Regions are synthetic local labels; no authoritative geographic codes are confirmed.
+"[""limitations"",5]",5,string,"Status values such as Final, Forecast and Observed are report-specific in the supplied evidence and are not confirmed as exact codes from a standard SDMX observation-status codelist."
+"[""limitations"",6]",6,string,The report supports at least two statistical structures: annual crop area/production aggregates and monthly fertilizer retail prices. This concept scheme collects shared and structure-specific concepts without assuming one DSD per table.
+"[""limitations"",7]",7,string,"Reference-metadata concepts found on page 1 are included for MSD handoff, but this artifact does not define metadata attachment levels, a Metadata Structure Definition, a Metadata Set or coded metadata values."
+"[""limitations"",8]",8,string,The agency identifier uses the evidenced full name Synthetic Agricultural Statistics Bureau rather than the unevidenced abbreviation SASB.
+"[""concept_schemes""]",concept_schemes,array,
+"[""concept_schemes"",0]",0,object,
+"[""concept_schemes"",0,""scheme_id""]",scheme_id,string,CS_AGRI_CROP_PRICE
+"[""concept_schemes"",0,""name""]",name,string,Crop production and input price concepts
+"[""concept_schemes"",0,""agency_id""]",agency_id,string,SyntheticAgriculturalStatisticsBureau
+"[""concept_schemes"",0,""version""]",version,string,1.0
+"[""concept_schemes"",0,""concepts""]",concepts,array,
+"[""concept_schemes"",0,""concepts"",0]",0,object,
+"[""concept_schemes"",0,""concepts"",0,""concept_id""]",concept_id,string,FREQ
+"[""concept_schemes"",0,""concepts"",0,""name""]",name,string,Frequency
+"[""concept_schemes"",0,""concepts"",0,""definition""]",definition,string,"Rate at which observations occur over time for the statistical structure, such as annual crop aggregates or monthly fertilizer prices."
+"[""concept_schemes"",0,""concepts"",0,""context""]",context,string,Used to distinguish annual farm-survey aggregates from monthly outlet-panel price observations. It may be a fixed dimension or dataset-level attribute in downstream structures.
+"[""concept_schemes"",0,""concepts"",0,""recommended_representation""]",recommended_representation,string,"Codelist; candidate reuse of SDMX CL_FREQ, with annual and monthly values to be confirmed."
+"[""concept_schemes"",0,""concepts"",0,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",0,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",0,""standard_version""]",standard_version,string,2.1 glossary evidence; formal artefact version not confirmed
+"[""concept_schemes"",0,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",0,""local_notes""]",local_notes,string,Candidate standard concept. The need for frequency is justified because the report describes annual crop aggregates and monthly fertilizer prices.
+"[""concept_schemes"",0,""concepts"",0,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""concept_schemes"",0,""concepts"",1]",1,object,
+"[""concept_schemes"",0,""concepts"",1,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""concept_schemes"",0,""concepts"",1,""name""]",name,string,Time period
+"[""concept_schemes"",0,""concepts"",1,""definition""]",definition,string,Time period to which the observation refers.
+"[""concept_schemes"",0,""concepts"",1,""context""]",context,string,"In the crop structure, the source uses calendar years. In the fertilizer price structure, the source uses months expressed as year-month values."
+"[""concept_schemes"",0,""concepts"",1,""recommended_representation""]",recommended_representation,string,"Time period; annual values such as 2024 and 2025, and monthly values such as 2025-01."
+"[""concept_schemes"",0,""concepts"",1,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",1,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",1,""standard_version""]",standard_version,string,2.1 glossary evidence; formal artefact version not confirmed
+"[""concept_schemes"",0,""concepts"",1,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",1,""local_notes""]",local_notes,string,Candidate standard concept. The report has source labels Year and Month rather than a single harmonized time-period field.
+"[""concept_schemes"",0,""concepts"",1,""evidence_quote""]",evidence_quote,string,Table 2. Fertilizer retail prices by month
+"[""concept_schemes"",0,""concepts"",2]",2,object,
+"[""concept_schemes"",0,""concepts"",2,""concept_id""]",concept_id,string,REF_AREA
+"[""concept_schemes"",0,""concepts"",2,""name""]",name,string,Reference area
+"[""concept_schemes"",0,""concepts"",2,""definition""]",definition,string,Geographic or administrative area to which the crop observation refers.
+"[""concept_schemes"",0,""concepts"",2,""context""]",context,string,Used for crop area and production by region. The fertilizer price table has no region field in the supplied report evidence.
+"[""concept_schemes"",0,""concepts"",2,""recommended_representation""]",recommended_representation,string,Local region codelist; no confirmed mapping to UN M49 or ISO 3166.
+"[""concept_schemes"",0,""concepts"",2,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",2,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",2,""standard_version""]",standard_version,string,2.1 glossary evidence; formal artefact version not confirmed
+"[""concept_schemes"",0,""concepts"",2,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",2,""local_notes""]",local_notes,string,"Candidate standard concept for the role of geographic reference area. The actual region codes are local synthetic labels: Northland, Centralia and South Coast."
+"[""concept_schemes"",0,""concepts"",2,""evidence_quote""]",evidence_quote,string,Table 1. Crop area and production by region
+"[""concept_schemes"",0,""concepts"",3]",3,object,
+"[""concept_schemes"",0,""concepts"",3,""concept_id""]",concept_id,string,CROP
+"[""concept_schemes"",0,""concepts"",3,""name""]",name,string,Crop
+"[""concept_schemes"",0,""concepts"",3,""definition""]",definition,string,Crop category for which harvested area and production are reported.
+"[""concept_schemes"",0,""concepts"",3,""context""]",context,string,"Used in the annual crop area and production structure. The report says crop labels require classification review, so no authoritative crop or product classification is confirmed for crop names."
+"[""concept_schemes"",0,""concepts"",3,""recommended_representation""]",recommended_representation,string,Local crop codelist pending classification review.
+"[""concept_schemes"",0,""concepts"",3,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",3,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",3,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",3,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""concept_schemes"",0,""concepts"",3,""local_notes""]",local_notes,string,Local concept retained for crop categories because the report identifies common crop labels and says review is required. It should be reviewed later against appropriate agricultural product or crop classifications.
+"[""concept_schemes"",0,""concepts"",3,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review.
+"[""concept_schemes"",0,""concepts"",4]",4,object,
+"[""concept_schemes"",0,""concepts"",4,""concept_id""]",concept_id,string,PRODUCT
+"[""concept_schemes"",0,""concepts"",4,""name""]",name,string,Product
+"[""concept_schemes"",0,""concepts"",4,""definition""]",definition,string,Product category for which the observation is reported.
+"[""concept_schemes"",0,""concepts"",4,""context""]",context,string,"Used in the monthly fertilizer retail price structure. In this report, the product categories are fertilizer local market categories such as Urea and Compound NPK."
+"[""concept_schemes"",0,""concepts"",4,""recommended_representation""]",recommended_representation,string,Local product codelist pending review; CPC or other authoritative product-classification mapping is not confirmed.
+"[""concept_schemes"",0,""concepts"",4,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",4,""standard_scheme_id""]",standard_scheme_id,string,SDMX common concept candidate; exact concept scheme ID not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",4,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",4,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""concept_schemes"",0,""concepts"",4,""local_notes""]",local_notes,string,"Reuses the common PRODUCT concept at semantic level rather than creating a narrower FERTILIZER_PRODUCT concept. The absence of verified CPC codes is treated as a codelist/code-mapping limitation, not as a reason for a separate concept."
+"[""concept_schemes"",0,""concepts"",4,""evidence_quote""]",evidence_quote,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""concept_schemes"",0,""concepts"",5]",5,object,
+"[""concept_schemes"",0,""concepts"",5,""concept_id""]",concept_id,string,MEASURE
+"[""concept_schemes"",0,""concepts"",5,""name""]",name,string,Statistical measure
+"[""concept_schemes"",0,""concepts"",5,""definition""]",definition,string,"Type of statistical quantity represented by the observation value, such as harvested area, crop production or retail price."
+"[""concept_schemes"",0,""concepts"",5,""context""]",context,string,"Allows the annual crop structure to represent both harvested area and production, and supports the separate price structure for fertilizer retail prices. Values should be defined in a separate local measure or indicator codelist rather than as table-column artefacts."
+"[""concept_schemes"",0,""concepts"",5,""recommended_representation""]",recommended_representation,string,"Local measure codelist with entries such as harvested area, production and retail price; exact standard indicator list not confirmed."
+"[""concept_schemes"",0,""concepts"",5,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",5,""standard_scheme_id""]",standard_scheme_id,string,SDMX Glossary / cross-domain concept reference; exact concept scheme ID not confirmed
+"[""concept_schemes"",0,""concepts"",5,""standard_version""]",standard_version,string,2.1 glossary evidence; formal artefact version not confirmed
+"[""concept_schemes"",0,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",5,""local_notes""]",local_notes,string,"Candidate alignment with SDMX measure or indicator terminology. This is a semantic measure concept, not one concept per PDF column."
+"[""concept_schemes"",0,""concepts"",5,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.
+"[""concept_schemes"",0,""concepts"",6]",6,object,
+"[""concept_schemes"",0,""concepts"",6,""concept_id""]",concept_id,string,OBS_VALUE
+"[""concept_schemes"",0,""concepts"",6,""name""]",name,string,Observation value
+"[""concept_schemes"",0,""concepts"",6,""definition""]",definition,string,"Numeric value observed, estimated or forecast for the selected statistical measure."
+"[""concept_schemes"",0,""concepts"",6,""context""]",context,string,"Carries area, production and fertilizer retail price values after the measure and unit are identified separately."
+"[""concept_schemes"",0,""concepts"",6,""recommended_representation""]",recommended_representation,string,"Numeric; integer for area and production in the report, decimal for retail prices."
+"[""concept_schemes"",0,""concepts"",6,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",6,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",6,""standard_version""]",standard_version,string,2.1 glossary evidence; formal artefact version not confirmed
+"[""concept_schemes"",0,""concepts"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",6,""local_notes""]",local_notes,string,Candidate standard concept. Do not store formatted unit text inside OBS_VALUE; units are represented by UNIT_MEASURE.
+"[""concept_schemes"",0,""concepts"",6,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.
+"[""concept_schemes"",0,""concepts"",7]",7,object,
+"[""concept_schemes"",0,""concepts"",7,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""concept_schemes"",0,""concepts"",7,""name""]",name,string,Unit of measure
+"[""concept_schemes"",0,""concepts"",7,""definition""]",definition,string,Unit in which the observation value is expressed.
+"[""concept_schemes"",0,""concepts"",7,""context""]",context,string,"Used for hectares, tonnes and local currency per 50 kg bag. The unnamed local currency prevents confirmed mapping to ISO 4217 or a standard unit codelist for the price unit."
+"[""concept_schemes"",0,""concepts"",7,""recommended_representation""]",recommended_representation,string,Codelist or controlled string; local unit codelist required for unnamed currency unit.
+"[""concept_schemes"",0,""concepts"",7,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",7,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts; exact concept scheme ID not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",7,""standard_version""]",standard_version,string,2.1 glossary evidence; formal artefact version not confirmed
+"[""concept_schemes"",0,""concepts"",7,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",7,""local_notes""]",local_notes,string,"Candidate standard concept. Hectares and tonnes may later be mapped to authoritative unit codes, but the report evidence does not confirm exact standard unit codes."
+"[""concept_schemes"",0,""concepts"",7,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.
+"[""concept_schemes"",0,""concepts"",8]",8,object,
+"[""concept_schemes"",0,""concepts"",8,""concept_id""]",concept_id,string,OBS_STATUS
+"[""concept_schemes"",0,""concepts"",8,""name""]",name,string,Observation status
+"[""concept_schemes"",0,""concepts"",8,""definition""]",definition,string,"Status or nature of the observation value, such as final, forecast or observed."
+"[""concept_schemes"",0,""concepts"",8,""context""]",context,string,Used to distinguish final and forecast crop values and observed fertilizer price values. Forecast production is explicitly not observed output.
+"[""concept_schemes"",0,""concepts"",8,""recommended_representation""]",recommended_representation,string,"Local status codelist; candidate review against SDMX CL_OBS_STATUS, but exact code mapping is not confirmed."
+"[""concept_schemes"",0,""concepts"",8,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",8,""standard_scheme_id""]",standard_scheme_id,string,SDMX cross-domain concepts / CL_OBS_STATUS candidate; exact version not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",8,""standard_version""]",standard_version,string,2.1 glossary evidence; formal artefact version not confirmed
+"[""concept_schemes"",0,""concepts"",8,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",8,""local_notes""]",local_notes,string,Candidate standard concept. Report-specific status values should not be automatically mapped to standard SDMX status codes without code-level verification.
+"[""concept_schemes"",0,""concepts"",8,""evidence_quote""]",evidence_quote,string,Forecast production is not observed output.
+"[""concept_schemes"",0,""concepts"",9]",9,object,
+"[""concept_schemes"",0,""concepts"",9,""concept_id""]",concept_id,string,COMPILING_ORG
+"[""concept_schemes"",0,""concepts"",9,""name""]",name,string,Compiling organisation
+"[""concept_schemes"",0,""concepts"",9,""definition""]",definition,string,Organisation responsible for compiling or publishing the statistical information.
+"[""concept_schemes"",0,""concepts"",9,""context""]",context,string,Reference metadata concept for the report-level publishing body. The report names the Synthetic Agricultural Statistics Bureau.
+"[""concept_schemes"",0,""concepts"",9,""recommended_representation""]",recommended_representation,string,String or organisation code; no external organisation scheme mapping confirmed.
+"[""concept_schemes"",0,""concepts"",9,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",9,""standard_scheme_id""]",standard_scheme_id,string,SDMX Glossary / cross-domain concept reference; exact concept scheme ID not confirmed
+"[""concept_schemes"",0,""concepts"",9,""standard_version""]",standard_version,string,2.1 glossary evidence; formal artefact version not confirmed
+"[""concept_schemes"",0,""concepts"",9,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",9,""local_notes""]",local_notes,string,Candidate SDMX/common metadata concept. The abbreviation SASB is not in the report and is not used as the maintained agency identifier here.
+"[""concept_schemes"",0,""concepts"",9,""evidence_quote""]",evidence_quote,string,Synthetic Agricultural Statistics Bureau
+"[""concept_schemes"",0,""concepts"",10]",10,object,
+"[""concept_schemes"",0,""concepts"",10,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""concept_schemes"",0,""concepts"",10,""name""]",name,string,Publication date
+"[""concept_schemes"",0,""concepts"",10,""definition""]",definition,string,Date on which the report or dataset was published.
+"[""concept_schemes"",0,""concepts"",10,""context""]",context,string,Reference metadata concept for the release date of the report.
+"[""concept_schemes"",0,""concepts"",10,""recommended_representation""]",recommended_representation,string,Date; source value is textual date 28 May 2026 and may be normalized to ISO date if required by a metadata template.
+"[""concept_schemes"",0,""concepts"",10,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",10,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",10,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",10,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""concept_schemes"",0,""concepts"",10,""local_notes""]",local_notes,string,Local metadata concept. Exact SDMX metadata concept mapping was not confirmed from supplied external evidence.
+"[""concept_schemes"",0,""concepts"",10,""evidence_quote""]",evidence_quote,string,Publication date: 28 May 2026
+"[""concept_schemes"",0,""concepts"",11]",11,object,
+"[""concept_schemes"",0,""concepts"",11,""concept_id""]",concept_id,string,METHODOLOGY
+"[""concept_schemes"",0,""concepts"",11,""name""]",name,string,Methodology
+"[""concept_schemes"",0,""concepts"",11,""definition""]",definition,string,Description of the methods and data-collection approach used to produce the statistics.
+"[""concept_schemes"",0,""concepts"",11,""context""]",context,string,Reference metadata concept covering the annual farm survey basis for crop aggregates and the monthly outlet panel basis for fertilizer prices.
+"[""concept_schemes"",0,""concepts"",11,""recommended_representation""]",recommended_representation,string,Text metadata field.
+"[""concept_schemes"",0,""concepts"",11,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",11,""standard_scheme_id""]",standard_scheme_id,string,Global/reference metadata concepts candidate; exact concept ID and version not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",11,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",11,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",0,""concepts"",11,""local_notes""]",local_notes,string,Included for MSD handoff because methodology is explicitly present in the report. Exact SDMX reference-metadata concept ID is not confirmed here.
+"[""concept_schemes"",0,""concepts"",11,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""concept_schemes"",0,""concepts"",12]",12,object,
+"[""concept_schemes"",0,""concepts"",12,""concept_id""]",concept_id,string,SOURCE_DESCRIPTION
+"[""concept_schemes"",0,""concepts"",12,""name""]",name,string,Source description
+"[""concept_schemes"",0,""concepts"",12,""definition""]",definition,string,Description of the source data collections or panels used for the statistics.
+"[""concept_schemes"",0,""concepts"",12,""context""]",context,string,Reference metadata concept identifying the two synthetic data sources named in the report.
+"[""concept_schemes"",0,""concepts"",12,""recommended_representation""]",recommended_representation,string,Text metadata field; may later be split into coded source and narrative source metadata if required.
+"[""concept_schemes"",0,""concepts"",12,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",12,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",12,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",12,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""concept_schemes"",0,""concepts"",12,""local_notes""]",local_notes,string,Local metadata concept. The report provides source descriptions but no source identifiers or organisation codes.
+"[""concept_schemes"",0,""concepts"",12,""evidence_quote""]",evidence_quote,string,Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.
+"[""concept_schemes"",0,""concepts"",13]",13,object,
+"[""concept_schemes"",0,""concepts"",13,""concept_id""]",concept_id,string,CAVEATS_LIMITATIONS
+"[""concept_schemes"",0,""concepts"",13,""name""]",name,string,Caveats and limitations
+"[""concept_schemes"",0,""concepts"",13,""definition""]",definition,string,"Narrative qualifications, limitations or known constraints affecting interpretation of the statistics."
+"[""concept_schemes"",0,""concepts"",13,""context""]",context,string,"Reference metadata concept for source-stated limitations on crop-name classification, unnamed currency and forecast production."
+"[""concept_schemes"",0,""concepts"",13,""recommended_representation""]",recommended_representation,string,Text metadata field.
+"[""concept_schemes"",0,""concepts"",13,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",13,""standard_scheme_id""]",standard_scheme_id,string,Global/reference metadata concepts candidate; exact concept ID and version not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",13,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",13,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",0,""concepts"",13,""local_notes""]",local_notes,string,"Included for MSD handoff. The supplied external evidence does not confirm an exact SDMX metadata concept ID for limitations, so this is local with candidate alignment only."
+"[""concept_schemes"",0,""concepts"",13,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.
+"[""concept_schemes"",0,""concepts"",14]",14,object,
+"[""concept_schemes"",0,""concepts"",14,""concept_id""]",concept_id,string,REVISION_POLICY
+"[""concept_schemes"",0,""concepts"",14,""name""]",name,string,Revision policy
+"[""concept_schemes"",0,""concepts"",14,""definition""]",definition,string,Policy or practice describing how estimates are updated or finalized over time.
+"[""concept_schemes"",0,""concepts"",14,""context""]",context,string,"Reference metadata concept for treatment of forecasts, provisional estimates and final reconciliation."
+"[""concept_schemes"",0,""concepts"",14,""recommended_representation""]",recommended_representation,string,Text metadata field.
+"[""concept_schemes"",0,""concepts"",14,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",14,""standard_scheme_id""]",standard_scheme_id,string,Global/reference metadata concepts candidate; exact concept ID and version not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",14,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",14,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",0,""concepts"",14,""local_notes""]",local_notes,string,Included for MSD handoff. Exact SDMX data-revision metadata concept mapping was not confirmed from supplied external evidence.
+"[""concept_schemes"",0,""concepts"",14,""evidence_quote""]",evidence_quote,string,Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.
+"[""concept_schemes"",0,""concepts"",15]",15,object,
+"[""concept_schemes"",0,""concepts"",15,""concept_id""]",concept_id,string,CONFIDENTIALITY
+"[""concept_schemes"",0,""concepts"",15,""name""]",name,string,Confidentiality
+"[""concept_schemes"",0,""concepts"",15,""definition""]",definition,string,Information about confidentiality treatment or disclosure conditions for the report data.
+"[""concept_schemes"",0,""concepts"",15,""context""]",context,string,Reference metadata concept indicating that all records and values are synthetic and contain no person-level or confidential data.
+"[""concept_schemes"",0,""concepts"",15,""recommended_representation""]",recommended_representation,string,Text metadata field; could later be represented by a confidentiality-status codelist if an authoritative mapping is confirmed.
+"[""concept_schemes"",0,""concepts"",15,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",15,""standard_scheme_id""]",standard_scheme_id,string,Global/reference metadata concepts candidate; exact concept ID and version not confirmed from supplied evidence
+"[""concept_schemes"",0,""concepts"",15,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",15,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",0,""concepts"",15,""local_notes""]",local_notes,string,Included for MSD handoff. Exact standard metadata concept and codelist mapping are not confirmed from supplied evidence.
+"[""concept_schemes"",0,""concepts"",15,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.

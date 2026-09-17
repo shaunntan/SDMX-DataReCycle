@@ -1,0 +1,207 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,Metadata Set
+"[""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""source_sha256""]",source_sha256,string,71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5
+"[""principles_file""]",principles_file,string,06_METADATA_SET.txt
+"[""principles_sha256""]",principles_sha256,string,78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"Fetched official-source excerpt identifies the SDMX Glossary Version 2.1 and confirms SDMX terminology for Metadata Set, Metadata Structure Definition and Metadata update. The excerpt also confirms COVERAGE_GEO as a cross-domain concept with recommended representation String/Codelist."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Registry catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"Fetched official-source excerpt shows the SDMX Global Registry interface and access to SDMX artefact categories including codelists, concept schemes, metadata structures, metadataflows and structure references. It does not confirm individual report metadata concept IDs used here."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Reference metadata guideline
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",2,""version""]",version,string,1.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,No fetched external excerpt for this guideline was supplied. It remains an authoritative candidate source for later verification of exact SDMX Global Reference Metadata Concept Scheme IDs.
+"[""standard_references"",2,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,UNSD
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Classification reference
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,COICOP
+"[""standard_references"",3,""version""]",version,string,not confirmed
+"[""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""standard_references"",3,""evidence""]",evidence,string,"The supplied reference catalog identifies UNSD COICOP as the authoritative source for consumption-purpose classifications. No fetched COICOP excerpt confirming the report's consumption divisions or revision was supplied, so no confirmed COICOP revision is applied."
+"[""standard_references"",3,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,ISO
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Currency code standard
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,ISO_4217
+"[""standard_references"",4,""version""]",version,string,not confirmed
+"[""standard_references"",4,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""standard_references"",4,""evidence""]",evidence,string,"The supplied reference catalog identifies ISO 4217 as the currency reference source. The report does not name the local currency and no fetched ISO excerpt confirming a specific currency code was supplied, so no ISO 4217 currency code is applied."
+"[""standard_references"",4,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"Exact SDMX Global Reference Metadata Concept Scheme IDs and versions could not be confirmed from supplied external evidence for most metadata concepts; the populated values follow the accepted MSD concept IDs, including local concepts where necessary."
+"[""limitations"",1]",1,string,"The report provides no contact point, source URL, geographic coverage, metadata update date, legal or institutional mandate, publication frequency, detailed collection method, or detailed sampling design; absent optional metadata values are not populated because no verbatim report quote exists for them."
+"[""limitations"",2]",2,string,The report states that consumption divisions resemble COICOP but that the revision is not confirmed; therefore classification information is retained as narrative metadata and not as a confirmed COICOP code or revision.
+"[""limitations"",3]",3,string,The report uses 'Local currency per household per month' but does not name the currency; therefore no ISO 4217 currency code is assigned.
+"[""limitations"",4]",4,string,Dataflow target identifiers are practical local identifiers for this extraction because no separate accepted Dataflow artefact was supplied in the prompt.
+"[""limitations"",5]",5,string,Dataflow-level confidentiality notes are not repeated because the report gives one global confidentiality statement and does not state different confidentiality treatment by dataflow.
+"[""metadata_sets""]",metadata_sets,array,
+"[""metadata_sets"",0]",0,object,
+"[""metadata_sets"",0,""metadata_set_id""]",metadata_set_id,string,MSET_PRICE_CONSUMPTION_REPORT_001
+"[""metadata_sets"",0,""msd_id""]",msd_id,string,MSD_PRICE_CONSUMPTION_REPORT
+"[""metadata_sets"",0,""target_id""]",target_id,string,REPORT_EXAMPLE_05_PRICES_CONSUMPTION
+"[""metadata_sets"",0,""target_type""]",target_type,string,REPORT
+"[""metadata_sets"",0,""values""]",values,array,
+"[""metadata_sets"",0,""values"",0]",0,object,
+"[""metadata_sets"",0,""values"",0,""concept_id""]",concept_id,string,LOCAL_REPORT_TITLE
+"[""metadata_sets"",0,""values"",0,""value""]",value,string,Consumer Prices and Household Spending
+"[""metadata_sets"",0,""values"",0,""evidence_quote""]",evidence_quote,string,Consumer Prices and Household Spending
+"[""metadata_sets"",0,""values"",0,""source_location""]",source_location,string,"Chunk 1, page 1, report heading"
+"[""metadata_sets"",0,""values"",1]",1,object,
+"[""metadata_sets"",0,""values"",1,""concept_id""]",concept_id,string,COMPILING_ORG
+"[""metadata_sets"",0,""values"",1,""value""]",value,string,Synthetic National Statistics Institute
+"[""metadata_sets"",0,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic National Statistics Institute
+"[""metadata_sets"",0,""values"",1,""source_location""]",source_location,string,"Chunk 1, page 1, report heading"
+"[""metadata_sets"",0,""values"",2]",2,object,
+"[""metadata_sets"",0,""values"",2,""concept_id""]",concept_id,string,LOCAL_PUBLICATION_DATE
+"[""metadata_sets"",0,""values"",2,""value""]",value,string,2026-05-09
+"[""metadata_sets"",0,""values"",2,""evidence_quote""]",evidence_quote,string,Publication date: 9 May 2026
+"[""metadata_sets"",0,""values"",2,""source_location""]",source_location,string,"Chunk 1, page 1, publication date"
+"[""metadata_sets"",0,""values"",3]",3,object,
+"[""metadata_sets"",0,""values"",3,""concept_id""]",concept_id,string,LOCAL_REPORT_SUBJECT
+"[""metadata_sets"",0,""values"",3,""value""]",value,string,The CPI is a monthly fixed-basket index classified by consumption division. Household spending is an annual survey estimate by residence and expenditure quintile and is not a CPI observation.
+"[""metadata_sets"",0,""values"",3,""evidence_quote""]",evidence_quote,string,"The CPI is a monthly fixed-basket index classified by consumption division. Household spending is an annual survey estimate by residence and expenditure quintile and is
+not a CPI observation."
+"[""metadata_sets"",0,""values"",3,""source_location""]",source_location,string,"Chunk 1, page 1, Methodology"
+"[""metadata_sets"",0,""values"",4]",4,object,
+"[""metadata_sets"",0,""values"",4,""concept_id""]",concept_id,string,CONF
+"[""metadata_sets"",0,""values"",4,""value""]",value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",0,""values"",4,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",0,""values"",4,""source_location""]",source_location,string,"Chunk 1, page 1, Confidentiality"
+"[""metadata_sets"",1]",1,object,
+"[""metadata_sets"",1,""metadata_set_id""]",metadata_set_id,string,MSET_CPI_REFERENCE_METADATA_001
+"[""metadata_sets"",1,""msd_id""]",msd_id,string,MSD_CPI_REFERENCE_METADATA
+"[""metadata_sets"",1,""target_id""]",target_id,string,DF_SYNTH_CPI_DIVISION_MONTHLY
+"[""metadata_sets"",1,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",1,""values""]",values,array,
+"[""metadata_sets"",1,""values"",0]",0,object,
+"[""metadata_sets"",1,""values"",0,""concept_id""]",concept_id,string,LOCAL_DATA_DESCRIPTION
+"[""metadata_sets"",1,""values"",0,""value""]",value,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""metadata_sets"",1,""values"",0,""evidence_quote""]",evidence_quote,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""metadata_sets"",1,""values"",0,""source_location""]",source_location,string,"Chunk 1, page 1, Methodology"
+"[""metadata_sets"",1,""values"",1]",1,object,
+"[""metadata_sets"",1,""values"",1,""concept_id""]",concept_id,string,LOCAL_SOURCE_DATA
+"[""metadata_sets"",1,""values"",1,""value""]",value,string,Synthetic Consumer Price Survey
+"[""metadata_sets"",1,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Consumer Price Survey and Synthetic Household Budget Survey.
+"[""metadata_sets"",1,""values"",1,""source_location""]",source_location,string,"Chunk 1, page 1, Source description"
+"[""metadata_sets"",1,""values"",2]",2,object,
+"[""metadata_sets"",1,""values"",2,""concept_id""]",concept_id,string,LOCAL_METHODOLOGY
+"[""metadata_sets"",1,""values"",2,""value""]",value,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""metadata_sets"",1,""values"",2,""evidence_quote""]",evidence_quote,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""metadata_sets"",1,""values"",2,""source_location""]",source_location,string,"Chunk 1, page 1, Methodology"
+"[""metadata_sets"",1,""values"",3]",3,object,
+"[""metadata_sets"",1,""values"",3,""concept_id""]",concept_id,string,LOCAL_STATISTICAL_DEFINITIONS
+"[""metadata_sets"",1,""values"",3,""value""]",value,string,CPI measures price change relative to 2023=100.
+"[""metadata_sets"",1,""values"",3,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100.
+"[""metadata_sets"",1,""values"",3,""source_location""]",source_location,string,"Chunk 1, page 1, Definitions"
+"[""metadata_sets"",1,""values"",4]",4,object,
+"[""metadata_sets"",1,""values"",4,""concept_id""]",concept_id,string,LOCAL_INDEX_BASE_PERIOD
+"[""metadata_sets"",1,""values"",4,""value""]",value,string,2023=100
+"[""metadata_sets"",1,""values"",4,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100.
+"[""metadata_sets"",1,""values"",4,""source_location""]",source_location,string,"Chunk 1, page 1, Definitions"
+"[""metadata_sets"",1,""values"",5]",5,object,
+"[""metadata_sets"",1,""values"",5,""concept_id""]",concept_id,string,LOCAL_CLASSIFICATION_SYSTEM
+"[""metadata_sets"",1,""values"",5,""value""]",value,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""metadata_sets"",1,""values"",5,""evidence_quote""]",evidence_quote,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""metadata_sets"",1,""values"",5,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",1,""values"",6]",6,object,
+"[""metadata_sets"",1,""values"",6,""concept_id""]",concept_id,string,LOCAL_CAVEATS_LIMITATIONS
+"[""metadata_sets"",1,""values"",6,""value""]",value,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""metadata_sets"",1,""values"",6,""evidence_quote""]",evidence_quote,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""metadata_sets"",1,""values"",6,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",1,""values"",7]",7,object,
+"[""metadata_sets"",1,""values"",7,""concept_id""]",concept_id,string,LOCAL_CAVEATS_LIMITATIONS
+"[""metadata_sets"",1,""values"",7,""value""]",value,string,April 2025 indices are provisional.
+"[""metadata_sets"",1,""values"",7,""evidence_quote""]",evidence_quote,string,Footnote: April 2025 indices are provisional.
+"[""metadata_sets"",1,""values"",7,""source_location""]",source_location,string,"Chunk 3, page 2, table footnote"
+"[""metadata_sets"",1,""values"",8]",8,object,
+"[""metadata_sets"",1,""values"",8,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_sets"",1,""values"",8,""value""]",value,string,The latest CPI month is provisional.
+"[""metadata_sets"",1,""values"",8,""evidence_quote""]",evidence_quote,string,The latest CPI month is provisional.
+"[""metadata_sets"",1,""values"",8,""source_location""]",source_location,string,"Chunk 1, page 1, Revision policy"
+"[""metadata_sets"",2]",2,object,
+"[""metadata_sets"",2,""metadata_set_id""]",metadata_set_id,string,MSET_HOUSEHOLD_SPENDING_REFERENCE_METADATA_001
+"[""metadata_sets"",2,""msd_id""]",msd_id,string,MSD_HOUSEHOLD_SPENDING_REFERENCE_METADATA
+"[""metadata_sets"",2,""target_id""]",target_id,string,DF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""metadata_sets"",2,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",2,""values""]",values,array,
+"[""metadata_sets"",2,""values"",0]",0,object,
+"[""metadata_sets"",2,""values"",0,""concept_id""]",concept_id,string,LOCAL_DATA_DESCRIPTION
+"[""metadata_sets"",2,""values"",0,""value""]",value,string,Household spending is an annual survey estimate by residence and expenditure quintile and is not a CPI observation.
+"[""metadata_sets"",2,""values"",0,""evidence_quote""]",evidence_quote,string,"Household spending is an annual survey estimate by residence and expenditure quintile and is
+not a CPI observation."
+"[""metadata_sets"",2,""values"",0,""source_location""]",source_location,string,"Chunk 1, page 1, Methodology"
+"[""metadata_sets"",2,""values"",1]",1,object,
+"[""metadata_sets"",2,""values"",1,""concept_id""]",concept_id,string,LOCAL_SOURCE_DATA
+"[""metadata_sets"",2,""values"",1,""value""]",value,string,Synthetic Household Budget Survey
+"[""metadata_sets"",2,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Consumer Price Survey and Synthetic Household Budget Survey.
+"[""metadata_sets"",2,""values"",1,""source_location""]",source_location,string,"Chunk 1, page 1, Source description"
+"[""metadata_sets"",2,""values"",2]",2,object,
+"[""metadata_sets"",2,""values"",2,""concept_id""]",concept_id,string,LOCAL_METHODOLOGY
+"[""metadata_sets"",2,""values"",2,""value""]",value,string,Household spending is an annual survey estimate by residence and expenditure quintile and is not a CPI observation.
+"[""metadata_sets"",2,""values"",2,""evidence_quote""]",evidence_quote,string,"Household spending is an annual survey estimate by residence and expenditure quintile and is
+not a CPI observation."
+"[""metadata_sets"",2,""values"",2,""source_location""]",source_location,string,"Chunk 1, page 1, Methodology"
+"[""metadata_sets"",2,""values"",3]",3,object,
+"[""metadata_sets"",2,""values"",3,""concept_id""]",concept_id,string,LOCAL_STATISTICAL_DEFINITIONS
+"[""metadata_sets"",2,""values"",3,""value""]",value,string,Household spending is mean monthly consumption expenditure per household.
+"[""metadata_sets"",2,""values"",3,""evidence_quote""]",evidence_quote,string,Household spending is mean monthly consumption expenditure per household.
+"[""metadata_sets"",2,""values"",3,""source_location""]",source_location,string,"Chunk 1, page 1, Definitions"
+"[""metadata_sets"",2,""values"",4]",4,object,
+"[""metadata_sets"",2,""values"",4,""concept_id""]",concept_id,string,LOCAL_STATISTICAL_UNIT
+"[""metadata_sets"",2,""values"",4,""value""]",value,string,household
+"[""metadata_sets"",2,""values"",4,""evidence_quote""]",evidence_quote,string,Household spending is mean monthly consumption expenditure per household.
+"[""metadata_sets"",2,""values"",4,""source_location""]",source_location,string,"Chunk 1, page 1, Definitions"
+"[""metadata_sets"",2,""values"",5]",5,object,
+"[""metadata_sets"",2,""values"",5,""concept_id""]",concept_id,string,LOCAL_QUINTILE_DEFINITION
+"[""metadata_sets"",2,""values"",5,""value""]",value,string,Quintiles are defined within the synthetic survey distribution.
+"[""metadata_sets"",2,""values"",5,""evidence_quote""]",evidence_quote,string,Footnote: Quintiles are defined within the synthetic survey distribution.
+"[""metadata_sets"",2,""values"",5,""source_location""]",source_location,string,"Chunk 4, page 3, table footnote"
+"[""metadata_sets"",2,""values"",6]",6,object,
+"[""metadata_sets"",2,""values"",6,""concept_id""]",concept_id,string,LOCAL_SAMPLING_ERROR
+"[""metadata_sets"",2,""values"",6,""value""]",value,string,Survey estimates are subject to sampling error.
+"[""metadata_sets"",2,""values"",6,""evidence_quote""]",evidence_quote,string,Survey estimates are subject to sampling error.
+"[""metadata_sets"",2,""values"",6,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",2,""values"",7]",7,object,
+"[""metadata_sets"",2,""values"",7,""concept_id""]",concept_id,string,LOCAL_UNIT_MEASURE_NOTE
+"[""metadata_sets"",2,""values"",7,""value""]",value,string,Local currency per household per month
+"[""metadata_sets"",2,""values"",7,""evidence_quote""]",evidence_quote,string,Local currency per household per month
+"[""metadata_sets"",2,""values"",7,""source_location""]",source_location,string,"Chunk 4, page 3, Table 2 Unit column"
+"[""metadata_sets"",2,""values"",8]",8,object,
+"[""metadata_sets"",2,""values"",8,""concept_id""]",concept_id,string,LOCAL_UNIT_MEASURE_NOTE
+"[""metadata_sets"",2,""values"",8,""value""]",value,string,The report does not name the local currency.
+"[""metadata_sets"",2,""values"",8,""evidence_quote""]",evidence_quote,string,The report does not name the local currency.
+"[""metadata_sets"",2,""values"",8,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",2,""values"",9]",9,object,
+"[""metadata_sets"",2,""values"",9,""concept_id""]",concept_id,string,LOCAL_CAVEATS_LIMITATIONS
+"[""metadata_sets"",2,""values"",9,""value""]",value,string,The report does not name the local currency. Survey estimates are subject to sampling error.
+"[""metadata_sets"",2,""values"",9,""evidence_quote""]",evidence_quote,string,The report does not name the local currency. Survey estimates are subject to sampling error.
+"[""metadata_sets"",2,""values"",9,""source_location""]",source_location,string,"Chunk 1, page 1, Caveats and limitations"
+"[""metadata_sets"",2,""values"",10]",10,object,
+"[""metadata_sets"",2,""values"",10,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_sets"",2,""values"",10,""value""]",value,string,Household estimates are revised only for processing errors or new calibration weights.
+"[""metadata_sets"",2,""values"",10,""evidence_quote""]",evidence_quote,string,Household estimates are revised only for processing errors or new calibration weights.
+"[""metadata_sets"",2,""values"",10,""source_location""]",source_location,string,"Chunk 1, page 1, Revision policy"

@@ -1,0 +1,125 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DSD_KEY_FAMILY
+"[""source_report""]",source_report,string,02_sdmx_20_consumer_prices_full_case.xml
+"[""source_sha256""]",source_sha256,string,e41976478f67b8426a33a2457c4705df89c2d00027855c16cb0eab12727f4e2e
+"[""principles_file""]",principles_file,string,03_DSD_KEY_FAMILY.txt
+"[""principles_sha256""]",principles_sha256,string,b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""standard_references""]",standard_references,array,
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,Mechanically converted from XML; no AI interpretation was used.
+"[""limitations"",1]",1,string,Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure.
+"[""data_structures""]",data_structures,array,
+"[""data_structures"",0]",0,object,
+"[""data_structures"",0,""dsd_id""]",dsd_id,string,DSD_CPI
+"[""data_structures"",0,""name""]",name,string,Consumer Price Statistics Key Family
+"[""data_structures"",0,""agency_id""]",agency_id,string,DEMO
+"[""data_structures"",0,""version""]",version,string,1.0
+"[""data_structures"",0,""statistical_scope""]",statistical_scope,string,Consumer Price Statistics
+"[""data_structures"",0,""components""]",components,array,
+"[""data_structures"",0,""components"",0]",0,object,
+"[""data_structures"",0,""components"",0,""position""]",position,integer,1
+"[""data_structures"",0,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""data_structures"",0,""components"",0,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",0,""representation""]",representation,string,Coded by CL_CPI_FREQ
+"[""data_structures"",0,""components"",0,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",0,""codelist_id""]",codelist_id,string,CL_CPI_FREQ
+"[""data_structures"",0,""components"",0,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",0,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",0,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",0,""notes""]",notes,string,Mechanically extracted from XML Dimension.
+"[""data_structures"",0,""components"",0,""evidence_quote""]",evidence_quote,string,Consumer Price Statistics Key Family
+"[""data_structures"",0,""components"",1]",1,object,
+"[""data_structures"",0,""components"",1,""position""]",position,integer,2
+"[""data_structures"",0,""components"",1,""concept_id""]",concept_id,string,REF_AREA
+"[""data_structures"",0,""components"",1,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",1,""representation""]",representation,string,Coded by CL_CPI_REF_AREA
+"[""data_structures"",0,""components"",1,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",1,""codelist_id""]",codelist_id,string,CL_CPI_REF_AREA
+"[""data_structures"",0,""components"",1,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",1,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",1,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",1,""notes""]",notes,string,Mechanically extracted from XML Dimension.
+"[""data_structures"",0,""components"",1,""evidence_quote""]",evidence_quote,string,Consumer Price Statistics Key Family
+"[""data_structures"",0,""components"",2]",2,object,
+"[""data_structures"",0,""components"",2,""position""]",position,integer,3
+"[""data_structures"",0,""components"",2,""concept_id""]",concept_id,string,INDICATOR
+"[""data_structures"",0,""components"",2,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",2,""representation""]",representation,string,Coded by CL_CPI_INDICATOR
+"[""data_structures"",0,""components"",2,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",2,""codelist_id""]",codelist_id,string,CL_CPI_INDICATOR
+"[""data_structures"",0,""components"",2,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",2,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",2,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",2,""notes""]",notes,string,Mechanically extracted from XML Dimension.
+"[""data_structures"",0,""components"",2,""evidence_quote""]",evidence_quote,string,Consumer Price Statistics Key Family
+"[""data_structures"",0,""components"",3]",3,object,
+"[""data_structures"",0,""components"",3,""position""]",position,integer,4
+"[""data_structures"",0,""components"",3,""concept_id""]",concept_id,string,PRODUCT_GROUP
+"[""data_structures"",0,""components"",3,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",3,""representation""]",representation,string,Coded by CL_CPI_PRODUCT_GROUP
+"[""data_structures"",0,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",3,""codelist_id""]",codelist_id,string,CL_CPI_PRODUCT_GROUP
+"[""data_structures"",0,""components"",3,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",3,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",3,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",3,""notes""]",notes,string,Mechanically extracted from XML Dimension.
+"[""data_structures"",0,""components"",3,""evidence_quote""]",evidence_quote,string,Consumer Price Statistics Key Family
+"[""data_structures"",0,""components"",4]",4,object,
+"[""data_structures"",0,""components"",4,""position""]",position,integer,5
+"[""data_structures"",0,""components"",4,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""data_structures"",0,""components"",4,""role""]",role,string,TIME
+"[""data_structures"",0,""components"",4,""representation""]",representation,string,String
+"[""data_structures"",0,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",4,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",4,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",4,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",4,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",4,""notes""]",notes,string,Mechanically extracted from XML TimeDimension.
+"[""data_structures"",0,""components"",4,""evidence_quote""]",evidence_quote,string,Consumer Price Statistics Key Family
+"[""data_structures"",0,""components"",5]",5,object,
+"[""data_structures"",0,""components"",5,""position""]",position,null,
+"[""data_structures"",0,""components"",5,""concept_id""]",concept_id,string,OBS_VALUE
+"[""data_structures"",0,""components"",5,""role""]",role,string,MEASURE
+"[""data_structures"",0,""components"",5,""representation""]",representation,string,Double
+"[""data_structures"",0,""components"",5,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",5,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",5,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",5,""data_type""]",data_type,string,Double
+"[""data_structures"",0,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",5,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",5,""notes""]",notes,string,Mechanically extracted from XML PrimaryMeasure.
+"[""data_structures"",0,""components"",5,""evidence_quote""]",evidence_quote,string,Consumer Price Statistics Key Family
+"[""data_structures"",0,""components"",6]",6,object,
+"[""data_structures"",0,""components"",6,""position""]",position,null,
+"[""data_structures"",0,""components"",6,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""data_structures"",0,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",6,""representation""]",representation,string,Coded by CL_CPI_UNIT
+"[""data_structures"",0,""components"",6,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",6,""codelist_id""]",codelist_id,string,CL_CPI_UNIT
+"[""data_structures"",0,""components"",6,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",6,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",6,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""data_structures"",0,""components"",6,""notes""]",notes,string,Mechanically extracted from XML Attribute.
+"[""data_structures"",0,""components"",6,""evidence_quote""]",evidence_quote,string,Consumer Price Statistics Key Family
+"[""data_structures"",0,""components"",7]",7,object,
+"[""data_structures"",0,""components"",7,""position""]",position,null,
+"[""data_structures"",0,""components"",7,""concept_id""]",concept_id,string,OBS_STATUS
+"[""data_structures"",0,""components"",7,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",7,""representation""]",representation,string,Coded by CL_CPI_OBS_STATUS
+"[""data_structures"",0,""components"",7,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",7,""codelist_id""]",codelist_id,string,CL_CPI_OBS_STATUS
+"[""data_structures"",0,""components"",7,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",7,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",7,""usage_status""]",usage_status,string,CONDITIONAL
+"[""data_structures"",0,""components"",7,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""data_structures"",0,""components"",7,""notes""]",notes,string,Mechanically extracted from XML Attribute.
+"[""data_structures"",0,""components"",7,""evidence_quote""]",evidence_quote,string,Consumer Price Statistics Key Family
+"[""structure_separation_rationale""]",structure_separation_rationale,string,Each distinct DSD/Key Family present in the XML is preserved as a separate structure.

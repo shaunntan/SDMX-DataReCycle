@@ -1,0 +1,254 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CONCEPT_SCHEME
+"[""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""source_sha256""]",source_sha256,string,fb3bd37fc247c713e56b54ba1e234b1d05501d32a34d31b3ad2f1ebf6395c0e9
+"[""principles_file""]",principles_file,string,01_CONCEPT_SCHEME.txt
+"[""principles_sha256""]",principles_sha256,string,618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept guidance
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied external excerpt identifies SDMX cross-domain concepts as reusable concepts with specified names, IDs, representations and codelists. It explicitly describes the convention that Observation Status has concept ID OBS_STATUS and codelist ID CL_OBS_STATUS, and includes glossary entries relevant to labour-market modelling such as labour force status, economic activity and frequency-related terms."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Global Registry catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied external excerpt confirms that the SDMX Global Registry provides searchable SDMX artefacts including Concept Schemes and Codelists, with fields and actions such as ID, name, latest version, codelist details, references, changelog and export options."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,UNSD
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",2,""version""]",version,string,not stated
+"[""standard_references"",2,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied external excerpt shows UN M49 provides country or area names with numerical and alpha codes. The report uses synthetic/local regions, so applicability of UN M49 to the report areas is not confirmed."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The supplied external evidence confirms the SDMX OBS_STATUS concept and associated CL_OBS_STATUS codelist ID more directly than other candidate cross-domain concepts; exact standard concept scheme IDs and versions for REF_AREA, SEX, FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE, ACTIVITY and SEASONAL_ADJUST were not confirmed from the supplied excerpts."
+"[""limitations"",1]",1,string,The report states that quarterly unemployment rates and monthly vacancy counts represent different statistical structures; this concept scheme defines reusable meanings but does not force both tables into one DSD / Key Family.
+"[""limitations"",2]",2,string,Age is not modelled as an age-disaggregation concept because the report gives a fixed population coverage statement for unemployment-rate estimates only.
+"[""limitations"",3]",3,string,"Unemployment rate and job vacancies are treated as values of a local INDICATOR representation or as dataflow/structure-level descriptions, not as duplicate primary-measure concepts alongside OBS_VALUE in this concept scheme."
+"[""limitations"",4]",4,string,The report's regions are synthetic/local and are not confirmed as UN M49 or ISO 3166 areas.
+"[""limitations"",5]",5,string,"The report's industry labels are explicitly not confirmed ISIC categories, so ACTIVITY should use a local or later-confirmed industry aggregate codelist."
+"[""limitations"",6]",6,string,"The report does not state decimals, unit multipliers, exact standard codelist versions, or formal agency identifiers for the Synthetic Labour Observatory."
+"[""limitations"",7]",7,string,The report warns that total sex coverage includes respondents outside displayed women/men categories and must not be inferred by summing displayed rows.
+"[""limitations"",8]",8,string,"Reference metadata concepts for methodology, source description, caveats, revision policy and confidentiality are included because the report supplies these statements; exact SDMX Global/MCS concept IDs were not confirmed from the supplied external evidence."
+"[""concept_schemes""]",concept_schemes,array,
+"[""concept_schemes"",0]",0,object,
+"[""concept_schemes"",0,""scheme_id""]",scheme_id,string,CS_LABOUR_MARKET
+"[""concept_schemes"",0,""name""]",name,string,Labour market bulletin concept scheme
+"[""concept_schemes"",0,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""concept_schemes"",0,""version""]",version,string,1.0
+"[""concept_schemes"",0,""concepts""]",concepts,array,
+"[""concept_schemes"",0,""concepts"",0]",0,object,
+"[""concept_schemes"",0,""concepts"",0,""concept_id""]",concept_id,string,REF_AREA
+"[""concept_schemes"",0,""concepts"",0,""name""]",name,string,Reference area
+"[""concept_schemes"",0,""concepts"",0,""definition""]",definition,string,Geographic region to which the unemployment-rate observation refers.
+"[""concept_schemes"",0,""concepts"",0,""context""]",context,string,"Used for the unemployment-rate statistical structure. The report displays local regions such as Northland, Centralia and South Coast; no authoritative area coding system is confirmed."
+"[""concept_schemes"",0,""concepts"",0,""recommended_representation""]",recommended_representation,string,Local area codelist; possible mapping to an authoritative geographic codelist only after confirmation
+"[""concept_schemes"",0,""concepts"",0,""standard_source_agency""]",standard_source_agency,string,SDMX candidate; UNSD UN M49 candidate for possible area representation
+"[""concept_schemes"",0,""concepts"",0,""standard_scheme_id""]",standard_scheme_id,string,REF_AREA candidate; exact SDMX concept scheme ID not confirmed
+"[""concept_schemes"",0,""concepts"",0,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",0,""local_notes""]",local_notes,string,Candidate reuse of the SDMX reference-area concept; report areas are local synthetic regions and should not be mapped to standard geography without additional evidence.
+"[""concept_schemes"",0,""concepts"",0,""evidence_quote""]",evidence_quote,string,"Table 1. Unemployment rate by region, sex and quarter"
+"[""concept_schemes"",0,""concepts"",1]",1,object,
+"[""concept_schemes"",0,""concepts"",1,""concept_id""]",concept_id,string,SEX
+"[""concept_schemes"",0,""concepts"",1,""name""]",name,string,Sex
+"[""concept_schemes"",0,""concepts"",1,""definition""]",definition,string,Sex category used to disaggregate unemployment-rate estimates.
+"[""concept_schemes"",0,""concepts"",1,""context""]",context,string,"Used for unemployment rates. The displayed categories are Women, Men and Total, but Total has special coverage caveats."
+"[""concept_schemes"",0,""concepts"",1,""recommended_representation""]",recommended_representation,string,Codelist; candidate SDMX CL_SEX or local sex codelist with explicit Total definition
+"[""concept_schemes"",0,""concepts"",1,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",1,""standard_scheme_id""]",standard_scheme_id,string,SEX / CL_SEX candidate; exact concept scheme and codelist version not confirmed
+"[""concept_schemes"",0,""concepts"",1,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",1,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""concept_schemes"",0,""concepts"",1,""local_notes""]",local_notes,string,Do not infer the Total category by summing Women and Men; define the local Total code explicitly before any reuse or mapping.
+"[""concept_schemes"",0,""concepts"",1,""evidence_quote""]",evidence_quote,string,"Total sex coverage includes respondents outside the displayed women/men categories;
+it must not be inferred by summing displayed rows."
+"[""concept_schemes"",0,""concepts"",2]",2,object,
+"[""concept_schemes"",0,""concepts"",2,""concept_id""]",concept_id,string,FREQ
+"[""concept_schemes"",0,""concepts"",2,""name""]",name,string,Frequency
+"[""concept_schemes"",0,""concepts"",2,""definition""]",definition,string,Rate at which observations occur over time.
+"[""concept_schemes"",0,""concepts"",2,""context""]",context,string,Quarterly for unemployment rates and monthly for vacancy counts; this difference helps distinguish the two statistical structures.
+"[""concept_schemes"",0,""concepts"",2,""recommended_representation""]",recommended_representation,string,Codelist; candidate SDMX CL_FREQ after version and code confirmation
+"[""concept_schemes"",0,""concepts"",2,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",2,""standard_scheme_id""]",standard_scheme_id,string,FREQ / CL_FREQ candidate; exact concept scheme and codelist version not confirmed
+"[""concept_schemes"",0,""concepts"",2,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",2,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""concept_schemes"",0,""concepts"",2,""local_notes""]",local_notes,string,Use quarterly and monthly frequency values only after confirming the target codelist and code IDs.
+"[""concept_schemes"",0,""concepts"",2,""evidence_quote""]",evidence_quote,string,Quarterly rates and monthly vacancy counts represent different statistical structures.
+"[""concept_schemes"",0,""concepts"",3]",3,object,
+"[""concept_schemes"",0,""concepts"",3,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""concept_schemes"",0,""concepts"",3,""name""]",name,string,Time period
+"[""concept_schemes"",0,""concepts"",3,""definition""]",definition,string,Time period to which the observation refers.
+"[""concept_schemes"",0,""concepts"",3,""context""]",context,string,"Unemployment rates use quarters such as 2025-Q1 and 2025-Q2; vacancy counts use months such as 2025-01, 2025-02 and 2025-03."
+"[""concept_schemes"",0,""concepts"",3,""recommended_representation""]",recommended_representation,string,Time period; quarterly format YYYY-Qn for unemployment rates and monthly format YYYY-MM for vacancies
+"[""concept_schemes"",0,""concepts"",3,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",3,""standard_scheme_id""]",standard_scheme_id,string,TIME_PERIOD candidate; exact concept scheme ID not confirmed
+"[""concept_schemes"",0,""concepts"",3,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",3,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",3,""local_notes""]",local_notes,string,The report uses two temporal granularities; do not merge the structures without a frequency concept or other explicit modelling choice.
+"[""concept_schemes"",0,""concepts"",3,""evidence_quote""]",evidence_quote,string,Table 2. Job vacancies by industry and month
+"[""concept_schemes"",0,""concepts"",4]",4,object,
+"[""concept_schemes"",0,""concepts"",4,""concept_id""]",concept_id,string,POPULATION_AGE_SCOPE
+"[""concept_schemes"",0,""concepts"",4,""name""]",name,string,Population age scope
+"[""concept_schemes"",0,""concepts"",4,""definition""]",definition,string,Population age range covered by the estimate.
+"[""concept_schemes"",0,""concepts"",4,""context""]",context,string,The unemployment-rate estimates have fixed coverage for persons aged 15-64; the report does not show age as a row-level breakdown.
+"[""concept_schemes"",0,""concepts"",4,""recommended_representation""]",recommended_representation,string,String or local age-range code; fixed value 15-64 for the unemployment-rate structure
+"[""concept_schemes"",0,""concepts"",4,""standard_source_agency""]",standard_source_agency,string,Local; SDMX AGE concept not reused because no age disaggregation is present
+"[""concept_schemes"",0,""concepts"",4,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",4,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",4,""source_url""]",source_url,string,not stated
+"[""concept_schemes"",0,""concepts"",4,""local_notes""]",local_notes,string,"This is a coverage/scope concept, not the AGE dimension. Model as an attribute or reference metadata if it is fixed for the dataflow."
+"[""concept_schemes"",0,""concepts"",4,""evidence_quote""]",evidence_quote,string,Unemployment rates are synthetic survey estimates for persons aged 15-64.
+"[""concept_schemes"",0,""concepts"",5]",5,object,
+"[""concept_schemes"",0,""concepts"",5,""concept_id""]",concept_id,string,INDICATOR
+"[""concept_schemes"",0,""concepts"",5,""name""]",name,string,Indicator
+"[""concept_schemes"",0,""concepts"",5,""definition""]",definition,string,Statistical phenomenon represented by an observation.
+"[""concept_schemes"",0,""concepts"",5,""context""]",context,string,"Use only if a design combines multiple reported phenomena under one indicator dimension or local indicator codelist. In a two-structure design, unemployment rate and job vacancies may instead be fixed at dataflow or structure level while OBS_VALUE remains the numeric value carrier."
+"[""concept_schemes"",0,""concepts"",5,""recommended_representation""]",recommended_representation,string,"Local indicator codelist with values for unemployment rate and job vacancies, or fixed dataflow-level metadata when using separate structures"
+"[""concept_schemes"",0,""concepts"",5,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",5,""standard_scheme_id""]",standard_scheme_id,string,Statistical indicator candidate; exact concept ID and scheme not confirmed
+"[""concept_schemes"",0,""concepts"",5,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",5,""local_notes""]",local_notes,string,This repairs the indicator/measure distinction: UNEMPLOYMENT_RATE and JOB_VACANCIES are not separate concepts in this scheme; they should be represented as indicator values or dataflow descriptions unless a later DSD deliberately uses specific measure concepts.
+"[""concept_schemes"",0,""concepts"",5,""evidence_quote""]",evidence_quote,string,Unemployment rate is unemployed persons as a percentage of the labour force. A job vacancy is an unfilled position available for immediate recruitment.
+"[""concept_schemes"",0,""concepts"",6]",6,object,
+"[""concept_schemes"",0,""concepts"",6,""concept_id""]",concept_id,string,OBS_VALUE
+"[""concept_schemes"",0,""concepts"",6,""name""]",name,string,Observation value
+"[""concept_schemes"",0,""concepts"",6,""definition""]",definition,string,Numeric value of the measured variable for a given combination of dimensions.
+"[""concept_schemes"",0,""concepts"",6,""context""]",context,string,Used as the primary measure value carrier for both unemployment-rate percentages and vacancy counts. The source report labels the unemployment measure column as Value and the vacancy measure column as Vacancies.
+"[""concept_schemes"",0,""concepts"",6,""recommended_representation""]",recommended_representation,string,Numeric; decimal for rates and integer for counts
+"[""concept_schemes"",0,""concepts"",6,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",6,""standard_scheme_id""]",standard_scheme_id,string,OBS_VALUE candidate; exact concept scheme ID not confirmed
+"[""concept_schemes"",0,""concepts"",6,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",6,""local_notes""]",local_notes,string,"Do not store formatted strings with units in OBS_VALUE; unit is represented separately by UNIT_MEASURE. The measured phenomenon should be supplied by INDICATOR, dataflow identity, or structure-level metadata."
+"[""concept_schemes"",0,""concepts"",6,""evidence_quote""]",evidence_quote,string,Value
+"[""concept_schemes"",0,""concepts"",7]",7,object,
+"[""concept_schemes"",0,""concepts"",7,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""concept_schemes"",0,""concepts"",7,""name""]",name,string,Unit of measure
+"[""concept_schemes"",0,""concepts"",7,""definition""]",definition,string,Unit in which the observation value is expressed.
+"[""concept_schemes"",0,""concepts"",7,""context""]",context,string,Unemployment rates are expressed as Percent; vacancy counts are expressed as Open positions.
+"[""concept_schemes"",0,""concepts"",7,""recommended_representation""]",recommended_representation,string,Codelist; local unit codelist unless a standard unit list is confirmed
+"[""concept_schemes"",0,""concepts"",7,""standard_source_agency""]",standard_source_agency,string,SDMX / domain authority candidate
+"[""concept_schemes"",0,""concepts"",7,""standard_scheme_id""]",standard_scheme_id,string,UNIT_MEASURE candidate; exact codelist not confirmed
+"[""concept_schemes"",0,""concepts"",7,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",7,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""concept_schemes"",0,""concepts"",7,""local_notes""]",local_notes,string,Percent and Open positions require explicit unit codes; no unit codelist version is supplied in the report.
+"[""concept_schemes"",0,""concepts"",7,""evidence_quote""]",evidence_quote,string,Unit
+"[""concept_schemes"",0,""concepts"",8]",8,object,
+"[""concept_schemes"",0,""concepts"",8,""concept_id""]",concept_id,string,OBS_STATUS
+"[""concept_schemes"",0,""concepts"",8,""name""]",name,string,Observation status
+"[""concept_schemes"",0,""concepts"",8,""definition""]",definition,string,Information about the status or quality of an observation value.
+"[""concept_schemes"",0,""concepts"",8,""context""]",context,string,Used in the unemployment-rate structure to identify Final and Provisional observations.
+"[""concept_schemes"",0,""concepts"",8,""recommended_representation""]",recommended_representation,string,Codelist; SDMX CL_OBS_STATUS candidate for code values after code-level confirmation
+"[""concept_schemes"",0,""concepts"",8,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",8,""standard_scheme_id""]",standard_scheme_id,string,OBS_STATUS / CL_OBS_STATUS
+"[""concept_schemes"",0,""concepts"",8,""standard_version""]",standard_version,string,2.1 glossary confirmation for concept and codelist ID convention; codelist version not confirmed
+"[""concept_schemes"",0,""concepts"",8,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",8,""local_notes""]",local_notes,string,External glossary evidence confirms OBS_STATUS as an SDMX concept ID and CL_OBS_STATUS as the associated codelist ID; individual mappings for Final and Provisional still require code-level confirmation.
+"[""concept_schemes"",0,""concepts"",8,""evidence_quote""]",evidence_quote,string,Footnote: 2025-Q2 rates are provisional.
+"[""concept_schemes"",0,""concepts"",9]",9,object,
+"[""concept_schemes"",0,""concepts"",9,""concept_id""]",concept_id,string,ACTIVITY
+"[""concept_schemes"",0,""concepts"",9,""name""]",name,string,Economic activity
+"[""concept_schemes"",0,""concepts"",9,""definition""]",definition,string,Industry or economic activity grouping to which a vacancy-count observation refers.
+"[""concept_schemes"",0,""concepts"",9,""context""]",context,string,Used for job vacancies by industry and month. The report states the displayed industry labels are local aggregates and are not confirmed ISIC categories.
+"[""concept_schemes"",0,""concepts"",9,""recommended_representation""]",recommended_representation,string,Local industry aggregate codelist; do not map to ISIC without confirmation
+"[""concept_schemes"",0,""concepts"",9,""standard_source_agency""]",standard_source_agency,string,SDMX / UNSD candidate
+"[""concept_schemes"",0,""concepts"",9,""standard_scheme_id""]",standard_scheme_id,string,ACTIVITY candidate; ISIC not confirmed
+"[""concept_schemes"",0,""concepts"",9,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",9,""source_url""]",source_url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""concept_schemes"",0,""concepts"",9,""local_notes""]",local_notes,string,"Although ACTIVITY is a common SDMX-style concept, the report's industry categories must remain local until authoritative classification mapping is supplied."
+"[""concept_schemes"",0,""concepts"",9,""evidence_quote""]",evidence_quote,string,Footnote: Industry labels are local aggregates and are not confirmed ISIC categories.
+"[""concept_schemes"",0,""concepts"",10]",10,object,
+"[""concept_schemes"",0,""concepts"",10,""concept_id""]",concept_id,string,SEASONAL_ADJUST
+"[""concept_schemes"",0,""concepts"",10,""name""]",name,string,Seasonal adjustment
+"[""concept_schemes"",0,""concepts"",10,""definition""]",definition,string,Adjustment status indicating whether observations have been adjusted for seasonal effects.
+"[""concept_schemes"",0,""concepts"",10,""context""]",context,string,Used for job vacancies; all displayed vacancy rows are labelled Seasonally adjusted.
+"[""concept_schemes"",0,""concepts"",10,""recommended_representation""]",recommended_representation,string,Codelist; candidate SDMX CL_SEASONAL_ADJUST after code-level confirmation
+"[""concept_schemes"",0,""concepts"",10,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",10,""standard_scheme_id""]",standard_scheme_id,string,SEASONAL_ADJUST / CL_SEASONAL_ADJUST candidate; exact concept scheme and codelist version not confirmed
+"[""concept_schemes"",0,""concepts"",10,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",10,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""concept_schemes"",0,""concepts"",10,""local_notes""]",local_notes,string,The report gives only Seasonally adjusted; absence of unadjusted values should not be inferred as the codelist scope.
+"[""concept_schemes"",0,""concepts"",10,""evidence_quote""]",evidence_quote,string,Seasonally adjusted
+"[""concept_schemes"",0,""concepts"",11]",11,object,
+"[""concept_schemes"",0,""concepts"",11,""concept_id""]",concept_id,string,METHODOLOGY
+"[""concept_schemes"",0,""concepts"",11,""name""]",name,string,Methodology
+"[""concept_schemes"",0,""concepts"",11,""definition""]",definition,string,Description of the methods used to compile or estimate the reported statistics.
+"[""concept_schemes"",0,""concepts"",11,""context""]",context,string,Reference metadata for the labour market bulletin. The report provides methodology statements for both unemployment-rate estimates and vacancy counts.
+"[""concept_schemes"",0,""concepts"",11,""recommended_representation""]",recommended_representation,string,Text metadata component
+"[""concept_schemes"",0,""concepts"",11,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",11,""standard_scheme_id""]",standard_scheme_id,string,Global reference metadata concept candidate; exact concept ID not confirmed
+"[""concept_schemes"",0,""concepts"",11,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",11,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",0,""concepts"",11,""local_notes""]",local_notes,string,Metadata concept; not an observation-level dimension or attribute unless a later metadata structure requires it at a specific attachment level.
+"[""concept_schemes"",0,""concepts"",11,""evidence_quote""]",evidence_quote,string,"Methodology
+Unemployment rates are synthetic survey estimates for persons aged 15-64. Vacancy counts are compiled independently from a synthetic employer survey and use a
+monthly reference period."
+"[""concept_schemes"",0,""concepts"",12]",12,object,
+"[""concept_schemes"",0,""concepts"",12,""concept_id""]",concept_id,string,SOURCE_DESCRIPTION
+"[""concept_schemes"",0,""concepts"",12,""name""]",name,string,Source description
+"[""concept_schemes"",0,""concepts"",12,""definition""]",definition,string,Description of the survey or collection sources used for the reported statistics.
+"[""concept_schemes"",0,""concepts"",12,""context""]",context,string,Reference metadata identifying the two synthetic data sources used in the bulletin.
+"[""concept_schemes"",0,""concepts"",12,""recommended_representation""]",recommended_representation,string,Text metadata component or local source codelist if coded at dataflow level
+"[""concept_schemes"",0,""concepts"",12,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",12,""standard_scheme_id""]",standard_scheme_id,string,SOURCE / COMPILING_ORG related candidate; exact concept ID not confirmed
+"[""concept_schemes"",0,""concepts"",12,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",12,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",12,""local_notes""]",local_notes,string,Metadata concept; may support separate dataflow metadata for labour-force survey estimates and establishment vacancy survey counts.
+"[""concept_schemes"",0,""concepts"",12,""evidence_quote""]",evidence_quote,string,"Source description
+Synthetic Labour Force Survey and Synthetic Establishment Vacancy Survey."
+"[""concept_schemes"",0,""concepts"",13]",13,object,
+"[""concept_schemes"",0,""concepts"",13,""concept_id""]",concept_id,string,CAVEATS_LIMITATIONS
+"[""concept_schemes"",0,""concepts"",13,""name""]",name,string,Caveats and limitations
+"[""concept_schemes"",0,""concepts"",13,""definition""]",definition,string,"Statements describing limitations, cautions or interpretation constraints for the reported statistics."
+"[""concept_schemes"",0,""concepts"",13,""context""]",context,string,Reference metadata. The report warns against treating the quarterly and monthly series as one structure and warns against summing displayed sex rows to derive Total.
+"[""concept_schemes"",0,""concepts"",13,""recommended_representation""]",recommended_representation,string,Text metadata component
+"[""concept_schemes"",0,""concepts"",13,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",13,""standard_scheme_id""]",standard_scheme_id,string,RECOMMENDED_USES_AND_LIMITATIONS candidate; exact metadata concept ID not confirmed
+"[""concept_schemes"",0,""concepts"",13,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",13,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",0,""concepts"",13,""local_notes""]",local_notes,string,Metadata concept. The caveats have modelling implications for separate structures and for defining the Total sex category.
+"[""concept_schemes"",0,""concepts"",13,""evidence_quote""]",evidence_quote,string,"Caveats and limitations
+Quarterly rates and monthly vacancy counts represent different statistical structures. Total sex coverage includes respondents outside the displayed women/men categories;
+it must not be inferred by summing displayed rows."
+"[""concept_schemes"",0,""concepts"",14]",14,object,
+"[""concept_schemes"",0,""concepts"",14,""concept_id""]",concept_id,string,REVISION_POLICY
+"[""concept_schemes"",0,""concepts"",14,""name""]",name,string,Revision policy
+"[""concept_schemes"",0,""concepts"",14,""definition""]",definition,string,Policy statement describing how reported estimates or counts may be revised or corrected.
+"[""concept_schemes"",0,""concepts"",14,""context""]",context,string,"Reference metadata, not a per-observation status flag. Keep separate from OBS_STATUS, which represents Final or Provisional status in Table 1."
+"[""concept_schemes"",0,""concepts"",14,""recommended_representation""]",recommended_representation,string,Text metadata component
+"[""concept_schemes"",0,""concepts"",14,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",14,""standard_scheme_id""]",standard_scheme_id,string,DATA_REV candidate; exact metadata concept ID not confirmed
+"[""concept_schemes"",0,""concepts"",14,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",14,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",0,""concepts"",14,""local_notes""]",local_notes,string,"Renamed from revision status to avoid confusion with OBS_STATUS. This concept captures policy/methodology text, not row-level status."
+"[""concept_schemes"",0,""concepts"",14,""evidence_quote""]",evidence_quote,string,"Revision policy
+Provisional quarterly estimates are revised after annual weighting. Final vacancy counts may be corrected for reporting errors."
+"[""concept_schemes"",0,""concepts"",15]",15,object,
+"[""concept_schemes"",0,""concepts"",15,""concept_id""]",concept_id,string,CONFIDENTIALITY_STATEMENT
+"[""concept_schemes"",0,""concepts"",15,""name""]",name,string,Confidentiality statement
+"[""concept_schemes"",0,""concepts"",15,""definition""]",definition,string,Statement describing confidentiality or disclosure characteristics of the reported data.
+"[""concept_schemes"",0,""concepts"",15,""context""]",context,string,Reference metadata. The report states that the data are synthetic and contain no person-level or confidential data.
+"[""concept_schemes"",0,""concepts"",15,""recommended_representation""]",recommended_representation,string,Text metadata component
+"[""concept_schemes"",0,""concepts"",15,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""concept_schemes"",0,""concepts"",15,""standard_scheme_id""]",standard_scheme_id,string,CONF candidate; exact metadata concept ID not confirmed
+"[""concept_schemes"",0,""concepts"",15,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",15,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""concept_schemes"",0,""concepts"",15,""local_notes""]",local_notes,string,Metadata concept; do not confuse with an observation-level confidentiality status unless a later structure explicitly requires one.
+"[""concept_schemes"",0,""concepts"",15,""evidence_quote""]",evidence_quote,string,"Confidentiality
+All records and values are synthetic. No person-level or confidential data are included."

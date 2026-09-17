@@ -1,0 +1,238 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODELISTS
+"[""source_report""]",source_report,string,example_02_health_system.pdf
+"[""source_sha256""]",source_sha256,string,5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23
+"[""principles_file""]",principles_file,string,02_CODELISTS.txt
+"[""principles_sha256""]",principles_sha256,string,5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Codelist catalog
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Global Registry - Codelists
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,"The fetched SDMX Global Registry page is a codelist catalog with search, latest version, codelist details, references, changelog, and export functions. The supplied excerpt does not confirm specific code memberships or versions for the health report categories."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,UNSD
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Geographic code system
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,UN M49
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",1,""evidence""]",evidence,string,"The fetched UN M49 excerpt shows country and area names with numeric and alpha codes. The supplied evidence does not contain Northland, Centralia, or South Coast, so the report's synthetic areas are not confirmed as UN M49 areas."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",2,""version""]",version,string,not confirmed
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The shared SDMX guidance identifies CL_OBS_STATUS as the standard observation status codelist and the fetched registry page confirms that the registry provides codelist details. However, the supplied external evidence does not provide the actual CL_OBS_STATUS code list or code definitions, so mappings for Final, Provisional, and Estimated remain candidate mappings only."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,CL_AREA
+"[""standard_references"",3,""version""]",version,string,not confirmed
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,The shared SDMX guidance identifies CL_AREA as a reference area codelist to check first. The supplied external evidence does not confirm whether the synthetic report areas exist in CL_AREA or any domain area list.
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,The report is synthetic; local codelists are proposed from report categories and should be governed before production use.
+"[""limitations"",1]",1,string,"Cause labels resemble ICD families, but the report explicitly states that no ICD version is confirmed; therefore cause codes are local and not mapped to ICD."
+"[""limitations"",2]",2,string,"The supplied external evidence confirms the existence of the SDMX registry and UN M49 source, but not specific SDMX codelist versions or code-level definitions for all candidate mappings."
+"[""limitations"",3]",3,string,"The report does not state an authoritative code system for area, age group, ownership, unit measure, cause, or status categories."
+"[""limitations"",4]",4,string,"Private-sector bed reporting is incomplete in 2024, which affects interpretation of hospital-bed observations but does not create a separate codelist code."
+"[""codelists""]",codelists,array,
+"[""codelists"",0]",0,object,
+"[""codelists"",0,""codelist_id""]",codelist_id,string,CL_HEALTH_AREA_LOCAL
+"[""codelists"",0,""name""]",name,string,Synthetic health reporting areas
+"[""codelists"",0,""agency_id""]",agency_id,string,SYNTH_PH_AGENCY
+"[""codelists"",0,""version""]",version,string,1.0-proposed
+"[""codelists"",0,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""codelists"",0,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",0,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",0,""scope_notes""]",scope_notes,string,"Local codelist for the synthetic areas appearing in the registered deaths table. Reuse of UN M49, ISO 3166, or SDMX CL_AREA is not confirmed from the supplied evidence."
+"[""codelists"",0,""codes""]",codes,array,
+"[""codelists"",0,""codes"",0]",0,object,
+"[""codelists"",0,""codes"",0,""code""]",code,string,NORTHLAND
+"[""codelists"",0,""codes"",0,""name""]",name,string,Northland
+"[""codelists"",0,""codes"",0,""definition""]",definition,string,Synthetic reporting area used in the registered deaths table.
+"[""codelists"",0,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",0,""evidence_quote""]",evidence_quote,string,Northland
+"[""codelists"",0,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"The report contains this area as a statistical reporting category, and no authoritative external area code for it is confirmed in the supplied evidence."
+"[""codelists"",0,""codes"",1]",1,object,
+"[""codelists"",0,""codes"",1,""code""]",code,string,CENTRALIA
+"[""codelists"",0,""codes"",1,""name""]",name,string,Centralia
+"[""codelists"",0,""codes"",1,""definition""]",definition,string,Synthetic reporting area used in the registered deaths table.
+"[""codelists"",0,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",1,""evidence_quote""]",evidence_quote,string,Centralia
+"[""codelists"",0,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The report contains this area as a statistical reporting category, and no authoritative external area code for it is confirmed in the supplied evidence."
+"[""codelists"",0,""codes"",2]",2,object,
+"[""codelists"",0,""codes"",2,""code""]",code,string,SOUTH_COAST
+"[""codelists"",0,""codes"",2,""name""]",name,string,South Coast
+"[""codelists"",0,""codes"",2,""definition""]",definition,string,Synthetic reporting area used in the registered deaths table.
+"[""codelists"",0,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",2,""evidence_quote""]",evidence_quote,string,South Coast
+"[""codelists"",0,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"The report contains this area as a statistical reporting category, and no authoritative external area code for it is confirmed in the supplied evidence."
+"[""codelists"",1]",1,object,
+"[""codelists"",1,""codelist_id""]",codelist_id,string,CL_HEALTH_CAUSE_LOCAL
+"[""codelists"",1,""name""]",name,string,Underlying cause categories for registered deaths
+"[""codelists"",1,""agency_id""]",agency_id,string,SYNTH_PH_AGENCY
+"[""codelists"",1,""version""]",version,string,1.0-proposed
+"[""codelists"",1,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""codelists"",1,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",1,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",1,""scope_notes""]",scope_notes,string,"Local cause codelist for the mortality structure only. The report warns that labels resemble ICD families but gives no confirmed ICD version, so ICD codes are not reused."
+"[""codelists"",1,""codes""]",codes,array,
+"[""codelists"",1,""codes"",0]",0,object,
+"[""codelists"",1,""codes"",0,""code""]",code,string,CIRCULATORY_DISEASES
+"[""codelists"",1,""codes"",0,""name""]",name,string,Circulatory diseases
+"[""codelists"",1,""codes"",0,""definition""]",definition,string,Report category for registered deaths classified by underlying cause; not confirmed as an ICD category or ICD-version-specific grouping.
+"[""codelists"",1,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",1,""codes"",0,""evidence_quote""]",evidence_quote,string,Circulatory diseases
+"[""codelists"",1,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"The report states: ""Cause labels resemble broad ICD families but no ICD version is confirmed."""
+"[""codelists"",1,""codes"",1]",1,object,
+"[""codelists"",1,""codes"",1,""code""]",code,string,NEOPLASMS
+"[""codelists"",1,""codes"",1,""name""]",name,string,Neoplasms
+"[""codelists"",1,""codes"",1,""definition""]",definition,string,Report category for registered deaths classified by underlying cause; not confirmed as an ICD category or ICD-version-specific grouping.
+"[""codelists"",1,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",1,""codes"",1,""evidence_quote""]",evidence_quote,string,Neoplasms
+"[""codelists"",1,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The report states: ""Cause labels resemble broad ICD families but no ICD version is confirmed."""
+"[""codelists"",2]",2,object,
+"[""codelists"",2,""codelist_id""]",codelist_id,string,CL_HEALTH_AGE_GROUP_LOCAL
+"[""codelists"",2,""name""]",name,string,Age groups for registered deaths
+"[""codelists"",2,""agency_id""]",agency_id,string,SYNTH_PH_AGENCY
+"[""codelists"",2,""version""]",version,string,1.0-proposed
+"[""codelists"",2,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""codelists"",2,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",2,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",2,""scope_notes""]",scope_notes,string,"Local codelist for the age groups used in the mortality structure. No domain standard age codelist is confirmed by the supplied evidence, and exact ages are not reported."
+"[""codelists"",2,""codes""]",codes,array,
+"[""codelists"",2,""codes"",0]",0,object,
+"[""codelists"",2,""codes"",0,""code""]",code,string,Y45T64
+"[""codelists"",2,""codes"",0,""name""]",name,string,45-64
+"[""codelists"",2,""codes"",0,""definition""]",definition,string,"Persons aged from 45 through 64 years, as represented by the report's age-group label."
+"[""codelists"",2,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",2,""codes"",0,""evidence_quote""]",evidence_quote,string,45-64
+"[""codelists"",2,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"The report contains this age group as a statistical category, and no semantically equivalent authoritative age-group code is confirmed in the supplied evidence."
+"[""codelists"",2,""codes"",1]",1,object,
+"[""codelists"",2,""codes"",1,""code""]",code,string,Y65_PLUS
+"[""codelists"",2,""codes"",1,""name""]",name,string,65+
+"[""codelists"",2,""codes"",1,""definition""]",definition,string,"Persons aged 65 years and over, as represented by the report's age-group label."
+"[""codelists"",2,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",2,""codes"",1,""evidence_quote""]",evidence_quote,string,65+
+"[""codelists"",2,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The report contains this age group as a statistical category, and no semantically equivalent authoritative age-group code is confirmed in the supplied evidence."
+"[""codelists"",3]",3,object,
+"[""codelists"",3,""codelist_id""]",codelist_id,string,CL_HEALTH_OWNERSHIP_LOCAL
+"[""codelists"",3,""name""]",name,string,Hospital ownership categories
+"[""codelists"",3,""agency_id""]",agency_id,string,SYNTH_PH_AGENCY
+"[""codelists"",3,""version""]",version,string,1.0-proposed
+"[""codelists"",3,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""codelists"",3,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",3,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",3,""scope_notes""]",scope_notes,string,Local codelist for ownership categories in the hospital beds structure. These categories should not be applied to the mortality structure unless separately justified.
+"[""codelists"",3,""codes""]",codes,array,
+"[""codelists"",3,""codes"",0]",0,object,
+"[""codelists"",3,""codes"",0,""code""]",code,string,PUBLIC
+"[""codelists"",3,""codes"",0,""name""]",name,string,Public
+"[""codelists"",3,""codes"",0,""definition""]",definition,string,Hospital ownership category labelled Public in the available hospital beds table.
+"[""codelists"",3,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",3,""codes"",0,""evidence_quote""]",evidence_quote,string,Public
+"[""codelists"",3,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"The report contains this ownership category, and no authoritative ownership classification is confirmed in the supplied evidence."
+"[""codelists"",3,""codes"",1]",1,object,
+"[""codelists"",3,""codes"",1,""code""]",code,string,PRIVATE_NON_PROFIT
+"[""codelists"",3,""codes"",1,""name""]",name,string,Private non-profit
+"[""codelists"",3,""codes"",1,""definition""]",definition,string,Hospital ownership category labelled Private non-profit in the available hospital beds table.
+"[""codelists"",3,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",3,""codes"",1,""evidence_quote""]",evidence_quote,string,Private non-profit
+"[""codelists"",3,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The report contains this ownership category, and no authoritative ownership classification is confirmed in the supplied evidence."
+"[""codelists"",3,""codes"",2]",2,object,
+"[""codelists"",3,""codes"",2,""code""]",code,string,PRIVATE_FOR_PROFIT
+"[""codelists"",3,""codes"",2,""name""]",name,string,Private for-profit
+"[""codelists"",3,""codes"",2,""definition""]",definition,string,Hospital ownership category labelled Private for-profit in the available hospital beds table.
+"[""codelists"",3,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",3,""codes"",2,""evidence_quote""]",evidence_quote,string,Private for-profit
+"[""codelists"",3,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"The report contains this ownership category, and no authoritative ownership classification is confirmed in the supplied evidence."
+"[""codelists"",4]",4,object,
+"[""codelists"",4,""codelist_id""]",codelist_id,string,CL_HEALTH_UNIT_MEASURE_LOCAL
+"[""codelists"",4,""name""]",name,string,Units of measure in the health report
+"[""codelists"",4,""agency_id""]",agency_id,string,SYNTH_PH_AGENCY
+"[""codelists"",4,""version""]",version,string,1.0-proposed
+"[""codelists"",4,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""codelists"",4,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",4,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",4,""scope_notes""]",scope_notes,string,Local unit codelist for the two units appearing in the report. A domain unit codelist should be searched before production implementation.
+"[""codelists"",4,""codes""]",codes,array,
+"[""codelists"",4,""codes"",0]",0,object,
+"[""codelists"",4,""codes"",0,""code""]",code,string,DEATHS
+"[""codelists"",4,""codes"",0,""name""]",name,string,Deaths
+"[""codelists"",4,""codes"",0,""definition""]",definition,string,Count of registered death events during the calendar year.
+"[""codelists"",4,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",4,""codes"",0,""evidence_quote""]",evidence_quote,string,Deaths
+"[""codelists"",4,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"The report uses this unit for registered deaths, and no authoritative domain unit code is confirmed in the supplied evidence."
+"[""codelists"",4,""codes"",1]",1,object,
+"[""codelists"",4,""codes"",1,""code""]",code,string,BEDS
+"[""codelists"",4,""codes"",1,""name""]",name,string,Beds
+"[""codelists"",4,""codes"",1,""definition""]",definition,string,Count of staffed beds available on 31 December.
+"[""codelists"",4,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",4,""codes"",1,""evidence_quote""]",evidence_quote,string,Beds
+"[""codelists"",4,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The report uses this unit for available hospital beds, and no authoritative domain unit code is confirmed in the supplied evidence."
+"[""codelists"",5]",5,object,
+"[""codelists"",5,""codelist_id""]",codelist_id,string,CL_HEALTH_OBS_STATUS_LOCAL
+"[""codelists"",5,""name""]",name,string,Observation status labels in the health report
+"[""codelists"",5,""agency_id""]",agency_id,string,SYNTH_PH_AGENCY
+"[""codelists"",5,""version""]",version,string,1.0-proposed
+"[""codelists"",5,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""codelists"",5,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",5,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",5,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",5,""scope_notes""]",scope_notes,string,Local representation of the status labels appearing in the report. Mapping to SDMX CL_OBS_STATUS is plausible but not confirmed because supplied external evidence does not include code-level CL_OBS_STATUS definitions.
+"[""codelists"",5,""codes""]",codes,array,
+"[""codelists"",5,""codes"",0]",0,object,
+"[""codelists"",5,""codes"",0,""code""]",code,string,FINAL
+"[""codelists"",5,""codes"",0,""name""]",name,string,Final
+"[""codelists"",5,""codes"",0,""definition""]",definition,string,Observation reported as final in the source table.
+"[""codelists"",5,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",0,""evidence_quote""]",evidence_quote,string,Final
+"[""codelists"",5,""codes"",0,""local_creation_justification""]",local_creation_justification,string,The report contains this status label; code-level mapping to an authoritative observation-status code is not confirmed in the supplied evidence.
+"[""codelists"",5,""codes"",1]",1,object,
+"[""codelists"",5,""codes"",1,""code""]",code,string,PROVISIONAL
+"[""codelists"",5,""codes"",1,""name""]",name,string,Provisional
+"[""codelists"",5,""codes"",1,""definition""]",definition,string,Death-count observation subject to revision when late registrations arrive.
+"[""codelists"",5,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",1,""evidence_quote""]",evidence_quote,string,Provisional
+"[""codelists"",5,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The report contains this status label and states: ""Provisional death counts are revised when late registrations arrive."""
+"[""codelists"",5,""codes"",2]",2,object,
+"[""codelists"",5,""codes"",2,""code""]",code,string,ESTIMATED
+"[""codelists"",5,""codes"",2,""name""]",name,string,Estimated
+"[""codelists"",5,""codes"",2,""definition""]",definition,string,Hospital-bed observation reported as estimated and replaced after facility validation.
+"[""codelists"",5,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",2,""evidence_quote""]",evidence_quote,string,Estimated
+"[""codelists"",5,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"The report contains this status label and states: ""Estimated bed counts are replaced after facility validation."""

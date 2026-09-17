@@ -1,0 +1,94 @@
+{
+  "artifact_type": "DATAFLOW",
+  "source_report": "example_04_agriculture.pdf",
+  "source_sha256": "0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f",
+  "principles_file": "04_DATAFLOW.txt",
+  "principles_sha256": "0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry artifact catalog",
+      "artifact_id": "Dataflows",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The fetched official SDMX registry excerpt lists Dataflows among SDMX registry artifact categories, confirming that dataflows are recognized SDMX structural artifacts. The excerpt does not provide a specific dataflow definition, version, or report-specific artifact.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Technical standard",
+      "artifact_id": "SDMX 2.0 Information Model",
+      "version": "2.0",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf",
+      "evidence": "The SDMX 2.0 Information Model is identified in the supplied principles as the formal source for SDMX 2.0 artifact mechanics, including dataflows and Key Families. No fetched excerpt was supplied that confirms exact clauses or identifiers for the report-specific draft dataflows.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Guidance",
+      "artifact_id": "Guidelines for the Design of Data Structure Definitions",
+      "version": "1.0",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf",
+      "evidence": "The supplied principles identify the SDMX DSD design guidelines as modelling guidance compatible with SDMX 2.0 practice. No fetched excerpt was supplied to confirm exact guideline text for these dataflow decisions.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU",
+      "artifact_type": "Local draft Key Family reference",
+      "artifact_id": "KF_AGR_CROP_AREA_PRODUCTION",
+      "version": "1.0-draft",
+      "url": "https://example.invalid/sdmx/synthetic-agricultural-statistics-bureau/KF_AGR_CROP_AREA_PRODUCTION/1.0-draft",
+      "evidence": "This dataflow references the accepted related local draft Key Family for annual crop area and production. The URL is a placeholder because no authoritative registry URL for the local draft artifact was supplied.",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "agency": "SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU",
+      "artifact_type": "Local draft Key Family reference",
+      "artifact_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+      "version": "1.0-draft",
+      "url": "https://example.invalid/sdmx/synthetic-agricultural-statistics-bureau/KF_AGR_FERTILIZER_RETAIL_PRICE/1.0-draft",
+      "evidence": "This dataflow references the accepted related local draft Key Family for monthly fertilizer retail prices. The URL is a placeholder because no authoritative registry URL for the local draft artifact was supplied.",
+      "verification_status": "UNVERIFIED"
+    }
+  ],
+  "limitations": [
+    "No authoritative SDMX registry identifiers or URLs were supplied for the two local draft dataflows or their local Key Families.",
+    "The exact SDMX 2.0 Information Model clauses for Dataflow and Key Family references were not included in the fetched external evidence excerpts.",
+    "The maintenance agency is inferred from the report publisher name; no formal SDMX agency scheme identifier is supplied in the report.",
+    "Crop names require classification review, and fertilizer products are local market categories rather than verified CPC codes; these gaps affect constraints and mappings but do not require separate dataflows beyond the two logical datasets identified.",
+    "The local currency is deliberately unnamed, so the fertilizer price dataflow cannot be fully constrained to an ISO 4217-denominated unit from the supplied evidence.",
+    "No operational subset rules, reporting constraints, or category scheme placements are stated for either dataflow."
+  ],
+  "dataflows": [
+    {
+      "dataflow_id": "DF_AGR_CROP_AREA_PRODUCTION",
+      "name": "Crop area and production by crop and region",
+      "agency_id": "SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU",
+      "version": "1.0-draft",
+      "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+      "dsd_agency_id": "SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU",
+      "dsd_version": "1.0-draft",
+      "description": "Logical dataset for annual farm-survey crop harvested area and production aggregates by crop, region, year, and indicator, using a common crop area/production Key Family rather than separate dataflows for area and production columns.",
+      "coverage": "Annual observations for crop area and production shown for Rice, Maize, and Cassava; regions Northland, Centralia, and South Coast; years 2024 and 2025; status values Final and Forecast as reported.",
+      "evidence_quote": "Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure."
+    },
+    {
+      "dataflow_id": "DF_AGR_FERTILIZER_RETAIL_PRICE",
+      "name": "Fertilizer retail prices by product and month",
+      "agency_id": "SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU",
+      "version": "1.0-draft",
+      "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+      "dsd_agency_id": "SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU",
+      "dsd_version": "1.0-draft",
+      "description": "Logical dataset for monthly fertilizer retail price observations by local fertilizer product category, using the fertilizer retail price Key Family and kept separate from the annual crop production flow because the report identifies it as a separate price structure.",
+      "coverage": "Monthly observations for fertilizer products Urea and Compound NPK; months 2025-01 through 2025-04; price unit reported as local currency per 50 kg bag; status value Observed as reported.",
+      "evidence_quote": "Table 2. Fertilizer retail prices by month"
+    }
+  ]
+}

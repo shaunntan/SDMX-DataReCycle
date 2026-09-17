@@ -1,0 +1,1180 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_key""]",artifact_key,string,DSD_KEY_FAMILY
+"[""artifact_name""]",artifact_name,string,DSD / KEY FAMILY
+"[""principles_file""]",principles_file,string,03_DSD_KEY_FAMILY.txt
+"[""principles_sha256""]",principles_sha256,string,b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611
+"[""principles_corpus_sha256""]",principles_corpus_sha256,string,bf4329570a317b193d7c65defd1a72280f56372e9e68b0fd99287d90be2aafb8
+"[""best_practice_chunk_ids""]",best_practice_chunk_ids,array,
+"[""best_practice_chunk_ids"",0]",0,integer,7
+"[""best_practice_chunk_ids"",1]",1,integer,8
+"[""best_practice_chunk_ids"",2]",2,integer,9
+"[""best_practice_chunk_ids"",3]",3,integer,13
+"[""best_practice_chunk_ids"",4]",4,integer,14
+"[""best_practice_chunk_ids"",5]",5,integer,15
+"[""best_practice_chunk_ids"",6]",6,integer,16
+"[""best_practice_chunk_ids"",7]",7,integer,17
+"[""best_practice_chunk_ids"",8]",8,integer,18
+"[""best_practice_chunk_ids"",9]",9,integer,19
+"[""best_practice_chunk_ids"",10]",10,integer,20
+"[""best_practice_chunk_ids"",11]",11,integer,21
+"[""best_practice_chunk_ids"",12]",12,integer,22
+"[""best_practice_chunk_ids"",13]",13,integer,23
+"[""best_practice_chunk_ids"",14]",14,integer,27
+"[""best_practice_chunk_ids"",15]",15,integer,28
+"[""best_practice_chunk_ids"",16]",16,integer,29
+"[""best_practice_chunk_ids"",17]",17,integer,31
+"[""best_practice_chunk_ids"",18]",18,integer,32
+"[""best_practice_chunk_ids"",19]",19,integer,33
+"[""best_practice_chunk_ids"",20]",20,integer,35
+"[""best_practice_chunk_ids"",21]",21,integer,36
+"[""best_practice_chunk_ids"",22]",22,integer,37
+"[""best_practice_chunk_ids"",23]",23,integer,39
+"[""best_practice_chunk_ids"",24]",24,integer,40
+"[""best_practice_chunk_ids"",25]",25,integer,41
+"[""aggregate_version""]",aggregate_version,integer,2
+"[""created_at""]",created_at,string,2026-09-16T23:18:23.219245+00:00
+"[""updated_at""]",updated_at,string,2026-09-16T23:20:22.801155+00:00
+"[""update_mode""]",update_mode,string,INCREMENTAL
+"[""contributions""]",contributions,array,
+"[""contributions"",0]",0,object,
+"[""contributions"",0,""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""contributions"",0,""source_json_path""]",source_json_path,string,Artifact JSON\DSD Key Family\example_01_labour_market.json
+"[""contributions"",0,""json_sha256""]",json_sha256,string,e53e724440d1671ef2a3b619cc158854ded8e3fbebd88b2d08d5b5dfb9d5a666
+"[""contributions"",1]",1,object,
+"[""contributions"",1,""source_report""]",source_report,string,example_02_health_system.pdf
+"[""contributions"",1,""source_json_path""]",source_json_path,string,Artifact JSON\DSD Key Family\example_02_health_system.json
+"[""contributions"",1,""json_sha256""]",json_sha256,string,9ff87082da09d5200acf1ddb9022050d5b8f4368691989a55331c7766afe74ce
+"[""contributions"",2]",2,object,
+"[""contributions"",2,""source_report""]",source_report,string,example_03_education.pdf
+"[""contributions"",2,""source_json_path""]",source_json_path,string,Artifact JSON\DSD Key Family\example_03_education.json
+"[""contributions"",2,""json_sha256""]",json_sha256,string,ea5a6cefca2f79987e74030cb9c0ce19d9b981cefd2d64f50c97170541ebf725
+"[""contributions"",3]",3,object,
+"[""contributions"",3,""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""contributions"",3,""source_json_path""]",source_json_path,string,Artifact JSON\DSD Key Family\example_04_agriculture.json
+"[""contributions"",3,""json_sha256""]",json_sha256,string,94cf8d641781cc96b47f44414f8fd4db898d1aa99a0febfb42ddc2d47bf8c090
+"[""contributions"",4]",4,object,
+"[""contributions"",4,""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""contributions"",4,""source_json_path""]",source_json_path,string,Artifact JSON\DSD Key Family\example_05_prices_consumption.json
+"[""contributions"",4,""json_sha256""]",json_sha256,string,1cad07b15da82589d3d9b0b5473260c245de3b416d1d79b0fe8047173fad7ac5
+"[""optimizer_attempts""]",optimizer_attempts,integer,1
+"[""validator_direct_correction""]",validator_direct_correction,boolean,false
+"[""inspector_review""]",inspector_review,object,
+"[""inspector_review"",""valid""]",valid,boolean,true
+"[""inspector_review"",""covered_source_reports""]",covered_source_reports,array,
+"[""inspector_review"",""covered_source_reports"",0]",0,string,example_01_labour_market.pdf
+"[""inspector_review"",""covered_source_reports"",1]",1,string,example_02_health_system.pdf
+"[""inspector_review"",""covered_source_reports"",2]",2,string,example_03_education.pdf
+"[""inspector_review"",""covered_source_reports"",3]",3,string,example_04_agriculture.pdf
+"[""inspector_review"",""covered_source_reports"",4]",4,string,example_05_prices_consumption.pdf
+"[""inspector_review"",""missing_source_reports""]",missing_source_reports,array,
+"[""inspector_review"",""missing_requirements""]",missing_requirements,array,
+"[""inspector_review"",""redundancies_remaining""]",redundancies_remaining,array,
+"[""inspector_review"",""schema_issues""]",schema_issues,array,
+"[""inspector_review"",""repair_instructions""]",repair_instructions,array,
+"[""optimized_artifact""]",optimized_artifact,object,
+"[""optimized_artifact"",""artifact_type""]",artifact_type,string,DSD / KEY FAMILY
+"[""optimized_artifact"",""source_report""]",source_report,string,AGGREGATE::DSD_KEY_FAMILY
+"[""optimized_artifact"",""source_sha256""]",source_sha256,string,39d87974bd678716ce971d7ee665275535d27d04d1291baea1725cda2ef63c30
+"[""optimized_artifact"",""principles_file""]",principles_file,string,03_DSD_KEY_FAMILY.txt
+"[""optimized_artifact"",""principles_sha256""]",principles_sha256,string,b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611
+"[""optimized_artifact"",""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""optimized_artifact"",""retrieved_chunk_ids"",0]",0,integer,7
+"[""optimized_artifact"",""retrieved_chunk_ids"",1]",1,integer,8
+"[""optimized_artifact"",""retrieved_chunk_ids"",2]",2,integer,9
+"[""optimized_artifact"",""retrieved_chunk_ids"",3]",3,integer,13
+"[""optimized_artifact"",""retrieved_chunk_ids"",4]",4,integer,14
+"[""optimized_artifact"",""retrieved_chunk_ids"",5]",5,integer,15
+"[""optimized_artifact"",""retrieved_chunk_ids"",6]",6,integer,16
+"[""optimized_artifact"",""retrieved_chunk_ids"",7]",7,integer,17
+"[""optimized_artifact"",""retrieved_chunk_ids"",8]",8,integer,18
+"[""optimized_artifact"",""retrieved_chunk_ids"",9]",9,integer,19
+"[""optimized_artifact"",""retrieved_chunk_ids"",10]",10,integer,20
+"[""optimized_artifact"",""retrieved_chunk_ids"",11]",11,integer,21
+"[""optimized_artifact"",""retrieved_chunk_ids"",12]",12,integer,22
+"[""optimized_artifact"",""retrieved_chunk_ids"",13]",13,integer,23
+"[""optimized_artifact"",""retrieved_chunk_ids"",14]",14,integer,27
+"[""optimized_artifact"",""retrieved_chunk_ids"",15]",15,integer,28
+"[""optimized_artifact"",""retrieved_chunk_ids"",16]",16,integer,29
+"[""optimized_artifact"",""retrieved_chunk_ids"",17]",17,integer,31
+"[""optimized_artifact"",""retrieved_chunk_ids"",18]",18,integer,32
+"[""optimized_artifact"",""retrieved_chunk_ids"",19]",19,integer,33
+"[""optimized_artifact"",""retrieved_chunk_ids"",20]",20,integer,35
+"[""optimized_artifact"",""retrieved_chunk_ids"",21]",21,integer,36
+"[""optimized_artifact"",""retrieved_chunk_ids"",22]",22,integer,37
+"[""optimized_artifact"",""retrieved_chunk_ids"",23]",23,integer,39
+"[""optimized_artifact"",""retrieved_chunk_ids"",24]",24,integer,40
+"[""optimized_artifact"",""retrieved_chunk_ids"",25]",25,integer,41
+"[""optimized_artifact"",""standard_references""]",standard_references,array,
+"[""optimized_artifact"",""standard_references"",0]",0,object,
+"[""optimized_artifact"",""standard_references"",0,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",0,""artifact_type""]",artifact_type,string,Technical standard
+"[""optimized_artifact"",""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX 2.0 Information Model / Key Family
+"[""optimized_artifact"",""standard_references"",0,""version""]",version,string,2.0
+"[""optimized_artifact"",""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""optimized_artifact"",""standard_references"",0,""evidence""]",evidence,string,"The package targets SDMX 2.0, where the formal term for a Data Structure Definition is Key Family. The principles define dimensions, time dimension, primary measure and attributes as DSD / Key Family components."
+"[""optimized_artifact"",""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",1]",1,object,
+"[""optimized_artifact"",""standard_references"",1,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",1,""artifact_type""]",artifact_type,string,Guideline
+"[""optimized_artifact"",""standard_references"",1,""artifact_id""]",artifact_id,string,Guidelines for the Design of Data Structure Definitions
+"[""optimized_artifact"",""standard_references"",1,""version""]",version,string,1.0
+"[""optimized_artifact"",""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+"[""optimized_artifact"",""standard_references"",1,""evidence""]",evidence,string,"The supplied principles require DSDs to start from the statistical observation, use TIME_PERIOD instead of year columns, use OBS_VALUE as the primary measure, and attach attributes at the highest level at which they are constant."
+"[""optimized_artifact"",""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",2]",2,object,
+"[""optimized_artifact"",""standard_references"",2,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",2,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""optimized_artifact"",""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX Glossary
+"[""optimized_artifact"",""standard_references"",2,""version""]",version,string,2.1
+"[""optimized_artifact"",""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""standard_references"",2,""evidence""]",evidence,string,Per-report artifacts cite the glossary for cross-domain concept reuse including REF_AREA examples and OBS_STATUS with codelist ID CL_OBS_STATUS.
+"[""optimized_artifact"",""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",3]",3,object,
+"[""optimized_artifact"",""standard_references"",3,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist catalogue
+"[""optimized_artifact"",""standard_references"",3,""artifact_id""]",artifact_id,string,SDMX Global Registry Codelists
+"[""optimized_artifact"",""standard_references"",3,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",3,""evidence""]",evidence,string,"The supplied evidence confirms that the SDMX Global Registry provides a codelist catalogue. Exact versions and detailed contents for CL_FREQ, CL_SEX, CL_OBS_STATUS, CL_SEASONAL_ADJUST and unit codelists were not supplied."
+"[""optimized_artifact"",""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",4]",4,object,
+"[""optimized_artifact"",""standard_references"",4,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",4,""artifact_type""]",artifact_type,string,Codelist
+"[""optimized_artifact"",""standard_references"",4,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""optimized_artifact"",""standard_references"",4,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",4,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",4,""evidence""]",evidence,string,"The principles identify FREQ as a usual dimension and recommend SDMX CL_FREQ where compatible. Annual, quarterly and monthly frequency are required across the source reports."
+"[""optimized_artifact"",""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",5]",5,object,
+"[""optimized_artifact"",""standard_references"",5,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",5,""artifact_type""]",artifact_type,string,Codelist
+"[""optimized_artifact"",""standard_references"",5,""artifact_id""]",artifact_id,string,CL_SEX
+"[""optimized_artifact"",""standard_references"",5,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",5,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",5,""evidence""]",evidence,string,"The principles identify SEX as a dimension when sex disaggregation is present and state that SDMX CL_SEX exists. Source labels include Women/Men/Total and Female/Male/Total, but exact code mappings were not confirmed."
+"[""optimized_artifact"",""standard_references"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",6]",6,object,
+"[""optimized_artifact"",""standard_references"",6,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",6,""artifact_type""]",artifact_type,string,Codelist
+"[""optimized_artifact"",""standard_references"",6,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""optimized_artifact"",""standard_references"",6,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",6,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""standard_references"",6,""evidence""]",evidence,string,"The supplied glossary evidence states that Observation Status has concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. Mappings for source values such as Final, Provisional, Estimated, Forecast and Observed require governance."
+"[""optimized_artifact"",""standard_references"",6,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",7]",7,object,
+"[""optimized_artifact"",""standard_references"",7,""agency""]",agency,string,UNESCO UIS
+"[""optimized_artifact"",""standard_references"",7,""artifact_type""]",artifact_type,string,Education classification
+"[""optimized_artifact"",""standard_references"",7,""artifact_id""]",artifact_id,string,ISCED
+"[""optimized_artifact"",""standard_references"",7,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",7,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""optimized_artifact"",""standard_references"",7,""evidence""]",evidence,string,The source guidance identifies UNESCO ISCED as the education-level classification source to check. The education report says education-level labels require ISCED mapping review.
+"[""optimized_artifact"",""standard_references"",7,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",8]",8,object,
+"[""optimized_artifact"",""standard_references"",8,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",8,""artifact_type""]",artifact_type,string,Geographic classification
+"[""optimized_artifact"",""standard_references"",8,""artifact_id""]",artifact_id,string,UN M49
+"[""optimized_artifact"",""standard_references"",8,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",8,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""optimized_artifact"",""standard_references"",8,""evidence""]",evidence,string,"Per-report evidence confirms UN M49 country and area code examples, but the report areas Northland, Centralia and South Coast are synthetic/local and no authoritative UN M49 mapping is confirmed."
+"[""optimized_artifact"",""standard_references"",8,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",9]",9,object,
+"[""optimized_artifact"",""standard_references"",9,""agency""]",agency,string,UNSD / SDMX candidate
+"[""optimized_artifact"",""standard_references"",9,""artifact_type""]",artifact_type,string,Classification / codelist candidate
+"[""optimized_artifact"",""standard_references"",9,""artifact_id""]",artifact_id,string,COICOP / CL_COICOP_2018
+"[""optimized_artifact"",""standard_references"",9,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",9,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""optimized_artifact"",""standard_references"",9,""evidence""]",evidence,string,"The prices and consumption report references consumption divisions resembling COICOP, but no supplied evidence confirms the revision or exact mapping."
+"[""optimized_artifact"",""standard_references"",9,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""standard_references"",10]",10,object,
+"[""optimized_artifact"",""standard_references"",10,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",10,""artifact_type""]",artifact_type,string,Concept and codelist candidate
+"[""optimized_artifact"",""standard_references"",10,""artifact_id""]",artifact_id,string,DEG_URB / CL_DEG_URB
+"[""optimized_artifact"",""standard_references"",10,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",10,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",10,""evidence""]",evidence,string,"Urban and rural residence categories in the household spending report are not confirmed to follow degree-of-urbanisation semantics, so DEG_URB remains only a candidate source."
+"[""optimized_artifact"",""standard_references"",10,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""limitations""]",limitations,array,
+"[""optimized_artifact"",""limitations"",0]",0,string,"This aggregate covers example_01_labour_market.pdf, example_02_health_system.pdf, example_03_education.pdf, example_04_agriculture.pdf and example_05_prices_consumption.pdf as a reusable cross-report DSD design, not as visual report layouts."
+"[""optimized_artifact"",""limitations"",1]",1,string,"Exact versions and code contents for candidate SDMX codelists such as CL_FREQ, CL_SEX, CL_OBS_STATUS, CL_SEASONAL_ADJUST and unit codelists were not confirmed from supplied evidence."
+"[""optimized_artifact"",""limitations"",2]",2,string,"Synthetic/local geographies such as Northland, Centralia and South Coast are treated with a shared local area codelist where used; no UN M49 or ISO 3166 mapping is confirmed."
+"[""optimized_artifact"",""limitations"",3]",3,string,Local industry aggregates in the labour vacancy structure are not confirmed ISIC categories and must not be silently mapped to ISIC.
+"[""optimized_artifact"",""limitations"",4]",4,string,"Health cause-of-death labels resemble broad cause families, but no ICD version is confirmed; cause is represented by a local broad cause codelist."
+"[""optimized_artifact"",""limitations"",5]",5,string,Education-level labels require ISCED review; EDUCATION_LEVEL is represented by a local education-level codelist pending authoritative mapping.
+"[""optimized_artifact"",""limitations"",6]",6,string,Crop names require agricultural classification review; common crop labels are retained in a local crop codelist until mapping is confirmed.
+"[""optimized_artifact"",""limitations"",7]",7,string,Fertilizer products are local market categories and are not verified CPC or other product-classification codes.
+"[""optimized_artifact"",""limitations"",8]",8,string,Consumption divisions are not mapped to COICOP because the report explicitly says the revision is not confirmed.
+"[""optimized_artifact"",""limitations"",9]",9,string,Wealth and expenditure quintiles are survey-specific and are not silently mapped to standard income or distribution classifications.
+"[""optimized_artifact"",""limitations"",10]",10,string,"The education and prices/consumption reports do not state a reference area or country, so REF_AREA is not included in those structures; geographic scope should be handled in reference metadata or added to future structures if supplied."
+"[""optimized_artifact"",""limitations"",11]",11,string,"The local currencies used for fertilizer prices and household spending are deliberately unnamed, so no ISO 4217 currency code can be assigned from report evidence."
+"[""optimized_artifact"",""limitations"",12]",12,string,"Publication title, file name, pages, methodology narratives, caveats, source URLs, contacts and revision-policy text are intentionally not modelled as DSD dimensions; they belong in MSD / Metadata Set or provenance layers."
+"[""optimized_artifact"",""limitations"",13]",13,string,"Observation status/source-status mappings such as Final, Provisional, Estimated, Forecast, Observed and Modelled estimate require code-level governance before automated SDMX exchange."
+"[""optimized_artifact"",""data_structures""]",data_structures,array,
+"[""optimized_artifact"",""data_structures"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",0,""dsd_id""]",dsd_id,string,KF_LABOUR_UNEMP_RATE_Q
+"[""optimized_artifact"",""data_structures"",0,""name""]",name,string,Quarterly unemployment rate by area and sex
+"[""optimized_artifact"",""data_structures"",0,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",0,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",0,""statistical_scope""]",statistical_scope,string,"Quarterly unemployment-rate observations for synthetic survey estimates of persons aged 15-64, by synthetic reference area and sex category, measured in percent and qualified by observation status."
+"[""optimized_artifact"",""data_structures"",0,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",0,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""representation""]",representation,string,Coded frequency; expected value quarterly
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""notes""]",notes,string,Frequency is a key dimension because this structure is quarterly. Exact SDMX CL_FREQ version and code mapping are not confirmed.
+"[""optimized_artifact"",""data_structures"",0,""components"",0,""evidence_quote""]",evidence_quote,string,Quarterly rates and monthly vacancy counts represent different statistical structures.
+"[""optimized_artifact"",""data_structures"",0,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""concept_id""]",concept_id,string,REF_AREA
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""representation""]",representation,string,Coded synthetic/local area
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""codelist_id""]",codelist_id,string,CL_SYNTHETIC_AREA
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""notes""]",notes,string,Shared local area codelist for synthetic areas used across reports where a reference area is explicitly present.
+"[""optimized_artifact"",""data_structures"",0,""components"",1,""evidence_quote""]",evidence_quote,string,"Table 1. Unemployment rate by region, sex and quarter"
+"[""optimized_artifact"",""data_structures"",0,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""concept_id""]",concept_id,string,SEX
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""representation""]",representation,string,Coded sex or total category; candidate reuse of SDMX CL_SEX
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""codelist_id""]",codelist_id,string,CL_SEX
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""notes""]",notes,string,"Source labels are Women, Men and Total. The report-specific total includes respondents outside displayed women/men categories and must not be inferred by summing displayed rows."
+"[""optimized_artifact"",""data_structures"",0,""components"",2,""evidence_quote""]",evidence_quote,string,Total sex coverage includes respondents outside the displayed women/men categories;
+"[""optimized_artifact"",""data_structures"",0,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""position""]",position,integer,4
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""representation""]",representation,string,Quarterly time period
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""notes""]",notes,string,Use TIME_PERIOD rather than separate quarter columns; periods include 2025-Q1 and 2025-Q2.
+"[""optimized_artifact"",""data_structures"",0,""components"",3,""evidence_quote""]",evidence_quote,string,Quarter
+"[""optimized_artifact"",""data_structures"",0,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""representation""]",representation,string,Primary measure: unemployment rate
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""notes""]",notes,string,OBS_VALUE holds the numeric unemployment-rate value for the full dimensional key.
+"[""optimized_artifact"",""data_structures"",0,""components"",4,""evidence_quote""]",evidence_quote,string,Unemployment rate is unemployed persons as a percentage of the labour force.
+"[""optimized_artifact"",""data_structures"",0,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""representation""]",representation,string,Coded unit of measure; expected value percent
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""notes""]",notes,string,Dataset-level because all observations in this structure use percent. A standard unit codelist mapping was not confirmed.
+"[""optimized_artifact"",""data_structures"",0,""components"",5,""evidence_quote""]",evidence_quote,string,Percent
+"[""optimized_artifact"",""data_structures"",0,""components"",6]",6,object,
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""representation""]",representation,string,Coded observation status/source status
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""notes""]",notes,string,Observation-level because status varies by period; 2025-Q2 rates are provisional while earlier observations may be final. Mapping to SDMX CL_OBS_STATUS remains candidate.
+"[""optimized_artifact"",""data_structures"",0,""components"",6,""evidence_quote""]",evidence_quote,string,Footnote: 2025-Q2 rates are provisional.
+"[""optimized_artifact"",""data_structures"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",1,""dsd_id""]",dsd_id,string,KF_LABOUR_VACANCIES_M
+"[""optimized_artifact"",""data_structures"",1,""name""]",name,string,Monthly job vacancies by activity
+"[""optimized_artifact"",""data_structures"",1,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",1,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",1,""statistical_scope""]",statistical_scope,string,"Monthly job-vacancy count observations from a synthetic employer survey, by local activity aggregate, measured as open positions and qualified by seasonal adjustment."
+"[""optimized_artifact"",""data_structures"",1,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",1,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""representation""]",representation,string,Coded frequency; expected value monthly
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""notes""]",notes,string,Frequency is a key dimension because this structure uses a monthly reference period. Exact SDMX CL_FREQ version and code mapping are not confirmed.
+"[""optimized_artifact"",""data_structures"",1,""components"",0,""evidence_quote""]",evidence_quote,string,Vacancy counts are compiled independently from a synthetic employer survey and use a monthly reference period.
+"[""optimized_artifact"",""data_structures"",1,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""concept_id""]",concept_id,string,ACTIVITY
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""representation""]",representation,string,Coded local activity/industry aggregate
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""codelist_id""]",codelist_id,string,CL_SYN_INDUSTRY_AGG
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""notes""]",notes,string,"Economic activity is modelled as a dimension, but with a local aggregate codelist because labels are not confirmed ISIC categories."
+"[""optimized_artifact"",""data_structures"",1,""components"",1,""evidence_quote""]",evidence_quote,string,Footnote: Industry labels are local aggregates and are not confirmed ISIC categories.
+"[""optimized_artifact"",""data_structures"",1,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""representation""]",representation,string,Monthly time period
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""notes""]",notes,string,"Use TIME_PERIOD rather than separate month columns; periods include 2025-01, 2025-02 and 2025-03."
+"[""optimized_artifact"",""data_structures"",1,""components"",2,""evidence_quote""]",evidence_quote,string,Month
+"[""optimized_artifact"",""data_structures"",1,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""representation""]",representation,string,Primary measure: job vacancy count
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""data_type""]",data_type,string,Integer
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""notes""]",notes,string,OBS_VALUE holds the numeric count of vacancies for the dimensional key.
+"[""optimized_artifact"",""data_structures"",1,""components"",3,""evidence_quote""]",evidence_quote,string,A job vacancy is an unfilled position available for immediate recruitment.
+"[""optimized_artifact"",""data_structures"",1,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""representation""]",representation,string,Coded unit of measure; expected value open positions
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""notes""]",notes,string,Dataset-level because all observations in this structure use open positions. A standard unit codelist mapping was not confirmed.
+"[""optimized_artifact"",""data_structures"",1,""components"",4,""evidence_quote""]",evidence_quote,string,Open positions
+"[""optimized_artifact"",""data_structures"",1,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""concept_id""]",concept_id,string,SEASONAL_ADJUST
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""representation""]",representation,string,Coded seasonal-adjustment status; candidate reuse of SDMX CL_SEASONAL_ADJUST
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""codelist_id""]",codelist_id,string,CL_SEASONAL_ADJUST
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""notes""]",notes,string,"Dataset-level because the displayed vacancy observations are all seasonally adjusted. If adjusted and unadjusted values later coexist for otherwise identical keys, this may need to become a dimension."
+"[""optimized_artifact"",""data_structures"",1,""components"",5,""evidence_quote""]",evidence_quote,string,Seasonally adjusted
+"[""optimized_artifact"",""data_structures"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",2,""dsd_id""]",dsd_id,string,KF_HEALTH_REGISTERED_DEATHS_A
+"[""optimized_artifact"",""data_structures"",2,""name""]",name,string,"Annual registered deaths by area, cause and age"
+"[""optimized_artifact"",""data_structures"",2,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",2,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",2,""statistical_scope""]",statistical_scope,string,"Annual counts of synthetic registered death events during the calendar year, by synthetic reference area, broad underlying cause of death and age group."
+"[""optimized_artifact"",""data_structures"",2,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",2,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""representation""]",representation,string,Coded frequency; expected value annual
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""notes""]",notes,string,Annual frequency follows from calendar-year death counts and year values. Exact SDMX CL_FREQ version and code mapping are not confirmed.
+"[""optimized_artifact"",""data_structures"",2,""components"",0,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year.
+"[""optimized_artifact"",""data_structures"",2,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""concept_id""]",concept_id,string,REF_AREA
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""representation""]",representation,string,Coded synthetic/local area
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""codelist_id""]",codelist_id,string,CL_SYNTHETIC_AREA
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""notes""]",notes,string,Shared local area codelist for synthetic areas; no UN M49 or ISO mapping is confirmed.
+"[""optimized_artifact"",""data_structures"",2,""components"",1,""evidence_quote""]",evidence_quote,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""optimized_artifact"",""data_structures"",2,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""concept_id""]",concept_id,string,CAUSE_OF_DEATH
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""representation""]",representation,string,Coded local broad cause of death
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""codelist_id""]",codelist_id,string,CL_BROAD_CAUSE_OF_DEATH
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""notes""]",notes,string,Local broad cause dimension. No ICD version or mapping is confirmed.
+"[""optimized_artifact"",""data_structures"",2,""components"",2,""evidence_quote""]",evidence_quote,string,Deaths are synthetic registered events classified by underlying cause and age group.
+"[""optimized_artifact"",""data_structures"",2,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""position""]",position,integer,4
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""concept_id""]",concept_id,string,AGE
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""representation""]",representation,string,Coded health age group
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""codelist_id""]",codelist_id,string,CL_HEALTH_AGE_GROUP
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""notes""]",notes,string,Age groups are report-specific groups such as 45-64 and 65+; no authoritative standard age codelist mapping was confirmed.
+"[""optimized_artifact"",""data_structures"",2,""components"",3,""evidence_quote""]",evidence_quote,string,Deaths are synthetic registered events classified by underlying cause and age group.
+"[""optimized_artifact"",""data_structures"",2,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""position""]",position,integer,5
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""representation""]",representation,string,Annual time period
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""notes""]",notes,string,Model year values such as 2023 and 2024 as TIME_PERIOD rather than separate year columns.
+"[""optimized_artifact"",""data_structures"",2,""components"",4,""evidence_quote""]",evidence_quote,string,"Table 1. Registered deaths by area, cause, age and year"
+"[""optimized_artifact"",""data_structures"",2,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""representation""]",representation,string,Primary measure: registered death count
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""data_type""]",data_type,string,Integer
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""notes""]",notes,string,OBS_VALUE holds the count of registered death events for the dimensional key and year.
+"[""optimized_artifact"",""data_structures"",2,""components"",5,""evidence_quote""]",evidence_quote,string,Registered deaths count events during the calendar year.
+"[""optimized_artifact"",""data_structures"",2,""components"",6]",6,object,
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""representation""]",representation,string,Coded unit of measure; expected value deaths
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""notes""]",notes,string,Dataset-level because all observations in this structure use deaths as the unit.
+"[""optimized_artifact"",""data_structures"",2,""components"",6,""evidence_quote""]",evidence_quote,string,Deaths are synthetic registered events classified by underlying cause and age group.
+"[""optimized_artifact"",""data_structures"",2,""components"",7]",7,object,
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""representation""]",representation,string,Coded observation status/source status
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""notes""]",notes,string,Observation-level because status varies by time; 2024 death counts are provisional while other values may be final. Mapping to SDMX CL_OBS_STATUS remains candidate.
+"[""optimized_artifact"",""data_structures"",2,""components"",7,""evidence_quote""]",evidence_quote,string,Footnote: 2024 death counts are provisional.
+"[""optimized_artifact"",""data_structures"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",3,""dsd_id""]",dsd_id,string,KF_HEALTH_HOSPITAL_BEDS_A
+"[""optimized_artifact"",""data_structures"",3,""name""]",name,string,Annual available hospital beds by ownership
+"[""optimized_artifact"",""data_structures"",3,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",3,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",3,""statistical_scope""]",statistical_scope,string,"Annual year-end stock counts of staffed hospital beds available on 31 December, by ownership category."
+"[""optimized_artifact"",""data_structures"",3,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",3,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""representation""]",representation,string,Coded frequency; expected value annual
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""notes""]",notes,string,Annual frequency follows from year values and the 31 December stock definition. Exact SDMX CL_FREQ version and code mapping are not confirmed.
+"[""optimized_artifact"",""data_structures"",3,""components"",0,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.
+"[""optimized_artifact"",""data_structures"",3,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""concept_id""]",concept_id,string,OWNERSHIP
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""representation""]",representation,string,Coded hospital ownership category
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""codelist_id""]",codelist_id,string,CL_HOSPITAL_OWNERSHIP
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""notes""]",notes,string,"Local ownership categories include Public, Private non-profit and Private for-profit. No external ownership classification was confirmed."
+"[""optimized_artifact"",""data_structures"",3,""components"",1,""evidence_quote""]",evidence_quote,string,Table 2. Available hospital beds by ownership
+"[""optimized_artifact"",""data_structures"",3,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""representation""]",representation,string,Annual time period
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""notes""]",notes,string,Model year values such as 2023 and 2024 as TIME_PERIOD rather than separate year columns.
+"[""optimized_artifact"",""data_structures"",3,""components"",2,""evidence_quote""]",evidence_quote,string,Table 2. Available hospital beds by ownership
+"[""optimized_artifact"",""data_structures"",3,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""representation""]",representation,string,Primary measure: available hospital bed count
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""data_type""]",data_type,string,Integer
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""notes""]",notes,string,OBS_VALUE holds the stock count of available staffed beds for the ownership category and year.
+"[""optimized_artifact"",""data_structures"",3,""components"",3,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.
+"[""optimized_artifact"",""data_structures"",3,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""representation""]",representation,string,Coded unit of measure; expected value beds
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""notes""]",notes,string,Dataset-level because all observations in this structure use beds as the unit.
+"[""optimized_artifact"",""data_structures"",3,""components"",4,""evidence_quote""]",evidence_quote,string,Available beds are staffed beds available on 31 December.
+"[""optimized_artifact"",""data_structures"",3,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""representation""]",representation,string,Coded observation status/source status
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""notes""]",notes,string,Observation-level because estimated status applies to private for-profit 2024 values and is not constant across all observations.
+"[""optimized_artifact"",""data_structures"",3,""components"",5,""evidence_quote""]",evidence_quote,string,Footnote: Private for-profit 2024 values are estimated.
+"[""optimized_artifact"",""data_structures"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",4,""dsd_id""]",dsd_id,string,KF_EDU_ENROLLMENT_A
+"[""optimized_artifact"",""data_structures"",4,""name""]",name,string,Annual education enrollment headcount by education level and sex
+"[""optimized_artifact"",""data_structures"",4,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",4,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",4,""statistical_scope""]",statistical_scope,string,"Annual administrative headcount enrollment counts of learners registered on census day, by education level and sex category."
+"[""optimized_artifact"",""data_structures"",4,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",4,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""representation""]",representation,string,Coded frequency; expected value annual
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""notes""]",notes,string,Annual frequency is inferred from the Year column; the report does not print an explicit frequency code.
+"[""optimized_artifact"",""data_structures"",4,""components"",0,""evidence_quote""]",evidence_quote,string,Year
+"[""optimized_artifact"",""data_structures"",4,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""concept_id""]",concept_id,string,EDUCATION_LEVEL
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""representation""]",representation,string,Coded local education level pending ISCED mapping review
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""codelist_id""]",codelist_id,string,CL_EDUCATION_LEVEL_LOCAL
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""notes""]",notes,string,"Source values include Primary, Lower secondary and Upper secondary. ISCED reuse is not confirmed and must be reviewed before production mapping."
+"[""optimized_artifact"",""data_structures"",4,""components"",1,""evidence_quote""]",evidence_quote,string,Education-level labels require ISCED mapping review.
+"[""optimized_artifact"",""data_structures"",4,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""concept_id""]",concept_id,string,SEX
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""representation""]",representation,string,Coded sex or total category; candidate reuse of SDMX CL_SEX
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""codelist_id""]",codelist_id,string,CL_SEX
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""notes""]",notes,string,"Source values include Female, Male and Total. Exact SDMX code mapping was not confirmed from supplied evidence."
+"[""optimized_artifact"",""data_structures"",4,""components"",2,""evidence_quote""]",evidence_quote,string,Sex
+"[""optimized_artifact"",""data_structures"",4,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""position""]",position,integer,4
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""representation""]",representation,string,Annual time period
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""notes""]",notes,string,The table uses yearly periods such as 2024 and 2025.
+"[""optimized_artifact"",""data_structures"",4,""components"",3,""evidence_quote""]",evidence_quote,string,Year
+"[""optimized_artifact"",""data_structures"",4,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""representation""]",representation,string,Primary measure: enrollment headcount
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""data_type""]",data_type,string,Integer
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""notes""]",notes,string,OBS_VALUE holds counts of learners registered on census day for the dimensional key and year.
+"[""optimized_artifact"",""data_structures"",4,""components"",4,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day.
+"[""optimized_artifact"",""data_structures"",4,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""representation""]",representation,string,Coded unit of measure; expected value students
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""notes""]",notes,string,Dataset-level because all observations in this structure use students as the unit.
+"[""optimized_artifact"",""data_structures"",4,""components"",5,""evidence_quote""]",evidence_quote,string,Unit
+"[""optimized_artifact"",""data_structures"",4,""components"",6]",6,object,
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""representation""]",representation,string,Coded observation status/source status
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""notes""]",notes,string,Observation-level because the 2025 enrollment qualifier is provisional and status can vary by period.
+"[""optimized_artifact"",""data_structures"",4,""components"",6,""evidence_quote""]",evidence_quote,string,Footnote: 2025 enrollment is provisional.
+"[""optimized_artifact"",""data_structures"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",5,""dsd_id""]",dsd_id,string,KF_EDU_LOWER_SECONDARY_COMPLETION_A
+"[""optimized_artifact"",""data_structures"",5,""name""]",name,string,Annual lower-secondary completion rate by wealth quintile and sex
+"[""optimized_artifact"",""data_structures"",5,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",5,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",5,""statistical_scope""]",statistical_scope,string,"Annual modelled household-survey estimates of lower-secondary completion rates, by survey-specific wealth quintile and sex category, measured in percent."
+"[""optimized_artifact"",""data_structures"",5,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",5,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""representation""]",representation,string,Coded frequency; expected value annual
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""notes""]",notes,string,Annual frequency is inferred from the Year column; the report does not print an explicit frequency code.
+"[""optimized_artifact"",""data_structures"",5,""components"",0,""evidence_quote""]",evidence_quote,string,Year
+"[""optimized_artifact"",""data_structures"",5,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""concept_id""]",concept_id,string,WEALTH_QUINTILE
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""representation""]",representation,string,Coded local survey-specific wealth quintile
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""codelist_id""]",codelist_id,string,CL_WEALTH_QUINTILE_SURVEY
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""notes""]",notes,string,"Source values include Lowest quintile, Middle quintile and Highest quintile. The report explicitly warns against silent mapping to a standard income classification."
+"[""optimized_artifact"",""data_structures"",5,""components"",1,""evidence_quote""]",evidence_quote,string,Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""optimized_artifact"",""data_structures"",5,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""concept_id""]",concept_id,string,SEX
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""representation""]",representation,string,Coded sex category; candidate reuse of SDMX CL_SEX
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""codelist_id""]",codelist_id,string,CL_SEX
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""notes""]",notes,string,Source values include Female and Male. Exact SDMX code mapping was not confirmed from supplied evidence.
+"[""optimized_artifact"",""data_structures"",5,""components"",2,""evidence_quote""]",evidence_quote,string,Sex
+"[""optimized_artifact"",""data_structures"",5,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""position""]",position,integer,4
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""representation""]",representation,string,Annual time period
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""notes""]",notes,string,The table uses yearly periods such as 2024.
+"[""optimized_artifact"",""data_structures"",5,""components"",3,""evidence_quote""]",evidence_quote,string,Year
+"[""optimized_artifact"",""data_structures"",5,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""representation""]",representation,string,Primary measure: lower-secondary completion rate
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""notes""]",notes,string,OBS_VALUE holds the percentage of the relevant cohort completing lower secondary education for the dimensional key and year.
+"[""optimized_artifact"",""data_structures"",5,""components"",4,""evidence_quote""]",evidence_quote,string,Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""optimized_artifact"",""data_structures"",5,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""representation""]",representation,string,Coded unit of measure; expected value percent
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""notes""]",notes,string,Dataset-level because all observations in this structure use percent.
+"[""optimized_artifact"",""data_structures"",5,""components"",5,""evidence_quote""]",evidence_quote,string,Unit
+"[""optimized_artifact"",""data_structures"",5,""components"",6]",6,object,
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""representation""]",representation,string,Coded observation status/source status; expected value modelled estimate
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""notes""]",notes,string,Dataset-level because all reported completion-rate observations are modelled estimates. This status must not be conflated with final/provisional administrative-source status without governed mapping.
+"[""optimized_artifact"",""data_structures"",5,""components"",6,""evidence_quote""]",evidence_quote,string,Footnote: All completion rates are modelled estimates.
+"[""optimized_artifact"",""data_structures"",6]",6,object,
+"[""optimized_artifact"",""data_structures"",6,""dsd_id""]",dsd_id,string,KF_AGR_CROP_AREA_PRODUCTION_A
+"[""optimized_artifact"",""data_structures"",6,""name""]",name,string,Annual crop harvested area and production by crop and area
+"[""optimized_artifact"",""data_structures"",6,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",6,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",6,""statistical_scope""]",statistical_scope,string,"Annual farm-survey crop harvested area and crop production aggregates by crop, synthetic reference area, year and crop indicator."
+"[""optimized_artifact"",""data_structures"",6,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",6,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""representation""]",representation,string,Coded frequency; expected value annual
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""notes""]",notes,string,Frequency is included because the crop structure is annual. Exact SDMX CL_FREQ version and annual code mapping are not confirmed.
+"[""optimized_artifact"",""data_structures"",6,""components"",0,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates.
+"[""optimized_artifact"",""data_structures"",6,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""concept_id""]",concept_id,string,CROP
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""representation""]",representation,string,Coded local crop list requiring classification review
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""codelist_id""]",codelist_id,string,CL_CROP_LOCAL
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""notes""]",notes,string,"Local crop dimension is required to identify observations. Candidate values include Rice, Maize and Cassava, but agricultural classification mapping is not confirmed."
+"[""optimized_artifact"",""data_structures"",6,""components"",1,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review.
+"[""optimized_artifact"",""data_structures"",6,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""concept_id""]",concept_id,string,REF_AREA
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""representation""]",representation,string,Coded synthetic/local area
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""codelist_id""]",codelist_id,string,CL_SYNTHETIC_AREA
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""notes""]",notes,string,Reuses the aggregate synthetic area codelist because the agriculture regions use the same synthetic geography pattern as other reports where REF_AREA is present.
+"[""optimized_artifact"",""data_structures"",6,""components"",2,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""optimized_artifact"",""data_structures"",6,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""position""]",position,integer,4
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""concept_id""]",concept_id,string,INDICATOR
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""representation""]",representation,string,Coded local indicator list for harvested area and production
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""codelist_id""]",codelist_id,string,CL_AGR_CROP_INDICATOR
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""notes""]",notes,string,Harvested area and production are modelled as indicator values rather than separate measures so OBS_VALUE remains the single primary measure.
+"[""optimized_artifact"",""data_structures"",6,""components"",3,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes.
+"[""optimized_artifact"",""data_structures"",6,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""position""]",position,integer,5
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""representation""]",representation,string,Annual time period
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""notes""]",notes,string,The report uses years such as 2024 and 2025 for crop observations.
+"[""optimized_artifact"",""data_structures"",6,""components"",4,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""optimized_artifact"",""data_structures"",6,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""representation""]",representation,string,Primary measure: crop indicator value
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""notes""]",notes,string,OBS_VALUE holds the numeric value for the selected INDICATOR: harvested area or production.
+"[""optimized_artifact"",""data_structures"",6,""components"",5,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""optimized_artifact"",""data_structures"",6,""components"",6]",6,object,
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""representation""]",representation,string,Coded unit of measure; expected values hectares or tonnes according to indicator
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""attachment_level""]",attachment_level,string,SERIES
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""notes""]",notes,string,Series-level because unit is constant by indicator and therefore by series: hectares for harvested area and metric tonnes for production. A standard unit codelist mapping is not confirmed.
+"[""optimized_artifact"",""data_structures"",6,""components"",6,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes.
+"[""optimized_artifact"",""data_structures"",6,""components"",7]",7,object,
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""representation""]",representation,string,Coded observation status/source status
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""notes""]",notes,string,"Observation-level because status distinguishes final and forecast crop observations. Forecast production is a qualifier, not a separate statistical phenomenon."
+"[""optimized_artifact"",""data_structures"",6,""components"",7,""evidence_quote""]",evidence_quote,string,Footnote: 2025 area and production are forecasts.
+"[""optimized_artifact"",""data_structures"",7]",7,object,
+"[""optimized_artifact"",""data_structures"",7,""dsd_id""]",dsd_id,string,KF_AGR_FERTILIZER_RETAIL_PRICE_M
+"[""optimized_artifact"",""data_structures"",7,""name""]",name,string,Monthly fertilizer retail prices by product
+"[""optimized_artifact"",""data_structures"",7,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",7,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",7,""statistical_scope""]",statistical_scope,string,"Monthly fertilizer retail price observations from an outlet panel, by local fertilizer product category, measured as median observed local-currency price per 50 kg bag."
+"[""optimized_artifact"",""data_structures"",7,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",7,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""representation""]",representation,string,Coded frequency; expected value monthly
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""notes""]",notes,string,Frequency is included because the fertilizer price structure is monthly. Exact SDMX CL_FREQ version and monthly code mapping are not confirmed.
+"[""optimized_artifact"",""data_structures"",7,""components"",0,""evidence_quote""]",evidence_quote,string,Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""optimized_artifact"",""data_structures"",7,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""concept_id""]",concept_id,string,PRODUCT
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""representation""]",representation,string,Coded local fertilizer product list; CPC mapping not verified
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""codelist_id""]",codelist_id,string,CL_FERTILIZER_PRODUCT_LOCAL
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""notes""]",notes,string,"Product is required to identify the price observation. Observed labels include Urea and Compound NPK, but they are local market categories and not verified CPC codes."
+"[""optimized_artifact"",""data_structures"",7,""components"",1,""evidence_quote""]",evidence_quote,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""optimized_artifact"",""data_structures"",7,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""representation""]",representation,string,Monthly time period
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""notes""]",notes,string,The report uses month values such as 2025-01 through 2025-04.
+"[""optimized_artifact"",""data_structures"",7,""components"",2,""evidence_quote""]",evidence_quote,string,Product                             Month                                     Price                                      Unit                                      Status
+"[""optimized_artifact"",""data_structures"",7,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""representation""]",representation,string,Primary measure: median fertilizer retail price
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""notes""]",notes,string,OBS_VALUE holds the median observed retail price for the product and month.
+"[""optimized_artifact"",""data_structures"",7,""components"",3,""evidence_quote""]",evidence_quote,string,Retail price is the median observed price per 50 kg bag.
+"[""optimized_artifact"",""data_structures"",7,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""representation""]",representation,string,Coded unit of measure; expected value local currency per 50 kg bag
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""notes""]",notes,string,Dataset-level because all fertilizer price observations in the supplied table use the same unit. The currency cannot be mapped to ISO 4217 because it is deliberately unnamed.
+"[""optimized_artifact"",""data_structures"",7,""components"",4,""evidence_quote""]",evidence_quote,string,Local currency per 50 kg bag
+"[""optimized_artifact"",""data_structures"",7,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""representation""]",representation,string,Coded observation status/source status
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""notes""]",notes,string,Observation-level status captures the source value Observed. Mapping to standard SDMX OBS_STATUS is not confirmed.
+"[""optimized_artifact"",""data_structures"",7,""components"",5,""evidence_quote""]",evidence_quote,string,Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed
+"[""optimized_artifact"",""data_structures"",8]",8,object,
+"[""optimized_artifact"",""data_structures"",8,""dsd_id""]",dsd_id,string,KF_PRICE_CPI_DIVISION_M
+"[""optimized_artifact"",""data_structures"",8,""name""]",name,string,Monthly consumer price index by consumption division
+"[""optimized_artifact"",""data_structures"",8,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",8,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",8,""statistical_scope""]",statistical_scope,string,"Monthly fixed-basket consumer price index by local consumption division, measuring price change relative to base period 2023=100."
+"[""optimized_artifact"",""data_structures"",8,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",8,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""representation""]",representation,string,Coded frequency; expected value monthly
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""notes""]",notes,string,Frequency is monthly for this structure. Exact CL_FREQ version and code mapping are not confirmed.
+"[""optimized_artifact"",""data_structures"",8,""components"",0,""evidence_quote""]",evidence_quote,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""optimized_artifact"",""data_structures"",8,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""concept_id""]",concept_id,string,CONSUMPTION_DIVISION
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""representation""]",representation,string,Coded local consumption division list pending COICOP review
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""codelist_id""]",codelist_id,string,CL_CONSUMPTION_DIVISION_LOCAL
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""notes""]",notes,string,"Local dimension because COICOP resemblance is noted but revision is not confirmed. Source values include Food and non-alcoholic beverages, Housing and utilities, and Transport."
+"[""optimized_artifact"",""data_structures"",8,""components"",1,""evidence_quote""]",evidence_quote,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""optimized_artifact"",""data_structures"",8,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""representation""]",representation,string,Monthly time period
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""notes""]",notes,string,Time is represented explicitly as the observation month.
+"[""optimized_artifact"",""data_structures"",8,""components"",2,""evidence_quote""]",evidence_quote,string,Table 1. Consumer price index by division and month
+"[""optimized_artifact"",""data_structures"",8,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""representation""]",representation,string,Primary measure: consumer price index value
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""notes""]",notes,string,OBS_VALUE holds the CPI index value for the consumption division and month.
+"[""optimized_artifact"",""data_structures"",8,""components"",3,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100.
+"[""optimized_artifact"",""data_structures"",8,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""representation""]",representation,string,Coded unit of measure; expected value index
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""notes""]",notes,string,Unit is modelled as a plain index unit; the base period qualifier is held separately in BASE_PERIOD. No authoritative unit codelist mapping is confirmed.
+"[""optimized_artifact"",""data_structures"",8,""components"",4,""evidence_quote""]",evidence_quote,string,"Index, 2023=100"
+"[""optimized_artifact"",""data_structures"",8,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""concept_id""]",concept_id,string,BASE_PERIOD
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""representation""]",representation,string,Uncoded reference/base period text
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""notes""]",notes,string,"Base period qualifies the index and is constant for the CPI structure, avoiding overloading UNIT_MEASURE."
+"[""optimized_artifact"",""data_structures"",8,""components"",5,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100.
+"[""optimized_artifact"",""data_structures"",8,""components"",6]",6,object,
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""representation""]",representation,string,Coded observation status/source status
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""notes""]",notes,string,Source statuses vary by observation month. Mapping of Final and Provisional to SDMX CL_OBS_STATUS is not confirmed.
+"[""optimized_artifact"",""data_structures"",8,""components"",6,""evidence_quote""]",evidence_quote,string,Footnote: April 2025 indices are provisional.
+"[""optimized_artifact"",""data_structures"",9]",9,object,
+"[""optimized_artifact"",""data_structures"",9,""dsd_id""]",dsd_id,string,KF_HH_SPENDING_RESIDENCE_QUINTILE_A
+"[""optimized_artifact"",""data_structures"",9,""name""]",name,string,Annual mean household spending by residence and expenditure quintile
+"[""optimized_artifact"",""data_structures"",9,""agency_id""]",agency_id,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",9,""version""]",version,string,1.0
+"[""optimized_artifact"",""data_structures"",9,""statistical_scope""]",statistical_scope,string,"Annual survey estimates of mean monthly consumption expenditure per household, by local residence category and survey-defined expenditure quintile."
+"[""optimized_artifact"",""data_structures"",9,""components""]",components,array,
+"[""optimized_artifact"",""data_structures"",9,""components"",0]",0,object,
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""position""]",position,integer,1
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""representation""]",representation,string,Coded frequency; expected value annual
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""codelist_version""]",codelist_version,string,not confirmed
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""notes""]",notes,string,Frequency is annual for this survey structure. Exact CL_FREQ version and code mapping are not confirmed.
+"[""optimized_artifact"",""data_structures"",9,""components"",0,""evidence_quote""]",evidence_quote,string,Household spending is an annual survey estimate by residence and expenditure quintile and is not a CPI observation.
+"[""optimized_artifact"",""data_structures"",9,""components"",1]",1,object,
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""position""]",position,integer,2
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""concept_id""]",concept_id,string,RESIDENCE
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""representation""]",representation,string,Coded local residence classification
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""codelist_id""]",codelist_id,string,CL_RESIDENCE_LOCAL
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""notes""]",notes,string,Residence is a statistical breakdown for the household spending observations. Source values are Urban and Rural; no DEG_URB mapping is confirmed.
+"[""optimized_artifact"",""data_structures"",9,""components"",1,""evidence_quote""]",evidence_quote,string,Table 2. Mean household spending by residence and quintile
+"[""optimized_artifact"",""data_structures"",9,""components"",2]",2,object,
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""position""]",position,integer,3
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""concept_id""]",concept_id,string,EXPENDITURE_QUINTILE
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""role""]",role,string,DIMENSION
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""representation""]",representation,string,Coded local expenditure quintile list
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""codelist_id""]",codelist_id,string,CL_EXPENDITURE_QUINTILE_SURVEY
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""notes""]",notes,string,The report only shows lowest and highest quintile values; local code definitions must preserve the source survey distribution definition.
+"[""optimized_artifact"",""data_structures"",9,""components"",2,""evidence_quote""]",evidence_quote,string,Footnote: Quintiles are defined within the synthetic survey distribution.
+"[""optimized_artifact"",""data_structures"",9,""components"",3]",3,object,
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""position""]",position,integer,4
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""role""]",role,string,TIME
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""representation""]",representation,string,Annual time period
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""data_type""]",data_type,string,ObservationalTimePeriod
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""notes""]",notes,string,Time is represented explicitly as the survey year.
+"[""optimized_artifact"",""data_structures"",9,""components"",3,""evidence_quote""]",evidence_quote,string,Year
+"[""optimized_artifact"",""data_structures"",9,""components"",4]",4,object,
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""role""]",role,string,MEASURE
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""representation""]",representation,string,Primary measure: mean monthly consumption expenditure per household
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""codelist_id""]",codelist_id,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""codelist_version""]",codelist_version,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""data_type""]",data_type,string,Decimal
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""attachment_level""]",attachment_level,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""notes""]",notes,string,OBS_VALUE holds the mean monthly consumption expenditure per household for the key.
+"[""optimized_artifact"",""data_structures"",9,""components"",4,""evidence_quote""]",evidence_quote,string,Household spending is mean monthly consumption expenditure per household.
+"[""optimized_artifact"",""data_structures"",9,""components"",5]",5,object,
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""representation""]",representation,string,Coded unit of measure; expected value local currency per household per month
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""notes""]",notes,string,"Dataset-level because the unit is constant. The report does not name the local currency, so ISO 4217 currency coding is not possible from supplied evidence."
+"[""optimized_artifact"",""data_structures"",9,""components"",5,""evidence_quote""]",evidence_quote,string,Local currency per household per month
+"[""optimized_artifact"",""data_structures"",9,""components"",6]",6,object,
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""position""]",position,null,
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""concept_id""]",concept_id,string,ESTIMATION_TYPE
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""representation""]",representation,string,Coded local estimation type list
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""codelist_agency""]",codelist_agency,string,SYN_STAT
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""codelist_id""]",codelist_id,string,CL_ESTIMATION_TYPE_LOCAL
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""codelist_version""]",codelist_version,string,1.0-draft
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""data_type""]",data_type,string,String
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""attachment_level""]",attachment_level,string,DATASET
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""notes""]",notes,string,"The source value Survey estimate is treated as a dataset-level estimation-type qualifier, not as OBS_STATUS, because it describes the data source/estimation nature and is constant across displayed household observations."
+"[""optimized_artifact"",""data_structures"",9,""components"",6,""evidence_quote""]",evidence_quote,string,Survey estimate
+"[""optimized_artifact"",""structure_separation_rationale""]",structure_separation_rationale,string,"Ten Key Families are retained because the accepted and new report artifacts represent ten distinct observation grains with materially different measures, populations, sources, units, classifications, frequencies or attribute attachment levels: quarterly unemployment rates; monthly job vacancy counts; annual registered death counts; annual hospital-bed stock counts; annual education enrollment headcounts; annual lower-secondary completion rates; annual crop harvested area and production indicators; monthly fertilizer retail prices; monthly CPI index values; and annual mean household spending. Shared cross-domain components are reused consistently where meanings are equivalent, including FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE, OBS_STATUS, SEX and REF_AREA with a common synthetic area codelist. Local classifications are kept separate where semantics or versions differ, such as CROP, PRODUCT, CONSUMPTION_DIVISION, EDUCATION_LEVEL, CAUSE_OF_DEATH, ACTIVITY, OWNERSHIP, WEALTH_QUINTILE and EXPENDITURE_QUINTILE. The structures are not merged into a single generic indicator DSD because that would introduce many non-applicable dimensions and obscure differences in statistical population, source methodology, unit, classification version and qualifier attachment levels."

@@ -1,0 +1,76 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DATAFLOW
+"[""source_report""]",source_report,string,example_03_education.pdf
+"[""source_sha256""]",source_sha256,string,e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6
+"[""principles_file""]",principles_file,string,04_DATAFLOW.txt
+"[""principles_sha256""]",principles_sha256,string,0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_2_0_INFORMATION_MODEL
+"[""standard_references"",0,""version""]",version,string,2.0
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",0,""evidence""]",evidence,string,"The principles identify the SDMX 2.0 Information Model as the formal source for SDMX 2.0 artefact definitions, including dataflows and Key Family mechanics. No fetched excerpt from this specific PDF was supplied in the online evidence block, so the exact dataflow definition is not externally confirmed here."
+"[""standard_references"",0,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Technical standard / implementor guidance
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_2_0_IMPLEMENTORS_GUIDE
+"[""standard_references"",1,""version""]",version,string,2.0
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+"[""standard_references"",1,""evidence""]",evidence,string,The principles identify the SDMX 2.0 Implementor's Guide as a practical source for SDMX-ML structures and implementation mechanics. No fetched excerpt from this specific PDF was supplied in the online evidence block.
+"[""standard_references"",1,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist catalog / registry
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",2,""version""]",version,string,not stated
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"Fetched registry evidence confirms that the SDMX Global Registry exposes Dataflows, Data Structures, Codelists, and related structure-search and export functions. The excerpt does not confirm any specific education-domain dataflow to reuse for this synthetic report."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",3,""version""]",version,string,2.1
+"[""standard_references"",3,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",3,""evidence""]",evidence,string,"Fetched glossary evidence includes SDMX terminology for artefacts and concepts such as maintenance agency, measure, reference area, geographical coverage, and education level. It supports use of SDMX terminology but does not confirm a pre-existing education participation or completion dataflow for this report."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,The report does not state a reference area or country; coverage therefore records the geographic scope as not stated rather than inferring it from the ministry name.
+"[""limitations"",1]",1,string,The agency identifier SML is a local shorthand for Synthetic Ministry of Learning and is not confirmed as an official SDMX maintenance agency identifier.
+"[""limitations"",2]",2,string,The dataflow versions are draft local catalogue versions because the report does not provide SDMX artefact versions.
+"[""limitations"",3]",3,string,No pre-existing official SDMX education participation or completion dataflow was confirmed from the supplied external evidence; the proposed dataflows are local logical flows referencing the accepted draft Key Families.
+"[""limitations"",4]",4,string,"Education-level labels require ISCED mapping review, so the enrollment dataflow should not be treated as an ISCED-conformant dissemination flow until mapping is completed."
+"[""limitations"",5]",5,string,Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification; the completion dataflow scope preserves that limitation.
+"[""limitations"",6]",6,string,"The current report shows enrollment for 2024 and 2025 and completion rates for 2024 only, but publication years are not embedded in the dataflow IDs because time belongs in the data."
+"[""dataflows""]",dataflows,array,
+"[""dataflows"",0]",0,object,
+"[""dataflows"",0,""dataflow_id""]",dataflow_id,string,DF_EDU_ENROLLMENT
+"[""dataflows"",0,""name""]",name,string,Education enrollment headcount
+"[""dataflows"",0,""agency_id""]",agency_id,string,SML
+"[""dataflows"",0,""version""]",version,string,1.0-draft
+"[""dataflows"",0,""dsd_id""]",dsd_id,string,KF_EDU_ENROLLMENT
+"[""dataflows"",0,""dsd_agency_id""]",dsd_agency_id,string,SML
+"[""dataflows"",0,""dsd_version""]",dsd_version,string,1.0-draft
+"[""dataflows"",0,""description""]",description,string,"Logical dataset for administrative education enrollment headcount counts by education level, sex, and annual time period, with unit and status qualifiers, disseminated by the Synthetic Ministry of Learning."
+"[""dataflows"",0,""coverage""]",coverage,string,"Geographic coverage not stated. Statistical coverage is enrollment headcount by education level, sex, and year; current report rows cover Primary, Lower secondary, and Upper secondary; Female, Male, and Total; years 2024 and 2025; unit Students; statuses Final and Provisional."
+"[""dataflows"",0,""evidence_quote""]",evidence_quote,string,Enrollment is an administrative headcount by education level.
+"[""dataflows"",1]",1,object,
+"[""dataflows"",1,""dataflow_id""]",dataflow_id,string,DF_EDU_LOWER_SECONDARY_COMPLETION
+"[""dataflows"",1,""name""]",name,string,Lower-secondary completion rate
+"[""dataflows"",1,""agency_id""]",agency_id,string,SML
+"[""dataflows"",1,""version""]",version,string,1.0-draft
+"[""dataflows"",1,""dsd_id""]",dsd_id,string,KF_EDU_LOWER_SECONDARY_COMPLETION
+"[""dataflows"",1,""dsd_agency_id""]",dsd_agency_id,string,SML
+"[""dataflows"",1,""dsd_version""]",dsd_version,string,1.0-draft
+"[""dataflows"",1,""description""]",description,string,"Logical dataset for modelled household-survey estimates of lower-secondary completion rates by survey-specific wealth quintile, sex, and annual time period, with percent unit and modelled-estimate status qualifiers."
+"[""dataflows"",1,""coverage""]",coverage,string,"Geographic coverage not stated. Statistical coverage is lower-secondary completion rate by wealth quintile, sex, and year; current report rows cover Lowest quintile, Middle quintile, and Highest quintile; Female and Male; year 2024; unit Percent; status Modelled estimate."
+"[""dataflows"",1,""evidence_quote""]",evidence_quote,string,Completion rates are separately modelled household-survey estimates by wealth quintile and sex.

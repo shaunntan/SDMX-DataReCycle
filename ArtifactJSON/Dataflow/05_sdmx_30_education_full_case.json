@@ -1,0 +1,27 @@
+{
+  "artifact_type": "DATAFLOW",
+  "source_report": "05_sdmx_30_education_full_case.xml",
+  "source_sha256": "bde4885296220119913bea8c4105b0fdb48a58fb35d1bb47a373cc1eaf4c19dd",
+  "principles_file": "04_DATAFLOW.txt",
+  "principles_sha256": "0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "dataflows": [
+    {
+      "dataflow_id": "DF_EDU",
+      "name": "Education Statistics",
+      "agency_id": "DEMO",
+      "version": "1.0.0",
+      "dsd_id": "DSD_EDU",
+      "dsd_agency_id": "DEMO",
+      "dsd_version": "1.0.0",
+      "description": "Education Statistics",
+      "coverage": "Education Statistics",
+      "evidence_quote": "Education Statistics"
+    }
+  ]
+}

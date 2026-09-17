@@ -1,0 +1,309 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODELISTS
+"[""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""source_sha256""]",source_sha256,string,fb3bd37fc247c713e56b54ba1e234b1d05501d32a34d31b3ad2f1ebf6395c0e9
+"[""principles_file""]",principles_file,string,02_CODELISTS.txt
+"[""principles_sha256""]",principles_sha256,string,5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Registry catalog
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,Codelists catalog
+"[""standard_references"",0,""version""]",version,string,not stated in supplied excerpt
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,The fetched official registry page is a codelist catalog/search interface. The supplied excerpt confirms the existence of the registry codelist catalog but does not confirm exact versions or code memberships for the candidate codelists used here.
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",1,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The principles identify CL_FREQ as an SDMX Global Registry codelist worth checking. The supplied official registry excerpt does not provide its code membership or version, so reuse of Q and M is retained only as a candidate mapping."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_SEX
+"[""standard_references"",2,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The principles identify CL_SEX as an SDMX Global Registry codelist worth checking. The supplied official registry excerpt does not confirm the applicable version or codes, and the report gives a special scope note for Total sex coverage."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",3,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,The principles identify CL_OBS_STATUS as an SDMX Global Registry codelist worth checking. The supplied official registry excerpt does not confirm whether the report's Final and Provisional labels map to specific SDMX observation-status codes.
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,SDMX
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,CL_SEASONAL_ADJUST
+"[""standard_references"",4,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""standard_references"",4,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",4,""evidence""]",evidence,string,The principles identify CL_SEASONAL_ADJUST as an SDMX Global Registry codelist worth checking. The supplied official registry excerpt does not confirm exact code values for seasonally adjusted data.
+"[""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",5]",5,object,
+"[""standard_references"",5,""agency""]",agency,string,UNSD
+"[""standard_references"",5,""artifact_type""]",artifact_type,string,Classification/codelist
+"[""standard_references"",5,""artifact_id""]",artifact_id,string,UN M49
+"[""standard_references"",5,""version""]",version,string,not stated in supplied excerpt
+"[""standard_references"",5,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",5,""evidence""]",evidence,string,"The fetched official UN M49 excerpt shows country/area entries with numeric and alpha codes. The synthetic report regions Northland, Centralia and South Coast are not confirmed by the supplied excerpt as UN M49 areas."
+"[""standard_references"",5,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",6]",6,object,
+"[""standard_references"",6,""agency""]",agency,string,UNSD
+"[""standard_references"",6,""artifact_type""]",artifact_type,string,Classification
+"[""standard_references"",6,""artifact_id""]",artifact_id,string,ISIC
+"[""standard_references"",6,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""standard_references"",6,""url""]",url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""standard_references"",6,""evidence""]",evidence,string,"The shared source catalog identifies UNSD economic classifications as the place to check ISIC. No supplied official-source excerpt confirms that the report's industry labels are ISIC categories, and the report itself states the labels are local aggregates."
+"[""standard_references"",6,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"Exact SDMX Global Registry codelist versions and code memberships for CL_FREQ, CL_SEX, CL_OBS_STATUS and CL_SEASONAL_ADJUST were not confirmed in the supplied official-source evidence."
+"[""limitations"",1]",1,string,Report regions are synthetic/local labels; no authoritative geography codelist match is confirmed.
+"[""limitations"",2]",2,string,Industry labels are explicitly local aggregates and are not confirmed ISIC categories.
+"[""limitations"",3]",3,string,The report states that quarterly unemployment rates and monthly vacancy counts are different statistical structures; codelists should support separate structures rather than forcing one table-to-one-DSD modelling.
+"[""limitations"",4]",4,string,The Total sex category has a special scope and must not be treated as the sum of Women and Men.
+"[""codelists""]",codelists,array,
+"[""codelists"",0]",0,object,
+"[""codelists"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""codelists"",0,""name""]",name,string,Frequency
+"[""codelists"",0,""agency_id""]",agency_id,string,SDMX
+"[""codelists"",0,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""codelists"",0,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""codelists"",0,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",0,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",0,""scope_notes""]",scope_notes,string,Candidate reuse of SDMX CL_FREQ for the report's quarterly unemployment rates and monthly vacancy counts. Exact SDMX version and code membership were not confirmed from supplied official-source evidence.
+"[""codelists"",0,""codes""]",codes,array,
+"[""codelists"",0,""codes"",0]",0,object,
+"[""codelists"",0,""codes"",0,""code""]",code,string,Q
+"[""codelists"",0,""codes"",0,""name""]",name,string,Quarterly
+"[""codelists"",0,""codes"",0,""definition""]",definition,string,Observation frequency once per quarter; candidate mapping for the unemployment-rate structure.
+"[""codelists"",0,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",0,""evidence_quote""]",evidence_quote,string,Quarterly rates and monthly vacancy counts represent different statistical structures.
+"[""codelists"",0,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",0,""codes"",1]",1,object,
+"[""codelists"",0,""codes"",1,""code""]",code,string,M
+"[""codelists"",0,""codes"",1,""name""]",name,string,Monthly
+"[""codelists"",0,""codes"",1,""definition""]",definition,string,Observation frequency once per month; candidate mapping for the vacancy-count structure.
+"[""codelists"",0,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",1,""evidence_quote""]",evidence_quote,string,Quarterly rates and monthly vacancy counts represent different statistical structures.
+"[""codelists"",0,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",1]",1,object,
+"[""codelists"",1,""codelist_id""]",codelist_id,string,CL_SYN_LM_INDICATOR
+"[""codelists"",1,""name""]",name,string,Synthetic labour market indicators
+"[""codelists"",1,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""codelists"",1,""version""]",version,string,1.0-draft
+"[""codelists"",1,""source_url""]",source_url,string,not stated
+"[""codelists"",1,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",1,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",1,""scope_notes""]",scope_notes,string,Local indicator list for the two statistical phenomena described in the report. It preserves the distinction between unemployment rates and job vacancy counts.
+"[""codelists"",1,""codes""]",codes,array,
+"[""codelists"",1,""codes"",0]",0,object,
+"[""codelists"",1,""codes"",0,""code""]",code,string,UNEMP_RATE
+"[""codelists"",1,""codes"",0,""name""]",name,string,Unemployment rate
+"[""codelists"",1,""codes"",0,""definition""]",definition,string,Unemployed persons as a percentage of the labour force; report scope is synthetic survey estimates for persons aged 15-64.
+"[""codelists"",1,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",1,""codes"",0,""evidence_quote""]",evidence_quote,string,Unemployment rate is unemployed persons as a percentage of the labour force. A job vacancy is an unfilled position available for immediate recruitment.
+"[""codelists"",1,""codes"",0,""local_creation_justification""]",local_creation_justification,string,No confirmed domain SDMX indicator codelist was supplied; the report contains a genuine statistical indicator with a definition.
+"[""codelists"",1,""codes"",1]",1,object,
+"[""codelists"",1,""codes"",1,""code""]",code,string,JOB_VACANCIES
+"[""codelists"",1,""codes"",1,""name""]",name,string,Job vacancies
+"[""codelists"",1,""codes"",1,""definition""]",definition,string,"Count of job vacancies, defined as unfilled positions available for immediate recruitment."
+"[""codelists"",1,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",1,""codes"",1,""evidence_quote""]",evidence_quote,string,Unemployment rate is unemployed persons as a percentage of the labour force. A job vacancy is an unfilled position available for immediate recruitment.
+"[""codelists"",1,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No confirmed domain SDMX indicator codelist was supplied; the report contains a genuine statistical indicator with a definition.
+"[""codelists"",2]",2,object,
+"[""codelists"",2,""codelist_id""]",codelist_id,string,CL_SYN_REF_AREA_LM
+"[""codelists"",2,""name""]",name,string,Synthetic labour market regions
+"[""codelists"",2,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""codelists"",2,""version""]",version,string,1.0-draft
+"[""codelists"",2,""source_url""]",source_url,string,not stated
+"[""codelists"",2,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",2,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",2,""scope_notes""]",scope_notes,string,"Local reference-area list for report regions. UN M49 was checked as a candidate geography source, but the supplied evidence does not confirm these synthetic region names as official areas."
+"[""codelists"",2,""codes""]",codes,array,
+"[""codelists"",2,""codes"",0]",0,object,
+"[""codelists"",2,""codes"",0,""code""]",code,string,NORTHLAND
+"[""codelists"",2,""codes"",0,""name""]",name,string,Northland
+"[""codelists"",2,""codes"",0,""definition""]",definition,string,Local synthetic report region used for unemployment-rate observations.
+"[""codelists"",2,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",2,""codes"",0,""evidence_quote""]",evidence_quote,string,Northland
+"[""codelists"",2,""codes"",0,""local_creation_justification""]",local_creation_justification,string,The report uses a synthetic/local regional category and no authoritative area code was confirmed from supplied evidence.
+"[""codelists"",2,""codes"",1]",1,object,
+"[""codelists"",2,""codes"",1,""code""]",code,string,CENTRALIA
+"[""codelists"",2,""codes"",1,""name""]",name,string,Centralia
+"[""codelists"",2,""codes"",1,""definition""]",definition,string,Local synthetic report region used for unemployment-rate observations.
+"[""codelists"",2,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",2,""codes"",1,""evidence_quote""]",evidence_quote,string,Centralia
+"[""codelists"",2,""codes"",1,""local_creation_justification""]",local_creation_justification,string,The report uses a synthetic/local regional category and no authoritative area code was confirmed from supplied evidence.
+"[""codelists"",2,""codes"",2]",2,object,
+"[""codelists"",2,""codes"",2,""code""]",code,string,SOUTH_COAST
+"[""codelists"",2,""codes"",2,""name""]",name,string,South Coast
+"[""codelists"",2,""codes"",2,""definition""]",definition,string,Local synthetic report region used for unemployment-rate observations.
+"[""codelists"",2,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",2,""codes"",2,""evidence_quote""]",evidence_quote,string,South Coast
+"[""codelists"",2,""codes"",2,""local_creation_justification""]",local_creation_justification,string,The report uses a synthetic/local regional category and no authoritative area code was confirmed from supplied evidence.
+"[""codelists"",3]",3,object,
+"[""codelists"",3,""codelist_id""]",codelist_id,string,CL_SYN_SEX_COVERAGE
+"[""codelists"",3,""name""]",name,string,Sex coverage categories used in the report
+"[""codelists"",3,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""codelists"",3,""version""]",version,string,1.0-draft
+"[""codelists"",3,""source_url""]",source_url,string,not stated
+"[""codelists"",3,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",3,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",3,""scope_notes""]",scope_notes,string,"Local constrained list for the report's sex breakdown. Women and Men may be candidates for mapping to SDMX CL_SEX, but the supplied official evidence does not confirm exact standard codes. The Total category has report-specific coverage and must not be inferred by summing displayed rows."
+"[""codelists"",3,""codes""]",codes,array,
+"[""codelists"",3,""codes"",0]",0,object,
+"[""codelists"",3,""codes"",0,""code""]",code,string,WOMEN
+"[""codelists"",3,""codes"",0,""name""]",name,string,Women
+"[""codelists"",3,""codes"",0,""definition""]",definition,string,Displayed women category in the unemployment-rate table.
+"[""codelists"",3,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",3,""codes"",0,""evidence_quote""]",evidence_quote,string,Women
+"[""codelists"",3,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Exact SDMX CL_SEX mapping was not confirmed from supplied official-source evidence.
+"[""codelists"",3,""codes"",1]",1,object,
+"[""codelists"",3,""codes"",1,""code""]",code,string,MEN
+"[""codelists"",3,""codes"",1,""name""]",name,string,Men
+"[""codelists"",3,""codes"",1,""definition""]",definition,string,Displayed men category in the unemployment-rate table.
+"[""codelists"",3,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",3,""codes"",1,""evidence_quote""]",evidence_quote,string,Men
+"[""codelists"",3,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Exact SDMX CL_SEX mapping was not confirmed from supplied official-source evidence.
+"[""codelists"",3,""codes"",2]",2,object,
+"[""codelists"",3,""codes"",2,""code""]",code,string,TOTAL
+"[""codelists"",3,""codes"",2,""name""]",name,string,Total
+"[""codelists"",3,""codes"",2,""definition""]",definition,string,Total sex coverage includes respondents outside the displayed women/men categories; it must not be inferred by summing displayed rows.
+"[""codelists"",3,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",3,""codes"",2,""evidence_quote""]",evidence_quote,string,"Total sex coverage includes respondents outside the displayed women/men categories;
+it must not be inferred by summing displayed rows."
+"[""codelists"",3,""codes"",2,""local_creation_justification""]",local_creation_justification,string,The report defines a special total coverage that may not match a standard total-sex code without further confirmation.
+"[""codelists"",4]",4,object,
+"[""codelists"",4,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE_LM
+"[""codelists"",4,""name""]",name,string,Labour market units of measure used in the report
+"[""codelists"",4,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""codelists"",4,""version""]",version,string,1.0-draft
+"[""codelists"",4,""source_url""]",source_url,string,not stated
+"[""codelists"",4,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",4,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",4,""scope_notes""]",scope_notes,string,Local unit list because no authoritative domain unit codelist and exact codes were confirmed from the supplied evidence. Percent applies to unemployment rates; Open positions applies to vacancy counts.
+"[""codelists"",4,""codes""]",codes,array,
+"[""codelists"",4,""codes"",0]",0,object,
+"[""codelists"",4,""codes"",0,""code""]",code,string,PERCENT
+"[""codelists"",4,""codes"",0,""name""]",name,string,Percent
+"[""codelists"",4,""codes"",0,""definition""]",definition,string,Unit for unemployment-rate values expressed as percentages.
+"[""codelists"",4,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",4,""codes"",0,""evidence_quote""]",evidence_quote,string,Percent
+"[""codelists"",4,""codes"",0,""local_creation_justification""]",local_creation_justification,string,No confirmed authoritative unit code was supplied for the report's unit label.
+"[""codelists"",4,""codes"",1]",1,object,
+"[""codelists"",4,""codes"",1,""code""]",code,string,OPEN_POSITIONS
+"[""codelists"",4,""codes"",1,""name""]",name,string,Open positions
+"[""codelists"",4,""codes"",1,""definition""]",definition,string,Unit for counts of job vacancies/open positions.
+"[""codelists"",4,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",4,""codes"",1,""evidence_quote""]",evidence_quote,string,Open positions
+"[""codelists"",4,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No confirmed authoritative unit code was supplied for the report's unit label.
+"[""codelists"",5]",5,object,
+"[""codelists"",5,""codelist_id""]",codelist_id,string,CL_SYN_REPORT_STATUS
+"[""codelists"",5,""name""]",name,string,Report value status labels
+"[""codelists"",5,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""codelists"",5,""version""]",version,string,1.0-draft
+"[""codelists"",5,""source_url""]",source_url,string,not stated
+"[""codelists"",5,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",5,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",5,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",5,""scope_notes""]",scope_notes,string,Local status list for the Status column in the unemployment-rate table. Candidate mapping to SDMX CL_OBS_STATUS should be verified before production use.
+"[""codelists"",5,""codes""]",codes,array,
+"[""codelists"",5,""codes"",0]",0,object,
+"[""codelists"",5,""codes"",0,""code""]",code,string,FINAL
+"[""codelists"",5,""codes"",0,""name""]",name,string,Final
+"[""codelists"",5,""codes"",0,""definition""]",definition,string,Report status indicating the value is final.
+"[""codelists"",5,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",5,""codes"",0,""evidence_quote""]",evidence_quote,string,Final
+"[""codelists"",5,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Exact mapping to SDMX CL_OBS_STATUS was not confirmed from supplied official-source evidence.
+"[""codelists"",5,""codes"",1]",1,object,
+"[""codelists"",5,""codes"",1,""code""]",code,string,PROVISIONAL
+"[""codelists"",5,""codes"",1,""name""]",name,string,Provisional
+"[""codelists"",5,""codes"",1,""definition""]",definition,string,Report status indicating a provisional quarterly estimate subject to later revision.
+"[""codelists"",5,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",5,""codes"",1,""evidence_quote""]",evidence_quote,string,Footnote: 2025-Q2 rates are provisional.
+"[""codelists"",5,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Exact mapping to SDMX CL_OBS_STATUS was not confirmed from supplied official-source evidence.
+"[""codelists"",6]",6,object,
+"[""codelists"",6,""codelist_id""]",codelist_id,string,CL_SYN_SEASONAL_ADJUSTMENT
+"[""codelists"",6,""name""]",name,string,Seasonal adjustment status used in vacancy table
+"[""codelists"",6,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""codelists"",6,""version""]",version,string,1.0-draft
+"[""codelists"",6,""source_url""]",source_url,string,not stated
+"[""codelists"",6,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",6,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",6,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",6,""scope_notes""]",scope_notes,string,Local constrained list for the vacancy table's Adjustment column. Candidate mapping to SDMX CL_SEASONAL_ADJUST should be verified before production use.
+"[""codelists"",6,""codes""]",codes,array,
+"[""codelists"",6,""codes"",0]",0,object,
+"[""codelists"",6,""codes"",0,""code""]",code,string,SEASONALLY_ADJUSTED
+"[""codelists"",6,""codes"",0,""name""]",name,string,Seasonally adjusted
+"[""codelists"",6,""codes"",0,""definition""]",definition,string,Vacancy-count observations reported as seasonally adjusted.
+"[""codelists"",6,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",6,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",6,""codes"",0,""evidence_quote""]",evidence_quote,string,Seasonally adjusted
+"[""codelists"",6,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Exact mapping to SDMX CL_SEASONAL_ADJUST was not confirmed from supplied official-source evidence.
+"[""codelists"",7]",7,object,
+"[""codelists"",7,""codelist_id""]",codelist_id,string,CL_SYN_ACTIVITY_LOCAL
+"[""codelists"",7,""name""]",name,string,Local industry aggregates used in vacancy table
+"[""codelists"",7,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""codelists"",7,""version""]",version,string,1.0-draft
+"[""codelists"",7,""source_url""]",source_url,string,not stated
+"[""codelists"",7,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",7,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",7,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",7,""scope_notes""]",scope_notes,string,Local activity/industry aggregate list. The report explicitly states the labels are local aggregates and not confirmed ISIC categories.
+"[""codelists"",7,""codes""]",codes,array,
+"[""codelists"",7,""codes"",0]",0,object,
+"[""codelists"",7,""codes"",0,""code""]",code,string,MANUFACTURING
+"[""codelists"",7,""codes"",0,""name""]",name,string,Manufacturing
+"[""codelists"",7,""codes"",0,""definition""]",definition,string,Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.
+"[""codelists"",7,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",7,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",7,""codes"",0,""evidence_quote""]",evidence_quote,string,Manufacturing
+"[""codelists"",7,""codes"",0,""local_creation_justification""]",local_creation_justification,string,The report states industry labels are local aggregates and not confirmed ISIC categories.
+"[""codelists"",7,""codes"",1]",1,object,
+"[""codelists"",7,""codes"",1,""code""]",code,string,CONSTRUCTION
+"[""codelists"",7,""codes"",1,""name""]",name,string,Construction
+"[""codelists"",7,""codes"",1,""definition""]",definition,string,Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.
+"[""codelists"",7,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",7,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",7,""codes"",1,""evidence_quote""]",evidence_quote,string,Construction
+"[""codelists"",7,""codes"",1,""local_creation_justification""]",local_creation_justification,string,The report states industry labels are local aggregates and not confirmed ISIC categories.
+"[""codelists"",7,""codes"",2]",2,object,
+"[""codelists"",7,""codes"",2,""code""]",code,string,INFORMATION_SERVICES
+"[""codelists"",7,""codes"",2,""name""]",name,string,Information services
+"[""codelists"",7,""codes"",2,""definition""]",definition,string,Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.
+"[""codelists"",7,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",7,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",7,""codes"",2,""evidence_quote""]",evidence_quote,string,Information services
+"[""codelists"",7,""codes"",2,""local_creation_justification""]",local_creation_justification,string,The report states industry labels are local aggregates and not confirmed ISIC categories.

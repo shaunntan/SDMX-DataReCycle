@@ -1,0 +1,240 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODELISTS
+"[""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""source_sha256""]",source_sha256,string,71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5
+"[""principles_file""]",principles_file,string,02_CODELISTS.txt
+"[""principles_sha256""]",principles_sha256,string,5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Codelist catalogue
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Global Registry - Codelists
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,The fetched official SDMX Registry page is a codelist catalogue/search page and supports checking codelist details. The provided excerpt does not confirm individual codelist versions or code contents.
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",1,""version""]",version,string,not confirmed
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The principles package identifies CL_FREQ as an SDMX registry codelist worth checking, and the official registry catalogue was fetched. The supplied official-source excerpt does not show the CL_FREQ detail page, version, or code contents, so reuse is treated as a candidate pending implementation-time verification."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",2,""version""]",version,string,not confirmed
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The principles package identifies CL_OBS_STATUS as an SDMX registry codelist worth checking, and the official registry catalogue was fetched. The supplied official-source excerpt does not confirm the exact observation-status code values or definitions. The report's status column also includes a survey-estimate label, so a local report-status list is retained."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,UNSD / SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Classification / Codelist candidate
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,COICOP / CL_COICOP_2018
+"[""standard_references"",3,""version""]",version,string,not confirmed
+"[""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""standard_references"",3,""evidence""]",evidence,string,"COICOP is the relevant international consumption-purpose classification to check for consumption divisions. However, no official COICOP code-detail excerpt was supplied, and the report itself states that the COICOP-like revision is not confirmed, so no COICOP codes are reused here."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,ISO
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Currency standard candidate
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,ISO 4217
+"[""standard_references"",4,""version""]",version,string,not confirmed
+"[""standard_references"",4,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""standard_references"",4,""evidence""]",evidence,string,"ISO 4217 is the standard source to check when currency identity is required. The report does not name the local currency and no ISO 4217 code evidence was supplied, so no currency code is assigned."
+"[""standard_references"",4,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,The consumption divisions are retained as local codes because the report says they resemble COICOP but does not confirm the COICOP revision or provide COICOP codes.
+"[""limitations"",1]",1,string,"The local currency is not named, so ISO 4217 currency coding cannot be applied to the household-spending unit."
+"[""limitations"",2]",2,string,Exact SDMX Global Registry versions and detailed code definitions for CL_FREQ and CL_OBS_STATUS were not confirmed by the supplied official-source excerpts.
+"[""limitations"",3]",3,string,"The report does not state a reference area/country for the synthetic national statistics, so no area codelist is included."
+"[""limitations"",4]",4,string,The report status column mixes CPI release status values with a household survey-estimate label; it is preserved in a local status codelist rather than forced into SDMX CL_OBS_STATUS.
+"[""limitations"",5]",5,string,Residence and expenditure-quintile categories are defined only at the level shown in the report; no broader authoritative residence or income-quintile codelist was confirmed.
+"[""codelists""]",codelists,array,
+"[""codelists"",0]",0,object,
+"[""codelists"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""codelists"",0,""name""]",name,string,Frequency
+"[""codelists"",0,""agency_id""]",agency_id,string,SDMX
+"[""codelists"",0,""version""]",version,string,not confirmed
+"[""codelists"",0,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""codelists"",0,""maintenance_status""]",maintenance_status,string,AUTHORITATIVE_REFERENCE
+"[""codelists"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",0,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",0,""scope_notes""]",scope_notes,string,Candidate reuse of the SDMX frequency codelist for the report's monthly CPI observations and annual household-spending survey estimates. Exact registry version and code-detail evidence were not supplied.
+"[""codelists"",0,""codes""]",codes,array,
+"[""codelists"",0,""codes"",0]",0,object,
+"[""codelists"",0,""codes"",0,""code""]",code,string,M
+"[""codelists"",0,""codes"",0,""name""]",name,string,Monthly
+"[""codelists"",0,""codes"",0,""definition""]",definition,string,Once per month; candidate mapping for CPI observations reported by month.
+"[""codelists"",0,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",0,""evidence_quote""]",evidence_quote,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""codelists"",0,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",0,""codes"",1]",1,object,
+"[""codelists"",0,""codes"",1,""code""]",code,string,A
+"[""codelists"",0,""codes"",1,""name""]",name,string,Annual
+"[""codelists"",0,""codes"",1,""definition""]",definition,string,Once per year; candidate mapping for household-spending estimates reported by year.
+"[""codelists"",0,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",1,""evidence_quote""]",evidence_quote,string,"Household spending is an annual survey estimate by residence and expenditure quintile and is
+not a CPI observation."
+"[""codelists"",0,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",1]",1,object,
+"[""codelists"",1,""codelist_id""]",codelist_id,string,CL_LOCAL_CPI_DIVISION
+"[""codelists"",1,""name""]",name,string,Local CPI consumption division
+"[""codelists"",1,""agency_id""]",agency_id,string,SYNTH_NSI_LOCAL
+"[""codelists"",1,""version""]",version,string,1.0
+"[""codelists"",1,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""codelists"",1,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",1,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",1,""scope_notes""]",scope_notes,string,"Local codelist for the CPI division labels in the report. The report indicates the divisions resemble COICOP but the revision is not confirmed, so authoritative COICOP codes are not assigned."
+"[""codelists"",1,""codes""]",codes,array,
+"[""codelists"",1,""codes"",0]",0,object,
+"[""codelists"",1,""codes"",0,""code""]",code,string,FOOD_NAB
+"[""codelists"",1,""codes"",0,""name""]",name,string,Food and non-alcoholic beverages
+"[""codelists"",1,""codes"",0,""definition""]",definition,string,Report consumption division used in the CPI fixed-basket index; formal classification code and revision not stated.
+"[""codelists"",1,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",1,""codes"",0,""evidence_quote""]",evidence_quote,string,Food and non-alcoholic beverages
+"[""codelists"",1,""codes"",0,""local_creation_justification""]",local_creation_justification,string,No confirmed COICOP revision or code was provided for this report division.
+"[""codelists"",1,""codes"",1]",1,object,
+"[""codelists"",1,""codes"",1,""code""]",code,string,HOUS_UTIL
+"[""codelists"",1,""codes"",1,""name""]",name,string,Housing and utilities
+"[""codelists"",1,""codes"",1,""definition""]",definition,string,Report consumption division used in the CPI fixed-basket index; formal classification code and revision not stated.
+"[""codelists"",1,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",1,""codes"",1,""evidence_quote""]",evidence_quote,string,Housing and utilities
+"[""codelists"",1,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No confirmed COICOP revision or code was provided for this report division.
+"[""codelists"",1,""codes"",2]",2,object,
+"[""codelists"",1,""codes"",2,""code""]",code,string,TRANSPORT
+"[""codelists"",1,""codes"",2,""name""]",name,string,Transport
+"[""codelists"",1,""codes"",2,""definition""]",definition,string,Report consumption division used in the CPI fixed-basket index; formal classification code and revision not stated.
+"[""codelists"",1,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",1,""codes"",2,""evidence_quote""]",evidence_quote,string,Transport
+"[""codelists"",1,""codes"",2,""local_creation_justification""]",local_creation_justification,string,No confirmed COICOP revision or code was provided for this report division.
+"[""codelists"",2]",2,object,
+"[""codelists"",2,""codelist_id""]",codelist_id,string,CL_LOCAL_RESIDENCE
+"[""codelists"",2,""name""]",name,string,Local residence category
+"[""codelists"",2,""agency_id""]",agency_id,string,SYNTH_NSI_LOCAL
+"[""codelists"",2,""version""]",version,string,1.0
+"[""codelists"",2,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""codelists"",2,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",2,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",2,""scope_notes""]",scope_notes,string,Local codelist for residence categories in the household-spending survey table. The report does not define these as an official degree-of-urbanisation classification.
+"[""codelists"",2,""codes""]",codes,array,
+"[""codelists"",2,""codes"",0]",0,object,
+"[""codelists"",2,""codes"",0,""code""]",code,string,URBAN
+"[""codelists"",2,""codes"",0,""name""]",name,string,Urban
+"[""codelists"",2,""codes"",0,""definition""]",definition,string,Residence category for household-spending survey estimates; exact residence classification criteria not stated.
+"[""codelists"",2,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",2,""codes"",0,""evidence_quote""]",evidence_quote,string,Urban
+"[""codelists"",2,""codes"",0,""local_creation_justification""]",local_creation_justification,string,No authoritative residence or degree-of-urbanisation code definition was confirmed for the report's residence categories.
+"[""codelists"",2,""codes"",1]",1,object,
+"[""codelists"",2,""codes"",1,""code""]",code,string,RURAL
+"[""codelists"",2,""codes"",1,""name""]",name,string,Rural
+"[""codelists"",2,""codes"",1,""definition""]",definition,string,Residence category for household-spending survey estimates; exact residence classification criteria not stated.
+"[""codelists"",2,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",2,""codes"",1,""evidence_quote""]",evidence_quote,string,Rural
+"[""codelists"",2,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No authoritative residence or degree-of-urbanisation code definition was confirmed for the report's residence categories.
+"[""codelists"",3]",3,object,
+"[""codelists"",3,""codelist_id""]",codelist_id,string,CL_LOCAL_EXPENDITURE_QUINTILE
+"[""codelists"",3,""name""]",name,string,Local expenditure quintile category
+"[""codelists"",3,""agency_id""]",agency_id,string,SYNTH_NSI_LOCAL
+"[""codelists"",3,""version""]",version,string,1.0
+"[""codelists"",3,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""codelists"",3,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",3,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",3,""scope_notes""]",scope_notes,string,Local codelist for the expenditure-quintile categories present in the household-spending table. Only the lowest and highest quintiles appear in the report extract.
+"[""codelists"",3,""codes""]",codes,array,
+"[""codelists"",3,""codes"",0]",0,object,
+"[""codelists"",3,""codes"",0,""code""]",code,string,LOWEST
+"[""codelists"",3,""codes"",0,""name""]",name,string,Lowest quintile
+"[""codelists"",3,""codes"",0,""definition""]",definition,string,Lowest expenditure quintile within the synthetic survey distribution.
+"[""codelists"",3,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",3,""codes"",0,""evidence_quote""]",evidence_quote,string,Lowest quintile
+"[""codelists"",3,""codes"",0,""local_creation_justification""]",local_creation_justification,string,The report gives a survey-specific quintile definition and no authoritative external quintile codelist was confirmed.
+"[""codelists"",3,""codes"",1]",1,object,
+"[""codelists"",3,""codes"",1,""code""]",code,string,HIGHEST
+"[""codelists"",3,""codes"",1,""name""]",name,string,Highest quintile
+"[""codelists"",3,""codes"",1,""definition""]",definition,string,Highest expenditure quintile within the synthetic survey distribution.
+"[""codelists"",3,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",3,""codes"",1,""evidence_quote""]",evidence_quote,string,Highest quintile
+"[""codelists"",3,""codes"",1,""local_creation_justification""]",local_creation_justification,string,The report gives a survey-specific quintile definition and no authoritative external quintile codelist was confirmed.
+"[""codelists"",4]",4,object,
+"[""codelists"",4,""codelist_id""]",codelist_id,string,CL_LOCAL_UNIT_MEASURE
+"[""codelists"",4,""name""]",name,string,Local unit of measure
+"[""codelists"",4,""agency_id""]",agency_id,string,SYNTH_NSI_LOCAL
+"[""codelists"",4,""version""]",version,string,1.0
+"[""codelists"",4,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""codelists"",4,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",4,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",4,""scope_notes""]",scope_notes,string,Local unit list preserving the unit labels in the report. The household-spending currency cannot be mapped to ISO 4217 because the report does not name the local currency.
+"[""codelists"",4,""codes""]",codes,array,
+"[""codelists"",4,""codes"",0]",0,object,
+"[""codelists"",4,""codes"",0,""code""]",code,string,IDX_2023_100
+"[""codelists"",4,""codes"",0,""name""]",name,string,"Index, 2023=100"
+"[""codelists"",4,""codes"",0,""definition""]",definition,string,Index unit for CPI values measuring price change relative to base year 2023=100.
+"[""codelists"",4,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",4,""codes"",0,""evidence_quote""]",evidence_quote,string,"Index, 2023=100"
+"[""codelists"",4,""codes"",0,""local_creation_justification""]",local_creation_justification,string,The report uses a base-period index unit; no authoritative domain unit code/version was confirmed from supplied evidence.
+"[""codelists"",4,""codes"",1]",1,object,
+"[""codelists"",4,""codes"",1,""code""]",code,string,LCU_PER_HH_PER_MONTH
+"[""codelists"",4,""codes"",1,""name""]",name,string,Local currency per household per month
+"[""codelists"",4,""codes"",1,""definition""]",definition,string,"Unit for mean monthly consumption expenditure per household, denominated in an unnamed local currency."
+"[""codelists"",4,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",4,""codes"",1,""evidence_quote""]",evidence_quote,string,Local currency per household per month
+"[""codelists"",4,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The report does not name the local currency, preventing assignment of an ISO 4217 currency code or a confirmed domain unit code."
+"[""codelists"",5]",5,object,
+"[""codelists"",5,""codelist_id""]",codelist_id,string,CL_LOCAL_REPORT_STATUS
+"[""codelists"",5,""name""]",name,string,Local report status label
+"[""codelists"",5,""agency_id""]",agency_id,string,SYNTH_NSI_LOCAL
+"[""codelists"",5,""version""]",version,string,1.0
+"[""codelists"",5,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""codelists"",5,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",5,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",5,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",5,""scope_notes""]",scope_notes,string,Local codelist for status labels as printed in the report. Final and provisional are CPI release-status labels; survey estimate is a household-spending survey label. These are not forced into SDMX CL_OBS_STATUS because exact standard code mappings were not confirmed and the report mixes status semantics.
+"[""codelists"",5,""codes""]",codes,array,
+"[""codelists"",5,""codes"",0]",0,object,
+"[""codelists"",5,""codes"",0,""code""]",code,string,FINAL
+"[""codelists"",5,""codes"",0,""name""]",name,string,Final
+"[""codelists"",5,""codes"",0,""definition""]",definition,string,Status label shown for CPI observations not marked provisional; exact finality criteria not stated.
+"[""codelists"",5,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",5,""codes"",0,""evidence_quote""]",evidence_quote,string,Final
+"[""codelists"",5,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Exact SDMX CL_OBS_STATUS mapping and code definition were not confirmed from supplied official-source evidence.
+"[""codelists"",5,""codes"",1]",1,object,
+"[""codelists"",5,""codes"",1,""code""]",code,string,PROVISIONAL
+"[""codelists"",5,""codes"",1,""name""]",name,string,Provisional
+"[""codelists"",5,""codes"",1,""definition""]",definition,string,Status label for the latest CPI month marked as provisional in the report.
+"[""codelists"",5,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",5,""codes"",1,""evidence_quote""]",evidence_quote,string,Provisional
+"[""codelists"",5,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Exact SDMX CL_OBS_STATUS mapping and code definition were not confirmed from supplied official-source evidence.
+"[""codelists"",5,""codes"",2]",2,object,
+"[""codelists"",5,""codes"",2,""code""]",code,string,SURVEY_ESTIMATE
+"[""codelists"",5,""codes"",2,""name""]",name,string,Survey estimate
+"[""codelists"",5,""codes"",2,""definition""]",definition,string,Status label shown for household-spending survey estimates; the report notes that such estimates are subject to sampling error.
+"[""codelists"",5,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""codelists"",5,""codes"",2,""evidence_quote""]",evidence_quote,string,Survey estimate
+"[""codelists"",5,""codes"",2,""local_creation_justification""]",local_creation_justification,string,This label describes the nature of the household survey estimate and is not confirmed as an SDMX observation-status code.

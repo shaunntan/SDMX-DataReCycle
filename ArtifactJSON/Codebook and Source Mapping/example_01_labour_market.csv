@@ -1,0 +1,588 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODEBOOK_AND_SOURCE_MAPPING
+"[""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""source_sha256""]",source_sha256,string,fb3bd37fc247c713e56b54ba1e234b1d05501d32a34d31b3ad2f1ebf6395c0e9
+"[""principles_file""]",principles_file,string,08_CODEBOOK_AND_SOURCE_MAPPING.txt
+"[""principles_sha256""]",principles_sha256,string,999d6556922403d8315a0a0558da149e83e7c3b8f29779d9d346959966d76b74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_2_0
+"[""standard_references"",0,""version""]",version,string,2.0
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/startpage/sdmx-standards-version-20/
+"[""standard_references"",0,""evidence""]",evidence,string,The supplied package states that the target standard is SDMX 2.0 and that in SDMX 2.0 the formal name of a DSD is Key Family.
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept guidance
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",1,""version""]",version,string,2.1
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied excerpt confirms reusable SDMX cross-domain concepts, the OBS_STATUS concept and CL_OBS_STATUS codelist ID convention, and includes relevant entries such as reference area, frequency, labour force status and economic activity terminology."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Global Registry catalog
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",2,""version""]",version,string,not stated
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied registry excerpt confirms a searchable SDMX codelist catalogue with item identifiers, codelist details, references, changelog and export options. It does not confirm individual code memberships for CL_FREQ, CL_SEX, CL_OBS_STATUS or CL_SEASONAL_ADJUST."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",3,""version""]",version,string,not confirmed
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,"The common SDMX source checklist identifies CL_FREQ as the usual SDMX frequency codelist. The supplied registry excerpt does not confirm exact version or code membership for quarterly and monthly values, so operational filling uses a local frequency codelist while standard mappings remain unresolved."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,SDMX
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,CL_SEX
+"[""standard_references"",4,""version""]",version,string,not confirmed
+"[""standard_references"",4,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",4,""evidence""]",evidence,string,"The common SDMX source checklist identifies CL_SEX as a candidate codelist for sex. The supplied registry excerpt does not confirm exact codes for Women, Men or the report-specific Total coverage category."
+"[""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",5]",5,object,
+"[""standard_references"",5,""agency""]",agency,string,SDMX
+"[""standard_references"",5,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",5,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",5,""version""]",version,string,not confirmed
+"[""standard_references"",5,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",5,""evidence""]",evidence,string,The SDMX Glossary excerpt confirms the OBS_STATUS concept and CL_OBS_STATUS codelist ID convention. It does not confirm exact code mappings for the report labels Final and Provisional.
+"[""standard_references"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",6]",6,object,
+"[""standard_references"",6,""agency""]",agency,string,SDMX
+"[""standard_references"",6,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",6,""artifact_id""]",artifact_id,string,CL_SEASONAL_ADJUST
+"[""standard_references"",6,""version""]",version,string,not confirmed
+"[""standard_references"",6,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",6,""evidence""]",evidence,string,The common SDMX source checklist identifies CL_SEASONAL_ADJUST as a candidate codelist for seasonal adjustment. The supplied registry excerpt does not confirm exact version or code mapping for Seasonally adjusted observations.
+"[""standard_references"",6,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",7]",7,object,
+"[""standard_references"",7,""agency""]",agency,string,UNSD
+"[""standard_references"",7,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",7,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",7,""version""]",version,string,not stated
+"[""standard_references"",7,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",7,""evidence""]",evidence,string,"The supplied UN M49 excerpt shows country or area names with numeric and alpha codes. It confirms UN M49 as an authoritative geographic source but does not establish applicability to the synthetic local regions Northland, Centralia or South Coast."
+"[""standard_references"",7,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",8]",8,object,
+"[""standard_references"",8,""agency""]",agency,string,UNSD
+"[""standard_references"",8,""artifact_type""]",artifact_type,string,Economic activity classification search source
+"[""standard_references"",8,""artifact_id""]",artifact_id,string,UNSD_ECON_CLASSIFICATIONS
+"[""standard_references"",8,""version""]",version,string,not confirmed
+"[""standard_references"",8,""url""]",url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""standard_references"",8,""evidence""]",evidence,string,The source reference catalogue identifies UNSD economic classifications as an authoritative place to check economic activity classifications such as ISIC. The report states that its industry labels are local aggregates and are not confirmed ISIC categories.
+"[""standard_references"",8,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",9]",9,object,
+"[""standard_references"",9,""agency""]",agency,string,SDMX
+"[""standard_references"",9,""artifact_type""]",artifact_type,string,Reference metadata guidance
+"[""standard_references"",9,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",9,""version""]",version,string,1.0
+"[""standard_references"",9,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",9,""evidence""]",evidence,string,"The package identifies SDMX reference metadata guidance as the recommended source for methodology, quality and other reference metadata concepts. Exact metadata concept identifiers for the report metadata fields were not confirmed from supplied excerpts."
+"[""standard_references"",9,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,This artifact is the authoritative operational codebook for filling the AI data templates. It uses governed local codelists for template filling where standard SDMX codelist versions or code memberships were not confirmed.
+"[""limitations"",1]",1,string,Structural alignment / override table for production: KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.FREQ: accepted DSD candidate CL_FREQ is operationally overridden by CL_SYN_FREQ_LM until CL_FREQ version/code membership is confirmed; REF_AREA: accepted DSD placeholder CL_SYNTHETIC_REGION is overridden by CL_SYN_REF_AREA_LM; SEX: accepted DSD candidate CL_SEX is overridden by CL_SYN_SEX_COVERAGE; UNIT_MEASURE: accepted DSD not-confirmed unit representation is overridden by CL_SYN_UNIT_MEASURE_LM; OBS_STATUS: accepted DSD candidate CL_OBS_STATUS is overridden by CL_SYN_REPORT_STATUS. KF_SYNTHETIC_LABOUR_VACANCIES_M.FREQ: accepted DSD candidate CL_FREQ is operationally overridden by CL_SYN_FREQ_LM; ACTIVITY: accepted DSD placeholder CL_SYNTHETIC_INDUSTRY_AGG is overridden by CL_SYN_ACTIVITY_LOCAL; UNIT_MEASURE: accepted DSD not-confirmed unit representation is overridden by CL_SYN_UNIT_MEASURE_LM; SEASONAL_ADJUST: accepted DSD candidate CL_SEASONAL_ADJUST is overridden by CL_SYN_SEASONAL_ADJUSTMENT.
+"[""limitations"",2]",2,string,"Because the strict response schema only permits DSD-style roles DIMENSION, TIME, MEASURE and ATTRIBUTE, reference metadata components are not listed in the fields array. They are preserved in source_value_mappings under REFERENCE_METADATA.* targets and must be implemented in an MSD / Metadata Set, not as observation-level or dataset-level DSD attributes."
+"[""limitations"",3]",3,string,"Exact SDMX Global Registry codelist versions and code memberships for CL_FREQ, CL_SEX, CL_OBS_STATUS and CL_SEASONAL_ADJUST were not confirmed from the supplied external evidence."
+"[""limitations"",4]",4,string,FREQ is mandatory in both template structures and is fillable only with local operational codes QUARTERLY and MONTHLY from CL_SYN_FREQ_LM. Do not auto-fill standard SDMX CL_FREQ codes Q or M until the target SDMX codelist version and code membership are verified.
+"[""limitations"",5]",5,string,"Report regions are synthetic/local labels; no authoritative UN M49, ISO 3166 or other external geography codelist match is confirmed for Northland, Centralia or South Coast."
+"[""limitations"",6]",6,string,Industry labels are local aggregates and are not confirmed to any ISIC revision; they are mapped only to a local activity codelist.
+"[""limitations"",7]",7,string,The Total sex category has special report-specific coverage and must not be inferred by summing Women and Men; it is therefore kept in a local constrained codelist until any standard mapping is verified.
+"[""limitations"",8]",8,string,"The report does not state formal source-system codes, codelist versions in the source, decimal precision, unit multiplier, or a formal SDMX agency identifier for the Synthetic Labour Observatory."
+"[""limitations"",9]",9,string,"No vacancy reference area is stated in the report, so no REF_AREA mapping is created for the vacancy-count structure."
+"[""fields""]",fields,array,
+"[""fields"",0]",0,object,
+"[""fields"",0,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.FREQ
+"[""fields"",0,""name""]",name,string,Frequency
+"[""fields"",0,""definition""]",definition,string,Concept_id=FREQ. Observation frequency for the unemployment-rate statistical structure. Applies only to quarterly unemployment-rate observations.
+"[""fields"",0,""role""]",role,string,DIMENSION
+"[""fields"",0,""representation""]",representation,string,Coded local frequency; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=KEY/DIMENSION; allowed_values=QUARTERLY only for this structure; allowed_rule=mandatory local code; missing_rule=not permitted; standard-auto-fill-rule=do not auto-fill SDMX CL_FREQ code until verified.
+"[""fields"",0,""codelist_id""]",codelist_id,string,CL_SYN_FREQ_LM
+"[""fields"",0,""required""]",required,boolean,true
+"[""fields"",0,""example""]",example,string,QUARTERLY
+"[""fields"",0,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_FREQ_LM; SDMX CL_FREQ candidate mapping unresolved
+"[""fields"",0,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",1]",1,object,
+"[""fields"",1,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.REF_AREA
+"[""fields"",1,""name""]",name,string,Reference area
+"[""fields"",1,""definition""]",definition,string,Concept_id=REF_AREA. Geographic region to which an unemployment-rate observation refers. Applies only to the unemployment-rate structure.
+"[""fields"",1,""role""]",role,string,DIMENSION
+"[""fields"",1,""representation""]",representation,string,"Coded local synthetic region; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=KEY/DIMENSION; allowed_values=NORTHLAND, CENTRALIA, SOUTH_COAST; missing_rule=not permitted."
+"[""fields"",1,""codelist_id""]",codelist_id,string,CL_SYN_REF_AREA_LM
+"[""fields"",1,""required""]",required,boolean,true
+"[""fields"",1,""example""]",example,string,NORTHLAND
+"[""fields"",1,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_REF_AREA_LM; SDMX REF_AREA concept candidate; UN M49 checked but not confirmed applicable
+"[""fields"",1,""source_url""]",source_url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""fields"",2]",2,object,
+"[""fields"",2,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.SEX
+"[""fields"",2,""name""]",name,string,Sex
+"[""fields"",2,""definition""]",definition,string,Concept_id=SEX. Sex or sex-coverage category used to disaggregate unemployment-rate estimates. TOTAL is report-specific and is not derived by summing displayed Women and Men rows.
+"[""fields"",2,""role""]",role,string,DIMENSION
+"[""fields"",2,""representation""]",representation,string,"Coded local constrained list; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=KEY/DIMENSION; allowed_values=WOMEN, MEN, TOTAL; missing_rule=not permitted; standard-auto-fill-rule=do not auto-fill SDMX CL_SEX codes until verified."
+"[""fields"",2,""codelist_id""]",codelist_id,string,CL_SYN_SEX_COVERAGE
+"[""fields"",2,""required""]",required,boolean,true
+"[""fields"",2,""example""]",example,string,WOMEN
+"[""fields"",2,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_SEX_COVERAGE; SDMX CL_SEX candidate mapping not confirmed
+"[""fields"",2,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",3]",3,object,
+"[""fields"",3,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.TIME_PERIOD
+"[""fields"",3,""name""]",name,string,Time period
+"[""fields"",3,""definition""]",definition,string,Concept_id=TIME_PERIOD. Quarter to which the unemployment-rate observation refers.
+"[""fields"",3,""role""]",role,string,TIME
+"[""fields"",3,""representation""]",representation,string,SDMX-style observational time period; codelist_agency=not applicable; codelist_version=not applicable; attachment_level=KEY/TIME_DIMENSION; allowed_values=reported quarters 2025-Q1 and 2025-Q2 unless source is extended; allowed_rule=YYYY-Qn; missing_rule=not permitted.
+"[""fields"",3,""codelist_id""]",codelist_id,null,
+"[""fields"",3,""required""]",required,boolean,true
+"[""fields"",3,""example""]",example,string,2025-Q1
+"[""fields"",3,""source_standard""]",source_standard,string,SDMX TIME_PERIOD candidate; exact concept scheme ID not confirmed
+"[""fields"",3,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""fields"",4]",4,object,
+"[""fields"",4,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.OBS_VALUE
+"[""fields"",4,""name""]",name,string,Observation value
+"[""fields"",4,""definition""]",definition,string,Concept_id=OBS_VALUE. Numeric unemployment-rate value for a given combination of unemployment-rate dimensions.
+"[""fields"",4,""role""]",role,string,MEASURE
+"[""fields"",4,""representation""]",representation,string,Numeric decimal; codelist_agency=not applicable; codelist_version=not applicable; attachment_level=OBSERVATION/PRIMARY_MEASURE; allowed_rule=decimal number representing unemployed persons as a percentage of the labour force; missing_rule=not permitted; unit represented separately by UNIT_MEASURE.
+"[""fields"",4,""codelist_id""]",codelist_id,null,
+"[""fields"",4,""required""]",required,boolean,true
+"[""fields"",4,""example""]",example,string,7.8
+"[""fields"",4,""source_standard""]",source_standard,string,SDMX OBS_VALUE candidate; exact concept scheme ID not confirmed
+"[""fields"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""fields"",5]",5,object,
+"[""fields"",5,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.UNIT_MEASURE
+"[""fields"",5,""name""]",name,string,Unit of measure
+"[""fields"",5,""definition""]",definition,string,Concept_id=UNIT_MEASURE. Unit in which the unemployment-rate observation value is expressed.
+"[""fields"",5,""role""]",role,string,ATTRIBUTE
+"[""fields"",5,""representation""]",representation,string,Coded local unit; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=DATASET; allowed_values=PERCENT only for this structure; missing_rule=not permitted; standard unit mapping unresolved.
+"[""fields"",5,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE_LM
+"[""fields"",5,""required""]",required,boolean,true
+"[""fields"",5,""example""]",example,string,PERCENT
+"[""fields"",5,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_UNIT_MEASURE_LM; standard unit codelist/code not confirmed
+"[""fields"",5,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",6]",6,object,
+"[""fields"",6,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.OBS_STATUS
+"[""fields"",6,""name""]",name,string,Observation status
+"[""fields"",6,""definition""]",definition,string,"Concept_id=OBS_STATUS. Status of an unemployment-rate observation, distinguishing final and provisional reported values."
+"[""fields"",6,""role""]",role,string,ATTRIBUTE
+"[""fields"",6,""representation""]",representation,string,"Coded local report-status list; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=OBSERVATION; allowed_values=FINAL, PROVISIONAL; missing_rule=not permitted; standard-auto-fill-rule=do not auto-fill SDMX CL_OBS_STATUS codes until verified."
+"[""fields"",6,""codelist_id""]",codelist_id,string,CL_SYN_REPORT_STATUS
+"[""fields"",6,""required""]",required,boolean,true
+"[""fields"",6,""example""]",example,string,FINAL
+"[""fields"",6,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_REPORT_STATUS; SDMX OBS_STATUS / CL_OBS_STATUS candidate mapping not confirmed
+"[""fields"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""fields"",7]",7,object,
+"[""fields"",7,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.FREQ
+"[""fields"",7,""name""]",name,string,Frequency
+"[""fields"",7,""definition""]",definition,string,Concept_id=FREQ. Observation frequency for the job-vacancy statistical structure. Applies only to monthly vacancy-count observations.
+"[""fields"",7,""role""]",role,string,DIMENSION
+"[""fields"",7,""representation""]",representation,string,Coded local frequency; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=KEY/DIMENSION; allowed_values=MONTHLY only for this structure; missing_rule=not permitted; standard-auto-fill-rule=do not auto-fill SDMX CL_FREQ code until verified.
+"[""fields"",7,""codelist_id""]",codelist_id,string,CL_SYN_FREQ_LM
+"[""fields"",7,""required""]",required,boolean,true
+"[""fields"",7,""example""]",example,string,MONTHLY
+"[""fields"",7,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_FREQ_LM; SDMX CL_FREQ candidate mapping unresolved
+"[""fields"",7,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",8]",8,object,
+"[""fields"",8,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.ACTIVITY
+"[""fields"",8,""name""]",name,string,Economic activity
+"[""fields"",8,""definition""]",definition,string,Concept_id=ACTIVITY. Local industry aggregate to which a job-vacancy count observation refers.
+"[""fields"",8,""role""]",role,string,DIMENSION
+"[""fields"",8,""representation""]",representation,string,"Coded local activity/industry aggregate; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=KEY/DIMENSION; allowed_values=MANUFACTURING, CONSTRUCTION, INFORMATION_SERVICES; missing_rule=not permitted; ISIC mapping prohibited unless confirmed."
+"[""fields"",8,""codelist_id""]",codelist_id,string,CL_SYN_ACTIVITY_LOCAL
+"[""fields"",8,""required""]",required,boolean,true
+"[""fields"",8,""example""]",example,string,MANUFACTURING
+"[""fields"",8,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_ACTIVITY_LOCAL; UNSD ISIC unverified for these labels
+"[""fields"",8,""source_url""]",source_url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""fields"",9]",9,object,
+"[""fields"",9,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.TIME_PERIOD
+"[""fields"",9,""name""]",name,string,Time period
+"[""fields"",9,""definition""]",definition,string,Concept_id=TIME_PERIOD. Month to which the vacancy-count observation refers.
+"[""fields"",9,""role""]",role,string,TIME
+"[""fields"",9,""representation""]",representation,string,"SDMX-style observational time period; codelist_agency=not applicable; codelist_version=not applicable; attachment_level=KEY/TIME_DIMENSION; allowed_values=reported months 2025-01, 2025-02 and 2025-03 unless source is extended; allowed_rule=YYYY-MM; missing_rule=not permitted."
+"[""fields"",9,""codelist_id""]",codelist_id,null,
+"[""fields"",9,""required""]",required,boolean,true
+"[""fields"",9,""example""]",example,string,2025-01
+"[""fields"",9,""source_standard""]",source_standard,string,SDMX TIME_PERIOD candidate; exact concept scheme ID not confirmed
+"[""fields"",9,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""fields"",10]",10,object,
+"[""fields"",10,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.OBS_VALUE
+"[""fields"",10,""name""]",name,string,Observation value
+"[""fields"",10,""definition""]",definition,string,Concept_id=OBS_VALUE. Numeric job-vacancy count for a given combination of vacancy-count dimensions.
+"[""fields"",10,""role""]",role,string,MEASURE
+"[""fields"",10,""representation""]",representation,string,Numeric integer; codelist_agency=not applicable; codelist_version=not applicable; attachment_level=OBSERVATION/PRIMARY_MEASURE; allowed_rule=integer count of unfilled positions available for immediate recruitment; missing_rule=not permitted; unit represented separately by UNIT_MEASURE.
+"[""fields"",10,""codelist_id""]",codelist_id,null,
+"[""fields"",10,""required""]",required,boolean,true
+"[""fields"",10,""example""]",example,string,2993
+"[""fields"",10,""source_standard""]",source_standard,string,SDMX OBS_VALUE candidate; exact concept scheme ID not confirmed
+"[""fields"",10,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""fields"",11]",11,object,
+"[""fields"",11,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.UNIT_MEASURE
+"[""fields"",11,""name""]",name,string,Unit of measure
+"[""fields"",11,""definition""]",definition,string,Concept_id=UNIT_MEASURE. Unit in which the vacancy-count observation value is expressed.
+"[""fields"",11,""role""]",role,string,ATTRIBUTE
+"[""fields"",11,""representation""]",representation,string,Coded local unit; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=DATASET; allowed_values=OPEN_POSITIONS only for this structure; missing_rule=not permitted; standard unit mapping unresolved.
+"[""fields"",11,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE_LM
+"[""fields"",11,""required""]",required,boolean,true
+"[""fields"",11,""example""]",example,string,OPEN_POSITIONS
+"[""fields"",11,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_UNIT_MEASURE_LM; standard unit codelist/code not confirmed
+"[""fields"",11,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",12]",12,object,
+"[""fields"",12,""field_id""]",field_id,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.SEASONAL_ADJUST
+"[""fields"",12,""name""]",name,string,Seasonal adjustment
+"[""fields"",12,""definition""]",definition,string,Concept_id=SEASONAL_ADJUST. Adjustment status indicating whether vacancy-count observations have been seasonally adjusted.
+"[""fields"",12,""role""]",role,string,ATTRIBUTE
+"[""fields"",12,""representation""]",representation,string,Coded local seasonal-adjustment status; codelist_agency=SYNTHETIC_LABOUR_OBSERVATORY; codelist_version=1.0-draft; attachment_level=DATASET; allowed_values=SEASONALLY_ADJUSTED only for this structure; missing_rule=not permitted; standard-auto-fill-rule=do not auto-fill SDMX CL_SEASONAL_ADJUST codes until verified.
+"[""fields"",12,""codelist_id""]",codelist_id,string,CL_SYN_SEASONAL_ADJUSTMENT
+"[""fields"",12,""required""]",required,boolean,true
+"[""fields"",12,""example""]",example,string,SEASONALLY_ADJUSTED
+"[""fields"",12,""source_standard""]",source_standard,string,Operational local codelist CL_SYN_SEASONAL_ADJUSTMENT; SDMX CL_SEASONAL_ADJUST candidate mapping not confirmed
+"[""fields"",12,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""source_value_mappings""]",source_value_mappings,array,
+"[""source_value_mappings"",0]",0,object,
+"[""source_value_mappings"",0,""source_value""]",source_value,string,Quarterly
+"[""source_value_mappings"",0,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; bulletin title and caveats for unemployment-rate structure
+"[""source_value_mappings"",0,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.FREQ
+"[""source_value_mappings"",0,""target_code""]",target_code,string,QUARTERLY
+"[""source_value_mappings"",0,""target_code_label""]",target_code_label,string,Quarterly
+"[""source_value_mappings"",0,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",0,""target_standard""]",target_standard,string,"CL_SYN_FREQ_LM local codelist, version 1.0-draft; SDMX CL_FREQ candidate unresolved"
+"[""source_value_mappings"",0,""notes""]",notes,string,Operational template filling uses the local code QUARTERLY. Candidate SDMX CL_FREQ code must not be auto-applied until registry version and code membership are verified.
+"[""source_value_mappings"",0,""evidence_quote""]",evidence_quote,string,Quarterly rates and monthly vacancy counts represent different statistical structures.
+"[""source_value_mappings"",1]",1,object,
+"[""source_value_mappings"",1,""source_value""]",source_value,string,monthly
+"[""source_value_mappings"",1,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Methodology statement for vacancy counts
+"[""source_value_mappings"",1,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.FREQ
+"[""source_value_mappings"",1,""target_code""]",target_code,string,MONTHLY
+"[""source_value_mappings"",1,""target_code_label""]",target_code_label,string,Monthly
+"[""source_value_mappings"",1,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",1,""target_standard""]",target_standard,string,"CL_SYN_FREQ_LM local codelist, version 1.0-draft; SDMX CL_FREQ candidate unresolved"
+"[""source_value_mappings"",1,""notes""]",notes,string,Operational template filling uses the local code MONTHLY. Candidate SDMX CL_FREQ code must not be auto-applied until registry version and code membership are verified.
+"[""source_value_mappings"",1,""evidence_quote""]",evidence_quote,string,"Vacancy counts are compiled independently from a synthetic employer survey and use a
+monthly reference period."
+"[""source_value_mappings"",2]",2,object,
+"[""source_value_mappings"",2,""source_value""]",source_value,string,Northland
+"[""source_value_mappings"",2,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Region column
+"[""source_value_mappings"",2,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.REF_AREA
+"[""source_value_mappings"",2,""target_code""]",target_code,string,NORTHLAND
+"[""source_value_mappings"",2,""target_code_label""]",target_code_label,string,Northland
+"[""source_value_mappings"",2,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",2,""target_standard""]",target_standard,string,"CL_SYN_REF_AREA_LM local codelist, version 1.0-draft"
+"[""source_value_mappings"",2,""notes""]",notes,string,Exact mapping to a governed local synthetic region code; no standard geographic code is confirmed.
+"[""source_value_mappings"",2,""evidence_quote""]",evidence_quote,string,Northland
+"[""source_value_mappings"",3]",3,object,
+"[""source_value_mappings"",3,""source_value""]",source_value,string,Centralia
+"[""source_value_mappings"",3,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Region column
+"[""source_value_mappings"",3,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.REF_AREA
+"[""source_value_mappings"",3,""target_code""]",target_code,string,CENTRALIA
+"[""source_value_mappings"",3,""target_code_label""]",target_code_label,string,Centralia
+"[""source_value_mappings"",3,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",3,""target_standard""]",target_standard,string,"CL_SYN_REF_AREA_LM local codelist, version 1.0-draft"
+"[""source_value_mappings"",3,""notes""]",notes,string,Exact mapping to a governed local synthetic region code; no standard geographic code is confirmed.
+"[""source_value_mappings"",3,""evidence_quote""]",evidence_quote,string,Centralia
+"[""source_value_mappings"",4]",4,object,
+"[""source_value_mappings"",4,""source_value""]",source_value,string,South Coast
+"[""source_value_mappings"",4,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Region column
+"[""source_value_mappings"",4,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.REF_AREA
+"[""source_value_mappings"",4,""target_code""]",target_code,string,SOUTH_COAST
+"[""source_value_mappings"",4,""target_code_label""]",target_code_label,string,South Coast
+"[""source_value_mappings"",4,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",4,""target_standard""]",target_standard,string,"CL_SYN_REF_AREA_LM local codelist, version 1.0-draft"
+"[""source_value_mappings"",4,""notes""]",notes,string,Exact mapping to a governed local synthetic region code; no standard geographic code is confirmed.
+"[""source_value_mappings"",4,""evidence_quote""]",evidence_quote,string,South Coast
+"[""source_value_mappings"",5]",5,object,
+"[""source_value_mappings"",5,""source_value""]",source_value,string,Women
+"[""source_value_mappings"",5,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Sex column
+"[""source_value_mappings"",5,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.SEX
+"[""source_value_mappings"",5,""target_code""]",target_code,string,WOMEN
+"[""source_value_mappings"",5,""target_code_label""]",target_code_label,string,Women
+"[""source_value_mappings"",5,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",5,""target_standard""]",target_standard,string,"CL_SYN_SEX_COVERAGE local codelist, version 1.0-draft"
+"[""source_value_mappings"",5,""notes""]",notes,string,Exact local mapping. Candidate mapping to SDMX CL_SEX should be checked before standard-code use.
+"[""source_value_mappings"",5,""evidence_quote""]",evidence_quote,string,Women
+"[""source_value_mappings"",6]",6,object,
+"[""source_value_mappings"",6,""source_value""]",source_value,string,Men
+"[""source_value_mappings"",6,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Sex column
+"[""source_value_mappings"",6,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.SEX
+"[""source_value_mappings"",6,""target_code""]",target_code,string,MEN
+"[""source_value_mappings"",6,""target_code_label""]",target_code_label,string,Men
+"[""source_value_mappings"",6,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",6,""target_standard""]",target_standard,string,"CL_SYN_SEX_COVERAGE local codelist, version 1.0-draft"
+"[""source_value_mappings"",6,""notes""]",notes,string,Exact local mapping. Candidate mapping to SDMX CL_SEX should be checked before standard-code use.
+"[""source_value_mappings"",6,""evidence_quote""]",evidence_quote,string,Men
+"[""source_value_mappings"",7]",7,object,
+"[""source_value_mappings"",7,""source_value""]",source_value,string,Total
+"[""source_value_mappings"",7,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Sex column and caveats
+"[""source_value_mappings"",7,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.SEX
+"[""source_value_mappings"",7,""target_code""]",target_code,string,TOTAL
+"[""source_value_mappings"",7,""target_code_label""]",target_code_label,string,Total
+"[""source_value_mappings"",7,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",7,""target_standard""]",target_standard,string,"CL_SYN_SEX_COVERAGE local codelist, version 1.0-draft"
+"[""source_value_mappings"",7,""notes""]",notes,string,Local report-specific Total category; not mapped to any standard total-sex code because the report states special coverage and warns against summing displayed rows.
+"[""source_value_mappings"",7,""evidence_quote""]",evidence_quote,string,"Total sex coverage includes respondents outside the displayed women/men categories;
+it must not be inferred by summing displayed rows."
+"[""source_value_mappings"",8]",8,object,
+"[""source_value_mappings"",8,""source_value""]",source_value,string,2025-Q1
+"[""source_value_mappings"",8,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Quarter column
+"[""source_value_mappings"",8,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.TIME_PERIOD
+"[""source_value_mappings"",8,""target_code""]",target_code,null,
+"[""source_value_mappings"",8,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",8,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",8,""target_standard""]",target_standard,string,SDMX-style time-period representation
+"[""source_value_mappings"",8,""notes""]",notes,string,Quarterly time-period value copied from the report into TIME_PERIOD.
+"[""source_value_mappings"",8,""evidence_quote""]",evidence_quote,string,2025-Q1
+"[""source_value_mappings"",9]",9,object,
+"[""source_value_mappings"",9,""source_value""]",source_value,string,2025-Q2
+"[""source_value_mappings"",9,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Quarter column
+"[""source_value_mappings"",9,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.TIME_PERIOD
+"[""source_value_mappings"",9,""target_code""]",target_code,null,
+"[""source_value_mappings"",9,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",9,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",9,""target_standard""]",target_standard,string,SDMX-style time-period representation
+"[""source_value_mappings"",9,""notes""]",notes,string,Quarterly time-period value copied from the report into TIME_PERIOD.
+"[""source_value_mappings"",9,""evidence_quote""]",evidence_quote,string,2025-Q2
+"[""source_value_mappings"",10]",10,object,
+"[""source_value_mappings"",10,""source_value""]",source_value,string,Value
+"[""source_value_mappings"",10,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 measure column header
+"[""source_value_mappings"",10,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.OBS_VALUE
+"[""source_value_mappings"",10,""target_code""]",target_code,null,
+"[""source_value_mappings"",10,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",10,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",10,""target_standard""]",target_standard,string,SDMX OBS_VALUE candidate
+"[""source_value_mappings"",10,""notes""]",notes,string,"The source column header Value carries numeric unemployment-rate observations. The measured phenomenon is documented by the unemployment-rate structure, not by creating a separate measure field."
+"[""source_value_mappings"",10,""evidence_quote""]",evidence_quote,string,Value
+"[""source_value_mappings"",11]",11,object,
+"[""source_value_mappings"",11,""source_value""]",source_value,string,Percent
+"[""source_value_mappings"",11,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Unit column
+"[""source_value_mappings"",11,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.UNIT_MEASURE
+"[""source_value_mappings"",11,""target_code""]",target_code,string,PERCENT
+"[""source_value_mappings"",11,""target_code_label""]",target_code_label,string,Percent
+"[""source_value_mappings"",11,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",11,""target_standard""]",target_standard,string,"CL_SYN_UNIT_MEASURE_LM local codelist, version 1.0-draft"
+"[""source_value_mappings"",11,""notes""]",notes,string,Exact local unit mapping for unemployment rates. No authoritative standard percent code/version was confirmed from supplied evidence.
+"[""source_value_mappings"",11,""evidence_quote""]",evidence_quote,string,Percent
+"[""source_value_mappings"",12]",12,object,
+"[""source_value_mappings"",12,""source_value""]",source_value,string,Final
+"[""source_value_mappings"",12,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Status column
+"[""source_value_mappings"",12,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.OBS_STATUS
+"[""source_value_mappings"",12,""target_code""]",target_code,string,FINAL
+"[""source_value_mappings"",12,""target_code_label""]",target_code_label,string,Final
+"[""source_value_mappings"",12,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",12,""target_standard""]",target_standard,string,"CL_SYN_REPORT_STATUS local codelist, version 1.0-draft"
+"[""source_value_mappings"",12,""notes""]",notes,string,Exact local report-status mapping. Candidate mapping to SDMX CL_OBS_STATUS requires code-level confirmation.
+"[""source_value_mappings"",12,""evidence_quote""]",evidence_quote,string,Final
+"[""source_value_mappings"",13]",13,object,
+"[""source_value_mappings"",13,""source_value""]",source_value,string,Provisional
+"[""source_value_mappings"",13,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Table 1 Status column and footnote
+"[""source_value_mappings"",13,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.OBS_STATUS
+"[""source_value_mappings"",13,""target_code""]",target_code,string,PROVISIONAL
+"[""source_value_mappings"",13,""target_code_label""]",target_code_label,string,Provisional
+"[""source_value_mappings"",13,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",13,""target_standard""]",target_standard,string,"CL_SYN_REPORT_STATUS local codelist, version 1.0-draft"
+"[""source_value_mappings"",13,""notes""]",notes,string,Exact local report-status mapping. Candidate mapping to SDMX CL_OBS_STATUS requires code-level confirmation.
+"[""source_value_mappings"",13,""evidence_quote""]",evidence_quote,string,Footnote: 2025-Q2 rates are provisional.
+"[""source_value_mappings"",14]",14,object,
+"[""source_value_mappings"",14,""source_value""]",source_value,string,Manufacturing
+"[""source_value_mappings"",14,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 Industry column
+"[""source_value_mappings"",14,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.ACTIVITY
+"[""source_value_mappings"",14,""target_code""]",target_code,string,MANUFACTURING
+"[""source_value_mappings"",14,""target_code_label""]",target_code_label,string,Manufacturing
+"[""source_value_mappings"",14,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",14,""target_standard""]",target_standard,string,"CL_SYN_ACTIVITY_LOCAL local codelist, version 1.0-draft"
+"[""source_value_mappings"",14,""notes""]",notes,string,Exact local activity mapping only. Do not map to ISIC without a confirmed classification revision and correspondence.
+"[""source_value_mappings"",14,""evidence_quote""]",evidence_quote,string,Manufacturing
+"[""source_value_mappings"",15]",15,object,
+"[""source_value_mappings"",15,""source_value""]",source_value,string,Construction
+"[""source_value_mappings"",15,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 Industry column
+"[""source_value_mappings"",15,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.ACTIVITY
+"[""source_value_mappings"",15,""target_code""]",target_code,string,CONSTRUCTION
+"[""source_value_mappings"",15,""target_code_label""]",target_code_label,string,Construction
+"[""source_value_mappings"",15,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",15,""target_standard""]",target_standard,string,"CL_SYN_ACTIVITY_LOCAL local codelist, version 1.0-draft"
+"[""source_value_mappings"",15,""notes""]",notes,string,Exact local activity mapping only. Do not map to ISIC without a confirmed classification revision and correspondence.
+"[""source_value_mappings"",15,""evidence_quote""]",evidence_quote,string,Construction
+"[""source_value_mappings"",16]",16,object,
+"[""source_value_mappings"",16,""source_value""]",source_value,string,Information services
+"[""source_value_mappings"",16,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 Industry column
+"[""source_value_mappings"",16,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.ACTIVITY
+"[""source_value_mappings"",16,""target_code""]",target_code,string,INFORMATION_SERVICES
+"[""source_value_mappings"",16,""target_code_label""]",target_code_label,string,Information services
+"[""source_value_mappings"",16,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",16,""target_standard""]",target_standard,string,"CL_SYN_ACTIVITY_LOCAL local codelist, version 1.0-draft"
+"[""source_value_mappings"",16,""notes""]",notes,string,Exact local activity mapping only. Do not map to ISIC without a confirmed classification revision and correspondence.
+"[""source_value_mappings"",16,""evidence_quote""]",evidence_quote,string,Information services
+"[""source_value_mappings"",17]",17,object,
+"[""source_value_mappings"",17,""source_value""]",source_value,string,2025-01
+"[""source_value_mappings"",17,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 Month column
+"[""source_value_mappings"",17,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.TIME_PERIOD
+"[""source_value_mappings"",17,""target_code""]",target_code,null,
+"[""source_value_mappings"",17,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",17,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",17,""target_standard""]",target_standard,string,SDMX-style time-period representation
+"[""source_value_mappings"",17,""notes""]",notes,string,Monthly time-period value copied from the report into TIME_PERIOD.
+"[""source_value_mappings"",17,""evidence_quote""]",evidence_quote,string,2025-01
+"[""source_value_mappings"",18]",18,object,
+"[""source_value_mappings"",18,""source_value""]",source_value,string,2025-02
+"[""source_value_mappings"",18,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 Month column
+"[""source_value_mappings"",18,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.TIME_PERIOD
+"[""source_value_mappings"",18,""target_code""]",target_code,null,
+"[""source_value_mappings"",18,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",18,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",18,""target_standard""]",target_standard,string,SDMX-style time-period representation
+"[""source_value_mappings"",18,""notes""]",notes,string,Monthly time-period value copied from the report into TIME_PERIOD.
+"[""source_value_mappings"",18,""evidence_quote""]",evidence_quote,string,2025-02
+"[""source_value_mappings"",19]",19,object,
+"[""source_value_mappings"",19,""source_value""]",source_value,string,2025-03
+"[""source_value_mappings"",19,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 Month column
+"[""source_value_mappings"",19,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.TIME_PERIOD
+"[""source_value_mappings"",19,""target_code""]",target_code,null,
+"[""source_value_mappings"",19,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",19,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",19,""target_standard""]",target_standard,string,SDMX-style time-period representation
+"[""source_value_mappings"",19,""notes""]",notes,string,Monthly time-period value copied from the report into TIME_PERIOD.
+"[""source_value_mappings"",19,""evidence_quote""]",evidence_quote,string,2025-03
+"[""source_value_mappings"",20]",20,object,
+"[""source_value_mappings"",20,""source_value""]",source_value,string,Vacancies
+"[""source_value_mappings"",20,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 measure column header
+"[""source_value_mappings"",20,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.OBS_VALUE
+"[""source_value_mappings"",20,""target_code""]",target_code,null,
+"[""source_value_mappings"",20,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",20,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",20,""target_standard""]",target_standard,string,SDMX OBS_VALUE candidate
+"[""source_value_mappings"",20,""notes""]",notes,string,The source column header Vacancies carries numeric job-vacancy counts. The measured phenomenon is documented by the vacancy-count structure.
+"[""source_value_mappings"",20,""evidence_quote""]",evidence_quote,string,Vacancies
+"[""source_value_mappings"",21]",21,object,
+"[""source_value_mappings"",21,""source_value""]",source_value,string,Open positions
+"[""source_value_mappings"",21,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 Unit column
+"[""source_value_mappings"",21,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.UNIT_MEASURE
+"[""source_value_mappings"",21,""target_code""]",target_code,string,OPEN_POSITIONS
+"[""source_value_mappings"",21,""target_code_label""]",target_code_label,string,Open positions
+"[""source_value_mappings"",21,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",21,""target_standard""]",target_standard,string,"CL_SYN_UNIT_MEASURE_LM local codelist, version 1.0-draft"
+"[""source_value_mappings"",21,""notes""]",notes,string,Exact local unit mapping for job-vacancy counts. No authoritative standard unit code/version was confirmed from supplied evidence.
+"[""source_value_mappings"",21,""evidence_quote""]",evidence_quote,string,Open positions
+"[""source_value_mappings"",22]",22,object,
+"[""source_value_mappings"",22,""source_value""]",source_value,string,Seasonally adjusted
+"[""source_value_mappings"",22,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 Adjustment column
+"[""source_value_mappings"",22,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.SEASONAL_ADJUST
+"[""source_value_mappings"",22,""target_code""]",target_code,string,SEASONALLY_ADJUSTED
+"[""source_value_mappings"",22,""target_code_label""]",target_code_label,string,Seasonally adjusted
+"[""source_value_mappings"",22,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",22,""target_standard""]",target_standard,string,"CL_SYN_SEASONAL_ADJUSTMENT local codelist, version 1.0-draft"
+"[""source_value_mappings"",22,""notes""]",notes,string,Exact local seasonal-adjustment mapping. Candidate mapping to SDMX CL_SEASONAL_ADJUST requires code-level confirmation.
+"[""source_value_mappings"",22,""evidence_quote""]",evidence_quote,string,Seasonally adjusted
+"[""source_value_mappings"",23]",23,object,
+"[""source_value_mappings"",23,""source_value""]",source_value,string,Industry labels are local aggregates and are not confirmed ISIC categories.
+"[""source_value_mappings"",23,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Table 2 footnote
+"[""source_value_mappings"",23,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.ACTIVITY
+"[""source_value_mappings"",23,""target_code""]",target_code,null,
+"[""source_value_mappings"",23,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",23,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",23,""target_standard""]",target_standard,string,UNSD ISIC candidate only; revision not confirmed
+"[""source_value_mappings"",23,""notes""]",notes,string,"This report statement prevents automatic ISIC mapping for Manufacturing, Construction and Information services."
+"[""source_value_mappings"",23,""evidence_quote""]",evidence_quote,string,Footnote: Industry labels are local aggregates and are not confirmed ISIC categories.
+"[""source_value_mappings"",24]",24,object,
+"[""source_value_mappings"",24,""source_value""]",source_value,string,Publication date: 20 August 2026
+"[""source_value_mappings"",24,""source_context""]",source_context,string,"reference metadata; page 1 publication information; MSD/Metadata Set scope, not DSD field"
+"[""source_value_mappings"",24,""target_field""]",target_field,string,PUBLICATION_DATE
+"[""source_value_mappings"",24,""target_code""]",target_code,null,
+"[""source_value_mappings"",24,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",24,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",24,""target_standard""]",target_standard,string,Reference metadata date; exact SDMX metadata concept ID not confirmed
+"[""source_value_mappings"",24,""notes""]",notes,string,"Publication date is a reference metadata component attached at bulletin/dataflow or metadata-set scope, not an observation dimension or DSD attribute."
+"[""source_value_mappings"",24,""evidence_quote""]",evidence_quote,string,Publication date: 20 August 2026
+"[""source_value_mappings"",25]",25,object,
+"[""source_value_mappings"",25,""source_value""]",source_value,string,Methodology
+"[""source_value_mappings"",25,""source_context""]",source_context,string,"reference metadata; page 1 Methodology section; MSD/Metadata Set scope, not DSD field"
+"[""source_value_mappings"",25,""target_field""]",target_field,string,METHODOLOGY
+"[""source_value_mappings"",25,""target_code""]",target_code,null,
+"[""source_value_mappings"",25,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",25,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",25,""target_standard""]",target_standard,string,SDMX reference metadata candidate; exact concept ID not confirmed
+"[""source_value_mappings"",25,""notes""]",notes,string,Methodology text is reference metadata. It supports modelling choices: unemployment rates have persons aged 15-64 scope; vacancy counts use a monthly reference period.
+"[""source_value_mappings"",25,""evidence_quote""]",evidence_quote,string,"Methodology
+Unemployment rates are synthetic survey estimates for persons aged 15-64. Vacancy counts are compiled independently from a synthetic employer survey and use a
+monthly reference period."
+"[""source_value_mappings"",26]",26,object,
+"[""source_value_mappings"",26,""source_value""]",source_value,string,Source description
+"[""source_value_mappings"",26,""source_context""]",source_context,string,"reference metadata; page 1 Source description section; MSD/Metadata Set scope, not DSD field"
+"[""source_value_mappings"",26,""target_field""]",target_field,string,SOURCE_DATA
+"[""source_value_mappings"",26,""target_code""]",target_code,null,
+"[""source_value_mappings"",26,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",26,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",26,""target_standard""]",target_standard,string,SDMX reference metadata candidate; exact concept ID not confirmed
+"[""source_value_mappings"",26,""notes""]",notes,string,Source description is reference metadata and must not be duplicated as an observation dimension.
+"[""source_value_mappings"",26,""evidence_quote""]",evidence_quote,string,"Source description
+Synthetic Labour Force Survey and Synthetic Establishment Vacancy Survey."
+"[""source_value_mappings"",27]",27,object,
+"[""source_value_mappings"",27,""source_value""]",source_value,string,Caveats and limitations
+"[""source_value_mappings"",27,""source_context""]",source_context,string,"reference metadata; page 1 Caveats and limitations section; MSD/Metadata Set scope, not DSD field"
+"[""source_value_mappings"",27,""target_field""]",target_field,string,LIMITATIONS
+"[""source_value_mappings"",27,""target_code""]",target_code,null,
+"[""source_value_mappings"",27,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",27,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",27,""target_standard""]",target_standard,string,SDMX reference metadata candidate; exact concept ID not confirmed
+"[""source_value_mappings"",27,""notes""]",notes,string,"Caveats are reference metadata and constrain automatic mapping: do not merge the two statistical structures, and do not derive Total by summing Women and Men."
+"[""source_value_mappings"",27,""evidence_quote""]",evidence_quote,string,"Caveats and limitations
+Quarterly rates and monthly vacancy counts represent different statistical structures. Total sex coverage includes respondents outside the displayed women/men categories;
+it must not be inferred by summing displayed rows."
+"[""source_value_mappings"",28]",28,object,
+"[""source_value_mappings"",28,""source_value""]",source_value,string,Revision policy
+"[""source_value_mappings"",28,""source_context""]",source_context,string,"reference metadata; page 1 Revision policy section; MSD/Metadata Set scope, not DSD field"
+"[""source_value_mappings"",28,""target_field""]",target_field,string,DATA_REV
+"[""source_value_mappings"",28,""target_code""]",target_code,null,
+"[""source_value_mappings"",28,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",28,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",28,""target_standard""]",target_standard,string,SDMX reference metadata candidate; exact concept ID not confirmed
+"[""source_value_mappings"",28,""notes""]",notes,string,Revision policy is reference metadata and must not be confused with observation-level OBS_STATUS values Final and Provisional.
+"[""source_value_mappings"",28,""evidence_quote""]",evidence_quote,string,"Revision policy
+Provisional quarterly estimates are revised after annual weighting. Final vacancy counts may be corrected for reporting errors."
+"[""source_value_mappings"",29]",29,object,
+"[""source_value_mappings"",29,""source_value""]",source_value,string,Confidentiality
+"[""source_value_mappings"",29,""source_context""]",source_context,string,"reference metadata; page 1 Confidentiality section; MSD/Metadata Set scope, not DSD field"
+"[""source_value_mappings"",29,""target_field""]",target_field,string,CONF
+"[""source_value_mappings"",29,""target_code""]",target_code,null,
+"[""source_value_mappings"",29,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",29,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",29,""target_standard""]",target_standard,string,SDMX reference metadata candidate; exact concept ID not confirmed
+"[""source_value_mappings"",29,""notes""]",notes,string,Confidentiality statement is reference metadata. No observation-level confidentiality-status code is created from this text.
+"[""source_value_mappings"",29,""evidence_quote""]",evidence_quote,string,"Confidentiality
+All records and values are synthetic. No person-level or confidential data are included."
+"[""source_value_mappings"",30]",30,object,
+"[""source_value_mappings"",30,""source_value""]",source_value,string,Unemployment rate is unemployed persons as a percentage of the labour force.
+"[""source_value_mappings"",30,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q; Definitions section
+"[""source_value_mappings"",30,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q.OBS_VALUE
+"[""source_value_mappings"",30,""target_code""]",target_code,null,
+"[""source_value_mappings"",30,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",30,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",30,""target_standard""]",target_standard,string,Observation-data template measure semantics
+"[""source_value_mappings"",30,""notes""]",notes,string,Defines the measured phenomenon for the unemployment-rate structure. It should not be encoded as an OBS_VALUE code.
+"[""source_value_mappings"",30,""evidence_quote""]",evidence_quote,string,Unemployment rate is unemployed persons as a percentage of the labour force. A job vacancy is an unfilled position available for immediate recruitment.
+"[""source_value_mappings"",31]",31,object,
+"[""source_value_mappings"",31,""source_value""]",source_value,string,A job vacancy is an unfilled position available for immediate recruitment.
+"[""source_value_mappings"",31,""source_context""]",source_context,string,applies_to_structure=KF_SYNTHETIC_LABOUR_VACANCIES_M; Definitions section
+"[""source_value_mappings"",31,""target_field""]",target_field,string,KF_SYNTHETIC_LABOUR_VACANCIES_M.OBS_VALUE
+"[""source_value_mappings"",31,""target_code""]",target_code,null,
+"[""source_value_mappings"",31,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",31,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",31,""target_standard""]",target_standard,string,Observation-data template measure semantics
+"[""source_value_mappings"",31,""notes""]",notes,string,Defines the measured phenomenon for the vacancy-count structure. It should not be encoded as an OBS_VALUE code.
+"[""source_value_mappings"",31,""evidence_quote""]",evidence_quote,string,Unemployment rate is unemployed persons as a percentage of the labour force. A job vacancy is an unfilled position available for immediate recruitment.
+"[""unresolved""]",unresolved,array,
+"[""unresolved"",0]",0,string,Formally revise the accepted DSD / Key Family before production so its component codelist references match this operational codebook: FREQ to CL_SYN_FREQ_LM until CL_FREQ is verified; REF_AREA to CL_SYN_REF_AREA_LM; SEX to CL_SYN_SEX_COVERAGE; UNIT_MEASURE to CL_SYN_UNIT_MEASURE_LM; OBS_STATUS to CL_SYN_REPORT_STATUS; ACTIVITY to CL_SYN_ACTIVITY_LOCAL; SEASONAL_ADJUST to CL_SYN_SEASONAL_ADJUSTMENT.
+"[""unresolved"",1]",1,string,Confirm exact SDMX CL_FREQ version and code values for quarterly and monthly before replacing local QUARTERLY and MONTHLY with standard SDMX frequency codes.
+"[""unresolved"",2]",2,string,"Confirm exact SDMX CL_SEX version and code values before mapping Women, Men or the report-specific Total to standard sex codes."
+"[""unresolved"",3]",3,string,Confirm exact SDMX CL_OBS_STATUS version and codes before mapping Final and Provisional to standard observation-status codes.
+"[""unresolved"",4]",4,string,Confirm exact SDMX CL_SEASONAL_ADJUST version and code for Seasonally adjusted before replacing the local seasonal-adjustment code.
+"[""unresolved"",5]",5,string,"Confirm whether any authoritative geography code system applies to Northland, Centralia and South Coast; current mappings are local only."
+"[""unresolved"",6]",6,string,"Do not map Manufacturing, Construction or Information services to ISIC without a confirmed classification revision and correspondence; the report only supports local aggregate mapping."
+"[""unresolved"",7]",7,string,Confirm whether a standard unit codelist/code should replace local PERCENT and OPEN_POSITIONS unit codes.
+"[""unresolved"",8]",8,string,"Confirm exact SDMX reference metadata concept IDs for publication date, methodology, source description, caveats and limitations, revision policy and confidentiality before producing a formal Metadata Structure Definition / Metadata Set."

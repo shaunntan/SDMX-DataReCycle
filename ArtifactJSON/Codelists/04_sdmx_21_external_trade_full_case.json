@@ -1,0 +1,228 @@
+{
+  "artifact_type": "CODELISTS",
+  "source_report": "04_sdmx_21_external_trade_full_case.xml",
+  "source_sha256": "d67c55d4a879120a8b471479157d48475620e2b1f1536f3193f84677503eb720",
+  "principles_file": "02_CODELISTS.txt",
+  "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "codelists": [
+    {
+      "codelist_id": "CL_TRD_FREQ",
+      "name": "Frequency",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "M",
+          "name": "Monthly",
+          "definition": "Monthly",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Monthly",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_TRD_REF_AREA",
+      "name": "Reference area",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "KR",
+          "name": "Korea, Republic of",
+          "definition": "Korea, Republic of",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Korea, Republic of",
+          "local_creation_justification": null
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "definition": "Japan",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Japan",
+          "local_creation_justification": null
+        },
+        {
+          "code": "US",
+          "name": "United States",
+          "definition": "United States",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "United States",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_TRD_INDICATOR",
+      "name": "Trade flow",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "EXPORTS",
+          "name": "Exports",
+          "definition": "Exports",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Exports",
+          "local_creation_justification": null
+        },
+        {
+          "code": "IMPORTS",
+          "name": "Imports",
+          "definition": "Imports",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Imports",
+          "local_creation_justification": null
+        },
+        {
+          "code": "BALANCE",
+          "name": "Trade balance",
+          "definition": "Trade balance",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Trade balance",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_TRD_PARTNER",
+      "name": "Partner area",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "WORLD",
+          "name": "World",
+          "definition": "World",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "World",
+          "local_creation_justification": null
+        },
+        {
+          "code": "CN",
+          "name": "China",
+          "definition": "China",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "China",
+          "local_creation_justification": null
+        },
+        {
+          "code": "US",
+          "name": "United States",
+          "definition": "United States",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "United States",
+          "local_creation_justification": null
+        },
+        {
+          "code": "EU27",
+          "name": "European Union (27)",
+          "definition": "European Union (27)",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "European Union (27)",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_TRD_UNIT",
+      "name": "Unit of measure",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "USD_MN",
+          "name": "Million US dollars",
+          "definition": "Million US dollars",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Million US dollars",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_TRD_OBS_STATUS",
+      "name": "Observation status",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "A",
+          "name": "Normal value",
+          "definition": "Normal value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Normal value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "E",
+          "name": "Estimated value",
+          "definition": "Estimated value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Estimated value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "P",
+          "name": "Provisional value",
+          "definition": "Provisional value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Provisional value",
+          "local_creation_justification": null
+        }
+      ]
+    }
+  ]
+}

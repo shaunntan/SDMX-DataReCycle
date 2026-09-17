@@ -1,0 +1,1961 @@
+{
+  "artifact_key": "AI_FILLABLE_DATA_TEMPLATE",
+  "artifact_name": "AI-FILLABLE DATA TEMPLATE",
+  "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+  "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+  "principles_corpus_sha256": "bf4329570a317b193d7c65defd1a72280f56372e9e68b0fd99287d90be2aafb8",
+  "best_practice_chunk_ids": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    25,
+    26,
+    27,
+    28,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "aggregate_version": 2,
+  "created_at": "2026-09-17T00:49:53.480387+00:00",
+  "updated_at": "2026-09-17T00:55:15.746707+00:00",
+  "update_mode": "INCREMENTAL",
+  "contributions": [
+    {
+      "source_report": "01_sdmx_20_population_full_case.xml",
+      "source_json_path": "Artifact JSON\\AI Fillable Data Template\\01_sdmx_20_population_full_case.json",
+      "json_sha256": "c9d3b0fa688585511487dec52cef3ddd8bbb1ea60ce41f92dd2ee22f2e1d5376"
+    },
+    {
+      "source_report": "example_01_labour_market.pdf",
+      "source_json_path": "Artifact JSON\\AI Fillable Data Template\\example_01_labour_market.json",
+      "json_sha256": "590df0bb6ff164feb09a093c91902a4d46db797039ffebe96a9c937b5078425a"
+    },
+    {
+      "source_report": "example_02_health_system.pdf",
+      "source_json_path": "Artifact JSON\\AI Fillable Data Template\\example_02_health_system.json",
+      "json_sha256": "269072ff42e6dfae16303eb5ae7767fe7714629aaa36450bfd25e3dabd28eae6"
+    },
+    {
+      "source_report": "example_03_education.pdf",
+      "source_json_path": "Artifact JSON\\AI Fillable Data Template\\example_03_education.json",
+      "json_sha256": "60b317cda83a0012695d1b78100c85d06fb4bb0f5c0a5a8f1b1f7fb49b3725a6"
+    },
+    {
+      "source_report": "example_04_agriculture.pdf",
+      "source_json_path": "Artifact JSON\\AI Fillable Data Template\\example_04_agriculture.json",
+      "json_sha256": "1fcd49f7475e60af5c64dc1107b7a51abd0e72a27288840e0c0d84dfbf605a25"
+    },
+    {
+      "source_report": "example_05_prices_consumption.pdf",
+      "source_json_path": "Artifact JSON\\AI Fillable Data Template\\example_05_prices_consumption.json",
+      "json_sha256": "0fa469efdd643d298b3adc9d59c12220dd2c9b29c9974592d5976f36953100eb"
+    }
+  ],
+  "optimizer_attempts": 3,
+  "validator_direct_correction": true,
+  "inspector_review": {
+    "valid": true,
+    "covered_source_reports": [
+      "01_sdmx_20_population_full_case.xml",
+      "example_01_labour_market.pdf",
+      "example_02_health_system.pdf",
+      "example_03_education.pdf",
+      "example_04_agriculture.pdf",
+      "example_05_prices_consumption.pdf"
+    ],
+    "missing_source_reports": [],
+    "missing_requirements": [],
+    "redundancies_remaining": [],
+    "schema_issues": [],
+    "repair_instructions": []
+  },
+  "optimized_artifact": {
+    "artifact_type": "AI-FILLABLE DATA TEMPLATE",
+    "source_report": "AGGREGATE::AI_FILLABLE_DATA_TEMPLATE",
+    "source_sha256": "96394cc835751ca68894b26e278701edbbee586ce0fd978a030af0fccc41f683",
+    "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+    "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+    "retrieved_chunk_ids": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      25,
+      26,
+      27,
+      28,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "standard_references": [
+      {
+        "agency": "SDMX",
+        "artifact_type": "Technical standard",
+        "artifact_id": "SDMX 2.0 Information Model / Key Family",
+        "version": "2.0",
+        "url": "https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf",
+        "evidence": "Target standard for DSD / Key Family modelling. Templates are derived from accepted dimensions, TIME_PERIOD, OBS_VALUE and observation attributes so each row can later be validated and converted to SDMX data.",
+        "verification_status": "CONFIRMED"
+      },
+      {
+        "agency": "SDMX",
+        "artifact_type": "Glossary / cross-domain concepts",
+        "artifact_id": "SDMX Glossary / Cross-Domain Concepts",
+        "version": "2.1",
+        "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+        "evidence": "Supports reuse of common concept identifiers such as REF_AREA, FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE, OBS_STATUS, SEX, AGE, ACTIVITY, EDUCATION_LEVEL and PRODUCT. Exact local-label mappings remain unresolved where stated.",
+        "verification_status": "CONFIRMED"
+      },
+      {
+        "agency": "SDMX",
+        "artifact_type": "Codelist catalogue",
+        "artifact_id": "SDMX Global Registry Codelists",
+        "version": "not stated",
+        "url": "https://registry.sdmx.org/items/codelist.html",
+        "evidence": "Registry catalogue supports checking codelist details, references, changelog and exports. Supplied evidence does not confirm exact versions or code contents for candidate CL_FREQ, CL_SEX, CL_OBS_STATUS, CL_SEASONAL_ADJUST or unit codelists.",
+        "verification_status": "CONFIRMED"
+      },
+      {
+        "agency": "UNSD",
+        "artifact_type": "Geographical classification",
+        "artifact_id": "UN M49",
+        "version": "not stated",
+        "url": "https://unstats.un.org/unsd/methodology/m49/",
+        "evidence": "UN M49 is an authoritative country/area source. Synthetic/local areas Northland, Centralia and South Coast are not confirmed UN M49 areas; local area codelists are retained where the source supplies geography.",
+        "verification_status": "CONFIRMED"
+      },
+      {
+        "agency": "UNSD",
+        "artifact_type": "Economic activity classification candidate",
+        "artifact_id": "ISIC",
+        "version": "not confirmed",
+        "url": "https://unstats.un.org/unsd/classifications/Econ",
+        "evidence": "Relevant source for labour vacancy ACTIVITY review. Vacancy labels Manufacturing, Construction and Information services are local aggregates and are not confirmed ISIC categories; REF_AREA is omitted because the source did not state geography for that table.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "WHO",
+        "artifact_type": "Cause-of-death classification candidate",
+        "artifact_id": "ICD",
+        "version": "not confirmed",
+        "url": "https://www.who.int/standards/classifications/classification-of-diseases",
+        "evidence": "Relevant source for health cause-of-death review. Local cause categories CIRCULATORY_DISEASES and NEOPLASMS are broad report categories and are not confirmed ICD codes.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "UNESCO UIS",
+        "artifact_type": "Education classification candidate",
+        "artifact_id": "ISCED",
+        "version": "not confirmed",
+        "url": "https://www.uis.unesco.org/en/methods-and-tools/isced",
+        "evidence": "Relevant source for education-level review. Local codes PRIMARY, LOWER_SECONDARY and UPPER_SECONDARY remain under SML local codelist governance pending confirmed ISCED mapping.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "FAO / UNSD",
+        "artifact_type": "Crop and product classification candidates",
+        "artifact_id": "FAO/CPC candidate crop and fertilizer sources",
+        "version": "not confirmed",
+        "url": "https://unstats.un.org/unsd/classifications/",
+        "evidence": "Relevant candidate sources for crops and fertilizer products. Crop names require classification review; fertilizer products are not verified CPC codes and remain local market product codes.",
+        "verification_status": "CANDIDATE"
+      },
+      {
+        "agency": "UNSD / SDMX",
+        "artifact_type": "Consumption classification candidate",
+        "artifact_id": "COICOP / CL_COICOP_2018",
+        "version": "not confirmed",
+        "url": "https://unstats.un.org/unsd/classifications/coicop",
+        "evidence": "Relevant source for CPI consumption divisions. The report says divisions resemble COICOP but the revision is not confirmed, so local CPI consumption-division codes are retained.",
+        "verification_status": "UNVERIFIED"
+      },
+      {
+        "agency": "ISO",
+        "artifact_type": "Currency standard candidate",
+        "artifact_id": "ISO 4217",
+        "version": "not confirmed",
+        "url": "https://www.iso.org/standard/64758.html",
+        "evidence": "Relevant source for currency identity. Agriculture fertilizer prices and household-spending values use deliberately unnamed local currency units, so no ISO 4217 code is assigned.",
+        "verification_status": "UNVERIFIED"
+      }
+    ],
+    "limitations": [
+      "Source-to-template coverage: 01_sdmx_20_population_full_case.xml -> TPL_DSD_POP; example_01_labour_market.pdf -> TPL_SYNTHETIC_LABOUR_UNEMP_RATE_Q and TPL_SYNTHETIC_LABOUR_VACANCIES_M; example_02_health_system.pdf -> TPL_HEALTH_REGISTERED_DEATHS and TPL_HEALTH_AVAILABLE_HOSPITAL_BEDS; example_03_education.pdf -> TPL_EDU_ENROLLMENT and TPL_EDU_LOWER_SECONDARY_COMPLETION; example_04_agriculture.pdf -> TPL_AGR_CROP_AREA_PRODUCTION_LONG and TPL_AGR_FERTILIZER_RETAIL_PRICE_LONG; example_05_prices_consumption.pdf -> TPL_SYNTH_CPI_DIVISION_MONTHLY_AI_FILL and TPL_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL_AI_FILL.",
+      "This aggregate is a reusable cross-report design and a filled aggregate preserving accepted per-report observation semantics; one row equals one observation, OBS_VALUE remains numeric, and units, base periods, statuses and estimation qualifiers are outside OBS_VALUE.",
+      "Mechanically converted XML population rows used no AI interpretation; fields absent from the XML are marked not stated or inferred only from XML structure. Population OBS_VALUE values are numeric after conversion.",
+      "Shared SDMX concept identifiers are reused, but report-specific codelists are not renamed or merged unless semantic equivalence, version and governance are proven.",
+      "Exact versions and code memberships for candidate SDMX codelists CL_FREQ, CL_SEX, CL_OBS_STATUS and CL_SEASONAL_ADJUST remain unconfirmed and must be registry-validated before strict production exchange.",
+      "Labour unemployment-rate observations have constant source scope persons aged 15-64. AGE is intentionally not a dimension because the source does not vary age scope.",
+      "Labour unemployment SEX uses local CL_SYN_SEX_COVERAGE values WOMEN, MEN and TOTAL. TOTAL is report-defined coverage and must not be inferred by summing Women and Men.",
+      "Labour vacancy ACTIVITY values are local aggregates not confirmed to ISIC. REF_AREA is omitted from the vacancy template because the source table did not state geography.",
+      "Health local validation references are preserved: SYNTH_PH_AGENCY codelists with *_LOCAL suffixes and version 1.0-proposed. All health-system records are synthetic/non-production.",
+      "Private-sector hospital-bed reporting is incomplete in 2024; this specifically explains OBS_STATUS=ESTIMATED for OWNERSHIP=PRIVATE_FOR_PROFIT in 2024.",
+      "Education local validation references are preserved: SML local codelists with version 1.0-draft. Alternate local codelist IDs in other structural artifacts should be reconciled before production publication.",
+      "Education SEX preserves accepted binding to candidate SDMX CL_SEX values F, M and _T; these must be registry-validated before production exchange.",
+      "The education source supplies no UNIT_MULT, DECIMALS, CONF_STATUS or additional observation-level quality flag beyond printed Unit and Status columns; these fields are not invented.",
+      "The education completion-rate template is fixed to lower-secondary completion because the current source supplies only lower-secondary completion observations.",
+      "Agriculture templates include no decimals, unit multiplier, confidentiality status or explicit reporting-agency columns in the accepted DSD components; these fields are not invented.",
+      "Agriculture crop names require classification review, fertilizer products are not verified CPC codes, fertilizer local currency is deliberately unnamed, and status labels FINAL, FORECAST and OBSERVED are retained in local status codelists pending confirmed CL_OBS_STATUS mapping.",
+      "Synthetic/local areas Northland, Centralia and South Coast are not confirmed external geographic codes; local area codelists are preserved where geography is supplied.",
+      "Prices/consumption report states no reference area/country; REF_AREA is omitted and should be added only if later supplied.",
+      "CPI modelling uses UNIT_MEASURE=IDX as the plain index unit while BASE_PERIOD separately carries 2023=100, avoiding duplicate base-period semantics.",
+      "Consumption divisions are local because COICOP revision is not confirmed. Household-spending residence categories are local. Household-spending unit uses unnamed local currency and cannot be converted to ISO 4217 without further evidence.",
+      "Only LOWEST and HIGHEST expenditure quintiles are evidenced in the prices/consumption extract; no middle-quintile household-spending rows are inferred.",
+      "Survey estimates are subject to sampling error and household estimates are revised only for processing errors or new calibration weights; these are reference-metadata caveats, not observation dimensions.",
+      "Duplicate-key checks should use each template's full dimensional key plus TIME_PERIOD; coded values should be checked against the codelist/version named in the relevant column description before production loading."
+    ],
+    "templates": [
+      {
+        "template_id": "TPL_DSD_POP",
+        "dsd_id": "DSD_POP",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_POP_FREQ",
+            "description": "Mechanically imported XML frequency column. Observed value A. Local XML codelist; no AI interpretation."
+          },
+          {
+            "column_id": "REF_AREA",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_POP_REF_AREA",
+            "description": "Mechanically imported XML reference-area column. Observed values KR and JP from XML; external mapping not reinterpreted."
+          },
+          {
+            "column_id": "INDICATOR",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_POP_INDICATOR",
+            "description": "Mechanically imported XML population indicator. Observed values POP_TOTAL and POP_GROWTH."
+          },
+          {
+            "column_id": "AGE_GROUP",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_POP_AGE_GROUP",
+            "description": "Mechanically imported XML age-group column. Observed value ALL."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "ObservationalTimePeriod",
+            "codelist_id": null,
+            "description": "Mechanically imported XML observation period."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Number",
+            "codelist_id": null,
+            "description": "Numeric population observation value mechanically converted from XML text."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_POP_UNIT",
+            "description": "Mechanically imported XML unit. Observed values PS for persons and PC for percent."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": false,
+            "data_type": "String",
+            "codelist_id": "CL_POP_OBS_STATUS",
+            "description": "Mechanically imported XML status. Observed value A; status meaning not further interpreted."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "DSD_POP",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "KR"
+              },
+              {
+                "column_id": "INDICATOR",
+                "value": "POP_TOTAL"
+              },
+              {
+                "column_id": "AGE_GROUP",
+                "value": "ALL"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2023"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 51712619
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "A"
+              }
+            ],
+            "evidence_quote": "A"
+          },
+          {
+            "dsd_id": "DSD_POP",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "KR"
+              },
+              {
+                "column_id": "INDICATOR",
+                "value": "POP_GROWTH"
+              },
+              {
+                "column_id": "AGE_GROUP",
+                "value": "ALL"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2023"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": -0.14
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PC"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "A"
+              }
+            ],
+            "evidence_quote": "A"
+          },
+          {
+            "dsd_id": "DSD_POP",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "JP"
+              },
+              {
+                "column_id": "INDICATOR",
+                "value": "POP_TOTAL"
+              },
+              {
+                "column_id": "AGE_GROUP",
+                "value": "ALL"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2023"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 124516650
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "A"
+              }
+            ],
+            "evidence_quote": "A"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+        "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_FREQ",
+            "description": "Frequency; use Q for quarterly. Candidate SDMX CL_FREQ mapping, version not confirmed."
+          },
+          {
+            "column_id": "REF_AREA",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYN_REF_AREA_LM",
+            "description": "Synthetic local labour-market region; allowed NORTHLAND, CENTRALIA, SOUTH_COAST; not confirmed UN M49."
+          },
+          {
+            "column_id": "SEX",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYN_SEX_COVERAGE",
+            "description": "Local sex/coverage; allowed WOMEN, MEN, TOTAL. TOTAL is report-defined and must not be summed from WOMEN and MEN."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "ObservationalTimePeriod",
+            "codelist_id": null,
+            "description": "Quarterly period such as 2025-Q1. Source age scope is persons aged 15-64 and is constant, so AGE is not a dimension."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Decimal",
+            "codelist_id": null,
+            "description": "Numeric unemployment rate."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYN_UNIT_MEASURE_LM",
+            "description": "Allowed value PERCENT."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYN_REPORT_STATUS",
+            "description": "Allowed local values FINAL, PROVISIONAL; mapping to SDMX CL_OBS_STATUS unconfirmed."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "Q"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "SEX",
+                "value": "WOMEN"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-Q1"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 7.8
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PERCENT"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Northland Women 2025-Q1 7.8 Percent Final"
+          },
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "Q"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "SEX",
+                "value": "WOMEN"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-Q2"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 8.0
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PERCENT"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "PROVISIONAL"
+              }
+            ],
+            "evidence_quote": "Northland Women 2025-Q2 8.0 Percent Provisional"
+          },
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "Q"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "SEX",
+                "value": "MEN"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-Q1"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 9.4
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PERCENT"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Northland Men 2025-Q1 9.4 Percent Final"
+          },
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "Q"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "SEX",
+                "value": "MEN"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-Q2"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 9.0
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PERCENT"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "PROVISIONAL"
+              }
+            ],
+            "evidence_quote": "Northland Men 2025-Q2 9.0 Percent Provisional"
+          },
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "Q"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "SEX",
+                "value": "TOTAL"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-Q1"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 4.8
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PERCENT"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Northland Total 2025-Q1 4.8 Percent Final"
+          },
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "Q"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "SEX",
+                "value": "TOTAL"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-Q2"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 7.0
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PERCENT"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "PROVISIONAL"
+              }
+            ],
+            "evidence_quote": "Northland Total 2025-Q2 7.0 Percent Provisional"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_SYNTHETIC_LABOUR_VACANCIES_M",
+        "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_FREQ",
+            "description": "Frequency; use M for monthly vacancy observations. Candidate SDMX CL_FREQ mapping, version not confirmed."
+          },
+          {
+            "column_id": "ACTIVITY",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYN_ACTIVITY_LOCAL",
+            "description": "Local aggregate activity; allowed MANUFACTURING, CONSTRUCTION, INFORMATION_SERVICES. Not confirmed ISIC."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "ObservationalTimePeriod",
+            "codelist_id": null,
+            "description": "Monthly period such as 2025-01. REF_AREA is omitted because the source did not state geography for this table."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Integer",
+            "codelist_id": null,
+            "description": "Numeric job-vacancy count."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYN_UNIT_MEASURE_LM",
+            "description": "Allowed value OPEN_POSITIONS."
+          },
+          {
+            "column_id": "SEASONAL_ADJUST",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYN_SEASONAL_ADJUSTMENT",
+            "description": "Allowed local value SEASONALLY_ADJUSTED; candidate mapping to SDMX CL_SEASONAL_ADJUST unconfirmed."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "M"
+              },
+              {
+                "column_id": "ACTIVITY",
+                "value": "MANUFACTURING"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-01"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 2993
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "OPEN_POSITIONS"
+              },
+              {
+                "column_id": "SEASONAL_ADJUST",
+                "value": "SEASONALLY_ADJUSTED"
+              }
+            ],
+            "evidence_quote": "Manufacturing 2025-01 2993 Open positions Seasonally adjusted"
+          },
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "M"
+              },
+              {
+                "column_id": "ACTIVITY",
+                "value": "CONSTRUCTION"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-01"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 1343
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "OPEN_POSITIONS"
+              },
+              {
+                "column_id": "SEASONAL_ADJUST",
+                "value": "SEASONALLY_ADJUSTED"
+              }
+            ],
+            "evidence_quote": "Construction 2025-01 1343 Open positions Seasonally adjusted"
+          },
+          {
+            "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "M"
+              },
+              {
+                "column_id": "ACTIVITY",
+                "value": "INFORMATION_SERVICES"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-01"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 1009
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "OPEN_POSITIONS"
+              },
+              {
+                "column_id": "SEASONAL_ADJUST",
+                "value": "SEASONALLY_ADJUSTED"
+              }
+            ],
+            "evidence_quote": "Information services 2025-01 1009 Open positions Seasonally adjusted"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_HEALTH_REGISTERED_DEATHS",
+        "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_FREQ",
+            "description": "Annual frequency A; candidate SDMX CL_FREQ version not confirmed."
+          },
+          {
+            "column_id": "REF_AREA",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_HEALTH_AREA_LOCAL",
+            "description": "SYNTH_PH_AGENCY:CL_HEALTH_AREA_LOCAL:1.0-proposed. Allowed NORTHLAND, CENTRALIA, SOUTH_COAST; synthetic local areas not confirmed UN M49."
+          },
+          {
+            "column_id": "CAUSE_OF_DEATH",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_HEALTH_CAUSE_LOCAL",
+            "description": "SYNTH_PH_AGENCY:CL_HEALTH_CAUSE_LOCAL:1.0-proposed. Allowed CIRCULATORY_DISEASES, NEOPLASMS; broad local categories not confirmed ICD."
+          },
+          {
+            "column_id": "AGE",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_HEALTH_AGE_GROUP_LOCAL",
+            "description": "SYNTH_PH_AGENCY:CL_HEALTH_AGE_GROUP_LOCAL:1.0-proposed. Allowed Y45T64, Y65_PLUS."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "ObservationalTimePeriod",
+            "codelist_id": null,
+            "description": "Reference year."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Integer",
+            "codelist_id": null,
+            "description": "Registered deaths count; synthetic/non-production."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_HEALTH_UNIT_MEASURE_LOCAL",
+            "description": "SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed. Allowed DEATHS."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_HEALTH_OBS_STATUS_LOCAL",
+            "description": "SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed. Allowed FINAL, PROVISIONAL for this template."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "CAUSE_OF_DEATH",
+                "value": "CIRCULATORY_DISEASES"
+              },
+              {
+                "column_id": "AGE",
+                "value": "Y45T64"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2023"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 266
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "DEATHS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Northland Circulatory diseases 45-64 2023 266 Deaths Final"
+          },
+          {
+            "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "CAUSE_OF_DEATH",
+                "value": "NEOPLASMS"
+              },
+              {
+                "column_id": "AGE",
+                "value": "Y65_PLUS"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 111
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "DEATHS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "PROVISIONAL"
+              }
+            ],
+            "evidence_quote": "Northland Neoplasms 65+ 2024 111 Deaths Provisional"
+          },
+          {
+            "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "SOUTH_COAST"
+              },
+              {
+                "column_id": "CAUSE_OF_DEATH",
+                "value": "NEOPLASMS"
+              },
+              {
+                "column_id": "AGE",
+                "value": "Y65_PLUS"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 707
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "DEATHS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "PROVISIONAL"
+              }
+            ],
+            "evidence_quote": "South Coast Neoplasms 65+ 2024 707 Deaths Provisional"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+        "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_FREQ",
+            "description": "Annual frequency A; candidate SDMX CL_FREQ version not confirmed."
+          },
+          {
+            "column_id": "OWNERSHIP",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_HEALTH_OWNERSHIP_LOCAL",
+            "description": "SYNTH_PH_AGENCY:CL_HEALTH_OWNERSHIP_LOCAL:1.0-proposed. Allowed PUBLIC, PRIVATE_NON_PROFIT, PRIVATE_FOR_PROFIT."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "ObservationalTimePeriod",
+            "codelist_id": null,
+            "description": "Reference year."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Integer",
+            "codelist_id": null,
+            "description": "Available staffed hospital beds count; synthetic/non-production."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_HEALTH_UNIT_MEASURE_LOCAL",
+            "description": "SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed. Allowed BEDS."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_HEALTH_OBS_STATUS_LOCAL",
+            "description": "SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed. Allowed FINAL, ESTIMATED. ESTIMATED for PRIVATE_FOR_PROFIT 2024 reflects incomplete private-sector reporting."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "OWNERSHIP",
+                "value": "PUBLIC"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2023"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 1677
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "BEDS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Public 2023 1677 Beds Final"
+          },
+          {
+            "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "OWNERSHIP",
+                "value": "PRIVATE_FOR_PROFIT"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 2083
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "BEDS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "ESTIMATED"
+              }
+            ],
+            "evidence_quote": "Private for-profit 2024 2083 Beds Estimated"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_EDU_ENROLLMENT",
+        "dsd_id": "KF_EDU_ENROLLMENT",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_FREQ",
+            "description": "Annual frequency A; candidate SDMX CL_FREQ version not confirmed."
+          },
+          {
+            "column_id": "EDUCATION_LEVEL",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_EDUCATION_LEVEL_LOCAL",
+            "description": "SML:CL_EDUCATION_LEVEL_LOCAL:1.0-draft. Allowed PRIMARY, LOWER_SECONDARY, UPPER_SECONDARY; pending ISCED mapping review."
+          },
+          {
+            "column_id": "SEX",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SEX",
+            "description": "Candidate SDMX CL_SEX values F, M, _T; version/code contents must be registry-validated."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "GregorianYear",
+            "codelist_id": null,
+            "description": "Calendar year."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Decimal",
+            "codelist_id": null,
+            "description": "Numeric enrollment count; no UNIT_MULT, DECIMALS, CONF_STATUS or extra quality flag supplied."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_EDU_UNIT_MEASURE_LOCAL",
+            "description": "SML:CL_EDU_UNIT_MEASURE_LOCAL:1.0-draft. Allowed STUDENTS for this template."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_EDU_OBS_STATUS_LOCAL",
+            "description": "SML:CL_EDU_OBS_STATUS_LOCAL:1.0-draft. Allowed FINAL, PROVISIONAL for this template."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_EDU_ENROLLMENT",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "EDUCATION_LEVEL",
+                "value": "PRIMARY"
+              },
+              {
+                "column_id": "SEX",
+                "value": "F"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 78748
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "STUDENTS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Primary Female 2024 78748 Students Final"
+          },
+          {
+            "dsd_id": "KF_EDU_ENROLLMENT",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "EDUCATION_LEVEL",
+                "value": "UPPER_SECONDARY"
+              },
+              {
+                "column_id": "SEX",
+                "value": "_T"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 129161
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "STUDENTS"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "PROVISIONAL"
+              }
+            ],
+            "evidence_quote": "Upper secondary Total 2025 129161 Students Provisional"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_EDU_LOWER_SECONDARY_COMPLETION",
+        "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_FREQ",
+            "description": "Annual frequency A; candidate SDMX CL_FREQ version not confirmed."
+          },
+          {
+            "column_id": "WEALTH_QUINTILE",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_WEALTH_QUINTILE_SURVEY_LOCAL",
+            "description": "SML:CL_WEALTH_QUINTILE_SURVEY_LOCAL:1.0-draft. Allowed LOWEST_QUINTILE, MIDDLE_QUINTILE, HIGHEST_QUINTILE."
+          },
+          {
+            "column_id": "SEX",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SEX",
+            "description": "Candidate SDMX CL_SEX values F and M; must be registry-validated."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "GregorianYear",
+            "codelist_id": null,
+            "description": "Calendar year. Template fixed to lower-secondary completion because only lower-secondary completion rows are supplied."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Decimal",
+            "codelist_id": null,
+            "description": "Numeric lower-secondary completion rate."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_EDU_UNIT_MEASURE_LOCAL",
+            "description": "SML:CL_EDU_UNIT_MEASURE_LOCAL:1.0-draft. Allowed PERCENT for this template."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_EDU_OBS_STATUS_LOCAL",
+            "description": "SML:CL_EDU_OBS_STATUS_LOCAL:1.0-draft. Allowed MODELLED_ESTIMATE for this template."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "WEALTH_QUINTILE",
+                "value": "LOWEST_QUINTILE"
+              },
+              {
+                "column_id": "SEX",
+                "value": "F"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 64.0
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PERCENT"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "MODELLED_ESTIMATE"
+              }
+            ],
+            "evidence_quote": "Lowest quintile Female 2024 64.0 Percent Modelled estimate"
+          },
+          {
+            "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "WEALTH_QUINTILE",
+                "value": "HIGHEST_QUINTILE"
+              },
+              {
+                "column_id": "SEX",
+                "value": "M"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 91.7
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "PERCENT"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "MODELLED_ESTIMATE"
+              }
+            ],
+            "evidence_quote": "Highest quintile Male 2024 91.7 Percent Modelled estimate"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_AGR_CROP_AREA_PRODUCTION_LONG",
+        "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_FREQ",
+            "description": "Annual frequency A; CL_FREQ version not confirmed."
+          },
+          {
+            "column_id": "CROP",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_CROP_LOCAL",
+            "description": "Local crop code; observed RICE, MAIZE, CASSAVA; crop names require classification review."
+          },
+          {
+            "column_id": "REF_AREA",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_AGR_REGION_LOCAL",
+            "description": "Local agriculture region; observed NORTHLAND, CENTRALIA, SOUTH_COAST; not confirmed UN M49."
+          },
+          {
+            "column_id": "INDICATOR",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_AGR_CROP_INDICATOR",
+            "description": "Allowed HARVESTED_AREA or PRODUCTION."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "GregorianYear",
+            "codelist_id": null,
+            "description": "Annual reference period."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Decimal",
+            "codelist_id": null,
+            "description": "Numeric crop value; units separate."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_AGR_UNIT_MEASURE_LOCAL",
+            "description": "Allowed HECTARES for HARVESTED_AREA and TONNES for PRODUCTION."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_AGR_OBS_STATUS_LOCAL",
+            "description": "Allowed FINAL or FORECAST; mapping to SDMX CL_OBS_STATUS unconfirmed."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "CROP",
+                "value": "RICE"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "INDICATOR",
+                "value": "HARVESTED_AREA"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 60388
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "HECTARES"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Rice Northland 2024 60388 Hectares 315315 Tonnes Final"
+          },
+          {
+            "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "CROP",
+                "value": "RICE"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "NORTHLAND"
+              },
+              {
+                "column_id": "INDICATOR",
+                "value": "PRODUCTION"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 315315
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "TONNES"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Rice Northland 2024 60388 Hectares 315315 Tonnes Final"
+          },
+          {
+            "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "CROP",
+                "value": "CASSAVA"
+              },
+              {
+                "column_id": "REF_AREA",
+                "value": "SOUTH_COAST"
+              },
+              {
+                "column_id": "INDICATOR",
+                "value": "PRODUCTION"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 100775
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "TONNES"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FORECAST"
+              }
+            ],
+            "evidence_quote": "Cassava South Coast 2025 87375 Hectares 100775 Tonnes Forecast"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_AGR_FERTILIZER_RETAIL_PRICE_LONG",
+        "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_FREQ",
+            "description": "Monthly frequency M; CL_FREQ version not confirmed."
+          },
+          {
+            "column_id": "PRODUCT",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_FERTILIZER_PRODUCT_LOCAL",
+            "description": "Local fertilizer market product; observed UREA, COMPOUND_NPK; not verified CPC codes."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "GregorianMonth",
+            "codelist_id": null,
+            "description": "Monthly reference period."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Decimal",
+            "codelist_id": null,
+            "description": "Numeric retail price only."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_FERTILIZER_UNIT_LOCAL",
+            "description": "Allowed LOCAL_CURRENCY_PER_50KG_BAG; currency deliberately unnamed and not ISO 4217-mapped."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String (coded)",
+            "codelist_id": "CL_PRICE_OBS_STATUS_LOCAL",
+            "description": "Allowed OBSERVED; mapping to SDMX CL_OBS_STATUS unconfirmed."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "M"
+              },
+              {
+                "column_id": "PRODUCT",
+                "value": "UREA"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-01"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 313.28
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "OBSERVED"
+              }
+            ],
+            "evidence_quote": "Urea 2025-01 313.28 Local currency per 50 kg bag Observed"
+          },
+          {
+            "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "M"
+              },
+              {
+                "column_id": "PRODUCT",
+                "value": "COMPOUND_NPK"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-04"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 275.86
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "OBSERVED"
+              }
+            ],
+            "evidence_quote": "Compound NPK 2025-04 275.86 Local currency per 50 kg bag Observed"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_SYNTH_CPI_DIVISION_MONTHLY_AI_FILL",
+        "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_FREQ",
+            "description": "Monthly frequency M; candidate CL_FREQ mapping pending registry verification."
+          },
+          {
+            "column_id": "CONSUMPTION_DIVISION",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYNTH_CONSUMPTION_DIVISION",
+            "description": "Local CPI consumption division; observed FOOD_NAB, HOUS_UTIL, TRANSPORT. Resembles COICOP but revision not confirmed."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "TimePeriod",
+            "codelist_id": null,
+            "description": "Monthly period YYYY-MM. REF_AREA omitted because no area/country supplied."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Decimal",
+            "codelist_id": null,
+            "description": "Numeric CPI index value; no unit/base text."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYNTH_UNIT_MEASURE",
+            "description": "Plain index unit IDX; base period is held separately in BASE_PERIOD."
+          },
+          {
+            "column_id": "BASE_PERIOD",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": null,
+            "description": "Use 2023=100 for shown CPI rows."
+          },
+          {
+            "column_id": "OBS_STATUS",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYNTH_CPI_OBS_STATUS",
+            "description": "Allowed FINAL, PROVISIONAL; SURVEY_ESTIMATE is not a CPI OBS_STATUS."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "M"
+              },
+              {
+                "column_id": "CONSUMPTION_DIVISION",
+                "value": "FOOD_NAB"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-01"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 108.92
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "IDX"
+              },
+              {
+                "column_id": "BASE_PERIOD",
+                "value": "2023=100"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "FINAL"
+              }
+            ],
+            "evidence_quote": "Food and non-alcoholic beverages 2025-01 108.92 Index, 2023=100 Final"
+          },
+          {
+            "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "M"
+              },
+              {
+                "column_id": "CONSUMPTION_DIVISION",
+                "value": "TRANSPORT"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2025-04"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 111.7
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "IDX"
+              },
+              {
+                "column_id": "BASE_PERIOD",
+                "value": "2023=100"
+              },
+              {
+                "column_id": "OBS_STATUS",
+                "value": "PROVISIONAL"
+              }
+            ],
+            "evidence_quote": "Transport 2025-04 111.70 Index, 2023=100 Provisional"
+          }
+        ]
+      },
+      {
+        "template_id": "TPL_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL_AI_FILL",
+        "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+        "columns": [
+          {
+            "column_id": "FREQ",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_FREQ",
+            "description": "Annual frequency A; candidate CL_FREQ mapping pending registry verification."
+          },
+          {
+            "column_id": "RESIDENCE",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYNTH_RESIDENCE",
+            "description": "Local residence category; observed URBAN, RURAL."
+          },
+          {
+            "column_id": "EXPENDITURE_QUINTILE",
+            "role": "DIMENSION",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYNTH_EXPENDITURE_QUINTILE",
+            "description": "Local expenditure quintile; only LOWEST and HIGHEST are evidenced, no middle rows inferred."
+          },
+          {
+            "column_id": "TIME_PERIOD",
+            "role": "TIME",
+            "required": true,
+            "data_type": "TimePeriod",
+            "codelist_id": null,
+            "description": "Annual period YYYY. REF_AREA omitted because no area/country supplied."
+          },
+          {
+            "column_id": "OBS_VALUE",
+            "role": "MEASURE",
+            "required": true,
+            "data_type": "Decimal",
+            "codelist_id": null,
+            "description": "Numeric mean monthly consumption expenditure per household; no currency text."
+          },
+          {
+            "column_id": "UNIT_MEASURE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYNTH_UNIT_MEASURE",
+            "description": "LCU_PER_HH_PER_MONTH because the report does not name the currency; not ISO 4217-mapped."
+          },
+          {
+            "column_id": "ESTIMATION_TYPE",
+            "role": "ATTRIBUTE",
+            "required": true,
+            "data_type": "String",
+            "codelist_id": "CL_SYNTH_ESTIMATION_TYPE",
+            "description": "Allowed SURVEY_ESTIMATE; sampling error is reference metadata, not a dimension."
+          }
+        ],
+        "observations": [
+          {
+            "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "RESIDENCE",
+                "value": "URBAN"
+              },
+              {
+                "column_id": "EXPENDITURE_QUINTILE",
+                "value": "LOWEST"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 7072
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "LCU_PER_HH_PER_MONTH"
+              },
+              {
+                "column_id": "ESTIMATION_TYPE",
+                "value": "SURVEY_ESTIMATE"
+              }
+            ],
+            "evidence_quote": "Urban Lowest quintile 2024 7,072 Local currency per household per month Survey estimate"
+          },
+          {
+            "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+            "values": [
+              {
+                "column_id": "FREQ",
+                "value": "A"
+              },
+              {
+                "column_id": "RESIDENCE",
+                "value": "RURAL"
+              },
+              {
+                "column_id": "EXPENDITURE_QUINTILE",
+                "value": "HIGHEST"
+              },
+              {
+                "column_id": "TIME_PERIOD",
+                "value": "2024"
+              },
+              {
+                "column_id": "OBS_VALUE",
+                "value": 2499
+              },
+              {
+                "column_id": "UNIT_MEASURE",
+                "value": "LCU_PER_HH_PER_MONTH"
+              },
+              {
+                "column_id": "ESTIMATION_TYPE",
+                "value": "SURVEY_ESTIMATE"
+              }
+            ],
+            "evidence_quote": "Rural Highest quintile 2024 2,499 Local currency per household per month Survey estimate"
+          }
+        ]
+      }
+    ]
+  }
+}

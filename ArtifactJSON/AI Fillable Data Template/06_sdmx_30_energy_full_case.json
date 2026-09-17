@@ -1,0 +1,201 @@
+{
+  "artifact_type": "AI_FILLABLE_DATA_TEMPLATE",
+  "source_report": "06_sdmx_30_energy_full_case.xml",
+  "source_sha256": "59417aaf0971ab0f67d10c74607096ed92ede9e93fe55d656093e93631c5aeb8",
+  "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+  "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "templates": [
+    {
+      "template_id": "TPL_DSD_ENE",
+      "dsd_id": "DSD_ENE",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_ENE_FREQ",
+          "description": "Mechanically imported XML template column FREQ."
+        },
+        {
+          "column_id": "REF_AREA",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_ENE_REF_AREA",
+          "description": "Mechanically imported XML template column REF_AREA."
+        },
+        {
+          "column_id": "INDICATOR",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_ENE_INDICATOR",
+          "description": "Mechanically imported XML template column INDICATOR."
+        },
+        {
+          "column_id": "ENERGY_SOURCE",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_ENE_ENERGY_SOURCE",
+          "description": "Mechanically imported XML template column ENERGY_SOURCE."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "ObservationalTimePeriod",
+          "codelist_id": null,
+          "description": "Mechanically imported XML template column TIME_PERIOD."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Number",
+          "codelist_id": null,
+          "description": "Mechanically imported XML template column OBS_VALUE."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_ENE_UNIT",
+          "description": "Mechanically imported XML template column UNIT_MEASURE."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": false,
+          "data_type": "String",
+          "codelist_id": "CL_ENE_OBS_STATUS",
+          "description": "Mechanically imported XML template column OBS_STATUS."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "DSD_ENE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "KR"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "ELEC_GEN"
+            },
+            {
+              "column_id": "ENERGY_SOURCE",
+              "value": "ALL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2026-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": "52110.0"
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "GWH"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "P"
+            }
+          ],
+          "evidence_quote": "M"
+        },
+        {
+          "dsd_id": "DSD_ENE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "KR"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "ELEC_GEN"
+            },
+            {
+              "column_id": "ENERGY_SOURCE",
+              "value": "RENEW"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2026-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": "8840.0"
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "GWH"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "P"
+            }
+          ],
+          "evidence_quote": "M"
+        },
+        {
+          "dsd_id": "DSD_ENE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "KR"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "RENEW_SHARE"
+            },
+            {
+              "column_id": "ENERGY_SOURCE",
+              "value": "ALL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2026-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": "16.96"
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PC"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "P"
+            }
+          ],
+          "evidence_quote": "M"
+        }
+      ]
+    }
+  ]
+}

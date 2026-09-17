@@ -1,0 +1,290 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,METADATA_SET
+"[""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""source_sha256""]",source_sha256,string,0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f
+"[""principles_file""]",principles_file,string,06_METADATA_SET.txt
+"[""principles_sha256""]",principles_sha256,string,78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_2_0_INFORMATION_MODEL
+"[""standard_references"",0,""version""]",version,string,2.0
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied reference package identifies the SDMX 2.0 Information Model as the technical basis for SDMX 2.0 artefacts, including metadata structures and metadata sets. No fetched excerpt confirming detailed metadata-set fields was supplied."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept reference
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",1,""version""]",version,string,2.1
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",1,""evidence""]",evidence,string,"The fetched glossary excerpt confirms SDMX glossary coverage of metadata-related terms including Metadata Set, Metadata Structure Definition, Metadata update, Institutional mandate, and the cross-domain concept Geographical coverage with Concept ID COVERAGE_GEO and recommended representation String; Codelist."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Reference metadata guideline
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",2,""version""]",version,string,1.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,The supplied principles identify this guideline as SDMX reference-metadata guidance and state that it provides a standard list of reference metadata concepts. No fetched excerpt from the guideline confirming individual concept IDs for this report was supplied.
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Registry catalogue
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS_AND_METADATA_STRUCTURES
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,The fetched registry excerpt shows that the SDMX Global Registry provides searchable structural artefact categories including Codelists and Metadata Structures. It does not confirm a specific reusable metadata set for this agriculture report.
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,UNSD
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",4,""version""]",version,string,not stated
+"[""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",4,""evidence""]",evidence,string,"The fetched UN M49 excerpt confirms that UN M49 provides country and area codes. It does not confirm suitability for the report's synthetic subnational regions Northland, Centralia, and South Coast."
+"[""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",5]",5,object,
+"[""standard_references"",5,""agency""]",agency,string,ISO
+"[""standard_references"",5,""artifact_type""]",artifact_type,string,Currency code standard
+"[""standard_references"",5,""artifact_id""]",artifact_id,string,ISO_4217
+"[""standard_references"",5,""version""]",version,string,not stated
+"[""standard_references"",5,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""standard_references"",5,""evidence""]",evidence,string,"The supplied reference catalogue identifies ISO 4217 as the standard source for currency identity. The report deliberately leaves the local currency unnamed, so no ISO 4217 currency code can be confirmed for the price dataflow."
+"[""standard_references"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The report does not provide a source URL, contact point, edition number, metadata update date, legal or institutional mandate, sampling design details, imputation methods, seasonal adjustment information, accuracy measures, timeliness measures, or completeness measures."
+"[""limitations"",1]",1,string,The report-level CONTACT and META_UPDATE values are omitted from the metadata set because the schema requires evidence_quote text and the report contains no verbatim statement for these missing values.
+"[""limitations"",2]",2,string,The fertilizer retail price DATA_REV value is omitted from the fertilizer-price metadata set because no fertilizer-price-specific revision policy is stated in the report and the schema requires evidence_quote text.
+"[""limitations"",3]",3,string,The report states that crop names are common labels and require classification review; no authoritative crop classification mapping is confirmed.
+"[""limitations"",4]",4,string,The report states that fertilizer products are local market categories and not verified CPC codes; no authoritative product classification mapping is confirmed.
+"[""limitations"",5]",5,string,"The report states that the local currency is deliberately unnamed, so ISO 4217 currency-code metadata cannot be completed from the report."
+"[""limitations"",6]",6,string,"The report uses synthetic regions, but no authoritative geographic classification for Northland, Centralia, or South Coast is provided."
+"[""limitations"",7]",7,string,Exact SDMX Global Reference Metadata Concept Scheme IDs for several metadata values were not confirmed from supplied external evidence; local concept IDs from the accepted MSD are used where necessary.
+"[""limitations"",8]",8,string,The target dataflow identifiers are local identifiers for this extraction because no formal dataflow artefact identifiers were supplied in the report evidence.
+"[""metadata_sets""]",metadata_sets,array,
+"[""metadata_sets"",0]",0,object,
+"[""metadata_sets"",0,""metadata_set_id""]",metadata_set_id,string,METASET_AGRI_REPORT_1_0
+"[""metadata_sets"",0,""msd_id""]",msd_id,string,MSD_AGRI_REPORT_1_0
+"[""metadata_sets"",0,""target_id""]",target_id,string,example_04_agriculture.pdf
+"[""metadata_sets"",0,""target_type""]",target_type,string,REPORT
+"[""metadata_sets"",0,""values""]",values,array,
+"[""metadata_sets"",0,""values"",0]",0,object,
+"[""metadata_sets"",0,""values"",0,""concept_id""]",concept_id,string,REPORT_TITLE
+"[""metadata_sets"",0,""values"",0,""value""]",value,string,Crop Production and Input Prices
+"[""metadata_sets"",0,""values"",0,""evidence_quote""]",evidence_quote,string,Crop Production and Input Prices
+"[""metadata_sets"",0,""values"",0,""source_location""]",source_location,string,Page 1
+"[""metadata_sets"",0,""values"",1]",1,object,
+"[""metadata_sets"",0,""values"",1,""concept_id""]",concept_id,string,PUBLISHER
+"[""metadata_sets"",0,""values"",1,""value""]",value,string,Synthetic Agricultural Statistics Bureau
+"[""metadata_sets"",0,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Agricultural Statistics Bureau
+"[""metadata_sets"",0,""values"",1,""source_location""]",source_location,string,Page 1
+"[""metadata_sets"",0,""values"",2]",2,object,
+"[""metadata_sets"",0,""values"",2,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""metadata_sets"",0,""values"",2,""value""]",value,string,2026-05-28
+"[""metadata_sets"",0,""values"",2,""evidence_quote""]",evidence_quote,string,Publication date: 28 May 2026
+"[""metadata_sets"",0,""values"",2,""source_location""]",source_location,string,Page 1
+"[""metadata_sets"",0,""values"",3]",3,object,
+"[""metadata_sets"",0,""values"",3,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_sets"",0,""values"",3,""value""]",value,string,Report covering crop area and production as annual farm-survey aggregates and fertilizer retail prices from a monthly outlet panel; the report contains separate crop production and input price structures.
+"[""metadata_sets"",0,""values"",3,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""metadata_sets"",0,""values"",3,""source_location""]",source_location,string,"Page 1, Methodology"
+"[""metadata_sets"",0,""values"",4]",4,object,
+"[""metadata_sets"",0,""values"",4,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_sets"",0,""values"",4,""value""]",value,string,Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.
+"[""metadata_sets"",0,""values"",4,""evidence_quote""]",evidence_quote,string,Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.
+"[""metadata_sets"",0,""values"",4,""source_location""]",source_location,string,"Page 1, Source description"
+"[""metadata_sets"",0,""values"",5]",5,object,
+"[""metadata_sets"",0,""values"",5,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_sets"",0,""values"",5,""value""]",value,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""metadata_sets"",0,""values"",5,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""metadata_sets"",0,""values"",5,""source_location""]",source_location,string,"Page 1, Methodology"
+"[""metadata_sets"",0,""values"",6]",6,object,
+"[""metadata_sets"",0,""values"",6,""concept_id""]",concept_id,string,STAT_CONCEPTS_DEF
+"[""metadata_sets"",0,""values"",6,""value""]",value,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.
+"[""metadata_sets"",0,""values"",6,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.
+"[""metadata_sets"",0,""values"",6,""source_location""]",source_location,string,"Page 1, Definitions"
+"[""metadata_sets"",0,""values"",7]",7,object,
+"[""metadata_sets"",0,""values"",7,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_sets"",0,""values"",7,""value""]",value,string,Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.
+"[""metadata_sets"",0,""values"",7,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.
+"[""metadata_sets"",0,""values"",7,""source_location""]",source_location,string,"Page 1, Caveats and limitations"
+"[""metadata_sets"",0,""values"",8]",8,object,
+"[""metadata_sets"",0,""values"",8,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_sets"",0,""values"",8,""value""]",value,string,2025 area and production are forecasts.
+"[""metadata_sets"",0,""values"",8,""evidence_quote""]",evidence_quote,string,Footnote: 2025 area and production are forecasts.
+"[""metadata_sets"",0,""values"",8,""source_location""]",source_location,string,"Page 2, Table 1 footnote"
+"[""metadata_sets"",0,""values"",9]",9,object,
+"[""metadata_sets"",0,""values"",9,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_sets"",0,""values"",9,""value""]",value,string,"Products are local market categories, not verified CPC codes."
+"[""metadata_sets"",0,""values"",9,""evidence_quote""]",evidence_quote,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""metadata_sets"",0,""values"",9,""source_location""]",source_location,string,"Page 3, Table 2 footnote"
+"[""metadata_sets"",0,""values"",10]",10,object,
+"[""metadata_sets"",0,""values"",10,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_sets"",0,""values"",10,""value""]",value,string,Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.
+"[""metadata_sets"",0,""values"",10,""evidence_quote""]",evidence_quote,string,Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.
+"[""metadata_sets"",0,""values"",10,""source_location""]",source_location,string,"Page 1, Revision policy"
+"[""metadata_sets"",0,""values"",11]",11,object,
+"[""metadata_sets"",0,""values"",11,""concept_id""]",concept_id,string,CONF
+"[""metadata_sets"",0,""values"",11,""value""]",value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",0,""values"",11,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",0,""values"",11,""source_location""]",source_location,string,"Page 1, Confidentiality"
+"[""metadata_sets"",1]",1,object,
+"[""metadata_sets"",1,""metadata_set_id""]",metadata_set_id,string,METASET_CROP_AREA_PRODUCTION_1_0
+"[""metadata_sets"",1,""msd_id""]",msd_id,string,MSD_CROP_AREA_PRODUCTION_1_0
+"[""metadata_sets"",1,""target_id""]",target_id,string,DF_AGR_CROP_AREA_PRODUCTION
+"[""metadata_sets"",1,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",1,""values""]",values,array,
+"[""metadata_sets"",1,""values"",0]",0,object,
+"[""metadata_sets"",1,""values"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_sets"",1,""values"",0,""value""]",value,string,"Annual crop area and production by crop, region, and year."
+"[""metadata_sets"",1,""values"",0,""evidence_quote""]",evidence_quote,string,Table 1. Crop area and production by region
+"[""metadata_sets"",1,""values"",0,""source_location""]",source_location,string,"Page 2, Table 1"
+"[""metadata_sets"",1,""values"",1]",1,object,
+"[""metadata_sets"",1,""values"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_sets"",1,""values"",1,""value""]",value,string,Synthetic Annual Farm Survey.
+"[""metadata_sets"",1,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.
+"[""metadata_sets"",1,""values"",1,""source_location""]",source_location,string,"Page 1, Source description"
+"[""metadata_sets"",1,""values"",2]",2,object,
+"[""metadata_sets"",1,""values"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_sets"",1,""values"",2,""value""]",value,string,Crop area and production are annual farm-survey aggregates.
+"[""metadata_sets"",1,""values"",2,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""metadata_sets"",1,""values"",2,""source_location""]",source_location,string,"Page 1, Methodology"
+"[""metadata_sets"",1,""values"",3]",3,object,
+"[""metadata_sets"",1,""values"",3,""concept_id""]",concept_id,string,STAT_CONCEPTS_DEF
+"[""metadata_sets"",1,""values"",3,""value""]",value,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes.
+"[""metadata_sets"",1,""values"",3,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.
+"[""metadata_sets"",1,""values"",3,""source_location""]",source_location,string,"Page 1, Definitions"
+"[""metadata_sets"",1,""values"",4]",4,object,
+"[""metadata_sets"",1,""values"",4,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_sets"",1,""values"",4,""value""]",value,string,Northland is included as a reported region; no authoritative geographic classification for this synthetic region is provided.
+"[""metadata_sets"",1,""values"",4,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""metadata_sets"",1,""values"",4,""source_location""]",source_location,string,"Page 2, Table 1"
+"[""metadata_sets"",1,""values"",5]",5,object,
+"[""metadata_sets"",1,""values"",5,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_sets"",1,""values"",5,""value""]",value,string,Centralia is included as a reported region; no authoritative geographic classification for this synthetic region is provided.
+"[""metadata_sets"",1,""values"",5,""evidence_quote""]",evidence_quote,string,Rice                           Centralia                  2024                     37859                       Hectares                  260371                   Tonnes                         Final
+"[""metadata_sets"",1,""values"",5,""source_location""]",source_location,string,"Page 2, Table 1"
+"[""metadata_sets"",1,""values"",6]",6,object,
+"[""metadata_sets"",1,""values"",6,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_sets"",1,""values"",6,""value""]",value,string,South Coast is included as a reported region; no authoritative geographic classification for this synthetic region is provided.
+"[""metadata_sets"",1,""values"",6,""evidence_quote""]",evidence_quote,string,Rice                       South Coast                2024                     97629                       Hectares                  413952                   Tonnes                         Final
+"[""metadata_sets"",1,""values"",6,""source_location""]",source_location,string,"Page 2, Table 1"
+"[""metadata_sets"",1,""values"",7]",7,object,
+"[""metadata_sets"",1,""values"",7,""concept_id""]",concept_id,string,REFERENCE_PERIOD
+"[""metadata_sets"",1,""values"",7,""value""]",value,string,Year 2024 is included in the crop area and production data.
+"[""metadata_sets"",1,""values"",7,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""metadata_sets"",1,""values"",7,""source_location""]",source_location,string,"Page 2, Table 1"
+"[""metadata_sets"",1,""values"",8]",8,object,
+"[""metadata_sets"",1,""values"",8,""concept_id""]",concept_id,string,REFERENCE_PERIOD
+"[""metadata_sets"",1,""values"",8,""value""]",value,string,"Year 2025 is included in the crop area and production data, and 2025 area and production are forecasts."
+"[""metadata_sets"",1,""values"",8,""evidence_quote""]",evidence_quote,string,Footnote: 2025 area and production are forecasts.
+"[""metadata_sets"",1,""values"",8,""source_location""]",source_location,string,"Page 2, Table 1 footnote"
+"[""metadata_sets"",1,""values"",9]",9,object,
+"[""metadata_sets"",1,""values"",9,""concept_id""]",concept_id,string,CLASSIFICATION_STATUS
+"[""metadata_sets"",1,""values"",9,""value""]",value,string,Crop names are common labels and require classification review.
+"[""metadata_sets"",1,""values"",9,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.
+"[""metadata_sets"",1,""values"",9,""source_location""]",source_location,string,"Page 1, Caveats and limitations"
+"[""metadata_sets"",1,""values"",10]",10,object,
+"[""metadata_sets"",1,""values"",10,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_sets"",1,""values"",10,""value""]",value,string,Crop names are common labels and require classification review; forecast production is not observed output.
+"[""metadata_sets"",1,""values"",10,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.
+"[""metadata_sets"",1,""values"",10,""source_location""]",source_location,string,"Page 1, Caveats and limitations"
+"[""metadata_sets"",1,""values"",11]",11,object,
+"[""metadata_sets"",1,""values"",11,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_sets"",1,""values"",11,""value""]",value,string,2025 area and production are forecasts.
+"[""metadata_sets"",1,""values"",11,""evidence_quote""]",evidence_quote,string,Footnote: 2025 area and production are forecasts.
+"[""metadata_sets"",1,""values"",11,""source_location""]",source_location,string,"Page 2, Table 1 footnote"
+"[""metadata_sets"",1,""values"",12]",12,object,
+"[""metadata_sets"",1,""values"",12,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_sets"",1,""values"",12,""value""]",value,string,Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.
+"[""metadata_sets"",1,""values"",12,""evidence_quote""]",evidence_quote,string,Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.
+"[""metadata_sets"",1,""values"",12,""source_location""]",source_location,string,"Page 1, Revision policy"
+"[""metadata_sets"",1,""values"",13]",13,object,
+"[""metadata_sets"",1,""values"",13,""concept_id""]",concept_id,string,CONF
+"[""metadata_sets"",1,""values"",13,""value""]",value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",1,""values"",13,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",1,""values"",13,""source_location""]",source_location,string,"Page 1, Confidentiality"
+"[""metadata_sets"",2]",2,object,
+"[""metadata_sets"",2,""metadata_set_id""]",metadata_set_id,string,METASET_FERTILIZER_RETAIL_PRICES_1_0
+"[""metadata_sets"",2,""msd_id""]",msd_id,string,MSD_FERTILIZER_RETAIL_PRICES_1_0
+"[""metadata_sets"",2,""target_id""]",target_id,string,DF_AGR_FERTILIZER_RETAIL_PRICE
+"[""metadata_sets"",2,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",2,""values""]",values,array,
+"[""metadata_sets"",2,""values"",0]",0,object,
+"[""metadata_sets"",2,""values"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_sets"",2,""values"",0,""value""]",value,string,Monthly fertilizer retail prices by product and month.
+"[""metadata_sets"",2,""values"",0,""evidence_quote""]",evidence_quote,string,Table 2. Fertilizer retail prices by month
+"[""metadata_sets"",2,""values"",0,""source_location""]",source_location,string,"Page 3, Table 2"
+"[""metadata_sets"",2,""values"",1]",1,object,
+"[""metadata_sets"",2,""values"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_sets"",2,""values"",1,""value""]",value,string,Synthetic Agricultural Price Panel.
+"[""metadata_sets"",2,""values"",1,""evidence_quote""]",evidence_quote,string,Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.
+"[""metadata_sets"",2,""values"",1,""source_location""]",source_location,string,"Page 1, Source description"
+"[""metadata_sets"",2,""values"",2]",2,object,
+"[""metadata_sets"",2,""values"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_sets"",2,""values"",2,""value""]",value,string,Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""metadata_sets"",2,""values"",2,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""metadata_sets"",2,""values"",2,""source_location""]",source_location,string,"Page 1, Methodology"
+"[""metadata_sets"",2,""values"",3]",3,object,
+"[""metadata_sets"",2,""values"",3,""concept_id""]",concept_id,string,STAT_CONCEPTS_DEF
+"[""metadata_sets"",2,""values"",3,""value""]",value,string,Retail price is the median observed price per 50 kg bag.
+"[""metadata_sets"",2,""values"",3,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.
+"[""metadata_sets"",2,""values"",3,""source_location""]",source_location,string,"Page 1, Definitions"
+"[""metadata_sets"",2,""values"",4]",4,object,
+"[""metadata_sets"",2,""values"",4,""concept_id""]",concept_id,string,REFERENCE_PERIOD
+"[""metadata_sets"",2,""values"",4,""value""]",value,string,Month 2025-01 is included in the fertilizer retail price data.
+"[""metadata_sets"",2,""values"",4,""evidence_quote""]",evidence_quote,string,Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed
+"[""metadata_sets"",2,""values"",4,""source_location""]",source_location,string,"Page 3, Table 2"
+"[""metadata_sets"",2,""values"",5]",5,object,
+"[""metadata_sets"",2,""values"",5,""concept_id""]",concept_id,string,REFERENCE_PERIOD
+"[""metadata_sets"",2,""values"",5,""value""]",value,string,Month 2025-02 is included in the fertilizer retail price data.
+"[""metadata_sets"",2,""values"",5,""evidence_quote""]",evidence_quote,string,Urea                                       2025-02                                     270.81                                         Local currency per 50 kg bag                  Observed
+"[""metadata_sets"",2,""values"",5,""source_location""]",source_location,string,"Page 3, Table 2"
+"[""metadata_sets"",2,""values"",6]",6,object,
+"[""metadata_sets"",2,""values"",6,""concept_id""]",concept_id,string,REFERENCE_PERIOD
+"[""metadata_sets"",2,""values"",6,""value""]",value,string,Month 2025-03 is included in the fertilizer retail price data.
+"[""metadata_sets"",2,""values"",6,""evidence_quote""]",evidence_quote,string,Urea                                       2025-03                                     401.31                                         Local currency per 50 kg bag                  Observed
+"[""metadata_sets"",2,""values"",6,""source_location""]",source_location,string,"Page 3, Table 2"
+"[""metadata_sets"",2,""values"",7]",7,object,
+"[""metadata_sets"",2,""values"",7,""concept_id""]",concept_id,string,REFERENCE_PERIOD
+"[""metadata_sets"",2,""values"",7,""value""]",value,string,Month 2025-04 is included in the fertilizer retail price data.
+"[""metadata_sets"",2,""values"",7,""evidence_quote""]",evidence_quote,string,Urea                                       2025-04                                     384.34                                         Local currency per 50 kg bag                  Observed
+"[""metadata_sets"",2,""values"",7,""source_location""]",source_location,string,"Page 3, Table 2"
+"[""metadata_sets"",2,""values"",8]",8,object,
+"[""metadata_sets"",2,""values"",8,""concept_id""]",concept_id,string,CLASSIFICATION_STATUS
+"[""metadata_sets"",2,""values"",8,""value""]",value,string,"Products are local market categories, not verified CPC codes."
+"[""metadata_sets"",2,""values"",8,""evidence_quote""]",evidence_quote,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""metadata_sets"",2,""values"",8,""source_location""]",source_location,string,"Page 3, Table 2 footnote"
+"[""metadata_sets"",2,""values"",9]",9,object,
+"[""metadata_sets"",2,""values"",9,""concept_id""]",concept_id,string,CURRENCY_INFORMATION
+"[""metadata_sets"",2,""values"",9,""value""]",value,string,Prices are reported in local currency per 50 kg bag.
+"[""metadata_sets"",2,""values"",9,""evidence_quote""]",evidence_quote,string,Local currency per 50 kg bag
+"[""metadata_sets"",2,""values"",9,""source_location""]",source_location,string,"Page 3, Table 2, Unit column"
+"[""metadata_sets"",2,""values"",10]",10,object,
+"[""metadata_sets"",2,""values"",10,""concept_id""]",concept_id,string,CURRENCY_INFORMATION
+"[""metadata_sets"",2,""values"",10,""value""]",value,string,"The local currency is deliberately unnamed, so no ISO 4217 code is confirmed from the report."
+"[""metadata_sets"",2,""values"",10,""evidence_quote""]",evidence_quote,string,The local currency is deliberately unnamed.
+"[""metadata_sets"",2,""values"",10,""source_location""]",source_location,string,"Page 1, Caveats and limitations"
+"[""metadata_sets"",2,""values"",11]",11,object,
+"[""metadata_sets"",2,""values"",11,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_sets"",2,""values"",11,""value""]",value,string,"Products are local market categories, not verified CPC codes."
+"[""metadata_sets"",2,""values"",11,""evidence_quote""]",evidence_quote,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""metadata_sets"",2,""values"",11,""source_location""]",source_location,string,"Page 3, Table 2 footnote"
+"[""metadata_sets"",2,""values"",12]",12,object,
+"[""metadata_sets"",2,""values"",12,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_sets"",2,""values"",12,""value""]",value,string,The local currency is deliberately unnamed.
+"[""metadata_sets"",2,""values"",12,""evidence_quote""]",evidence_quote,string,The local currency is deliberately unnamed.
+"[""metadata_sets"",2,""values"",12,""source_location""]",source_location,string,"Page 1, Caveats and limitations"
+"[""metadata_sets"",2,""values"",13]",13,object,
+"[""metadata_sets"",2,""values"",13,""concept_id""]",concept_id,string,CONF
+"[""metadata_sets"",2,""values"",13,""value""]",value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",2,""values"",13,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_sets"",2,""values"",13,""source_location""]",source_location,string,"Page 1, Confidentiality"

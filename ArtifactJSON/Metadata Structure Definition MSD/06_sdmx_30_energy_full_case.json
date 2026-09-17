@@ -1,0 +1,59 @@
+{
+  "artifact_type": "METADATA_STRUCTURE_DEFINITION_MSD",
+  "source_report": "06_sdmx_30_energy_full_case.xml",
+  "source_sha256": "59417aaf0971ab0f67d10c74607096ed92ede9e93fe55d656093e93631c5aeb8",
+  "principles_file": "05_METADATA_STRUCTURE_DEFINITION_MSD.txt",
+  "principles_sha256": "f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "metadata_structures": [
+    {
+      "msd_id": "MSD_ENE",
+      "name": "Energy Statistics Reference Metadata",
+      "agency_id": "DEMO",
+      "version": "1.0.0",
+      "concepts": [
+        {
+          "concept_id": "SOURCE",
+          "name": "Source",
+          "definition": "Metadata concept SOURCE imported from MSD_ENE.",
+          "representation": "String",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use the value encoded in the XML metadata report.",
+          "source_standard": "SDMX XML 3.0",
+          "source_url": "not stated in XML"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Metadata concept METHODOLOGY imported from MSD_ENE.",
+          "representation": "String",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use the value encoded in the XML metadata report.",
+          "source_standard": "SDMX XML 3.0",
+          "source_url": "not stated in XML"
+        },
+        {
+          "concept_id": "SOURCE_URL",
+          "name": "Source Url",
+          "definition": "Metadata concept SOURCE_URL imported from MSD_ENE.",
+          "representation": "URI",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use the value encoded in the XML metadata report.",
+          "source_standard": "SDMX XML 3.0",
+          "source_url": "not stated in XML"
+        }
+      ]
+    }
+  ]
+}

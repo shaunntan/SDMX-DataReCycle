@@ -1,0 +1,166 @@
+{
+  "artifact_type": "CONCEPT_SCHEME",
+  "source_report": "01_sdmx_20_population_full_case.xml",
+  "source_sha256": "dd0724ffd8c77e88517d69bd90c9694c94efe3e8f23db55189665b7e7a8a378d",
+  "principles_file": "01_CONCEPT_SCHEME.txt",
+  "principles_sha256": "618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "concept_schemes": [
+    {
+      "scheme_id": "CS_POP",
+      "name": "Population Statistics concepts",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "FREQ",
+          "name": "Frequency",
+          "definition": "Frequency",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Frequency"
+        },
+        {
+          "concept_id": "REF_AREA",
+          "name": "Reference area",
+          "definition": "Reference area",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Reference area"
+        },
+        {
+          "concept_id": "INDICATOR",
+          "name": "Population indicator",
+          "definition": "Population indicator",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Population indicator"
+        },
+        {
+          "concept_id": "AGE_GROUP",
+          "name": "Age group",
+          "definition": "Age group",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Age group"
+        },
+        {
+          "concept_id": "TIME_PERIOD",
+          "name": "Time period",
+          "definition": "Time period",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "Observational time period",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Time period"
+        },
+        {
+          "concept_id": "OBS_VALUE",
+          "name": "Observation value",
+          "definition": "Observation value",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "Numeric",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Observation value"
+        },
+        {
+          "concept_id": "UNIT_MEASURE",
+          "name": "Unit of measure",
+          "definition": "Unit of measure",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Unit of measure"
+        },
+        {
+          "concept_id": "OBS_STATUS",
+          "name": "Observation status",
+          "definition": "Observation status",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "Coded or structured according to the governing DSD",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Observation status"
+        },
+        {
+          "concept_id": "SOURCE",
+          "name": "Source",
+          "definition": "Source",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "String",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Source"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Methodology",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "String",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Methodology"
+        },
+        {
+          "concept_id": "SOURCE_URL",
+          "name": "Source URL",
+          "definition": "Source URL",
+          "context": "Imported from XML concept scheme CS_POP",
+          "recommended_representation": "String",
+          "standard_source_agency": "DEMO",
+          "standard_scheme_id": "CS_POP",
+          "standard_version": "1.0",
+          "source_url": "not stated in XML",
+          "local_notes": "Mechanically imported from SDMX XML.",
+          "evidence_quote": "Source URL"
+        }
+      ]
+    }
+  ]
+}

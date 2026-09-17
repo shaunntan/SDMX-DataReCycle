@@ -1,0 +1,230 @@
+METADATA STRUCTURE DEFINITION (MSD)
+===================================
+
+1. Definition
+-------------
+An MSD defines the structure of reference metadata: which metadata concepts can be
+reported, how they are represented, and what object the metadata describes.
+
+Reference metadata explains the statistics rather than identifying individual
+observations.
+
+Typical content:
+- source and publisher;
+- report/publication information;
+- statistical population;
+- geographic and temporal coverage;
+- concepts and definitions;
+- methodology;
+- data collection and compilation methods;
+- revisions;
+- quality;
+- comparability;
+- coherence;
+- confidentiality policy;
+- caveats and recommended limitations;
+- contact information;
+- metadata update date.
+
+2. Best practices
+-----------------
+A. Keep methodology and caveats out of statistical dimensions.
+
+B. Reuse the SDMX Global Reference Metadata Concept Scheme / SDMX Glossary concepts
+where possible. The 2019 guideline "Standardising Reference Metadata Reporting in
+SDMX" provides a standard list of reference metadata concepts.
+
+C. Separate:
+- metadata definition (MSD);
+- actual metadata values (Metadata Set).
+
+D. Define the target of each metadata item.
+A report-level methodology may attach to the report/dataflow.
+A series-specific methodological break may need a more specific target or a data
+attribute.
+
+E. Use coded representation only when there is an authoritative vocabulary.
+Use free text for genuine narrative methodology.
+
+F. Do not compress long methodology into a short data attribute simply to keep
+everything in the DSD.
+
+G. Preserve source text faithfully when extracting methodology; normalisation
+should not change substantive meaning.
+
+H. Support multilingual text if the source/reporting process requires it.
+
+I. Give each metadata concept:
+- ID
+- name
+- definition
+- representation
+- target/attachment
+- required/conditional status
+- source standard
+- guidance for extraction
+
+3. Example: how it looks
+------------------------
+Example MSD design table:
+
+METADATA_ID          REPRESENTATION  TARGET      PURPOSE
+-------------------  --------------  ----------  -------------------------------
+REPORT_TITLE          Text            Report      Publication title
+PUBLISHER             Text/Code       Report      Publishing organisation
+PUBLICATION_DATE      Date            Report      Publication date
+DATA_DESCRIPTION      Text            Dataflow    Summary of statistical content
+STATISTICAL_POP       Text            Dataflow    Population represented
+METHODOLOGY           Text            Dataflow    Methods used
+DATA_REV              Text            Dataflow    Revision policy/practice
+COMPARABILITY         Text            Dataflow    Comparability information
+TIMELINESS            Text            Dataflow    Timeliness information
+LIMITATIONS           Text            Dataflow    Caveats/recommended limitations
+CONTACT               Text            Dataflow    Contact point
+META_UPDATE           Date            Metadata    Metadata update date
+
+Some IDs above are local implementation IDs (e.g. REPORT_TITLE, PUBLISHER,
+PUBLICATION_DATE, LIMITATIONS). Before finalising them, map to the SDMX Global
+Reference Metadata Concept Scheme where a semantically equivalent concept exists.
+
+Examples of confirmed SDMX reference-metadata concepts in the Glossary include:
+CONTACT
+INST_MANDATE
+CONF
+DATA_REV
+COMPARABILITY
+COHERENCE
+COMPLETENESS
+TIMELINESS
+META_UPDATE
+COMPILING_ORG
+
+Illustrative structure concept:
+
+<MetadataStructureDefinition id="MSD_REPORT" agencyID="MY_AGENCY" version="1.0">
+  <MetadataAttribute conceptRef="CONTACT"/>
+  <MetadataAttribute conceptRef="DATA_REV"/>
+  <MetadataAttribute conceptRef="COMPARABILITY"/>
+  <MetadataAttribute conceptRef="TIMELINESS"/>
+</MetadataStructureDefinition>
+
+Illustrative only; consult the SDMX 2.0 schema for a valid message.
+
+4. Formal / practical formats
+-----------------------------
+Formal:
+- SDMX-ML XML Metadata Structure Definition.
+
+Practical design:
+- XLSX/CSV metadata dictionary.
+
+Recommended fields:
+METADATA_ID
+NAME
+DEFINITION
+REPRESENTATION
+TARGET
+USAGE_STATUS
+PARENT_METADATA_ID
+STANDARD_SOURCE
+STANDARD_VERSION
+SOURCE_URL
+EXTRACTION_GUIDANCE
+NOTES
+
+5. Metadata groups recommended for report extraction
+-----------------------------------------------------
+IDENTIFICATION
+- report/publication title
+- publisher
+- publication date
+- edition/version
+- source URL
+- contact
+
+STATISTICAL DESCRIPTION
+- data description
+- statistical concepts
+- statistical population
+- unit/statistical unit
+- reference period
+- geographic coverage
+
+METHODOLOGY
+- source data
+- collection method
+- sampling
+- compilation
+- imputation
+- adjustment
+- estimation
+- seasonal adjustment
+
+QUALITY / INTERPRETATION
+- accuracy
+- comparability
+- coherence
+- timeliness
+- completeness
+- limitations / recommended uses
+- breaks in methodology
+
+REVISION / GOVERNANCE
+- revision policy/practice
+- confidentiality policy
+- legal/institutional mandate
+- metadata update date
+
+6. Where to find standard metadata concepts
+-------------------------------------------
+SDMX reference metadata guideline:
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Glossary:
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+SDMX Guidelines:
+https://sdmx.org/guidelines/
+
+7. Acceptance checks
+--------------------
+[ ] Methodology is represented as metadata, not forced into dimensions.
+[ ] Metadata targets are explicit.
+[ ] Existing SDMX metadata concepts were searched.
+[ ] Narrative fields remain narrative where appropriate.
+[ ] Publication/source metadata are captured.
+[ ] Caveats and limitations are not lost.
+[ ] Metadata definitions are separate from metadata values.
+
+CORE OFFICIAL SOURCES (checked 2026-09-16)
+-----------------------------------------------
+SDMX 2.0 standards landing page
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+SDMX 2.0 Information Model
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+SDMX 2.0 Implementor's Guide
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+SDMX Guidelines
+https://sdmx.org/guidelines/
+
+Guidelines for the Design of Data Structure Definitions
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+SDMX Glossary 2.1
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Standardising Reference Metadata Reporting in SDMX
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Global Registry - Codelists
+https://registry.sdmx.org/items/codelist.html
+
+IMPORTANT
+---------
+This package targets SDMX 2.0 as requested. In SDMX 2.0 the formal term for a
+Data Structure Definition is "Key Family". Later SDMX statistical guidelines are
+used here only for modelling good practice where the recommendation is compatible
+with the SDMX 2.0 information model.

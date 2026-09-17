@@ -1,0 +1,1312 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_key""]",artifact_key,string,CODELISTS
+"[""artifact_name""]",artifact_name,string,CODELISTS
+"[""principles_file""]",principles_file,string,02_CODELISTS.txt
+"[""principles_sha256""]",principles_sha256,string,5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10
+"[""principles_corpus_sha256""]",principles_corpus_sha256,string,bf4329570a317b193d7c65defd1a72280f56372e9e68b0fd99287d90be2aafb8
+"[""best_practice_chunk_ids""]",best_practice_chunk_ids,array,
+"[""best_practice_chunk_ids"",0]",0,integer,1
+"[""best_practice_chunk_ids"",1]",1,integer,2
+"[""best_practice_chunk_ids"",2]",2,integer,3
+"[""best_practice_chunk_ids"",3]",3,integer,8
+"[""best_practice_chunk_ids"",4]",4,integer,9
+"[""best_practice_chunk_ids"",5]",5,integer,10
+"[""best_practice_chunk_ids"",6]",6,integer,11
+"[""best_practice_chunk_ids"",7]",7,integer,12
+"[""best_practice_chunk_ids"",8]",8,integer,13
+"[""best_practice_chunk_ids"",9]",9,integer,14
+"[""best_practice_chunk_ids"",10]",10,integer,27
+"[""best_practice_chunk_ids"",11]",11,integer,28
+"[""best_practice_chunk_ids"",12]",12,integer,29
+"[""best_practice_chunk_ids"",13]",13,integer,31
+"[""best_practice_chunk_ids"",14]",14,integer,32
+"[""best_practice_chunk_ids"",15]",15,integer,33
+"[""best_practice_chunk_ids"",16]",16,integer,36
+"[""best_practice_chunk_ids"",17]",17,integer,37
+"[""best_practice_chunk_ids"",18]",18,integer,38
+"[""best_practice_chunk_ids"",19]",19,integer,39
+"[""best_practice_chunk_ids"",20]",20,integer,40
+"[""best_practice_chunk_ids"",21]",21,integer,41
+"[""best_practice_chunk_ids"",22]",22,integer,42
+"[""best_practice_chunk_ids"",23]",23,integer,47
+"[""best_practice_chunk_ids"",24]",24,integer,48
+"[""best_practice_chunk_ids"",25]",25,integer,49
+"[""aggregate_version""]",aggregate_version,integer,4
+"[""created_at""]",created_at,string,2026-09-16T23:15:25.253216+00:00
+"[""updated_at""]",updated_at,string,2026-09-16T23:47:48.802491+00:00
+"[""update_mode""]",update_mode,string,INCREMENTAL
+"[""contributions""]",contributions,array,
+"[""contributions"",0]",0,object,
+"[""contributions"",0,""source_report""]",source_report,string,01_sdmx_20_population_full_case.xml
+"[""contributions"",0,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\01_sdmx_20_population_full_case.json
+"[""contributions"",0,""json_sha256""]",json_sha256,string,10ee3ef7371ed869999ef3da5392c3d87f9120d84e3306a3638ebef2c59af0a5
+"[""contributions"",1]",1,object,
+"[""contributions"",1,""source_report""]",source_report,string,02_sdmx_20_consumer_prices_full_case.xml
+"[""contributions"",1,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\02_sdmx_20_consumer_prices_full_case.json
+"[""contributions"",1,""json_sha256""]",json_sha256,string,0b6fa9ebdbe771a3d25a78fc5c5e5fc3a96a1aed4e1e32755d168b355039bbad
+"[""contributions"",2]",2,object,
+"[""contributions"",2,""source_report""]",source_report,string,03_sdmx_21_labour_market_full_case.xml
+"[""contributions"",2,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\03_sdmx_21_labour_market_full_case.json
+"[""contributions"",2,""json_sha256""]",json_sha256,string,391a44e0724f19262af4861f355ddb9e3f4c4bbacb161e0011532b9138b30383
+"[""contributions"",3]",3,object,
+"[""contributions"",3,""source_report""]",source_report,string,04_sdmx_21_external_trade_full_case.xml
+"[""contributions"",3,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\04_sdmx_21_external_trade_full_case.json
+"[""contributions"",3,""json_sha256""]",json_sha256,string,3a01b5e7086498324effdeaac5943455516ed04408dc0d2cd5f5fe08dd1a4421
+"[""contributions"",4]",4,object,
+"[""contributions"",4,""source_report""]",source_report,string,05_sdmx_30_education_full_case.xml
+"[""contributions"",4,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\05_sdmx_30_education_full_case.json
+"[""contributions"",4,""json_sha256""]",json_sha256,string,a37cd890611b873bebf4ac466e17ef45f7c5334a239dd3ce22cea568ada78934
+"[""contributions"",5]",5,object,
+"[""contributions"",5,""source_report""]",source_report,string,06_sdmx_30_energy_full_case.xml
+"[""contributions"",5,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\06_sdmx_30_energy_full_case.json
+"[""contributions"",5,""json_sha256""]",json_sha256,string,e46763005bd2057d77f4c8e73122ccced0c5b234d6d036ea26782f6b640ece25
+"[""contributions"",6]",6,object,
+"[""contributions"",6,""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""contributions"",6,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\example_01_labour_market.json
+"[""contributions"",6,""json_sha256""]",json_sha256,string,a960c48aa792cd402494903f91c00db4b8d1f53f4ceb9f6d3e92814822c6798e
+"[""contributions"",7]",7,object,
+"[""contributions"",7,""source_report""]",source_report,string,example_02_health_system.pdf
+"[""contributions"",7,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\example_02_health_system.json
+"[""contributions"",7,""json_sha256""]",json_sha256,string,44fa63568fa666b4b3aff34a141a0cf50e692f9623f05e80c72a85127cc29c81
+"[""contributions"",8]",8,object,
+"[""contributions"",8,""source_report""]",source_report,string,example_03_education.pdf
+"[""contributions"",8,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\example_03_education.json
+"[""contributions"",8,""json_sha256""]",json_sha256,string,4d97fed506c47de24dbd8a75dbec9185621f378b896a30e9c5ce693ee549ba65
+"[""contributions"",9]",9,object,
+"[""contributions"",9,""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""contributions"",9,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\example_04_agriculture.json
+"[""contributions"",9,""json_sha256""]",json_sha256,string,d55f476c109b3a2d5156ef9488fd1a966bdec2119a2ef5c602dcb6d6d5d61a3d
+"[""contributions"",10]",10,object,
+"[""contributions"",10,""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""contributions"",10,""source_json_path""]",source_json_path,string,Artifact JSON\Codelists\example_05_prices_consumption.json
+"[""contributions"",10,""json_sha256""]",json_sha256,string,39687d88993c37b840d51dafb1db656c1d9f17c24b45bf5e525e554a613806ed
+"[""optimizer_attempts""]",optimizer_attempts,integer,1
+"[""validator_direct_correction""]",validator_direct_correction,boolean,false
+"[""inspector_review""]",inspector_review,object,
+"[""inspector_review"",""valid""]",valid,boolean,true
+"[""inspector_review"",""covered_source_reports""]",covered_source_reports,array,
+"[""inspector_review"",""covered_source_reports"",0]",0,string,01_sdmx_20_population_full_case.xml
+"[""inspector_review"",""covered_source_reports"",1]",1,string,02_sdmx_20_consumer_prices_full_case.xml
+"[""inspector_review"",""covered_source_reports"",2]",2,string,03_sdmx_21_labour_market_full_case.xml
+"[""inspector_review"",""covered_source_reports"",3]",3,string,04_sdmx_21_external_trade_full_case.xml
+"[""inspector_review"",""covered_source_reports"",4]",4,string,05_sdmx_30_education_full_case.xml
+"[""inspector_review"",""covered_source_reports"",5]",5,string,06_sdmx_30_energy_full_case.xml
+"[""inspector_review"",""covered_source_reports"",6]",6,string,example_01_labour_market.pdf
+"[""inspector_review"",""covered_source_reports"",7]",7,string,example_02_health_system.pdf
+"[""inspector_review"",""covered_source_reports"",8]",8,string,example_03_education.pdf
+"[""inspector_review"",""covered_source_reports"",9]",9,string,example_04_agriculture.pdf
+"[""inspector_review"",""covered_source_reports"",10]",10,string,example_05_prices_consumption.pdf
+"[""inspector_review"",""missing_source_reports""]",missing_source_reports,array,
+"[""inspector_review"",""missing_requirements""]",missing_requirements,array,
+"[""inspector_review"",""redundancies_remaining""]",redundancies_remaining,array,
+"[""inspector_review"",""schema_issues""]",schema_issues,array,
+"[""inspector_review"",""repair_instructions""]",repair_instructions,array,
+"[""optimized_artifact""]",optimized_artifact,object,
+"[""optimized_artifact"",""artifact_type""]",artifact_type,string,CODELISTS
+"[""optimized_artifact"",""source_report""]",source_report,string,AGGREGATE::CODELISTS
+"[""optimized_artifact"",""source_sha256""]",source_sha256,string,e5b63705fab06d0b98459ee6ec8d1c37c92750e6832ea1b89dc86a76f9ebfbd3
+"[""optimized_artifact"",""principles_file""]",principles_file,string,02_CODELISTS.txt
+"[""optimized_artifact"",""principles_sha256""]",principles_sha256,string,5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10
+"[""optimized_artifact"",""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""optimized_artifact"",""retrieved_chunk_ids"",0]",0,integer,1
+"[""optimized_artifact"",""retrieved_chunk_ids"",1]",1,integer,2
+"[""optimized_artifact"",""retrieved_chunk_ids"",2]",2,integer,3
+"[""optimized_artifact"",""retrieved_chunk_ids"",3]",3,integer,8
+"[""optimized_artifact"",""retrieved_chunk_ids"",4]",4,integer,9
+"[""optimized_artifact"",""retrieved_chunk_ids"",5]",5,integer,10
+"[""optimized_artifact"",""retrieved_chunk_ids"",6]",6,integer,11
+"[""optimized_artifact"",""retrieved_chunk_ids"",7]",7,integer,12
+"[""optimized_artifact"",""retrieved_chunk_ids"",8]",8,integer,13
+"[""optimized_artifact"",""retrieved_chunk_ids"",9]",9,integer,14
+"[""optimized_artifact"",""retrieved_chunk_ids"",10]",10,integer,27
+"[""optimized_artifact"",""retrieved_chunk_ids"",11]",11,integer,28
+"[""optimized_artifact"",""retrieved_chunk_ids"",12]",12,integer,29
+"[""optimized_artifact"",""retrieved_chunk_ids"",13]",13,integer,31
+"[""optimized_artifact"",""retrieved_chunk_ids"",14]",14,integer,32
+"[""optimized_artifact"",""retrieved_chunk_ids"",15]",15,integer,33
+"[""optimized_artifact"",""retrieved_chunk_ids"",16]",16,integer,36
+"[""optimized_artifact"",""retrieved_chunk_ids"",17]",17,integer,37
+"[""optimized_artifact"",""retrieved_chunk_ids"",18]",18,integer,38
+"[""optimized_artifact"",""retrieved_chunk_ids"",19]",19,integer,39
+"[""optimized_artifact"",""retrieved_chunk_ids"",20]",20,integer,40
+"[""optimized_artifact"",""retrieved_chunk_ids"",21]",21,integer,41
+"[""optimized_artifact"",""retrieved_chunk_ids"",22]",22,integer,42
+"[""optimized_artifact"",""retrieved_chunk_ids"",23]",23,integer,47
+"[""optimized_artifact"",""retrieved_chunk_ids"",24]",24,integer,48
+"[""optimized_artifact"",""retrieved_chunk_ids"",25]",25,integer,49
+"[""optimized_artifact"",""standard_references""]",standard_references,array,
+"[""optimized_artifact"",""standard_references"",0]",0,object,
+"[""optimized_artifact"",""standard_references"",0,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",0,""artifact_type""]",artifact_type,string,Registry catalog
+"[""optimized_artifact"",""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Global Registry - Codelists
+"[""optimized_artifact"",""standard_references"",0,""version""]",version,string,not stated in supplied excerpt
+"[""optimized_artifact"",""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",0,""evidence""]",evidence,string,The principles identify the SDMX Global Registry codelist catalog as the authoritative first search point for SDMX codelists.
+"[""optimized_artifact"",""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",1]",1,object,
+"[""optimized_artifact"",""standard_references"",1,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist
+"[""optimized_artifact"",""standard_references"",1,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""optimized_artifact"",""standard_references"",1,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",1,""evidence""]",evidence,string,"The principles identify CL_FREQ as an SDMX Global Registry codelist worth checking. Covered reports require annual, quarterly and monthly values."
+"[""optimized_artifact"",""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",2]",2,object,
+"[""optimized_artifact"",""standard_references"",2,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""optimized_artifact"",""standard_references"",2,""artifact_id""]",artifact_id,string,CL_SEX
+"[""optimized_artifact"",""standard_references"",2,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",2,""evidence""]",evidence,string,The principles identify CL_SEX as an SDMX Global Registry codelist worth checking. Local sex and sex-coverage codes are retained pending exact code/version verification.
+"[""optimized_artifact"",""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",3]",3,object,
+"[""optimized_artifact"",""standard_references"",3,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist
+"[""optimized_artifact"",""standard_references"",3,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""optimized_artifact"",""standard_references"",3,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",3,""evidence""]",evidence,string,The principles identify CL_OBS_STATUS as a standard candidate for observation status. Exact code-level mappings were not confirmed for all report labels.
+"[""optimized_artifact"",""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",4]",4,object,
+"[""optimized_artifact"",""standard_references"",4,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",4,""artifact_type""]",artifact_type,string,Codelist
+"[""optimized_artifact"",""standard_references"",4,""artifact_id""]",artifact_id,string,CL_SEASONAL_ADJUST
+"[""optimized_artifact"",""standard_references"",4,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",4,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",4,""evidence""]",evidence,string,The principles identify CL_SEASONAL_ADJUST as an SDMX Global Registry codelist worth checking. Labour vacancy counts use a seasonally adjusted value.
+"[""optimized_artifact"",""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",5]",5,object,
+"[""optimized_artifact"",""standard_references"",5,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",5,""artifact_type""]",artifact_type,string,Codelist
+"[""optimized_artifact"",""standard_references"",5,""artifact_id""]",artifact_id,string,CL_AREA
+"[""optimized_artifact"",""standard_references"",5,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",5,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",5,""evidence""]",evidence,string,The principles identify CL_AREA as a reference area codelist to check. DEMO XML areas and synthetic areas are not asserted to match CL_AREA without verification.
+"[""optimized_artifact"",""standard_references"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",6]",6,object,
+"[""optimized_artifact"",""standard_references"",6,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",6,""artifact_type""]",artifact_type,string,Geographic code system
+"[""optimized_artifact"",""standard_references"",6,""artifact_id""]",artifact_id,string,UN M49
+"[""optimized_artifact"",""standard_references"",6,""version""]",version,string,not stated in supplied excerpt
+"[""optimized_artifact"",""standard_references"",6,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""optimized_artifact"",""standard_references"",6,""evidence""]",evidence,string,UN M49 is identified as an authoritative geographic code source. DEMO and synthetic areas were not verified against UN M49.
+"[""optimized_artifact"",""standard_references"",6,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",7]",7,object,
+"[""optimized_artifact"",""standard_references"",7,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",7,""artifact_type""]",artifact_type,string,Classification
+"[""optimized_artifact"",""standard_references"",7,""artifact_id""]",artifact_id,string,ISIC
+"[""optimized_artifact"",""standard_references"",7,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",7,""url""]",url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""optimized_artifact"",""standard_references"",7,""evidence""]",evidence,string,UNSD economic classifications are identified as the place to check ISIC. Labour industry labels are local aggregates and not confirmed ISIC categories.
+"[""optimized_artifact"",""standard_references"",7,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""standard_references"",8]",8,object,
+"[""optimized_artifact"",""standard_references"",8,""agency""]",agency,string,UNESCO-UIS
+"[""optimized_artifact"",""standard_references"",8,""artifact_type""]",artifact_type,string,Classification
+"[""optimized_artifact"",""standard_references"",8,""artifact_id""]",artifact_id,string,ISCED
+"[""optimized_artifact"",""standard_references"",8,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",8,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""optimized_artifact"",""standard_references"",8,""evidence""]",evidence,string,UNESCO ISCED is the international reference for education level. Education-level labels require review before authoritative mapping.
+"[""optimized_artifact"",""standard_references"",8,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",9]",9,object,
+"[""optimized_artifact"",""standard_references"",9,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",9,""artifact_type""]",artifact_type,string,Classification
+"[""optimized_artifact"",""standard_references"",9,""artifact_id""]",artifact_id,string,CPC and other economic/product classifications
+"[""optimized_artifact"",""standard_references"",9,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",9,""url""]",url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""optimized_artifact"",""standard_references"",9,""evidence""]",evidence,string,UNSD economic classifications are authoritative sources for products and commodities. Crop and fertilizer values require classification review.
+"[""optimized_artifact"",""standard_references"",9,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",10]",10,object,
+"[""optimized_artifact"",""standard_references"",10,""agency""]",agency,string,UNSD / SDMX
+"[""optimized_artifact"",""standard_references"",10,""artifact_type""]",artifact_type,string,Classification / Codelist candidate
+"[""optimized_artifact"",""standard_references"",10,""artifact_id""]",artifact_id,string,COICOP / CL_COICOP_2018
+"[""optimized_artifact"",""standard_references"",10,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",10,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""optimized_artifact"",""standard_references"",10,""evidence""]",evidence,string,COICOP is the relevant consumption-purpose classification to check for CPI divisions; the reports do not confirm revision or exact codes.
+"[""optimized_artifact"",""standard_references"",10,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",11]",11,object,
+"[""optimized_artifact"",""standard_references"",11,""agency""]",agency,string,ISO
+"[""optimized_artifact"",""standard_references"",11,""artifact_type""]",artifact_type,string,Currency standard candidate
+"[""optimized_artifact"",""standard_references"",11,""artifact_id""]",artifact_id,string,ISO 4217
+"[""optimized_artifact"",""standard_references"",11,""version""]",version,string,not confirmed from supplied official-source evidence
+"[""optimized_artifact"",""standard_references"",11,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""optimized_artifact"",""standard_references"",11,""evidence""]",evidence,string,ISO 4217 is the standard source when currency identity is required. Trade XML states US dollars; agriculture and prices reports use unnamed local currency.
+"[""optimized_artifact"",""standard_references"",11,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""limitations""]",limitations,array,
+"[""optimized_artifact"",""limitations"",0]",0,string,"Exact SDMX Global Registry versions and code memberships for CL_FREQ, CL_SEX, CL_OBS_STATUS, CL_SEASONAL_ADJUST, CL_AREA and CL_COICOP_2018 were not confirmed in the supplied official-source evidence."
+"[""optimized_artifact"",""limitations"",1]",1,string,XML codelists from DEMO SDMX files were mechanically converted and represented through consolidated aggregate codelists with explicit source-codelist mappings in scope notes and code evidence. Consolidated aggregate codelist IDs are not original DEMO artefact IDs.
+"[""optimized_artifact"",""limitations"",2]",2,string,"Northland, Centralia and South Coast are local synthetic reference areas and have no confirmed authoritative geography mapping."
+"[""optimized_artifact"",""limitations"",3]",3,string,Trade partner areas include countries and aggregates such as World and EU27. They are kept in a partner-area codelist separate from reference area to avoid confusing semantic roles.
+"[""optimized_artifact"",""limitations"",4]",4,string,"Female/Women and Male/Men are consolidated as local sex-category candidates, but total-sex categories are kept distinct where report scope differs or is undefined."
+"[""optimized_artifact"",""limitations"",5]",5,string,"Percent is consolidated as a common mathematical unit. Persons, students, deaths, beds, open positions, hectares, tonnes, GWh, generic index, base-2023 index, million US dollars and currency-denominated local units remain distinct where their statistical units differ."
+"[""optimized_artifact"",""limitations"",6]",6,string,Education level labels from DEMO XML and PDF reports are label-consolidated only as local/candidate mappings; no ISCED version or exact code mapping is confirmed.
+"[""optimized_artifact"",""limitations"",7]",7,string,"Cause labels resemble ICD families, education levels resemble ISCED categories, industry labels resemble activity categories, crop and fertilizer labels resemble product classifications, CPI divisions resemble COICOP categories, and energy-source labels resemble energy classifications, but no authoritative classification versions or mappings were confirmed."
+"[""optimized_artifact"",""limitations"",8]",8,string,Wealth quintiles and expenditure quintiles are survey-specific and are not merged because they describe different distributions. Only quintile labels appearing in the source reports are represented; missing intermediate quintiles must not be invented.
+"[""optimized_artifact"",""limitations"",9]",9,string,"Modelled estimate, survey estimate, observed, forecast, final, provisional, estimated and normal status labels may require methodology metadata as well as observation-status coding; they are retained as local status labels pending SDMX CL_OBS_STATUS verification."
+"[""optimized_artifact"",""limitations"",10]",10,string,Private-sector hospital-bed reporting is incomplete in 2024; this is an interpretive limitation for the health report and not a separate codelist category.
+"[""optimized_artifact"",""limitations"",11]",11,string,Hospital ownership categories are scoped to the hospital-beds structure and should not be applied to mortality data unless separately justified.
+"[""optimized_artifact"",""limitations"",12]",12,string,"The agriculture and prices reports use unnamed local currency units, so ISO 4217 currency coding cannot be confirmed for those units."
+"[""optimized_artifact"",""codelists""]",codelists,array,
+"[""optimized_artifact"",""codelists"",0]",0,object,
+"[""optimized_artifact"",""codelists"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""optimized_artifact"",""codelists"",0,""name""]",name,string,Frequency
+"[""optimized_artifact"",""codelists"",0,""agency_id""]",agency_id,string,SDMX_CANDIDATE_WITH_LOCAL_MAPPINGS
+"[""optimized_artifact"",""codelists"",0,""version""]",version,string,aggregate-1.1-draft
+"[""optimized_artifact"",""codelists"",0,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""codelists"",0,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""optimized_artifact"",""codelists"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",0,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",0,""scope_notes""]",scope_notes,string,"Reusable frequency list. Candidate mapping to SDMX CL_FREQ. XML mappings include CL_POP_FREQ.A, CL_EDU_FREQ.A -> A; CL_CPI_FREQ.M, CL_LAB_FREQ.M, CL_TRD_FREQ.M, CL_ENE_FREQ.M -> M. Also covers annual health, education, agriculture and household spending; quarterly PDF unemployment rates; monthly PDF vacancy, fertilizer price and CPI observations."
+"[""optimized_artifact"",""codelists"",0,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",0,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",0,""codes"",0,""code""]",code,string,A
+"[""optimized_artifact"",""codelists"",0,""codes"",0,""name""]",name,string,Annual
+"[""optimized_artifact"",""codelists"",0,""codes"",0,""definition""]",definition,string,Observation frequency once per year.
+"[""optimized_artifact"",""codelists"",0,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",0,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",0,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_POP_FREQ and CL_EDU_FREQ: A Annual; PDF reports include observations reported by calendar year/year.
+"[""optimized_artifact"",""codelists"",0,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",0,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",0,""codes"",1,""code""]",code,string,Q
+"[""optimized_artifact"",""codelists"",0,""codes"",1,""name""]",name,string,Quarterly
+"[""optimized_artifact"",""codelists"",0,""codes"",1,""definition""]",definition,string,Observation frequency once per quarter.
+"[""optimized_artifact"",""codelists"",0,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",0,""codes"",1,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",0,""codes"",1,""evidence_quote""]",evidence_quote,string,PDF labour report: quarterly unemployment rates.
+"[""optimized_artifact"",""codelists"",0,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",0,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",0,""codes"",2,""code""]",code,string,M
+"[""optimized_artifact"",""codelists"",0,""codes"",2,""name""]",name,string,Monthly
+"[""optimized_artifact"",""codelists"",0,""codes"",2,""definition""]",definition,string,Observation frequency once per month.
+"[""optimized_artifact"",""codelists"",0,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",0,""codes"",2,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",0,""codes"",2,""evidence_quote""]",evidence_quote,string,"XML CL_CPI_FREQ, CL_LAB_FREQ, CL_TRD_FREQ and CL_ENE_FREQ: M Monthly; PDF reports include monthly fertilizer retail prices, CPI and vacancy counts."
+"[""optimized_artifact"",""codelists"",0,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1]",1,object,
+"[""optimized_artifact"",""codelists"",1,""codelist_id""]",codelist_id,string,CL_SYN_INDICATOR
+"[""optimized_artifact"",""codelists"",1,""name""]",name,string,Cross-report statistical indicators
+"[""optimized_artifact"",""codelists"",1,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",1,""version""]",version,string,1.2-draft
+"[""optimized_artifact"",""codelists"",1,""source_url""]",source_url,string,not stated in source files; derived from supplied reports
+"[""optimized_artifact"",""codelists"",1,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",1,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",1,""scope_notes""]",scope_notes,string,"Reusable aggregate indicator list preserving distinct phenomena from six DEMO XML files and five PDF reports. Explicit mappings include CL_POP_INDICATOR.POP_TOTAL/POP_GROWTH, CL_CPI_INDICATOR.CPI_INDEX/CPI_YOY, CL_LAB_INDICATOR.UNE_RATE/EMP_RATE, CL_TRD_INDICATOR.EXPORTS/IMPORTS/BALANCE, CL_EDU_INDICATOR.ENROL/GRAD, and CL_ENE_INDICATOR.ELEC_GEN/ELEC_CONS/RENEW_SHARE. PDF indicators are retained where definitions or scope differ from XML indicators."
+"[""optimized_artifact"",""codelists"",1,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",1,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",0,""code""]",code,string,POP_TOTAL
+"[""optimized_artifact"",""codelists"",1,""codes"",0,""name""]",name,string,Total population
+"[""optimized_artifact"",""codelists"",1,""codes"",0,""definition""]",definition,string,Total population indicator from the DEMO population XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_POP_INDICATOR: POP_TOTAL Total population.
+"[""optimized_artifact"",""codelists"",1,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",1,""code""]",code,string,POP_GROWTH
+"[""optimized_artifact"",""codelists"",1,""codes"",1,""name""]",name,string,Population growth rate
+"[""optimized_artifact"",""codelists"",1,""codes"",1,""definition""]",definition,string,Population growth rate indicator from the DEMO population XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",1,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",1,""evidence_quote""]",evidence_quote,string,XML CL_POP_INDICATOR: POP_GROWTH Population growth rate.
+"[""optimized_artifact"",""codelists"",1,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",2,""code""]",code,string,CPI_INDEX_DEMO
+"[""optimized_artifact"",""codelists"",1,""codes"",2,""name""]",name,string,"Consumer price index, DEMO XML"
+"[""optimized_artifact"",""codelists"",1,""codes"",2,""definition""]",definition,string,Consumer price index indicator from the DEMO consumer-prices XML; base and product-group scope follow the XML DSD/dataflow context.
+"[""optimized_artifact"",""codelists"",1,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",2,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",2,""evidence_quote""]",evidence_quote,string,XML CL_CPI_INDICATOR: CPI_INDEX Consumer price index.
+"[""optimized_artifact"",""codelists"",1,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",3,""code""]",code,string,CPI_YOY
+"[""optimized_artifact"",""codelists"",1,""codes"",3,""name""]",name,string,Year-on-year CPI change
+"[""optimized_artifact"",""codelists"",1,""codes"",3,""definition""]",definition,string,Year-on-year change in the consumer price index from the DEMO consumer-prices XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",3,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",3,""evidence_quote""]",evidence_quote,string,XML CL_CPI_INDICATOR: CPI_YOY Year-on-year CPI change.
+"[""optimized_artifact"",""codelists"",1,""codes"",3,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",4]",4,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",4,""code""]",code,string,UNE_RATE_DEMO
+"[""optimized_artifact"",""codelists"",1,""codes"",4,""name""]",name,string,"Unemployment rate, DEMO XML"
+"[""optimized_artifact"",""codelists"",1,""codes"",4,""definition""]",definition,string,Unemployment rate indicator from the DEMO labour-market XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",4,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",4,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",4,""evidence_quote""]",evidence_quote,string,XML CL_LAB_INDICATOR: UNE_RATE Unemployment rate.
+"[""optimized_artifact"",""codelists"",1,""codes"",4,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",5]",5,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",5,""code""]",code,string,EMP_RATE
+"[""optimized_artifact"",""codelists"",1,""codes"",5,""name""]",name,string,Employment rate
+"[""optimized_artifact"",""codelists"",1,""codes"",5,""definition""]",definition,string,Employment rate indicator from the DEMO labour-market XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",5,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",5,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",5,""evidence_quote""]",evidence_quote,string,XML CL_LAB_INDICATOR: EMP_RATE Employment rate.
+"[""optimized_artifact"",""codelists"",1,""codes"",5,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",6]",6,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",6,""code""]",code,string,TRD_EXPORTS
+"[""optimized_artifact"",""codelists"",1,""codes"",6,""name""]",name,string,Exports
+"[""optimized_artifact"",""codelists"",1,""codes"",6,""definition""]",definition,string,External trade flow for exports from the DEMO external-trade XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",6,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",6,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",6,""evidence_quote""]",evidence_quote,string,XML CL_TRD_INDICATOR: EXPORTS Exports.
+"[""optimized_artifact"",""codelists"",1,""codes"",6,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",7]",7,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",7,""code""]",code,string,TRD_IMPORTS
+"[""optimized_artifact"",""codelists"",1,""codes"",7,""name""]",name,string,Imports
+"[""optimized_artifact"",""codelists"",1,""codes"",7,""definition""]",definition,string,External trade flow for imports from the DEMO external-trade XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",7,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",7,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",7,""evidence_quote""]",evidence_quote,string,XML CL_TRD_INDICATOR: IMPORTS Imports.
+"[""optimized_artifact"",""codelists"",1,""codes"",7,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",8]",8,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",8,""code""]",code,string,TRD_BALANCE
+"[""optimized_artifact"",""codelists"",1,""codes"",8,""name""]",name,string,Trade balance
+"[""optimized_artifact"",""codelists"",1,""codes"",8,""definition""]",definition,string,External trade balance indicator from the DEMO external-trade XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",8,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",8,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",8,""evidence_quote""]",evidence_quote,string,XML CL_TRD_INDICATOR: BALANCE Trade balance.
+"[""optimized_artifact"",""codelists"",1,""codes"",8,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",9]",9,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",9,""code""]",code,string,ENROL_DEMO
+"[""optimized_artifact"",""codelists"",1,""codes"",9,""name""]",name,string,"Enrolment, DEMO XML"
+"[""optimized_artifact"",""codelists"",1,""codes"",9,""definition""]",definition,string,Enrolment education indicator from the DEMO education XML; census-day and population scope are not further stated in the XML codelist.
+"[""optimized_artifact"",""codelists"",1,""codes"",9,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",9,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",9,""evidence_quote""]",evidence_quote,string,XML CL_EDU_INDICATOR: ENROL Enrolment.
+"[""optimized_artifact"",""codelists"",1,""codes"",9,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",10]",10,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",10,""code""]",code,string,GRAD_DEMO
+"[""optimized_artifact"",""codelists"",1,""codes"",10,""name""]",name,string,"Graduates, DEMO XML"
+"[""optimized_artifact"",""codelists"",1,""codes"",10,""definition""]",definition,string,Graduates education indicator from the DEMO education XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",10,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",10,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",10,""evidence_quote""]",evidence_quote,string,XML CL_EDU_INDICATOR: GRAD Graduates.
+"[""optimized_artifact"",""codelists"",1,""codes"",10,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",11]",11,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",11,""code""]",code,string,ELEC_GEN
+"[""optimized_artifact"",""codelists"",1,""codes"",11,""name""]",name,string,Electricity generation
+"[""optimized_artifact"",""codelists"",1,""codes"",11,""definition""]",definition,string,Electricity generation indicator from the DEMO energy XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",11,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",11,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",11,""evidence_quote""]",evidence_quote,string,XML CL_ENE_INDICATOR: ELEC_GEN Electricity generation.
+"[""optimized_artifact"",""codelists"",1,""codes"",11,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",12]",12,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",12,""code""]",code,string,ELEC_CONS
+"[""optimized_artifact"",""codelists"",1,""codes"",12,""name""]",name,string,Electricity consumption
+"[""optimized_artifact"",""codelists"",1,""codes"",12,""definition""]",definition,string,Electricity consumption indicator from the DEMO energy XML.
+"[""optimized_artifact"",""codelists"",1,""codes"",12,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",12,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",12,""evidence_quote""]",evidence_quote,string,XML CL_ENE_INDICATOR: ELEC_CONS Electricity consumption.
+"[""optimized_artifact"",""codelists"",1,""codes"",12,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",13]",13,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",13,""code""]",code,string,RENEW_SHARE
+"[""optimized_artifact"",""codelists"",1,""codes"",13,""name""]",name,string,Renewable share of generation
+"[""optimized_artifact"",""codelists"",1,""codes"",13,""definition""]",definition,string,"Share of electricity generation from renewable sources, from the DEMO energy XML."
+"[""optimized_artifact"",""codelists"",1,""codes"",13,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",13,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",1,""codes"",13,""evidence_quote""]",evidence_quote,string,XML CL_ENE_INDICATOR: RENEW_SHARE Renewable share of generation.
+"[""optimized_artifact"",""codelists"",1,""codes"",13,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",14]",14,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",14,""code""]",code,string,UNEMP_RATE
+"[""optimized_artifact"",""codelists"",1,""codes"",14,""name""]",name,string,"Unemployment rate, PDF labour survey"
+"[""optimized_artifact"",""codelists"",1,""codes"",14,""definition""]",definition,string,Unemployed persons as a percentage of the labour force; PDF report scope is synthetic survey estimates for persons aged 15-64.
+"[""optimized_artifact"",""codelists"",1,""codes"",14,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",14,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",14,""evidence_quote""]",evidence_quote,string,Unemployment rate is unemployed persons as a percentage of the labour force.
+"[""optimized_artifact"",""codelists"",1,""codes"",14,""local_creation_justification""]",local_creation_justification,string,Kept distinct from UNE_RATE_DEMO because the PDF supplies explicit survey/age scope not present in the XML codelist.
+"[""optimized_artifact"",""codelists"",1,""codes"",15]",15,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",15,""code""]",code,string,JOB_VACANCIES
+"[""optimized_artifact"",""codelists"",1,""codes"",15,""name""]",name,string,Job vacancies
+"[""optimized_artifact"",""codelists"",1,""codes"",15,""definition""]",definition,string,Count of unfilled positions available for immediate recruitment.
+"[""optimized_artifact"",""codelists"",1,""codes"",15,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",15,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",15,""evidence_quote""]",evidence_quote,string,A job vacancy is an unfilled position available for immediate recruitment.
+"[""optimized_artifact"",""codelists"",1,""codes"",15,""local_creation_justification""]",local_creation_justification,string,No confirmed domain SDMX indicator code was supplied.
+"[""optimized_artifact"",""codelists"",1,""codes"",16]",16,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",16,""code""]",code,string,REGISTERED_DEATHS
+"[""optimized_artifact"",""codelists"",1,""codes"",16,""name""]",name,string,Registered deaths
+"[""optimized_artifact"",""codelists"",1,""codes"",16,""definition""]",definition,string,"Count of registered death events during the calendar year, classified by area, underlying cause and age group."
+"[""optimized_artifact"",""codelists"",1,""codes"",16,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",16,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",16,""evidence_quote""]",evidence_quote,string,Deaths; registered deaths table; Provisional death counts are revised when late registrations arrive.
+"[""optimized_artifact"",""codelists"",1,""codes"",16,""local_creation_justification""]",local_creation_justification,string,No confirmed health indicator code was supplied.
+"[""optimized_artifact"",""codelists"",1,""codes"",17]",17,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",17,""code""]",code,string,AVAILABLE_HOSPITAL_BEDS
+"[""optimized_artifact"",""codelists"",1,""codes"",17,""name""]",name,string,Available staffed hospital beds
+"[""optimized_artifact"",""codelists"",1,""codes"",17,""definition""]",definition,string,"Count of staffed hospital beds available on 31 December, classified by ownership."
+"[""optimized_artifact"",""codelists"",1,""codes"",17,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",17,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",17,""evidence_quote""]",evidence_quote,string,Count of staffed beds available on 31 December.
+"[""optimized_artifact"",""codelists"",1,""codes"",17,""local_creation_justification""]",local_creation_justification,string,No confirmed health indicator code was supplied.
+"[""optimized_artifact"",""codelists"",1,""codes"",18]",18,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",18,""code""]",code,string,ENROLLMENT_COUNT
+"[""optimized_artifact"",""codelists"",1,""codes"",18,""name""]",name,string,"Enrollment count, PDF education report"
+"[""optimized_artifact"",""codelists"",1,""codes"",18,""definition""]",definition,string,"Administrative headcount of learners registered on census day, by education level, sex and year."
+"[""optimized_artifact"",""codelists"",1,""codes"",18,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",18,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",18,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day.
+"[""optimized_artifact"",""codelists"",1,""codes"",18,""local_creation_justification""]",local_creation_justification,string,Kept distinct from ENROL_DEMO because the PDF supplies census-day and administrative-count scope not present in the XML codelist.
+"[""optimized_artifact"",""codelists"",1,""codes"",19]",19,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",19,""code""]",code,string,LOWER_SECONDARY_COMPLETION_RATE
+"[""optimized_artifact"",""codelists"",1,""codes"",19,""name""]",name,string,Lower-secondary completion rate
+"[""optimized_artifact"",""codelists"",1,""codes"",19,""definition""]",definition,string,Percentage of the relevant cohort completing the lower-secondary education cycle.
+"[""optimized_artifact"",""codelists"",1,""codes"",19,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",19,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",19,""evidence_quote""]",evidence_quote,string,Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""optimized_artifact"",""codelists"",1,""codes"",19,""local_creation_justification""]",local_creation_justification,string,No confirmed education indicator code was supplied.
+"[""optimized_artifact"",""codelists"",1,""codes"",20]",20,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",20,""code""]",code,string,HARVESTED_AREA
+"[""optimized_artifact"",""codelists"",1,""codes"",20,""name""]",name,string,Harvested area
+"[""optimized_artifact"",""codelists"",1,""codes"",20,""definition""]",definition,string,"Area of crop harvested, measured in hectares in the agriculture report."
+"[""optimized_artifact"",""codelists"",1,""codes"",20,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",20,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",20,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested.
+"[""optimized_artifact"",""codelists"",1,""codes"",20,""local_creation_justification""]",local_creation_justification,string,No confirmed agriculture indicator code was supplied.
+"[""optimized_artifact"",""codelists"",1,""codes"",21]",21,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",21,""code""]",code,string,CROP_PRODUCTION
+"[""optimized_artifact"",""codelists"",1,""codes"",21,""name""]",name,string,Crop production
+"[""optimized_artifact"",""codelists"",1,""codes"",21,""definition""]",definition,string,"Crop output, measured in metric tonnes in the agriculture report."
+"[""optimized_artifact"",""codelists"",1,""codes"",21,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",21,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",21,""evidence_quote""]",evidence_quote,string,Production is crop output in metric tonnes.
+"[""optimized_artifact"",""codelists"",1,""codes"",21,""local_creation_justification""]",local_creation_justification,string,No confirmed agriculture indicator code was supplied.
+"[""optimized_artifact"",""codelists"",1,""codes"",22]",22,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",22,""code""]",code,string,FERTILIZER_RETAIL_PRICE
+"[""optimized_artifact"",""codelists"",1,""codes"",22,""name""]",name,string,Fertilizer retail price
+"[""optimized_artifact"",""codelists"",1,""codes"",22,""definition""]",definition,string,Median observed fertilizer retail price per 50 kg bag in an unnamed local currency.
+"[""optimized_artifact"",""codelists"",1,""codes"",22,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",22,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",22,""evidence_quote""]",evidence_quote,string,Retail price is the median observed price per 50 kg bag.
+"[""optimized_artifact"",""codelists"",1,""codes"",22,""local_creation_justification""]",local_creation_justification,string,No confirmed agriculture price indicator code was supplied.
+"[""optimized_artifact"",""codelists"",1,""codes"",23]",23,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",23,""code""]",code,string,CPI_LOCAL_BASE2023
+"[""optimized_artifact"",""codelists"",1,""codes"",23,""name""]",name,string,"Consumer price index, local PDF base 2023=100"
+"[""optimized_artifact"",""codelists"",1,""codes"",23,""definition""]",definition,string,"Monthly fixed-basket consumer price index classified by local consumption division, with base 2023=100 in the PDF prices report."
+"[""optimized_artifact"",""codelists"",1,""codes"",23,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",23,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",23,""evidence_quote""]",evidence_quote,string,"The CPI is a monthly fixed-basket index classified by consumption division; Index, 2023=100."
+"[""optimized_artifact"",""codelists"",1,""codes"",23,""local_creation_justification""]",local_creation_justification,string,Kept distinct from CPI_INDEX_DEMO because the PDF states a specific base and local division classification.
+"[""optimized_artifact"",""codelists"",1,""codes"",24]",24,object,
+"[""optimized_artifact"",""codelists"",1,""codes"",24,""code""]",code,string,MEAN_MONTHLY_HH_CONS_EXP
+"[""optimized_artifact"",""codelists"",1,""codes"",24,""name""]",name,string,Mean monthly household consumption expenditure
+"[""optimized_artifact"",""codelists"",1,""codes"",24,""definition""]",definition,string,"Annual household-spending survey estimate of mean monthly consumption expenditure per household, classified by residence and expenditure quintile."
+"[""optimized_artifact"",""codelists"",1,""codes"",24,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",1,""codes"",24,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",1,""codes"",24,""evidence_quote""]",evidence_quote,string,Household spending is an annual survey estimate by residence and expenditure quintile and is not a CPI observation.
+"[""optimized_artifact"",""codelists"",1,""codes"",24,""local_creation_justification""]",local_creation_justification,string,No confirmed household-expenditure indicator code was supplied.
+"[""optimized_artifact"",""codelists"",2]",2,object,
+"[""optimized_artifact"",""codelists"",2,""codelist_id""]",codelist_id,string,CL_DEMO_REF_AREA
+"[""optimized_artifact"",""codelists"",2,""name""]",name,string,DEMO XML reference areas
+"[""optimized_artifact"",""codelists"",2,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",2,""version""]",version,string,1.1-draft
+"[""optimized_artifact"",""codelists"",2,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""codelists"",2,""maintenance_status""]",maintenance_status,string,LOCAL_CONSTRAINT
+"[""optimized_artifact"",""codelists"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",2,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",2,""scope_notes""]",scope_notes,string,"Consolidates identical reference-area value domains from DEMO XML codelists. Mappings: CL_POP_REF_AREA, CL_CPI_REF_AREA, CL_LAB_REF_AREA, CL_TRD_REF_AREA, CL_EDU_REF_AREA and CL_ENE_REF_AREA codes KR/JP/US map to these aggregate codes. Not asserted to be SDMX CL_AREA, ISO 3166 or UN M49 without verification."
+"[""optimized_artifact"",""codelists"",2,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",2,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",2,""codes"",0,""code""]",code,string,KR
+"[""optimized_artifact"",""codelists"",2,""codes"",0,""name""]",name,string,"Korea, Republic of"
+"[""optimized_artifact"",""codelists"",2,""codes"",0,""definition""]",definition,string,"Reference area labelled Korea, Republic of in the DEMO XML files."
+"[""optimized_artifact"",""codelists"",2,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",2,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",2,""codes"",0,""evidence_quote""]",evidence_quote,string,"XML reference-area codelists: KR Korea, Republic of."
+"[""optimized_artifact"",""codelists"",2,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",2,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",2,""codes"",1,""code""]",code,string,JP
+"[""optimized_artifact"",""codelists"",2,""codes"",1,""name""]",name,string,Japan
+"[""optimized_artifact"",""codelists"",2,""codes"",1,""definition""]",definition,string,Reference area labelled Japan in the DEMO XML files.
+"[""optimized_artifact"",""codelists"",2,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",2,""codes"",1,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",2,""codes"",1,""evidence_quote""]",evidence_quote,string,XML reference-area codelists: JP Japan.
+"[""optimized_artifact"",""codelists"",2,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",2,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",2,""codes"",2,""code""]",code,string,US
+"[""optimized_artifact"",""codelists"",2,""codes"",2,""name""]",name,string,United States
+"[""optimized_artifact"",""codelists"",2,""codes"",2,""definition""]",definition,string,Reference area labelled United States in the DEMO XML files.
+"[""optimized_artifact"",""codelists"",2,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",2,""codes"",2,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",2,""codes"",2,""evidence_quote""]",evidence_quote,string,XML reference-area codelists: US United States.
+"[""optimized_artifact"",""codelists"",2,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",3]",3,object,
+"[""optimized_artifact"",""codelists"",3,""codelist_id""]",codelist_id,string,CL_SYN_REF_AREA
+"[""optimized_artifact"",""codelists"",3,""name""]",name,string,Synthetic PDF reporting/reference areas
+"[""optimized_artifact"",""codelists"",3,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",3,""version""]",version,string,1.0-draft
+"[""optimized_artifact"",""codelists"",3,""source_url""]",source_url,string,not stated in PDF extracts
+"[""optimized_artifact"",""codelists"",3,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",3,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",3,""scope_notes""]",scope_notes,string,"Local reference-area list for synthetic areas appearing in labour, health and agriculture PDF reports. Kept separate from DEMO XML countries to avoid mixing geographic code systems without an explicit hierarchy."
+"[""optimized_artifact"",""codelists"",3,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",3,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",3,""codes"",0,""code""]",code,string,NORTHLAND
+"[""optimized_artifact"",""codelists"",3,""codes"",0,""name""]",name,string,Northland
+"[""optimized_artifact"",""codelists"",3,""codes"",0,""definition""]",definition,string,"Local synthetic reporting/reference area used in labour, health and agriculture reports."
+"[""optimized_artifact"",""codelists"",3,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",3,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",3,""codes"",0,""evidence_quote""]",evidence_quote,string,Northland
+"[""optimized_artifact"",""codelists"",3,""codes"",0,""local_creation_justification""]",local_creation_justification,string,No authoritative area code was confirmed.
+"[""optimized_artifact"",""codelists"",3,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",3,""codes"",1,""code""]",code,string,CENTRALIA
+"[""optimized_artifact"",""codelists"",3,""codes"",1,""name""]",name,string,Centralia
+"[""optimized_artifact"",""codelists"",3,""codes"",1,""definition""]",definition,string,"Local synthetic reporting/reference area used in labour, health and agriculture reports."
+"[""optimized_artifact"",""codelists"",3,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",3,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",3,""codes"",1,""evidence_quote""]",evidence_quote,string,Centralia
+"[""optimized_artifact"",""codelists"",3,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No authoritative area code was confirmed.
+"[""optimized_artifact"",""codelists"",3,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",3,""codes"",2,""code""]",code,string,SOUTH_COAST
+"[""optimized_artifact"",""codelists"",3,""codes"",2,""name""]",name,string,South Coast
+"[""optimized_artifact"",""codelists"",3,""codes"",2,""definition""]",definition,string,"Local synthetic reporting/reference area used in labour, health and agriculture reports."
+"[""optimized_artifact"",""codelists"",3,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",3,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",3,""codes"",2,""evidence_quote""]",evidence_quote,string,South Coast
+"[""optimized_artifact"",""codelists"",3,""codes"",2,""local_creation_justification""]",local_creation_justification,string,No authoritative area code was confirmed.
+"[""optimized_artifact"",""codelists"",4]",4,object,
+"[""optimized_artifact"",""codelists"",4,""codelist_id""]",codelist_id,string,CL_DEMO_PARTNER_AREA
+"[""optimized_artifact"",""codelists"",4,""name""]",name,string,DEMO external-trade partner areas
+"[""optimized_artifact"",""codelists"",4,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",4,""version""]",version,string,1.0-draft
+"[""optimized_artifact"",""codelists"",4,""source_url""]",source_url,string,04_sdmx_21_external_trade_full_case.xml
+"[""optimized_artifact"",""codelists"",4,""maintenance_status""]",maintenance_status,string,LOCAL_CONSTRAINT
+"[""optimized_artifact"",""codelists"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",4,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",4,""scope_notes""]",scope_notes,string,Partner-area value domain from the DEMO external-trade XML. Kept separate from reference area because counterpart/partner area is a different semantic role and includes aggregates.
+"[""optimized_artifact"",""codelists"",4,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",4,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",4,""codes"",0,""code""]",code,string,WORLD
+"[""optimized_artifact"",""codelists"",4,""codes"",0,""name""]",name,string,World
+"[""optimized_artifact"",""codelists"",4,""codes"",0,""definition""]",definition,string,Partner-area aggregate labelled World in the external-trade XML.
+"[""optimized_artifact"",""codelists"",4,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",4,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",4,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_TRD_PARTNER: WORLD World.
+"[""optimized_artifact"",""codelists"",4,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",4,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",4,""codes"",1,""code""]",code,string,CN
+"[""optimized_artifact"",""codelists"",4,""codes"",1,""name""]",name,string,China
+"[""optimized_artifact"",""codelists"",4,""codes"",1,""definition""]",definition,string,Partner area labelled China in the external-trade XML; exact geographic code system not verified.
+"[""optimized_artifact"",""codelists"",4,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",4,""codes"",1,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",4,""codes"",1,""evidence_quote""]",evidence_quote,string,XML CL_TRD_PARTNER: CN China.
+"[""optimized_artifact"",""codelists"",4,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",4,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",4,""codes"",2,""code""]",code,string,US
+"[""optimized_artifact"",""codelists"",4,""codes"",2,""name""]",name,string,United States
+"[""optimized_artifact"",""codelists"",4,""codes"",2,""definition""]",definition,string,Partner area labelled United States in the external-trade XML; exact geographic code system not verified.
+"[""optimized_artifact"",""codelists"",4,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",4,""codes"",2,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",4,""codes"",2,""evidence_quote""]",evidence_quote,string,XML CL_TRD_PARTNER: US United States.
+"[""optimized_artifact"",""codelists"",4,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",4,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",4,""codes"",3,""code""]",code,string,EU27
+"[""optimized_artifact"",""codelists"",4,""codes"",3,""name""]",name,string,European Union (27)
+"[""optimized_artifact"",""codelists"",4,""codes"",3,""definition""]",definition,string,Partner-area aggregate labelled European Union (27) in the external-trade XML.
+"[""optimized_artifact"",""codelists"",4,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",4,""codes"",3,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",4,""codes"",3,""evidence_quote""]",evidence_quote,string,XML CL_TRD_PARTNER: EU27 European Union (27).
+"[""optimized_artifact"",""codelists"",4,""codes"",3,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",5]",5,object,
+"[""optimized_artifact"",""codelists"",5,""codelist_id""]",codelist_id,string,CL_SYN_SEX_COVERAGE
+"[""optimized_artifact"",""codelists"",5,""name""]",name,string,Sex and sex-coverage categories
+"[""optimized_artifact"",""codelists"",5,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",5,""version""]",version,string,1.1-draft
+"[""optimized_artifact"",""codelists"",5,""source_url""]",source_url,string,not stated in source files; derived from supplied reports
+"[""optimized_artifact"",""codelists"",5,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""optimized_artifact"",""codelists"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",5,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",5,""scope_notes""]",scope_notes,string,Local holding list for sex categories. Explicit XML source mappings: CL_LAB_SEX.F -> FEMALE; CL_LAB_SEX.M -> MALE; CL_LAB_SEX._T -> TOTAL_SEX_DEMO. Female/Women and Male/Men are candidate mappings to SDMX CL_SEX. Total categories are not merged where inclusion rules differ.
+"[""optimized_artifact"",""codelists"",5,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",5,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",5,""codes"",0,""code""]",code,string,FEMALE
+"[""optimized_artifact"",""codelists"",5,""codes"",0,""name""]",name,string,Female / Women
+"[""optimized_artifact"",""codelists"",5,""codes"",0,""definition""]",definition,string,Persons classified as female/women. XML labour source label is Female; PDF source labels include Women and Female.
+"[""optimized_artifact"",""codelists"",5,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",5,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",5,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_LAB_SEX: F Female; PDF labels: Women; Female.
+"[""optimized_artifact"",""codelists"",5,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Exact SDMX CL_SEX code identifiers/version were not confirmed.
+"[""optimized_artifact"",""codelists"",5,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",5,""codes"",1,""code""]",code,string,MALE
+"[""optimized_artifact"",""codelists"",5,""codes"",1,""name""]",name,string,Male / Men
+"[""optimized_artifact"",""codelists"",5,""codes"",1,""definition""]",definition,string,Persons classified as male/men. XML labour source label is Male; PDF source labels include Men and Male.
+"[""optimized_artifact"",""codelists"",5,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",5,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",5,""codes"",1,""evidence_quote""]",evidence_quote,string,XML CL_LAB_SEX: M Male; PDF labels: Men; Male.
+"[""optimized_artifact"",""codelists"",5,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Exact SDMX CL_SEX code identifiers/version were not confirmed.
+"[""optimized_artifact"",""codelists"",5,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",5,""codes"",2,""code""]",code,string,TOTAL_SEX_DEMO
+"[""optimized_artifact"",""codelists"",5,""codes"",2,""name""]",name,string,"Total sex, DEMO XML scope"
+"[""optimized_artifact"",""codelists"",5,""codes"",2,""definition""]",definition,string,Total sex category from the DEMO labour-market XML. Inclusion rules are not further stated in the XML.
+"[""optimized_artifact"",""codelists"",5,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",5,""codes"",2,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",5,""codes"",2,""evidence_quote""]",evidence_quote,string,XML CL_LAB_SEX: _T Total.
+"[""optimized_artifact"",""codelists"",5,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",5,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",5,""codes"",3,""code""]",code,string,TOTAL_INCL_OTHER_LM
+"[""optimized_artifact"",""codelists"",5,""codes"",3,""name""]",name,string,Total sex coverage including other respondents
+"[""optimized_artifact"",""codelists"",5,""codes"",3,""definition""]",definition,string,PDF labour-report total sex coverage; includes respondents outside displayed women/men categories and must not be inferred by summing displayed rows.
+"[""optimized_artifact"",""codelists"",5,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",5,""codes"",3,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",5,""codes"",3,""evidence_quote""]",evidence_quote,string,Total sex coverage includes respondents outside the displayed women/men categories; it must not be inferred by summing displayed rows.
+"[""optimized_artifact"",""codelists"",5,""codes"",3,""local_creation_justification""]",local_creation_justification,string,Special total coverage may not match a standard total-sex code.
+"[""optimized_artifact"",""codelists"",5,""codes"",4]",4,object,
+"[""optimized_artifact"",""codelists"",5,""codes"",4,""code""]",code,string,TOTAL_SEX_UNSPECIFIED_EDU
+"[""optimized_artifact"",""codelists"",5,""codes"",4,""name""]",name,string,"Total sex coverage, education report scope not further specified"
+"[""optimized_artifact"",""codelists"",5,""codes"",4,""definition""]",definition,string,Education-report aggregate over reported sex categories for enrollment rows; exact inclusion rules are not further stated.
+"[""optimized_artifact"",""codelists"",5,""codes"",4,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",5,""codes"",4,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",5,""codes"",4,""evidence_quote""]",evidence_quote,string,Primary Total 2024 ... Students Final.
+"[""optimized_artifact"",""codelists"",5,""codes"",4,""local_creation_justification""]",local_creation_justification,string,Kept separate from labour totals because scope is not defined as equivalent.
+"[""optimized_artifact"",""codelists"",6]",6,object,
+"[""optimized_artifact"",""codelists"",6,""codelist_id""]",codelist_id,string,CL_SYN_UNIT_MEASURE
+"[""optimized_artifact"",""codelists"",6,""name""]",name,string,Cross-report units of measure
+"[""optimized_artifact"",""codelists"",6,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",6,""version""]",version,string,1.2-draft
+"[""optimized_artifact"",""codelists"",6,""source_url""]",source_url,string,not stated in source files; derived from supplied reports
+"[""optimized_artifact"",""codelists"",6,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",6,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",6,""scope_notes""]",scope_notes,string,"Local unit list. XML mappings include CL_POP_UNIT.PS and CL_EDU_UNIT.PS -> PERSONS; CL_POP_UNIT.PC, CL_CPI_UNIT.PC, CL_LAB_UNIT.PC and CL_ENE_UNIT.PC -> PERCENT; CL_CPI_UNIT.IDX -> INDEX; CL_TRD_UNIT.USD_MN -> USD_MN; CL_ENE_UNIT.GWH -> GWH. Percent is consolidated across reports; index units with different base-period specificity and currency-denominated local units are kept distinct."
+"[""optimized_artifact"",""codelists"",6,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",6,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",0,""code""]",code,string,PERSONS
+"[""optimized_artifact"",""codelists"",6,""codes"",0,""name""]",name,string,Persons
+"[""optimized_artifact"",""codelists"",6,""codes"",0,""definition""]",definition,string,Unit for counts of persons in DEMO population and education XML files.
+"[""optimized_artifact"",""codelists"",6,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",6,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_POP_UNIT: PS Persons; XML CL_EDU_UNIT: PS Persons.
+"[""optimized_artifact"",""codelists"",6,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",1,""code""]",code,string,PERCENT
+"[""optimized_artifact"",""codelists"",6,""codes"",1,""name""]",name,string,Percent
+"[""optimized_artifact"",""codelists"",6,""codes"",1,""definition""]",definition,string,"Unit for values expressed as percentages, including population growth, CPI change, employment/unemployment rates, completion rates and renewable share of generation."
+"[""optimized_artifact"",""codelists"",6,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",1,""evidence_quote""]",evidence_quote,string,XML unit codelists: PC Percent; PDF reports: Percent.
+"[""optimized_artifact"",""codelists"",6,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No confirmed authoritative unit-measure code for Percent was supplied.
+"[""optimized_artifact"",""codelists"",6,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",2,""code""]",code,string,INDEX
+"[""optimized_artifact"",""codelists"",6,""codes"",2,""name""]",name,string,Index
+"[""optimized_artifact"",""codelists"",6,""codes"",2,""definition""]",definition,string,"Generic index unit from the DEMO consumer-prices XML, with base period not specified in the codelist label."
+"[""optimized_artifact"",""codelists"",6,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",2,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",6,""codes"",2,""evidence_quote""]",evidence_quote,string,XML CL_CPI_UNIT: IDX Index.
+"[""optimized_artifact"",""codelists"",6,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",3,""code""]",code,string,USD_MN
+"[""optimized_artifact"",""codelists"",6,""codes"",3,""name""]",name,string,Million US dollars
+"[""optimized_artifact"",""codelists"",6,""codes"",3,""definition""]",definition,string,"Monetary unit for DEMO external-trade values, expressed in million US dollars."
+"[""optimized_artifact"",""codelists"",6,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",3,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",6,""codes"",3,""evidence_quote""]",evidence_quote,string,XML CL_TRD_UNIT: USD_MN Million US dollars.
+"[""optimized_artifact"",""codelists"",6,""codes"",3,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",4]",4,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",4,""code""]",code,string,GWH
+"[""optimized_artifact"",""codelists"",6,""codes"",4,""name""]",name,string,Gigawatt-hours
+"[""optimized_artifact"",""codelists"",6,""codes"",4,""definition""]",definition,string,Energy unit for electricity generation and consumption values in the DEMO energy XML.
+"[""optimized_artifact"",""codelists"",6,""codes"",4,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",4,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",6,""codes"",4,""evidence_quote""]",evidence_quote,string,XML CL_ENE_UNIT: GWH Gigawatt-hours.
+"[""optimized_artifact"",""codelists"",6,""codes"",4,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",5]",5,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",5,""code""]",code,string,OPEN_POSITIONS
+"[""optimized_artifact"",""codelists"",6,""codes"",5,""name""]",name,string,Open positions
+"[""optimized_artifact"",""codelists"",6,""codes"",5,""definition""]",definition,string,Unit for counts of job vacancies/open positions.
+"[""optimized_artifact"",""codelists"",6,""codes"",5,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",5,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",5,""evidence_quote""]",evidence_quote,string,Open positions.
+"[""optimized_artifact"",""codelists"",6,""codes"",5,""local_creation_justification""]",local_creation_justification,string,No confirmed authoritative unit-measure code was supplied.
+"[""optimized_artifact"",""codelists"",6,""codes"",6]",6,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",6,""code""]",code,string,DEATHS
+"[""optimized_artifact"",""codelists"",6,""codes"",6,""name""]",name,string,Deaths
+"[""optimized_artifact"",""codelists"",6,""codes"",6,""definition""]",definition,string,Unit for counts of registered death events during the calendar year.
+"[""optimized_artifact"",""codelists"",6,""codes"",6,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",6,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",6,""evidence_quote""]",evidence_quote,string,Deaths.
+"[""optimized_artifact"",""codelists"",6,""codes"",6,""local_creation_justification""]",local_creation_justification,string,No confirmed domain unit code was supplied.
+"[""optimized_artifact"",""codelists"",6,""codes"",7]",7,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",7,""code""]",code,string,BEDS
+"[""optimized_artifact"",""codelists"",6,""codes"",7,""name""]",name,string,Beds
+"[""optimized_artifact"",""codelists"",6,""codes"",7,""definition""]",definition,string,Unit for counts of staffed hospital beds available on 31 December.
+"[""optimized_artifact"",""codelists"",6,""codes"",7,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",7,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",7,""evidence_quote""]",evidence_quote,string,Beds; Count of staffed beds available on 31 December.
+"[""optimized_artifact"",""codelists"",6,""codes"",7,""local_creation_justification""]",local_creation_justification,string,No confirmed domain unit code was supplied.
+"[""optimized_artifact"",""codelists"",6,""codes"",8]",8,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",8,""code""]",code,string,STUDENTS
+"[""optimized_artifact"",""codelists"",6,""codes"",8,""name""]",name,string,Students
+"[""optimized_artifact"",""codelists"",6,""codes"",8,""definition""]",definition,string,Unit for enrollment counts of learners registered on census day in the PDF education report.
+"[""optimized_artifact"",""codelists"",6,""codes"",8,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",8,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",8,""evidence_quote""]",evidence_quote,string,Enrollment counts learners registered on census day; Students.
+"[""optimized_artifact"",""codelists"",6,""codes"",8,""local_creation_justification""]",local_creation_justification,string,Kept distinct from PERSONS because the PDF unit is learner/student headcount with report-specific education scope.
+"[""optimized_artifact"",""codelists"",6,""codes"",9]",9,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",9,""code""]",code,string,HECTARES
+"[""optimized_artifact"",""codelists"",6,""codes"",9,""name""]",name,string,Hectares
+"[""optimized_artifact"",""codelists"",6,""codes"",9,""definition""]",definition,string,Unit used for harvested crop area.
+"[""optimized_artifact"",""codelists"",6,""codes"",9,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",9,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",9,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested.
+"[""optimized_artifact"",""codelists"",6,""codes"",9,""local_creation_justification""]",local_creation_justification,string,No exact authoritative unit codelist/code was confirmed.
+"[""optimized_artifact"",""codelists"",6,""codes"",10]",10,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",10,""code""]",code,string,TONNES
+"[""optimized_artifact"",""codelists"",6,""codes"",10,""name""]",name,string,Tonnes
+"[""optimized_artifact"",""codelists"",6,""codes"",10,""definition""]",definition,string,Unit used for crop production; the agriculture report defines production as metric tonnes.
+"[""optimized_artifact"",""codelists"",6,""codes"",10,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",10,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",10,""evidence_quote""]",evidence_quote,string,Production is crop output in metric tonnes.
+"[""optimized_artifact"",""codelists"",6,""codes"",10,""local_creation_justification""]",local_creation_justification,string,No exact authoritative unit codelist/code was confirmed.
+"[""optimized_artifact"",""codelists"",6,""codes"",11]",11,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",11,""code""]",code,string,LOCAL_CURRENCY_PER_50KG_BAG
+"[""optimized_artifact"",""codelists"",6,""codes"",11,""name""]",name,string,Local currency per 50 kg bag
+"[""optimized_artifact"",""codelists"",6,""codes"",11,""definition""]",definition,string,Price unit for fertilizer retail prices; currency identity is not named.
+"[""optimized_artifact"",""codelists"",6,""codes"",11,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",11,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",11,""evidence_quote""]",evidence_quote,string,The local currency is deliberately unnamed.
+"[""optimized_artifact"",""codelists"",6,""codes"",11,""local_creation_justification""]",local_creation_justification,string,"Currency identity is withheld, preventing ISO 4217 mapping."
+"[""optimized_artifact"",""codelists"",6,""codes"",12]",12,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",12,""code""]",code,string,IDX_2023_100
+"[""optimized_artifact"",""codelists"",6,""codes"",12,""name""]",name,string,"Index, 2023=100"
+"[""optimized_artifact"",""codelists"",6,""codes"",12,""definition""]",definition,string,Index unit for PDF CPI values measuring price change relative to base year 2023=100.
+"[""optimized_artifact"",""codelists"",6,""codes"",12,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",12,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",12,""evidence_quote""]",evidence_quote,string,"Index, 2023=100."
+"[""optimized_artifact"",""codelists"",6,""codes"",12,""local_creation_justification""]",local_creation_justification,string,Base-period-specific index unit; no authoritative domain unit code/version was confirmed.
+"[""optimized_artifact"",""codelists"",6,""codes"",13]",13,object,
+"[""optimized_artifact"",""codelists"",6,""codes"",13,""code""]",code,string,LCU_PER_HH_PER_MONTH
+"[""optimized_artifact"",""codelists"",6,""codes"",13,""name""]",name,string,Local currency per household per month
+"[""optimized_artifact"",""codelists"",6,""codes"",13,""definition""]",definition,string,"Unit for mean monthly consumption expenditure per household, denominated in unnamed local currency."
+"[""optimized_artifact"",""codelists"",6,""codes"",13,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",6,""codes"",13,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",6,""codes"",13,""evidence_quote""]",evidence_quote,string,Local currency per household per month.
+"[""optimized_artifact"",""codelists"",6,""codes"",13,""local_creation_justification""]",local_creation_justification,string,Unnamed currency prevents ISO 4217 coding.
+"[""optimized_artifact"",""codelists"",7]",7,object,
+"[""optimized_artifact"",""codelists"",7,""codelist_id""]",codelist_id,string,CL_SYN_OBS_STATUS
+"[""optimized_artifact"",""codelists"",7,""name""]",name,string,Cross-report observation/value status labels
+"[""optimized_artifact"",""codelists"",7,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",7,""version""]",version,string,1.2-draft
+"[""optimized_artifact"",""codelists"",7,""source_url""]",source_url,string,not stated in source files; derived from supplied reports
+"[""optimized_artifact"",""codelists"",7,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""optimized_artifact"",""codelists"",7,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",7,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",7,""scope_notes""]",scope_notes,string,"Local holding list for status labels appearing across reports. XML mappings: A from population, CPI, labour, trade, education and energy observation-status codelists -> NORMAL; E -> ESTIMATED; P -> PROVISIONAL. Mapping to SDMX CL_OBS_STATUS must be verified before production use."
+"[""optimized_artifact"",""codelists"",7,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",7,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",7,""codes"",0,""code""]",code,string,NORMAL
+"[""optimized_artifact"",""codelists"",7,""codes"",0,""name""]",name,string,Normal value
+"[""optimized_artifact"",""codelists"",7,""codes"",0,""definition""]",definition,string,Observation reported as a normal value in DEMO XML observation-status codelists.
+"[""optimized_artifact"",""codelists"",7,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",7,""codes"",0,""evidence_quote""]",evidence_quote,string,XML observation-status codelists: A Normal value.
+"[""optimized_artifact"",""codelists"",7,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",7,""codes"",1,""code""]",code,string,FINAL
+"[""optimized_artifact"",""codelists"",7,""codes"",1,""name""]",name,string,Final
+"[""optimized_artifact"",""codelists"",7,""codes"",1,""definition""]",definition,string,"Observation reported as final in source tables. Source-specific uses include education administrative counts becoming final after duplicate removal, finalized crop area and production records, and CPI observations not marked provisional/finalised where stated."
+"[""optimized_artifact"",""codelists"",7,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",7,""codes"",1,""evidence_quote""]",evidence_quote,string,Final; Administrative counts become final after duplicate removal; finalized crop area and production records.
+"[""optimized_artifact"",""codelists"",7,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Exact mapping to an authoritative SDMX observation-status code was not confirmed.
+"[""optimized_artifact"",""codelists"",7,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",7,""codes"",2,""code""]",code,string,PROVISIONAL
+"[""optimized_artifact"",""codelists"",7,""codes"",2,""name""]",name,string,Provisional
+"[""optimized_artifact"",""codelists"",7,""codes"",2,""definition""]",definition,string,"Observation subject to later revision. Source-specific uses include DEMO XML provisional values, 2025-Q2 labour rates, death counts revised when late registrations arrive, 2025 education enrollment and the latest CPI month."
+"[""optimized_artifact"",""codelists"",7,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",7,""codes"",2,""evidence_quote""]",evidence_quote,string,XML observation-status codelists: P Provisional value; PDF footnotes mark provisional observations.
+"[""optimized_artifact"",""codelists"",7,""codes"",2,""local_creation_justification""]",local_creation_justification,string,Exact mapping to an authoritative SDMX observation-status code was not confirmed.
+"[""optimized_artifact"",""codelists"",7,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",7,""codes"",3,""code""]",code,string,ESTIMATED
+"[""optimized_artifact"",""codelists"",7,""codes"",3,""name""]",name,string,Estimated value
+"[""optimized_artifact"",""codelists"",7,""codes"",3,""definition""]",definition,string,"Observation reported as estimated, including DEMO XML estimated values and hospital-bed counts replaced after facility validation."
+"[""optimized_artifact"",""codelists"",7,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",3,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",7,""codes"",3,""evidence_quote""]",evidence_quote,string,XML observation-status codelists: E Estimated value; Estimated bed counts are replaced after facility validation.
+"[""optimized_artifact"",""codelists"",7,""codes"",3,""local_creation_justification""]",local_creation_justification,string,Exact mapping to an authoritative SDMX observation-status code was not confirmed.
+"[""optimized_artifact"",""codelists"",7,""codes"",4]",4,object,
+"[""optimized_artifact"",""codelists"",7,""codes"",4,""code""]",code,string,MODELLED_ESTIMATE
+"[""optimized_artifact"",""codelists"",7,""codes"",4,""name""]",name,string,Modelled estimate
+"[""optimized_artifact"",""codelists"",7,""codes"",4,""definition""]",definition,string,Completion-rate value that is a modelled estimate and may change with revised survey weights.
+"[""optimized_artifact"",""codelists"",7,""codes"",4,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",4,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",7,""codes"",4,""evidence_quote""]",evidence_quote,string,Footnote: All completion rates are modelled estimates.
+"[""optimized_artifact"",""codelists"",7,""codes"",4,""local_creation_justification""]",local_creation_justification,string,May require modelling-method metadata as well as status coding.
+"[""optimized_artifact"",""codelists"",7,""codes"",5]",5,object,
+"[""optimized_artifact"",""codelists"",7,""codes"",5,""code""]",code,string,FORECAST
+"[""optimized_artifact"",""codelists"",7,""codes"",5,""name""]",name,string,Forecast
+"[""optimized_artifact"",""codelists"",7,""codes"",5,""definition""]",definition,string,"Status for crop area and production values forecast for 2025, not observed output."
+"[""optimized_artifact"",""codelists"",7,""codes"",5,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",5,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",7,""codes"",5,""evidence_quote""]",evidence_quote,string,Footnote: 2025 area and production are forecasts.
+"[""optimized_artifact"",""codelists"",7,""codes"",5,""local_creation_justification""]",local_creation_justification,string,Exact authoritative observation-status mapping was not confirmed.
+"[""optimized_artifact"",""codelists"",7,""codes"",6]",6,object,
+"[""optimized_artifact"",""codelists"",7,""codes"",6,""code""]",code,string,OBSERVED
+"[""optimized_artifact"",""codelists"",7,""codes"",6,""name""]",name,string,Observed
+"[""optimized_artifact"",""codelists"",7,""codes"",6,""definition""]",definition,string,Status used for fertilizer retail price observations from the monthly outlet panel.
+"[""optimized_artifact"",""codelists"",7,""codes"",6,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",6,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",7,""codes"",6,""evidence_quote""]",evidence_quote,string,Fertilizer retail prices come from a monthly outlet panel; Observed.
+"[""optimized_artifact"",""codelists"",7,""codes"",6,""local_creation_justification""]",local_creation_justification,string,Exact authoritative observation-status mapping was not confirmed.
+"[""optimized_artifact"",""codelists"",7,""codes"",7]",7,object,
+"[""optimized_artifact"",""codelists"",7,""codes"",7,""code""]",code,string,SURVEY_ESTIMATE
+"[""optimized_artifact"",""codelists"",7,""codes"",7,""name""]",name,string,Survey estimate
+"[""optimized_artifact"",""codelists"",7,""codes"",7,""definition""]",definition,string,Status label for household-spending survey estimates subject to sampling error.
+"[""optimized_artifact"",""codelists"",7,""codes"",7,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",7,""codes"",7,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",7,""codes"",7,""evidence_quote""]",evidence_quote,string,Survey estimate; Household spending is an annual survey estimate by residence and expenditure quintile.
+"[""optimized_artifact"",""codelists"",7,""codes"",7,""local_creation_justification""]",local_creation_justification,string,Not confirmed as an SDMX observation-status code.
+"[""optimized_artifact"",""codelists"",8]",8,object,
+"[""optimized_artifact"",""codelists"",8,""codelist_id""]",codelist_id,string,CL_SYN_SEASONAL_ADJUSTMENT
+"[""optimized_artifact"",""codelists"",8,""name""]",name,string,Seasonal adjustment status used in reports
+"[""optimized_artifact"",""codelists"",8,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",8,""version""]",version,string,1.0-draft
+"[""optimized_artifact"",""codelists"",8,""source_url""]",source_url,string,example_01_labour_market.pdf
+"[""optimized_artifact"",""codelists"",8,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""optimized_artifact"",""codelists"",8,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",8,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",8,""scope_notes""]",scope_notes,string,Local constrained list for the labour vacancy table's adjustment column. Candidate mapping to SDMX CL_SEASONAL_ADJUST should be verified.
+"[""optimized_artifact"",""codelists"",8,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",8,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",8,""codes"",0,""code""]",code,string,SEASONALLY_ADJUSTED
+"[""optimized_artifact"",""codelists"",8,""codes"",0,""name""]",name,string,Seasonally adjusted
+"[""optimized_artifact"",""codelists"",8,""codes"",0,""definition""]",definition,string,Observation reported after seasonal adjustment; used for vacancy-count observations.
+"[""optimized_artifact"",""codelists"",8,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",8,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",8,""codes"",0,""evidence_quote""]",evidence_quote,string,Seasonally adjusted.
+"[""optimized_artifact"",""codelists"",8,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Exact SDMX CL_SEASONAL_ADJUST mapping was not confirmed.
+"[""optimized_artifact"",""codelists"",9]",9,object,
+"[""optimized_artifact"",""codelists"",9,""codelist_id""]",codelist_id,string,CL_SYN_ACTIVITY_LOCAL
+"[""optimized_artifact"",""codelists"",9,""name""]",name,string,Local industry aggregates used in vacancy table
+"[""optimized_artifact"",""codelists"",9,""agency_id""]",agency_id,string,SYNTHETIC_LABOUR_OBSERVATORY
+"[""optimized_artifact"",""codelists"",9,""version""]",version,string,1.0-draft
+"[""optimized_artifact"",""codelists"",9,""source_url""]",source_url,string,example_01_labour_market.pdf
+"[""optimized_artifact"",""codelists"",9,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",9,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",9,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",9,""scope_notes""]",scope_notes,string,Local activity/industry aggregate list for labour vacancy counts. The report states labels are local aggregates and not confirmed ISIC categories.
+"[""optimized_artifact"",""codelists"",9,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",9,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",9,""codes"",0,""code""]",code,string,MANUFACTURING
+"[""optimized_artifact"",""codelists"",9,""codes"",0,""name""]",name,string,Manufacturing
+"[""optimized_artifact"",""codelists"",9,""codes"",0,""definition""]",definition,string,Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.
+"[""optimized_artifact"",""codelists"",9,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",9,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",9,""codes"",0,""evidence_quote""]",evidence_quote,string,Manufacturing.
+"[""optimized_artifact"",""codelists"",9,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Industry labels are local aggregates and not confirmed ISIC categories.
+"[""optimized_artifact"",""codelists"",9,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",9,""codes"",1,""code""]",code,string,CONSTRUCTION
+"[""optimized_artifact"",""codelists"",9,""codes"",1,""name""]",name,string,Construction
+"[""optimized_artifact"",""codelists"",9,""codes"",1,""definition""]",definition,string,Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.
+"[""optimized_artifact"",""codelists"",9,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",9,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",9,""codes"",1,""evidence_quote""]",evidence_quote,string,Construction.
+"[""optimized_artifact"",""codelists"",9,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Industry labels are local aggregates and not confirmed ISIC categories.
+"[""optimized_artifact"",""codelists"",9,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",9,""codes"",2,""code""]",code,string,INFORMATION_SERVICES
+"[""optimized_artifact"",""codelists"",9,""codes"",2,""name""]",name,string,Information services
+"[""optimized_artifact"",""codelists"",9,""codes"",2,""definition""]",definition,string,Local industry aggregate used for job vacancy counts; not confirmed as an ISIC category.
+"[""optimized_artifact"",""codelists"",9,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",9,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",9,""codes"",2,""evidence_quote""]",evidence_quote,string,Information services.
+"[""optimized_artifact"",""codelists"",9,""codes"",2,""local_creation_justification""]",local_creation_justification,string,Industry labels are local aggregates and not confirmed ISIC categories.
+"[""optimized_artifact"",""codelists"",10]",10,object,
+"[""optimized_artifact"",""codelists"",10,""codelist_id""]",codelist_id,string,CL_AGE_GROUP_REPORT
+"[""optimized_artifact"",""codelists"",10,""name""]",name,string,Age groups used in source reports
+"[""optimized_artifact"",""codelists"",10,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",10,""version""]",version,string,1.0-draft
+"[""optimized_artifact"",""codelists"",10,""source_url""]",source_url,string,not stated in source files; derived from supplied reports
+"[""optimized_artifact"",""codelists"",10,""maintenance_status""]",maintenance_status,string,LOCAL_CONSTRAINT
+"[""optimized_artifact"",""codelists"",10,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",10,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",10,""scope_notes""]",scope_notes,string,Consolidated age-group list for DEMO population XML and PDF health mortality. Explicit XML mapping: CL_POP_AGE_GROUP.ALL -> ALL; Y0T14 -> Y0T14; Y15T64 -> Y15T64; Y_GE65 -> Y65_PLUS. Health mortality source maps 45-64 -> Y45T64 and 65+ -> Y65_PLUS. No universal authoritative age codelist was confirmed.
+"[""optimized_artifact"",""codelists"",10,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",10,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",10,""codes"",0,""code""]",code,string,ALL
+"[""optimized_artifact"",""codelists"",10,""codes"",0,""name""]",name,string,All ages
+"[""optimized_artifact"",""codelists"",10,""codes"",0,""definition""]",definition,string,Aggregate over all ages as used in the DEMO population XML.
+"[""optimized_artifact"",""codelists"",10,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",10,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",10,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_POP_AGE_GROUP: ALL All ages.
+"[""optimized_artifact"",""codelists"",10,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",10,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",10,""codes"",1,""code""]",code,string,Y0T14
+"[""optimized_artifact"",""codelists"",10,""codes"",1,""name""]",name,string,0-14 years
+"[""optimized_artifact"",""codelists"",10,""codes"",1,""definition""]",definition,string,Persons aged from 0 through 14 years.
+"[""optimized_artifact"",""codelists"",10,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",10,""codes"",1,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",10,""codes"",1,""evidence_quote""]",evidence_quote,string,XML CL_POP_AGE_GROUP: Y0T14 0–14 years.
+"[""optimized_artifact"",""codelists"",10,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",10,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",10,""codes"",2,""code""]",code,string,Y15T64
+"[""optimized_artifact"",""codelists"",10,""codes"",2,""name""]",name,string,15-64 years
+"[""optimized_artifact"",""codelists"",10,""codes"",2,""definition""]",definition,string,Persons aged from 15 through 64 years.
+"[""optimized_artifact"",""codelists"",10,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",10,""codes"",2,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",10,""codes"",2,""evidence_quote""]",evidence_quote,string,XML CL_POP_AGE_GROUP: Y15T64 15–64 years.
+"[""optimized_artifact"",""codelists"",10,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",10,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",10,""codes"",3,""code""]",code,string,Y45T64
+"[""optimized_artifact"",""codelists"",10,""codes"",3,""name""]",name,string,45-64 years
+"[""optimized_artifact"",""codelists"",10,""codes"",3,""definition""]",definition,string,"Persons aged from 45 through 64 years, as represented by the health report's age-group label."
+"[""optimized_artifact"",""codelists"",10,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",10,""codes"",3,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",10,""codes"",3,""evidence_quote""]",evidence_quote,string,45-64.
+"[""optimized_artifact"",""codelists"",10,""codes"",3,""local_creation_justification""]",local_creation_justification,string,No semantically equivalent authoritative age-group code was confirmed.
+"[""optimized_artifact"",""codelists"",10,""codes"",4]",4,object,
+"[""optimized_artifact"",""codelists"",10,""codes"",4,""code""]",code,string,Y65_PLUS
+"[""optimized_artifact"",""codelists"",10,""codes"",4,""name""]",name,string,65 years and over
+"[""optimized_artifact"",""codelists"",10,""codes"",4,""definition""]",definition,string,Persons aged 65 years and over.
+"[""optimized_artifact"",""codelists"",10,""codes"",4,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",10,""codes"",4,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",10,""codes"",4,""evidence_quote""]",evidence_quote,string,XML CL_POP_AGE_GROUP: Y_GE65 65 years and over; health report: 65+.
+"[""optimized_artifact"",""codelists"",10,""codes"",4,""local_creation_justification""]",local_creation_justification,string,Aggregate code chosen to harmonise equivalent source labels Y_GE65 and 65+ while retaining mapping evidence.
+"[""optimized_artifact"",""codelists"",11]",11,object,
+"[""optimized_artifact"",""codelists"",11,""codelist_id""]",codelist_id,string,CL_HEALTH_CAUSE_LOCAL
+"[""optimized_artifact"",""codelists"",11,""name""]",name,string,Underlying cause categories for registered deaths
+"[""optimized_artifact"",""codelists"",11,""agency_id""]",agency_id,string,SYNTH_PH_AGENCY
+"[""optimized_artifact"",""codelists"",11,""version""]",version,string,1.0-proposed
+"[""optimized_artifact"",""codelists"",11,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""optimized_artifact"",""codelists"",11,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",11,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",11,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",11,""scope_notes""]",scope_notes,string,Local cause codelist for mortality only. Labels resemble ICD families but no ICD version is confirmed.
+"[""optimized_artifact"",""codelists"",11,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",11,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",11,""codes"",0,""code""]",code,string,CIRCULATORY_DISEASES
+"[""optimized_artifact"",""codelists"",11,""codes"",0,""name""]",name,string,Circulatory diseases
+"[""optimized_artifact"",""codelists"",11,""codes"",0,""definition""]",definition,string,Report category for registered deaths classified by underlying cause; not confirmed as an ICD-version-specific grouping.
+"[""optimized_artifact"",""codelists"",11,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",11,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",11,""codes"",0,""evidence_quote""]",evidence_quote,string,Circulatory diseases.
+"[""optimized_artifact"",""codelists"",11,""codes"",0,""local_creation_justification""]",local_creation_justification,string,No ICD version is confirmed.
+"[""optimized_artifact"",""codelists"",11,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",11,""codes"",1,""code""]",code,string,NEOPLASMS
+"[""optimized_artifact"",""codelists"",11,""codes"",1,""name""]",name,string,Neoplasms
+"[""optimized_artifact"",""codelists"",11,""codes"",1,""definition""]",definition,string,Report category for registered deaths classified by underlying cause; not confirmed as an ICD-version-specific grouping.
+"[""optimized_artifact"",""codelists"",11,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",11,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",11,""codes"",1,""evidence_quote""]",evidence_quote,string,Neoplasms.
+"[""optimized_artifact"",""codelists"",11,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No ICD version is confirmed.
+"[""optimized_artifact"",""codelists"",12]",12,object,
+"[""optimized_artifact"",""codelists"",12,""codelist_id""]",codelist_id,string,CL_HEALTH_OWNERSHIP_LOCAL
+"[""optimized_artifact"",""codelists"",12,""name""]",name,string,Hospital ownership categories
+"[""optimized_artifact"",""codelists"",12,""agency_id""]",agency_id,string,SYNTH_PH_AGENCY
+"[""optimized_artifact"",""codelists"",12,""version""]",version,string,1.0-proposed
+"[""optimized_artifact"",""codelists"",12,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""optimized_artifact"",""codelists"",12,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",12,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",12,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",12,""scope_notes""]",scope_notes,string,"Local codelist for ownership categories in the hospital-beds structure. These categories are for hospital beds and should not be applied to mortality data unless separately justified. Private-sector hospital-bed reporting is incomplete in 2024; this is a data/interpretive caveat, not a separate ownership code."
+"[""optimized_artifact"",""codelists"",12,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",12,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",12,""codes"",0,""code""]",code,string,PUBLIC
+"[""optimized_artifact"",""codelists"",12,""codes"",0,""name""]",name,string,Public
+"[""optimized_artifact"",""codelists"",12,""codes"",0,""definition""]",definition,string,Hospital ownership category labelled Public in the available hospital beds table.
+"[""optimized_artifact"",""codelists"",12,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",12,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",12,""codes"",0,""evidence_quote""]",evidence_quote,string,Public.
+"[""optimized_artifact"",""codelists"",12,""codes"",0,""local_creation_justification""]",local_creation_justification,string,No authoritative ownership classification was confirmed.
+"[""optimized_artifact"",""codelists"",12,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",12,""codes"",1,""code""]",code,string,PRIVATE_NON_PROFIT
+"[""optimized_artifact"",""codelists"",12,""codes"",1,""name""]",name,string,Private non-profit
+"[""optimized_artifact"",""codelists"",12,""codes"",1,""definition""]",definition,string,Hospital ownership category labelled Private non-profit in the available hospital beds table.
+"[""optimized_artifact"",""codelists"",12,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",12,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",12,""codes"",1,""evidence_quote""]",evidence_quote,string,Private non-profit.
+"[""optimized_artifact"",""codelists"",12,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No authoritative ownership classification was confirmed.
+"[""optimized_artifact"",""codelists"",12,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",12,""codes"",2,""code""]",code,string,PRIVATE_FOR_PROFIT
+"[""optimized_artifact"",""codelists"",12,""codes"",2,""name""]",name,string,Private for-profit
+"[""optimized_artifact"",""codelists"",12,""codes"",2,""definition""]",definition,string,Hospital ownership category labelled Private for-profit in the available hospital beds table.
+"[""optimized_artifact"",""codelists"",12,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",12,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",12,""codes"",2,""evidence_quote""]",evidence_quote,string,Private for-profit.
+"[""optimized_artifact"",""codelists"",12,""codes"",2,""local_creation_justification""]",local_creation_justification,string,No authoritative ownership classification was confirmed.
+"[""optimized_artifact"",""codelists"",13]",13,object,
+"[""optimized_artifact"",""codelists"",13,""codelist_id""]",codelist_id,string,CL_EDUCATION_LEVEL_REPORT_LOCAL
+"[""optimized_artifact"",""codelists"",13,""name""]",name,string,Report education-level labels
+"[""optimized_artifact"",""codelists"",13,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",13,""version""]",version,string,1.1-draft
+"[""optimized_artifact"",""codelists"",13,""source_url""]",source_url,string,not stated in source files; derived from supplied education XML and PDF reports
+"[""optimized_artifact"",""codelists"",13,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""optimized_artifact"",""codelists"",13,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",13,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",13,""scope_notes""]",scope_notes,string,"Local holding list for education-level labels. XML mappings: CL_EDU_EDU_LEVEL.PRI -> PRIMARY; LSEC -> LOWER_SECONDARY; USEC -> UPPER_SECONDARY; TER -> TERTIARY. PDF education mappings use PRIMARY, LOWER_SECONDARY and UPPER_SECONDARY. Candidate mapping to UNESCO ISCED is required before production use."
+"[""optimized_artifact"",""codelists"",13,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",13,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",13,""codes"",0,""code""]",code,string,PRIMARY
+"[""optimized_artifact"",""codelists"",13,""codes"",0,""name""]",name,string,Primary
+"[""optimized_artifact"",""codelists"",13,""codes"",0,""definition""]",definition,string,Education-level label Primary; exact ISCED mapping is not established.
+"[""optimized_artifact"",""codelists"",13,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",13,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",13,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_EDU_EDU_LEVEL: PRI Primary; PDF education report: Primary.
+"[""optimized_artifact"",""codelists"",13,""codes"",0,""local_creation_justification""]",local_creation_justification,string,ISCED mapping requires review and no confirmed ISCED code/version was supplied.
+"[""optimized_artifact"",""codelists"",13,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",13,""codes"",1,""code""]",code,string,LOWER_SECONDARY
+"[""optimized_artifact"",""codelists"",13,""codes"",1,""name""]",name,string,Lower secondary
+"[""optimized_artifact"",""codelists"",13,""codes"",1,""definition""]",definition,string,Education-level label Lower secondary; exact ISCED mapping is not established.
+"[""optimized_artifact"",""codelists"",13,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",13,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",13,""codes"",1,""evidence_quote""]",evidence_quote,string,XML CL_EDU_EDU_LEVEL: LSEC Lower secondary; PDF education report: Lower secondary.
+"[""optimized_artifact"",""codelists"",13,""codes"",1,""local_creation_justification""]",local_creation_justification,string,ISCED mapping requires review and no confirmed ISCED code/version was supplied.
+"[""optimized_artifact"",""codelists"",13,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",13,""codes"",2,""code""]",code,string,UPPER_SECONDARY
+"[""optimized_artifact"",""codelists"",13,""codes"",2,""name""]",name,string,Upper secondary
+"[""optimized_artifact"",""codelists"",13,""codes"",2,""definition""]",definition,string,Education-level label Upper secondary; exact ISCED mapping is not established.
+"[""optimized_artifact"",""codelists"",13,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",13,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",13,""codes"",2,""evidence_quote""]",evidence_quote,string,XML CL_EDU_EDU_LEVEL: USEC Upper secondary; PDF education report: Upper secondary.
+"[""optimized_artifact"",""codelists"",13,""codes"",2,""local_creation_justification""]",local_creation_justification,string,ISCED mapping requires review and no confirmed ISCED code/version was supplied.
+"[""optimized_artifact"",""codelists"",13,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",13,""codes"",3,""code""]",code,string,TERTIARY
+"[""optimized_artifact"",""codelists"",13,""codes"",3,""name""]",name,string,Tertiary
+"[""optimized_artifact"",""codelists"",13,""codes"",3,""definition""]",definition,string,Education-level label Tertiary from the DEMO education XML; exact ISCED mapping is not established.
+"[""optimized_artifact"",""codelists"",13,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",13,""codes"",3,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",13,""codes"",3,""evidence_quote""]",evidence_quote,string,XML CL_EDU_EDU_LEVEL: TER Tertiary.
+"[""optimized_artifact"",""codelists"",13,""codes"",3,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",14]",14,object,
+"[""optimized_artifact"",""codelists"",14,""codelist_id""]",codelist_id,string,CL_WEALTH_QUINTILE_REPORT_LOCAL
+"[""optimized_artifact"",""codelists"",14,""name""]",name,string,Survey-specific wealth quintile labels
+"[""optimized_artifact"",""codelists"",14,""agency_id""]",agency_id,string,SYNTH_MIN_LEARNING
+"[""optimized_artifact"",""codelists"",14,""version""]",version,string,2025-report
+"[""optimized_artifact"",""codelists"",14,""source_url""]",source_url,string,example_03_education.pdf
+"[""optimized_artifact"",""codelists"",14,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",14,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",14,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",14,""scope_notes""]",scope_notes,string,Survey-specific wealth-quintile labels for lower-secondary completion rates. Only labels present in the report are included; missing second and fourth quintiles are not invented.
+"[""optimized_artifact"",""codelists"",14,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",14,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",14,""codes"",0,""code""]",code,string,LOWEST_QUINTILE
+"[""optimized_artifact"",""codelists"",14,""codes"",0,""name""]",name,string,Lowest quintile
+"[""optimized_artifact"",""codelists"",14,""codes"",0,""definition""]",definition,string,Report wealth-quintile label Lowest quintile; survey-specific construction not further defined.
+"[""optimized_artifact"",""codelists"",14,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",14,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",14,""codes"",0,""evidence_quote""]",evidence_quote,string,Lowest quintile Female 2024 ... Percent Modelled estimate.
+"[""optimized_artifact"",""codelists"",14,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Wealth quintiles are survey-specific and not silently mapped to an income classification.
+"[""optimized_artifact"",""codelists"",14,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",14,""codes"",1,""code""]",code,string,MIDDLE_QUINTILE
+"[""optimized_artifact"",""codelists"",14,""codes"",1,""name""]",name,string,Middle quintile
+"[""optimized_artifact"",""codelists"",14,""codes"",1,""definition""]",definition,string,Report wealth-quintile label Middle quintile; survey-specific construction not further defined.
+"[""optimized_artifact"",""codelists"",14,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",14,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",14,""codes"",1,""evidence_quote""]",evidence_quote,string,Middle quintile Female 2024 ... Percent Modelled estimate.
+"[""optimized_artifact"",""codelists"",14,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Wealth quintiles are survey-specific and not silently mapped to an income classification.
+"[""optimized_artifact"",""codelists"",14,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",14,""codes"",2,""code""]",code,string,HIGHEST_QUINTILE
+"[""optimized_artifact"",""codelists"",14,""codes"",2,""name""]",name,string,Highest quintile
+"[""optimized_artifact"",""codelists"",14,""codes"",2,""definition""]",definition,string,Report wealth-quintile label Highest quintile; survey-specific construction not further defined.
+"[""optimized_artifact"",""codelists"",14,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",14,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",14,""codes"",2,""evidence_quote""]",evidence_quote,string,Highest quintile Female 2024 ... Percent Modelled estimate.
+"[""optimized_artifact"",""codelists"",14,""codes"",2,""local_creation_justification""]",local_creation_justification,string,Wealth quintiles are survey-specific and not silently mapped to an income classification.
+"[""optimized_artifact"",""codelists"",15]",15,object,
+"[""optimized_artifact"",""codelists"",15,""codelist_id""]",codelist_id,string,CL_AGRI_CROP_LOCAL
+"[""optimized_artifact"",""codelists"",15,""name""]",name,string,Crop common labels requiring classification review
+"[""optimized_artifact"",""codelists"",15,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""optimized_artifact"",""codelists"",15,""version""]",version,string,1.0
+"[""optimized_artifact"",""codelists"",15,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""optimized_artifact"",""codelists"",15,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""optimized_artifact"",""codelists"",15,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",15,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",15,""scope_notes""]",scope_notes,string,Report crop values are preserved as common labels pending review against an authoritative product or crop classification.
+"[""optimized_artifact"",""codelists"",15,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",15,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",15,""codes"",0,""code""]",code,string,RICE
+"[""optimized_artifact"",""codelists"",15,""codes"",0,""name""]",name,string,Rice
+"[""optimized_artifact"",""codelists"",15,""codes"",0,""definition""]",definition,string,Common crop label used in the report; authoritative classification code not confirmed.
+"[""optimized_artifact"",""codelists"",15,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",15,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",15,""codes"",0,""evidence_quote""]",evidence_quote,string,Rice Northland 2024 ... Hectares ... Tonnes Final.
+"[""optimized_artifact"",""codelists"",15,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Crop names require classification review; no confirmed authoritative code was supplied.
+"[""optimized_artifact"",""codelists"",15,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",15,""codes"",1,""code""]",code,string,MAIZE
+"[""optimized_artifact"",""codelists"",15,""codes"",1,""name""]",name,string,Maize
+"[""optimized_artifact"",""codelists"",15,""codes"",1,""definition""]",definition,string,Common crop label used in the report; authoritative classification code not confirmed.
+"[""optimized_artifact"",""codelists"",15,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",15,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",15,""codes"",1,""evidence_quote""]",evidence_quote,string,Maize Northland 2024 ... Hectares ... Tonnes Final.
+"[""optimized_artifact"",""codelists"",15,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Crop names require classification review; no confirmed authoritative code was supplied.
+"[""optimized_artifact"",""codelists"",15,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",15,""codes"",2,""code""]",code,string,CASSAVA
+"[""optimized_artifact"",""codelists"",15,""codes"",2,""name""]",name,string,Cassava
+"[""optimized_artifact"",""codelists"",15,""codes"",2,""definition""]",definition,string,Common crop label used in the report; authoritative classification code not confirmed.
+"[""optimized_artifact"",""codelists"",15,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",15,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",15,""codes"",2,""evidence_quote""]",evidence_quote,string,Cassava Northland 2024 ... Hectares ... Tonnes Final.
+"[""optimized_artifact"",""codelists"",15,""codes"",2,""local_creation_justification""]",local_creation_justification,string,Crop names require classification review; no confirmed authoritative code was supplied.
+"[""optimized_artifact"",""codelists"",16]",16,object,
+"[""optimized_artifact"",""codelists"",16,""codelist_id""]",codelist_id,string,CL_AGRI_FERTILIZER_PRODUCT_LOCAL
+"[""optimized_artifact"",""codelists"",16,""name""]",name,string,Fertilizer local market product categories
+"[""optimized_artifact"",""codelists"",16,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""optimized_artifact"",""codelists"",16,""version""]",version,string,1.0
+"[""optimized_artifact"",""codelists"",16,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""optimized_artifact"",""codelists"",16,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""optimized_artifact"",""codelists"",16,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",16,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",16,""scope_notes""]",scope_notes,string,Fertilizer product values are local market categories and are not verified CPC codes.
+"[""optimized_artifact"",""codelists"",16,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",16,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",16,""codes"",0,""code""]",code,string,UREA
+"[""optimized_artifact"",""codelists"",16,""codes"",0,""name""]",name,string,Urea
+"[""optimized_artifact"",""codelists"",16,""codes"",0,""definition""]",definition,string,Local market fertilizer product category used in the price table; CPC mapping not confirmed.
+"[""optimized_artifact"",""codelists"",16,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",16,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",16,""codes"",0,""evidence_quote""]",evidence_quote,string,Urea 2025-01 ... Local currency per 50 kg bag Observed.
+"[""optimized_artifact"",""codelists"",16,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Product is a local market category and not a verified CPC code.
+"[""optimized_artifact"",""codelists"",16,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",16,""codes"",1,""code""]",code,string,COMPOUND_NPK
+"[""optimized_artifact"",""codelists"",16,""codes"",1,""name""]",name,string,Compound NPK
+"[""optimized_artifact"",""codelists"",16,""codes"",1,""definition""]",definition,string,Local market fertilizer product category used in the price table; CPC mapping not confirmed.
+"[""optimized_artifact"",""codelists"",16,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",16,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",16,""codes"",1,""evidence_quote""]",evidence_quote,string,Compound NPK 2025-01 ... Local currency per 50 kg bag Observed.
+"[""optimized_artifact"",""codelists"",16,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Product is a local market category and not a verified CPC code.
+"[""optimized_artifact"",""codelists"",17]",17,object,
+"[""optimized_artifact"",""codelists"",17,""codelist_id""]",codelist_id,string,CL_CPI_PRODUCT_GROUP_REPORT
+"[""optimized_artifact"",""codelists"",17,""name""]",name,string,CPI product/consumption groups used in source reports
+"[""optimized_artifact"",""codelists"",17,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",17,""version""]",version,string,1.0-draft
+"[""optimized_artifact"",""codelists"",17,""source_url""]",source_url,string,not stated in source files; derived from supplied reports
+"[""optimized_artifact"",""codelists"",17,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""optimized_artifact"",""codelists"",17,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""codelists"",17,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",17,""scope_notes""]",scope_notes,string,"Consolidates CPI product-group/division labels from DEMO consumer-prices XML and the PDF prices report where labels are semantically equivalent. Explicit XML mappings: CL_CPI_PRODUCT_GROUP.ALL -> ALL_ITEMS; FOOD -> FOOD_NAB; HOUSING -> HOUS_UTIL. PDF mappings: CL_LOCAL_CPI_DIVISION.FOOD_NAB, HOUS_UTIL and TRANSPORT retain the same aggregate codes. Values resemble COICOP/CL_COICOP_2018 but revision is not confirmed."
+"[""optimized_artifact"",""codelists"",17,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",17,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",17,""codes"",0,""code""]",code,string,ALL_ITEMS
+"[""optimized_artifact"",""codelists"",17,""codes"",0,""name""]",name,string,All-items CPI
+"[""optimized_artifact"",""codelists"",17,""codes"",0,""definition""]",definition,string,Aggregate CPI product group covering all items in the DEMO consumer-prices XML.
+"[""optimized_artifact"",""codelists"",17,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",17,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",17,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_CPI_PRODUCT_GROUP: ALL All-items CPI.
+"[""optimized_artifact"",""codelists"",17,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",17,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",17,""codes"",1,""code""]",code,string,FOOD_NAB
+"[""optimized_artifact"",""codelists"",17,""codes"",1,""name""]",name,string,Food and non-alcoholic beverages
+"[""optimized_artifact"",""codelists"",17,""codes"",1,""definition""]",definition,string,CPI product group/consumption division labelled Food and non-alcoholic beverages; formal COICOP code and revision not confirmed.
+"[""optimized_artifact"",""codelists"",17,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",17,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",17,""codes"",1,""evidence_quote""]",evidence_quote,string,XML CL_CPI_PRODUCT_GROUP: FOOD Food and non-alcoholic beverages; PDF CPI division: Food and non-alcoholic beverages.
+"[""optimized_artifact"",""codelists"",17,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No confirmed COICOP revision or code was supplied.
+"[""optimized_artifact"",""codelists"",17,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",17,""codes"",2,""code""]",code,string,HOUS_UTIL
+"[""optimized_artifact"",""codelists"",17,""codes"",2,""name""]",name,string,Housing and utilities
+"[""optimized_artifact"",""codelists"",17,""codes"",2,""definition""]",definition,string,CPI product group/consumption division labelled Housing and utilities; formal COICOP code and revision not confirmed.
+"[""optimized_artifact"",""codelists"",17,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",17,""codes"",2,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",17,""codes"",2,""evidence_quote""]",evidence_quote,string,XML CL_CPI_PRODUCT_GROUP: HOUSING Housing and utilities; PDF CPI division: Housing and utilities.
+"[""optimized_artifact"",""codelists"",17,""codes"",2,""local_creation_justification""]",local_creation_justification,string,No confirmed COICOP revision or code was supplied.
+"[""optimized_artifact"",""codelists"",17,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",17,""codes"",3,""code""]",code,string,TRANSPORT
+"[""optimized_artifact"",""codelists"",17,""codes"",3,""name""]",name,string,Transport
+"[""optimized_artifact"",""codelists"",17,""codes"",3,""definition""]",definition,string,PDF CPI consumption division labelled Transport; formal COICOP code and revision not confirmed.
+"[""optimized_artifact"",""codelists"",17,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",17,""codes"",3,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",17,""codes"",3,""evidence_quote""]",evidence_quote,string,Transport.
+"[""optimized_artifact"",""codelists"",17,""codes"",3,""local_creation_justification""]",local_creation_justification,string,No confirmed COICOP revision or code was supplied.
+"[""optimized_artifact"",""codelists"",18]",18,object,
+"[""optimized_artifact"",""codelists"",18,""codelist_id""]",codelist_id,string,CL_ENERGY_SOURCE_DEMO
+"[""optimized_artifact"",""codelists"",18,""name""]",name,string,DEMO energy source categories
+"[""optimized_artifact"",""codelists"",18,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""codelists"",18,""version""]",version,string,1.0-draft
+"[""optimized_artifact"",""codelists"",18,""source_url""]",source_url,string,06_sdmx_30_energy_full_case.xml
+"[""optimized_artifact"",""codelists"",18,""maintenance_status""]",maintenance_status,string,LOCAL_CONSTRAINT
+"[""optimized_artifact"",""codelists"",18,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",18,""date_checked""]",date_checked,string,2026-09-17
+"[""optimized_artifact"",""codelists"",18,""scope_notes""]",scope_notes,string,Energy-source value domain mechanically imported from the DEMO energy XML and consolidated as an aggregate reusable list. No authoritative external energy classification mapping is asserted.
+"[""optimized_artifact"",""codelists"",18,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",18,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",18,""codes"",0,""code""]",code,string,ALL
+"[""optimized_artifact"",""codelists"",18,""codes"",0,""name""]",name,string,All sources
+"[""optimized_artifact"",""codelists"",18,""codes"",0,""definition""]",definition,string,Aggregate over all energy sources as used in the DEMO energy XML.
+"[""optimized_artifact"",""codelists"",18,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",0,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",18,""codes"",0,""evidence_quote""]",evidence_quote,string,XML CL_ENE_ENERGY_SOURCE: ALL All sources.
+"[""optimized_artifact"",""codelists"",18,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",18,""codes"",1,""code""]",code,string,COAL
+"[""optimized_artifact"",""codelists"",18,""codes"",1,""name""]",name,string,Coal
+"[""optimized_artifact"",""codelists"",18,""codes"",1,""definition""]",definition,string,Energy source labelled Coal in the DEMO energy XML.
+"[""optimized_artifact"",""codelists"",18,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",1,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",18,""codes"",1,""evidence_quote""]",evidence_quote,string,XML CL_ENE_ENERGY_SOURCE: COAL Coal.
+"[""optimized_artifact"",""codelists"",18,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",2]",2,object,
+"[""optimized_artifact"",""codelists"",18,""codes"",2,""code""]",code,string,GAS
+"[""optimized_artifact"",""codelists"",18,""codes"",2,""name""]",name,string,Natural gas
+"[""optimized_artifact"",""codelists"",18,""codes"",2,""definition""]",definition,string,Energy source labelled Natural gas in the DEMO energy XML.
+"[""optimized_artifact"",""codelists"",18,""codes"",2,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",2,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",18,""codes"",2,""evidence_quote""]",evidence_quote,string,XML CL_ENE_ENERGY_SOURCE: GAS Natural gas.
+"[""optimized_artifact"",""codelists"",18,""codes"",2,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",3]",3,object,
+"[""optimized_artifact"",""codelists"",18,""codes"",3,""code""]",code,string,NUCLEAR
+"[""optimized_artifact"",""codelists"",18,""codes"",3,""name""]",name,string,Nuclear
+"[""optimized_artifact"",""codelists"",18,""codes"",3,""definition""]",definition,string,Energy source labelled Nuclear in the DEMO energy XML.
+"[""optimized_artifact"",""codelists"",18,""codes"",3,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",3,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",18,""codes"",3,""evidence_quote""]",evidence_quote,string,XML CL_ENE_ENERGY_SOURCE: NUCLEAR Nuclear.
+"[""optimized_artifact"",""codelists"",18,""codes"",3,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",4]",4,object,
+"[""optimized_artifact"",""codelists"",18,""codes"",4,""code""]",code,string,RENEW
+"[""optimized_artifact"",""codelists"",18,""codes"",4,""name""]",name,string,Renewables
+"[""optimized_artifact"",""codelists"",18,""codes"",4,""definition""]",definition,string,Energy source category labelled Renewables in the DEMO energy XML.
+"[""optimized_artifact"",""codelists"",18,""codes"",4,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",18,""codes"",4,""status""]",status,string,ACTIVE
+"[""optimized_artifact"",""codelists"",18,""codes"",4,""evidence_quote""]",evidence_quote,string,XML CL_ENE_ENERGY_SOURCE: RENEW Renewables.
+"[""optimized_artifact"",""codelists"",18,""codes"",4,""local_creation_justification""]",local_creation_justification,null,
+"[""optimized_artifact"",""codelists"",19]",19,object,
+"[""optimized_artifact"",""codelists"",19,""codelist_id""]",codelist_id,string,CL_LOCAL_RESIDENCE
+"[""optimized_artifact"",""codelists"",19,""name""]",name,string,Local residence category
+"[""optimized_artifact"",""codelists"",19,""agency_id""]",agency_id,string,SYNTH_NSI_LOCAL
+"[""optimized_artifact"",""codelists"",19,""version""]",version,string,1.0
+"[""optimized_artifact"",""codelists"",19,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""optimized_artifact"",""codelists"",19,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",19,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",19,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",19,""scope_notes""]",scope_notes,string,Local residence categories in the household-spending survey table. Not defined as an official degree-of-urbanisation classification.
+"[""optimized_artifact"",""codelists"",19,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",19,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",19,""codes"",0,""code""]",code,string,URBAN
+"[""optimized_artifact"",""codelists"",19,""codes"",0,""name""]",name,string,Urban
+"[""optimized_artifact"",""codelists"",19,""codes"",0,""definition""]",definition,string,Residence category for household-spending survey estimates; exact criteria not stated.
+"[""optimized_artifact"",""codelists"",19,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",19,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",19,""codes"",0,""evidence_quote""]",evidence_quote,string,Urban.
+"[""optimized_artifact"",""codelists"",19,""codes"",0,""local_creation_justification""]",local_creation_justification,string,No authoritative residence or degree-of-urbanisation code was confirmed.
+"[""optimized_artifact"",""codelists"",19,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",19,""codes"",1,""code""]",code,string,RURAL
+"[""optimized_artifact"",""codelists"",19,""codes"",1,""name""]",name,string,Rural
+"[""optimized_artifact"",""codelists"",19,""codes"",1,""definition""]",definition,string,Residence category for household-spending survey estimates; exact criteria not stated.
+"[""optimized_artifact"",""codelists"",19,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",19,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",19,""codes"",1,""evidence_quote""]",evidence_quote,string,Rural.
+"[""optimized_artifact"",""codelists"",19,""codes"",1,""local_creation_justification""]",local_creation_justification,string,No authoritative residence or degree-of-urbanisation code was confirmed.
+"[""optimized_artifact"",""codelists"",20]",20,object,
+"[""optimized_artifact"",""codelists"",20,""codelist_id""]",codelist_id,string,CL_LOCAL_EXPENDITURE_QUINTILE
+"[""optimized_artifact"",""codelists"",20,""name""]",name,string,Local expenditure quintile category
+"[""optimized_artifact"",""codelists"",20,""agency_id""]",agency_id,string,SYNTH_NSI_LOCAL
+"[""optimized_artifact"",""codelists"",20,""version""]",version,string,1.0
+"[""optimized_artifact"",""codelists"",20,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""optimized_artifact"",""codelists"",20,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",20,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""codelists"",20,""date_checked""]",date_checked,string,2026-09-16
+"[""optimized_artifact"",""codelists"",20,""scope_notes""]",scope_notes,string,"Local expenditure-quintile categories present in the household-spending table. Not merged with education wealth quintiles because the distribution is expenditure, not wealth. Only lowest and highest quintiles appear; missing intermediate quintiles are not invented."
+"[""optimized_artifact"",""codelists"",20,""codes""]",codes,array,
+"[""optimized_artifact"",""codelists"",20,""codes"",0]",0,object,
+"[""optimized_artifact"",""codelists"",20,""codes"",0,""code""]",code,string,LOWEST
+"[""optimized_artifact"",""codelists"",20,""codes"",0,""name""]",name,string,Lowest quintile
+"[""optimized_artifact"",""codelists"",20,""codes"",0,""definition""]",definition,string,Lowest expenditure quintile within the synthetic survey distribution.
+"[""optimized_artifact"",""codelists"",20,""codes"",0,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",20,""codes"",0,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",20,""codes"",0,""evidence_quote""]",evidence_quote,string,Lowest quintile.
+"[""optimized_artifact"",""codelists"",20,""codes"",0,""local_creation_justification""]",local_creation_justification,string,Survey-specific quintile definition; no authoritative external quintile codelist was confirmed.
+"[""optimized_artifact"",""codelists"",20,""codes"",1]",1,object,
+"[""optimized_artifact"",""codelists"",20,""codes"",1,""code""]",code,string,HIGHEST
+"[""optimized_artifact"",""codelists"",20,""codes"",1,""name""]",name,string,Highest quintile
+"[""optimized_artifact"",""codelists"",20,""codes"",1,""definition""]",definition,string,Highest expenditure quintile within the synthetic survey distribution.
+"[""optimized_artifact"",""codelists"",20,""codes"",1,""parent_code""]",parent_code,null,
+"[""optimized_artifact"",""codelists"",20,""codes"",1,""status""]",status,string,PROPOSED_LOCAL
+"[""optimized_artifact"",""codelists"",20,""codes"",1,""evidence_quote""]",evidence_quote,string,Highest quintile.
+"[""optimized_artifact"",""codelists"",20,""codes"",1,""local_creation_justification""]",local_creation_justification,string,Survey-specific quintile definition; no authoritative external quintile codelist was confirmed.

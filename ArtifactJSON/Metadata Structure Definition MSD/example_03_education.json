@@ -1,0 +1,302 @@
+{
+  "artifact_type": "METADATA_STRUCTURE_DEFINITION",
+  "source_report": "example_03_education.pdf",
+  "source_sha256": "e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6",
+  "principles_file": "05_METADATA_STRUCTURE_DEFINITION_MSD.txt",
+  "principles_sha256": "f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / cross-domain concepts",
+      "artifact_id": "SDMX_GLOSSARY",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "Fetched official-source excerpt identifies the SDMX Glossary Version 2.1 and includes entries for Metadata Structure Definition, Metadata update, Institutional mandate, Education level, Geographical coverage, and the cross-domain concept ID COVERAGE_GEO with recommended representation String; Codelist.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Guideline",
+      "artifact_id": "STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX",
+      "version": "1.0",
+      "url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+      "evidence": "The supplied principles identify this guideline as the SDMX reference metadata guideline and as a source for a standard list of reference metadata concepts; no fetched excerpt in the supplied context confirms the exact concept inventory or version details beyond the citation.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Technical standard",
+      "artifact_id": "SDMX_2_0_INFORMATION_MODEL",
+      "version": "2.0",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf",
+      "evidence": "The supplied principles identify the SDMX 2.0 Information Model as the formal source for SDMX 2.0 artefact definitions, including metadata structures; no fetched excerpt in the supplied context confirms detailed MSD mechanics.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry catalog",
+      "artifact_id": "GLOBAL_REGISTRY_CODELISTS",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "Fetched official-source excerpt shows the SDMX Global Registry interface with Codelists and Metadata Structures among searchable artefact types; it does not confirm any education-specific metadata concept or codelist for this report.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNESCO-UIS",
+      "artifact_type": "Classification reference",
+      "artifact_id": "ISCED",
+      "version": "not stated",
+      "url": "https://www.uis.unesco.org/en/methods-and-tools/isced",
+      "evidence": "The shared source catalog lists UNESCO ISCED as the authoritative source to check for education level classifications. No fetched external excerpt confirming applicable ISCED codes or revision was supplied.",
+      "verification_status": "UNVERIFIED"
+    }
+  ],
+  "limitations": [
+    "The report does not state contact information, geographic coverage, source URL, legal or institutional mandate, or a metadata update date distinct from the publication date.",
+    "No exact SDMX Global Reference Metadata Concept Scheme artefact ID and version were confirmed from supplied external evidence for most metadata concepts; candidate SDMX mappings are preserved rather than asserted as confirmed.",
+    "Education-level labels require ISCED mapping review, so the MSD treats that issue as methodology/comparability metadata and does not assert a confirmed ISCED mapping.",
+    "Wealth quintiles are survey-specific according to the report; the MSD includes them in methodological and limitations metadata and does not silently map them to a standard income classification.",
+    "Enrollment and completion are methodologically distinct statistical structures: enrollment is an administrative headcount, while completion rates are modelled household-survey estimates. This MSD supports separate dataflow-level metadata, but it is not a DSD.",
+    "Publication date is captured as publication metadata and is not treated as a confirmed metadata update date."
+  ],
+  "metadata_structures": [
+    {
+      "msd_id": "MSD_EDU_REPORT_REFMETA",
+      "name": "Report-level reference metadata for Education Participation and Completion 2025",
+      "agency_id": "LOCAL",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "REPORT_TITLE",
+          "name": "Report title",
+          "definition": "Title of the statistical report or publication being documented.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract from the page 1 heading: Education Participation and Completion 2025.",
+          "source_standard": "Local concept; possible mapping to SDMX reference metadata title/publication concept not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "PUBLISHER",
+          "name": "Publisher",
+          "definition": "Organisation named as publishing the report.",
+          "representation": "InternationalString / free text; coded organisation representation may be introduced only if an authoritative organisation scheme is available.",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract from page 1 immediately below the report title: Synthetic Ministry of Learning.",
+          "source_standard": "Local concept; possible relationship to SDMX COMPILING_ORG is unconfirmed because the report states publisher, not necessarily compiling organisation.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "PUBLICATION_DATE",
+          "name": "Publication date",
+          "definition": "Date on which the report was published.",
+          "representation": "Date, ISO 8601 recommended for implementation",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract from page 1 line beginning Publication date: 12 June 2026.",
+          "source_standard": "Local concept; no exact SDMX concept ID confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "CONTACT",
+          "name": "Contact",
+          "definition": "Contact point for questions about the report, data or metadata.",
+          "representation": "InternationalString / free text, or structured contact fields in a later implementation",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "The report context does not state a contact. If a metadata set is created from this report alone, populate as not stated.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate concept CONTACT; exact concept definition/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "META_UPDATE",
+          "name": "Metadata update",
+          "definition": "Date or statement identifying when the reference metadata were last updated, if supplied separately from publication date.",
+          "representation": "Date or InternationalString / free text where only narrative update information is supplied",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "METADATA",
+          "extraction_guidance": "Do not infer this from the publication date. The report context does not state a separate metadata update date; populate as not stated if required.",
+          "source_standard": "SDMX Glossary candidate; fetched excerpt confirms the presence of a Metadata update entry but does not provide enough evidence here to confirm the exact concept ID/version.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    },
+    {
+      "msd_id": "MSD_EDU_DATAFLOW_REFMETA",
+      "name": "Dataflow-level reference metadata for education participation and completion statistics",
+      "agency_id": "LOCAL",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "name": "Data description",
+          "definition": "Narrative description of the statistical content covered by the dataflow, including the distinction between enrollment counts and completion rates where applicable.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use the report title, table titles, methodology and definitions to describe the content. Preserve the distinction between Table 1 enrollment and Table 2 lower-secondary completion; do not treat table layout alone as the metadata structure.",
+          "source_standard": "Local concept; possible SDMX reference metadata equivalent not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "name": "Source data",
+          "definition": "Source system, survey, administrative register or other data source used to compile the statistics.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract from the page 1 Source description section: Synthetic Education Management Information System and Synthetic Household Learning Survey. Where metadata are attached to separate dataflows, associate the administrative system with enrollment and the household survey with completion, consistent with the Methodology section.",
+          "source_standard": "Local concept; possible SDMX reference metadata source-data concept not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Narrative description of the methods used to produce the statistics, including administrative counting, survey estimation, modelling or other compilation methods.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract from page 1 Methodology section: Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.",
+          "source_standard": "Local concept; use narrative metadata rather than forcing methodology into DSD dimensions or short data attributes. Exact SDMX concept ID not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "STAT_CONCEPT_DEF",
+          "name": "Statistical concepts and definitions",
+          "definition": "Definitions of the principal statistical concepts and measures used in the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract from page 1 Definitions section: Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle.",
+          "source_standard": "Local concept; possible SDMX statistical concepts/definitions metadata mapping not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "STATISTICAL_UNIT",
+          "name": "Statistical unit",
+          "definition": "Entity or unit to which the statistics relate, such as learners, cohorts or survey respondents, as stated or implied by the definitions.",
+          "representation": "InternationalString / free text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For enrollment, derive cautiously from the definition referring to learners registered on census day. For completion rates, derive cautiously from the definition referring to the relevant cohort. If the metadata set requires an explicit unit and no further documentation is available, record the uncertainty in free text.",
+          "source_standard": "Local concept; no exact SDMX concept ID confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "COVERAGE_TIME",
+          "name": "Time coverage",
+          "definition": "Time periods covered by the dataflow or report, expressed as a narrative range or list when needed for reference metadata.",
+          "representation": "Time period range/list as text; derive from TIME_PERIOD values and do not create an unnecessary codelist",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Derive from the Year column in the relevant tables: enrollment includes 2024 and 2025; lower-secondary completion includes 2024 in the supplied table.",
+          "source_standard": "Local concept; related SDMX Glossary time coverage terms are not fully confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "name": "Geographical coverage",
+          "definition": "Geographic extent covered by the statistics, distinct from a DSD reference area dimension.",
+          "representation": "String; Codelist",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "The report context does not state geographic coverage. If a metadata set is created from this report alone, populate as not stated; do not infer national coverage from the ministry name.",
+          "source_standard": "SDMX Glossary 2.1 cross-domain concept confirmed in supplied official-source excerpt for concept ID COVERAGE_GEO.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "name": "Data revision",
+          "definition": "Revision policy or practice affecting the reported statistics, including finalisation of administrative counts or changes to modelled estimates.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract from page 1 Revision policy section: Administrative counts become final after duplicate removal. Modelled completion estimates may change with revised survey weights.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate concept DATA_REV; exact concept definition/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "CONF",
+          "name": "Confidentiality",
+          "definition": "Confidentiality policy, confidentiality status, or statement about confidential data in the report or dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract from page 1 Confidentiality section: All records and values are synthetic. No person-level or confidential data are included.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate concept CONF; exact concept definition/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "name": "Caveats and limitations",
+          "definition": "Caveats, warnings, restrictions on interpretation, or recommended limitations on use of the statistics.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract from page 1 Caveats and limitations section: Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification. Also retain relevant table footnotes about provisional enrollment and modelled completion estimates when preparing metadata values.",
+          "source_standard": "Local concept; possible mapping to a SDMX recommended uses and limitations metadata concept is unconfirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "COMPARABILITY",
+          "name": "Comparability",
+          "definition": "Information on comparability issues affecting interpretation across classifications, categories, data sources or periods.",
+          "representation": "InternationalString / free text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Populate when classification or source comparability issues are relevant. For this report, use the caveats on ISCED mapping review and survey-specific wealth quintiles. Do not assert an ISCED or income-classification mapping until reviewed.",
+          "source_standard": "SDMX Glossary / Global Reference Metadata candidate concept COMPARABILITY; exact concept definition/version not confirmed from supplied external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "STATUS_NOTE",
+          "name": "Status note",
+          "definition": "Narrative note explaining status statements or footnotes that affect interpretation but are not themselves structural dimensions.",
+          "representation": "InternationalString / free text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATASET",
+          "extraction_guidance": "Use for dataset-level notes such as page 2 Footnote: 2025 enrollment is provisional. and page 3 Footnote: All completion rates are modelled estimates. Keep coded observation status, if modelled in the DSD, separate from this narrative metadata.",
+          "source_standard": "Local concept; observation status codelist reuse belongs to DSD/data attributes, not to this MSD.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "INST_MANDATE",
+          "name": "Institutional mandate",
+          "definition": "Legal or institutional mandate under which the statistics are collected, compiled or disseminated.",
+          "representation": "InternationalString / free text",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "The report context does not state a legal or institutional mandate. If a metadata set is created from this report alone, populate as not stated.",
+          "source_standard": "SDMX Glossary candidate; fetched excerpt confirms the presence of Institutional mandate entries but not a full concept definition or exact concept ID/version for this implementation.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "artifact_type": "Metadata Structure Definition",
+  "source_report": "example_05_prices_consumption.pdf",
+  "source_sha256": "71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5",
+  "principles_file": "05_METADATA_STRUCTURE_DEFINITION_MSD.txt",
+  "principles_sha256": "f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / cross-domain concepts",
+      "artifact_id": "SDMX_GLOSSARY",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "Fetched official-source excerpt identifies SDMX Glossary Version 2.1, discusses cross-domain concepts as reusable concept names, IDs, representations and codelists, and confirms the existence of Metadata Structure Definition terminology. The excerpt specifically confirms COVERAGE_GEO as a cross-domain concept with recommended representation String/Codelist.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry catalog",
+      "artifact_id": "SDMX_GLOBAL_REGISTRY_CODELISTS",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "Fetched official-source excerpt shows the SDMX Global Registry interface and access to SDMX artefact categories including codelists, concept schemes, metadata structures, metadataflows and related structure references. It does not confirm individual metadata concept IDs used in this MSD other than showing the registry as an authoritative search location.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Reference metadata guideline",
+      "artifact_id": "STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX",
+      "version": "1.0",
+      "url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+      "evidence": "No fetched external excerpt for this guideline was supplied in the run. It is retained as an authoritative candidate source to verify exact SDMX Global Reference Metadata Concept Scheme IDs before implementation.",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Classification reference",
+      "artifact_id": "COICOP",
+      "version": "not confirmed",
+      "url": "https://unstats.un.org/unsd/classifications/coicop",
+      "evidence": "The supplied reference catalog identifies UNSD COICOP as the authoritative place to check consumption-purpose classifications. No fetched COICOP excerpt confirming the report's consumption divisions or revision was supplied, so the linkage remains unverified.",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "agency": "ISO",
+      "artifact_type": "Currency code standard",
+      "artifact_id": "ISO_4217",
+      "version": "not confirmed",
+      "url": "https://www.iso.org/standard/64758.html",
+      "evidence": "The supplied reference catalog identifies ISO 4217 as the currency reference source. No report evidence names the local currency, and no fetched ISO excerpt confirming a specific currency code was supplied, so no currency code is applied in this MSD.",
+      "verification_status": "UNVERIFIED"
+    }
+  ],
+  "limitations": [
+    "Exact SDMX Global Reference Metadata Concept Scheme IDs and versions could not be confirmed from supplied fetched external evidence for most concepts; unconfirmed mappings are marked as candidate or local in source_standard.",
+    "This artefact defines metadata structure only. Report-derived caveats such as provisional CPI month, sampling error, unnamed local currency and unconfirmed COICOP revision are represented here as extraction targets, not as populated metadata values.",
+    "The report provides no contact point, source URL, geographic coverage, metadata update date, institutional mandate, detailed survey sampling design, detailed data collection method or publication frequency; the MSD includes optional or local concepts where useful so a Metadata Set can record 'not stated' when populated.",
+    "The report contains two distinct statistical subjects: monthly CPI by consumption division and annual household spending by residence and expenditure quintile. This MSD separates dataflow-level reference metadata for those subjects instead of treating each table as a standalone MSD.",
+    "The report states that consumption divisions resemble COICOP but does not confirm the COICOP revision; therefore classification information is modelled as narrative reference metadata rather than a confirmed coded COICOP metadata representation.",
+    "The report uses 'local currency per household per month' but does not name the currency; therefore the MSD provides a narrative unit-measure note and does not assign an ISO 4217 currency code."
+  ],
+  "metadata_structures": [
+    {
+      "msd_id": "MSD_PRICE_CONSUMPTION_REPORT",
+      "name": "Report-level reference metadata for Consumer Prices and Household Spending",
+      "agency_id": "SYNTH_NSI",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "LOCAL_REPORT_TITLE",
+          "name": "Report title",
+          "definition": "Title or name of the publication or report being described.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the publication title from the report cover or heading; keep as reported and do not replace it with the provenance filename.",
+          "source_standard": "Local concept; exact SDMX reference-metadata concept ID not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "COMPILING_ORG",
+          "name": "Compiling organisation or publisher",
+          "definition": "Organisation responsible for compiling or publishing the report or statistics.",
+          "representation": "InternationalString / free text; coded organisation scheme only if an authoritative organisation scheme is later confirmed",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the named publishing or compiling institution from the report identification section.",
+          "source_standard": "Candidate SDMX Glossary / Global Reference Metadata concept COMPILING_ORG; exact concept entry and version not confirmed by fetched external evidence in this run.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "LOCAL_PUBLICATION_DATE",
+          "name": "Publication date",
+          "definition": "Date on which the report or publication was issued.",
+          "representation": "Date, ISO 8601 when normalised; retain original text in metadata values if needed",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the publication date from the report identification section and normalise only in the metadata value layer.",
+          "source_standard": "Local concept; exact SDMX reference-metadata concept ID not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "LOCAL_REPORT_SUBJECT",
+          "name": "Report subject",
+          "definition": "Short narrative description of the statistical subjects covered by the report.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Summarise the report-level statistical content without merging CPI observations and household spending estimates into one statistical measure.",
+          "source_standard": "Local concept; candidate mapping to a data-description reference metadata concept should be checked against the SDMX Global Reference Metadata Concept Scheme.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "CONTACT",
+          "name": "Contact",
+          "definition": "Contact point for questions about the report, data or metadata.",
+          "representation": "InternationalString / free text; structured contact representation may be used if supported by the implementation",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract only if the report supplies a contact name, unit, email, telephone or address; otherwise record as not stated in the Metadata Set.",
+          "source_standard": "Candidate SDMX Glossary / Global Reference Metadata concept CONTACT; listed in supplied principles but exact concept entry and version not confirmed by fetched external evidence in this run.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "name": "Geographical coverage",
+          "definition": "Territory or geographic scope covered by the statistics or report, distinct from any reference-area dimension used in a DSD.",
+          "representation": "InternationalString / free text; codelist only if an authoritative area vocabulary is confirmed",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract geographic coverage only if stated. Do not infer national coverage from the institution name or from the word national without explicit report evidence.",
+          "source_standard": "SDMX Glossary 2.1 concept COVERAGE_GEO confirmed in fetched external evidence; use as a confirmed reusable metadata concept where geographic coverage is reported.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "META_UPDATE",
+          "name": "Metadata update",
+          "definition": "Date or statement indicating when the metadata were last updated or certified.",
+          "representation": "Date or InternationalString / free text, depending on what is reported",
+          "required": false,
+          "usage_status": "OPTIONAL",
+          "target_attachment": "METADATA",
+          "extraction_guidance": "Extract a metadata update date only if separately stated; do not substitute the publication date unless the report explicitly equates them.",
+          "source_standard": "Candidate SDMX Glossary / Global Reference Metadata concept META_UPDATE; fetched glossary excerpt confirms metadata update terminology but not the exact concept ID entry.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "CONF",
+          "name": "Confidentiality",
+          "definition": "Policy, treatment or statement about confidentiality and disclosure protection applicable to the report or data.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "REPORT",
+          "extraction_guidance": "Extract the confidentiality statement from the report. Keep synthetic-data wording as narrative metadata rather than converting it to a confidentiality-status data attribute unless a coded status is separately required and confirmed.",
+          "source_standard": "Candidate SDMX Glossary / Global Reference Metadata concept CONF; exact concept entry and version not confirmed by fetched external evidence in this run.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    },
+    {
+      "msd_id": "MSD_CPI_REFERENCE_METADATA",
+      "name": "Reference metadata for consumer price index dataflow",
+      "agency_id": "SYNTH_NSI",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "LOCAL_DATA_DESCRIPTION",
+          "name": "Data description",
+          "definition": "Narrative description of the statistical content of the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the CPI dataflow, extract text describing the CPI as a monthly fixed-basket index and keep it separate from household spending methodology.",
+          "source_standard": "Local concept; candidate mapping to SDMX reference-metadata data-description concepts should be verified against the SDMX reference metadata guideline.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "LOCAL_SOURCE_DATA",
+          "name": "Source data",
+          "definition": "Primary survey, administrative source or other data source used to compile the statistics.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the CPI dataflow, extract the named consumer price survey source from the source description section.",
+          "source_standard": "Local concept; exact SDMX reference-metadata source-data concept ID not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "LOCAL_METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Narrative description of the methods, index approach or compilation practices used for the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract CPI methodology as narrative reference metadata. Do not force fixed-basket methodology into a statistical dimension.",
+          "source_standard": "Local concept; candidate mapping to an SDMX methodology reference metadata concept should be checked against the SDMX Global Reference Metadata Concept Scheme.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "LOCAL_STATISTICAL_DEFINITIONS",
+          "name": "Statistical concepts and definitions",
+          "definition": "Definitions of the main statistical concepts and measures used in the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the CPI dataflow, extract the definition of CPI and its interpretation relative to the base period.",
+          "source_standard": "Local concept; exact SDMX reference-metadata concept ID not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "LOCAL_INDEX_BASE_PERIOD",
+          "name": "Index base period",
+          "definition": "Reference period or base used to scale an index.",
+          "representation": "InternationalString / free text; structured period representation may be added if a standard concept is confirmed",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract base-period information for the CPI index from definitions and unit text; retain the stated base as index metadata rather than treating it as an observation date.",
+          "source_standard": "Local concept; base-period concept mapping should be verified before production.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "LOCAL_CLASSIFICATION_SYSTEM",
+          "name": "Classification system",
+          "definition": "Narrative identification of the classification or grouping system used for categories in the dataflow.",
+          "representation": "InternationalString / free text; codelist only if the classification revision is confirmed",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the CPI dataflow, extract the statement about consumption divisions and the caveat that the COICOP revision is not confirmed. Do not assert a COICOP code list from resemblance alone.",
+          "source_standard": "Local concept; UNSD COICOP is an unverified candidate reference because the report does not confirm the revision and no confirming external excerpt was supplied.",
+          "source_url": "https://unstats.un.org/unsd/classifications/coicop"
+        },
+        {
+          "concept_id": "LOCAL_CAVEATS_LIMITATIONS",
+          "name": "Caveats and limitations",
+          "definition": "Known caveats, limitations or cautions for interpretation and use of the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract CPI caveats in the Metadata Set, including provisional latest month and unconfirmed consumption classification revision. Preserve substantive limitations as narrative metadata values, not as dimensions.",
+          "source_standard": "Local concept; candidate mapping to recommended uses and limitations in SDMX reference metadata should be verified against the SDMX reference metadata guideline.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "name": "Revision policy",
+          "definition": "Policy or practice governing revisions to published data.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the CPI revision statement, including which period is provisional, as reference metadata. Observation-level provisional/final status may also be modelled structurally outside this MSD.",
+          "source_standard": "Candidate SDMX Glossary / Global Reference Metadata concept DATA_REV; exact concept entry and version not confirmed by fetched external evidence in this run.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "LOCAL_DATAFLOW_CONFIDENTIALITY",
+          "name": "Dataflow confidentiality note",
+          "definition": "Confidentiality or disclosure note specific to the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use when confidentiality differs by dataflow; otherwise inherit the report-level confidentiality statement in the Metadata Set.",
+          "source_standard": "Local refinement of candidate SDMX concept CONF; exact SDMX concept entry and version not confirmed by fetched external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    },
+    {
+      "msd_id": "MSD_HOUSEHOLD_SPENDING_REFERENCE_METADATA",
+      "name": "Reference metadata for household spending dataflow",
+      "agency_id": "SYNTH_NSI",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "LOCAL_DATA_DESCRIPTION",
+          "name": "Data description",
+          "definition": "Narrative description of the statistical content of the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the household spending dataflow, extract text describing annual survey estimates by residence and expenditure quintile, and keep it separate from CPI observations.",
+          "source_standard": "Local concept; candidate mapping to SDMX reference-metadata data-description concepts should be verified against the SDMX reference metadata guideline.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "LOCAL_SOURCE_DATA",
+          "name": "Source data",
+          "definition": "Primary survey, administrative source or other data source used to compile the statistics.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the household spending dataflow, extract the named household budget survey source from the source description section.",
+          "source_standard": "Local concept; exact SDMX reference-metadata source-data concept ID not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "LOCAL_METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Narrative description of the methods, estimation basis or compilation practices used for the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract household spending methodology as narrative reference metadata. Preserve the distinction that the household spending estimate is not a CPI observation.",
+          "source_standard": "Local concept; candidate mapping to an SDMX methodology reference metadata concept should be checked against the SDMX Global Reference Metadata Concept Scheme.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "LOCAL_STATISTICAL_DEFINITIONS",
+          "name": "Statistical concepts and definitions",
+          "definition": "Definitions of the main statistical concepts and measures used in the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For the household spending dataflow, extract the definition of mean monthly consumption expenditure per household.",
+          "source_standard": "Local concept; exact SDMX reference-metadata concept ID not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "LOCAL_STATISTICAL_UNIT",
+          "name": "Statistical unit",
+          "definition": "Entity to which the statistical measure relates.",
+          "representation": "InternationalString / free text; codelist only if an authoritative statistical-unit vocabulary is confirmed",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the unit represented by the household spending estimates where stated, without inferring unreported population details.",
+          "source_standard": "Local concept; exact SDMX or domain statistical-unit concept mapping not confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "LOCAL_QUINTILE_DEFINITION",
+          "name": "Expenditure quintile definition",
+          "definition": "Narrative explanation of how expenditure quintile categories are defined for the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the footnote defining quintiles within the synthetic survey distribution. Do not convert lowest/highest quintile labels to a standard codelist unless definitions and scope are confirmed.",
+          "source_standard": "Local concept; no authoritative quintile codelist confirmed from supplied external evidence.",
+          "source_url": "not stated"
+        },
+        {
+          "concept_id": "LOCAL_SAMPLING_ERROR",
+          "name": "Sampling error",
+          "definition": "Statement about sampling error or sampling uncertainty affecting survey estimates.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the report's sampling-error caveat for the household survey estimates as quality or limitations metadata in the Metadata Set.",
+          "source_standard": "Local concept; candidate mapping to an accuracy or quality reference metadata concept should be verified against the SDMX Global Reference Metadata Concept Scheme.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "LOCAL_UNIT_MEASURE_NOTE",
+          "name": "Unit of measure note",
+          "definition": "Narrative note on measurement units, including unresolved or unnamed unit information.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "For household spending, record in the Metadata Set that the report uses local currency per household per month and that the local currency is not named. Do not assign an ISO 4217 currency code without evidence.",
+          "source_standard": "Local concept; ISO 4217 currency coding is not applied because the currency is not named in the report and no specific ISO 4217 code is confirmed.",
+          "source_url": "https://www.iso.org/standard/64758.html"
+        },
+        {
+          "concept_id": "LOCAL_CAVEATS_LIMITATIONS",
+          "name": "Caveats and limitations",
+          "definition": "Known caveats, limitations or cautions for interpretation and use of the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract household-spending caveats in the Metadata Set, including unnamed local currency, sampling error, synthetic survey distribution and the distinction from CPI observations.",
+          "source_standard": "Local concept; candidate mapping to recommended uses and limitations in SDMX reference metadata should be verified against the SDMX reference metadata guideline.",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "name": "Revision policy",
+          "definition": "Policy or practice governing revisions to published data.",
+          "representation": "InternationalString / free text",
+          "required": true,
+          "usage_status": "MANDATORY",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Extract the household estimates revision statement as narrative metadata, including processing-error and calibration-weight conditions.",
+          "source_standard": "Candidate SDMX Glossary / Global Reference Metadata concept DATA_REV; exact concept entry and version not confirmed by fetched external evidence in this run.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        },
+        {
+          "concept_id": "LOCAL_DATAFLOW_CONFIDENTIALITY",
+          "name": "Dataflow confidentiality note",
+          "definition": "Confidentiality or disclosure note specific to the dataflow.",
+          "representation": "InternationalString / free text",
+          "required": false,
+          "usage_status": "CONDITIONAL",
+          "target_attachment": "DATAFLOW",
+          "extraction_guidance": "Use when confidentiality differs by dataflow; otherwise inherit the report-level confidentiality statement in the Metadata Set.",
+          "source_standard": "Local refinement of candidate SDMX concept CONF; exact SDMX concept entry and version not confirmed by fetched external evidence.",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm"
+        }
+      ]
+    }
+  ]
+}

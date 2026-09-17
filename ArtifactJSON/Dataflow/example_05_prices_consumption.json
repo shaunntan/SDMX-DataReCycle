@@ -1,0 +1,76 @@
+{
+  "artifact_type": "DATAFLOW",
+  "source_report": "example_05_prices_consumption.pdf",
+  "source_sha256": "71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5",
+  "principles_file": "04_DATAFLOW.txt",
+  "principles_sha256": "0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry / structural artefact catalog",
+      "artifact_id": "SDMX Global Registry",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied official registry excerpt lists Dataflows among SDMX structure artefact types available in the registry interface, supporting Dataflow as an SDMX structural artefact category. The excerpt does not confirm any report-specific dataflow ID, agency, version, or DSD reference.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / Cross-domain concept guidance",
+      "artifact_id": "SDMX Glossary 2.1",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The supplied glossary excerpt describes SDMX cross-domain concepts and includes terms such as reference area, geographical coverage, measure, maintenance agency, and metadata structures. It provides general SDMX terminology context but does not confirm the specific dataflows or their identifiers for this report.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic code reference",
+      "artifact_id": "UN M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The supplied UN M49 excerpt shows country and area entries with numeric and alpha codes. The report does not state a reference area, so no geographic coverage code is assigned to the dataflows.",
+      "verification_status": "CONFIRMED"
+    }
+  ],
+  "limitations": [
+    "The report does not provide formal SDMX dataflow identifiers; the dataflow IDs here are proposed local identifiers derived from the logical datasets described in the report.",
+    "The report does not state a reference area or country, so dataflow coverage cannot include a geographic code.",
+    "The dataflow agency is based on the named publishing institution in the report; no separate SDMX maintenance-agency registration was supplied.",
+    "The two dataflows are inferred from the report's explicit methodological separation between CPI and household spending, and they reference the accepted DSD / Key Family artefact supplied with this task.",
+    "Exact SDMX 2.0 structure-message details and registry publication status for these dataflows are not confirmed from supplied external evidence.",
+    "All records and values are synthetic, so these dataflows require institutional validation before production dissemination."
+  ],
+  "dataflows": [
+    {
+      "dataflow_id": "DF_SYNTH_CPI_DIVISION_MONTHLY",
+      "name": "Consumer price index by consumption division",
+      "agency_id": "Synthetic_National_Statistics_Institute",
+      "version": "1.0",
+      "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+      "dsd_agency_id": "Synthetic_National_Statistics_Institute",
+      "dsd_version": "1.0",
+      "description": "Logical dataset for the monthly fixed-basket consumer price index classified by consumption division, with observations measuring price change relative to 2023=100.",
+      "coverage": "Monthly CPI observations by consumption division; report evidence covers months 2025-01 to 2025-04 and divisions shown as Food and non-alcoholic beverages, Housing and utilities, and Transport. Geographic coverage is not stated.",
+      "evidence_quote": "The CPI is a monthly fixed-basket index classified by consumption division."
+    },
+    {
+      "dataflow_id": "DF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+      "name": "Mean household spending by residence and expenditure quintile",
+      "agency_id": "Synthetic_National_Statistics_Institute",
+      "version": "1.0",
+      "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+      "dsd_agency_id": "Synthetic_National_Statistics_Institute",
+      "dsd_version": "1.0",
+      "description": "Logical dataset for annual survey estimates of mean monthly consumption expenditure per household by residence and expenditure quintile.",
+      "coverage": "Annual household spending survey estimates by residence and expenditure quintile; report evidence covers year 2024, Urban and Rural residence, and Lowest quintile and Highest quintile categories. Geographic coverage is not stated.",
+      "evidence_quote": "Household spending is an annual survey estimate by residence and expenditure quintile and is\nnot a CPI observation."
+    }
+  ]
+}

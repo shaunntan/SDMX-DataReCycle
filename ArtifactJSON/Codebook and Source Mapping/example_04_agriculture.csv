@@ -1,0 +1,724 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODEBOOK_AND_SOURCE_MAPPING
+"[""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""source_sha256""]",source_sha256,string,0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f
+"[""principles_file""]",principles_file,string,08_CODEBOOK_AND_SOURCE_MAPPING.txt
+"[""principles_sha256""]",principles_sha256,string,999d6556922403d8315a0a0558da149e83e7c3b8f29779d9d346959966d76b74
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept reference
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied official-source excerpt identifies SDMX Glossary Version 2.1 and describes cross-domain concepts as reusable concepts with specified IDs, names, representations and codelists. It confirms the Observation Status concept ID OBS_STATUS and codelist ID CL_OBS_STATUS, but does not confirm exact code mappings for Final, Forecast, or Observed."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied official-source excerpt confirms that the SDMX Global Registry provides a searchable codelist catalog and export functions. It does not confirm exact codelist versions or code-level contents for CL_FREQ, unit-measure codelists, product classifications, crop classifications, or observation-status codes used in this report."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",2,""version""]",version,string,not confirmed from supplied evidence
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The package recommends SDMX CL_FREQ for frequency and the accepted codelists artifact includes candidate codes A and M. The fetched registry excerpt confirms only the registry catalog, not the exact CL_FREQ version or code-level contents. Therefore A and M are usable only as review-required candidate extraction values."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",3,""version""]",version,string,not confirmed from supplied evidence
+"[""standard_references"",3,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",3,""evidence""]",evidence,string,"The fetched SDMX Glossary excerpt confirms Observation Status concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. It does not confirm whether report labels Final, Forecast, and Observed are exact standard code equivalents, so this artifact uses the governed local status codelist."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,UNSD
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",4,""version""]",version,string,not stated
+"[""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",4,""evidence""]",evidence,string,"The supplied UN M49 excerpt shows country and area entries with numeric and alpha codes. It does not include or validate the report's synthetic region labels Northland, Centralia, and South Coast, so UN M49 is checked but not confirmed for these region values."
+"[""standard_references"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",5]",5,object,
+"[""standard_references"",5,""agency""]",agency,string,UNSD
+"[""standard_references"",5,""artifact_type""]",artifact_type,string,Product / economic classifications reference
+"[""standard_references"",5,""artifact_id""]",artifact_id,string,UNSD_CLASSIFICATIONS
+"[""standard_references"",5,""version""]",version,string,not stated
+"[""standard_references"",5,""url""]",url,string,https://unstats.un.org/unsd/classifications/unsdclassifications
+"[""standard_references"",5,""evidence""]",evidence,string,The supplied reference catalog identifies UNSD classifications and economic classifications as sources to search for products and activities. No fetched evidence confirms crop or fertilizer product code equivalence for the report values.
+"[""standard_references"",5,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",6]",6,object,
+"[""standard_references"",6,""agency""]",agency,string,SDMX
+"[""standard_references"",6,""artifact_type""]",artifact_type,string,Reference metadata guidance
+"[""standard_references"",6,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",6,""version""]",version,string,1.0
+"[""standard_references"",6,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",6,""evidence""]",evidence,string,"The supplied reference package names this SDMX document as a source for standardising reference metadata reporting, but no fetched external excerpt was supplied here to confirm exact metadata concept IDs or definitions for methodology, source data, revisions, confidentiality, publication date, or caveats and limitations."
+"[""standard_references"",6,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"This artifact is reconciled to the accepted DSD field identity by using INDICATOR, not MEASURE, as the crop structure's dimension for harvested area versus production. The governed code source for INDICATOR is the accepted CODELISTS artifact's CL_AGRI_MEASURE_LOCAL, restricted operationally to HARVESTED_AREA and PRODUCTION for the crop Key Family."
+"[""limitations"",1]",1,string,"This artifact uses the governed local codelist IDs from the accepted CODELISTS artifact: CL_AGRI_REGION_LOCAL, CL_AGRI_CROP_LOCAL, CL_AGRI_FERTILIZER_PRODUCT_LOCAL, CL_AGRI_MEASURE_LOCAL, CL_AGRI_UNIT_MEASURE_LOCAL, and CL_AGRI_STATUS_LOCAL. The accepted DSD draft's older component codelist IDs should be treated as reconciled aliases to these governed IDs for implementation."
+"[""limitations"",2]",2,string,"The report supports two separate statistical structures: annual crop area/production aggregates and monthly fertilizer retail prices. Table identity is represented by DATAFLOW_OR_KEY_FAMILY as an operational routing field, not as a formal observation-level DSD component."
+"[""limitations"",3]",3,string,All target fields used in source_value_mappings are documented in the fields array. DATAFLOW_OR_KEY_FAMILY and REPORT_METADATA.* fields are documented as operational/reference-metadata attributes rather than observation-level DSD dimensions.
+"[""limitations"",4]",4,string,"FREQ is mandatory in both selected Key Families. Because exact SDMX CL_FREQ version and code contents were not confirmed from supplied external evidence, automatic extraction may populate candidate A for crop and candidate M for fertilizer only as review-required candidate values; production publication must verify CL_FREQ first or approve a governed local interim frequency policy."
+"[""limitations"",5]",5,string,"Exact SDMX codelist versions and code-level contents for CL_OBS_STATUS were not confirmed from supplied external evidence; status values are therefore stored in CL_AGRI_STATUS_LOCAL, not automatically converted to standard OBS_STATUS codes."
+"[""limitations"",6]",6,string,Crop names are common labels and the report explicitly requires classification review; crop mappings remain local pending authoritative classification review.
+"[""limitations"",7]",7,string,Fertilizer products are local market categories and the report explicitly says they are not verified CPC codes; product mappings remain local pending CPC or other product-classification review.
+"[""limitations"",8]",8,string,"The local currency is deliberately unnamed, preventing ISO 4217 currency mapping and preventing a fully standard price-unit code."
+"[""limitations"",9]",9,string,Regions are synthetic/local report labels; no authoritative geographic code mapping is confirmed.
+"[""limitations"",10]",10,string,Area and production are reported in wide columns in the PDF but are normalized in the crop structure to INDICATOR plus OBS_VALUE and UNIT_MEASURE.
+"[""limitations"",11]",11,string,Retail price is the single statistical measure of the fertilizer Key Family and is fixed by DATAFLOW_OR_KEY_FAMILY=KF_AGR_FERTILIZER_RETAIL_PRICE; the fertilizer DSD does not require an INDICATOR field.
+"[""limitations"",12]",12,string,"No explicit decimals, unit multiplier, observation confidentiality flag, or data-source code appears in the report tables."
+"[""limitations"",13]",13,string,"Report-level methodology, source description, caveats, revision policy, confidentiality, compiling organisation, and publication date are reference metadata handoff fields, not ordinary observation-level DSD attributes."
+"[""fields""]",fields,array,
+"[""fields"",0]",0,object,
+"[""fields"",0,""field_id""]",field_id,string,DATAFLOW_OR_KEY_FAMILY
+"[""fields"",0,""name""]",name,string,Dataflow or Key Family routing
+"[""fields"",0,""definition""]",definition,string,Operational routing field identifying which selected SDMX 2.0 Key Family/dataflow an extracted row belongs to. It is derived from the table title and separates annual crop area/production observations from monthly fertilizer retail price observations. Attachment level: row extraction / dataset routing. Missing rule: every extracted observation must be routed to one of the two governed local Key Family identifiers.
+"[""fields"",0,""role""]",role,string,ATTRIBUTE
+"[""fields"",0,""representation""]",representation,string,Controlled routing identifier; allowed values: KF_AGR_CROP_AREA_PRODUCTION for Table 1 and KF_AGR_FERTILIZER_RETAIL_PRICE for Table 2. Not a formal DSD component codelist in the observation structure.
+"[""fields"",0,""codelist_id""]",codelist_id,null,
+"[""fields"",0,""required""]",required,boolean,true
+"[""fields"",0,""example""]",example,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""fields"",0,""source_standard""]",source_standard,string,Local SDMX 2.0 dataflow/Key Family routing field; agency SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU; version 1.0-draft; not an SDMX cross-domain codelist
+"[""fields"",0,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",1]",1,object,
+"[""fields"",1,""field_id""]",field_id,string,FREQ
+"[""fields"",1,""name""]",name,string,Frequency
+"[""fields"",1,""definition""]",definition,string,"Rate at which observations occur over time for the statistical structure. The crop area and production Key Family is annual; the fertilizer retail price Key Family is monthly. Attachment level: series/dimension in both selected Key Families. Missing rule: mandatory for both structures, but candidate standard codes require verification before production publication."
+"[""fields"",1,""role""]",role,string,DIMENSION
+"[""fields"",1,""representation""]",representation,string,"Coded frequency. Codelist agency: SDMX. Codelist ID: CL_FREQ. Codelist version: not confirmed from supplied external evidence. Allowed candidate extraction values from the accepted CODELISTS artifact: A=Annual, M=Monthly. Implementation rule: automatic filling may store A or M only with review-required status until CL_FREQ is verified."
+"[""fields"",1,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""fields"",1,""required""]",required,boolean,true
+"[""fields"",1,""example""]",example,string,A
+"[""fields"",1,""source_standard""]",source_standard,string,SDMX CL_FREQ candidate; code-level verification required before non-review production use
+"[""fields"",1,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""fields"",2]",2,object,
+"[""fields"",2,""field_id""]",field_id,string,TIME_PERIOD
+"[""fields"",2,""name""]",name,string,Time period
+"[""fields"",2,""definition""]",definition,string,Time period to which the observation refers. In the crop Key Family it is taken from the Year column and must be a Gregorian year. In the fertilizer price Key Family it is taken from the Month column and must be a Gregorian month. Attachment level: observation/time dimension. Missing rule: must not be blank.
+"[""fields"",2,""role""]",role,string,TIME
+"[""fields"",2,""representation""]",representation,string,"Time period; Gregorian year for crop observations such as 2024, and Gregorian month for fertilizer price observations such as 2025-01. No codelist."
+"[""fields"",2,""codelist_id""]",codelist_id,null,
+"[""fields"",2,""required""]",required,boolean,true
+"[""fields"",2,""example""]",example,string,2025-01
+"[""fields"",2,""source_standard""]",source_standard,string,SDMX cross-domain time-period concept candidate; exact concept-scheme artefact not confirmed from supplied external evidence
+"[""fields"",2,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""fields"",3]",3,object,
+"[""fields"",3,""field_id""]",field_id,string,REF_AREA
+"[""fields"",3,""name""]",name,string,Reference area
+"[""fields"",3,""definition""]",definition,string,"Local report region to which a crop area or production observation refers. Applicable structure: KF_AGR_CROP_AREA_PRODUCTION only. The fertilizer price Key Family has no reported region field. Attachment level: series/dimension. Missing rule: mandatory for crop observations, not applicable for fertilizer observations."
+"[""fields"",3,""role""]",role,string,DIMENSION
+"[""fields"",3,""representation""]",representation,string,"Coded local region list. Codelist agency: SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU. Codelist ID: CL_AGRI_REGION_LOCAL. Codelist version: 1.0. Allowed values: NORTHLAND, CENTRALIA, SOUTH_COAST."
+"[""fields"",3,""codelist_id""]",codelist_id,string,CL_AGRI_REGION_LOCAL
+"[""fields"",3,""required""]",required,boolean,false
+"[""fields"",3,""example""]",example,string,NORTHLAND
+"[""fields"",3,""source_standard""]",source_standard,string,Local codelist; UN M49 checked but not confirmed applicable to synthetic regions
+"[""fields"",3,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",4]",4,object,
+"[""fields"",4,""field_id""]",field_id,string,CROP
+"[""fields"",4,""name""]",name,string,Crop
+"[""fields"",4,""definition""]",definition,string,"Crop category for which harvested area or production is reported. Applicable structure: KF_AGR_CROP_AREA_PRODUCTION only. Attachment level: series/dimension. Missing rule: mandatory for crop observations, not applicable for fertilizer observations. Classification review is required before mapping these labels to an external crop or product classification."
+"[""fields"",4,""role""]",role,string,DIMENSION
+"[""fields"",4,""representation""]",representation,string,"Coded local crop list. Codelist agency: SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU. Codelist ID: CL_AGRI_CROP_LOCAL. Codelist version: 1.0. Allowed values: RICE, MAIZE, CASSAVA."
+"[""fields"",4,""codelist_id""]",codelist_id,string,CL_AGRI_CROP_LOCAL
+"[""fields"",4,""required""]",required,boolean,false
+"[""fields"",4,""example""]",example,string,RICE
+"[""fields"",4,""source_standard""]",source_standard,string,Local codelist pending review against authoritative agricultural product or crop classifications
+"[""fields"",4,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",5]",5,object,
+"[""fields"",5,""field_id""]",field_id,string,PRODUCT
+"[""fields"",5,""name""]",name,string,Product
+"[""fields"",5,""definition""]",definition,string,"Fertilizer local market product category for which retail price is reported. Applicable structure: KF_AGR_FERTILIZER_RETAIL_PRICE only. Attachment level: series/dimension. Missing rule: mandatory for fertilizer price observations, not applicable for crop observations. CPC or other product-classification mapping is not verified."
+"[""fields"",5,""role""]",role,string,DIMENSION
+"[""fields"",5,""representation""]",representation,string,"Coded local fertilizer product list. Codelist agency: SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU. Codelist ID: CL_AGRI_FERTILIZER_PRODUCT_LOCAL. Codelist version: 1.0. Allowed values: UREA, COMPOUND_NPK."
+"[""fields"",5,""codelist_id""]",codelist_id,string,CL_AGRI_FERTILIZER_PRODUCT_LOCAL
+"[""fields"",5,""required""]",required,boolean,false
+"[""fields"",5,""example""]",example,string,UREA
+"[""fields"",5,""source_standard""]",source_standard,string,Local codelist; CPC mapping not verified
+"[""fields"",5,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",6]",6,object,
+"[""fields"",6,""field_id""]",field_id,string,INDICATOR
+"[""fields"",6,""name""]",name,string,Indicator
+"[""fields"",6,""definition""]",definition,string,"Crop statistical indicator represented by OBS_VALUE in the crop Key Family. This field normalizes the PDF's wide Area and Production columns into two observations per source row: INDICATOR=HARVESTED_AREA and INDICATOR=PRODUCTION. Applicable structure: KF_AGR_CROP_AREA_PRODUCTION only. The fertilizer retail price Key Family has retail price fixed by the dataflow and does not require INDICATOR. Missing rule: mandatory for normalized crop observations, not applicable for fertilizer price observations."
+"[""fields"",6,""role""]",role,string,DIMENSION
+"[""fields"",6,""representation""]",representation,string,Coded local indicator/measure list. Codelist agency: SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU. Governed codelist ID: CL_AGRI_MEASURE_LOCAL. Codelist version: 1.0. Allowed crop values: HARVESTED_AREA and PRODUCTION. RETAIL_PRICE is present in the governed codelist for semantic completeness but is fixed by KF_AGR_FERTILIZER_RETAIL_PRICE rather than used as a fertilizer DSD dimension.
+"[""fields"",6,""codelist_id""]",codelist_id,string,CL_AGRI_MEASURE_LOCAL
+"[""fields"",6,""required""]",required,boolean,false
+"[""fields"",6,""example""]",example,string,HARVESTED_AREA
+"[""fields"",6,""source_standard""]",source_standard,string,Local governed codelist CL_AGRI_MEASURE_LOCAL; reconciles accepted DSD INDICATOR field identity with accepted CODELISTS governed codelist ID
+"[""fields"",6,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",7]",7,object,
+"[""fields"",7,""field_id""]",field_id,string,OBS_VALUE
+"[""fields"",7,""name""]",name,string,Observation value
+"[""fields"",7,""definition""]",definition,string,Numeric value of the selected observation. In the crop Key Family it is the numeric value associated with INDICATOR=HARVESTED_AREA or INDICATOR=PRODUCTION. In the fertilizer price Key Family it is the retail price value from the Price column. Attachment level: observation/primary measure. Missing rule: must not be blank for rows extracted from the supplied report tables.
+"[""fields"",7,""role""]",role,string,MEASURE
+"[""fields"",7,""representation""]",representation,string,Numeric decimal. Report area and production values are shown as integers; retail prices are shown with decimals. No codelist.
+"[""fields"",7,""codelist_id""]",codelist_id,null,
+"[""fields"",7,""required""]",required,boolean,true
+"[""fields"",7,""example""]",example,string,313.28
+"[""fields"",7,""source_standard""]",source_standard,string,SDMX primary measure concept candidate; exact concept-scheme artefact not confirmed from supplied external evidence
+"[""fields"",7,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""fields"",8]",8,object,
+"[""fields"",8,""field_id""]",field_id,string,UNIT_MEASURE
+"[""fields"",8,""name""]",name,string,Unit of measure
+"[""fields"",8,""definition""]",definition,string,"Unit in which OBS_VALUE is expressed. In the crop Key Family, attach at series level by indicator where possible: HECTARES for INDICATOR=HARVESTED_AREA and TONNES for INDICATOR=PRODUCTION. In the fertilizer price Key Family, attach at dataset level where possible because all supplied fertilizer price rows use LOCAL_CURRENCY_PER_50KG_BAG. Missing rule: mandatory for both structures."
+"[""fields"",8,""role""]",role,string,ATTRIBUTE
+"[""fields"",8,""representation""]",representation,string,"Coded local unit list. Codelist agency: SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU. Codelist ID: CL_AGRI_UNIT_MEASURE_LOCAL. Codelist version: 1.0. Allowed values: HECTARES, TONNES, LOCAL_CURRENCY_PER_50KG_BAG. Local currency per 50 kg bag cannot be fully standardized because the currency is unnamed."
+"[""fields"",8,""codelist_id""]",codelist_id,string,CL_AGRI_UNIT_MEASURE_LOCAL
+"[""fields"",8,""required""]",required,boolean,true
+"[""fields"",8,""example""]",example,string,LOCAL_CURRENCY_PER_50KG_BAG
+"[""fields"",8,""source_standard""]",source_standard,string,SDMX UNIT_MEASURE candidate with governed local codelist; exact authoritative unit codes not confirmed
+"[""fields"",8,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",9]",9,object,
+"[""fields"",9,""field_id""]",field_id,string,OBS_STATUS
+"[""fields"",9,""name""]",name,string,Observation status
+"[""fields"",9,""definition""]",definition,string,"Status or nature of the observation value as reported: final, forecast, or observed. Applicable structures: both selected Key Families. Attachment level: observation. Missing rule: mandatory for both structures. Mapping to SDMX CL_OBS_STATUS requires code-level verification."
+"[""fields"",9,""role""]",role,string,ATTRIBUTE
+"[""fields"",9,""representation""]",representation,string,"Coded local status list. Codelist agency: SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU. Codelist ID: CL_AGRI_STATUS_LOCAL. Codelist version: 1.0. Allowed values: FINAL, FORECAST, OBSERVED."
+"[""fields"",9,""codelist_id""]",codelist_id,string,CL_AGRI_STATUS_LOCAL
+"[""fields"",9,""required""]",required,boolean,true
+"[""fields"",9,""example""]",example,string,FORECAST
+"[""fields"",9,""source_standard""]",source_standard,string,Local codelist with candidate alignment to SDMX CL_OBS_STATUS; exact standard code mapping not confirmed
+"[""fields"",9,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",10]",10,object,
+"[""fields"",10,""field_id""]",field_id,string,REPORT_METADATA.COMPILING_ORG
+"[""fields"",10,""name""]",name,string,Compiling organisation
+"[""fields"",10,""definition""]",definition,string,Report-level reference metadata identifying the organisation responsible for publishing or compiling the report. Attachment level: report/dataset metadata set. Missing rule: should be retained when present; not an observation-level DSD component.
+"[""fields"",10,""role""]",role,string,ATTRIBUTE
+"[""fields"",10,""representation""]",representation,string,Text or organisation identifier. Source value is retained as text because no external organisation scheme code is confirmed.
+"[""fields"",10,""codelist_id""]",codelist_id,null,
+"[""fields"",10,""required""]",required,boolean,false
+"[""fields"",10,""example""]",example,string,Synthetic Agricultural Statistics Bureau
+"[""fields"",10,""source_standard""]",source_standard,string,Reference metadata / MSD handoff; candidate SDMX common metadata concept COMPILING_ORG; exact metadata concept scheme not confirmed
+"[""fields"",10,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""fields"",11]",11,object,
+"[""fields"",11,""field_id""]",field_id,string,REPORT_METADATA.PUBLICATION_DATE
+"[""fields"",11,""name""]",name,string,Publication date
+"[""fields"",11,""definition""]",definition,string,Report-level reference metadata recording the publication date of the source report. Attachment level: report/dataset metadata set. Missing rule: should be retained when present; not an observation-level DSD component.
+"[""fields"",11,""role""]",role,string,ATTRIBUTE
+"[""fields"",11,""representation""]",representation,string,Date; source text 'Publication date: 28 May 2026' may be normalized downstream to 2026-05-28.
+"[""fields"",11,""codelist_id""]",codelist_id,null,
+"[""fields"",11,""required""]",required,boolean,false
+"[""fields"",11,""example""]",example,string,2026-05-28
+"[""fields"",11,""source_standard""]",source_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""fields"",11,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",12]",12,object,
+"[""fields"",12,""field_id""]",field_id,string,REPORT_METADATA.METHODOLOGY
+"[""fields"",12,""name""]",name,string,Methodology
+"[""fields"",12,""definition""]",definition,string,Report-level reference metadata describing the methods and data-collection approach used for the two structures. Attachment level: report/dataset metadata set. Missing rule: should be retained when present; not an observation-level DSD component.
+"[""fields"",12,""role""]",role,string,ATTRIBUTE
+"[""fields"",12,""representation""]",representation,string,Text metadata field.
+"[""fields"",12,""codelist_id""]",codelist_id,null,
+"[""fields"",12,""required""]",required,boolean,false
+"[""fields"",12,""example""]",example,string,Crop area and production are annual farm-survey aggregates.
+"[""fields"",12,""source_standard""]",source_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""fields"",12,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""fields"",13]",13,object,
+"[""fields"",13,""field_id""]",field_id,string,REPORT_METADATA.SOURCE_DESCRIPTION
+"[""fields"",13,""name""]",name,string,Source description
+"[""fields"",13,""definition""]",definition,string,Report-level reference metadata describing the source data collections or panels. Attachment level: report/dataset metadata set. Missing rule: should be retained when present; not an observation-level DSD component.
+"[""fields"",13,""role""]",role,string,ATTRIBUTE
+"[""fields"",13,""representation""]",representation,string,Text metadata field.
+"[""fields"",13,""codelist_id""]",codelist_id,null,
+"[""fields"",13,""required""]",required,boolean,false
+"[""fields"",13,""example""]",example,string,Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.
+"[""fields"",13,""source_standard""]",source_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""fields"",13,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""fields"",14]",14,object,
+"[""fields"",14,""field_id""]",field_id,string,REPORT_METADATA.CAVEATS_LIMITATIONS
+"[""fields"",14,""name""]",name,string,Caveats and limitations
+"[""fields"",14,""definition""]",definition,string,"Report-level reference metadata recording limitations affecting interpretation, including classification review, unnamed currency, and forecast production. Attachment level: report/dataset metadata set. Missing rule: should be retained when present; not an observation-level DSD component."
+"[""fields"",14,""role""]",role,string,ATTRIBUTE
+"[""fields"",14,""representation""]",representation,string,Text metadata field.
+"[""fields"",14,""codelist_id""]",codelist_id,null,
+"[""fields"",14,""required""]",required,boolean,false
+"[""fields"",14,""example""]",example,string,Crop names are common labels and require classification review.
+"[""fields"",14,""source_standard""]",source_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""fields"",14,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""fields"",15]",15,object,
+"[""fields"",15,""field_id""]",field_id,string,REPORT_METADATA.REVISION_POLICY
+"[""fields"",15,""name""]",name,string,Revision policy
+"[""fields"",15,""definition""]",definition,string,Report-level reference metadata describing how forecasts are replaced and finalized. Attachment level: report/dataset metadata set. Missing rule: should be retained when present; not an observation-level DSD component.
+"[""fields"",15,""role""]",role,string,ATTRIBUTE
+"[""fields"",15,""representation""]",representation,string,Text metadata field.
+"[""fields"",15,""codelist_id""]",codelist_id,null,
+"[""fields"",15,""required""]",required,boolean,false
+"[""fields"",15,""example""]",example,string,Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.
+"[""fields"",15,""source_standard""]",source_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""fields"",15,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""fields"",16]",16,object,
+"[""fields"",16,""field_id""]",field_id,string,REPORT_METADATA.CONFIDENTIALITY
+"[""fields"",16,""name""]",name,string,Confidentiality
+"[""fields"",16,""definition""]",definition,string,Report-level reference metadata describing confidentiality treatment. Attachment level: report/dataset metadata set. Missing rule: should be retained when present; not an observation-level DSD component.
+"[""fields"",16,""role""]",role,string,ATTRIBUTE
+"[""fields"",16,""representation""]",representation,string,Text metadata field; no coded confidentiality status is assigned because no standard code mapping is confirmed.
+"[""fields"",16,""codelist_id""]",codelist_id,null,
+"[""fields"",16,""required""]",required,boolean,false
+"[""fields"",16,""example""]",example,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""fields"",16,""source_standard""]",source_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""fields"",16,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""source_value_mappings""]",source_value_mappings,array,
+"[""source_value_mappings"",0]",0,object,
+"[""source_value_mappings"",0,""source_value""]",source_value,string,Table 1. Crop area and production by region
+"[""source_value_mappings"",0,""source_context""]",source_context,string,Table identity / routing to crop area and production Key Family
+"[""source_value_mappings"",0,""target_field""]",target_field,string,DATAFLOW_OR_KEY_FAMILY
+"[""source_value_mappings"",0,""target_code""]",target_code,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""source_value_mappings"",0,""target_code_label""]",target_code_label,string,Crop area and production by crop and region
+"[""source_value_mappings"",0,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",0,""target_standard""]",target_standard,string,"Local SDMX 2.0 Key Family/dataflow routing target; documented operational field, not an observation-level DSD component"
+"[""source_value_mappings"",0,""notes""]",notes,string,Use this table title to route observations to the crop area and production structure.
+"[""source_value_mappings"",0,""evidence_quote""]",evidence_quote,string,Table 1. Crop area and production by region
+"[""source_value_mappings"",1]",1,object,
+"[""source_value_mappings"",1,""source_value""]",source_value,string,Table 2. Fertilizer retail prices by month
+"[""source_value_mappings"",1,""source_context""]",source_context,string,Table identity / routing to fertilizer retail price Key Family
+"[""source_value_mappings"",1,""target_field""]",target_field,string,DATAFLOW_OR_KEY_FAMILY
+"[""source_value_mappings"",1,""target_code""]",target_code,string,KF_AGR_FERTILIZER_RETAIL_PRICE
+"[""source_value_mappings"",1,""target_code_label""]",target_code_label,string,Fertilizer retail prices by product and month
+"[""source_value_mappings"",1,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",1,""target_standard""]",target_standard,string,"Local SDMX 2.0 Key Family/dataflow routing target; documented operational field, not an observation-level DSD component"
+"[""source_value_mappings"",1,""notes""]",notes,string,Use this table title to route observations to the fertilizer retail price structure. Retail price is fixed by this Key Family and is not represented by INDICATOR in the fertilizer DSD.
+"[""source_value_mappings"",1,""evidence_quote""]",evidence_quote,string,Table 2. Fertilizer retail prices by month
+"[""source_value_mappings"",2]",2,object,
+"[""source_value_mappings"",2,""source_value""]",source_value,string,Crop area and production are annual farm-survey aggregates.
+"[""source_value_mappings"",2,""source_context""]",source_context,string,Methodology statement for Table 1 crop area and production structure
+"[""source_value_mappings"",2,""target_field""]",target_field,string,FREQ
+"[""source_value_mappings"",2,""target_code""]",target_code,string,A
+"[""source_value_mappings"",2,""target_code_label""]",target_code_label,string,Annual
+"[""source_value_mappings"",2,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",2,""target_standard""]",target_standard,string,SDMX CL_FREQ candidate; exact version and annual code not confirmed
+"[""source_value_mappings"",2,""notes""]",notes,string,Annual frequency is semantically derived from the methodology statement. Candidate code A is present in the accepted CODELISTS artifact but must be verified against SDMX CL_FREQ before non-review production use.
+"[""source_value_mappings"",2,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates.
+"[""source_value_mappings"",3]",3,object,
+"[""source_value_mappings"",3,""source_value""]",source_value,string,Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""source_value_mappings"",3,""source_context""]",source_context,string,Methodology statement for Table 2 fertilizer retail price structure
+"[""source_value_mappings"",3,""target_field""]",target_field,string,FREQ
+"[""source_value_mappings"",3,""target_code""]",target_code,string,M
+"[""source_value_mappings"",3,""target_code_label""]",target_code_label,string,Monthly
+"[""source_value_mappings"",3,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",3,""target_standard""]",target_standard,string,SDMX CL_FREQ candidate; exact version and monthly code not confirmed
+"[""source_value_mappings"",3,""notes""]",notes,string,Monthly frequency is semantically derived from the methodology statement. Candidate code M is present in the accepted CODELISTS artifact but must be verified against SDMX CL_FREQ before non-review production use.
+"[""source_value_mappings"",3,""evidence_quote""]",evidence_quote,string,Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""source_value_mappings"",4]",4,object,
+"[""source_value_mappings"",4,""source_value""]",source_value,string,Year
+"[""source_value_mappings"",4,""source_context""]",source_context,string,Table 1 crop area and production column header
+"[""source_value_mappings"",4,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",4,""target_code""]",target_code,null,
+"[""source_value_mappings"",4,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",4,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",4,""target_standard""]",target_standard,string,SDMX time-period representation candidate
+"[""source_value_mappings"",4,""notes""]",notes,string,Year values such as 2024 and 2025 populate annual TIME_PERIOD in the crop structure.
+"[""source_value_mappings"",4,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""source_value_mappings"",5]",5,object,
+"[""source_value_mappings"",5,""source_value""]",source_value,string,Month
+"[""source_value_mappings"",5,""source_context""]",source_context,string,Table 2 fertilizer retail price column header
+"[""source_value_mappings"",5,""target_field""]",target_field,string,TIME_PERIOD
+"[""source_value_mappings"",5,""target_code""]",target_code,null,
+"[""source_value_mappings"",5,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",5,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",5,""target_standard""]",target_standard,string,SDMX time-period representation candidate
+"[""source_value_mappings"",5,""notes""]",notes,string,Month values such as 2025-01 populate monthly TIME_PERIOD in the fertilizer price structure.
+"[""source_value_mappings"",5,""evidence_quote""]",evidence_quote,string,Product                             Month                                     Price                                      Unit                                      Status
+"[""source_value_mappings"",6]",6,object,
+"[""source_value_mappings"",6,""source_value""]",source_value,string,Region
+"[""source_value_mappings"",6,""source_context""]",source_context,string,Table 1 crop area and production column header
+"[""source_value_mappings"",6,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",6,""target_code""]",target_code,null,
+"[""source_value_mappings"",6,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",6,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",6,""target_standard""]",target_standard,string,Local region codelist CL_AGRI_REGION_LOCAL version 1.0
+"[""source_value_mappings"",6,""notes""]",notes,string,The report column Region is mapped to REF_AREA using local region codes; no UN M49 or ISO 3166 mapping is confirmed. Field is applicable only for the crop structure.
+"[""source_value_mappings"",6,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""source_value_mappings"",7]",7,object,
+"[""source_value_mappings"",7,""source_value""]",source_value,string,Northland
+"[""source_value_mappings"",7,""source_context""]",source_context,string,Table 1 Region value
+"[""source_value_mappings"",7,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",7,""target_code""]",target_code,string,NORTHLAND
+"[""source_value_mappings"",7,""target_code_label""]",target_code_label,string,Northland
+"[""source_value_mappings"",7,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",7,""target_standard""]",target_standard,string,Local region codelist CL_AGRI_REGION_LOCAL version 1.0
+"[""source_value_mappings"",7,""notes""]",notes,string,Local synthetic region value; authoritative geography mapping unresolved.
+"[""source_value_mappings"",7,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""source_value_mappings"",8]",8,object,
+"[""source_value_mappings"",8,""source_value""]",source_value,string,Centralia
+"[""source_value_mappings"",8,""source_context""]",source_context,string,Table 1 Region value
+"[""source_value_mappings"",8,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",8,""target_code""]",target_code,string,CENTRALIA
+"[""source_value_mappings"",8,""target_code_label""]",target_code_label,string,Centralia
+"[""source_value_mappings"",8,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",8,""target_standard""]",target_standard,string,Local region codelist CL_AGRI_REGION_LOCAL version 1.0
+"[""source_value_mappings"",8,""notes""]",notes,string,Local synthetic region value; authoritative geography mapping unresolved.
+"[""source_value_mappings"",8,""evidence_quote""]",evidence_quote,string,Rice                           Centralia                  2024                     37859                       Hectares                  260371                   Tonnes                         Final
+"[""source_value_mappings"",9]",9,object,
+"[""source_value_mappings"",9,""source_value""]",source_value,string,South Coast
+"[""source_value_mappings"",9,""source_context""]",source_context,string,Table 1 Region value
+"[""source_value_mappings"",9,""target_field""]",target_field,string,REF_AREA
+"[""source_value_mappings"",9,""target_code""]",target_code,string,SOUTH_COAST
+"[""source_value_mappings"",9,""target_code_label""]",target_code_label,string,South Coast
+"[""source_value_mappings"",9,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",9,""target_standard""]",target_standard,string,Local region codelist CL_AGRI_REGION_LOCAL version 1.0
+"[""source_value_mappings"",9,""notes""]",notes,string,Local synthetic region value; authoritative geography mapping unresolved.
+"[""source_value_mappings"",9,""evidence_quote""]",evidence_quote,string,Rice                       South Coast                2024                     97629                       Hectares                  413952                   Tonnes                         Final
+"[""source_value_mappings"",10]",10,object,
+"[""source_value_mappings"",10,""source_value""]",source_value,string,Crop
+"[""source_value_mappings"",10,""source_context""]",source_context,string,Table 1 crop area and production column header
+"[""source_value_mappings"",10,""target_field""]",target_field,string,CROP
+"[""source_value_mappings"",10,""target_code""]",target_code,null,
+"[""source_value_mappings"",10,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",10,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",10,""target_standard""]",target_standard,string,Local crop codelist CL_AGRI_CROP_LOCAL version 1.0
+"[""source_value_mappings"",10,""notes""]",notes,string,The report crop column maps to the local CROP dimension pending authoritative classification review. Field is applicable only for the crop structure.
+"[""source_value_mappings"",10,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""source_value_mappings"",11]",11,object,
+"[""source_value_mappings"",11,""source_value""]",source_value,string,Rice
+"[""source_value_mappings"",11,""source_context""]",source_context,string,Table 1 Crop value
+"[""source_value_mappings"",11,""target_field""]",target_field,string,CROP
+"[""source_value_mappings"",11,""target_code""]",target_code,string,RICE
+"[""source_value_mappings"",11,""target_code_label""]",target_code_label,string,Rice
+"[""source_value_mappings"",11,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",11,""target_standard""]",target_standard,string,Local crop codelist CL_AGRI_CROP_LOCAL version 1.0
+"[""source_value_mappings"",11,""notes""]",notes,string,Common crop label retained locally; classification review required by the report.
+"[""source_value_mappings"",11,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""source_value_mappings"",12]",12,object,
+"[""source_value_mappings"",12,""source_value""]",source_value,string,Maize
+"[""source_value_mappings"",12,""source_context""]",source_context,string,Table 1 Crop value
+"[""source_value_mappings"",12,""target_field""]",target_field,string,CROP
+"[""source_value_mappings"",12,""target_code""]",target_code,string,MAIZE
+"[""source_value_mappings"",12,""target_code_label""]",target_code_label,string,Maize
+"[""source_value_mappings"",12,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",12,""target_standard""]",target_standard,string,Local crop codelist CL_AGRI_CROP_LOCAL version 1.0
+"[""source_value_mappings"",12,""notes""]",notes,string,Common crop label retained locally; classification review required by the report.
+"[""source_value_mappings"",12,""evidence_quote""]",evidence_quote,string,Maize                        Northland                  2024                     74135                       Hectares                  246372                   Tonnes                         Final
+"[""source_value_mappings"",13]",13,object,
+"[""source_value_mappings"",13,""source_value""]",source_value,string,Cassava
+"[""source_value_mappings"",13,""source_context""]",source_context,string,Table 1 Crop value
+"[""source_value_mappings"",13,""target_field""]",target_field,string,CROP
+"[""source_value_mappings"",13,""target_code""]",target_code,string,CASSAVA
+"[""source_value_mappings"",13,""target_code_label""]",target_code_label,string,Cassava
+"[""source_value_mappings"",13,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",13,""target_standard""]",target_standard,string,Local crop codelist CL_AGRI_CROP_LOCAL version 1.0
+"[""source_value_mappings"",13,""notes""]",notes,string,Common crop label retained locally; classification review required by the report.
+"[""source_value_mappings"",13,""evidence_quote""]",evidence_quote,string,Cassava                     Northland                  2024                     38062                       Hectares                  168890                   Tonnes                         Final
+"[""source_value_mappings"",14]",14,object,
+"[""source_value_mappings"",14,""source_value""]",source_value,string,Product
+"[""source_value_mappings"",14,""source_context""]",source_context,string,Table 2 fertilizer retail price column header
+"[""source_value_mappings"",14,""target_field""]",target_field,string,PRODUCT
+"[""source_value_mappings"",14,""target_code""]",target_code,null,
+"[""source_value_mappings"",14,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",14,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",14,""target_standard""]",target_standard,string,Local fertilizer product codelist CL_AGRI_FERTILIZER_PRODUCT_LOCAL version 1.0
+"[""source_value_mappings"",14,""notes""]",notes,string,The report product column maps to PRODUCT using local fertilizer market category codes; CPC mapping is not verified. Field is applicable only for the fertilizer price structure.
+"[""source_value_mappings"",14,""evidence_quote""]",evidence_quote,string,Product                             Month                                     Price                                      Unit                                      Status
+"[""source_value_mappings"",15]",15,object,
+"[""source_value_mappings"",15,""source_value""]",source_value,string,Urea
+"[""source_value_mappings"",15,""source_context""]",source_context,string,Table 2 Product value
+"[""source_value_mappings"",15,""target_field""]",target_field,string,PRODUCT
+"[""source_value_mappings"",15,""target_code""]",target_code,string,UREA
+"[""source_value_mappings"",15,""target_code_label""]",target_code_label,string,Urea
+"[""source_value_mappings"",15,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",15,""target_standard""]",target_standard,string,Local fertilizer product codelist CL_AGRI_FERTILIZER_PRODUCT_LOCAL version 1.0
+"[""source_value_mappings"",15,""notes""]",notes,string,Local market category; not a verified CPC code.
+"[""source_value_mappings"",15,""evidence_quote""]",evidence_quote,string,Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed
+"[""source_value_mappings"",16]",16,object,
+"[""source_value_mappings"",16,""source_value""]",source_value,string,Compound NPK
+"[""source_value_mappings"",16,""source_context""]",source_context,string,Table 2 Product value
+"[""source_value_mappings"",16,""target_field""]",target_field,string,PRODUCT
+"[""source_value_mappings"",16,""target_code""]",target_code,string,COMPOUND_NPK
+"[""source_value_mappings"",16,""target_code_label""]",target_code_label,string,Compound NPK
+"[""source_value_mappings"",16,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",16,""target_standard""]",target_standard,string,Local fertilizer product codelist CL_AGRI_FERTILIZER_PRODUCT_LOCAL version 1.0
+"[""source_value_mappings"",16,""notes""]",notes,string,Local market category; not a verified CPC code.
+"[""source_value_mappings"",16,""evidence_quote""]",evidence_quote,string,Compound NPK                             2025-01                                     387.57                                         Local currency per 50 kg bag                  Observed
+"[""source_value_mappings"",17]",17,object,
+"[""source_value_mappings"",17,""source_value""]",source_value,string,Area
+"[""source_value_mappings"",17,""source_context""]",source_context,string,Table 1 Area column header
+"[""source_value_mappings"",17,""target_field""]",target_field,string,INDICATOR
+"[""source_value_mappings"",17,""target_code""]",target_code,string,HARVESTED_AREA
+"[""source_value_mappings"",17,""target_code_label""]",target_code_label,string,Harvested area
+"[""source_value_mappings"",17,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",17,""target_standard""]",target_standard,string,"Local governed codelist CL_AGRI_MEASURE_LOCAL version 1.0, used by the DSD component INDICATOR"
+"[""source_value_mappings"",17,""notes""]",notes,string,The wide Area column is normalized in the crop structure to INDICATOR=HARVESTED_AREA with its numeric cell value placed in OBS_VALUE.
+"[""source_value_mappings"",17,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""source_value_mappings"",18]",18,object,
+"[""source_value_mappings"",18,""source_value""]",source_value,string,Area
+"[""source_value_mappings"",18,""source_context""]",source_context,string,Table 1 Area column numeric cells
+"[""source_value_mappings"",18,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",18,""target_code""]",target_code,null,
+"[""source_value_mappings"",18,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",18,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",18,""target_standard""]",target_standard,string,SDMX OBS_VALUE candidate
+"[""source_value_mappings"",18,""notes""]",notes,string,Numeric area values populate OBS_VALUE when INDICATOR=HARVESTED_AREA.
+"[""source_value_mappings"",18,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""source_value_mappings"",19]",19,object,
+"[""source_value_mappings"",19,""source_value""]",source_value,string,Production
+"[""source_value_mappings"",19,""source_context""]",source_context,string,Table 1 Production column header
+"[""source_value_mappings"",19,""target_field""]",target_field,string,INDICATOR
+"[""source_value_mappings"",19,""target_code""]",target_code,string,PRODUCTION
+"[""source_value_mappings"",19,""target_code_label""]",target_code_label,string,Production
+"[""source_value_mappings"",19,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",19,""target_standard""]",target_standard,string,"Local governed codelist CL_AGRI_MEASURE_LOCAL version 1.0, used by the DSD component INDICATOR"
+"[""source_value_mappings"",19,""notes""]",notes,string,The wide Production column is normalized in the crop structure to INDICATOR=PRODUCTION with its numeric cell value placed in OBS_VALUE.
+"[""source_value_mappings"",19,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""source_value_mappings"",20]",20,object,
+"[""source_value_mappings"",20,""source_value""]",source_value,string,Production
+"[""source_value_mappings"",20,""source_context""]",source_context,string,Table 1 Production column numeric cells
+"[""source_value_mappings"",20,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",20,""target_code""]",target_code,null,
+"[""source_value_mappings"",20,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",20,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",20,""target_standard""]",target_standard,string,SDMX OBS_VALUE candidate
+"[""source_value_mappings"",20,""notes""]",notes,string,Numeric production values populate OBS_VALUE when INDICATOR=PRODUCTION.
+"[""source_value_mappings"",20,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""source_value_mappings"",21]",21,object,
+"[""source_value_mappings"",21,""source_value""]",source_value,string,Price
+"[""source_value_mappings"",21,""source_context""]",source_context,string,Table 2 Price column numeric cells
+"[""source_value_mappings"",21,""target_field""]",target_field,string,OBS_VALUE
+"[""source_value_mappings"",21,""target_code""]",target_code,null,
+"[""source_value_mappings"",21,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",21,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",21,""target_standard""]",target_standard,string,SDMX OBS_VALUE candidate
+"[""source_value_mappings"",21,""notes""]",notes,string,"Numeric retail price values populate OBS_VALUE in the fertilizer price Key Family. Retail price is fixed by DATAFLOW_OR_KEY_FAMILY=KF_AGR_FERTILIZER_RETAIL_PRICE, so no INDICATOR value is required for fertilizer rows."
+"[""source_value_mappings"",21,""evidence_quote""]",evidence_quote,string,Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed
+"[""source_value_mappings"",22]",22,object,
+"[""source_value_mappings"",22,""source_value""]",source_value,string,Area unit
+"[""source_value_mappings"",22,""source_context""]",source_context,string,Table 1 Area unit column header
+"[""source_value_mappings"",22,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",22,""target_code""]",target_code,string,HECTARES
+"[""source_value_mappings"",22,""target_code_label""]",target_code_label,string,Hectares
+"[""source_value_mappings"",22,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",22,""target_standard""]",target_standard,string,Local unit codelist CL_AGRI_UNIT_MEASURE_LOCAL version 1.0
+"[""source_value_mappings"",22,""notes""]",notes,string,Area unit values are used as UNIT_MEASURE for INDICATOR=HARVESTED_AREA. Exact standard unit code not confirmed.
+"[""source_value_mappings"",22,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""source_value_mappings"",23]",23,object,
+"[""source_value_mappings"",23,""source_value""]",source_value,string,Hectares
+"[""source_value_mappings"",23,""source_context""]",source_context,string,Table 1 Area unit value
+"[""source_value_mappings"",23,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",23,""target_code""]",target_code,string,HECTARES
+"[""source_value_mappings"",23,""target_code_label""]",target_code_label,string,Hectares
+"[""source_value_mappings"",23,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",23,""target_standard""]",target_standard,string,Local unit codelist CL_AGRI_UNIT_MEASURE_LOCAL version 1.0
+"[""source_value_mappings"",23,""notes""]",notes,string,Local unit mapping retained pending authoritative unit-code verification.
+"[""source_value_mappings"",23,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""source_value_mappings"",24]",24,object,
+"[""source_value_mappings"",24,""source_value""]",source_value,string,Production unit
+"[""source_value_mappings"",24,""source_context""]",source_context,string,Table 1 Production unit column header
+"[""source_value_mappings"",24,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",24,""target_code""]",target_code,string,TONNES
+"[""source_value_mappings"",24,""target_code_label""]",target_code_label,string,Tonnes
+"[""source_value_mappings"",24,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",24,""target_standard""]",target_standard,string,Local unit codelist CL_AGRI_UNIT_MEASURE_LOCAL version 1.0
+"[""source_value_mappings"",24,""notes""]",notes,string,Production unit values are used as UNIT_MEASURE for INDICATOR=PRODUCTION. Exact standard unit code not confirmed.
+"[""source_value_mappings"",24,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""source_value_mappings"",25]",25,object,
+"[""source_value_mappings"",25,""source_value""]",source_value,string,Tonnes
+"[""source_value_mappings"",25,""source_context""]",source_context,string,Table 1 Production unit value
+"[""source_value_mappings"",25,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",25,""target_code""]",target_code,string,TONNES
+"[""source_value_mappings"",25,""target_code_label""]",target_code_label,string,Tonnes
+"[""source_value_mappings"",25,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",25,""target_standard""]",target_standard,string,Local unit codelist CL_AGRI_UNIT_MEASURE_LOCAL version 1.0
+"[""source_value_mappings"",25,""notes""]",notes,string,Local unit mapping retained pending authoritative unit-code verification; the definition states production is in metric tonnes.
+"[""source_value_mappings"",25,""evidence_quote""]",evidence_quote,string,Production is crop output in metric tonnes.
+"[""source_value_mappings"",26]",26,object,
+"[""source_value_mappings"",26,""source_value""]",source_value,string,Unit
+"[""source_value_mappings"",26,""source_context""]",source_context,string,Table 2 Unit column header
+"[""source_value_mappings"",26,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",26,""target_code""]",target_code,string,LOCAL_CURRENCY_PER_50KG_BAG
+"[""source_value_mappings"",26,""target_code_label""]",target_code_label,string,Local currency per 50 kg bag
+"[""source_value_mappings"",26,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",26,""target_standard""]",target_standard,string,Local unit codelist CL_AGRI_UNIT_MEASURE_LOCAL version 1.0
+"[""source_value_mappings"",26,""notes""]",notes,string,The Unit column in the fertilizer structure maps to the local price-unit code because the currency is unnamed.
+"[""source_value_mappings"",26,""evidence_quote""]",evidence_quote,string,Product                             Month                                     Price                                      Unit                                      Status
+"[""source_value_mappings"",27]",27,object,
+"[""source_value_mappings"",27,""source_value""]",source_value,string,Local currency per 50 kg bag
+"[""source_value_mappings"",27,""source_context""]",source_context,string,Table 2 Unit value
+"[""source_value_mappings"",27,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",27,""target_code""]",target_code,string,LOCAL_CURRENCY_PER_50KG_BAG
+"[""source_value_mappings"",27,""target_code_label""]",target_code_label,string,Local currency per 50 kg bag
+"[""source_value_mappings"",27,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",27,""target_standard""]",target_standard,string,Local unit codelist CL_AGRI_UNIT_MEASURE_LOCAL version 1.0
+"[""source_value_mappings"",27,""notes""]",notes,string,Currency cannot be mapped to ISO 4217 because the report states the local currency is deliberately unnamed.
+"[""source_value_mappings"",27,""evidence_quote""]",evidence_quote,string,Local currency per 50 kg bag
+"[""source_value_mappings"",28]",28,object,
+"[""source_value_mappings"",28,""source_value""]",source_value,string,Status
+"[""source_value_mappings"",28,""source_context""]",source_context,string,Table 1 status column header
+"[""source_value_mappings"",28,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",28,""target_code""]",target_code,null,
+"[""source_value_mappings"",28,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",28,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",28,""target_standard""]",target_standard,string,Local status codelist CL_AGRI_STATUS_LOCAL version 1.0; candidate review against SDMX CL_OBS_STATUS
+"[""source_value_mappings"",28,""notes""]",notes,string,The report status column qualifies crop observations. Exact mapping to SDMX CL_OBS_STATUS codes is not confirmed.
+"[""source_value_mappings"",28,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""source_value_mappings"",29]",29,object,
+"[""source_value_mappings"",29,""source_value""]",source_value,string,Status
+"[""source_value_mappings"",29,""source_context""]",source_context,string,Table 2 status column header
+"[""source_value_mappings"",29,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",29,""target_code""]",target_code,null,
+"[""source_value_mappings"",29,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",29,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",29,""target_standard""]",target_standard,string,Local status codelist CL_AGRI_STATUS_LOCAL version 1.0; candidate review against SDMX CL_OBS_STATUS
+"[""source_value_mappings"",29,""notes""]",notes,string,The report status column qualifies fertilizer price observations. Exact mapping to SDMX CL_OBS_STATUS codes is not confirmed.
+"[""source_value_mappings"",29,""evidence_quote""]",evidence_quote,string,Product                             Month                                     Price                                      Unit                                      Status
+"[""source_value_mappings"",30]",30,object,
+"[""source_value_mappings"",30,""source_value""]",source_value,string,Final
+"[""source_value_mappings"",30,""source_context""]",source_context,string,Table 1 Status value for 2024 crop area and production observations
+"[""source_value_mappings"",30,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",30,""target_code""]",target_code,string,FINAL
+"[""source_value_mappings"",30,""target_code_label""]",target_code_label,string,Final
+"[""source_value_mappings"",30,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",30,""target_standard""]",target_standard,string,Local status codelist CL_AGRI_STATUS_LOCAL version 1.0; candidate review against SDMX CL_OBS_STATUS
+"[""source_value_mappings"",30,""notes""]",notes,string,Preserved as local status because standard code equivalence is not confirmed.
+"[""source_value_mappings"",30,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""source_value_mappings"",31]",31,object,
+"[""source_value_mappings"",31,""source_value""]",source_value,string,Forecast
+"[""source_value_mappings"",31,""source_context""]",source_context,string,Table 1 Status value for 2025 crop area and production observations
+"[""source_value_mappings"",31,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",31,""target_code""]",target_code,string,FORECAST
+"[""source_value_mappings"",31,""target_code_label""]",target_code_label,string,Forecast
+"[""source_value_mappings"",31,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",31,""target_standard""]",target_standard,string,Local status codelist CL_AGRI_STATUS_LOCAL version 1.0; candidate review against SDMX CL_OBS_STATUS
+"[""source_value_mappings"",31,""notes""]",notes,string,Preserved as local status because standard code equivalence is not confirmed. The report states forecast production is not observed output.
+"[""source_value_mappings"",31,""evidence_quote""]",evidence_quote,string,Footnote: 2025 area and production are forecasts.
+"[""source_value_mappings"",32]",32,object,
+"[""source_value_mappings"",32,""source_value""]",source_value,string,Observed
+"[""source_value_mappings"",32,""source_context""]",source_context,string,Table 2 Status value for fertilizer retail price observations
+"[""source_value_mappings"",32,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",32,""target_code""]",target_code,string,OBSERVED
+"[""source_value_mappings"",32,""target_code_label""]",target_code_label,string,Observed
+"[""source_value_mappings"",32,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",32,""target_standard""]",target_standard,string,Local status codelist CL_AGRI_STATUS_LOCAL version 1.0; candidate review against SDMX CL_OBS_STATUS
+"[""source_value_mappings"",32,""notes""]",notes,string,Preserved as local status because standard code equivalence is not confirmed.
+"[""source_value_mappings"",32,""evidence_quote""]",evidence_quote,string,Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed
+"[""source_value_mappings"",33]",33,object,
+"[""source_value_mappings"",33,""source_value""]",source_value,string,Synthetic Agricultural Statistics Bureau
+"[""source_value_mappings"",33,""source_context""]",source_context,string,Report publisher line
+"[""source_value_mappings"",33,""target_field""]",target_field,string,REPORT_METADATA.COMPILING_ORG
+"[""source_value_mappings"",33,""target_code""]",target_code,null,
+"[""source_value_mappings"",33,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",33,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",33,""target_standard""]",target_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept and organization code not confirmed
+"[""source_value_mappings"",33,""notes""]",notes,string,"Text value retained as report-level reference metadata, not as an observation-level DSD attribute."
+"[""source_value_mappings"",33,""evidence_quote""]",evidence_quote,string,Synthetic Agricultural Statistics Bureau
+"[""source_value_mappings"",34]",34,object,
+"[""source_value_mappings"",34,""source_value""]",source_value,string,Publication date: 28 May 2026
+"[""source_value_mappings"",34,""source_context""]",source_context,string,Report publication date line
+"[""source_value_mappings"",34,""target_field""]",target_field,string,REPORT_METADATA.PUBLICATION_DATE
+"[""source_value_mappings"",34,""target_code""]",target_code,null,
+"[""source_value_mappings"",34,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",34,""mapping_type""]",mapping_type,string,DERIVED
+"[""source_value_mappings"",34,""target_standard""]",target_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""source_value_mappings"",34,""notes""]",notes,string,"May be normalized to ISO date 2026-05-28 in downstream metadata, while preserving the source text here."
+"[""source_value_mappings"",34,""evidence_quote""]",evidence_quote,string,Publication date: 28 May 2026
+"[""source_value_mappings"",35]",35,object,
+"[""source_value_mappings"",35,""source_value""]",source_value,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""source_value_mappings"",35,""source_context""]",source_context,string,Methodology section
+"[""source_value_mappings"",35,""target_field""]",target_field,string,REPORT_METADATA.METHODOLOGY
+"[""source_value_mappings"",35,""target_code""]",target_code,null,
+"[""source_value_mappings"",35,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",35,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",35,""target_standard""]",target_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""source_value_mappings"",35,""notes""]",notes,string,Text methodology retained as report-level reference metadata.
+"[""source_value_mappings"",35,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""source_value_mappings"",36]",36,object,
+"[""source_value_mappings"",36,""source_value""]",source_value,string,Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.
+"[""source_value_mappings"",36,""source_context""]",source_context,string,Source description section
+"[""source_value_mappings"",36,""target_field""]",target_field,string,REPORT_METADATA.SOURCE_DESCRIPTION
+"[""source_value_mappings"",36,""target_code""]",target_code,null,
+"[""source_value_mappings"",36,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",36,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",36,""target_standard""]",target_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""source_value_mappings"",36,""notes""]",notes,string,Text source description retained as report-level reference metadata.
+"[""source_value_mappings"",36,""evidence_quote""]",evidence_quote,string,Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.
+"[""source_value_mappings"",37]",37,object,
+"[""source_value_mappings"",37,""source_value""]",source_value,string,Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.
+"[""source_value_mappings"",37,""source_context""]",source_context,string,Caveats and limitations section
+"[""source_value_mappings"",37,""target_field""]",target_field,string,REPORT_METADATA.CAVEATS_LIMITATIONS
+"[""source_value_mappings"",37,""target_code""]",target_code,null,
+"[""source_value_mappings"",37,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",37,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",37,""target_standard""]",target_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""source_value_mappings"",37,""notes""]",notes,string,"Full caveats statement retained as report-level reference metadata. Individual caveats also drive unresolved mappings for crop classification, currency/unit standardization, and forecast status."
+"[""source_value_mappings"",37,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.
+"[""source_value_mappings"",38]",38,object,
+"[""source_value_mappings"",38,""source_value""]",source_value,string,Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.
+"[""source_value_mappings"",38,""source_context""]",source_context,string,Revision policy section
+"[""source_value_mappings"",38,""target_field""]",target_field,string,REPORT_METADATA.REVISION_POLICY
+"[""source_value_mappings"",38,""target_code""]",target_code,null,
+"[""source_value_mappings"",38,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",38,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",38,""target_standard""]",target_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""source_value_mappings"",38,""notes""]",notes,string,Text revision policy retained as report-level reference metadata.
+"[""source_value_mappings"",38,""evidence_quote""]",evidence_quote,string,Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.
+"[""source_value_mappings"",39]",39,object,
+"[""source_value_mappings"",39,""source_value""]",source_value,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""source_value_mappings"",39,""source_context""]",source_context,string,Confidentiality section
+"[""source_value_mappings"",39,""target_field""]",target_field,string,REPORT_METADATA.CONFIDENTIALITY
+"[""source_value_mappings"",39,""target_code""]",target_code,null,
+"[""source_value_mappings"",39,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",39,""mapping_type""]",mapping_type,string,EXACT
+"[""source_value_mappings"",39,""target_standard""]",target_standard,string,Reference metadata / MSD handoff; exact SDMX metadata concept not confirmed
+"[""source_value_mappings"",39,""notes""]",notes,string,Text confidentiality statement retained as report-level reference metadata.
+"[""source_value_mappings"",39,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""source_value_mappings"",40]",40,object,
+"[""source_value_mappings"",40,""source_value""]",source_value,string,Crop names are common labels and require classification review.
+"[""source_value_mappings"",40,""source_context""]",source_context,string,Caveats and limitations section
+"[""source_value_mappings"",40,""target_field""]",target_field,string,CROP
+"[""source_value_mappings"",40,""target_code""]",target_code,null,
+"[""source_value_mappings"",40,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",40,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",40,""target_standard""]",target_standard,string,Authoritative crop or product classification not confirmed
+"[""source_value_mappings"",40,""notes""]",notes,string,This caveat prevents automatic mapping of crop labels to CPC or another crop classification.
+"[""source_value_mappings"",40,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review.
+"[""source_value_mappings"",41]",41,object,
+"[""source_value_mappings"",41,""source_value""]",source_value,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""source_value_mappings"",41,""source_context""]",source_context,string,Table 2 footnote
+"[""source_value_mappings"",41,""target_field""]",target_field,string,PRODUCT
+"[""source_value_mappings"",41,""target_code""]",target_code,null,
+"[""source_value_mappings"",41,""target_code_label""]",target_code_label,null,
+"[""source_value_mappings"",41,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",41,""target_standard""]",target_standard,string,CPC or other product classification not confirmed
+"[""source_value_mappings"",41,""notes""]",notes,string,This footnote prevents automatic mapping of fertilizer product labels to CPC codes.
+"[""source_value_mappings"",41,""evidence_quote""]",evidence_quote,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""source_value_mappings"",42]",42,object,
+"[""source_value_mappings"",42,""source_value""]",source_value,string,The local currency is deliberately unnamed.
+"[""source_value_mappings"",42,""source_context""]",source_context,string,Caveats and limitations section
+"[""source_value_mappings"",42,""target_field""]",target_field,string,UNIT_MEASURE
+"[""source_value_mappings"",42,""target_code""]",target_code,string,LOCAL_CURRENCY_PER_50KG_BAG
+"[""source_value_mappings"",42,""target_code_label""]",target_code_label,string,Local currency per 50 kg bag
+"[""source_value_mappings"",42,""mapping_type""]",mapping_type,string,UNRESOLVED
+"[""source_value_mappings"",42,""target_standard""]",target_standard,string,ISO 4217 and authoritative unit codelist mapping not confirmed
+"[""source_value_mappings"",42,""notes""]",notes,string,The price unit is retained locally because the currency identity is deliberately not stated.
+"[""source_value_mappings"",42,""evidence_quote""]",evidence_quote,string,The local currency is deliberately unnamed.
+"[""source_value_mappings"",43]",43,object,
+"[""source_value_mappings"",43,""source_value""]",source_value,string,Forecast production is not observed output.
+"[""source_value_mappings"",43,""source_context""]",source_context,string,Caveats and limitations section
+"[""source_value_mappings"",43,""target_field""]",target_field,string,OBS_STATUS
+"[""source_value_mappings"",43,""target_code""]",target_code,string,FORECAST
+"[""source_value_mappings"",43,""target_code_label""]",target_code_label,string,Forecast
+"[""source_value_mappings"",43,""mapping_type""]",mapping_type,string,LOCAL_EQUIVALENT
+"[""source_value_mappings"",43,""target_standard""]",target_standard,string,Local status codelist CL_AGRI_STATUS_LOCAL version 1.0; candidate review against SDMX CL_OBS_STATUS
+"[""source_value_mappings"",43,""notes""]",notes,string,The report's forecast status is semantically important and must not be treated as observed output. Exact SDMX CL_OBS_STATUS code equivalence is not confirmed.
+"[""source_value_mappings"",43,""evidence_quote""]",evidence_quote,string,Forecast production is not observed output.
+"[""unresolved""]",unresolved,array,
+"[""unresolved"",0]",0,string,"Verify SDMX CL_FREQ maintenance agency, version, and annual/monthly code values before non-review production use; candidate A and M are included only because the accepted CODELISTS artifact recorded them as candidate codes."
+"[""unresolved"",1]",1,string,"Confirm whether report status values Final, Forecast, and Observed have exact equivalents in SDMX CL_OBS_STATUS or should remain local."
+"[""unresolved"",2]",2,string,"Review Rice, Maize, and Cassava against an authoritative agricultural crop or product classification and record the classification version."
+"[""unresolved"",3]",3,string,Review Urea and Compound NPK against CPC or another appropriate fertilizer product classification and record the classification version.
+"[""unresolved"",4]",4,string,Identify or confirm authoritative unit codelist/code mappings for hectares and metric tonnes.
+"[""unresolved"",5]",5,string,The fertilizer price unit cannot be fully standardized until the unnamed local currency is identified or a governed local currency-placeholder policy is approved.
+"[""unresolved"",6]",6,string,"Confirm whether Northland, Centralia, and South Coast are purely synthetic report regions or belong to a governed local geography codelist."
+"[""unresolved"",7]",7,string,"Update or annotate the accepted DSD implementation so its older local codelist IDs are reconciled to the governed CODELISTS IDs used here: CL_AGRI_REGION_LOCAL, CL_AGRI_CROP_LOCAL, CL_AGRI_FERTILIZER_PRODUCT_LOCAL, CL_AGRI_MEASURE_LOCAL, CL_AGRI_UNIT_MEASURE_LOCAL, and CL_AGRI_STATUS_LOCAL."
+"[""unresolved"",8]",8,string,Confirm final implementation treatment for routing: preferred implementation is separate Key Families/dataflows for crop and fertilizer structures; DATAFLOW_OR_KEY_FAMILY is an operational extraction field and not a formal observation-level DSD component.
+"[""unresolved"",9]",9,string,"Confirm exact SDMX reference metadata concept IDs and attachment levels for methodology, source description, caveats and limitations, revision policy, confidentiality, compiling organisation, and publication date before producing a formal MSD or Metadata Set."

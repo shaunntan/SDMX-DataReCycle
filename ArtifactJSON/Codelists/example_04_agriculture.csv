@@ -1,0 +1,290 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CODELISTS
+"[""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""source_sha256""]",source_sha256,string,0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f
+"[""principles_file""]",principles_file,string,02_CODELISTS.txt
+"[""principles_sha256""]",principles_sha256,string,5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Registry codelist catalogue
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,items/codelist
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,The fetched official SDMX Global Registry page confirms a codelist catalogue/search interface with codelist details and export functions. The supplied excerpt does not confirm individual codelist versions or code-level contents.
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",1,""version""]",version,string,not confirmed from supplied evidence
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,The supplied package identifies CL_FREQ as the SDMX frequency codelist. The fetched registry excerpt confirms the registry codelist catalogue but does not expose CL_FREQ version or its code contents; reuse is therefore candidate pending registry verification.
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",2,""version""]",version,string,not confirmed from supplied evidence
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The fetched SDMX Glossary excerpt states that the Observation Status concept uses OBS_STATUS and that its codelist ID is CL_OBS_STATUS. The supplied evidence does not confirm exact status codes or whether the report's Final, Forecast and Observed labels map directly."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,UNSD
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Geographic coding/classification
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,UN M49
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",3,""evidence""]",evidence,string,"The fetched UN M49 excerpt lists countries and areas with numeric and alpha identifiers. It does not include or validate the report's synthetic regions Northland, Centralia and South Coast, so UN M49 is not confirmed as suitable for the report's region values."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,SDMX
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept guidance
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,SDMX_Glossary_Version_2_1
+"[""standard_references"",4,""version""]",version,string,2.1
+"[""standard_references"",4,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",4,""evidence""]",evidence,string,"The fetched glossary excerpt describes codelist identifiers and cross-domain concepts, including the relationship between Observation Status, OBS_STATUS and CL_OBS_STATUS. It supports reuse checking but does not provide all candidate code mappings for this report."
+"[""standard_references"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,The report states that crop names are common labels and require classification review; no CPC or other crop/product classification mapping is confirmed.
+"[""limitations"",1]",1,string,The report states that fertilizer products are local market categories and not verified CPC codes.
+"[""limitations"",2]",2,string,"The local currency is deliberately unnamed, so ISO 4217 currency coding cannot be confirmed for the fertilizer price unit."
+"[""limitations"",3]",3,string,"The regions Northland, Centralia and South Coast appear to be synthetic/local report regions and are not confirmed in UN M49 or ISO 3166 from the supplied evidence."
+"[""limitations"",4]",4,string,"The supplied official-source excerpts do not provide code-level contents or versions for SDMX CL_FREQ, CL_OBS_STATUS, unit-measure codelists, or domain agriculture codelists."
+"[""limitations"",5]",5,string,"Forecast, Final and Observed are preserved as report status categories; their exact mapping to SDMX CL_OBS_STATUS is candidate only."
+"[""codelists""]",codelists,array,
+"[""codelists"",0]",0,object,
+"[""codelists"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""codelists"",0,""name""]",name,string,Frequency
+"[""codelists"",0,""agency_id""]",agency_id,string,SDMX
+"[""codelists"",0,""version""]",version,string,not confirmed from supplied evidence
+"[""codelists"",0,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""codelists"",0,""maintenance_status""]",maintenance_status,string,AUTHORITATIVE_REFERENCE
+"[""codelists"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",0,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",0,""scope_notes""]",scope_notes,string,Candidate reuse of SDMX CL_FREQ for annual crop aggregates and monthly fertilizer prices. Exact version and code-level details were not confirmed from supplied official evidence.
+"[""codelists"",0,""codes""]",codes,array,
+"[""codelists"",0,""codes"",0]",0,object,
+"[""codelists"",0,""codes"",0,""code""]",code,string,A
+"[""codelists"",0,""codes"",0,""name""]",name,string,Annual
+"[""codelists"",0,""codes"",0,""definition""]",definition,string,Candidate frequency code for observations or aggregates occurring once per year.
+"[""codelists"",0,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",0,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates.
+"[""codelists"",0,""codes"",0,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",0,""codes"",1]",1,object,
+"[""codelists"",0,""codes"",1,""code""]",code,string,M
+"[""codelists"",0,""codes"",1,""name""]",name,string,Monthly
+"[""codelists"",0,""codes"",1,""definition""]",definition,string,Candidate frequency code for observations or aggregates occurring once per month.
+"[""codelists"",0,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",0,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",0,""codes"",1,""evidence_quote""]",evidence_quote,string,Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""codelists"",0,""codes"",1,""local_creation_justification""]",local_creation_justification,null,
+"[""codelists"",1]",1,object,
+"[""codelists"",1,""codelist_id""]",codelist_id,string,CL_AGRI_REGION_LOCAL
+"[""codelists"",1,""name""]",name,string,Local report regions
+"[""codelists"",1,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""codelists"",1,""version""]",version,string,1.0
+"[""codelists"",1,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""codelists"",1,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",1,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",1,""scope_notes""]",scope_notes,string,Local region values appearing in the synthetic report. No authoritative geographic coding was confirmed for these values from supplied evidence.
+"[""codelists"",1,""codes""]",codes,array,
+"[""codelists"",1,""codes"",0]",0,object,
+"[""codelists"",1,""codes"",0,""code""]",code,string,NORTHLAND
+"[""codelists"",1,""codes"",0,""name""]",name,string,Northland
+"[""codelists"",1,""codes"",0,""definition""]",definition,string,Local report region used for crop area and production records.
+"[""codelists"",1,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",1,""codes"",0,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""codelists"",1,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"The value appears as a report region, but no matching authoritative geographic code was confirmed from supplied evidence."
+"[""codelists"",1,""codes"",1]",1,object,
+"[""codelists"",1,""codes"",1,""code""]",code,string,CENTRALIA
+"[""codelists"",1,""codes"",1,""name""]",name,string,Centralia
+"[""codelists"",1,""codes"",1,""definition""]",definition,string,Local report region used for crop area and production records.
+"[""codelists"",1,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",1,""codes"",1,""evidence_quote""]",evidence_quote,string,Rice                           Centralia                  2024                     37859                       Hectares                  260371                   Tonnes                         Final
+"[""codelists"",1,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The value appears as a report region, but no matching authoritative geographic code was confirmed from supplied evidence."
+"[""codelists"",1,""codes"",2]",2,object,
+"[""codelists"",1,""codes"",2,""code""]",code,string,SOUTH_COAST
+"[""codelists"",1,""codes"",2,""name""]",name,string,South Coast
+"[""codelists"",1,""codes"",2,""definition""]",definition,string,Local report region used for crop area and production records.
+"[""codelists"",1,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",1,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",1,""codes"",2,""evidence_quote""]",evidence_quote,string,Rice                       South Coast                2024                     97629                       Hectares                  413952                   Tonnes                         Final
+"[""codelists"",1,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"The value appears as a report region, but no matching authoritative geographic code was confirmed from supplied evidence."
+"[""codelists"",2]",2,object,
+"[""codelists"",2,""codelist_id""]",codelist_id,string,CL_AGRI_CROP_LOCAL
+"[""codelists"",2,""name""]",name,string,Crop common labels requiring classification review
+"[""codelists"",2,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""codelists"",2,""version""]",version,string,1.0
+"[""codelists"",2,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""codelists"",2,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",2,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",2,""scope_notes""]",scope_notes,string,Report crop values are preserved as local/common labels pending review against an authoritative product or crop classification.
+"[""codelists"",2,""codes""]",codes,array,
+"[""codelists"",2,""codes"",0]",0,object,
+"[""codelists"",2,""codes"",0,""code""]",code,string,RICE
+"[""codelists"",2,""codes"",0,""name""]",name,string,Rice
+"[""codelists"",2,""codes"",0,""definition""]",definition,string,Common crop label used in the report; authoritative classification code not confirmed.
+"[""codelists"",2,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",2,""codes"",0,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""codelists"",2,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"The report contains the crop label, but states crop names require classification review; no confirmed authoritative code was supplied."
+"[""codelists"",2,""codes"",1]",1,object,
+"[""codelists"",2,""codes"",1,""code""]",code,string,MAIZE
+"[""codelists"",2,""codes"",1,""name""]",name,string,Maize
+"[""codelists"",2,""codes"",1,""definition""]",definition,string,Common crop label used in the report; authoritative classification code not confirmed.
+"[""codelists"",2,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",2,""codes"",1,""evidence_quote""]",evidence_quote,string,Maize                        Northland                  2024                     74135                       Hectares                  246372                   Tonnes                         Final
+"[""codelists"",2,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The report contains the crop label, but states crop names require classification review; no confirmed authoritative code was supplied."
+"[""codelists"",2,""codes"",2]",2,object,
+"[""codelists"",2,""codes"",2,""code""]",code,string,CASSAVA
+"[""codelists"",2,""codes"",2,""name""]",name,string,Cassava
+"[""codelists"",2,""codes"",2,""definition""]",definition,string,Common crop label used in the report; authoritative classification code not confirmed.
+"[""codelists"",2,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",2,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",2,""codes"",2,""evidence_quote""]",evidence_quote,string,Cassava                     Northland                  2024                     38062                       Hectares                  168890                   Tonnes                         Final
+"[""codelists"",2,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"The report contains the crop label, but states crop names require classification review; no confirmed authoritative code was supplied."
+"[""codelists"",3]",3,object,
+"[""codelists"",3,""codelist_id""]",codelist_id,string,CL_AGRI_FERTILIZER_PRODUCT_LOCAL
+"[""codelists"",3,""name""]",name,string,Fertilizer local market product categories
+"[""codelists"",3,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""codelists"",3,""version""]",version,string,1.0
+"[""codelists"",3,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""codelists"",3,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",3,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",3,""scope_notes""]",scope_notes,string,Fertilizer product values are local market categories and are not verified CPC codes in the report.
+"[""codelists"",3,""codes""]",codes,array,
+"[""codelists"",3,""codes"",0]",0,object,
+"[""codelists"",3,""codes"",0,""code""]",code,string,UREA
+"[""codelists"",3,""codes"",0,""name""]",name,string,Urea
+"[""codelists"",3,""codes"",0,""definition""]",definition,string,Local market fertilizer product category used in the price table; CPC mapping not confirmed.
+"[""codelists"",3,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",3,""codes"",0,""evidence_quote""]",evidence_quote,string,Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed
+"[""codelists"",3,""codes"",0,""local_creation_justification""]",local_creation_justification,string,The report value is a local market category and the report says products are not verified CPC codes.
+"[""codelists"",3,""codes"",1]",1,object,
+"[""codelists"",3,""codes"",1,""code""]",code,string,COMPOUND_NPK
+"[""codelists"",3,""codes"",1,""name""]",name,string,Compound NPK
+"[""codelists"",3,""codes"",1,""definition""]",definition,string,Local market fertilizer product category used in the price table; CPC mapping not confirmed.
+"[""codelists"",3,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",3,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",3,""codes"",1,""evidence_quote""]",evidence_quote,string,Compound NPK                             2025-01                                     387.57                                         Local currency per 50 kg bag                  Observed
+"[""codelists"",3,""codes"",1,""local_creation_justification""]",local_creation_justification,string,The report value is a local market category and the report says products are not verified CPC codes.
+"[""codelists"",4]",4,object,
+"[""codelists"",4,""codelist_id""]",codelist_id,string,CL_AGRI_MEASURE_LOCAL
+"[""codelists"",4,""name""]",name,string,Agricultural measures in the report
+"[""codelists"",4,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""codelists"",4,""version""]",version,string,1.0
+"[""codelists"",4,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""codelists"",4,""maintenance_status""]",maintenance_status,string,PROPOSED_LOCAL
+"[""codelists"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""codelists"",4,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",4,""scope_notes""]",scope_notes,string,"Local measure/indicator list covering crop area, crop production and fertilizer retail price. This preserves the report's separate production and price structures without treating each table as a separate codelist."
+"[""codelists"",4,""codes""]",codes,array,
+"[""codelists"",4,""codes"",0]",0,object,
+"[""codelists"",4,""codes"",0,""code""]",code,string,HARVESTED_AREA
+"[""codelists"",4,""codes"",0,""name""]",name,string,Harvested area
+"[""codelists"",4,""codes"",0,""definition""]",definition,string,"Area of crop harvested, measured in hectares in the report."
+"[""codelists"",4,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",4,""codes"",0,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested.
+"[""codelists"",4,""codes"",0,""local_creation_justification""]",local_creation_justification,string,The report defines a specific statistical measure; no supplied authoritative indicator codelist was confirmed.
+"[""codelists"",4,""codes"",1]",1,object,
+"[""codelists"",4,""codes"",1,""code""]",code,string,PRODUCTION
+"[""codelists"",4,""codes"",1,""name""]",name,string,Production
+"[""codelists"",4,""codes"",1,""definition""]",definition,string,"Crop output, measured in metric tonnes in the report."
+"[""codelists"",4,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",4,""codes"",1,""evidence_quote""]",evidence_quote,string,Production is crop output in metric tonnes.
+"[""codelists"",4,""codes"",1,""local_creation_justification""]",local_creation_justification,string,The report defines a specific statistical measure; no supplied authoritative indicator codelist was confirmed.
+"[""codelists"",4,""codes"",2]",2,object,
+"[""codelists"",4,""codes"",2,""code""]",code,string,RETAIL_PRICE
+"[""codelists"",4,""codes"",2,""name""]",name,string,Retail price
+"[""codelists"",4,""codes"",2,""definition""]",definition,string,Median observed fertilizer retail price per 50 kg bag.
+"[""codelists"",4,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",4,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",4,""codes"",2,""evidence_quote""]",evidence_quote,string,Retail price is the median observed price per 50 kg bag.
+"[""codelists"",4,""codes"",2,""local_creation_justification""]",local_creation_justification,string,The report defines a specific statistical measure; no supplied authoritative indicator codelist was confirmed.
+"[""codelists"",5]",5,object,
+"[""codelists"",5,""codelist_id""]",codelist_id,string,CL_AGRI_UNIT_MEASURE_LOCAL
+"[""codelists"",5,""name""]",name,string,Report unit measures
+"[""codelists"",5,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""codelists"",5,""version""]",version,string,1.0
+"[""codelists"",5,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""codelists"",5,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",5,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",5,""scope_notes""]",scope_notes,string,Unit labels are taken from the report. Hectares and tonnes should be mapped to an authoritative unit codelist at implementation; the fertilizer price unit cannot be fully standardized because the currency is unnamed.
+"[""codelists"",5,""codes""]",codes,array,
+"[""codelists"",5,""codes"",0]",0,object,
+"[""codelists"",5,""codes"",0,""code""]",code,string,HECTARES
+"[""codelists"",5,""codes"",0,""name""]",name,string,Hectares
+"[""codelists"",5,""codes"",0,""definition""]",definition,string,Unit used for harvested crop area in the report.
+"[""codelists"",5,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",0,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""codelists"",5,""codes"",0,""local_creation_justification""]",local_creation_justification,string,"The unit appears in the report, but no supplied official-source evidence confirmed the exact authoritative unit codelist/code to reuse."
+"[""codelists"",5,""codes"",1]",1,object,
+"[""codelists"",5,""codes"",1,""code""]",code,string,TONNES
+"[""codelists"",5,""codes"",1,""name""]",name,string,Tonnes
+"[""codelists"",5,""codes"",1,""definition""]",definition,string,Unit used for crop production in the report; the definitions section describes production as metric tonnes.
+"[""codelists"",5,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",1,""evidence_quote""]",evidence_quote,string,Production is crop output in metric tonnes.
+"[""codelists"",5,""codes"",1,""local_creation_justification""]",local_creation_justification,string,"The unit appears in the report, but no supplied official-source evidence confirmed the exact authoritative unit codelist/code to reuse."
+"[""codelists"",5,""codes"",2]",2,object,
+"[""codelists"",5,""codes"",2,""code""]",code,string,LOCAL_CURRENCY_PER_50KG_BAG
+"[""codelists"",5,""codes"",2,""name""]",name,string,Local currency per 50 kg bag
+"[""codelists"",5,""codes"",2,""definition""]",definition,string,Price unit for fertilizer retail prices; currency identity is not named in the report.
+"[""codelists"",5,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",5,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",5,""codes"",2,""evidence_quote""]",evidence_quote,string,The local currency is deliberately unnamed.
+"[""codelists"",5,""codes"",2,""local_creation_justification""]",local_creation_justification,string,"A local code is needed because the report deliberately withholds the currency identity, preventing confirmed ISO 4217 mapping."
+"[""codelists"",6]",6,object,
+"[""codelists"",6,""codelist_id""]",codelist_id,string,CL_AGRI_STATUS_LOCAL
+"[""codelists"",6,""name""]",name,string,Report status categories
+"[""codelists"",6,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""codelists"",6,""version""]",version,string,1.0
+"[""codelists"",6,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""codelists"",6,""maintenance_status""]",maintenance_status,string,CANDIDATE_MAPPING
+"[""codelists"",6,""verification_status""]",verification_status,string,CANDIDATE
+"[""codelists"",6,""date_checked""]",date_checked,string,2026-09-16
+"[""codelists"",6,""scope_notes""]",scope_notes,string,"Report status values are preserved locally. Mapping to SDMX CL_OBS_STATUS is candidate only because supplied evidence does not confirm exact code equivalence for Final, Forecast and Observed."
+"[""codelists"",6,""codes""]",codes,array,
+"[""codelists"",6,""codes"",0]",0,object,
+"[""codelists"",6,""codes"",0,""code""]",code,string,FINAL
+"[""codelists"",6,""codes"",0,""name""]",name,string,Final
+"[""codelists"",6,""codes"",0,""definition""]",definition,string,Status used for finalized crop area and production records in the report.
+"[""codelists"",6,""codes"",0,""parent_code""]",parent_code,null,
+"[""codelists"",6,""codes"",0,""status""]",status,string,ACTIVE
+"[""codelists"",6,""codes"",0,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""codelists"",6,""codes"",0,""local_creation_justification""]",local_creation_justification,string,The report uses this status value; exact mapping to an authoritative observation-status code was not confirmed from supplied evidence.
+"[""codelists"",6,""codes"",1]",1,object,
+"[""codelists"",6,""codes"",1,""code""]",code,string,FORECAST
+"[""codelists"",6,""codes"",1,""name""]",name,string,Forecast
+"[""codelists"",6,""codes"",1,""definition""]",definition,string,"Status for crop area and production values forecast for 2025, not observed output."
+"[""codelists"",6,""codes"",1,""parent_code""]",parent_code,null,
+"[""codelists"",6,""codes"",1,""status""]",status,string,ACTIVE
+"[""codelists"",6,""codes"",1,""evidence_quote""]",evidence_quote,string,Footnote: 2025 area and production are forecasts.
+"[""codelists"",6,""codes"",1,""local_creation_justification""]",local_creation_justification,string,The report uses this status value and states forecasts are not observed output; exact mapping to an authoritative observation-status code was not confirmed from supplied evidence.
+"[""codelists"",6,""codes"",2]",2,object,
+"[""codelists"",6,""codes"",2,""code""]",code,string,OBSERVED
+"[""codelists"",6,""codes"",2,""name""]",name,string,Observed
+"[""codelists"",6,""codes"",2,""definition""]",definition,string,Status used for fertilizer retail price observations from the outlet panel.
+"[""codelists"",6,""codes"",2,""parent_code""]",parent_code,null,
+"[""codelists"",6,""codes"",2,""status""]",status,string,ACTIVE
+"[""codelists"",6,""codes"",2,""evidence_quote""]",evidence_quote,string,Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed
+"[""codelists"",6,""codes"",2,""local_creation_justification""]",local_creation_justification,string,The report uses this status value; exact mapping to an authoritative observation-status code was not confirmed from supplied evidence.

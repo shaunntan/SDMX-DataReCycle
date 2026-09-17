@@ -1,0 +1,27 @@
+{
+  "artifact_type": "DATAFLOW",
+  "source_report": "06_sdmx_30_energy_full_case.xml",
+  "source_sha256": "59417aaf0971ab0f67d10c74607096ed92ede9e93fe55d656093e93631c5aeb8",
+  "principles_file": "04_DATAFLOW.txt",
+  "principles_sha256": "0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "dataflows": [
+    {
+      "dataflow_id": "DF_ENE",
+      "name": "Energy Statistics",
+      "agency_id": "DEMO",
+      "version": "1.0.0",
+      "dsd_id": "DSD_ENE",
+      "dsd_agency_id": "DEMO",
+      "dsd_version": "1.0.0",
+      "description": "Energy Statistics",
+      "coverage": "Energy Statistics",
+      "evidence_quote": "Energy Statistics"
+    }
+  ]
+}

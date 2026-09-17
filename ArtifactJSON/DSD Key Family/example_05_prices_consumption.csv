@@ -1,0 +1,270 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DSD / Key Family
+"[""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""source_sha256""]",source_sha256,string,71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5
+"[""principles_file""]",principles_file,string,03_DSD_KEY_FAMILY.txt
+"[""principles_sha256""]",principles_sha256,string,b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Codelist catalog
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Global Registry codelists catalog
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied registry excerpt shows the official SDMX registry interface includes a searchable Codelists area and structure export functions, but it does not confirm any specific codelist entry, agency, version, or code mapping for this report."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Glossary / Cross-domain concept guidance
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX Glossary 2.1
+"[""standard_references"",1,""version""]",version,string,2.1
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied glossary excerpt states that cross-domain concepts support reuse across organisations and gives Observation Status as an example with concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. The excerpt does not confirm the exact code mappings for the report values Final or Provisional, and it does not support treating Survey estimate as an observation-status code."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",2,""version""]",version,string,not stated
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied registry excerpt confirms the existence of a registry codelist search/catalog, but it does not itself confirm the CL_FREQ item, its maintenance agency, version, or codes. CL_FREQ remains a candidate standard codelist to verify before production use."
+"[""standard_references"",2,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,UNSD
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Geographic code reference
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,UN M49
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",3,""evidence""]",evidence,string,"The supplied UN M49 excerpt shows country and area entries with numeric and alpha codes, but the report does not state a reference area, so no REF_AREA codelist is applied in the DSDs."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,UNSD / SDMX candidate
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Classification / codelist candidate
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,COICOP / CL_COICOP_2018
+"[""standard_references"",4,""version""]",version,string,not confirmed
+"[""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""standard_references"",4,""evidence""]",evidence,string,"The supplied package references COICOP as the relevant consumption classification source, but no supplied external evidence confirms the report's consumption divisions correspond to a particular COICOP revision or codelist version."
+"[""standard_references"",4,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",5]",5,object,
+"[""standard_references"",5,""agency""]",agency,string,SDMX
+"[""standard_references"",5,""artifact_type""]",artifact_type,string,Concept and codelist candidate
+"[""standard_references"",5,""artifact_id""]",artifact_id,string,DEG_URB / CL_DEG_URB
+"[""standard_references"",5,""version""]",version,string,not confirmed
+"[""standard_references"",5,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",5,""evidence""]",evidence,string,"The supplied shared reference catalog lists DEG_URB as a common SDMX dimension candidate and CL_DEG_URB as a standard source to check. The supplied official registry excerpt does not confirm the exact codelist entry, version, definitions, or that the report's Urban/Rural labels follow degree-of-urbanisation semantics."
+"[""standard_references"",5,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The report does not state a reference area or country; REF_AREA is therefore not included, and any production implementation should add it if the reporting geography is later supplied."
+"[""limitations"",1]",1,string,Consumption divisions are not mapped to COICOP because the report explicitly says the revision is not confirmed.
+"[""limitations"",2]",2,string,"The report does not name the local currency, so the household spending unit must remain a local-currency unit without ISO 4217 currency coding."
+"[""limitations"",3]",3,string,"Exact SDMX codelist versions and code mappings for FREQ, UNIT_MEASURE and OBS_STATUS were not confirmed from the supplied external evidence."
+"[""limitations"",4]",4,string,The report statuses Final and Provisional are retained as source/local CPI status values; mapping to standard SDMX observation-status codes requires separate verification.
+"[""limitations"",5]",5,string,The household status value Survey estimate is modelled as an estimation-type qualifier rather than OBS_STATUS because it is constant in the shown household table and describes the survey-estimate nature of the data.
+"[""limitations"",6]",6,string,Urban/Rural residence is not mapped to SDMX DEG_URB / CL_DEG_URB because the report does not define the residence classification or confirm degree-of-urbanisation semantics; mapping requires source-institution confirmation.
+"[""limitations"",7]",7,string,Household expenditure quintile definitions are only described as being within the synthetic survey distribution; exact cut-off methodology is not included in the DSD.
+"[""limitations"",8]",8,string,"All records and values are synthetic, limiting the applicability of the structures as production statistical artefacts without institutional validation."
+"[""data_structures""]",data_structures,array,
+"[""data_structures"",0]",0,object,
+"[""data_structures"",0,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""data_structures"",0,""name""]",name,string,Consumer price index by consumption division and month
+"[""data_structures"",0,""agency_id""]",agency_id,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",0,""version""]",version,string,1.0
+"[""data_structures"",0,""statistical_scope""]",statistical_scope,string,"Monthly CPI fixed-basket index by consumption division, measuring price change relative to 2023=100."
+"[""data_structures"",0,""components""]",components,array,
+"[""data_structures"",0,""components"",0]",0,object,
+"[""data_structures"",0,""components"",0,""position""]",position,integer,1
+"[""data_structures"",0,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""data_structures"",0,""components"",0,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",0,""representation""]",representation,string,Coded frequency; candidate use of SDMX CL_FREQ
+"[""data_structures"",0,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""data_structures"",0,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""data_structures"",0,""components"",0,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",0,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",0,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",0,""notes""]",notes,string,Frequency is monthly for this structure. Exact CL_FREQ version and code mapping are not confirmed in supplied external evidence.
+"[""data_structures"",0,""components"",0,""evidence_quote""]",evidence_quote,string,The CPI is a monthly fixed-basket index classified by consumption division.
+"[""data_structures"",0,""components"",1]",1,object,
+"[""data_structures"",0,""components"",1,""position""]",position,integer,2
+"[""data_structures"",0,""components"",1,""concept_id""]",concept_id,string,CONSUMPTION_DIVISION
+"[""data_structures"",0,""components"",1,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",1,""representation""]",representation,string,Coded local consumption division list
+"[""data_structures"",0,""components"",1,""codelist_agency""]",codelist_agency,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",0,""components"",1,""codelist_id""]",codelist_id,string,CL_SYNTH_CONSUMPTION_DIVISION
+"[""data_structures"",0,""components"",1,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",0,""components"",1,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",1,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",1,""notes""]",notes,string,"Local dimension because COICOP resemblance is noted but revision is not confirmed. Source values include Food and non-alcoholic beverages, Housing and utilities, and Transport."
+"[""data_structures"",0,""components"",1,""evidence_quote""]",evidence_quote,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""data_structures"",0,""components"",2]",2,object,
+"[""data_structures"",0,""components"",2,""position""]",position,integer,3
+"[""data_structures"",0,""components"",2,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""data_structures"",0,""components"",2,""role""]",role,string,TIME
+"[""data_structures"",0,""components"",2,""representation""]",representation,string,Monthly time period in YYYY-MM form
+"[""data_structures"",0,""components"",2,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",2,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",2,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",2,""data_type""]",data_type,string,TimePeriod
+"[""data_structures"",0,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",2,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",2,""notes""]",notes,string,Time is represented explicitly as the observation month.
+"[""data_structures"",0,""components"",2,""evidence_quote""]",evidence_quote,string,Table 1. Consumer price index by division and month
+"[""data_structures"",0,""components"",3]",3,object,
+"[""data_structures"",0,""components"",3,""position""]",position,null,
+"[""data_structures"",0,""components"",3,""concept_id""]",concept_id,string,OBS_VALUE
+"[""data_structures"",0,""components"",3,""role""]",role,string,MEASURE
+"[""data_structures"",0,""components"",3,""representation""]",representation,string,Numeric decimal index value
+"[""data_structures"",0,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",3,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",3,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",3,""data_type""]",data_type,string,Decimal
+"[""data_structures"",0,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",3,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",3,""notes""]",notes,string,Primary measure holds the CPI index value.
+"[""data_structures"",0,""components"",3,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100.
+"[""data_structures"",0,""components"",4]",4,object,
+"[""data_structures"",0,""components"",4,""position""]",position,null,
+"[""data_structures"",0,""components"",4,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""data_structures"",0,""components"",4,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",4,""representation""]",representation,string,Coded local unit list with plain index unit
+"[""data_structures"",0,""components"",4,""codelist_agency""]",codelist_agency,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",0,""components"",4,""codelist_id""]",codelist_id,string,CL_SYNTH_UNIT_MEASURE
+"[""data_structures"",0,""components"",4,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",0,""components"",4,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",4,""attachment_level""]",attachment_level,string,DATASET
+"[""data_structures"",0,""components"",4,""notes""]",notes,string,Unit is modelled as a plain index unit for parsimony and reuse; the base period qualifier is held separately in BASE_PERIOD. No authoritative unit codelist mapping is confirmed from supplied evidence.
+"[""data_structures"",0,""components"",4,""evidence_quote""]",evidence_quote,string,"Index, 2023=100"
+"[""data_structures"",0,""components"",5]",5,object,
+"[""data_structures"",0,""components"",5,""position""]",position,null,
+"[""data_structures"",0,""components"",5,""concept_id""]",concept_id,string,BASE_PERIOD
+"[""data_structures"",0,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",5,""representation""]",representation,string,Uncoded reference/base period text
+"[""data_structures"",0,""components"",5,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",5,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",5,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",5,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",5,""attachment_level""]",attachment_level,string,DATASET
+"[""data_structures"",0,""components"",5,""notes""]",notes,string,Base period qualifies the index and is constant for the CPI structure. This avoids making UNIT_MEASURE carry both the unit and the base-period qualifier.
+"[""data_structures"",0,""components"",5,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100.
+"[""data_structures"",0,""components"",6]",6,object,
+"[""data_structures"",0,""components"",6,""position""]",position,null,
+"[""data_structures"",0,""components"",6,""concept_id""]",concept_id,string,OBS_STATUS
+"[""data_structures"",0,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",6,""representation""]",representation,string,Coded local observation status list; standard OBS_STATUS concept candidate
+"[""data_structures"",0,""components"",6,""codelist_agency""]",codelist_agency,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",0,""components"",6,""codelist_id""]",codelist_id,string,CL_SYNTH_CPI_OBS_STATUS
+"[""data_structures"",0,""components"",6,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",0,""components"",6,""data_type""]",data_type,string,String
+"[""data_structures"",0,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",6,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""data_structures"",0,""components"",6,""notes""]",notes,string,Source statuses vary by observation month. Mapping of Final and Provisional to SDMX CL_OBS_STATUS is not confirmed from supplied external evidence.
+"[""data_structures"",0,""components"",6,""evidence_quote""]",evidence_quote,string,Footnote: April 2025 indices are provisional.
+"[""data_structures"",1]",1,object,
+"[""data_structures"",1,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""data_structures"",1,""name""]",name,string,Mean household spending by residence and expenditure quintile
+"[""data_structures"",1,""agency_id""]",agency_id,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",1,""version""]",version,string,1.0
+"[""data_structures"",1,""statistical_scope""]",statistical_scope,string,Annual survey estimate of mean monthly consumption expenditure per household by residence and expenditure quintile.
+"[""data_structures"",1,""components""]",components,array,
+"[""data_structures"",1,""components"",0]",0,object,
+"[""data_structures"",1,""components"",0,""position""]",position,integer,1
+"[""data_structures"",1,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""data_structures"",1,""components"",0,""role""]",role,string,DIMENSION
+"[""data_structures"",1,""components"",0,""representation""]",representation,string,Coded frequency; candidate use of SDMX CL_FREQ
+"[""data_structures"",1,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""data_structures"",1,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""data_structures"",1,""components"",0,""codelist_version""]",codelist_version,null,
+"[""data_structures"",1,""components"",0,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",0,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",0,""notes""]",notes,string,Frequency is annual for this survey structure. Exact CL_FREQ version and code mapping are not confirmed in supplied external evidence.
+"[""data_structures"",1,""components"",0,""evidence_quote""]",evidence_quote,string,"Household spending is an annual survey estimate by residence and expenditure quintile and is
+not a CPI observation."
+"[""data_structures"",1,""components"",1]",1,object,
+"[""data_structures"",1,""components"",1,""position""]",position,integer,2
+"[""data_structures"",1,""components"",1,""concept_id""]",concept_id,string,RESIDENCE
+"[""data_structures"",1,""components"",1,""role""]",role,string,DIMENSION
+"[""data_structures"",1,""components"",1,""representation""]",representation,string,Coded local residence classification
+"[""data_structures"",1,""components"",1,""codelist_agency""]",codelist_agency,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",1,""components"",1,""codelist_id""]",codelist_id,string,CL_SYNTH_RESIDENCE
+"[""data_structures"",1,""components"",1,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",1,""components"",1,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",1,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",1,""notes""]",notes,string,Residence is a statistical breakdown for the household spending observations. Source values shown are Urban and Rural. This is retained as a local dimension rather than mapped to SDMX DEG_URB / CL_DEG_URB because the report does not define the residence classification or confirm degree-of-urbanisation semantics.
+"[""data_structures"",1,""components"",1,""evidence_quote""]",evidence_quote,string,Table 2. Mean household spending by residence and quintile
+"[""data_structures"",1,""components"",2]",2,object,
+"[""data_structures"",1,""components"",2,""position""]",position,integer,3
+"[""data_structures"",1,""components"",2,""concept_id""]",concept_id,string,EXPENDITURE_QUINTILE
+"[""data_structures"",1,""components"",2,""role""]",role,string,DIMENSION
+"[""data_structures"",1,""components"",2,""representation""]",representation,string,Coded local expenditure quintile list
+"[""data_structures"",1,""components"",2,""codelist_agency""]",codelist_agency,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",1,""components"",2,""codelist_id""]",codelist_id,string,CL_SYNTH_EXPENDITURE_QUINTILE
+"[""data_structures"",1,""components"",2,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",1,""components"",2,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",2,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",2,""notes""]",notes,string,The report only shows lowest and highest quintile values; the structure represents the expenditure-quintile breakdown generally but local code definitions must preserve the source survey definition.
+"[""data_structures"",1,""components"",2,""evidence_quote""]",evidence_quote,string,Footnote: Quintiles are defined within the synthetic survey distribution.
+"[""data_structures"",1,""components"",3]",3,object,
+"[""data_structures"",1,""components"",3,""position""]",position,integer,4
+"[""data_structures"",1,""components"",3,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""data_structures"",1,""components"",3,""role""]",role,string,TIME
+"[""data_structures"",1,""components"",3,""representation""]",representation,string,Annual time period in YYYY form
+"[""data_structures"",1,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",1,""components"",3,""codelist_id""]",codelist_id,null,
+"[""data_structures"",1,""components"",3,""codelist_version""]",codelist_version,null,
+"[""data_structures"",1,""components"",3,""data_type""]",data_type,string,TimePeriod
+"[""data_structures"",1,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",3,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",3,""notes""]",notes,string,Time is represented explicitly as the survey year.
+"[""data_structures"",1,""components"",3,""evidence_quote""]",evidence_quote,string,Year
+"[""data_structures"",1,""components"",4]",4,object,
+"[""data_structures"",1,""components"",4,""position""]",position,null,
+"[""data_structures"",1,""components"",4,""concept_id""]",concept_id,string,OBS_VALUE
+"[""data_structures"",1,""components"",4,""role""]",role,string,MEASURE
+"[""data_structures"",1,""components"",4,""representation""]",representation,string,Numeric decimal monetary value
+"[""data_structures"",1,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",1,""components"",4,""codelist_id""]",codelist_id,null,
+"[""data_structures"",1,""components"",4,""codelist_version""]",codelist_version,null,
+"[""data_structures"",1,""components"",4,""data_type""]",data_type,string,Decimal
+"[""data_structures"",1,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",4,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",4,""notes""]",notes,string,Primary measure holds mean monthly consumption expenditure per household.
+"[""data_structures"",1,""components"",4,""evidence_quote""]",evidence_quote,string,Household spending is mean monthly consumption expenditure per household.
+"[""data_structures"",1,""components"",5]",5,object,
+"[""data_structures"",1,""components"",5,""position""]",position,null,
+"[""data_structures"",1,""components"",5,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""data_structures"",1,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",1,""components"",5,""representation""]",representation,string,Coded local unit list
+"[""data_structures"",1,""components"",5,""codelist_agency""]",codelist_agency,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",1,""components"",5,""codelist_id""]",codelist_id,string,CL_SYNTH_UNIT_MEASURE
+"[""data_structures"",1,""components"",5,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",1,""components"",5,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",5,""attachment_level""]",attachment_level,string,DATASET
+"[""data_structures"",1,""components"",5,""notes""]",notes,string,"The unit is constant in the household spending table. The report does not name the local currency, so ISO 4217 currency coding is not possible from supplied evidence."
+"[""data_structures"",1,""components"",5,""evidence_quote""]",evidence_quote,string,Local currency per household per month
+"[""data_structures"",1,""components"",6]",6,object,
+"[""data_structures"",1,""components"",6,""position""]",position,null,
+"[""data_structures"",1,""components"",6,""concept_id""]",concept_id,string,ESTIMATION_TYPE
+"[""data_structures"",1,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",1,""components"",6,""representation""]",representation,string,Coded local estimation type list
+"[""data_structures"",1,""components"",6,""codelist_agency""]",codelist_agency,string,Synthetic_National_Statistics_Institute
+"[""data_structures"",1,""components"",6,""codelist_id""]",codelist_id,string,CL_SYNTH_ESTIMATION_TYPE
+"[""data_structures"",1,""components"",6,""codelist_version""]",codelist_version,string,1.0
+"[""data_structures"",1,""components"",6,""data_type""]",data_type,string,String
+"[""data_structures"",1,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",6,""attachment_level""]",attachment_level,string,DATASET
+"[""data_structures"",1,""components"",6,""notes""]",notes,string,"The source value Survey estimate is treated as a dataset-level estimation-type qualifier, not as OBS_STATUS, because the report describes household spending generally as a survey estimate and all displayed rows share this qualifier."
+"[""data_structures"",1,""components"",6,""evidence_quote""]",evidence_quote,string,Survey estimate
+"[""structure_separation_rationale""]",structure_separation_rationale,string,"Two DSDs are retained because the report distinguishes CPI from household spending and states that household spending is not a CPI observation. The CPI structure is monthly, indexed to 2023=100 and classified by consumption division; the household spending structure is annual, monetary, survey-based and broken down by residence and expenditure quintile."

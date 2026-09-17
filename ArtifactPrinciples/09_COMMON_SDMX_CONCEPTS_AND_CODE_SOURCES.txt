@@ -1,0 +1,174 @@
+COMMON SDMX CONCEPTS AND STANDARD CODE SOURCES
+==============================================
+
+Purpose
+-------
+This is a starting checklist when analysing a report. It is NOT a rule that every
+concept belongs in every DSD.
+
+The role shown is typical, not mandatory. The statistical meaning of the source
+data determines the final role.
+
+A. CORE / VERY COMMON SDMX FIELDS
+---------------------------------
+CONCEPT          TYPICAL ROLE     STANDARD / RECOMMENDATION
+---------------  ---------------  ------------------------------------------------
+REF_AREA         Dimension        Check SDMX CL_AREA, domain area list, UN M49,
+                                  ISO 3166. Use the list whose semantics match.
+COUNTERPART_AREA Dimension        Often uses an area codelist too, but has a
+                                  different semantic role from REF_AREA.
+FREQ             Dimension        SDMX CL_FREQ.
+TIME_PERIOD      Time dimension   Time representation, not normally a codelist.
+OBS_VALUE        Primary measure  Value of measured variable.
+OBS_STATUS       Attribute        SDMX CL_OBS_STATUS.
+CONF_STATUS      Attribute        SDMX CL_CONF_STATUS.
+UNIT_MEASURE     Attr/Dimension   Use authoritative domain unit list. Registry has
+                                  unit lists from agencies such as UNSD/Eurostat.
+UNIT_MULT        Attribute        SDMX CL_UNIT_MULT.
+DECIMALS         Attribute        SDMX CL_DECIMALS.
+BREAK_REASON     Attribute        SDMX CL_BREAK_REASON.
+SEASONAL_ADJUST  Attr/Dimension   SDMX CL_SEASONAL_ADJUST.
+TIME_FORMAT      Attribute        SDMX CL_TIME_FORMAT where relevant.
+TIME_PER_COLLECT Attribute        SDMX CL_TIME_PER_COLLECT where relevant.
+
+B. DEMOGRAPHIC / SOCIAL BREAKDOWNS
+----------------------------------
+SEX              Dimension        SDMX CL_SEX.
+AGE              Dimension        Domain-specific age list/grouping; check SDMX
+                                  Registry (e.g. SDG/UIS lists) and source semantics.
+CIVIL_STATUS     Dimension        SDMX CL_CIVIL_STATUS where appropriate.
+DEG_URB          Dimension        SDMX CL_DEG_URB.
+DISABILITY       Dimension        Check IAEG-SDGs/domain codelists.
+EDUCATION_LEVEL  Dimension        UNESCO ISCED; also search UIS structures.
+EDUCATION_FIELD  Dimension        UNESCO ISCED-F / UIS structures.
+OCCUPATION       Dimension        ILO ISCO; SDMX CL_OCCUPATION also exists.
+
+C. ECONOMIC / BUSINESS / NATIONAL ACCOUNTS
+------------------------------------------
+ACTIVITY         Dimension        ISIC (or authorised derivative such as NACE).
+PRODUCT          Dimension        CPC/CPA/other domain product classification.
+COMMODITY        Dimension        HS/CPC/UNSD trade structures as appropriate.
+INSTITUTIONAL_SECTOR
+                 Dimension        Use the sector classification required by the
+                                  national accounts/domain framework; search registry.
+CURRENCY         Attr/Dimension   ISO 4217 for currency identity.
+PRICE_ADJUST     Attr/Dimension   Use domain standard if present.
+ADJUSTMENT       Attr/Dimension   SDMX cross-domain concept; codelist may be
+                                  domain/agency specific.
+VALUATION        Attr/Dimension   Domain-specific; search existing DSD/codelist.
+TRADE_FLOW       Dimension        UNSD trade codelists exist in Global Registry.
+TRANSPORT_MODE   Dimension        UNSD trade/transport codelists exist in registry.
+STATISTICAL_OPERATION
+                 Attribute/Dim    SDMX CL_STATISTICAL_OPERATION.
+
+D. CONSUMPTION / GOVERNMENT FUNCTION CLASSIFICATIONS
+-----------------------------------------------------
+COICOP           Dimension        SDMX CL_COICOP_2018 and UNSD COICOP resources.
+COFOG            Dimension        SDMX CL_COFOG_1999; verify domain revision.
+COPNI            Dimension        SDMX CL_COPNI_1999.
+COPP             Dimension        SDMX CL_COPP_1999.
+
+E. GENERIC DOMAIN FIELDS THAT OFTEN REQUIRE LOCAL/DOMAIN SCHEMES
+---------------------------------------------------------------
+INDICATOR        Dimension        Search existing domain DSD first. New indicator
+                                  list may be necessary if report indicators are
+                                  genuinely unique.
+MEASURE          Dimension        Some domain models use a measure dimension.
+STAT_UNIT        Dimension/Attr   Use domain definition/codelist.
+SOURCE           Attribute/Meta   Short coded source may be a data attribute;
+                                  narrative source belongs in reference metadata.
+COMPILING_ORG    Attribute/Meta   SDMX Glossary cross-domain concept.
+TITLE            Attribute/Meta   Usually metadata/presentation, not a dimension.
+BASE_PERIOD      Attribute/Dim    Domain-specific; verify exact concept definition.
+REFERENCE_PERIOD_DETAIL
+                 Attr/Dim         Domain-specific, often used for additional
+                                  temporal qualification.
+
+F. REFERENCE METADATA CONCEPTS TO CHECK
+---------------------------------------
+CONTACT
+INST_MANDATE
+CONF
+DATA_REV
+COMPARABILITY
+COHERENCE
+COMPLETENESS
+TIMELINESS
+META_UPDATE
+COMPILING_ORG
+QUALITY_DOCUMENTATION / QUALITY_DOC (check exact scheme implementation)
+RECOMMENDED_USES_AND_LIMITATIONS (map to Global MCS concept where applicable)
+
+For methodology fields, use the Global Reference Metadata Concept Scheme rather
+than inventing a new metadata vocabulary whenever possible.
+
+G. STANDARD SOURCES / SEARCH LOCATIONS
+--------------------------------------
+1. SDMX Global Registry
+   https://registry.sdmx.org/items/codelist.html
+
+   Search by concept/codelist ID and inspect:
+   - maintenance agency;
+   - version;
+   - definition;
+   - codes;
+   - domain usage.
+
+2. SDMX Glossary
+   https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+3. UN M49 (countries/areas and statistical regions)
+   https://unstats.un.org/unsd/methodology/m49/
+
+4. ISO 3166 (countries and subdivisions)
+   https://www.iso.org/iso-3166-country-codes.html
+
+5. ISO 4217 (currency)
+   https://www.iso.org/standard/64758.html
+
+6. UNSD classifications
+   https://unstats.un.org/unsd/classifications/unsdclassifications
+
+7. UNSD economic classifications
+   https://unstats.un.org/unsd/classifications/Econ
+
+   Includes ISIC and supporting structures/correspondence resources.
+
+8. COICOP
+   https://unstats.un.org/unsd/classifications/coicop
+
+9. ILO ISCO
+   https://isco.ilo.org/
+
+10. UNESCO ISCED
+    https://www.uis.unesco.org/en/methods-and-tools/isced
+
+11. Eurostat RAMON
+    https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ramon
+
+H. REUSE DECISION RULE
+----------------------
+For every candidate value:
+1. What statistical concept does it represent?
+2. Which organisation is authoritative for that concept?
+3. Does an existing codelist contain a semantically equivalent code?
+4. Is its version compatible with the report's methodology/reference period?
+5. Does the existing code's scope exactly match?
+6. If yes: reuse it.
+7. If no: document the gap before creating a local code.
+
+I. IMPORTANT CAUTIONS
+---------------------
+- A code list can be technically reusable but statistically inappropriate.
+- Country code systems differ in purpose and treatment of aggregates/territories.
+- Age groupings are highly domain-dependent.
+- Unit codes can be domain-specific and can combine scale/denominator concepts.
+- Classification revision matters.
+- "Total", "Other", "Unknown", "Not applicable" and "Unspecified" must have explicit
+  definitions and should never be mapped on label alone.
+- Do not confuse missing-data status with a statistical category.
+- Do not use OBS_VALUE to carry formatted strings such as "12.4%" if unit is
+  separately modelled.
+
+Research snapshot date: 2026-09-16.
+Registry contents and classification versions may evolve; verify before production.

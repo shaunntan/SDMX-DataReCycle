@@ -1,0 +1,748 @@
+{
+  "artifact_type": "AI-FILLABLE DATA TEMPLATE",
+  "source_report": "example_05_prices_consumption.pdf",
+  "source_sha256": "71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5",
+  "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+  "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist catalogue",
+      "artifact_id": "SDMX Global Registry - Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The fetched official SDMX Registry page is a codelist catalogue/search page and supports checking codelist details. The provided excerpt does not confirm individual codelist versions or code contents.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / Cross-domain concept guidance",
+      "artifact_id": "SDMX Glossary 2.1",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The supplied glossary excerpt states that cross-domain concepts support reuse across organisations and gives Observation Status as an example with concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. The excerpt supports using common SDMX concept IDs where appropriate, but does not confirm the exact mappings for Final or Provisional and does not support treating Survey estimate as an observation-status code.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_FREQ",
+      "version": "not confirmed",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The reference package identifies CL_FREQ as the SDMX frequency codelist to check, and the official registry catalogue was fetched. The supplied excerpt does not confirm the exact CL_FREQ version or code definitions, so M and A remain candidate standard frequency mappings pending registry verification.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "UNSD / SDMX candidate",
+      "artifact_type": "Classification / codelist candidate",
+      "artifact_id": "COICOP / CL_COICOP_2018",
+      "version": "not confirmed",
+      "url": "https://unstats.un.org/unsd/classifications/coicop",
+      "evidence": "COICOP is identified as the relevant consumption classification source to check. The report states that consumption divisions resemble COICOP but the revision is not confirmed, so the template uses the local DSD codelist CL_SYNTH_CONSUMPTION_DIVISION rather than COICOP codes.",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "agency": "ISO",
+      "artifact_type": "Currency standard candidate",
+      "artifact_id": "ISO 4217",
+      "version": "not confirmed",
+      "url": "https://www.iso.org/standard/64758.html",
+      "evidence": "ISO 4217 is the standard source to check for currency identity. The report does not name the local currency and no ISO 4217 code evidence was supplied, so household-spending values use a local unit code rather than a confirmed currency code.",
+      "verification_status": "UNVERIFIED"
+    }
+  ],
+  "limitations": [
+    "Template codelist bindings have been harmonised to the accepted DSD / Key Family identifiers: CL_SYNTH_CONSUMPTION_DIVISION, CL_SYNTH_RESIDENCE, CL_SYNTH_EXPENDITURE_QUINTILE, CL_SYNTH_UNIT_MEASURE, CL_SYNTH_CPI_OBS_STATUS and CL_SYNTH_ESTIMATION_TYPE.",
+    "The CPI UNIT_MEASURE value is modelled as the plain index unit code IDX, while BASE_PERIOD separately carries 2023=100, avoiding duplicate base-period semantics in both fields.",
+    "Exact SDMX codelist versions and standard code definitions for CL_FREQ and CL_OBS_STATUS were not confirmed by supplied external evidence; local CPI status codes are therefore used for Final and Provisional.",
+    "Consumption divisions are coded locally because the report states that the divisions resemble COICOP but the revision is not confirmed.",
+    "The report does not state a reference area or country, so REF_AREA is omitted from the template; it should be added if later supplied.",
+    "The report does not name the local currency, so the household-spending unit cannot be converted into an ISO 4217-denominated standard unit code.",
+    "Residence categories are retained as local codes because the report does not define an authoritative urban/rural or degree-of-urbanisation classification.",
+    "Only the lowest and highest expenditure quintiles are shown in the report extract; the template does not infer unobserved middle quintile rows.",
+    "The template repeats dataset-level attributes such as UNIT_MEASURE, BASE_PERIOD and ESTIMATION_TYPE in each observation row for simple AI filling; an implementation may store them once at dataset level according to the accepted DSD attachment levels.",
+    "Survey estimates are subject to sampling error; this is a reference-metadata caveat and not a dimension or observation value in the template.",
+    "Household estimates are revised only for processing errors or new calibration weights; this is a reference-metadata/revision-policy note and not a dimension in the template.",
+    "All records and values are synthetic, limiting production use without institutional validation."
+  ],
+  "templates": [
+    {
+      "template_id": "TPL_SYNTH_CPI_DIVISION_MONTHLY_AI_FILL",
+      "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency. Use M for monthly CPI observations; CL_FREQ mapping is candidate pending registry verification."
+        },
+        {
+          "column_id": "CONSUMPTION_DIVISION",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYNTH_CONSUMPTION_DIVISION",
+          "description": "Local CPI consumption division code from the accepted DSD codelist. Allowed report-derived values shown here are FOOD_NAB, HOUS_UTIL and TRANSPORT."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "TimePeriod",
+          "codelist_id": null,
+          "description": "Monthly observation period in YYYY-MM format; must be consistent with FREQ=M."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Decimal",
+          "codelist_id": null,
+          "description": "Numeric CPI index observation value. Do not include unit or base-period text in this field."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYNTH_UNIT_MEASURE",
+          "description": "Plain unit code for CPI index observations from the accepted DSD unit codelist. Use IDX; the base period is held separately in BASE_PERIOD."
+        },
+        {
+          "column_id": "BASE_PERIOD",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": null,
+          "description": "Base-period qualifier for the CPI index. Use 2023=100 for the shown CPI rows."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYNTH_CPI_OBS_STATUS",
+          "description": "CPI-specific local observation status code. Allowed evidenced values are FINAL and PROVISIONAL; SURVEY_ESTIMATE is not valid for CPI OBS_STATUS."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "FOOD_NAB"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 108.92
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Food and non-alcoholic beverages              2025-01                                     108.92                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "FOOD_NAB"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-02"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 111.76
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Food and non-alcoholic beverages              2025-02                                     111.76                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "FOOD_NAB"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-03"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 105.03
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Food and non-alcoholic beverages              2025-03                                     105.03                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "FOOD_NAB"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-04"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 112.16
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Food and non-alcoholic beverages              2025-04                                     112.16                                           Index, 2023=100                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "HOUS_UTIL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 106.22
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Housing and utilities                          2025-01                                     106.22                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "HOUS_UTIL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-02"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 107.36
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Housing and utilities                          2025-02                                     107.36                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "HOUS_UTIL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-03"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 117.6
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Housing and utilities                          2025-03                                     117.60                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "HOUS_UTIL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-04"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 115.55
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Housing and utilities                          2025-04                                     115.55                                           Index, 2023=100                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "TRANSPORT"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 112.55
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Transport                                   2025-01                                     112.55                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "TRANSPORT"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-02"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 107.11
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Transport                                   2025-02                                     107.11                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "TRANSPORT"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-03"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 118.88
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Transport                                   2025-03                                     118.88                                           Index, 2023=100                                   Final"
+        },
+        {
+          "dsd_id": "KF_SYNTH_CPI_DIVISION_MONTHLY",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "CONSUMPTION_DIVISION",
+              "value": "TRANSPORT"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-04"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 111.7
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "IDX"
+            },
+            {
+              "column_id": "BASE_PERIOD",
+              "value": "2023=100"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Transport                                   2025-04                                     111.70                                           Index, 2023=100                                  Provisional"
+        }
+      ]
+    },
+    {
+      "template_id": "TPL_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL_AI_FILL",
+      "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency. Use A for annual household-spending survey estimates; CL_FREQ mapping is candidate pending registry verification."
+        },
+        {
+          "column_id": "RESIDENCE",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYNTH_RESIDENCE",
+          "description": "Local residence category code from the accepted DSD codelist. Allowed report-derived values shown here are URBAN and RURAL."
+        },
+        {
+          "column_id": "EXPENDITURE_QUINTILE",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYNTH_EXPENDITURE_QUINTILE",
+          "description": "Local expenditure-quintile code from the accepted DSD codelist. Only LOWEST and HIGHEST are evidenced in the supplied extract."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "TimePeriod",
+          "codelist_id": null,
+          "description": "Annual observation period in YYYY format; must be consistent with FREQ=A."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Decimal",
+          "codelist_id": null,
+          "description": "Numeric mean monthly consumption expenditure per household. Do not include currency or unit text in this field."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYNTH_UNIT_MEASURE",
+          "description": "Unit code for household-spending values from the accepted DSD unit codelist. Use LCU_PER_HH_PER_MONTH because the report does not name the currency."
+        },
+        {
+          "column_id": "ESTIMATION_TYPE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYNTH_ESTIMATION_TYPE",
+          "description": "Dedicated estimation-type qualifier from the accepted DSD codelist. Use SURVEY_ESTIMATE for shown rows; FINAL and PROVISIONAL are not valid for this field."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "RESIDENCE",
+              "value": "URBAN"
+            },
+            {
+              "column_id": "EXPENDITURE_QUINTILE",
+              "value": "LOWEST"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7072
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LCU_PER_HH_PER_MONTH"
+            },
+            {
+              "column_id": "ESTIMATION_TYPE",
+              "value": "SURVEY_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Urban                               Lowest quintile                      2024                                 7,072                                  Local currency per household per month  Survey estimate"
+        },
+        {
+          "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "RESIDENCE",
+              "value": "URBAN"
+            },
+            {
+              "column_id": "EXPENDITURE_QUINTILE",
+              "value": "HIGHEST"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 2734
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LCU_PER_HH_PER_MONTH"
+            },
+            {
+              "column_id": "ESTIMATION_TYPE",
+              "value": "SURVEY_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Urban                                 Highest quintile                      2024                                 2,734                                  Local currency per household per month  Survey estimate"
+        },
+        {
+          "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "RESIDENCE",
+              "value": "RURAL"
+            },
+            {
+              "column_id": "EXPENDITURE_QUINTILE",
+              "value": "LOWEST"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7708
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LCU_PER_HH_PER_MONTH"
+            },
+            {
+              "column_id": "ESTIMATION_TYPE",
+              "value": "SURVEY_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Rural                               Lowest quintile                      2024                                 7,708                                  Local currency per household per month  Survey estimate"
+        },
+        {
+          "dsd_id": "KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "RESIDENCE",
+              "value": "RURAL"
+            },
+            {
+              "column_id": "EXPENDITURE_QUINTILE",
+              "value": "HIGHEST"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 2499
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LCU_PER_HH_PER_MONTH"
+            },
+            {
+              "column_id": "ESTIMATION_TYPE",
+              "value": "SURVEY_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Rural                                  Highest quintile                      2024                                 2,499                                  Local currency per household per month  Survey estimate"
+        }
+      ]
+    }
+  ]
+}

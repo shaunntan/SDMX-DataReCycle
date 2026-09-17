@@ -1,0 +1,27 @@
+{
+  "artifact_type": "DATAFLOW",
+  "source_report": "02_sdmx_20_consumer_prices_full_case.xml",
+  "source_sha256": "e41976478f67b8426a33a2457c4705df89c2d00027855c16cb0eab12727f4e2e",
+  "principles_file": "04_DATAFLOW.txt",
+  "principles_sha256": "0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "dataflows": [
+    {
+      "dataflow_id": "DF_CPI",
+      "name": "Consumer Price Statistics",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "dsd_id": "DSD_CPI",
+      "dsd_agency_id": "DEMO",
+      "dsd_version": "1.0",
+      "description": "Consumer Price Statistics",
+      "coverage": "Consumer Price Statistics",
+      "evidence_quote": "Consumer Price Statistics"
+    }
+  ]
+}

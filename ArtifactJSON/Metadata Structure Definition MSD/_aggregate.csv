@@ -1,0 +1,807 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_key""]",artifact_key,string,METADATA_STRUCTURE_DEFINITION_MSD
+"[""artifact_name""]",artifact_name,string,METADATA STRUCTURE DEFINITION (MSD)
+"[""principles_file""]",principles_file,string,05_METADATA_STRUCTURE_DEFINITION_MSD.txt
+"[""principles_sha256""]",principles_sha256,string,f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257
+"[""principles_corpus_sha256""]",principles_corpus_sha256,string,bf4329570a317b193d7c65defd1a72280f56372e9e68b0fd99287d90be2aafb8
+"[""best_practice_chunk_ids""]",best_practice_chunk_ids,array,
+"[""best_practice_chunk_ids"",0]",0,integer,1
+"[""best_practice_chunk_ids"",1]",1,integer,2
+"[""best_practice_chunk_ids"",2]",2,integer,23
+"[""best_practice_chunk_ids"",3]",3,integer,24
+"[""best_practice_chunk_ids"",4]",4,integer,25
+"[""best_practice_chunk_ids"",5]",5,integer,26
+"[""best_practice_chunk_ids"",6]",6,integer,27
+"[""best_practice_chunk_ids"",7]",7,integer,28
+"[""best_practice_chunk_ids"",8]",8,integer,29
+"[""best_practice_chunk_ids"",9]",9,integer,30
+"[""best_practice_chunk_ids"",10]",10,integer,31
+"[""best_practice_chunk_ids"",11]",11,integer,32
+"[""best_practice_chunk_ids"",12]",12,integer,33
+"[""best_practice_chunk_ids"",13]",13,integer,39
+"[""best_practice_chunk_ids"",14]",14,integer,40
+"[""best_practice_chunk_ids"",15]",15,integer,41
+"[""aggregate_version""]",aggregate_version,integer,3
+"[""created_at""]",created_at,string,2026-09-17T00:36:21.606334+00:00
+"[""updated_at""]",updated_at,string,2026-09-17T00:42:13.529982+00:00
+"[""update_mode""]",update_mode,string,INCREMENTAL
+"[""contributions""]",contributions,array,
+"[""contributions"",0]",0,object,
+"[""contributions"",0,""source_report""]",source_report,string,01_sdmx_20_population_full_case.xml
+"[""contributions"",0,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\01_sdmx_20_population_full_case.json
+"[""contributions"",0,""json_sha256""]",json_sha256,string,124e4bf8d557c0ec11e7e7ddb1af27be829bcffb4ed1d3d9d9d45ab4ac083373
+"[""contributions"",1]",1,object,
+"[""contributions"",1,""source_report""]",source_report,string,02_sdmx_20_consumer_prices_full_case.xml
+"[""contributions"",1,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\02_sdmx_20_consumer_prices_full_case.json
+"[""contributions"",1,""json_sha256""]",json_sha256,string,b52f9847a3755c90447c35fc49f7ba5cead73ec0cc43c748d3d38ba145cbd8f7
+"[""contributions"",2]",2,object,
+"[""contributions"",2,""source_report""]",source_report,string,03_sdmx_21_labour_market_full_case.xml
+"[""contributions"",2,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\03_sdmx_21_labour_market_full_case.json
+"[""contributions"",2,""json_sha256""]",json_sha256,string,ac5b8b730114b793fd3fc9318d67524f3c3d061384367285a051ebe298dbbc21
+"[""contributions"",3]",3,object,
+"[""contributions"",3,""source_report""]",source_report,string,04_sdmx_21_external_trade_full_case.xml
+"[""contributions"",3,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\04_sdmx_21_external_trade_full_case.json
+"[""contributions"",3,""json_sha256""]",json_sha256,string,ea00257869bf0d8d49891969f55c9116b56a31ac8d2d09d6490d0ec80c06fce2
+"[""contributions"",4]",4,object,
+"[""contributions"",4,""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""contributions"",4,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\example_01_labour_market.json
+"[""contributions"",4,""json_sha256""]",json_sha256,string,64d7d42125e694038c0e114810a9f57decc1ff49368563f2fa0ea71bdc3dd371
+"[""contributions"",5]",5,object,
+"[""contributions"",5,""source_report""]",source_report,string,example_02_health_system.pdf
+"[""contributions"",5,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\example_02_health_system.json
+"[""contributions"",5,""json_sha256""]",json_sha256,string,b6417c97549647e61913bc61f0993e026b4049fc38ff65eaf6dc3abcf37cba65
+"[""contributions"",6]",6,object,
+"[""contributions"",6,""source_report""]",source_report,string,example_03_education.pdf
+"[""contributions"",6,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\example_03_education.json
+"[""contributions"",6,""json_sha256""]",json_sha256,string,2e0c755ab55c402990bf8e96cb43e74ebede6f668e9f5f4e99f462928de8b2fe
+"[""contributions"",7]",7,object,
+"[""contributions"",7,""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""contributions"",7,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\example_04_agriculture.json
+"[""contributions"",7,""json_sha256""]",json_sha256,string,03657407ee65c6198883d76401a3c534eaad9c495e0596558f4b7d63ec64183f
+"[""contributions"",8]",8,object,
+"[""contributions"",8,""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""contributions"",8,""source_json_path""]",source_json_path,string,Artifact JSON\Metadata Structure Definition MSD\example_05_prices_consumption.json
+"[""contributions"",8,""json_sha256""]",json_sha256,string,717886f52a088150929c4055b51fec84a1fe6466df6bfdf9bb597f053a2fcbfe
+"[""optimizer_attempts""]",optimizer_attempts,integer,1
+"[""validator_direct_correction""]",validator_direct_correction,boolean,false
+"[""inspector_review""]",inspector_review,object,
+"[""inspector_review"",""valid""]",valid,boolean,true
+"[""inspector_review"",""covered_source_reports""]",covered_source_reports,array,
+"[""inspector_review"",""covered_source_reports"",0]",0,string,01_sdmx_20_population_full_case.xml
+"[""inspector_review"",""covered_source_reports"",1]",1,string,02_sdmx_20_consumer_prices_full_case.xml
+"[""inspector_review"",""covered_source_reports"",2]",2,string,03_sdmx_21_labour_market_full_case.xml
+"[""inspector_review"",""covered_source_reports"",3]",3,string,04_sdmx_21_external_trade_full_case.xml
+"[""inspector_review"",""covered_source_reports"",4]",4,string,example_01_labour_market.pdf
+"[""inspector_review"",""covered_source_reports"",5]",5,string,example_02_health_system.pdf
+"[""inspector_review"",""covered_source_reports"",6]",6,string,example_03_education.pdf
+"[""inspector_review"",""covered_source_reports"",7]",7,string,example_04_agriculture.pdf
+"[""inspector_review"",""covered_source_reports"",8]",8,string,example_05_prices_consumption.pdf
+"[""inspector_review"",""missing_source_reports""]",missing_source_reports,array,
+"[""inspector_review"",""missing_requirements""]",missing_requirements,array,
+"[""inspector_review"",""redundancies_remaining""]",redundancies_remaining,array,
+"[""inspector_review"",""schema_issues""]",schema_issues,array,
+"[""inspector_review"",""repair_instructions""]",repair_instructions,array,
+"[""optimized_artifact""]",optimized_artifact,object,
+"[""optimized_artifact"",""artifact_type""]",artifact_type,string,METADATA_STRUCTURE_DEFINITION_MSD
+"[""optimized_artifact"",""source_report""]",source_report,string,AGGREGATE::METADATA_STRUCTURE_DEFINITION_MSD
+"[""optimized_artifact"",""source_sha256""]",source_sha256,string,4eb2d907ae0ad859fbcfa6fcb33786c5fc94cdc937f227865c4d9feb36c0928f
+"[""optimized_artifact"",""principles_file""]",principles_file,string,05_METADATA_STRUCTURE_DEFINITION_MSD.txt
+"[""optimized_artifact"",""principles_sha256""]",principles_sha256,string,f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257
+"[""optimized_artifact"",""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""optimized_artifact"",""retrieved_chunk_ids"",0]",0,integer,1
+"[""optimized_artifact"",""retrieved_chunk_ids"",1]",1,integer,2
+"[""optimized_artifact"",""retrieved_chunk_ids"",2]",2,integer,23
+"[""optimized_artifact"",""retrieved_chunk_ids"",3]",3,integer,24
+"[""optimized_artifact"",""retrieved_chunk_ids"",4]",4,integer,25
+"[""optimized_artifact"",""retrieved_chunk_ids"",5]",5,integer,26
+"[""optimized_artifact"",""retrieved_chunk_ids"",6]",6,integer,27
+"[""optimized_artifact"",""retrieved_chunk_ids"",7]",7,integer,28
+"[""optimized_artifact"",""retrieved_chunk_ids"",8]",8,integer,29
+"[""optimized_artifact"",""retrieved_chunk_ids"",9]",9,integer,30
+"[""optimized_artifact"",""retrieved_chunk_ids"",10]",10,integer,31
+"[""optimized_artifact"",""retrieved_chunk_ids"",11]",11,integer,32
+"[""optimized_artifact"",""retrieved_chunk_ids"",12]",12,integer,33
+"[""optimized_artifact"",""retrieved_chunk_ids"",13]",13,integer,39
+"[""optimized_artifact"",""retrieved_chunk_ids"",14]",14,integer,40
+"[""optimized_artifact"",""retrieved_chunk_ids"",15]",15,integer,41
+"[""optimized_artifact"",""standard_references""]",standard_references,array,
+"[""optimized_artifact"",""standard_references"",0]",0,object,
+"[""optimized_artifact"",""standard_references"",0,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""optimized_artifact"",""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""optimized_artifact"",""standard_references"",0,""version""]",version,string,2.1
+"[""optimized_artifact"",""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""standard_references"",0,""evidence""]",evidence,string,"Supplied official-source excerpts identify SDMX Glossary Version 2.1 and confirm metadata-related terminology including Metadata Structure Definition, Metadata Set, Metadata update, Institutional mandate, and the cross-domain concept COVERAGE_GEO with recommended representation String/Codelist. The principles also list CONTACT, INST_MANDATE, CONF, DATA_REV, COMPARABILITY, COHERENCE, COMPLETENESS, TIMELINESS, META_UPDATE and COMPILING_ORG as SDMX reference-metadata concepts, although exact definitions and representations were not fetched for all entries."
+"[""optimized_artifact"",""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",1]",1,object,
+"[""optimized_artifact"",""standard_references"",1,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",1,""artifact_type""]",artifact_type,string,Guideline
+"[""optimized_artifact"",""standard_references"",1,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""optimized_artifact"",""standard_references"",1,""version""]",version,string,1.0
+"[""optimized_artifact"",""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""standard_references"",1,""evidence""]",evidence,string,"The supplied principles identify this guideline as the recommended source for a standard list of SDMX reference metadata concepts. No fetched excerpt confirming the exact full concept inventory, concept IDs and versions was supplied, so candidate mappings remain conservative."
+"[""optimized_artifact"",""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",2]",2,object,
+"[""optimized_artifact"",""standard_references"",2,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",2,""artifact_type""]",artifact_type,string,Technical standard
+"[""optimized_artifact"",""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX_2_0_INFORMATION_MODEL
+"[""optimized_artifact"",""standard_references"",2,""version""]",version,string,2.0
+"[""optimized_artifact"",""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""optimized_artifact"",""standard_references"",2,""evidence""]",evidence,string,"The package targets SDMX 2.0, whose Information Model is the formal basis for metadata structures and metadata sets. The supplied evidence cites the source but does not include detailed fetched text on every MSD mechanic. Imported XML examples using SDMX 2.0 and 2.1 metadata structures are preserved as source-compatible metadata structure definitions in this aggregate."
+"[""optimized_artifact"",""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",3]",3,object,
+"[""optimized_artifact"",""standard_references"",3,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",3,""artifact_type""]",artifact_type,string,Registry catalog
+"[""optimized_artifact"",""standard_references"",3,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS_AND_METADATA
+"[""optimized_artifact"",""standard_references"",3,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",3,""evidence""]",evidence,string,"Supplied official-source excerpts show that the SDMX Global Registry includes searchable structural artefact categories including Codelists, Concept Schemes, Metadata Structures and Metadataflows. The excerpts do not confirm a specific reusable MSD for the covered synthetic reports."
+"[""optimized_artifact"",""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",4]",4,object,
+"[""optimized_artifact"",""standard_references"",4,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",4,""artifact_type""]",artifact_type,string,Geographic classification
+"[""optimized_artifact"",""standard_references"",4,""artifact_id""]",artifact_id,string,UN_M49
+"[""optimized_artifact"",""standard_references"",4,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""optimized_artifact"",""standard_references"",4,""evidence""]",evidence,string,"Supplied official-source excerpts show UN M49 country and area entries with numeric and alpha codes. Synthetic/local areas such as Northland, Centralia and South Coast are not confirmed as UN M49 areas."
+"[""optimized_artifact"",""standard_references"",4,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",5]",5,object,
+"[""optimized_artifact"",""standard_references"",5,""agency""]",agency,string,UNESCO-UIS
+"[""optimized_artifact"",""standard_references"",5,""artifact_type""]",artifact_type,string,Classification reference
+"[""optimized_artifact"",""standard_references"",5,""artifact_id""]",artifact_id,string,ISCED
+"[""optimized_artifact"",""standard_references"",5,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",5,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""optimized_artifact"",""standard_references"",5,""evidence""]",evidence,string,The shared source catalog lists UNESCO ISCED as the authoritative source to check for education level classifications. No fetched excerpt confirming applicable ISCED codes or revision for the education report was supplied.
+"[""optimized_artifact"",""standard_references"",5,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""standard_references"",6]",6,object,
+"[""optimized_artifact"",""standard_references"",6,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",6,""artifact_type""]",artifact_type,string,Classification reference
+"[""optimized_artifact"",""standard_references"",6,""artifact_id""]",artifact_id,string,COICOP
+"[""optimized_artifact"",""standard_references"",6,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",6,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""optimized_artifact"",""standard_references"",6,""evidence""]",evidence,string,The source catalog identifies UNSD COICOP as the authoritative place to check consumption-purpose classifications. The prices/consumption report states that divisions resemble COICOP but does not confirm the revision; no fetched COICOP excerpt confirming the report's classifications was supplied.
+"[""optimized_artifact"",""standard_references"",6,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""standard_references"",7]",7,object,
+"[""optimized_artifact"",""standard_references"",7,""agency""]",agency,string,WCO
+"[""optimized_artifact"",""standard_references"",7,""artifact_type""]",artifact_type,string,Classification reference
+"[""optimized_artifact"",""standard_references"",7,""artifact_id""]",artifact_id,string,HARMONIZED_SYSTEM
+"[""optimized_artifact"",""standard_references"",7,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",7,""url""]",url,string,https://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx
+"[""optimized_artifact"",""standard_references"",7,""evidence""]",evidence,string,"External trade statistics commonly classify commodities with HS, but the imported external-trade XML MSD supplied here only confirms generic SOURCE, METHODOLOGY and SOURCE_URL metadata concepts. No fetched excerpt or report metadata value confirms the commodity classification revision used by the external-trade case."
+"[""optimized_artifact"",""standard_references"",7,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""standard_references"",8]",8,object,
+"[""optimized_artifact"",""standard_references"",8,""agency""]",agency,string,ISO
+"[""optimized_artifact"",""standard_references"",8,""artifact_type""]",artifact_type,string,Currency code standard
+"[""optimized_artifact"",""standard_references"",8,""artifact_id""]",artifact_id,string,ISO_4217
+"[""optimized_artifact"",""standard_references"",8,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",8,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""optimized_artifact"",""standard_references"",8,""evidence""]",evidence,string,"The supplied reference catalog identifies ISO 4217 as the standard source for currency identity. The agriculture and prices/consumption reports use unnamed local currency, so no ISO 4217 currency code can be confirmed from supplied evidence."
+"[""optimized_artifact"",""standard_references"",8,""verification_status""]",verification_status,string,UNVERIFIED
+"[""optimized_artifact"",""limitations""]",limitations,array,
+"[""optimized_artifact"",""limitations"",0]",0,string,"This aggregate covers 01_sdmx_20_population_full_case.xml, 02_sdmx_20_consumer_prices_full_case.xml, 03_sdmx_21_labour_market_full_case.xml, 04_sdmx_21_external_trade_full_case.xml, example_01_labour_market.pdf, example_02_health_system.pdf, example_03_education.pdf, example_04_agriculture.pdf, and example_05_prices_consumption.pdf. It is a reusable cross-report metadata-structure design, not a report layout or populated Metadata Set."
+"[""optimized_artifact"",""limitations"",1]",1,string,"Actual metadata values belong in separate Metadata Sets targeted to the relevant report, dataflow, dataset, series or metadata object. Absent values must be recorded as missing/not stated according to the implementation convention and must not be invented."
+"[""optimized_artifact"",""limitations"",2]",2,string,"Because the schema allows one target_attachment value per concept, semantically equivalent narrative concepts are deliberately split into REPORT-targeted and DATAFLOW-targeted variants when source MSDs require both attachment levels. These are not duplicates for consolidation purposes because attachment level differs."
+"[""optimized_artifact"",""limitations"",3]",3,string,"DATA_REV is modelled as CONDITIONAL in the cross-report structure to preserve source-specific requiredness: it is mandatory where the source MSD requires report or dataflow revision metadata, but optional for fertilizer retail prices unless a revision policy is explicitly applicable. It must not substitute for observation-level provisional/final status attributes."
+"[""optimized_artifact"",""limitations"",4]",4,string,"CONF is available at both REPORT and DATAFLOW levels. Report-level confidentiality can be inherited by dataflow metadata when appropriate, but dataflow-specific confidentiality notes should be recorded separately when the source distinguishes them."
+"[""optimized_artifact"",""limitations"",5]",5,string,"Crop area/production coverage and classification review, fertilizer classification review and unnamed-currency unit note, CPI index base period and consumption-classification caveat, and household spending quintile definition, sampling-error note and unit/currency note are source-specific mandatory requirements preserved through conditional concepts and extraction guidance."
+"[""optimized_artifact"",""limitations"",6]",6,string,Report-level COVERAGE_GEO is represented separately from DATAFLOW-level COVERAGE_GEO because the prices/consumption source MSD defines report-level geographic coverage even when the value is absent or not stated.
+"[""optimized_artifact"",""limitations"",7]",7,string,"The imported XML MSDs for population, CPI, labour and external trade are preserved as source-compatible structures because their original MSD IDs, agency/version context, source SDMX version statements, and SOURCE_URL representations differ. Their concepts are intentionally narrow compatibility layers; the reusable cross-report structure remains the preferred harmonised design for new metadata extraction."
+"[""optimized_artifact"",""limitations"",8]",8,string,"Exact SDMX Global Reference Metadata Concept Scheme IDs, definitions, representations and versions were not confirmed from supplied external evidence for all candidate concepts. Local IDs are retained where exact standard mapping is not verified."
+"[""optimized_artifact"",""limitations"",9]",9,string,"Narrative methodology, caveats, source descriptions, classification caveats, sampling-error statements, unnamed-currency caveats and revision practices are reference metadata and must not be compressed into statistical dimensions."
+"[""optimized_artifact"",""limitations"",10]",10,string,"Observation-specific status, provisionality, confidentiality flags, forecast/modelled markers or suppression should be handled in DSD/data attributes where applicable. This MSD includes only narrative report-, dataflow- or dataset-level reference metadata."
+"[""optimized_artifact"",""limitations"",11]",11,string,"Synthetic/local area labels are not confirmed against UN M49 or ISO 3166. Crop names, fertilizer products, labour industries, health causes, education levels, wealth/expenditure quintiles, consumption divisions and external-trade commodity/partner classifications are not confirmed against authoritative classification revisions unless a later mapping establishes equivalence."
+"[""optimized_artifact"",""metadata_structures""]",metadata_structures,array,
+"[""optimized_artifact"",""metadata_structures"",0]",0,object,
+"[""optimized_artifact"",""metadata_structures"",0,""msd_id""]",msd_id,string,MSD_CROSS_REPORT_REFERENCE_METADATA
+"[""optimized_artifact"",""metadata_structures"",0,""name""]",name,string,"Reusable cross-report reference metadata structure for population, consumer prices, labour, external trade, health, education, agriculture, prices and consumption statistics"
+"[""optimized_artifact"",""metadata_structures"",0,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE
+"[""optimized_artifact"",""metadata_structures"",0,""version""]",version,string,3.0
+"[""optimized_artifact"",""metadata_structures"",0,""concepts""]",concepts,array,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0]",0,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""concept_id""]",concept_id,string,REPORT_TITLE
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""name""]",name,string,Report title
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""definition""]",definition,string,Title of the statistical publication or report being described.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,"Extract from the report cover, heading, XML metadata target or front matter. Use the publication title, not merely the file name, when both are available."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""source_standard""]",source_standard,string,Local concept; candidate mapping to an SDMX reference metadata publication/title concept if exact standard ID is confirmed later.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",0,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1]",1,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""concept_id""]",concept_id,string,PUBLISHER
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""name""]",name,string,Publisher
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""definition""]",definition,string,Organisation presented as responsible for publishing the statistical report or bulletin.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""representation""]",representation,string,InternationalString / free text; coded organisation identifier only if an authoritative organisation scheme is confirmed
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"Extract the organisation named near the title or publication details. Do not infer compiling organisation, data owner or legal mandate unless separately stated."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""source_standard""]",source_standard,string,Local concept; possible mapping to SDMX publication/disseminating agency metadata requires confirmation.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",1,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2]",2,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""concept_id""]",concept_id,string,REPORT_COMPILING_ORG
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""name""]",name,string,Report compiling organisation or publisher
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""definition""]",definition,string,"Organisation identified at report level as compiling, producing or publishing the report or statistics when the source uses a combined compiling/publishing role."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""representation""]",representation,string,InternationalString / free text; coded organisation identifier only if an authoritative organisation scheme is confirmed
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,"Use for sources such as the prices/consumption report that identify a compiling organisation or publisher at report level. Do not force this onto a DATAFLOW target. If a separate publisher is also stated, retain PUBLISHER as the publication role and use this concept only for the compiling/producing role."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""source_standard""]",source_standard,string,Candidate SDMX Glossary / Global Reference Metadata concept COMPILING_ORG; exact concept entry and version not fully confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",2,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3]",3,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""name""]",name,string,Publication date
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""definition""]",definition,string,Date on which the report or publication was issued.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""representation""]",representation,string,"Date, ISO 8601 recommended for implementation"
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,Extract the stated publication date from report front matter or XML where present. Preserve source wording in the Metadata Set if required. Do not treat publication date as metadata update date unless explicitly stated or governed by implementation rules.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""source_standard""]",source_standard,string,Local concept; no exact confirmed SDMX concept ID supplied in the evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",3,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4]",4,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""concept_id""]",concept_id,string,SOURCE_URL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""name""]",name,string,Source URL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""definition""]",definition,string,"Web location, persistent identifier or access location for the report or statistical source, when stated."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""representation""]",representation,string,URI as text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,"Populate only if a URL, DOI or persistent access path is explicitly stated in the report, XML metadata, or approved provenance. Do not invent a source URL."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""source_standard""]",source_standard,string,Local concept; also appears in imported XML MSDs at DATAFLOW level.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",4,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5]",5,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""concept_id""]",concept_id,string,CONTACT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""name""]",name,string,Contact
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""definition""]",definition,string,"Contact point for questions about the report, statistics or reference metadata."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""representation""]",representation,string,"InternationalString / free text; may later be structured into name, organisation, email, telephone and role"
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""extraction_guidance""]",extraction_guidance,string,"Extract only explicitly stated contact details. If absent in a report-specific Metadata Set, record missing/not stated according to the implementation's missing-value convention rather than inventing a contact."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""source_standard""]",source_standard,string,SDMX Glossary / Global Reference Metadata candidate concept CONTACT; exact concept definition/version not confirmed from supplied external evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6]",6,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""concept_id""]",concept_id,string,REPORT_COVERAGE_GEO
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""name""]",name,string,Report geographical coverage
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""definition""]",definition,string,"Geographic scope or territorial coverage of the report or publication as a whole, distinct from dataflow-specific coverage and from reference-area dimension values used to identify observations."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""representation""]",representation,string,InternationalString / free text; codelist only if an authoritative area vocabulary is confirmed
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""extraction_guidance""]",extraction_guidance,string,"Use for report-level geographic coverage, including the prices/consumption source MSD. Extract geographic coverage only if it is explicitly stated in the report or approved provenance. Do not infer national coverage from the institution name, publisher, title wording, or the word national unless the report explicitly states the territorial scope. If the value is absent, record missing/not stated in the Metadata Set according to implementation convention."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""source_standard""]",source_standard,string,SDMX Glossary 2.1 cross-domain concept COVERAGE_GEO; supplied evidence confirms Concept ID COVERAGE_GEO and recommended representation String/Codelist. Local REPORT_COVERAGE_GEO ID is used to preserve REPORT attachment separately from DATAFLOW-level COVERAGE_GEO.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7]",7,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""concept_id""]",concept_id,string,REPORT_DATA_DESCRIPTION
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""name""]",name,string,Report data description or subject
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""definition""]",definition,string,Narrative summary of the statistical subject matter covered by the whole report or publication.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""extraction_guidance""]",extraction_guidance,string,"Use where a source MSD requires report-level DATA_DESCRIPTION or REPORT_SUBJECT, including agriculture and prices/consumption. Summarise report scope without merging methodologically distinct dataflows, such as crop production versus fertilizer prices or CPI versus household spending."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""source_standard""]",source_standard,string,Local concept; candidate mapping to an SDMX data-description or statistical-presentation metadata concept if exact ID is confirmed.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",7,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8]",8,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""concept_id""]",concept_id,string,REPORT_SOURCE_DATA
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""name""]",name,string,Report source data
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""definition""]",definition,string,"Report-level description of the surveys, registers, panels, administrative systems or other sources used for the statistics in the publication."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""extraction_guidance""]",extraction_guidance,string,"Use where the source provides a report-level source description or where the source MSD requires report-level SOURCE_DATA, such as agriculture. Preserve distinct sources in the same report, for example annual farm survey versus agricultural price panel. Dataflow-specific sources should also be recorded under SOURCE_DATA when needed."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",8,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9]",9,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""concept_id""]",concept_id,string,REPORT_METHODOLOGY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""name""]",name,string,Report methodology
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""definition""]",definition,string,Report-level narrative information on methods used across the publication.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""extraction_guidance""]",extraction_guidance,string,"Use where the source MSD requires report-level METHODOLOGY, such as agriculture. Preserve methodologically distinct structures in the text and do not force methodology into dimensions. Dataflow-specific methodology should be recorded under METHODOLOGY."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",9,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10]",10,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""concept_id""]",concept_id,string,REPORT_STAT_CONCEPT_DEF
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""name""]",name,string,Report statistical concepts and definitions
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""definition""]",definition,string,"Report-level definitions of key statistical concepts, measures, categories or terms used across the publication."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""extraction_guidance""]",extraction_guidance,string,"Use where a report-level definitions section applies to the whole report or where the source MSD requires report-level statistical concepts and definitions, such as agriculture. Do not omit dataflow-specific definitions when different measures are present."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",10,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11]",11,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""concept_id""]",concept_id,string,REPORT_LIMITATIONS
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""name""]",name,string,Report caveats and limitations
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""definition""]",definition,string,"Report-level caveats, warnings, recommended limitations or restrictions on interpretation and use."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""extraction_guidance""]",extraction_guidance,string,"Use where the source MSD requires report-level limitations, including agriculture report caveats. Preserve classification-review warnings, unnamed-currency caveats, synthetic-data statements and other report-wide limitations. Dataflow-specific caveats should be recorded under LIMITATIONS."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""source_standard""]",source_standard,string,Local concept; candidate mapping to an SDMX recommended-uses/limitations reference metadata concept if exact ID/version is confirmed.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",11,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12]",12,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""concept_id""]",concept_id,string,REPORT_DATA_REV
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""name""]",name,string,Report data revision
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""definition""]",definition,string,"Report-level policy or practice for revising, correcting, validating or finalising statistical data in the publication."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""extraction_guidance""]",extraction_guidance,string,"Mandatory when a source MSD requires report-level DATA_REV, such as the agriculture report-level structure. Do not infer applicability to every dataflow unless stated. Observation-level provisional, forecast or final status remains outside this reference metadata concept."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept DATA_REV; listed in supplied principles as a confirmed SDMX concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",12,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13]",13,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""concept_id""]",concept_id,string,REPORT_CONF
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""name""]",name,string,Report confidentiality
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""definition""]",definition,string,"Report-level confidentiality policy, disclosure-control statement or statement about confidential data applicable to the publication."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""target_attachment""]",target_attachment,string,REPORT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""extraction_guidance""]",extraction_guidance,string,"Mandatory for reports whose source MSD requires report-level CONF, including agriculture and prices/consumption. Preserve statements that data are synthetic and no person-level or confidential data are included. Do not infer confidentiality risks beyond the source wording."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept CONF; listed in supplied principles as a confirmed SDMX concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",13,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14]",14,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""name""]",name,string,Dataflow data description
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""definition""]",definition,string,Narrative summary of the statistical content covered by a dataflow or dataset.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""extraction_guidance""]",extraction_guidance,string,Describe the statistical content and main variables without copying observation values. Preserve methodologically distinct content in separate dataflow metadata values: population stocks and rates; consumer price indices; labour unemployment rates versus vacancies; external-trade imports/exports; registered deaths versus hospital beds; enrollment counts versus completion rates; crop area/production versus fertilizer prices; CPI versus household spending.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept from Standardising Reference Metadata Reporting in SDMX; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",14,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15]",15,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""concept_id""]",concept_id,string,STATISTICAL_POP
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""name""]",name,string,Statistical population
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""definition""]",definition,string,Population or universe represented by the statistical results.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""extraction_guidance""]",extraction_guidance,string,"Use where the source states a population or universe, such as resident population for demographic statistics, price quotations/outlets for CPI, persons within an age scope for labour statistics, customs declarations or cross-border transactions for external trade, registered events for mortality, facilities for hospital bed counts, learners/cohorts for education, farms/crop holdings for agriculture, outlet panels for prices or households for spending. If not stated, do not infer beyond source wording."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",15,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16]",16,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""concept_id""]",concept_id,string,STATISTICAL_UNIT
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""name""]",name,string,Statistical unit
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""definition""]",definition,string,"Entity or unit to which the statistics relate, such as persons, establishments, events, facilities, learners, cohorts, farms, outlets, households, survey respondents, price observations, trade transactions or declarations."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""extraction_guidance""]",extraction_guidance,string,"Mandatory for household spending where the source MSD requires a statistical unit. For other dataflows, extract only where stated or clearly defined by the source. Preserve distinctions such as resident persons versus households, price quotes versus item indices, unemployed persons versus vacancies, customs trade declarations versus commodity flows, registered deaths versus hospital beds, learners versus completion cohorts, crop farms versus retail outlets, and households versus CPI price quotes."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""source_standard""]",source_standard,string,Local concept; no exact SDMX reference metadata concept ID confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",16,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17]",17,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""name""]",name,string,Geographical coverage
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""definition""]",definition,string,"Geographic scope or territorial coverage of the dataflow, distinct from reference-area dimension values used to identify observations."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""representation""]",representation,string,String; codelist only when an authoritative and semantically appropriate geographic vocabulary is confirmed
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""extraction_guidance""]",extraction_guidance,string,"Mandatory for crop area/production where the source MSD requires it. Extract explicit geographic coverage or the set of areas covered. For synthetic/local area labels such as Northland, Centralia and South Coast, retain free text and do not map to UN M49 or ISO 3166 without external confirmation. For external trade, distinguish reporting economy coverage from partner-economy dimension values if stated. If absent, record not stated in the Metadata Set where required."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""source_standard""]",source_standard,string,SDMX Glossary 2.1 cross-domain concept; supplied excerpt confirms Concept ID COVERAGE_GEO and recommended representation String/Codelist.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",17,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18]",18,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""name""]",name,string,Temporal coverage
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""definition""]",definition,string,"Time period, range or list of periods covered by a dataflow or dataset, expressed as reference metadata rather than individual observation time values."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""representation""]",representation,string,Time period range/list as text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""extraction_guidance""]",extraction_guidance,string,"Summarise observation periods and timing conventions for each dataflow. Preserve differences such as annual or quarterly population series, monthly CPI, quarterly unemployment rates, monthly vacancies, external-trade reference months or years, calendar-year registered deaths, year-end bed stock, administrative enrollment years, modelled completion-rate years, crop years, fertilizer price months, CPI months and household survey years."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",18,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19]",19,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""concept_id""]",concept_id,string,REFERENCE_PERIOD_DETAIL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""name""]",name,string,Reference period detail
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""definition""]",definition,string,Narrative qualification of how the reference period is interpreted for a measure or dataflow.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""extraction_guidance""]",extraction_guidance,string,"Use when reference-period convention is statistically meaningful, such as mid-year or end-year population, monthly CPI collection period, trade month/date-of-clearance basis, deaths counted during a calendar year, staffed beds at 31 December, enrollment on census day, 2025 crop forecasts, monthly fertilizer prices, CPI base-period distinction, or household expenditure per household per month. Keep this as metadata rather than altering TIME_PERIOD semantics."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""source_standard""]",source_standard,string,Local concept; related to reference-period metadata but exact SDMX reference metadata concept not confirmed.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",19,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20]",20,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""concept_id""]",concept_id,string,STAT_CONCEPT_DEF
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""name""]",name,string,Dataflow statistical concepts and definitions
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""definition""]",definition,string,"Definitions of key statistical concepts, measures, categories or terms used in a dataflow."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""extraction_guidance""]",extraction_guidance,string,"Extract definitions from report definition sections and relevant footnotes. Preserve source distinctions such as population count or rate, consumer price index, inflation rate if present, unemployment rate, job vacancy, import value, export value, trade balance if present, registered death, available staffed bed, enrollment count, completion rate, harvested area, production, retail price, CPI, and mean monthly consumption expenditure per household."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",20,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21]",21,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""name""]",name,string,Dataflow source data
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""definition""]",definition,string,"Survey, register, administrative system, facility report, panel, transaction/declaration source or other source used to compile a dataflow."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""extraction_guidance""]",extraction_guidance,string,"Extract source descriptions and attach them to the relevant dataflow. Preserve separate sources such as population census/register inputs, consumer price collection, labour force survey versus employer vacancy survey, customs or trade declaration systems for external trade, mortality registration versus facility bed source, education management information system versus household learning survey, Synthetic Annual Farm Survey versus Agricultural Price Panel, and consumer price survey versus household budget survey."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",21,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22]",22,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""concept_id""]",concept_id,string,COLLECTION_METHOD
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""name""]",name,string,Collection method
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""definition""]",definition,string,"Method by which source data are collected, including survey, administrative collection, register extraction, facility reporting, outlet panel, customs declaration capture or census-day collection details."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""extraction_guidance""]",extraction_guidance,string,"Use where the source describes collection arrangements separately from general methodology. Preserve distinctions among household survey collection, price quote collection, administrative headcounts, customs/declaration capture, facility validation, registration systems, farm surveys, outlet panels and household budget surveys."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept from reference metadata guidance; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",22,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23]",23,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""concept_id""]",concept_id,string,METHODOLOGY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""name""]",name,string,Dataflow methodology
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""definition""]",definition,string,"Narrative information on survey estimation, administrative counting, compilation, modelling, timing, classification use and other methods used to produce a dataflow."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""extraction_guidance""]",extraction_guidance,string,"Extract methodology narrative faithfully. Preserve distinctions among synthetic survey estimates and independently compiled counts, administrative headcounts and modelled survey estimates, price-index compilation, trade valuation/recording basis, registered events and facility stock measures, farm-survey aggregates and monthly outlet-panel prices, fixed-basket CPI compilation and household spending survey estimates. Do not force methodology into statistical dimensions."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept from Standardising Reference Metadata Reporting in SDMX; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",23,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24]",24,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""concept_id""]",concept_id,string,ESTIMATION_METHOD
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""name""]",name,string,Estimation method
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""definition""]",definition,string,"Narrative description of estimation, modelling, weighting, calibration, forecast or replacement procedures used to derive statistical results."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""extraction_guidance""]",extraction_guidance,string,"Use when estimation, modelling, forecasting or weighting is specifically stated, such as intercensal population estimation, CPI imputation/replacement, modelled education completion rates, revised survey weights, estimated hospital bed values pending validation, synthetic labour estimates, crop forecasts, CPI provisional treatment, or household calibration-weight revisions. Coded observation status remains a DSD/data attribute where needed."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""source_standard""]",source_standard,string,Candidate SDMX reference metadata concept from reference metadata guidance; exact concept ID/version not confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",24,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25]",25,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""concept_id""]",concept_id,string,CLASS_SYSTEM_NOTE
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""name""]",name,string,Classification-system note
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""definition""]",definition,string,"Narrative note describing whether categories use, resemble, require review against, or are not confirmed against an authoritative classification."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""extraction_guidance""]",extraction_guidance,string,"Mandatory where a source MSD requires classification status: crop names are common labels requiring classification review; fertilizer products are local market categories not verified CPC codes; CPI consumption divisions resemble COICOP but revision is not confirmed. Also use for labour industry aggregates not confirmed to ISIC, health cause labels not confirmed to ICD, education levels requiring ISCED review, external-trade commodities not confirmed to HS/SITC revision, partner groups not confirmed to UN M49, and wealth/expenditure quintiles not silently mapped to standard income classifications."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""source_standard""]",source_standard,string,Local concept; no exact SDMX reference metadata concept ID confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",25,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26]",26,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""concept_id""]",concept_id,string,INDEX_BASE_PERIOD
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""name""]",name,string,Index base period
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""definition""]",definition,string,Reference period or base used to scale an index.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""representation""]",representation,string,InternationalString / free text; structured period representation may be added if a standard concept is confirmed
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""extraction_guidance""]",extraction_guidance,string,"Mandatory for CPI dataflows. Extract base-period information for a consumer price index from definitions and unit text, and retain the stated base as index metadata rather than treating it as an observation date."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""source_standard""]",source_standard,string,Local concept; base-period concept mapping should be verified before production.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",26,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27]",27,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""concept_id""]",concept_id,string,EXPENDITURE_QUINTILE_DEFINITION
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""name""]",name,string,Expenditure or wealth quintile definition
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""definition""]",definition,string,Narrative explanation of how expenditure or wealth quintile categories are defined for a dataflow.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""extraction_guidance""]",extraction_guidance,string,"Mandatory for household spending where the source defines expenditure quintiles within the synthetic survey distribution. Also use for education wealth quintile caveats if applicable. Do not convert lowest/highest quintile labels to a standard codelist unless definitions, population and scope are confirmed."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""source_standard""]",source_standard,string,Local concept; no authoritative quintile codelist confirmed from supplied external evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",27,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28]",28,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""concept_id""]",concept_id,string,SAMPLING_ERROR
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""name""]",name,string,Sampling error
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""definition""]",definition,string,"Statement about sampling error, sampling uncertainty or survey-estimate precision affecting survey-based results."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""extraction_guidance""]",extraction_guidance,string,Mandatory for the household spending dataflow because the source MSD requires a sampling-error note. Use for other survey-based dataflows only where the source states sampling error or uncertainty. Do not invent precision measures.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""source_standard""]",source_standard,string,Local concept; candidate mapping to an SDMX accuracy or quality reference metadata concept should be verified.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",28,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29]",29,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""concept_id""]",concept_id,string,UNIT_MEASURE_NOTE
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""name""]",name,string,Unit of measure and currency note
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""definition""]",definition,string,"Narrative note on measurement units, including unresolved, unnamed or unconfirmed currency information."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""representation""]",representation,string,InternationalString / free text; ISO 4217 code only if the currency is identified by the source or later authoritative mapping
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""extraction_guidance""]",extraction_guidance,string,"Mandatory for fertilizer retail prices and household spending where the source uses unnamed local currency. Use for external trade values if currency, valuation basis or unit scale requires a narrative caveat not captured in DSD attributes. For fertilizer prices, record local currency per 50 kg bag and preserve that no ISO 4217 code is confirmed. For household spending, record local currency per household per month and preserve that the local currency is not named. Do not assign currency codes without evidence."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""source_standard""]",source_standard,string,Local concept; ISO 4217 is a candidate standard for currency identity but no specific code is confirmed for the covered reports.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",29,""source_url""]",source_url,string,https://www.iso.org/standard/64758.html
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30]",30,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""concept_id""]",concept_id,string,DATA_REV
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""name""]",name,string,Dataflow data revision
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""definition""]",definition,string,"Policy or practice for revising, correcting, validating or finalising reported statistical data for a dataflow."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""extraction_guidance""]",extraction_guidance,string,"Mandatory for dataflows whose source MSD requires revision metadata, including labour, health, education, crop area/production, CPI and household spending. For population, consumer price XML, labour XML and external trade XML cases, extract revision metadata only when represented or stated outside the imported generic XML MSD. For fertilizer retail prices, extract only if explicitly applicable and do not assume the crop forecast revision policy applies. Preserve late registrations, validation replacement, duplicate-removal, forecast, provisional, customs-data correction and calibration-weight revision practices as narrative metadata; do not use this concept for individual observation-status flags."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept DATA_REV; listed in supplied principles as a confirmed SDMX reference metadata concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",30,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31]",31,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""concept_id""]",concept_id,string,CONF
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""name""]",name,string,Dataflow confidentiality
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""definition""]",definition,string,"Confidentiality policy, confidentiality status, disclosure-control treatment or statement about confidential data applicable to a dataflow."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""extraction_guidance""]",extraction_guidance,string,"Mandatory where the source MSD requires dataflow-level confidentiality, including earlier labour, health, education and agriculture dataflows. For population, consumer price XML, labour XML and external trade XML cases, extract confidentiality metadata only when represented or stated outside the imported generic XML MSD. For prices/consumption, use this when confidentiality differs by dataflow; otherwise report-level confidentiality may be sufficient in the Metadata Set. Preserve synthetic-data statements and do not infer confidentiality risks beyond the source wording."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept CONF; listed in supplied principles as a confirmed SDMX reference metadata concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",31,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32]",32,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""concept_id""]",concept_id,string,LIMITATIONS
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""name""]",name,string,Dataflow caveats and limitations
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""definition""]",definition,string,"Caveats, warnings, recommended limitations or restrictions on interpretation and use of a dataflow."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""extraction_guidance""]",extraction_guidance,string,"Extract caveats and limitations from report sections and relevant dataflow-level notes. Preserve warnings such as not summing displayed labour sex rows to infer totals, unconfirmed ICD/ISIC/ISCED/COICOP/CPC/HS/SITC mappings, crop forecasts, unnamed local currencies, incomplete private-sector bed reporting, survey-specific wealth or expenditure quintiles, sampling error, provisional CPI month, external-trade classification/valuation caveats and modelled or estimated values. Exclude observation-specific status flags that belong in the data structure."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""source_standard""]",source_standard,string,Local concept; candidate mapping to an SDMX recommended-uses/limitations reference metadata concept if exact ID/version is confirmed.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",32,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33]",33,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""concept_id""]",concept_id,string,COMPARABILITY
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""name""]",name,string,Comparability
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""definition""]",definition,string,"Information affecting comparison of statistics across dataflows, areas, time periods, sources, methods or classifications."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""extraction_guidance""]",extraction_guidance,string,"Populate when differences affect comparability. Examples include population-estimation method changes, CPI base or basket changes, unemployment rates versus vacancy counts, external-trade valuation or classification changes, mortality cause labels lacking a confirmed ICD version, education-level labels requiring ISCED review, crop and fertilizer categories lacking confirmed authoritative classifications, CPI consumption divisions with unconfirmed COICOP revision, and household expenditure quintiles not comparable to a standard income classification without review."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept COMPARABILITY; listed in supplied principles as a confirmed SDMX reference metadata concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",33,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34]",34,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""concept_id""]",concept_id,string,COHERENCE
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""name""]",name,string,Coherence
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""definition""]",definition,string,"Information on logical consistency, reconcilability or relationship of the data with other statistics, sources or dataflows."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""extraction_guidance""]",extraction_guidance,string,Use only when the report states coherence information or relationships with other data sources. Do not infer coherence merely because dataflows appear in the same publication.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept COHERENCE; listed in supplied principles as a confirmed SDMX reference metadata concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",34,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35]",35,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""concept_id""]",concept_id,string,COMPLETENESS
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""name""]",name,string,Completeness
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""definition""]",definition,string,"Information on completeness of reporting, coverage or available data for the dataflow."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""extraction_guidance""]",extraction_guidance,string,"Use when completeness is stated or substantively affects interpretation. For health hospital-capacity data, capture incomplete private-sector bed reporting and affected year or category where stated. For external trade, use only where source states coverage gaps such as missing declarations, late records or excluded flows. Do not invent completeness statements for reports that do not provide them."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept COMPLETENESS; listed in supplied principles as a confirmed SDMX reference metadata concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",35,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36]",36,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""concept_id""]",concept_id,string,TIMELINESS
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""name""]",name,string,Timeliness
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""definition""]",definition,string,"Information about release timing, availability, publication timing, or release lag relative to the reference period."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""extraction_guidance""]",extraction_guidance,string,Use only if timeliness information can be derived from explicit publication date and reference periods under implementation rules or is stated as release timing. Do not treat provisional/final observation status as timeliness; record revision practice under DATA_REV and coded observation status in the DSD/data template when applicable.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept TIMELINESS; listed in supplied principles as a confirmed SDMX reference metadata concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",36,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37]",37,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""concept_id""]",concept_id,string,DATASET_NOTE
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""name""]",name,string,Dataset or table note
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""definition""]",definition,string,"Explanatory note from the source report that qualifies a table, dataset or dataflow as a whole and is not an individual observation status flag."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""usage_status""]",usage_status,string,CONDITIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""target_attachment""]",target_attachment,string,DATASET
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""extraction_guidance""]",extraction_guidance,string,"Use for dataset-level notes such as local industry aggregate caveats, provisional enrollment table notes, crop forecast table footnotes, fertilizer CPC caveats, CPI provisional-month notes, external-trade table caveats or notes that all completion rates are modelled estimates. If a note applies only to specific observations and is better represented by observation status or attributes, do not duplicate it except as broader explanatory context."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""source_standard""]",source_standard,string,Local concept; no exact SDMX reference metadata concept ID confirmed from supplied evidence.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",37,""source_url""]",source_url,string,not stated
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38]",38,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""concept_id""]",concept_id,string,INST_MANDATE
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""name""]",name,string,Institutional mandate
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""definition""]",definition,string,"Legal or institutional mandate under which the statistics are collected, compiled or disseminated."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""representation""]",representation,string,InternationalString / free text
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""extraction_guidance""]",extraction_guidance,string,Populate only if a mandate is explicitly stated. The supplied report contexts generally do not state legal or institutional mandates; do not infer a mandate from the publisher name.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""source_standard""]",source_standard,string,SDMX Glossary candidate concept INST_MANDATE; fetched excerpts confirm the presence of Institutional mandate entries but not complete concept implementation details.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",38,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39]",39,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""concept_id""]",concept_id,string,COMPILING_ORG
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""name""]",name,string,Dataflow compiling organisation
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""definition""]",definition,string,"Organisation responsible for compiling the statistics for a dataflow, where this is stated separately from publisher, report-level producer or source owner."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""representation""]",representation,string,InternationalString / free text; coded organisation identifier only if an authoritative organisation scheme is confirmed
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""extraction_guidance""]",extraction_guidance,string,"Use only when the report explicitly identifies a dataflow-level compiling organisation. Do not equate publisher, ministry, survey owner or data source with compiling organisation unless the source states that role. Use REPORT_COMPILING_ORG for report-level compiling or publishing roles."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""source_standard""]",source_standard,string,"SDMX Glossary / Global Reference Metadata candidate concept COMPILING_ORG; listed in supplied principles as a confirmed SDMX reference metadata concept, but exact definition/version not fetched."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",39,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40]",40,object,
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""concept_id""]",concept_id,string,META_UPDATE
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""name""]",name,string,Metadata update
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""definition""]",definition,string,Date or statement indicating when the reference metadata were last updated or certified.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""representation""]",representation,string,Date or InternationalString / free text when only narrative update information is supplied
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""target_attachment""]",target_attachment,string,METADATA
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""extraction_guidance""]",extraction_guidance,string,Populate only if the report or metadata process states a metadata update date. Do not automatically substitute the publication date unless implementation rules define them as equivalent and the Metadata Set records that assumption.
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""source_standard""]",source_standard,string,"SDMX Glossary 2.1; supplied excerpts confirm the presence of Metadata update entries, but exact implementation representation/version should be verified before production use."
+"[""optimized_artifact"",""metadata_structures"",0,""concepts"",40,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""metadata_structures"",1]",1,object,
+"[""optimized_artifact"",""metadata_structures"",1,""msd_id""]",msd_id,string,MSD_POP
+"[""optimized_artifact"",""metadata_structures"",1,""name""]",name,string,Population Statistics Reference Metadata
+"[""optimized_artifact"",""metadata_structures"",1,""agency_id""]",agency_id,string,DEMO
+"[""optimized_artifact"",""metadata_structures"",1,""version""]",version,string,1.0
+"[""optimized_artifact"",""metadata_structures"",1,""concepts""]",concepts,array,
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0]",0,object,
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""concept_id""]",concept_id,string,SOURCE
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""name""]",name,string,Source
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""definition""]",definition,string,Metadata concept SOURCE imported from the SDMX 2.0 population XML MSD_POP. Its exact scope is the source text encoded by that XML metadata report and should not be silently merged with cross-report SOURCE_DATA unless semantic equivalence is confirmed for a specific metadata value.
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report for 01_sdmx_20_population_full_case.xml. Preserve this concept to maintain compatibility with the imported XML MSD.
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",0,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1]",1,object,
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""concept_id""]",concept_id,string,METHODOLOGY
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""name""]",name,string,Methodology
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""definition""]",definition,string,Metadata concept METHODOLOGY imported from the SDMX 2.0 population XML MSD_POP.
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"Use the value encoded in the XML metadata report for 01_sdmx_20_population_full_case.xml. It is semantically compatible with the cross-report dataflow methodology concept, but the original MSD_POP concept is retained to preserve the XML structure and version."
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",1,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2]",2,object,
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""concept_id""]",concept_id,string,SOURCE_URL
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""name""]",name,string,Source URL
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""definition""]",definition,string,Metadata concept SOURCE_URL imported from the SDMX 2.0 population XML MSD_POP.
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report for 01_sdmx_20_population_full_case.xml. This DATAFLOW-targeted XML concept is retained separately from the cross-report REPORT-level SOURCE_URL because its attachment level differs.
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""optimized_artifact"",""metadata_structures"",1,""concepts"",2,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",2]",2,object,
+"[""optimized_artifact"",""metadata_structures"",2,""msd_id""]",msd_id,string,MSD_CPI
+"[""optimized_artifact"",""metadata_structures"",2,""name""]",name,string,Consumer Price Statistics Reference Metadata
+"[""optimized_artifact"",""metadata_structures"",2,""agency_id""]",agency_id,string,DEMO
+"[""optimized_artifact"",""metadata_structures"",2,""version""]",version,string,1.0
+"[""optimized_artifact"",""metadata_structures"",2,""concepts""]",concepts,array,
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0]",0,object,
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""concept_id""]",concept_id,string,SOURCE
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""name""]",name,string,Source
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""definition""]",definition,string,Metadata concept SOURCE imported from the SDMX 2.0 consumer-prices XML MSD_CPI. Its exact scope is the source text encoded by that XML metadata report and should not be silently merged with cross-report SOURCE_DATA unless semantic equivalence is confirmed for a specific metadata value.
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report for 02_sdmx_20_consumer_prices_full_case.xml. Preserve this concept to maintain compatibility with the imported XML MSD.
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",0,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1]",1,object,
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""concept_id""]",concept_id,string,METHODOLOGY
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""name""]",name,string,Methodology
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""definition""]",definition,string,Metadata concept METHODOLOGY imported from the SDMX 2.0 consumer-prices XML MSD_CPI.
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"Use the value encoded in the XML metadata report for 02_sdmx_20_consumer_prices_full_case.xml. It is semantically compatible with the cross-report dataflow methodology concept, but the original MSD_CPI concept is retained to preserve the XML structure and version."
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",1,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2]",2,object,
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""concept_id""]",concept_id,string,SOURCE_URL
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""name""]",name,string,Source URL
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""definition""]",definition,string,Metadata concept SOURCE_URL imported from the SDMX 2.0 consumer-prices XML MSD_CPI.
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report for 02_sdmx_20_consumer_prices_full_case.xml. This DATAFLOW-targeted XML concept is retained separately from the cross-report REPORT-level SOURCE_URL because its attachment level differs.
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""source_standard""]",source_standard,string,SDMX XML 2.0
+"[""optimized_artifact"",""metadata_structures"",2,""concepts"",2,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",3]",3,object,
+"[""optimized_artifact"",""metadata_structures"",3,""msd_id""]",msd_id,string,MSD_LAB
+"[""optimized_artifact"",""metadata_structures"",3,""name""]",name,string,Labour Market Statistics Reference Metadata
+"[""optimized_artifact"",""metadata_structures"",3,""agency_id""]",agency_id,string,DEMO
+"[""optimized_artifact"",""metadata_structures"",3,""version""]",version,string,1.0
+"[""optimized_artifact"",""metadata_structures"",3,""concepts""]",concepts,array,
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0]",0,object,
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""concept_id""]",concept_id,string,SOURCE
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""name""]",name,string,Source
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""definition""]",definition,string,Metadata concept SOURCE imported from the SDMX 2.1 labour-market XML MSD_LAB. Its exact scope is the source text encoded by that XML metadata report and should not be silently merged with cross-report SOURCE_DATA unless semantic equivalence is confirmed for a specific metadata value.
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report for 03_sdmx_21_labour_market_full_case.xml. Preserve this concept to maintain compatibility with the imported XML MSD.
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",0,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1]",1,object,
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""concept_id""]",concept_id,string,METHODOLOGY
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""name""]",name,string,Methodology
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""definition""]",definition,string,Metadata concept METHODOLOGY imported from the SDMX 2.1 labour-market XML MSD_LAB.
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"Use the value encoded in the XML metadata report for 03_sdmx_21_labour_market_full_case.xml. It is semantically compatible with the cross-report dataflow methodology concept, but the original MSD_LAB concept is retained to preserve the XML structure and source-standard version."
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",1,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2]",2,object,
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""concept_id""]",concept_id,string,SOURCE_URL
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""name""]",name,string,Source URL
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""definition""]",definition,string,Metadata concept SOURCE_URL imported from the SDMX 2.1 labour-market XML MSD_LAB.
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""representation""]",representation,string,URI
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report for 03_sdmx_21_labour_market_full_case.xml. This DATAFLOW-targeted XML concept is retained separately from the cross-report REPORT-level SOURCE_URL because its attachment level and URI representation differ.
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""optimized_artifact"",""metadata_structures"",3,""concepts"",2,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",4]",4,object,
+"[""optimized_artifact"",""metadata_structures"",4,""msd_id""]",msd_id,string,MSD_TRD
+"[""optimized_artifact"",""metadata_structures"",4,""name""]",name,string,External Trade Statistics Reference Metadata
+"[""optimized_artifact"",""metadata_structures"",4,""agency_id""]",agency_id,string,DEMO
+"[""optimized_artifact"",""metadata_structures"",4,""version""]",version,string,1.0
+"[""optimized_artifact"",""metadata_structures"",4,""concepts""]",concepts,array,
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0]",0,object,
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""concept_id""]",concept_id,string,SOURCE
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""name""]",name,string,Source
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""definition""]",definition,string,Metadata concept SOURCE imported from the SDMX 2.1 external-trade XML MSD_TRD. Its exact scope is the source text encoded by that XML metadata report and should not be silently merged with cross-report SOURCE_DATA unless semantic equivalence is confirmed for a specific metadata value.
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""required""]",required,boolean,true
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report for 04_sdmx_21_external_trade_full_case.xml. Preserve this concept to maintain compatibility with the imported XML MSD.
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",0,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1]",1,object,
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""concept_id""]",concept_id,string,METHODOLOGY
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""name""]",name,string,Methodology
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""definition""]",definition,string,Metadata concept METHODOLOGY imported from the SDMX 2.1 external-trade XML MSD_TRD.
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""representation""]",representation,string,String
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"Use the value encoded in the XML metadata report for 04_sdmx_21_external_trade_full_case.xml. It is semantically compatible with the cross-report dataflow methodology concept, but the original MSD_TRD concept is retained to preserve the XML structure and source-standard version."
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",1,""source_url""]",source_url,string,not stated in XML
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2]",2,object,
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""concept_id""]",concept_id,string,SOURCE_URL
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""name""]",name,string,Source URL
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""definition""]",definition,string,Metadata concept SOURCE_URL imported from the SDMX 2.1 external-trade XML MSD_TRD.
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""representation""]",representation,string,URI
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""required""]",required,boolean,false
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""usage_status""]",usage_status,string,OPTIONAL
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Use the value encoded in the XML metadata report for 04_sdmx_21_external_trade_full_case.xml. This DATAFLOW-targeted XML concept is retained separately from the cross-report REPORT-level SOURCE_URL because its attachment level and URI representation differ.
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""source_standard""]",source_standard,string,SDMX XML 2.1
+"[""optimized_artifact"",""metadata_structures"",4,""concepts"",2,""source_url""]",source_url,string,not stated in XML

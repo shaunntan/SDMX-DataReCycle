@@ -1,0 +1,34 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,METADATA_SET
+"[""source_report""]",source_report,string,03_sdmx_21_labour_market_full_case.xml
+"[""source_sha256""]",source_sha256,string,51affdd8ac40d4b0b42f1debed99a36090d477e85d40a3b35dd62c2f65868752
+"[""principles_file""]",principles_file,string,06_METADATA_SET.txt
+"[""principles_sha256""]",principles_sha256,string,78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""standard_references""]",standard_references,array,
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,Mechanically converted from XML; no AI interpretation was used.
+"[""limitations"",1]",1,string,Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure.
+"[""metadata_sets""]",metadata_sets,array,
+"[""metadata_sets"",0]",0,object,
+"[""metadata_sets"",0,""metadata_set_id""]",metadata_set_id,string,LAB_METADATA_SET
+"[""metadata_sets"",0,""msd_id""]",msd_id,string,MSD_LAB
+"[""metadata_sets"",0,""target_id""]",target_id,string,DF_LAB
+"[""metadata_sets"",0,""target_type""]",target_type,string,DATAFLOW
+"[""metadata_sets"",0,""values""]",values,array,
+"[""metadata_sets"",0,""values"",0]",0,object,
+"[""metadata_sets"",0,""values"",0,""concept_id""]",concept_id,string,SOURCE
+"[""metadata_sets"",0,""values"",0,""value""]",value,string,Illustrative labour-force survey.
+"[""metadata_sets"",0,""values"",0,""evidence_quote""]",evidence_quote,string,Illustrative labour-force survey.
+"[""metadata_sets"",0,""values"",0,""source_location""]",source_location,string,XML metadata attribute SOURCE
+"[""metadata_sets"",0,""values"",1]",1,object,
+"[""metadata_sets"",0,""values"",1,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_sets"",0,""values"",1,""value""]",value,string,Rates are represented as percentages and are disaggregated by sex.
+"[""metadata_sets"",0,""values"",1,""evidence_quote""]",evidence_quote,string,Rates are represented as percentages and are disaggregated by sex.
+"[""metadata_sets"",0,""values"",1,""source_location""]",source_location,string,XML metadata attribute METHODOLOGY
+"[""metadata_sets"",0,""values"",2]",2,object,
+"[""metadata_sets"",0,""values"",2,""concept_id""]",concept_id,string,SOURCE_URL
+"[""metadata_sets"",0,""values"",2,""value""]",value,string,https://example.org/labour_market/source
+"[""metadata_sets"",0,""values"",2,""evidence_quote""]",evidence_quote,string,https://example.org/labour_market/source
+"[""metadata_sets"",0,""values"",2,""source_location""]",source_location,string,XML metadata attribute SOURCE_URL

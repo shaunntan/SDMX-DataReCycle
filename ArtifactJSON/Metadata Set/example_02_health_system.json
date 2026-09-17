@@ -1,0 +1,267 @@
+{
+  "artifact_type": "METADATA_SET",
+  "source_report": "example_02_health_system.pdf",
+  "source_sha256": "5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23",
+  "principles_file": "06_METADATA_SET.txt",
+  "principles_sha256": "78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / cross-domain concepts",
+      "artifact_id": "SDMX_GLOSSARY_2_1",
+      "version": "2.1, December 2020",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "Supplied official-source excerpt shows SDMX Glossary entries including Metadata Structure Definition, Metadata Set, Metadata update, and a cross-domain concept entry for Geographical coverage with Concept ID COVERAGE_GEO and recommended representation String; Codelist.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Global Registry catalog",
+      "artifact_id": "SDMX_GLOBAL_REGISTRY_CODELISTS_AND_METADATA",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "Supplied official-source excerpt shows the SDMX Global Registry interface includes Codelists and Metadata / Metadata Structures among searchable artefact categories; it does not confirm any specific health-domain codelist or metadata concept scheme version for this report.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Reference metadata guideline",
+      "artifact_id": "STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX",
+      "version": "1.0",
+      "url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+      "evidence": "The guideline URL is supplied in the principles as a recommended source for SDMX reference metadata concepts, but no fetched external excerpt confirming exact concept IDs, definitions and versions from that guideline was supplied in the evidence package.",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic classification",
+      "artifact_id": "UN_M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "Supplied official-source excerpt shows UN M49 country and area entries with numeric and alpha codes. The report areas Northland, Centralia and South Coast are synthetic/local area labels and are not confirmed as UN M49 areas from the supplied excerpt.",
+      "verification_status": "CONFIRMED"
+    }
+  ],
+  "limitations": [
+    "No report contact details are stated, so CONTACT is not populated as a metadata value.",
+    "No source URL or persistent report URL is stated in the supplied report context, so SOURCE_URL is not populated as a metadata value.",
+    "No metadata update date is stated separately from the publication date, so META_UPDATE is not populated as a metadata value.",
+    "No legal or institutional mandate is stated in the report.",
+    "Exact SDMX Global Reference Metadata Concept Scheme IDs and versions are not confirmed from supplied external evidence for most metadata concepts; candidate/local concept IDs from the accepted MSD are used without asserting confirmed standard reuse.",
+    "The report states that cause labels resemble broad ICD families but no ICD version is confirmed; no ICD version is asserted in these metadata values.",
+    "The geographic area labels Northland, Centralia and South Coast are synthetic/local labels and are not mapped to UN M49 or ISO 3166.",
+    "Target dataflow identifiers are practical local identifiers for this extraction because no accepted DATAFLOW artifact was supplied in the prompt."
+  ],
+  "metadata_sets": [
+    {
+      "metadata_set_id": "MS_HEALTH_REPORT_REFERENCE_METADATA_2026",
+      "msd_id": "MSD_HEALTH_REPORT_REFERENCE_METADATA",
+      "target_id": "example_02_health_system.pdf",
+      "target_type": "REPORT",
+      "values": [
+        {
+          "concept_id": "REPORT_TITLE",
+          "value": "Health Outcomes and Capacity Report",
+          "evidence_quote": "Health Outcomes and Capacity Report",
+          "source_location": "Chunk 1, page 1"
+        },
+        {
+          "concept_id": "PUBLISHER",
+          "value": "Synthetic Public Health Agency",
+          "evidence_quote": "Synthetic Public Health Agency",
+          "source_location": "Chunk 1, page 1"
+        },
+        {
+          "concept_id": "PUBLICATION_DATE",
+          "value": "2026-07-03",
+          "evidence_quote": "Publication date: 3 July 2026",
+          "source_location": "Chunk 1, page 1"
+        }
+      ]
+    },
+    {
+      "metadata_set_id": "MS_MORTALITY_REFERENCE_METADATA_2026",
+      "msd_id": "MSD_MORTALITY_REFERENCE_METADATA",
+      "target_id": "DF_HEALTH_REGISTERED_DEATHS",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "value": "Registered deaths by area, cause, age and year.",
+          "evidence_quote": "Table 1. Registered deaths by area, cause, age and year",
+          "source_location": "Chunk 3, page 2"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "value": "Synthetic Civil Registration System.",
+          "evidence_quote": "Synthetic Civil Registration System and Synthetic Facility Census.",
+          "source_location": "Chunk 1, page 1, Source description"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Deaths are synthetic registered events classified by underlying cause and age group.",
+          "evidence_quote": "Deaths are synthetic registered events classified by underlying cause and age group. Hospital beds are a year-end stock measure collected from facilities and should not\nshare the mortality DSD.",
+          "source_location": "Chunk 1, page 1, Methodology"
+        },
+        {
+          "concept_id": "STAT_CONC_DEF",
+          "value": "Registered deaths count events during the calendar year.",
+          "evidence_quote": "Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.",
+          "source_location": "Chunk 1, page 1, Definitions"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "value": "Northland",
+          "evidence_quote": "Northland                           Circulatory diseases              45-64                         2023                         266                            Deaths                              Final",
+          "source_location": "Chunk 3, page 2, Table 1"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "value": "Centralia",
+          "evidence_quote": "Centralia                            Circulatory diseases              45-64                         2023                         157                            Deaths                              Final",
+          "source_location": "Chunk 3, page 2, Table 1"
+        },
+        {
+          "concept_id": "COVERAGE_GEO",
+          "value": "South Coast",
+          "evidence_quote": "South Coast                         Circulatory diseases              45-64                         2023                         702                            Deaths                              Final",
+          "source_location": "Chunk 3, page 2, Table 1"
+        },
+        {
+          "concept_id": "COVERAGE_TIME",
+          "value": "2023",
+          "evidence_quote": "Northland                           Circulatory diseases              45-64                         2023                         266                            Deaths                              Final",
+          "source_location": "Chunk 3, page 2, Table 1"
+        },
+        {
+          "concept_id": "COVERAGE_TIME",
+          "value": "2024",
+          "evidence_quote": "Northland                           Circulatory diseases              45-64                         2024                         567                            Deaths                             Provisional",
+          "source_location": "Chunk 3, page 2, Table 1"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD_DETAIL",
+          "value": "Deaths count events during the calendar year.",
+          "evidence_quote": "Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.",
+          "source_location": "Chunk 1, page 1, Definitions"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "value": "Provisional death counts are revised when late registrations arrive.",
+          "evidence_quote": "Provisional death counts are revised when late registrations arrive. Estimated bed counts are replaced after facility validation.",
+          "source_location": "Chunk 1, page 1, Revision policy"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "value": "Cause labels resemble broad ICD families but no ICD version is confirmed.",
+          "evidence_quote": "Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.",
+          "source_location": "Chunk 1, page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "value": "2024 death counts are provisional.",
+          "evidence_quote": "Footnote: 2024 death counts are provisional.",
+          "source_location": "Chunk 3, page 2, Table 1 footnote"
+        },
+        {
+          "concept_id": "COMPARABILITY",
+          "value": "Cause labels resemble broad ICD families, but no ICD version is confirmed, limiting cause-classification comparability.",
+          "evidence_quote": "Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.",
+          "source_location": "Chunk 1, page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "CONF",
+          "value": "All records and values are synthetic. No person-level or confidential data are included.",
+          "evidence_quote": "All records and values are synthetic. No person-level or confidential data are included.",
+          "source_location": "Chunk 1, page 1, Confidentiality"
+        }
+      ]
+    },
+    {
+      "metadata_set_id": "MS_HOSPITAL_CAPACITY_REFERENCE_METADATA_2026",
+      "msd_id": "MSD_HOSPITAL_CAPACITY_REFERENCE_METADATA",
+      "target_id": "DF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "DATA_DESCRIPTION",
+          "value": "Available hospital beds by ownership.",
+          "evidence_quote": "Table 2. Available hospital beds by ownership",
+          "source_location": "Chunk 4, page 3"
+        },
+        {
+          "concept_id": "SOURCE_DATA",
+          "value": "Synthetic Facility Census.",
+          "evidence_quote": "Synthetic Civil Registration System and Synthetic Facility Census.",
+          "source_location": "Chunk 1, page 1, Source description"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Hospital beds are a year-end stock measure collected from facilities and should not share the mortality DSD.",
+          "evidence_quote": "Deaths are synthetic registered events classified by underlying cause and age group. Hospital beds are a year-end stock measure collected from facilities and should not\nshare the mortality DSD.",
+          "source_location": "Chunk 1, page 1, Methodology"
+        },
+        {
+          "concept_id": "STAT_CONC_DEF",
+          "value": "Available beds are staffed beds available on 31 December.",
+          "evidence_quote": "Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.",
+          "source_location": "Chunk 1, page 1, Definitions"
+        },
+        {
+          "concept_id": "COVERAGE_TIME",
+          "value": "2023",
+          "evidence_quote": "Public                                    2023                                     1677                                    Beds                                               Final",
+          "source_location": "Chunk 4, page 3, Table 2"
+        },
+        {
+          "concept_id": "COVERAGE_TIME",
+          "value": "2024",
+          "evidence_quote": "Public                                    2024                                     1419                                    Beds                                               Final",
+          "source_location": "Chunk 4, page 3, Table 2"
+        },
+        {
+          "concept_id": "REFERENCE_PERIOD_DETAIL",
+          "value": "Available beds are measured as staffed beds available on 31 December.",
+          "evidence_quote": "Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.",
+          "source_location": "Chunk 1, page 1, Definitions"
+        },
+        {
+          "concept_id": "DATA_REV",
+          "value": "Estimated bed counts are replaced after facility validation.",
+          "evidence_quote": "Provisional death counts are revised when late registrations arrive. Estimated bed counts are replaced after facility validation.",
+          "source_location": "Chunk 1, page 1, Revision policy"
+        },
+        {
+          "concept_id": "COMPLETENESS",
+          "value": "Private-sector bed reporting is incomplete in 2024.",
+          "evidence_quote": "Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.",
+          "source_location": "Chunk 1, page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "value": "Private-sector bed reporting is incomplete in 2024.",
+          "evidence_quote": "Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.",
+          "source_location": "Chunk 1, page 1, Caveats and limitations"
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "value": "Private for-profit 2024 values are estimated.",
+          "evidence_quote": "Footnote: Private for-profit 2024 values are estimated.",
+          "source_location": "Chunk 4, page 3, Table 2 footnote"
+        },
+        {
+          "concept_id": "CONF",
+          "value": "All records and values are synthetic. No person-level or confidential data are included.",
+          "evidence_quote": "All records and values are synthetic. No person-level or confidential data are included.",
+          "source_location": "Chunk 1, page 1, Confidentiality"
+        }
+      ]
+    }
+  ]
+}

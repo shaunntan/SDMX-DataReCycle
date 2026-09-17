@@ -1,0 +1,1009 @@
+{
+  "artifact_type": "AI-FILLABLE DATA TEMPLATE",
+  "source_report": "example_03_education.pdf",
+  "source_sha256": "e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6",
+  "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+  "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / cross-domain concepts",
+      "artifact_id": "SDMX_GLOSSARY",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "Fetched glossary evidence includes entries or index references for education level and measure, and explains that codelist identifiers are often formed from the concept ID prefixed by CL_; it specifically gives Observation Status with Concept ID OBS_STATUS and Codelist ID CL_OBS_STATUS.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist catalog",
+      "artifact_id": "SDMX_GLOBAL_REGISTRY_CODELISTS",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "Fetched registry evidence confirms the SDMX Global Registry provides a Codelists search/catalog and codelist detail/export interface. The supplied excerpt does not confirm exact contents, versions, or code mappings for CL_FREQ, CL_SEX, CL_OBS_STATUS, or unit codelists.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNESCO UIS",
+      "artifact_type": "Education classification",
+      "artifact_id": "ISCED",
+      "version": "not confirmed",
+      "url": "https://www.uis.unesco.org/en/methods-and-tools/isced",
+      "evidence": "The shared source catalog identifies UNESCO ISCED as the education-level classification source to check. No fetched ISCED excerpt or exact mapping evidence was supplied, and the report states that education-level labels require ISCED mapping review.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic classification",
+      "artifact_id": "UN_M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "Fetched UN M49 evidence shows country or area numeric and alpha-3 code entries. The report does not state a reference area, so no UN M49 code is included in the fillable templates.",
+      "verification_status": "CONFIRMED"
+    }
+  ],
+  "limitations": [
+    "This corrected template is mechanically derived from the accepted DSD / Key Family component representations: FREQ uses SDMX/CL_FREQ/not confirmed; SEX uses SDMX/CL_SEX/not confirmed; EDUCATION_LEVEL uses SML/CL_EDUCATION_LEVEL_LOCAL/1.0-draft; WEALTH_QUINTILE uses SML/CL_WEALTH_QUINTILE_SURVEY_LOCAL/1.0-draft; UNIT_MEASURE uses SML/CL_EDU_UNIT_MEASURE_LOCAL/1.0-draft; OBS_STATUS uses SML/CL_EDU_OBS_STATUS_LOCAL/1.0-draft.",
+    "The accepted CODELISTS artifact used alternate local codelist IDs and agency/version labels for several report holding lists. This template follows the accepted DSD identifiers for conversion consistency; local code values retain the report-derived categories from the accepted codelists and should be reconciled in the structural package before production publication.",
+    "SEX is bound to the accepted DSD candidate representation SDMX CL_SEX. Row values use candidate SDMX-style codes F for Female, M for Male, and _T for Total; the exact CL_SEX version and code mappings were not confirmed from supplied official evidence and must be validated against the SDMX Global Registry before production exchange. If validation fails, the DSD should be formally amended to a local sex holding codelist.",
+    "FREQ is populated with candidate annual code A because the report uses a Year column with calendar years, but the supplied evidence does not confirm the exact SDMX CL_FREQ version or official code contents.",
+    "Education-level values use the accepted DSD local codelist CL_EDUCATION_LEVEL_LOCAL pending ISCED mapping review, as explicitly required by the report.",
+    "Wealth-quintile values use the accepted DSD local survey-specific codelist CL_WEALTH_QUINTILE_SURVEY_LOCAL and are not mapped to a standard income classification because the report states that the quintiles are survey-specific.",
+    "UNIT_MEASURE and OBS_STATUS use the accepted DSD local codelists CL_EDU_UNIT_MEASURE_LOCAL and CL_EDU_OBS_STATUS_LOCAL because authoritative unit and status code mappings were not confirmed from supplied official-source excerpts.",
+    "The report does not state a reference area or country; REF_AREA is not included in these templates.",
+    "The report provides no UNIT_MULT, DECIMALS, confidentiality-status code, or observation-level quality flag beyond the printed Unit and Status columns.",
+    "The completion-rate template fixes the statistical scope to lower-secondary completion because the report only supplies lower-secondary completion observations; future cycles would require DSD review."
+  ],
+  "templates": [
+    {
+      "template_id": "TPL_EDU_ENROLLMENT",
+      "dsd_id": "KF_EDU_ENROLLMENT",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency. Bound codelist: agency=SDMX, id=CL_FREQ, version=not confirmed. Candidate annual value A is inferred from the report's Year column and must be validated before production SDMX conversion."
+        },
+        {
+          "column_id": "EDUCATION_LEVEL",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_EDUCATION_LEVEL_LOCAL",
+          "description": "Education-level code. Bound codelist from accepted DSD: agency=SML, id=CL_EDUCATION_LEVEL_LOCAL, version=1.0-draft. Allowed report-derived codes in this template are PRIMARY, LOWER_SECONDARY, and UPPER_SECONDARY, pending ISCED mapping review."
+        },
+        {
+          "column_id": "SEX",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SEX",
+          "description": "Sex category. Bound codelist from accepted DSD: agency=SDMX, id=CL_SEX, version=not confirmed. Candidate mappings used here are Female=F, Male=M, Total=_T; these require authoritative CL_SEX code/version validation before production use."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "GregorianYear",
+          "codelist_id": null,
+          "description": "Calendar year from the report's Year column. No codelist is used."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Decimal",
+          "codelist_id": null,
+          "description": "Enrollment count numeric value; do not include unit text in this field."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_EDU_UNIT_MEASURE_LOCAL",
+          "description": "Unit code. Bound codelist from accepted DSD: agency=SML, id=CL_EDU_UNIT_MEASURE_LOCAL, version=1.0-draft. For this enrollment template the report-derived unit code is STUDENTS."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_EDU_OBS_STATUS_LOCAL",
+          "description": "Report value-status code. Bound codelist from accepted DSD: agency=SML, id=CL_EDU_OBS_STATUS_LOCAL, version=1.0-draft. Allowed report-derived enrollment status codes are FINAL and PROVISIONAL."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "PRIMARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 78748
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Primary                            Female                            2024                              78748                                 Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "PRIMARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 118162
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Primary                            Female                            2025                              118162                                Students                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "PRIMARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 106731
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Primary                             Male                              2024                              106731                                Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "PRIMARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 159461
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Primary                             Male                              2025                              159461                                Students                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "PRIMARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "_T"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 58913
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Primary                                   Total                              2024                              58913                                 Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "PRIMARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "_T"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 44323
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Primary                                   Total                              2025                              44323                                 Students                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "LOWER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 115063
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Lower secondary                    Female                            2024                              115063                                Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "LOWER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 54362
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Lower secondary                    Female                            2025                              54362                                 Students                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "LOWER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 51889
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Lower secondary                     Male                              2024                              51889                                 Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "LOWER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 86656
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Lower secondary                     Male                              2025                              86656                                 Students                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "LOWER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "_T"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 142620
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Lower secondary                         Total                              2024                              142620                                Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "LOWER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "_T"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 71112
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Lower secondary                         Total                              2025                              71112                                 Students                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "UPPER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 129817
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Upper secondary                    Female                            2024                              129817                                Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "UPPER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 57423
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Upper secondary                    Female                            2025                              57423                                 Students                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "UPPER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 128600
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Upper secondary                     Male                              2024                              128600                                Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "UPPER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 63833
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Upper secondary                     Male                              2025                              63833                                 Students                                  Provisional"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "UPPER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "_T"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 104943
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Upper secondary                         Total                              2024                              104943                                Students                                  Final"
+        },
+        {
+          "dsd_id": "KF_EDU_ENROLLMENT",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "EDUCATION_LEVEL",
+              "value": "UPPER_SECONDARY"
+            },
+            {
+              "column_id": "SEX",
+              "value": "_T"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 129161
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "STUDENTS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Upper secondary                         Total                              2025                              129161                                Students                                  Provisional"
+        }
+      ]
+    },
+    {
+      "template_id": "TPL_EDU_LOWER_SECONDARY_COMPLETION",
+      "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency. Bound codelist: agency=SDMX, id=CL_FREQ, version=not confirmed. Candidate annual value A is inferred from the report's Year column and must be validated before production SDMX conversion."
+        },
+        {
+          "column_id": "WEALTH_QUINTILE",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_WEALTH_QUINTILE_SURVEY_LOCAL",
+          "description": "Survey-specific wealth-quintile code. Bound codelist from accepted DSD: agency=SML, id=CL_WEALTH_QUINTILE_SURVEY_LOCAL, version=1.0-draft. Allowed report-derived codes in this template are LOWEST_QUINTILE, MIDDLE_QUINTILE, and HIGHEST_QUINTILE. These must not be silently mapped to a standard income classification."
+        },
+        {
+          "column_id": "SEX",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SEX",
+          "description": "Sex category. Bound codelist from accepted DSD: agency=SDMX, id=CL_SEX, version=not confirmed. Candidate mappings used here are Female=F and Male=M; these require authoritative CL_SEX code/version validation before production use."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "GregorianYear",
+          "codelist_id": null,
+          "description": "Calendar year from the report's Year column. No codelist is used."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Decimal",
+          "codelist_id": null,
+          "description": "Lower-secondary completion-rate numeric value; do not include percent sign or unit text in this field."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_EDU_UNIT_MEASURE_LOCAL",
+          "description": "Unit code. Bound codelist from accepted DSD: agency=SML, id=CL_EDU_UNIT_MEASURE_LOCAL, version=1.0-draft. For this completion-rate template the report-derived unit code is PERCENT."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_EDU_OBS_STATUS_LOCAL",
+          "description": "Report value-status code. Bound codelist from accepted DSD: agency=SML, id=CL_EDU_OBS_STATUS_LOCAL, version=1.0-draft. For this template the report-derived status code is MODELLED_ESTIMATE."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "WEALTH_QUINTILE",
+              "value": "LOWEST_QUINTILE"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 64.0
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "MODELLED_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Lowest quintile                      Female                            2024                                  64.0                                  Percent                              Modelled estimate"
+        },
+        {
+          "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "WEALTH_QUINTILE",
+              "value": "LOWEST_QUINTILE"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 91.1
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "MODELLED_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Lowest quintile                       Male                              2024                                  91.1                                  Percent                              Modelled estimate"
+        },
+        {
+          "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "WEALTH_QUINTILE",
+              "value": "MIDDLE_QUINTILE"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 89.8
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "MODELLED_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Middle quintile                       Female                            2024                                  89.8                                  Percent                              Modelled estimate"
+        },
+        {
+          "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "WEALTH_QUINTILE",
+              "value": "MIDDLE_QUINTILE"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 58.3
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "MODELLED_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Middle quintile                       Male                              2024                                  58.3                                  Percent                              Modelled estimate"
+        },
+        {
+          "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "WEALTH_QUINTILE",
+              "value": "HIGHEST_QUINTILE"
+            },
+            {
+              "column_id": "SEX",
+              "value": "F"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 70.7
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "MODELLED_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Highest quintile                      Female                            2024                                  70.7                                  Percent                              Modelled estimate"
+        },
+        {
+          "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "WEALTH_QUINTILE",
+              "value": "HIGHEST_QUINTILE"
+            },
+            {
+              "column_id": "SEX",
+              "value": "M"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 91.7
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "MODELLED_ESTIMATE"
+            }
+          ],
+          "evidence_quote": "Highest quintile                      Male                              2024                                  91.7                                  Percent                              Modelled estimate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "artifact_type": "METADATA_SET",
+  "source_report": "06_sdmx_30_energy_full_case.xml",
+  "source_sha256": "59417aaf0971ab0f67d10c74607096ed92ede9e93fe55d656093e93631c5aeb8",
+  "principles_file": "06_METADATA_SET.txt",
+  "principles_sha256": "78872f39072fc3ca8a7cdeff48cd83bb2f42b5de05f1e5b1eef1aa4194ce3d2f",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "metadata_sets": [
+    {
+      "metadata_set_id": "ENE_METADATA_SET",
+      "msd_id": "MSD_ENE",
+      "target_id": "DF_ENE",
+      "target_type": "DATAFLOW",
+      "values": [
+        {
+          "concept_id": "SOURCE",
+          "value": "Illustrative electricity-system operator and energy-statistics compilation.",
+          "evidence_quote": "Illustrative electricity-system operator and energy-statistics compilation.",
+          "source_location": "XML metadata attribute SOURCE"
+        },
+        {
+          "concept_id": "METHODOLOGY",
+          "value": "Monthly electricity quantities are organised by energy source; renewable share is a percentage indicator.",
+          "evidence_quote": "Monthly electricity quantities are organised by energy source; renewable share is a percentage indicator.",
+          "source_location": "XML metadata attribute METHODOLOGY"
+        },
+        {
+          "concept_id": "SOURCE_URL",
+          "value": "https://example.org/energy/source",
+          "evidence_quote": "https://example.org/energy/source",
+          "source_location": "XML metadata attribute SOURCE_URL"
+        }
+      ]
+    }
+  ]
+}

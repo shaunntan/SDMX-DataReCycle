@@ -1,0 +1,210 @@
+{
+  "artifact_type": "CODELISTS",
+  "source_report": "03_sdmx_21_labour_market_full_case.xml",
+  "source_sha256": "51affdd8ac40d4b0b42f1debed99a36090d477e85d40a3b35dd62c2f65868752",
+  "principles_file": "02_CODELISTS.txt",
+  "principles_sha256": "5f8aca1fd0340a1f4daf5b56ded159c663102eb121001c6d96fbfd0482507e10",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "codelists": [
+    {
+      "codelist_id": "CL_LAB_FREQ",
+      "name": "Frequency",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "M",
+          "name": "Monthly",
+          "definition": "Monthly",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Monthly",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_LAB_REF_AREA",
+      "name": "Reference area",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "KR",
+          "name": "Korea, Republic of",
+          "definition": "Korea, Republic of",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Korea, Republic of",
+          "local_creation_justification": null
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "definition": "Japan",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Japan",
+          "local_creation_justification": null
+        },
+        {
+          "code": "US",
+          "name": "United States",
+          "definition": "United States",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "United States",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_LAB_INDICATOR",
+      "name": "Labour-market indicator",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "UNE_RATE",
+          "name": "Unemployment rate",
+          "definition": "Unemployment rate",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Unemployment rate",
+          "local_creation_justification": null
+        },
+        {
+          "code": "EMP_RATE",
+          "name": "Employment rate",
+          "definition": "Employment rate",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Employment rate",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_LAB_SEX",
+      "name": "Sex",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "_T",
+          "name": "Total",
+          "definition": "Total",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Total",
+          "local_creation_justification": null
+        },
+        {
+          "code": "M",
+          "name": "Male",
+          "definition": "Male",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Male",
+          "local_creation_justification": null
+        },
+        {
+          "code": "F",
+          "name": "Female",
+          "definition": "Female",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Female",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_LAB_UNIT",
+      "name": "Unit of measure",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "PC",
+          "name": "Percent",
+          "definition": "Percent",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Percent",
+          "local_creation_justification": null
+        }
+      ]
+    },
+    {
+      "codelist_id": "CL_LAB_OBS_STATUS",
+      "name": "Observation status",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "source_url": "not stated in XML",
+      "maintenance_status": "AUTHORITATIVE_REFERENCE",
+      "verification_status": "CONFIRMED",
+      "date_checked": "2026-09-17",
+      "scope_notes": "Mechanically imported from the supplied SDMX XML.",
+      "codes": [
+        {
+          "code": "A",
+          "name": "Normal value",
+          "definition": "Normal value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Normal value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "E",
+          "name": "Estimated value",
+          "definition": "Estimated value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Estimated value",
+          "local_creation_justification": null
+        },
+        {
+          "code": "P",
+          "name": "Provisional value",
+          "definition": "Provisional value",
+          "parent_code": null,
+          "status": "ACTIVE",
+          "evidence_quote": "Provisional value",
+          "local_creation_justification": null
+        }
+      ]
+    }
+  ]
+}

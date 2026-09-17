@@ -1,0 +1,441 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,METADATA_STRUCTURE_DEFINITION_MSD
+"[""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""source_sha256""]",source_sha256,string,0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f
+"[""principles_file""]",principles_file,string,05_METADATA_STRUCTURE_DEFINITION_MSD.txt
+"[""principles_sha256""]",principles_sha256,string,f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_2_0_INFORMATION_MODEL
+"[""standard_references"",0,""version""]",version,string,2.0
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",0,""evidence""]",evidence,string,"The SDMX 2.0 Information Model is identified in the supplied reference package as the technical basis for SDMX 2.0 artefacts, including metadata structures and metadata sets. No fetched excerpt confirming detailed MSD fields was supplied."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept reference
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",1,""version""]",version,string,2.1
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",1,""evidence""]",evidence,string,"The fetched glossary excerpt confirms SDMX glossary coverage of metadata-related terms including Metadata Structure Definition, Metadata Set, Metadata update, Institutional mandate, and the cross-domain concept Geographical coverage with Concept ID COVERAGE_GEO and recommended representation String; Codelist."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Reference metadata guideline
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",2,""version""]",version,string,1.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,The supplied principles identify this guideline as SDMX reference-metadata guidance and state that it provides a standard list of reference metadata concepts. No fetched excerpt from the guideline confirming individual concept IDs for this report was supplied.
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Registry catalogue
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS_AND_METADATA_STRUCTURES
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,The fetched registry excerpt shows that the SDMX Global Registry provides searchable structural artefact categories including Codelists and Metadata Structures. It does not confirm a specific reusable MSD for this agriculture report.
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,UNSD
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,UN_M49
+"[""standard_references"",4,""version""]",version,string,not stated
+"[""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",4,""evidence""]",evidence,string,"The fetched UN M49 excerpt confirms that UN M49 provides country and area codes. It does not confirm suitability for the report's synthetic subnational regions Northland, Centralia, and South Coast."
+"[""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",5]",5,object,
+"[""standard_references"",5,""agency""]",agency,string,ISO
+"[""standard_references"",5,""artifact_type""]",artifact_type,string,Currency code standard
+"[""standard_references"",5,""artifact_id""]",artifact_id,string,ISO_4217
+"[""standard_references"",5,""version""]",version,string,not stated
+"[""standard_references"",5,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""standard_references"",5,""evidence""]",evidence,string,"The supplied reference catalogue identifies ISO 4217 as the standard source for currency identity. The report deliberately leaves the local currency unnamed, so no ISO 4217 currency code can be confirmed for the price dataflow."
+"[""standard_references"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The report does not provide a source URL, contact point, edition number, metadata update date, legal or institutional mandate, sampling design details, imputation methods, seasonal adjustment information, accuracy measures, timeliness measures, or completeness measures."
+"[""limitations"",1]",1,string,"The publisher is stated, but no contact details are provided."
+"[""limitations"",2]",2,string,The report states that crop names are common labels and require classification review; no authoritative crop classification mapping is confirmed.
+"[""limitations"",3]",3,string,The report states that fertilizer products are local market categories and not verified CPC codes; no authoritative product classification mapping is confirmed.
+"[""limitations"",4]",4,string,"The report states that the local currency is deliberately unnamed, so ISO 4217 currency-code metadata cannot be completed from the report."
+"[""limitations"",5]",5,string,"The report uses synthetic regions, but no authoritative geographic classification for Northland, Centralia, or South Coast is provided."
+"[""limitations"",6]",6,string,"Exact SDMX Global Reference Metadata Concept Scheme IDs for several useful concepts such as publication title, publication date, source data, methodology, definitions, limitations, and classification-review status were not confirmed by supplied external evidence; local concepts are used where necessary."
+"[""limitations"",7]",7,string,"Concept IDs CONTACT, DATA_REV, CONF, and META_UPDATE are listed in the supplied principles as SDMX reference-metadata concepts, but the fetched external excerpts only directly confirm metadata update terminology and do not provide full external definitions for all of these IDs."
+"[""metadata_structures""]",metadata_structures,array,
+"[""metadata_structures"",0]",0,object,
+"[""metadata_structures"",0,""msd_id""]",msd_id,string,MSD_AGRI_REPORT_1_0
+"[""metadata_structures"",0,""name""]",name,string,Crop Production and Input Prices report reference metadata structure
+"[""metadata_structures"",0,""agency_id""]",agency_id,string,SYNTH_AGRI_BUREAU
+"[""metadata_structures"",0,""version""]",version,string,1.0
+"[""metadata_structures"",0,""concepts""]",concepts,array,
+"[""metadata_structures"",0,""concepts"",0]",0,object,
+"[""metadata_structures"",0,""concepts"",0,""concept_id""]",concept_id,string,REPORT_TITLE
+"[""metadata_structures"",0,""concepts"",0,""name""]",name,string,Report title
+"[""metadata_structures"",0,""concepts"",0,""definition""]",definition,string,Title of the statistical report or publication.
+"[""metadata_structures"",0,""concepts"",0,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",0,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,Extract the visible publication title from page 1. Use the report title rather than the pipeline filename.
+"[""metadata_structures"",0,""concepts"",0,""source_standard""]",source_standard,string,Local concept; exact SDMX reference-metadata concept ID for report or publication title was not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",0,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",1]",1,object,
+"[""metadata_structures"",0,""concepts"",1,""concept_id""]",concept_id,string,PUBLISHER
+"[""metadata_structures"",0,""concepts"",1,""name""]",name,string,Publisher
+"[""metadata_structures"",0,""concepts"",1,""definition""]",definition,string,Organisation responsible for publishing the report.
+"[""metadata_structures"",0,""concepts"",1,""representation""]",representation,string,Text; coded organisation representation may be introduced if an authoritative organisation scheme is supplied.
+"[""metadata_structures"",0,""concepts"",1,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",1,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,Extract the organisation named below the report title on page 1.
+"[""metadata_structures"",0,""concepts"",1,""source_standard""]",source_standard,string,"Local concept; candidate relation to SDMX organisation metadata concepts, but exact publisher concept ID was not confirmed from supplied external evidence."
+"[""metadata_structures"",0,""concepts"",1,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",2]",2,object,
+"[""metadata_structures"",0,""concepts"",2,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""metadata_structures"",0,""concepts"",2,""name""]",name,string,Publication date
+"[""metadata_structures"",0,""concepts"",2,""definition""]",definition,string,Date on which the report was published.
+"[""metadata_structures"",0,""concepts"",2,""representation""]",representation,string,Date
+"[""metadata_structures"",0,""concepts"",2,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",2,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Extract the date after the label 'Publication date:' on page 1.
+"[""metadata_structures"",0,""concepts"",2,""source_standard""]",source_standard,string,Local concept; exact SDMX reference-metadata concept ID for publication date was not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",2,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",3]",3,object,
+"[""metadata_structures"",0,""concepts"",3,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_structures"",0,""concepts"",3,""name""]",name,string,Data description
+"[""metadata_structures"",0,""concepts"",3,""definition""]",definition,string,"Narrative description of the statistical content covered by a report, dataflow, dataset, series, or metadata object."
+"[""metadata_structures"",0,""concepts"",3,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",3,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",3,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,"Describe the overall report scope using the title, methodology, source description, and table headings. Preserve the distinction between crop area and production statistics and fertilizer retail price statistics."
+"[""metadata_structures"",0,""concepts"",3,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX data-description or statistical-presentation metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",3,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",4]",4,object,
+"[""metadata_structures"",0,""concepts"",4,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_structures"",0,""concepts"",4,""name""]",name,string,Source data
+"[""metadata_structures"",0,""concepts"",4,""definition""]",definition,string,Description of the data sources used to compile the statistics.
+"[""metadata_structures"",0,""concepts"",4,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",4,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",4,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,"Extract the Source description section on page 1, retaining the distinct sources for the annual farm survey and the agricultural price panel."
+"[""metadata_structures"",0,""concepts"",4,""source_standard""]",source_standard,string,Local concept; candidate mapping to an SDMX source-data metadata concept was not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",4,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",5]",5,object,
+"[""metadata_structures"",0,""concepts"",5,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_structures"",0,""concepts"",5,""name""]",name,string,Methodology
+"[""metadata_structures"",0,""concepts"",5,""definition""]",definition,string,Narrative description of methods used to produce or compile the statistics.
+"[""metadata_structures"",0,""concepts"",5,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",5,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",5,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",5,""extraction_guidance""]",extraction_guidance,string,Extract the Methodology paragraph from page 1. Preserve the distinction between annual farm-survey aggregates and the separate monthly outlet-panel price structure.
+"[""metadata_structures"",0,""concepts"",5,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX methodology metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",5,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",6]",6,object,
+"[""metadata_structures"",0,""concepts"",6,""concept_id""]",concept_id,string,STAT_CONCEPTS_DEF
+"[""metadata_structures"",0,""concepts"",6,""name""]",name,string,Statistical concepts and definitions
+"[""metadata_structures"",0,""concepts"",6,""definition""]",definition,string,Definitions of the main statistical concepts used in the statistics.
+"[""metadata_structures"",0,""concepts"",6,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",6,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",6,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",6,""extraction_guidance""]",extraction_guidance,string,"Extract the Definitions paragraph from page 1, including harvested area, production, and retail price definitions."
+"[""metadata_structures"",0,""concepts"",6,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX statistical-concepts-and-definitions metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",6,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",7]",7,object,
+"[""metadata_structures"",0,""concepts"",7,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_structures"",0,""concepts"",7,""name""]",name,string,Recommended uses and limitations
+"[""metadata_structures"",0,""concepts"",7,""definition""]",definition,string,"Warnings, caveats, classification limitations, and recommended limits on interpretation or use."
+"[""metadata_structures"",0,""concepts"",7,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",7,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",7,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",7,""extraction_guidance""]",extraction_guidance,string,Extract the Caveats and limitations paragraph from page 1 and relevant table footnotes from pages 2 and 3.
+"[""metadata_structures"",0,""concepts"",7,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX recommended-uses-and-limitations metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",7,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",8]",8,object,
+"[""metadata_structures"",0,""concepts"",8,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_structures"",0,""concepts"",8,""name""]",name,string,Data revision
+"[""metadata_structures"",0,""concepts"",8,""definition""]",definition,string,Policy or practice describing whether and how data are revised.
+"[""metadata_structures"",0,""concepts"",8,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",8,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",8,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",8,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",8,""extraction_guidance""]",extraction_guidance,string,"Extract the Revision policy paragraph from page 1. Do not model forecast, provisional, or final status only as reference metadata if those states are needed as observation-level status attributes in the DSD."
+"[""metadata_structures"",0,""concepts"",8,""source_standard""]",source_standard,string,SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.
+"[""metadata_structures"",0,""concepts"",8,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",0,""concepts"",9]",9,object,
+"[""metadata_structures"",0,""concepts"",9,""concept_id""]",concept_id,string,CONF
+"[""metadata_structures"",0,""concepts"",9,""name""]",name,string,Confidentiality
+"[""metadata_structures"",0,""concepts"",9,""definition""]",definition,string,"Information on confidentiality, disclosure control, and whether confidential data are included."
+"[""metadata_structures"",0,""concepts"",9,""representation""]",representation,string,Text
+"[""metadata_structures"",0,""concepts"",9,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",9,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",9,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",9,""extraction_guidance""]",extraction_guidance,string,Extract the Confidentiality paragraph from page 1.
+"[""metadata_structures"",0,""concepts"",9,""source_standard""]",source_standard,string,SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.
+"[""metadata_structures"",0,""concepts"",9,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",0,""concepts"",10]",10,object,
+"[""metadata_structures"",0,""concepts"",10,""concept_id""]",concept_id,string,CONTACT
+"[""metadata_structures"",0,""concepts"",10,""name""]",name,string,Contact
+"[""metadata_structures"",0,""concepts"",10,""definition""]",definition,string,Contact point for enquiries about the report or metadata.
+"[""metadata_structures"",0,""concepts"",10,""representation""]",representation,string,Text; coded contact representation may be introduced if an authoritative contact or organisation scheme is supplied.
+"[""metadata_structures"",0,""concepts"",10,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",10,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",10,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",10,""extraction_guidance""]",extraction_guidance,string,"If the report supplies a contact point, extract it. For this source, absence of a contact belongs in the Metadata Set or extraction log, not in the MSD definition."
+"[""metadata_structures"",0,""concepts"",10,""source_standard""]",source_standard,string,SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.
+"[""metadata_structures"",0,""concepts"",10,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",0,""concepts"",11]",11,object,
+"[""metadata_structures"",0,""concepts"",11,""concept_id""]",concept_id,string,META_UPDATE
+"[""metadata_structures"",0,""concepts"",11,""name""]",name,string,Metadata update
+"[""metadata_structures"",0,""concepts"",11,""definition""]",definition,string,Date on which the reference metadata were last updated.
+"[""metadata_structures"",0,""concepts"",11,""representation""]",representation,string,Date
+"[""metadata_structures"",0,""concepts"",11,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",11,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",11,""target_attachment""]",target_attachment,string,METADATA
+"[""metadata_structures"",0,""concepts"",11,""extraction_guidance""]",extraction_guidance,string,Extract a separate metadata update date only if supplied. Do not substitute the publication date unless the reporting process confirms equivalence; absence should be handled in the Metadata Set using the implementation's missing-value convention.
+"[""metadata_structures"",0,""concepts"",11,""source_standard""]",source_standard,string,SDMX Glossary 2.1 terminology confirmed by fetched excerpt for Metadata update; concept ID META_UPDATE is also listed in the supplied principles.
+"[""metadata_structures"",0,""concepts"",11,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1]",1,object,
+"[""metadata_structures"",1,""msd_id""]",msd_id,string,MSD_CROP_AREA_PRODUCTION_1_0
+"[""metadata_structures"",1,""name""]",name,string,Crop area and production dataflow reference metadata structure
+"[""metadata_structures"",1,""agency_id""]",agency_id,string,SYNTH_AGRI_BUREAU
+"[""metadata_structures"",1,""version""]",version,string,1.0
+"[""metadata_structures"",1,""concepts""]",concepts,array,
+"[""metadata_structures"",1,""concepts"",0]",0,object,
+"[""metadata_structures"",1,""concepts"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_structures"",1,""concepts"",0,""name""]",name,string,Data description
+"[""metadata_structures"",1,""concepts"",0,""definition""]",definition,string,"Narrative description of the statistical content covered by a report, dataflow, dataset, series, or metadata object."
+"[""metadata_structures"",1,""concepts"",0,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,"For the crop area and production dataflow, use Table 1 heading and page 1 methodology to describe annual crop area and production by crop, region, and year."
+"[""metadata_structures"",1,""concepts"",0,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX data-description or statistical-presentation metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",0,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",1]",1,object,
+"[""metadata_structures"",1,""concepts"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_structures"",1,""concepts"",1,""name""]",name,string,Source data
+"[""metadata_structures"",1,""concepts"",1,""definition""]",definition,string,Description of the data sources used to compile the statistics.
+"[""metadata_structures"",1,""concepts"",1,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",1,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, extract the crop-relevant source, Synthetic Annual Farm Survey, and relate it to the page 1 statement that crop area and production are annual farm-survey aggregates."
+"[""metadata_structures"",1,""concepts"",1,""source_standard""]",source_standard,string,Local concept; candidate mapping to an SDMX source-data metadata concept was not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",1,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",2]",2,object,
+"[""metadata_structures"",1,""concepts"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_structures"",1,""concepts"",2,""name""]",name,string,Methodology
+"[""metadata_structures"",1,""concepts"",2,""definition""]",definition,string,Narrative description of methods used to produce or compile the statistics.
+"[""metadata_structures"",1,""concepts"",2,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",2,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, extract the crop-relevant part of the methodology: crop area and production are annual farm-survey aggregates."
+"[""metadata_structures"",1,""concepts"",2,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX methodology metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",2,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",3]",3,object,
+"[""metadata_structures"",1,""concepts"",3,""concept_id""]",concept_id,string,STAT_CONCEPTS_DEF
+"[""metadata_structures"",1,""concepts"",3,""name""]",name,string,Statistical concepts and definitions
+"[""metadata_structures"",1,""concepts"",3,""definition""]",definition,string,Definitions of the main statistical concepts used in the statistics.
+"[""metadata_structures"",1,""concepts"",3,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",3,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",3,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, extract the definitions of harvested area and production from page 1. Do not include the fertilizer retail price definition in crop-specific metadata."
+"[""metadata_structures"",1,""concepts"",3,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX statistical-concepts-and-definitions metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",3,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",4]",4,object,
+"[""metadata_structures"",1,""concepts"",4,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_structures"",1,""concepts"",4,""name""]",name,string,Geographical coverage
+"[""metadata_structures"",1,""concepts"",4,""definition""]",definition,string,"Territorial or geographic coverage of the statistics, distinct from any reference-area dimension used in statistical data."
+"[""metadata_structures"",1,""concepts"",4,""representation""]",representation,string,String; codelist may be used only if an authoritative geographic classification is supplied.
+"[""metadata_structures"",1,""concepts"",4,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",4,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, describe coverage from Table 1 region labels Northland, Centralia, and South Coast. State in metadata values that the report does not provide an authoritative geographic classification for these synthetic regions."
+"[""metadata_structures"",1,""concepts"",4,""source_standard""]",source_standard,string,SDMX Glossary 2.1 cross-domain concept confirmed in fetched excerpt for Concept ID COVERAGE_GEO.
+"[""metadata_structures"",1,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",5]",5,object,
+"[""metadata_structures"",1,""concepts"",5,""concept_id""]",concept_id,string,REFERENCE_PERIOD
+"[""metadata_structures"",1,""concepts"",5,""name""]",name,string,Reference period coverage
+"[""metadata_structures"",1,""concepts"",5,""definition""]",definition,string,Time period covered by the statistics as described in reference metadata.
+"[""metadata_structures"",1,""concepts"",5,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",5,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",5,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",5,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, use Table 1 years 2024 and 2025 and the footnote that 2025 area and production are forecasts."
+"[""metadata_structures"",1,""concepts"",5,""source_standard""]",source_standard,string,Local concept; exact SDMX reference-metadata concept ID for reference-period coverage was not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",5,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",6]",6,object,
+"[""metadata_structures"",1,""concepts"",6,""concept_id""]",concept_id,string,CLASSIFICATION_STATUS
+"[""metadata_structures"",1,""concepts"",6,""name""]",name,string,Classification review status
+"[""metadata_structures"",1,""concepts"",6,""definition""]",definition,string,Information on whether reported labels or categories have been mapped to an authoritative classification.
+"[""metadata_structures"",1,""concepts"",6,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",6,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",6,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",6,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, extract the crop-name caveat from page 1 and record that crop names are common labels requiring classification review."
+"[""metadata_structures"",1,""concepts"",6,""source_standard""]",source_standard,string,Local concept introduced because no confirmed SDMX reference-metadata concept ID for this specific classification-review caveat was supplied.
+"[""metadata_structures"",1,""concepts"",6,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",7]",7,object,
+"[""metadata_structures"",1,""concepts"",7,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_structures"",1,""concepts"",7,""name""]",name,string,Recommended uses and limitations
+"[""metadata_structures"",1,""concepts"",7,""definition""]",definition,string,"Warnings, caveats, classification limitations, and recommended limits on interpretation or use."
+"[""metadata_structures"",1,""concepts"",7,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",7,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",7,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",7,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, extract crop-relevant limitations: crop names require classification review, forecast production is not observed output, and the Table 1 footnote states that 2025 area and production are forecasts."
+"[""metadata_structures"",1,""concepts"",7,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX recommended-uses-and-limitations metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",7,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",8]",8,object,
+"[""metadata_structures"",1,""concepts"",8,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_structures"",1,""concepts"",8,""name""]",name,string,Data revision
+"[""metadata_structures"",1,""concepts"",8,""definition""]",definition,string,Policy or practice describing whether and how data are revised.
+"[""metadata_structures"",1,""concepts"",8,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",8,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",8,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",8,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",8,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, extract the page 1 revision policy and relate it to crop forecasts in Table 1."
+"[""metadata_structures"",1,""concepts"",8,""source_standard""]",source_standard,string,SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.
+"[""metadata_structures"",1,""concepts"",8,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",9]",9,object,
+"[""metadata_structures"",1,""concepts"",9,""concept_id""]",concept_id,string,CONF
+"[""metadata_structures"",1,""concepts"",9,""name""]",name,string,Confidentiality
+"[""metadata_structures"",1,""concepts"",9,""definition""]",definition,string,"Information on confidentiality, disclosure control, and whether confidential data are included."
+"[""metadata_structures"",1,""concepts"",9,""representation""]",representation,string,Text
+"[""metadata_structures"",1,""concepts"",9,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",9,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",9,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",9,""extraction_guidance""]",extraction_guidance,string,"For the crop dataflow, use the report confidentiality statement from page 1."
+"[""metadata_structures"",1,""concepts"",9,""source_standard""]",source_standard,string,SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.
+"[""metadata_structures"",1,""concepts"",9,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",2]",2,object,
+"[""metadata_structures"",2,""msd_id""]",msd_id,string,MSD_FERTILIZER_RETAIL_PRICES_1_0
+"[""metadata_structures"",2,""name""]",name,string,Fertilizer retail prices dataflow reference metadata structure
+"[""metadata_structures"",2,""agency_id""]",agency_id,string,SYNTH_AGRI_BUREAU
+"[""metadata_structures"",2,""version""]",version,string,1.0
+"[""metadata_structures"",2,""concepts""]",concepts,array,
+"[""metadata_structures"",2,""concepts"",0]",0,object,
+"[""metadata_structures"",2,""concepts"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_structures"",2,""concepts"",0,""name""]",name,string,Data description
+"[""metadata_structures"",2,""concepts"",0,""definition""]",definition,string,"Narrative description of the statistical content covered by a report, dataflow, dataset, series, or metadata object."
+"[""metadata_structures"",2,""concepts"",0,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,"For the fertilizer retail prices dataflow, use Table 2 heading and page 1 methodology to describe monthly fertilizer retail prices by product and month."
+"[""metadata_structures"",2,""concepts"",0,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX data-description or statistical-presentation metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",2,""concepts"",0,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",1]",1,object,
+"[""metadata_structures"",2,""concepts"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_structures"",2,""concepts"",1,""name""]",name,string,Source data
+"[""metadata_structures"",2,""concepts"",1,""definition""]",definition,string,Description of the data sources used to compile the statistics.
+"[""metadata_structures"",2,""concepts"",1,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",1,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"For the price dataflow, extract the price-relevant source, Synthetic Agricultural Price Panel, and relate it to the page 1 statement that fertilizer retail prices come from a monthly outlet panel."
+"[""metadata_structures"",2,""concepts"",1,""source_standard""]",source_standard,string,Local concept; candidate mapping to an SDMX source-data metadata concept was not confirmed from supplied external evidence.
+"[""metadata_structures"",2,""concepts"",1,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",2]",2,object,
+"[""metadata_structures"",2,""concepts"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_structures"",2,""concepts"",2,""name""]",name,string,Methodology
+"[""metadata_structures"",2,""concepts"",2,""definition""]",definition,string,Narrative description of methods used to produce or compile the statistics.
+"[""metadata_structures"",2,""concepts"",2,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",2,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,"For the price dataflow, extract the price-relevant part of the methodology: fertilizer retail prices come from a monthly outlet panel and form a separate price structure."
+"[""metadata_structures"",2,""concepts"",2,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX methodology metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",2,""concepts"",2,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",3]",3,object,
+"[""metadata_structures"",2,""concepts"",3,""concept_id""]",concept_id,string,STAT_CONCEPTS_DEF
+"[""metadata_structures"",2,""concepts"",3,""name""]",name,string,Statistical concepts and definitions
+"[""metadata_structures"",2,""concepts"",3,""definition""]",definition,string,Definitions of the main statistical concepts used in the statistics.
+"[""metadata_structures"",2,""concepts"",3,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",3,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",3,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,"For the fertilizer price dataflow, extract the page 1 definition that retail price is the median observed price per 50 kg bag."
+"[""metadata_structures"",2,""concepts"",3,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX statistical-concepts-and-definitions metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",2,""concepts"",3,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",4]",4,object,
+"[""metadata_structures"",2,""concepts"",4,""concept_id""]",concept_id,string,REFERENCE_PERIOD
+"[""metadata_structures"",2,""concepts"",4,""name""]",name,string,Reference period coverage
+"[""metadata_structures"",2,""concepts"",4,""definition""]",definition,string,Time period covered by the statistics as described in reference metadata.
+"[""metadata_structures"",2,""concepts"",4,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",4,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",4,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,"For the fertilizer retail prices dataflow, use Table 2 months 2025-01 through 2025-04."
+"[""metadata_structures"",2,""concepts"",4,""source_standard""]",source_standard,string,Local concept; exact SDMX reference-metadata concept ID for reference-period coverage was not confirmed from supplied external evidence.
+"[""metadata_structures"",2,""concepts"",4,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",5]",5,object,
+"[""metadata_structures"",2,""concepts"",5,""concept_id""]",concept_id,string,CLASSIFICATION_STATUS
+"[""metadata_structures"",2,""concepts"",5,""name""]",name,string,Classification review status
+"[""metadata_structures"",2,""concepts"",5,""definition""]",definition,string,Information on whether reported labels or categories have been mapped to an authoritative classification.
+"[""metadata_structures"",2,""concepts"",5,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",5,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",5,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",5,""extraction_guidance""]",extraction_guidance,string,"For the fertilizer price dataflow, extract the Table 2 footnote that products are local market categories and not verified CPC codes."
+"[""metadata_structures"",2,""concepts"",5,""source_standard""]",source_standard,string,Local concept introduced because no confirmed SDMX reference-metadata concept ID for this specific classification-review caveat was supplied.
+"[""metadata_structures"",2,""concepts"",5,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",6]",6,object,
+"[""metadata_structures"",2,""concepts"",6,""concept_id""]",concept_id,string,CURRENCY_INFORMATION
+"[""metadata_structures"",2,""concepts"",6,""name""]",name,string,Currency information
+"[""metadata_structures"",2,""concepts"",6,""definition""]",definition,string,Information on the currency or monetary unit used for price statistics.
+"[""metadata_structures"",2,""concepts"",6,""representation""]",representation,string,Text; ISO 4217 code only if the currency is identified by the source or by later authoritative mapping.
+"[""metadata_structures"",2,""concepts"",6,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",6,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",6,""extraction_guidance""]",extraction_guidance,string,"For the fertilizer price dataflow, extract that the unit is local currency per 50 kg bag and preserve the limitation that the local currency is deliberately unnamed."
+"[""metadata_structures"",2,""concepts"",6,""source_standard""]",source_standard,string,Local concept; ISO 4217 is a candidate standard for currency identity but no currency code is confirmed for this report.
+"[""metadata_structures"",2,""concepts"",6,""source_url""]",source_url,string,https://www.iso.org/standard/64758.html
+"[""metadata_structures"",2,""concepts"",7]",7,object,
+"[""metadata_structures"",2,""concepts"",7,""concept_id""]",concept_id,string,RECOMMENDED_USES_AND_LIMITATIONS
+"[""metadata_structures"",2,""concepts"",7,""name""]",name,string,Recommended uses and limitations
+"[""metadata_structures"",2,""concepts"",7,""definition""]",definition,string,"Warnings, caveats, classification limitations, and recommended limits on interpretation or use."
+"[""metadata_structures"",2,""concepts"",7,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",7,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",7,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",7,""extraction_guidance""]",extraction_guidance,string,"For the fertilizer price dataflow, extract limitations that fertilizer product categories are local market categories, CPC codes are not verified, and the local currency is deliberately unnamed."
+"[""metadata_structures"",2,""concepts"",7,""source_standard""]",source_standard,string,Local concept; candidate mapping to SDMX recommended-uses-and-limitations metadata was not confirmed from supplied external evidence.
+"[""metadata_structures"",2,""concepts"",7,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",2,""concepts"",8]",8,object,
+"[""metadata_structures"",2,""concepts"",8,""concept_id""]",concept_id,string,CONF
+"[""metadata_structures"",2,""concepts"",8,""name""]",name,string,Confidentiality
+"[""metadata_structures"",2,""concepts"",8,""definition""]",definition,string,"Information on confidentiality, disclosure control, and whether confidential data are included."
+"[""metadata_structures"",2,""concepts"",8,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",8,""required""]",required,boolean,true
+"[""metadata_structures"",2,""concepts"",8,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",2,""concepts"",8,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",8,""extraction_guidance""]",extraction_guidance,string,"For the fertilizer price dataflow, use the report confidentiality statement from page 1."
+"[""metadata_structures"",2,""concepts"",8,""source_standard""]",source_standard,string,SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.
+"[""metadata_structures"",2,""concepts"",8,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",2,""concepts"",9]",9,object,
+"[""metadata_structures"",2,""concepts"",9,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_structures"",2,""concepts"",9,""name""]",name,string,Data revision
+"[""metadata_structures"",2,""concepts"",9,""definition""]",definition,string,Policy or practice describing whether and how data are revised.
+"[""metadata_structures"",2,""concepts"",9,""representation""]",representation,string,Text
+"[""metadata_structures"",2,""concepts"",9,""required""]",required,boolean,false
+"[""metadata_structures"",2,""concepts"",9,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",2,""concepts"",9,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",2,""concepts"",9,""extraction_guidance""]",extraction_guidance,string,"For the fertilizer price dataflow, extract a revision policy only if it is explicitly applicable to price observations. Do not assume that the crop forecast revision policy applies to fertilizer prices."
+"[""metadata_structures"",2,""concepts"",9,""source_standard""]",source_standard,string,SDMX reference-metadata concept ID listed in the supplied principles; exact external fetched definition was not supplied.
+"[""metadata_structures"",2,""concepts"",9,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm

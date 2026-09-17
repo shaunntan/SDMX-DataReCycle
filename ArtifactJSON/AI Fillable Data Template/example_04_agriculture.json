@@ -1,0 +1,1808 @@
+{
+  "artifact_type": "AI-FILLABLE DATA TEMPLATE",
+  "source_report": "example_04_agriculture.pdf",
+  "source_sha256": "0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f",
+  "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+  "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry codelist catalogue",
+      "artifact_id": "SDMX Global Registry codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The fetched official SDMX Global Registry page confirms that codelists are an SDMX registry artifact type with search, details, references, changelog and export functions. The excerpt does not confirm individual codelist versions or code-level contents for this template.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / cross-domain concepts",
+      "artifact_id": "SDMX Glossary",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The fetched glossary excerpt describes cross-domain concepts and codelist conventions, including that Observation Status has concept ID OBS_STATUS and codelist ID CL_OBS_STATUS, and includes examples where Reference area is a DSD dimension. It does not confirm all codelist versions or report-label mappings needed for production use.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_FREQ",
+      "version": "not confirmed in supplied external evidence",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "CL_FREQ is used as candidate frequency-code reuse according to the supplied SDMX common-concepts guidance. The fetched registry excerpt confirms the registry codelist catalogue but does not show the CL_FREQ entry, version, or its code contents.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_OBS_STATUS",
+      "version": "not confirmed in supplied external evidence",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The fetched glossary excerpt states that Observation Status uses concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. The supplied evidence does not confirm mappings for the report labels Final, Forecast, and Observed.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic classification",
+      "artifact_id": "UN M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The fetched UN M49 excerpt confirms that UN M49 lists countries and areas with numeric and alpha identifiers. The report's regions Northland, Centralia, and South Coast are not confirmed in the supplied excerpt, so UN M49 is only a checked candidate source for geographic reuse.",
+      "verification_status": "CANDIDATE"
+    }
+  ],
+  "limitations": [
+    "Exact SDMX codelist versions for FREQ and OBS_STATUS are not confirmed in the supplied external evidence.",
+    "Crop values are preserved as local/common-label codes because the report states that crop names require classification review.",
+    "Fertilizer product values are preserved as local market category codes because the report states they are not verified CPC codes.",
+    "The fertilizer price unit cannot be mapped to an ISO 4217 currency code because the report states the local currency is deliberately unnamed.",
+    "The report-specific regions Northland, Centralia, and South Coast have no confirmed authoritative geographic code in the supplied evidence.",
+    "Report status labels Final, Forecast, and Observed are preserved in local status codelists pending confirmed mapping to SDMX CL_OBS_STATUS.",
+    "No decimals, unit multiplier, confidentiality status, or explicit reporting agency columns are present in the accepted DSD components for these observation templates.",
+    "Template codelist identifiers are derived directly from the accepted DSD / Key Family components: CL_CROP_LOCAL, CL_AGR_REGION_LOCAL, CL_AGR_CROP_INDICATOR, CL_AGR_UNIT_MEASURE_LOCAL, CL_AGR_OBS_STATUS_LOCAL, CL_FERTILIZER_PRODUCT_LOCAL, CL_FERTILIZER_UNIT_LOCAL, and CL_PRICE_OBS_STATUS_LOCAL."
+  ],
+  "templates": [
+    {
+      "template_id": "TPL_AGR_CROP_AREA_PRODUCTION_LONG",
+      "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency. Use A for annual crop area and production observations; CL_FREQ version not confirmed from supplied evidence."
+        },
+        {
+          "column_id": "CROP",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_CROP_LOCAL",
+          "description": "Crop common-label code from the DSD local crop codelist, pending classification review."
+        },
+        {
+          "column_id": "REF_AREA",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_AGR_REGION_LOCAL",
+          "description": "Local report region code for the crop observation, using the DSD region codelist."
+        },
+        {
+          "column_id": "INDICATOR",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_AGR_CROP_INDICATOR",
+          "description": "Crop indicator code from the DSD codelist. Use HARVESTED_AREA for area and PRODUCTION for crop output."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "Gregorian year",
+          "codelist_id": null,
+          "description": "Annual reference period from the report Year column."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Decimal",
+          "codelist_id": null,
+          "description": "Numeric observation value only; units are stored separately in UNIT_MEASURE."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_AGR_UNIT_MEASURE_LOCAL",
+          "description": "Unit code for the crop observation: HECTARES for harvested area or TONNES for production, using the DSD crop unit codelist."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_AGR_OBS_STATUS_LOCAL",
+          "description": "Crop observation status code preserved from the report, pending confirmed mapping to SDMX CL_OBS_STATUS."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 60388
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 315315
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 70674
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Rice                         Northland                  2025                     70674                       Hectares                  259222                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 259222
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Rice                         Northland                  2025                     70674                       Hectares                  259222                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 37859
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Rice                           Centralia                  2024                     37859                       Hectares                  260371                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 260371
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Rice                           Centralia                  2024                     37859                       Hectares                  260371                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 62419
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Rice                           Centralia                  2025                     62419                       Hectares                  108774                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 108774
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Rice                           Centralia                  2025                     62419                       Hectares                  108774                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 97629
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Rice                       South Coast                2024                     97629                       Hectares                  413952                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 413952
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Rice                       South Coast                2024                     97629                       Hectares                  413952                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 94510
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Rice                       South Coast                2025                     94510                       Hectares                  271457                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "RICE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 271457
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Rice                       South Coast                2025                     94510                       Hectares                  271457                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 74135
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Maize                        Northland                  2024                     74135                       Hectares                  246372                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 246372
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Maize                        Northland                  2024                     74135                       Hectares                  246372                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 35504
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Maize                        Northland                  2025                     35504                       Hectares                  175954                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 175954
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Maize                        Northland                  2025                     35504                       Hectares                  175954                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 24626
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Maize                          Centralia                  2024                     24626                       Hectares                  399077                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 399077
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Maize                          Centralia                  2024                     24626                       Hectares                  399077                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 35512
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Maize                          Centralia                  2025                     35512                       Hectares                  357669                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 357669
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Maize                          Centralia                  2025                     35512                       Hectares                  357669                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 15325
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Maize                      South Coast                2024                     15325                       Hectares                  90140                    Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 90140
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Maize                      South Coast                2024                     15325                       Hectares                  90140                    Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 83718
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Maize                      South Coast                2025                     83718                       Hectares                  284469                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "MAIZE"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 284469
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Maize                      South Coast                2025                     83718                       Hectares                  284469                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 38062
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Cassava                     Northland                  2024                     38062                       Hectares                  168890                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 168890
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Cassava                     Northland                  2024                     38062                       Hectares                  168890                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 38090
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Cassava                     Northland                  2025                     38090                       Hectares                  202104                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 202104
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Cassava                     Northland                  2025                     38090                       Hectares                  202104                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 93533
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Cassava                       Centralia                  2024                     93533                       Hectares                  377383                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 377383
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Cassava                       Centralia                  2024                     93533                       Hectares                  377383                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 35335
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Cassava                       Centralia                  2025                     35335                       Hectares                  86134                    Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 86134
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Cassava                       Centralia                  2025                     35335                       Hectares                  86134                    Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 27240
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Cassava                    South Coast                2024                     27240                       Hectares                  237160                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 237160
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Cassava                    South Coast                2024                     27240                       Hectares                  237160                   Tonnes                         Final"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "HARVESTED_AREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 87375
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "HECTARES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Cassava                    South Coast                2025                     87375                       Hectares                  100775                   Tonnes                      Forecast"
+        },
+        {
+          "dsd_id": "KF_AGR_CROP_AREA_PRODUCTION",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "CROP",
+              "value": "CASSAVA"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "INDICATOR",
+              "value": "PRODUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 100775
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "TONNES"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FORECAST"
+            }
+          ],
+          "evidence_quote": "Cassava                    South Coast                2025                     87375                       Hectares                  100775                   Tonnes                      Forecast"
+        }
+      ]
+    },
+    {
+      "template_id": "TPL_AGR_FERTILIZER_RETAIL_PRICE_LONG",
+      "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency. Use M for monthly fertilizer retail price observations; CL_FREQ version not confirmed from supplied evidence."
+        },
+        {
+          "column_id": "PRODUCT",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_FERTILIZER_PRODUCT_LOCAL",
+          "description": "Local fertilizer market product category code from the DSD fertilizer product codelist, pending classification review."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "Gregorian month",
+          "codelist_id": null,
+          "description": "Monthly reference period from the report Month column."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Decimal",
+          "codelist_id": null,
+          "description": "Numeric retail price value only; the price unit is stored separately in UNIT_MEASURE."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String (coded or controlled text)",
+          "codelist_id": "CL_FERTILIZER_UNIT_LOCAL",
+          "description": "Unit code for fertilizer retail price observations. Use LOCAL_CURRENCY_PER_50KG_BAG until currency identity is resolved."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String (coded)",
+          "codelist_id": "CL_PRICE_OBS_STATUS_LOCAL",
+          "description": "Fertilizer price observation status code preserved from the report, pending confirmed mapping to SDMX CL_OBS_STATUS."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "PRODUCT",
+              "value": "UREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 313.28
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "OBSERVED"
+            }
+          ],
+          "evidence_quote": "Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed"
+        },
+        {
+          "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "PRODUCT",
+              "value": "UREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-02"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 270.81
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "OBSERVED"
+            }
+          ],
+          "evidence_quote": "Urea                                       2025-02                                     270.81                                         Local currency per 50 kg bag                  Observed"
+        },
+        {
+          "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "PRODUCT",
+              "value": "UREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-03"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 401.31
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "OBSERVED"
+            }
+          ],
+          "evidence_quote": "Urea                                       2025-03                                     401.31                                         Local currency per 50 kg bag                  Observed"
+        },
+        {
+          "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "PRODUCT",
+              "value": "UREA"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-04"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 384.34
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "OBSERVED"
+            }
+          ],
+          "evidence_quote": "Urea                                       2025-04                                     384.34                                         Local currency per 50 kg bag                  Observed"
+        },
+        {
+          "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "PRODUCT",
+              "value": "COMPOUND_NPK"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 387.57
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "OBSERVED"
+            }
+          ],
+          "evidence_quote": "Compound NPK                             2025-01                                     387.57                                         Local currency per 50 kg bag                  Observed"
+        },
+        {
+          "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "PRODUCT",
+              "value": "COMPOUND_NPK"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-02"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 351.76
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "OBSERVED"
+            }
+          ],
+          "evidence_quote": "Compound NPK                             2025-02                                     351.76                                         Local currency per 50 kg bag                  Observed"
+        },
+        {
+          "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "PRODUCT",
+              "value": "COMPOUND_NPK"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-03"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 358.54
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "OBSERVED"
+            }
+          ],
+          "evidence_quote": "Compound NPK                             2025-03                                     358.54                                         Local currency per 50 kg bag                  Observed"
+        },
+        {
+          "dsd_id": "KF_AGR_FERTILIZER_RETAIL_PRICE",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "PRODUCT",
+              "value": "COMPOUND_NPK"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-04"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 275.86
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "LOCAL_CURRENCY_PER_50KG_BAG"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "OBSERVED"
+            }
+          ],
+          "evidence_quote": "Compound NPK                             2025-04                                     275.86                                         Local currency per 50 kg bag                  Observed"
+        }
+      ]
+    }
+  ]
+}

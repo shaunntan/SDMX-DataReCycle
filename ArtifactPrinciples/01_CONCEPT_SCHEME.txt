@@ -1,0 +1,193 @@
+CONCEPT SCHEME
+==============
+
+1. Definition
+-------------
+A Concept Scheme is a maintained collection of concepts and their meanings. A
+concept gives semantic meaning to a DSD component or metadata component.
+
+Examples:
+- REF_AREA: the geographical area to which the observation refers.
+- FREQ: frequency of the observation.
+- SEX: sex category used to disaggregate the observation.
+- OBS_STATUS: information about the status of an observation.
+- UNIT_MEASURE: unit in which a value is expressed.
+
+A Concept Scheme defines WHAT a field means. It does not define the list of
+permitted codes; that is the job of a Codelist.
+
+2. Best practices
+-----------------
+A. Reuse SDMX cross-domain concepts whenever their meaning is genuinely equivalent.
+   The SDMX Guidelines explicitly encourage reuse of cross-domain concepts.
+
+B. Give every concept:
+   - stable ID;
+   - clear name;
+   - short definition answering "what is it?";
+   - optional context explaining use;
+   - recommended representation (codelist, string, numeric, time, etc.);
+   - source/provenance of the definition.
+
+C. Keep semantic meaning independent of report layout.
+   BAD: COLUMN_3, TABLE_4_ROW, REPORT_SECTION.
+   BETTER: SEX, AGE, ACTIVITY, INDICATOR.
+
+D. Do not merge different meanings because they look similar.
+   Example: REF_AREA and COUNTERPART_AREA may both use the same geographical
+   codelist but represent different roles.
+
+E. Do not create a new concept just because the source report uses a different
+   label. Map source terminology to an existing concept where semantics match.
+   Example:
+       source label "Country" -> REF_AREA
+       source label "Periodicity" -> FREQ
+
+F. Prefer singular, stable, machine-friendly IDs. Avoid embedding year/version in
+   the concept ID unless the concept itself changes semantically.
+
+G. Separate concept from role.
+   The same concept may be used as a dimension in one structure and an attribute
+   in another if the statistical semantics justify it.
+
+H. Record source standards.
+   For every reused concept, keep the agency, scheme, version and source URL.
+
+3. Example: how it looks
+------------------------
+Human-readable design table:
+
+ID            NAME                  DEFINITION
+------------  --------------------  --------------------------------------------
+REF_AREA      Reference area        Geographic area to which the observation refers
+FREQ          Frequency             Rate at which observations occur over time
+TIME_PERIOD   Time period           Time period to which the observation refers
+OBS_VALUE     Observation value     Value of the measured variable
+SEX           Sex                   Sex category used for disaggregation
+UNIT_MEASURE  Unit of measure       Unit in which the observation is expressed
+OBS_STATUS    Observation status    Status/quality information about the value
+
+Illustrative SDMX-ML-style skeleton (not a complete schema-valid message):
+
+<ConceptScheme id="CS_REPORT" agencyID="MY_AGENCY" version="1.0">
+  <Concept id="REF_AREA">
+    <Name xml:lang="en">Reference area</Name>
+    <Description xml:lang="en">Geographic area to which the observation refers</Description>
+  </Concept>
+  <Concept id="FREQ">
+    <Name xml:lang="en">Frequency</Name>
+  </Concept>
+  <Concept id="OBS_VALUE">
+    <Name xml:lang="en">Observation value</Name>
+  </Concept>
+</ConceptScheme>
+
+4. Formal / practical formats
+-----------------------------
+Formal SDMX 2.0 exchange:
+- SDMX-ML XML structure message.
+
+Practical design formats:
+- CSV
+- XLSX
+- JSON
+- database table
+
+Recommended working columns:
+CONCEPT_ID
+NAME
+DEFINITION
+CONTEXT
+RECOMMENDED_REPRESENTATION
+STANDARD_SOURCE_AGENCY
+STANDARD_SCHEME_ID
+STANDARD_VERSION
+SOURCE_URL
+LOCAL_NOTES
+
+5. Common concepts to look for first
+------------------------------------
+High-priority candidates:
+REF_AREA
+COUNTERPART_AREA
+FREQ
+TIME_PERIOD
+OBS_VALUE
+UNIT_MEASURE
+UNIT_MULT
+DECIMALS
+OBS_STATUS
+CONF_STATUS
+BREAK_REASON
+SEX
+AGE
+ACTIVITY
+OCCUPATION
+EDUCATION_LEVEL
+PRODUCT
+COMMODITY
+CURRENCY
+SEASONAL_ADJUST
+ADJUSTMENT
+TIME_FORMAT
+TIME_PER_COLLECT
+STATISTICAL_OPERATION
+
+Do not assume all of these belong in every DSD. Include a concept only if the data
+requires it.
+
+6. Where to find standard concepts
+----------------------------------
+First:
+- SDMX Glossary:
+  https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+- SDMX Guidelines:
+  https://sdmx.org/guidelines/
+- SDMX Global Registry:
+  https://registry.sdmx.org/
+
+Then consult the relevant domain authority, e.g. UN, ILO, UNESCO, IMF, OECD,
+Eurostat, WHO, FAO, etc.
+
+7. Acceptance checks
+--------------------
+[ ] Every field has one clear statistical meaning.
+[ ] No concept exists only because of table formatting.
+[ ] Existing SDMX concepts were searched before creating local ones.
+[ ] Reused concepts retain their original semantics.
+[ ] Definitions are short and unambiguous.
+[ ] Source and version are recorded.
+[ ] Concept IDs remain stable across report editions.
+
+CORE OFFICIAL SOURCES (checked 2026-09-16)
+-----------------------------------------------
+SDMX 2.0 standards landing page
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+SDMX 2.0 Information Model
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+SDMX 2.0 Implementor's Guide
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+SDMX Guidelines
+https://sdmx.org/guidelines/
+
+Guidelines for the Design of Data Structure Definitions
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+SDMX Glossary 2.1
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Standardising Reference Metadata Reporting in SDMX
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Global Registry - Codelists
+https://registry.sdmx.org/items/codelist.html
+
+IMPORTANT
+---------
+This package targets SDMX 2.0 as requested. In SDMX 2.0 the formal term for a
+Data Structure Definition is "Key Family". Later SDMX statistical guidelines are
+used here only for modelling good practice where the recommendation is compatible
+with the SDMX 2.0 information model.

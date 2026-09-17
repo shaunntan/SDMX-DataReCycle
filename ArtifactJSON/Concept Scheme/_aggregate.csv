@@ -1,0 +1,669 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_key""]",artifact_key,string,CONCEPT_SCHEME
+"[""artifact_name""]",artifact_name,string,CONCEPT SCHEME
+"[""principles_file""]",principles_file,string,01_CONCEPT_SCHEME.txt
+"[""principles_sha256""]",principles_sha256,string,618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362
+"[""principles_corpus_sha256""]",principles_corpus_sha256,string,bf4329570a317b193d7c65defd1a72280f56372e9e68b0fd99287d90be2aafb8
+"[""best_practice_chunk_ids""]",best_practice_chunk_ids,array,
+"[""best_practice_chunk_ids"",0]",0,integer,1
+"[""best_practice_chunk_ids"",1]",1,integer,2
+"[""best_practice_chunk_ids"",2]",2,integer,3
+"[""best_practice_chunk_ids"",3]",3,integer,4
+"[""best_practice_chunk_ids"",4]",4,integer,5
+"[""best_practice_chunk_ids"",5]",5,integer,6
+"[""best_practice_chunk_ids"",6]",6,integer,7
+"[""best_practice_chunk_ids"",7]",7,integer,8
+"[""best_practice_chunk_ids"",8]",8,integer,23
+"[""best_practice_chunk_ids"",9]",9,integer,24
+"[""best_practice_chunk_ids"",10]",10,integer,25
+"[""best_practice_chunk_ids"",11]",11,integer,26
+"[""best_practice_chunk_ids"",12]",12,integer,27
+"[""best_practice_chunk_ids"",13]",13,integer,28
+"[""best_practice_chunk_ids"",14]",14,integer,47
+"[""best_practice_chunk_ids"",15]",15,integer,48
+"[""best_practice_chunk_ids"",16]",16,integer,49
+"[""aggregate_version""]",aggregate_version,integer,4
+"[""created_at""]",created_at,string,2026-09-16T23:11:28.202826+00:00
+"[""updated_at""]",updated_at,string,2026-09-16T23:39:03.192885+00:00
+"[""update_mode""]",update_mode,string,INCREMENTAL
+"[""contributions""]",contributions,array,
+"[""contributions"",0]",0,object,
+"[""contributions"",0,""source_report""]",source_report,string,01_sdmx_20_population_full_case.xml
+"[""contributions"",0,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\01_sdmx_20_population_full_case.json
+"[""contributions"",0,""json_sha256""]",json_sha256,string,f9f750b0208e442d9ac70f1cd7439f69e6fe5d77b7d3afe2eb25095f13731b8a
+"[""contributions"",1]",1,object,
+"[""contributions"",1,""source_report""]",source_report,string,02_sdmx_20_consumer_prices_full_case.xml
+"[""contributions"",1,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\02_sdmx_20_consumer_prices_full_case.json
+"[""contributions"",1,""json_sha256""]",json_sha256,string,040322cc2ad8ffc30bc7bbf6a5a3ea989d73a109a88390367286ad18cb02baa2
+"[""contributions"",2]",2,object,
+"[""contributions"",2,""source_report""]",source_report,string,03_sdmx_21_labour_market_full_case.xml
+"[""contributions"",2,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\03_sdmx_21_labour_market_full_case.json
+"[""contributions"",2,""json_sha256""]",json_sha256,string,897cb18ba24c095bbd6e68be99678078a88541362e6bd451e10a8b8ddc92b298
+"[""contributions"",3]",3,object,
+"[""contributions"",3,""source_report""]",source_report,string,04_sdmx_21_external_trade_full_case.xml
+"[""contributions"",3,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\04_sdmx_21_external_trade_full_case.json
+"[""contributions"",3,""json_sha256""]",json_sha256,string,1a8675e393ed8b16749ca46c0ec63699dd5c617af22f8f765e2ae471d5daefd4
+"[""contributions"",4]",4,object,
+"[""contributions"",4,""source_report""]",source_report,string,05_sdmx_30_education_full_case.xml
+"[""contributions"",4,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\05_sdmx_30_education_full_case.json
+"[""contributions"",4,""json_sha256""]",json_sha256,string,f04064fe8556ecdf4112bd075c630f7ada96ceab08a4b7bb82c2b2fca2a840ca
+"[""contributions"",5]",5,object,
+"[""contributions"",5,""source_report""]",source_report,string,06_sdmx_30_energy_full_case.xml
+"[""contributions"",5,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\06_sdmx_30_energy_full_case.json
+"[""contributions"",5,""json_sha256""]",json_sha256,string,2c47f7a11b37287eb6eef0b2b5195e3c804264637456d9619494c6973c9d4c68
+"[""contributions"",6]",6,object,
+"[""contributions"",6,""source_report""]",source_report,string,example_01_labour_market.pdf
+"[""contributions"",6,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\example_01_labour_market.json
+"[""contributions"",6,""json_sha256""]",json_sha256,string,ac25bcd03958fdcbc1f756219d5f07fa090e3ebc5586bd4c8178cf3cfb3380ac
+"[""contributions"",7]",7,object,
+"[""contributions"",7,""source_report""]",source_report,string,example_02_health_system.pdf
+"[""contributions"",7,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\example_02_health_system.json
+"[""contributions"",7,""json_sha256""]",json_sha256,string,faed47ead40fbb15ef1687d4039902f0c1267d6f4ce322cd22ee6f9baa6688b6
+"[""contributions"",8]",8,object,
+"[""contributions"",8,""source_report""]",source_report,string,example_03_education.pdf
+"[""contributions"",8,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\example_03_education.json
+"[""contributions"",8,""json_sha256""]",json_sha256,string,d32bc8b5d7d81f0dc8ee29cacbe25e11c28b1e076a177a93f4d2975a958cc32f
+"[""contributions"",9]",9,object,
+"[""contributions"",9,""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""contributions"",9,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\example_04_agriculture.json
+"[""contributions"",9,""json_sha256""]",json_sha256,string,6e67ff747e528af8cecb5bc71b67b0f38d400161bfe82639df3b280861af4f84
+"[""contributions"",10]",10,object,
+"[""contributions"",10,""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""contributions"",10,""source_json_path""]",source_json_path,string,Artifact JSON\Concept Scheme\example_05_prices_consumption.json
+"[""contributions"",10,""json_sha256""]",json_sha256,string,614206eb40b7c0f6ea35f725cbbef0099ac0041892744625d16ce2be8c19902c
+"[""optimizer_attempts""]",optimizer_attempts,integer,1
+"[""validator_direct_correction""]",validator_direct_correction,boolean,false
+"[""inspector_review""]",inspector_review,object,
+"[""inspector_review"",""valid""]",valid,boolean,true
+"[""inspector_review"",""covered_source_reports""]",covered_source_reports,array,
+"[""inspector_review"",""covered_source_reports"",0]",0,string,01_sdmx_20_population_full_case.xml
+"[""inspector_review"",""covered_source_reports"",1]",1,string,02_sdmx_20_consumer_prices_full_case.xml
+"[""inspector_review"",""covered_source_reports"",2]",2,string,03_sdmx_21_labour_market_full_case.xml
+"[""inspector_review"",""covered_source_reports"",3]",3,string,04_sdmx_21_external_trade_full_case.xml
+"[""inspector_review"",""covered_source_reports"",4]",4,string,05_sdmx_30_education_full_case.xml
+"[""inspector_review"",""covered_source_reports"",5]",5,string,06_sdmx_30_energy_full_case.xml
+"[""inspector_review"",""covered_source_reports"",6]",6,string,example_01_labour_market.pdf
+"[""inspector_review"",""covered_source_reports"",7]",7,string,example_02_health_system.pdf
+"[""inspector_review"",""covered_source_reports"",8]",8,string,example_03_education.pdf
+"[""inspector_review"",""covered_source_reports"",9]",9,string,example_04_agriculture.pdf
+"[""inspector_review"",""covered_source_reports"",10]",10,string,example_05_prices_consumption.pdf
+"[""inspector_review"",""missing_source_reports""]",missing_source_reports,array,
+"[""inspector_review"",""missing_requirements""]",missing_requirements,array,
+"[""inspector_review"",""redundancies_remaining""]",redundancies_remaining,array,
+"[""inspector_review"",""schema_issues""]",schema_issues,array,
+"[""inspector_review"",""repair_instructions""]",repair_instructions,array,
+"[""optimized_artifact""]",optimized_artifact,object,
+"[""optimized_artifact"",""artifact_type""]",artifact_type,string,CONCEPT_SCHEME
+"[""optimized_artifact"",""source_report""]",source_report,string,AGGREGATE::CONCEPT_SCHEME
+"[""optimized_artifact"",""source_sha256""]",source_sha256,string,e810c064655d1af9108fd5dbfed5e7cf8cd487dcfb6bd9083623aed18d2f76ca
+"[""optimized_artifact"",""principles_file""]",principles_file,string,01_CONCEPT_SCHEME.txt
+"[""optimized_artifact"",""principles_sha256""]",principles_sha256,string,618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362
+"[""optimized_artifact"",""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""optimized_artifact"",""retrieved_chunk_ids"",0]",0,integer,1
+"[""optimized_artifact"",""retrieved_chunk_ids"",1]",1,integer,2
+"[""optimized_artifact"",""retrieved_chunk_ids"",2]",2,integer,3
+"[""optimized_artifact"",""retrieved_chunk_ids"",3]",3,integer,4
+"[""optimized_artifact"",""retrieved_chunk_ids"",4]",4,integer,5
+"[""optimized_artifact"",""retrieved_chunk_ids"",5]",5,integer,6
+"[""optimized_artifact"",""retrieved_chunk_ids"",6]",6,integer,7
+"[""optimized_artifact"",""retrieved_chunk_ids"",7]",7,integer,8
+"[""optimized_artifact"",""retrieved_chunk_ids"",8]",8,integer,23
+"[""optimized_artifact"",""retrieved_chunk_ids"",9]",9,integer,24
+"[""optimized_artifact"",""retrieved_chunk_ids"",10]",10,integer,25
+"[""optimized_artifact"",""retrieved_chunk_ids"",11]",11,integer,26
+"[""optimized_artifact"",""retrieved_chunk_ids"",12]",12,integer,27
+"[""optimized_artifact"",""retrieved_chunk_ids"",13]",13,integer,28
+"[""optimized_artifact"",""retrieved_chunk_ids"",14]",14,integer,47
+"[""optimized_artifact"",""retrieved_chunk_ids"",15]",15,integer,48
+"[""optimized_artifact"",""retrieved_chunk_ids"",16]",16,integer,49
+"[""optimized_artifact"",""standard_references""]",standard_references,array,
+"[""optimized_artifact"",""standard_references"",0]",0,object,
+"[""optimized_artifact"",""standard_references"",0,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept guidance
+"[""optimized_artifact"",""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""optimized_artifact"",""standard_references"",0,""version""]",version,string,2.1 December 2020
+"[""optimized_artifact"",""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""standard_references"",0,""evidence""]",evidence,string,"Primary source for reusable SDMX cross-domain concept semantics such as REF_AREA, COUNTERPART_AREA, FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE, OBS_STATUS, SEX, AGE, ACTIVITY, EDUCATION_LEVEL, PRODUCT, CURRENCY and INDICATOR where semantic equivalence is present. Supplied evidence specifically confirmed OBS_STATUS as a concept ID and CL_OBS_STATUS as the associated codelist pattern/example."
+"[""optimized_artifact"",""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",1]",1,object,
+"[""optimized_artifact"",""standard_references"",1,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",1,""artifact_type""]",artifact_type,string,Global Registry catalog
+"[""optimized_artifact"",""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""optimized_artifact"",""standard_references"",1,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""standard_references"",1,""evidence""]",evidence,string,"Used as the authoritative place to check SDMX codelists and related structural artefacts before creating local codelists. Supplied evidence confirms that codelists and structural artefacts can be searched and inspected there, but does not confirm all code-level mappings required by the source reports."
+"[""optimized_artifact"",""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",2]",2,object,
+"[""optimized_artifact"",""standard_references"",2,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",2,""artifact_type""]",artifact_type,string,Reference metadata guidance
+"[""optimized_artifact"",""standard_references"",2,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""optimized_artifact"",""standard_references"",2,""version""]",version,string,1.0
+"[""optimized_artifact"",""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""standard_references"",2,""evidence""]",evidence,string,"Used as candidate source for reusable metadata concepts such as methodology, source description, revision policy, confidentiality, caveats/limitations, publication information and compiling organisation. Exact metadata concept IDs were not confirmed for all local metadata concepts in supplied report evidence."
+"[""optimized_artifact"",""standard_references"",2,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",3]",3,object,
+"[""optimized_artifact"",""standard_references"",3,""agency""]",agency,string,SDMX
+"[""optimized_artifact"",""standard_references"",3,""artifact_type""]",artifact_type,string,Technical standard
+"[""optimized_artifact"",""standard_references"",3,""artifact_id""]",artifact_id,string,SDMX_2_0_INFORMATION_MODEL
+"[""optimized_artifact"",""standard_references"",3,""version""]",version,string,2.0
+"[""optimized_artifact"",""standard_references"",3,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""optimized_artifact"",""standard_references"",3,""evidence""]",evidence,string,"Used as the formal SDMX 2.0 reference for concept schemes, concepts, Key Families/DSDs, measures, dimensions and attributes. Mechanically converted XML sources were treated as SDMX structural evidence, but their locally named concept schemes do not by themselves confirm cross-domain concept-scheme versions."
+"[""optimized_artifact"",""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""optimized_artifact"",""standard_references"",4]",4,object,
+"[""optimized_artifact"",""standard_references"",4,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",4,""artifact_type""]",artifact_type,string,Geographic classification
+"[""optimized_artifact"",""standard_references"",4,""artifact_id""]",artifact_id,string,UN_M49
+"[""optimized_artifact"",""standard_references"",4,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""optimized_artifact"",""standard_references"",4,""evidence""]",evidence,string,"UN M49 is an authoritative geographic coding source to check for reference-area and counterpart/partner-area representation. Several reports use synthetic/local area labels or mechanically imported REF_AREA/PARTNER concepts without confirmed geographic-code mappings, so direct mapping to UN M49 is not confirmed."
+"[""optimized_artifact"",""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",5]",5,object,
+"[""optimized_artifact"",""standard_references"",5,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",5,""artifact_type""]",artifact_type,string,Economic activity classification source
+"[""optimized_artifact"",""standard_references"",5,""artifact_id""]",artifact_id,string,UNSD_ECONOMIC_CLASSIFICATIONS
+"[""optimized_artifact"",""standard_references"",5,""version""]",version,string,not stated
+"[""optimized_artifact"",""standard_references"",5,""url""]",url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""optimized_artifact"",""standard_references"",5,""evidence""]",evidence,string,Used as a source to check before mapping industry or economic activity categories. The labour PDF report states that industry labels are local aggregates and are not confirmed ISIC categories.
+"[""optimized_artifact"",""standard_references"",5,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",6]",6,object,
+"[""optimized_artifact"",""standard_references"",6,""agency""]",agency,string,UNESCO Institute for Statistics / UNESCO
+"[""optimized_artifact"",""standard_references"",6,""artifact_type""]",artifact_type,string,Education classification
+"[""optimized_artifact"",""standard_references"",6,""artifact_id""]",artifact_id,string,ISCED
+"[""optimized_artifact"",""standard_references"",6,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",6,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""optimized_artifact"",""standard_references"",6,""evidence""]",evidence,string,"ISCED is the authoritative source to check for education-level classification. Education XML and PDF sources use education-level concepts, but supplied evidence does not confirm ISCED version or code mapping."
+"[""optimized_artifact"",""standard_references"",6,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",7]",7,object,
+"[""optimized_artifact"",""standard_references"",7,""agency""]",agency,string,UNSD
+"[""optimized_artifact"",""standard_references"",7,""artifact_type""]",artifact_type,string,Consumption-purpose classification
+"[""optimized_artifact"",""standard_references"",7,""artifact_id""]",artifact_id,string,COICOP
+"[""optimized_artifact"",""standard_references"",7,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",7,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""optimized_artifact"",""standard_references"",7,""evidence""]",evidence,string,COICOP is the relevant authoritative classification area for consumption-purpose classifications. The prices/consumption PDF report states that consumption divisions resemble COICOP but the revision is not confirmed. The consumer-prices XML uses PRODUCT_GROUP but supplies no authoritative product or COICOP mapping.
+"[""optimized_artifact"",""standard_references"",7,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""standard_references"",8]",8,object,
+"[""optimized_artifact"",""standard_references"",8,""agency""]",agency,string,ISO
+"[""optimized_artifact"",""standard_references"",8,""artifact_type""]",artifact_type,string,Currency code standard
+"[""optimized_artifact"",""standard_references"",8,""artifact_id""]",artifact_id,string,ISO_4217
+"[""optimized_artifact"",""standard_references"",8,""version""]",version,string,not confirmed
+"[""optimized_artifact"",""standard_references"",8,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""optimized_artifact"",""standard_references"",8,""evidence""]",evidence,string,"ISO 4217 is the currency standard to check for monetary units. Agriculture and prices/consumption reports refer to local currency but do not name the currency, so no specific ISO 4217 currency code can be assigned."
+"[""optimized_artifact"",""standard_references"",8,""verification_status""]",verification_status,string,CANDIDATE
+"[""optimized_artifact"",""limitations""]",limitations,array,
+"[""optimized_artifact"",""limitations"",0]",0,string,This aggregate is a reusable cross-report concept scheme covering six SDMX XML cases and five PDF examples; it does not imply that all reports or tables share one SDMX 2.0 Key Family / DSD.
+"[""optimized_artifact"",""limitations"",1]",1,string,"The source reports require multiple statistical structures, including population statistics, consumer-price statistics, labour-market indicators, external trade statistics, education statistics, energy statistics, quarterly unemployment rates, monthly job vacancy counts, annual registered deaths, year-end hospital-bed stocks, annual education enrollment counts, modelled education completion rates, annual crop area/production aggregates, monthly fertilizer retail prices, monthly CPI indexes and annual household spending survey estimates. These distinctions are preserved through indicators, units, dimensions, dataflows and/or multiple DSDs rather than duplicate primary-measure concepts."
+"[""optimized_artifact"",""limitations"",2]",2,string,"Mechanically converted XML concept schemes CS_POP, CS_CPI, CS_LAB, CS_TRD, CS_EDU and CS_ENE contained minimal labels only and no external source URLs or semantic definitions beyond concept names. Their concepts were consolidated only where semantics were equivalent to existing cross-report concepts."
+"[""optimized_artifact"",""limitations"",3]",3,string,No UNIT_MULT concept is included because none of the accepted report artifacts evidences a separate scaling or multiplier requirement.
+"[""optimized_artifact"",""limitations"",4]",4,string,Exact SDMX cross-domain concept scheme identifiers and versions were not confirmed for every common concept in supplied excerpts. Candidate reuse is recorded where semantics match but source/version details remain uncertain.
+"[""optimized_artifact"",""limitations"",5]",5,string,"Code-level mappings are not confirmed for many representations, including observation statuses, units, sex totals, age groups, population indicators, price indicators, labour-market indicators, trade flows, external trade partner areas, education indicators, education levels, energy indicators, energy sources, product groups, industry aggregates, causes of death, facility ownership, crop categories, fertilizer products, consumption divisions, residence types and quintiles."
+"[""optimized_artifact"",""limitations"",6]",6,string,Synthetic/local areas and mechanically imported reference-area and partner-area concepts are not confirmed UN M49 or ISO 3166 areas.
+"[""optimized_artifact"",""limitations"",7]",7,string,The external trade XML concept PARTNER is modelled as COUNTERPART_AREA because it represents the partner-area role; it remains distinct from REF_AREA even if both later use the same geographic codelist.
+"[""optimized_artifact"",""limitations"",8]",8,string,"The external trade XML uses concept ID INDICATOR with name Trade flow. Because import/export trade flow is not necessarily equivalent to a general measured-indicator concept, this aggregate preserves it as TRADE_FLOW pending DSD and codelist review."
+"[""optimized_artifact"",""limitations"",9]",9,string,The education XML concept EDU_LEVEL is consolidated into EDUCATION_LEVEL because both mean education level; no confirmed ISCED mapping or revision is asserted.
+"[""optimized_artifact"",""limitations"",10]",10,string,"The energy XML concept ENERGY_SOURCE is retained as a separate concept because energy source/fuel category is not equivalent to PRODUCT, CROP or PRODUCT_GROUP without further classification evidence."
+"[""optimized_artifact"",""limitations"",11]",11,string,"The XML AGE_GROUP concept and health AGE concept are consolidated as AGE because both mean age group used for disaggregation; this remains distinct from POPULATION_AGE_SCOPE, which describes coverage rather than disaggregation."
+"[""optimized_artifact"",""limitations"",12]",12,string,The XML PRODUCT_GROUP concept is retained separately from PRODUCT and CONSUMPTION_DIVISION because the XML evidence does not prove equivalence with fertilizer products or COICOP-like consumption divisions.
+"[""optimized_artifact"",""limitations"",13]",13,string,Labour industry labels are local aggregates and are not confirmed ISIC categories.
+"[""optimized_artifact"",""limitations"",14]",14,string,"Health cause-of-death labels resemble broad ICD families, but no ICD version is confirmed; CAUSE_OF_DEATH remains a local/domain concept pending classification review."
+"[""optimized_artifact"",""limitations"",15]",15,string,Education-level labels require ISCED mapping review; no confirmed ISCED version or mapping is asserted.
+"[""optimized_artifact"",""limitations"",16]",16,string,Education wealth quintiles and household-spending expenditure quintiles are survey-specific distribution concepts and must not be silently merged with each other or with a standard income/wealth classification.
+"[""optimized_artifact"",""limitations"",17]",17,string,Labour unemployment age coverage is a fixed population scope for persons aged 15-64 and is not modelled as the AGE disaggregation concept.
+"[""optimized_artifact"",""limitations"",18]",18,string,Crop names are common labels requiring classification review; no authoritative crop classification mapping is confirmed.
+"[""optimized_artifact"",""limitations"",19]",19,string,"Fertilizer products are local market categories and are not verified CPC codes; PRODUCT is reused as a statistical concept for those products, but product codes remain local pending classification review."
+"[""optimized_artifact"",""limitations"",20]",20,string,"Consumption divisions resemble COICOP, but the prices/consumption report does not confirm the COICOP revision; no definitive COICOP codelist or revision is assigned."
+"[""optimized_artifact"",""limitations"",21]",21,string,"The local currency in agriculture fertilizer prices and household spending is not named, so currency identity cannot be standardized from the reports."
+"[""optimized_artifact"",""limitations"",22]",22,string,"Reference metadata concepts are consolidated across reports, but exact mappings to an SDMX Global Reference Metadata Concept Scheme were not confirmed from supplied evidence."
+"[""optimized_artifact"",""limitations"",23]",23,string,"Observation status is semantically reused across reports, but mappings for source values such as Final, Provisional, Estimated, Modelled estimate, Forecast, Observed and Survey estimate require codelist-level verification."
+"[""optimized_artifact"",""limitations"",24]",24,string,SOURCE from the XML concept schemes is consolidated into SOURCE_DESCRIPTION because both identify or describe the data source; SOURCE_URL is retained separately because it identifies a locator rather than the source system or collection itself.
+"[""optimized_artifact"",""concept_schemes""]",concept_schemes,array,
+"[""optimized_artifact"",""concept_schemes"",0]",0,object,
+"[""optimized_artifact"",""concept_schemes"",0,""scheme_id""]",scheme_id,string,CS_SYNTHETIC_CROSS_REPORT_STATISTICS
+"[""optimized_artifact"",""concept_schemes"",0,""name""]",name,string,Synthetic cross-report statistics concept scheme
+"[""optimized_artifact"",""concept_schemes"",0,""agency_id""]",agency_id,string,SYNTHETIC_AGGREGATE_AGENCY
+"[""optimized_artifact"",""concept_schemes"",0,""version""]",version,string,4.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts""]",concepts,array,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0]",0,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""concept_id""]",concept_id,string,REF_AREA
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""name""]",name,string,Reference area
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""definition""]",definition,string,Geographic area to which an observation refers.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""context""]",context,string,"Used for population statistics, consumer-price statistics, labour-market statistics, external trade reporting economy, education statistics, energy statistics, health registered deaths and agriculture crop area/production observations where an explicit area or region field is present."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""recommended_representation""]",recommended_representation,string,Codelist; local synthetic area codelist unless authoritative geographic mapping is confirmed; UN M49 or another geographic standard may be considered after validation.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""standard_source_agency""]",standard_source_agency,string,SDMX candidate; UNSD UN M49 candidate for representation
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""standard_scheme_id""]",standard_scheme_id,string,REF_AREA candidate; exact SDMX concept scheme ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""local_notes""]",local_notes,string,"Consolidates REF_AREA concepts from CS_POP, CS_CPI, CS_LAB, CS_TRD, CS_EDU, CS_ENE and equivalent area concepts from labour, health and agriculture reports. Do not map synthetic area labels to UN M49 or ISO 3166 without additional evidence. Kept distinct from COUNTERPART_AREA/PARTNER."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",0,""evidence_quote""]",evidence_quote,string,"Reference area; Table 1. Unemployment rate by region, sex and quarter; Table 1. Registered deaths by area, cause, age and year; Table 1. Crop area and production by region"
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1]",1,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""concept_id""]",concept_id,string,COUNTERPART_AREA
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""name""]",name,string,Counterpart area
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""definition""]",definition,string,"Geographic area of the counterparty or partner to which an observation refers, distinct from the reference area."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""context""]",context,string,Used for external trade statistics where the reporting/reference area has a partner area in the trade transaction or flow.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""recommended_representation""]",recommended_representation,string,Codelist; local partner-area codelist unless authoritative geographic mapping is confirmed; UN M49 or ISO 3166 may be considered after validation.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""standard_source_agency""]",standard_source_agency,string,SDMX candidate; UNSD UN M49 candidate for representation
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""standard_scheme_id""]",standard_scheme_id,string,COUNTERPART_AREA candidate; exact SDMX concept scheme ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""local_notes""]",local_notes,string,Consolidates the external trade XML PARTNER concept. Do not merge with REF_AREA because reference area and partner/counterpart area are different roles even if they share a geographic codelist.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",1,""evidence_quote""]",evidence_quote,string,Partner area
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2]",2,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""concept_id""]",concept_id,string,FREQ
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""name""]",name,string,Frequency
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""definition""]",definition,string,Rate at which observations occur over time.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""context""]",context,string,"Needed to distinguish annual, quarterly and monthly reporting across population, consumer-price, labour, external trade, education, energy, agriculture and prices/consumption structures; may be fixed by DSD or dataflow where not reported as a field."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""recommended_representation""]",recommended_representation,string,Codelist; candidate SDMX frequency codelist after version and code confirmation.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""standard_scheme_id""]",standard_scheme_id,string,FREQ / CL_FREQ candidate; exact scheme and codelist version not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""local_notes""]",local_notes,string,Include only in DSDs where frequency is needed to distinguish temporal granularity or where reporting practice requires it.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",2,""evidence_quote""]",evidence_quote,string,Frequency; Quarterly rates and monthly vacancy counts represent different statistical structures.; Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel.; The CPI is a monthly fixed-basket index. Household spending is an annual survey estimate.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3]",3,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""name""]",name,string,Time period
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""definition""]",definition,string,Time period to which an observation refers.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""context""]",context,string,"Covers population periods, consumer-price periods, labour quarters and months, external trade periods, education periods, energy periods, health calendar years and year-end stock years, agriculture crop years and fertilizer months, CPI months and household-spending years."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""recommended_representation""]",recommended_representation,string,"SDMX time period; quarterly, monthly or annual format as appropriate to the DSD and frequency."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""standard_scheme_id""]",standard_scheme_id,string,TIME_PERIOD candidate; exact SDMX concept scheme ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""local_notes""]",local_notes,string,"The same concept can represent different temporal granularities when paired with FREQ or structure-level temporal rules. Do not merge quarterly, monthly and annual series without preserving temporal granularity."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",3,""evidence_quote""]",evidence_quote,string,"Time period; Table 2. Job vacancies by industry and month; Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.; Year; Table 2. Fertilizer retail prices by month; CPI rows use a month, while household spending rows use a year."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4]",4,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""concept_id""]",concept_id,string,INDICATOR
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""name""]",name,string,Indicator
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""definition""]",definition,string,Statistical phenomenon or measure type represented by an observation.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""context""]",context,string,"Distinguishes population indicators, price indicators, labour-market indicators, education indicators, energy indicators, unemployment rate, job vacancies, registered deaths, available hospital beds, enrollment headcount, completion rate, harvested area, crop production, fertilizer retail price, CPI index and mean household spending when a reusable multi-indicator structure is appropriate. In separate DSDs or dataflows, the indicator may be fixed by the dataflow rather than carried as a dimension."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""recommended_representation""]",recommended_representation,string,Local cross-domain or domain-specific indicator codelist; authoritative domain indicator lists may be checked later.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""standard_scheme_id""]",standard_scheme_id,string,Indicator candidate; exact SDMX concept scheme ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""local_notes""]",local_notes,string,"Consolidates XML Population indicator, Price indicator, Labour-market indicator, Education indicator and Energy indicator with report-specific measure concepts, including the agriculture artifact's MEASURE concept, where they identify the measured phenomenon. The external trade XML used concept ID INDICATOR for Trade flow, but this aggregate preserves trade-flow semantics separately as TRADE_FLOW because import/export direction is not necessarily equivalent to a general indicator."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",4,""evidence_quote""]",evidence_quote,string,Population indicator; Price indicator; Labour-market indicator; Education indicator; Energy indicator; Unemployment rate is unemployed persons as a percentage of the labour force. A job vacancy is an unfilled position available for immediate recruitment. Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December. Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates. Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag. CPI measures price change relative to 2023=100. Household spending is mean monthly consumption expenditure per household.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5]",5,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""concept_id""]",concept_id,string,TRADE_FLOW
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""name""]",name,string,Trade flow
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""definition""]",definition,string,"Direction or flow category of external trade, such as imports or exports, to which an observation refers."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""context""]",context,string,Used for external trade statistics in the CS_TRD XML source. It identifies trade-flow role and should not be silently merged with general INDICATOR unless a DSD deliberately treats import/export as indicator codes.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""recommended_representation""]",recommended_representation,string,Codelist; local trade-flow codelist unless an authoritative external-trade flow codelist is confirmed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""standard_source_agency""]",standard_source_agency,string,Local / external trade standard candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_TRADE_FLOW
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""source_url""]",source_url,string,04_sdmx_21_external_trade_full_case.xml
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""local_notes""]",local_notes,string,"Created from the CS_TRD concept labelled Trade flow. The XML concept ID was INDICATOR, but semantic meaning is preserved here as TRADE_FLOW to avoid conflating flow direction with measured phenomena in other reports."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",5,""evidence_quote""]",evidence_quote,string,Trade flow
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6]",6,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""concept_id""]",concept_id,string,OBS_VALUE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""name""]",name,string,Observation value
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""definition""]",definition,string,Numeric value of the measured variable for a given combination of dimensions.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""context""]",context,string,"Carries population values, price values, labour values, external trade values, education values, energy values, percentages, counts, area values, production values, index values and monetary spending values across the source reports; the measured phenomenon is identified by INDICATOR, TRADE_FLOW, dataflow, DSD or associated metadata."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""recommended_representation""]",recommended_representation,string,"Numeric; decimal where rates, percentages, prices or index values are reported and integer where count or whole-unit data are reported."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""standard_scheme_id""]",standard_scheme_id,string,OBS_VALUE candidate; exact SDMX concept scheme ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""local_notes""]",local_notes,string,Do not store formatted strings such as percentages or unit text in OBS_VALUE when UNIT_MEASURE is separately modelled.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",6,""evidence_quote""]",evidence_quote,string,Observation value; Value; Vacancies; Index; Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7]",7,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""name""]",name,string,Unit of measure
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""definition""]",definition,string,Unit in which the observation value is expressed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""context""]",context,string,"Covers population units, consumer-price units, labour units, external trade units, education units, energy units, percent, open positions, deaths, beds, students, hectares, metric tonnes, local currency per 50 kg bag, CPI index with base 2023=100 and local currency per household per month."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""recommended_representation""]",recommended_representation,string,"Codelist; use a standard unit codelist only after confirming code semantics, otherwise use a local unit codelist or controlled string."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""standard_source_agency""]",standard_source_agency,string,SDMX candidate / domain authority candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""standard_scheme_id""]",standard_scheme_id,string,UNIT_MEASURE candidate; exact codelist not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""local_notes""]",local_notes,string,Units have different meanings and denominators. Keep units and denominators explicit; do not rely on formatted OBS_VALUE strings.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",7,""evidence_quote""]",evidence_quote,string,Unit of measure; Unit; Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag. CPI measures price change relative to 2023=100. Household spending is mean monthly consumption expenditure per household.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8]",8,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""concept_id""]",concept_id,string,OBS_STATUS
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""name""]",name,string,Observation status
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""definition""]",definition,string,Status or quality information associated with an observation value.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""context""]",context,string,"Used for values reported as Final, Provisional, Estimated, Modelled estimate, Forecast, Observed and Survey estimate across the source reports, and for XML OBS_STATUS attributes where present."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""recommended_representation""]",recommended_representation,string,Codelist; candidate SDMX CL_OBS_STATUS with local mapping until code-level confirmation is completed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""standard_scheme_id""]",standard_scheme_id,string,OBS_STATUS / CL_OBS_STATUS
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""standard_version""]",standard_version,string,2.1 glossary evidence; codelist version not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""local_notes""]",local_notes,string,Do not confuse observation status with revision-policy metadata. Source status labels require mapping review before assigning standard SDMX status codes.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",8,""evidence_quote""]",evidence_quote,string,Observation status; Footnote: 2025-Q2 rates are provisional.; Footnote: 2024 death counts are provisional.; Footnote: All completion rates are modelled estimates.; Forecast production is not observed output.; The latest CPI month is provisional. Household estimates are revised only for processing errors or new calibration weights.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9]",9,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""concept_id""]",concept_id,string,SEX
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""name""]",name,string,Sex
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""definition""]",definition,string,Sex category used to disaggregate observations.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""context""]",context,string,"Used in XML labour-market statistics, labour unemployment-rate estimates and education enrollment/completion observations. Displayed categories include women/female, men/male and total depending on report."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""recommended_representation""]",recommended_representation,string,Codelist; candidate SDMX CL_SEX or local sex codelist with explicit aggregate and coverage definitions.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""standard_scheme_id""]",standard_scheme_id,string,SEX / CL_SEX candidate; exact concept scheme and codelist version not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""local_notes""]",local_notes,string,Labour Total sex coverage includes respondents outside the displayed women/men categories and must not be inferred by summing displayed rows. Education Total also needs explicit aggregate semantics before mapping.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",9,""evidence_quote""]",evidence_quote,string,Sex; Total sex coverage includes respondents outside the displayed women/men categories; it must not be inferred by summing displayed rows.; Education level Sex Year Value Unit Status
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10]",10,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""concept_id""]",concept_id,string,AGE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""name""]",name,string,Age group
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""definition""]",definition,string,Age group used to disaggregate observations.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""context""]",context,string,"Used for population statistics via XML AGE_GROUP and for registered deaths in the health report, with age groups such as 45-64 and 65+. This is distinct from fixed population age scope in the labour report."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""recommended_representation""]",recommended_representation,string,Codelist; local age-group codelist unless a suitable domain age codelist is later confirmed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""standard_scheme_id""]",standard_scheme_id,string,AGE candidate; exact SDMX concept scheme and codelist version not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""local_notes""]",local_notes,string,Consolidates the XML concept AGE_GROUP into AGE because both refer to age groups used for disaggregation. Do not use AGE to represent a fixed population coverage statement unless the DSD actually disaggregates observations by age.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",10,""evidence_quote""]",evidence_quote,string,"Age group; Table 1. Registered deaths by area, cause, age and year"
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11]",11,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""concept_id""]",concept_id,string,POPULATION_AGE_SCOPE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""name""]",name,string,Population age scope
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""definition""]",definition,string,Age range of the population covered by a statistic.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""context""]",context,string,"Used for labour unemployment-rate estimates covering persons aged 15-64. It is a scope or coverage attribute/metadata item, not an age-disaggregation dimension."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""recommended_representation""]",recommended_representation,string,String or local age-range codelist; fixed value 15-64 where applicable.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""standard_source_agency""]",standard_source_agency,string,Local
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""standard_scheme_id""]",standard_scheme_id,string,not applicable
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""source_url""]",source_url,string,example_01_labour_market.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""local_notes""]",local_notes,string,Kept separate from AGE because the report does not provide unemployment observations by age group.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",11,""evidence_quote""]",evidence_quote,string,Unemployment rates are synthetic survey estimates for persons aged 15-64.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12]",12,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""concept_id""]",concept_id,string,ACTIVITY
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""name""]",name,string,Economic activity
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""definition""]",definition,string,Industry or economic activity grouping to which an observation refers.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""context""]",context,string,Used for labour job-vacancy observations by industry and month.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""recommended_representation""]",recommended_representation,string,Local industry aggregate codelist; do not map to ISIC without confirmation.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""standard_source_agency""]",standard_source_agency,string,SDMX / UNSD candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""standard_scheme_id""]",standard_scheme_id,string,ACTIVITY candidate; ISIC not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""source_url""]",source_url,string,https://unstats.un.org/unsd/classifications/Econ
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""local_notes""]",local_notes,string,"Although ACTIVITY is a common SDMX-style concept, the report's industry categories are local aggregates pending authoritative classification mapping."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",12,""evidence_quote""]",evidence_quote,string,Table 2. Job vacancies by industry and month; Footnote: Industry labels are local aggregates and are not confirmed ISIC categories.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13]",13,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""concept_id""]",concept_id,string,SEASONAL_ADJUST
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""name""]",name,string,Seasonal adjustment
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""definition""]",definition,string,Adjustment status indicating whether observations have been adjusted for seasonal effects.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""context""]",context,string,Used for labour job-vacancy observations; all displayed vacancy rows are labelled seasonally adjusted.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""recommended_representation""]",recommended_representation,string,Codelist; candidate SDMX CL_SEASONAL_ADJUST after code-level confirmation.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""standard_source_agency""]",standard_source_agency,string,SDMX candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""standard_scheme_id""]",standard_scheme_id,string,SEASONAL_ADJUST / CL_SEASONAL_ADJUST candidate; exact scheme and codelist version not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""local_notes""]",local_notes,string,Only seasonally adjusted values are evidenced; do not infer the presence of unadjusted values from the concept definition.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",13,""evidence_quote""]",evidence_quote,string,Seasonally adjusted
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14]",14,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""concept_id""]",concept_id,string,PRODUCT_GROUP
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""name""]",name,string,Product group
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""definition""]",definition,string,Product or commodity group used to classify consumer-price observations.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""context""]",context,string,"Used in the consumer-prices XML source as PRODUCT_GROUP. Retained separately from PRODUCT and CONSUMPTION_DIVISION because the XML provides no evidence that the groups are individual market products, fertilizer products or a specific COICOP/consumption-purpose division."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""recommended_representation""]",recommended_representation,string,"Codelist; local consumer-price product-group codelist unless an authoritative COICOP, CPC or other product classification mapping is confirmed."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""standard_source_agency""]",standard_source_agency,string,Local / UNSD candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_PRODUCT_GROUP; COICOP or CPC not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""source_url""]",source_url,string,02_sdmx_20_consumer_prices_full_case.xml
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""local_notes""]",local_notes,string,Do not merge with CONSUMPTION_DIVISION unless the product groups are confirmed to be consumption-purpose divisions under a defined COICOP revision. Do not merge with PRODUCT unless later DSD evidence shows the same product-role semantics.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",14,""evidence_quote""]",evidence_quote,string,Product group
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15]",15,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""concept_id""]",concept_id,string,CAUSE_OF_DEATH
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""name""]",name,string,Cause of death
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""definition""]",definition,string,Underlying cause category used to classify registered death events.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""context""]",context,string,Used in the health mortality structure only.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""recommended_representation""]",recommended_representation,string,Local broad cause-of-death codelist pending confirmation of an ICD version or other health classification.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""standard_source_agency""]",standard_source_agency,string,Local / health classification candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_CAUSE_OF_DEATH
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""local_notes""]",local_notes,string,Do not map to ICD without additional evidence because the report explicitly states that no ICD version is confirmed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",15,""evidence_quote""]",evidence_quote,string,Cause labels resemble broad ICD families but no ICD version is confirmed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16]",16,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""concept_id""]",concept_id,string,OWNERSHIP
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""name""]",name,string,Ownership
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""definition""]",definition,string,Ownership category of the hospital or facility capacity being measured.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""context""]",context,string,Used for available hospital beds by ownership in the health capacity structure.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""recommended_representation""]",recommended_representation,string,Local ownership codelist unless an authoritative health-facility ownership classification is later confirmed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""standard_source_agency""]",standard_source_agency,string,Local
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_FACILITY_OWNERSHIP
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""source_url""]",source_url,string,example_02_health_system.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""local_notes""]",local_notes,string,Local concept. No external ownership-sector classification or version is confirmed in supplied evidence.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",16,""evidence_quote""]",evidence_quote,string,Table 2. Available hospital beds by ownership
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17]",17,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""concept_id""]",concept_id,string,EDUCATION_LEVEL
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""name""]",name,string,Education level
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""definition""]",definition,string,Education cycle or level to which an education observation refers.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""context""]",context,string,"Used for SDMX XML education statistics through EDU_LEVEL, for education enrollment counts by primary, lower secondary and upper secondary, and for lower-secondary completion-rate context."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""recommended_representation""]",recommended_representation,string,"Codelist; UNESCO ISCED candidate after mapping review, otherwise local education-level codelist."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""standard_source_agency""]",standard_source_agency,string,UNESCO Institute for Statistics / UNESCO candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""standard_scheme_id""]",standard_scheme_id,string,ISCED not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""source_url""]",source_url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""local_notes""]",local_notes,string,Consolidates XML EDU_LEVEL and PDF education-level concepts because their meanings are equivalent. Do not confirm ISCED mappings from labels alone. The PDF report explicitly requires ISCED mapping review.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",17,""evidence_quote""]",evidence_quote,string,Education level; Education-level labels require ISCED mapping review.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18]",18,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""concept_id""]",concept_id,string,WEALTH_QUINTILE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""name""]",name,string,Wealth quintile
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""definition""]",definition,string,Survey-specific wealth quintile used to disaggregate education completion-rate observations.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""context""]",context,string,Used only for lower-secondary completion-rate estimates in the education report.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""recommended_representation""]",recommended_representation,string,Local codelist; do not map to a standard income or wealth classification without separate evidence.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""standard_source_agency""]",standard_source_agency,string,Local
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_SURVEY_WEALTH_QUINTILE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""source_url""]",source_url,string,example_03_education.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""local_notes""]",local_notes,string,"Kept distinct from EXPENDITURE_QUINTILE because it refers to a wealth distribution in an education household-learning survey, not household expenditure distribution for consumption spending."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",18,""evidence_quote""]",evidence_quote,string,Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19]",19,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""concept_id""]",concept_id,string,ENERGY_SOURCE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""name""]",name,string,Energy source
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""definition""]",definition,string,"Energy source, fuel or energy category to which an energy observation refers."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""context""]",context,string,Used in the SDMX 3.0 energy XML source as ENERGY_SOURCE to classify energy statistics by source.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""recommended_representation""]",recommended_representation,string,Codelist; local energy-source codelist unless an authoritative energy-product or fuel classification is confirmed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""standard_source_agency""]",standard_source_agency,string,Local / energy classification candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_ENERGY_SOURCE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""source_url""]",source_url,string,06_sdmx_30_energy_full_case.xml
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""local_notes""]",local_notes,string,"Kept distinct from PRODUCT, PRODUCT_GROUP and CROP because the source only states Energy source and no product/fuel classification version is confirmed."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",19,""evidence_quote""]",evidence_quote,string,Energy source
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20]",20,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""concept_id""]",concept_id,string,CROP
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""name""]",name,string,Crop
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""definition""]",definition,string,Crop category for which harvested area and production are reported.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""context""]",context,string,"Used in the annual agriculture crop area and production structure. The report says crop labels require classification review, so no authoritative crop or product classification is confirmed for crop names."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""recommended_representation""]",recommended_representation,string,Local crop codelist pending classification review.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""standard_source_agency""]",standard_source_agency,string,Local / agricultural classification candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_CROP
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""source_url""]",source_url,string,example_04_agriculture.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""local_notes""]",local_notes,string,"Kept distinct from PRODUCT because crop is the biological/agricultural crop category for production statistics, while PRODUCT is used for fertilizer input market products."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",20,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21]",21,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""concept_id""]",concept_id,string,PRODUCT
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""name""]",name,string,Product
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""definition""]",definition,string,Product category for which an observation is reported.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""context""]",context,string,Used for monthly fertilizer retail price observations. Product categories are fertilizer local market categories such as Urea and Compound NPK.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""recommended_representation""]",recommended_representation,string,Local product codelist pending review; CPC or other authoritative product-classification mapping is not confirmed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""standard_source_agency""]",standard_source_agency,string,SDMX candidate / UNSD product classification candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""standard_scheme_id""]",standard_scheme_id,string,PRODUCT candidate; CPC not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""source_url""]",source_url,string,https://registry.sdmx.org/items/codelist.html
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""local_notes""]",local_notes,string,"Reuses the common PRODUCT concept at semantic level rather than creating a narrower FERTILIZER_PRODUCT concept. The absence of verified CPC codes is treated as a codelist/code-mapping limitation, not as a reason for a separate concept. Not automatically merged with XML PRODUCT_GROUP or ENERGY_SOURCE because their classification semantics differ or are unconfirmed."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",21,""evidence_quote""]",evidence_quote,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22]",22,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""concept_id""]",concept_id,string,CONSUMPTION_DIVISION
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""name""]",name,string,Consumption division
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""definition""]",definition,string,Consumption-purpose division used to classify CPI observations.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""context""]",context,string,Applies to the CPI structure in the prices/consumption PDF report. The report says the divisions resemble COICOP but does not confirm the COICOP revision.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""recommended_representation""]",recommended_representation,string,Codelist; local consumption-division list with candidate mapping to COICOP after revision verification.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""standard_source_agency""]",standard_source_agency,string,UNSD candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""standard_scheme_id""]",standard_scheme_id,string,COICOP not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""source_url""]",source_url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""local_notes""]",local_notes,string,"Do not assign a confirmed COICOP concept or codelist until the revision and scope are verified. Source labels include Food and non-alcoholic beverages, Housing and utilities, and Transport. Kept distinct from PRODUCT_GROUP until equivalence is confirmed."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",22,""evidence_quote""]",evidence_quote,string,Consumption divisions resemble COICOP but the revision is not confirmed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23]",23,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""concept_id""]",concept_id,string,BASE_PERIOD
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""name""]",name,string,Base period
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""definition""]",definition,string,Reference period to which an index value is set equal to its base value.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""context""]",context,string,Used to qualify CPI observations where the index is expressed relative to 2023=100.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""recommended_representation""]",recommended_representation,string,Time period or controlled string.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""standard_source_agency""]",standard_source_agency,string,Local
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_BASE_PERIOD
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""local_notes""]",local_notes,string,Model as a CPI attribute if the base period is not embedded in UNIT_MEASURE. No authoritative standard concept/version was confirmed from supplied evidence.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",23,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24]",24,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""concept_id""]",concept_id,string,RESIDENCE_TYPE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""name""]",name,string,Residence type
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""definition""]",definition,string,Type of household residence used to disaggregate household spending estimates.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""context""]",context,string,"Applies to the household spending structure, with source categories Urban and Rural."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""recommended_representation""]",recommended_representation,string,Codelist; local residence-type list unless a suitable standard degree-of-urbanisation or residence classification is verified.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""standard_source_agency""]",standard_source_agency,string,Local
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_RESIDENCE_TYPE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""local_notes""]",local_notes,string,Not mapped to an external degree-of-urbanisation codelist because the report only says residence and provides Urban/Rural values without a classification definition.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",24,""evidence_quote""]",evidence_quote,string,Household spending is an annual survey estimate by residence and expenditure quintile and is not a CPI observation.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25]",25,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""concept_id""]",concept_id,string,EXPENDITURE_QUINTILE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""name""]",name,string,Expenditure quintile
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""definition""]",definition,string,Household expenditure distribution quintile used to disaggregate household spending estimates.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""context""]",context,string,Applies to the household spending structure; the report includes lowest and highest quintile values and defines quintiles within the synthetic survey distribution.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""recommended_representation""]",recommended_representation,string,Codelist; local quintile list.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""standard_source_agency""]",standard_source_agency,string,Local
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""standard_scheme_id""]",standard_scheme_id,string,LOCAL_EXPENDITURE_QUINTILE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""standard_version""]",standard_version,string,1.0
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""local_notes""]",local_notes,string,"Kept distinct from WEALTH_QUINTILE because it is based on expenditure distribution for household spending, not wealth distribution for education completion estimates."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",25,""evidence_quote""]",evidence_quote,string,Footnote: Quintiles are defined within the synthetic survey distribution.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26]",26,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""concept_id""]",concept_id,string,CURRENCY
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""name""]",name,string,Currency
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""definition""]",definition,string,Currency in which a monetary observation value is expressed.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""context""]",context,string,"Needed for monetary agriculture fertilizer prices and household spending values, but the reports only state local currency and do not name it."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""recommended_representation""]",recommended_representation,string,"Codelist; candidate ISO 4217 if the local currency can be identified, otherwise local controlled value for unnamed local currency."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""standard_source_agency""]",standard_source_agency,string,ISO candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""standard_scheme_id""]",standard_scheme_id,string,ISO_4217
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""source_url""]",source_url,string,https://www.iso.org/standard/64758.html
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""local_notes""]",local_notes,string,"Specific currency code cannot be assigned from the reports. Preserve as an explicit gap for later enrichment. This is distinct from UNIT_MEASURE, which may express compound units such as local currency per household per month or per 50 kg bag."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",26,""evidence_quote""]",evidence_quote,string,The local currency is deliberately unnamed.; The report does not name the local currency.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27]",27,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""concept_id""]",concept_id,string,STAT_UNIT
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""name""]",name,string,Statistical unit
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""definition""]",definition,string,Entity or unit about which an observation is measured.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""context""]",context,string,"For household spending, the reported mean consumption expenditure is per household."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""recommended_representation""]",recommended_representation,string,Codelist or controlled string.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""standard_source_agency""]",standard_source_agency,string,Local / SDMX candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""standard_scheme_id""]",standard_scheme_id,string,STAT_UNIT candidate; exact concept scheme ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""local_notes""]",local_notes,string,"Kept distinct from UNIT_MEASURE because it identifies the entity observed or averaged over, while UNIT_MEASURE identifies the measurement unit of OBS_VALUE."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",27,""evidence_quote""]",evidence_quote,string,Household spending is mean monthly consumption expenditure per household.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28]",28,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""concept_id""]",concept_id,string,METHODOLOGY
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""name""]",name,string,Methodology
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""definition""]",definition,string,"Description of the methods used to compile, collect, model or estimate the reported statistics."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""context""]",context,string,"Reference metadata across the source reports, including XML methodology fields, survey estimation, administrative headcounts, civil registration, facility census, modelled household-survey estimates, annual farm survey aggregates, monthly outlet panels, fixed-basket CPI and household budget survey estimates."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""recommended_representation""]",recommended_representation,string,Text metadata component.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""standard_scheme_id""]",standard_scheme_id,string,Global reference metadata concept candidate; exact concept ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""local_notes""]",local_notes,string,"Metadata concept, not a statistical dimension. Preserve narrative method statements separately from coded observation attributes."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",28,""evidence_quote""]",evidence_quote,string,Methodology; Unemployment rates are synthetic survey estimates for persons aged 15-64. Vacancy counts are compiled independently from a synthetic employer survey and use a monthly reference period.; Deaths are synthetic registered events classified by underlying cause and age group. Hospital beds are a year-end stock measure collected from facilities and should not share the mortality DSD.; Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.; Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel.; The CPI is a monthly fixed-basket index classified by consumption division. Household spending is an annual survey estimate by residence and expenditure quintile.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29]",29,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""concept_id""]",concept_id,string,SOURCE_DESCRIPTION
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""name""]",name,string,Source description
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""definition""]",definition,string,"Description or identification of source systems, surveys, panels, collections or datasets used to produce the statistics."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""context""]",context,string,"Reference metadata consolidated across all reports: XML SOURCE concepts, labour-force and vacancy surveys, civil registration and facility census, education management and household learning sources, annual farm survey and agricultural price panel, consumer price survey and household budget survey."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""recommended_representation""]",recommended_representation,string,Text metadata component; optionally coded source or organisation representation if an authoritative source list is later defined.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""standard_scheme_id""]",standard_scheme_id,string,Source / data source / compiling organisation candidate; exact concept ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""local_notes""]",local_notes,string,"Consolidates XML SOURCE with SOURCE_DESCRIPTION, SOURCE_DESC and SOURCE_DATASET where they all identify or describe source collections. Prefer narrative reference metadata unless a DSD explicitly needs a compact source attribute. Kept distinct from SOURCE_URL, which is a locator."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",29,""evidence_quote""]",evidence_quote,string,Source; Synthetic Labour Force Survey and Synthetic Establishment Vacancy Survey.; Synthetic Civil Registration System and Synthetic Facility Census.; Synthetic Education Management Information System and Synthetic Household Learning Survey.; Synthetic Annual Farm Survey and Synthetic Agricultural Price Panel.; Synthetic Consumer Price Survey and Synthetic Household Budget Survey.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30]",30,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""concept_id""]",concept_id,string,SOURCE_URL
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""name""]",name,string,Source URL
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""definition""]",definition,string,"Web address or locator for a source dataset, publication or related source information."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""context""]",context,string,"Reference metadata imported from the SDMX XML population, consumer-price, labour-market, external trade, education and energy concept schemes, and reusable for any report that provides a source locator."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""recommended_representation""]",recommended_representation,string,URI string.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""standard_source_agency""]",standard_source_agency,string,Local / SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""standard_scheme_id""]",standard_scheme_id,string,Source URL candidate; exact standard concept ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""source_url""]",source_url,string,01_sdmx_20_population_full_case.xml; 02_sdmx_20_consumer_prices_full_case.xml; 03_sdmx_21_labour_market_full_case.xml; 04_sdmx_21_external_trade_full_case.xml; 05_sdmx_30_education_full_case.xml; 06_sdmx_30_energy_full_case.xml
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""local_notes""]",local_notes,string,"Retained separately from SOURCE_DESCRIPTION because a URL is a machine-readable locator, while SOURCE_DESCRIPTION describes the data source, survey or collection. The XML states the concept name but not actual URL values."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",30,""evidence_quote""]",evidence_quote,string,Source URL
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31]",31,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""concept_id""]",concept_id,string,STATISTICAL_DEFINITIONS
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""name""]",name,string,Statistical definitions
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""definition""]",definition,string,"Narrative definitions of reported measures, terms or statistical concepts."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""context""]",context,string,"Reference metadata for measure definitions such as population indicators, price indicators, labour-market indicators, trade flows, education indicators, energy indicators, unemployment rate, job vacancy, registered deaths, available beds, enrollment count, completion rate, harvested area, production, retail price, CPI and household spending."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""recommended_representation""]",recommended_representation,string,Text metadata component.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""standard_scheme_id""]",standard_scheme_id,string,Concepts and definitions candidate; exact concept ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""local_notes""]",local_notes,string,Consolidates local DEFINITIONS and STATISTICAL_DEFINITIONS concepts. Keep detailed definitions as metadata and/or indicator-code descriptions rather than as duplicate concept IDs.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",31,""evidence_quote""]",evidence_quote,string,Unemployment rate is unemployed persons as a percentage of the labour force. A job vacancy is an unfilled position available for immediate recruitment.; Registered deaths count events during the calendar year. Available beds are staffed beds available on 31 December.; Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle.; Harvested area counts hectares harvested. Production is crop output in metric tonnes. Retail price is the median observed price per 50 kg bag.; CPI measures price change relative to 2023=100. Household spending is mean monthly consumption expenditure per household.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32]",32,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""concept_id""]",concept_id,string,CAVEATS_LIMITATIONS
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""name""]",name,string,Caveats and limitations
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""definition""]",definition,string,"Statements describing limitations, cautions, coverage issues or interpretation constraints affecting the statistics."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""context""]",context,string,"Reference metadata across the source reports, including non-combinable structures, mechanically imported XML limitations, sex-total interpretation, unconfirmed classifications, incomplete reporting, survey-specific quintiles, unnamed currency, forecast production and survey sampling error."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""recommended_representation""]",recommended_representation,string,Text metadata component.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""standard_scheme_id""]",standard_scheme_id,string,Recommended uses and limitations candidate; exact concept ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""local_notes""]",local_notes,string,Consolidates CAVEATS_LIMITATIONS and LIMITATIONS because their meanings are equivalent.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",32,""evidence_quote""]",evidence_quote,string,Mechanically converted from XML; no AI interpretation was used.; Quarterly rates and monthly vacancy counts represent different statistical structures. Total sex coverage includes respondents outside the displayed women/men categories; it must not be inferred by summing displayed rows.; Cause labels resemble broad ICD families but no ICD version is confirmed. Private-sector bed reporting is incomplete in 2024.; Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification.; Crop names are common labels and require classification review. The local currency is deliberately unnamed. Forecast production is not observed output.; Consumption divisions resemble COICOP but the revision is not confirmed. The report does not name the local currency. Survey estimates are subject to sampling error.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33]",33,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""concept_id""]",concept_id,string,REVISION_POLICY
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""name""]",name,string,Revision policy
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""definition""]",definition,string,"Policy or rule describing how reported values may be revised, corrected or replaced."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""context""]",context,string,"Reference metadata for provisional quarterly labour estimates, corrected vacancy counts, provisional death counts, estimated bed counts, finalised administrative counts, revised modelled completion estimates, replacement of agriculture forecasts, and household estimate recalibration or processing-error revisions."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""recommended_representation""]",recommended_representation,string,Text metadata component.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""standard_scheme_id""]",standard_scheme_id,string,DATA_REV candidate; exact concept ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""local_notes""]",local_notes,string,Do not merge with OBS_STATUS. OBS_STATUS is observation-level status; REVISION_POLICY is narrative policy metadata.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",33,""evidence_quote""]",evidence_quote,string,Provisional quarterly estimates are revised after annual weighting. Final vacancy counts may be corrected for reporting errors.; Provisional death counts are revised when late registrations arrive. Estimated bed counts are replaced after facility validation.; Administrative counts become final after duplicate removal. Modelled completion estimates may change with revised survey weights.; Forecasts are replaced by provisional estimates after harvest and finalized after survey reconciliation.; Household estimates are revised only for processing errors or new calibration weights.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34]",34,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""concept_id""]",concept_id,string,CONFIDENTIALITY_STATEMENT
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""name""]",name,string,Confidentiality statement
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""definition""]",definition,string,Statement describing confidentiality or disclosure characteristics of the report or dataset.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""context""]",context,string,"Reference metadata used by the PDF reports to state that records and values are synthetic and contain no person-level or confidential data, and reusable for XML cases if similar statements are supplied."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""recommended_representation""]",recommended_representation,string,Text metadata component.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""standard_scheme_id""]",standard_scheme_id,string,CONF candidate; exact concept ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""local_notes""]",local_notes,string,"Consolidates CONFIDENTIALITY, CONFIDENTIALITY_NOTE and CONFIDENTIALITY_STATEMENT because they carry the same narrative metadata meaning. Do not confuse with coded observation-level confidentiality status unless later required."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",34,""evidence_quote""]",evidence_quote,string,All records and values are synthetic. No person-level or confidential data are included.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35]",35,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""name""]",name,string,Publication date
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""definition""]",definition,string,Date on which a report or publication was published.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""context""]",context,string,"Report-level reference metadata evidenced for health, education and agriculture reports and reusable where other reports provide publication dates."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""recommended_representation""]",recommended_representation,string,Date.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""standard_source_agency""]",standard_source_agency,string,Local / SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""standard_scheme_id""]",standard_scheme_id,string,Publication date candidate; exact concept ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""local_notes""]",local_notes,string,Reusable report-level metadata concept. No exact SDMX standard concept ID/version was confirmed from supplied evidence.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",35,""evidence_quote""]",evidence_quote,string,Publication date: 3 July 2026; Publication date: 12 June 2026; Publication date: 28 May 2026
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36]",36,object,
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""concept_id""]",concept_id,string,COMPILING_ORG
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""name""]",name,string,Compiling organisation
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""definition""]",definition,string,Organisation responsible for compiling or publishing the reported statistics.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""context""]",context,string,"Reference metadata for agencies named on report title pages, including the health report and the Synthetic Agricultural Statistics Bureau, and reusable across reports where publishers are available."
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""recommended_representation""]",recommended_representation,string,String or organisation codelist if an organisation scheme is later defined.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""standard_source_agency""]",standard_source_agency,string,SDMX reference metadata candidate
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""standard_scheme_id""]",standard_scheme_id,string,COMPILING_ORG candidate; exact concept scheme ID not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""standard_version""]",standard_version,string,not confirmed
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""local_notes""]",local_notes,string,Can be attached at report or dataflow level. Do not use as an observation dimension.
+"[""optimized_artifact"",""concept_schemes"",0,""concepts"",36,""evidence_quote""]",evidence_quote,string,Synthetic Public Health Agency; Synthetic Agricultural Statistics Bureau

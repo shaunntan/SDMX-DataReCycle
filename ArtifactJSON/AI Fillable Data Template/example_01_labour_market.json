@@ -1,0 +1,1111 @@
+{
+  "artifact_type": "AI-FILLABLE DATA TEMPLATE",
+  "source_report": "example_01_labour_market.pdf",
+  "source_sha256": "fb3bd37fc247c713e56b54ba1e234b1d05501d32a34d31b3ad2f1ebf6395c0e9",
+  "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+  "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Technical standard",
+      "artifact_id": "SDMX 2.0 Information Model / Key Family",
+      "version": "2.0",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf",
+      "evidence": "The SDMX 2.0 materials are the requested target standard for Key Family / DSD modelling. The templates are derived from the accepted Key Family dimensions, time dimension, primary measure and attributes so each row can later be validated and converted to SDMX data.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist catalogue",
+      "artifact_id": "Global Registry Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The fetched registry page confirms a codelist catalogue interface with codelist details, references, changelog and export functions. The supplied evidence does not confirm exact versions or contents of individual codelists used only as candidate mappings here.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Concept / Codelist",
+      "artifact_id": "OBS_STATUS / CL_OBS_STATUS",
+      "version": "not confirmed",
+      "url": "https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The fetched SDMX Glossary excerpt states that Observation Status has concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. The supplied evidence does not confirm exact mappings for the report labels Final and Provisional; therefore the production template uses local CL_SYN_REPORT_STATUS instead.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Concept",
+      "artifact_id": "REF_AREA",
+      "version": "not confirmed",
+      "url": "https://sdmx.org/wp-content/uploads/SDMx_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The fetched SDMX Glossary excerpt includes Reference area as a DSD dimension in examples. The report areas are synthetic local regions, so the template uses local CL_SYN_REF_AREA_LM values.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_FREQ",
+      "version": "not confirmed",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied common-reference material identifies CL_FREQ as the usual SDMX frequency codelist, and the accepted codelist artifact includes candidate Q and M codes for this report. The exact registry item/version remains unconfirmed.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_SEX",
+      "version": "not confirmed",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied common-reference material identifies CL_SEX as an SDMX codelist for sex. Exact standard mappings for Women, Men and the report-specific Total coverage were not supplied, so the production template uses local CL_SYN_SEX_COVERAGE.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist",
+      "artifact_id": "CL_SEASONAL_ADJUST",
+      "version": "not confirmed",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied common-reference material identifies CL_SEASONAL_ADJUST as an SDMX codelist for seasonal adjustment. Exact standard mapping for Seasonally adjusted was not supplied, so the production template uses local CL_SYN_SEASONAL_ADJUSTMENT.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic code list",
+      "artifact_id": "UN M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The fetched UN M49 excerpt shows country and area codes such as France, Germany and United States of America. It does not provide evidence that the synthetic regions Northland, Centralia and South Coast are UN M49 areas.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Economic classification source",
+      "artifact_id": "ISIC search source",
+      "version": "not confirmed",
+      "url": "https://unstats.un.org/unsd/classifications/Econ",
+      "evidence": "The source catalog identifies UNSD economic classifications as the place to check ISIC. The report footnote states that the industry labels are local aggregates and are not confirmed ISIC categories, so the template uses local CL_SYN_ACTIVITY_LOCAL.",
+      "verification_status": "UNVERIFIED"
+    }
+  ],
+  "limitations": [
+    "Exact versions and code contents for candidate SDMX codelists CL_FREQ, CL_SEX, CL_OBS_STATUS and CL_SEASONAL_ADJUST were not confirmed from the supplied external evidence.",
+    "Production value domains use the accepted concrete local codelists when standard-code membership is not confirmed: CL_SYN_REF_AREA_LM, CL_SYN_ACTIVITY_LOCAL, CL_SYN_SEX_COVERAGE, CL_SYN_REPORT_STATUS, CL_SYN_UNIT_MEASURE_LM and CL_SYN_SEASONAL_ADJUSTMENT.",
+    "UNIT_MEASURE observation values are controlled local codes PERCENT and OPEN_POSITIONS, not free-text labels.",
+    "Mappings from local codes WOMEN, MEN, TOTAL, FINAL, PROVISIONAL and SEASONALLY_ADJUSTED to SDMX CL_SEX, CL_OBS_STATUS or CL_SEASONAL_ADJUST remain candidate metadata and are not enforced as the production template value domains.",
+    "The report uses synthetic local region labels; no authoritative external area codelist match is confirmed for Northland, Centralia or South Coast.",
+    "The vacancy industry labels are explicitly not confirmed ISIC categories, so ACTIVITY values use local aggregate codes from CL_SYN_ACTIVITY_LOCAL rather than ISIC codes.",
+    "No geography is stated for the vacancy table; no REF_AREA column is included in the vacancy template.",
+    "The unemployment age scope persons aged 15-64 is a constant descriptive scope in the report and is not included as an AGE dimension.",
+    "The template follows one row equals one observation; publication date, methodology, source description, revision policy, caveats and confidentiality statements are not repeated as statistical observation columns."
+  ],
+  "templates": [
+    {
+      "template_id": "TPL_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+      "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency; expected value Q for quarterly observations. Exact CL_FREQ registry version remains a candidate mapping, but Q is present in the accepted codelist artifact for this template."
+        },
+        {
+          "column_id": "REF_AREA",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYN_REF_AREA_LM",
+          "description": "Synthetic local report region for unemployment-rate observations; allowed values used here are NORTHLAND, CENTRALIA and SOUTH_COAST."
+        },
+        {
+          "column_id": "SEX",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYN_SEX_COVERAGE",
+          "description": "Local sex or total coverage category; allowed values used here are WOMEN, MEN and TOTAL. TOTAL has special report-defined coverage and must not be inferred by summing Women and Men."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "ObservationalTimePeriod",
+          "codelist_id": null,
+          "description": "Quarterly time period in machine-readable form, e.g. 2025-Q1."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Decimal",
+          "codelist_id": null,
+          "description": "Numeric unemployment-rate value."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYN_UNIT_MEASURE_LM",
+          "description": "Controlled local unit code separated from the numeric value; allowed value used here is PERCENT."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYN_REPORT_STATUS",
+          "description": "Controlled local report status code; allowed values used here are FINAL and PROVISIONAL. Candidate mapping to SDMX CL_OBS_STATUS must be verified separately."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "SEX",
+              "value": "WOMEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7.8
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Northland                     Women                            2025-Q1                                7.8                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "SEX",
+              "value": "WOMEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 8.0
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Northland                     Women                            2025-Q2                                8.0                                    Percent                                   Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "SEX",
+              "value": "MEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 9.4
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Northland                      Men                              2025-Q1                                9.4                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "SEX",
+              "value": "MEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 9.0
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Northland                      Men                              2025-Q2                                9.0                                    Percent                                   Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "SEX",
+              "value": "TOTAL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 4.8
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Northland                                 Total                              2025-Q1                                4.8                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "SEX",
+              "value": "TOTAL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7.0
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Northland                                 Total                              2025-Q2                                7.0                                    Percent                                   Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "SEX",
+              "value": "WOMEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 9.0
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Centralia                      Women                            2025-Q1                                9.0                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "SEX",
+              "value": "WOMEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7.4
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Centralia                      Women                            2025-Q2                                7.4                                    Percent                                   Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "SEX",
+              "value": "MEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7.8
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Centralia                       Men                              2025-Q1                                7.8                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "SEX",
+              "value": "MEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7.5
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Centralia                       Men                              2025-Q2                                7.5                                    Percent                                   Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "SEX",
+              "value": "TOTAL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 8.2
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Centralia                                  Total                              2025-Q1                                8.2                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "SEX",
+              "value": "TOTAL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7.6
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Centralia                                  Total                              2025-Q2                                7.6                                    Percent                                   Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "SEX",
+              "value": "WOMEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 5.5
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "South Coast                   Women                            2025-Q1                                5.5                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "SEX",
+              "value": "WOMEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 5.2
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "South Coast                   Women                            2025-Q2                                5.2                                    Percent                                   Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "SEX",
+              "value": "MEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 5.7
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "South Coast                     Men                              2025-Q1                                5.7                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "SEX",
+              "value": "MEN"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7.7
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "South Coast                     Men                              2025-Q2                                7.7                                    Percent                                   Provisional"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "SEX",
+              "value": "TOTAL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q1"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 8.6
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "South Coast                              Total                              2025-Q1                                8.6                                    Percent                                    Final"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_UNEMP_RATE_Q",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "Q"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "SEX",
+              "value": "TOTAL"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-Q2"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 7.7
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "PERCENT"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "South Coast                              Total                              2025-Q2                                7.7                                    Percent                                   Provisional"
+        }
+      ]
+    },
+    {
+      "template_id": "TPL_SYNTHETIC_LABOUR_VACANCIES_M",
+      "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency; expected value M for monthly observations. Exact CL_FREQ registry version remains a candidate mapping, but M is present in the accepted codelist artifact for this template."
+        },
+        {
+          "column_id": "ACTIVITY",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYN_ACTIVITY_LOCAL",
+          "description": "Local industry/activity aggregate used in the vacancy table; allowed values used here are MANUFACTURING, CONSTRUCTION and INFORMATION_SERVICES. These values are not confirmed ISIC."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "ObservationalTimePeriod",
+          "codelist_id": null,
+          "description": "Monthly time period in machine-readable form, e.g. 2025-01."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Integer",
+          "codelist_id": null,
+          "description": "Numeric count of job vacancies/open positions."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYN_UNIT_MEASURE_LM",
+          "description": "Controlled local unit code separated from the numeric value; allowed value used here is OPEN_POSITIONS."
+        },
+        {
+          "column_id": "SEASONAL_ADJUST",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_SYN_SEASONAL_ADJUSTMENT",
+          "description": "Controlled local seasonal-adjustment status code; allowed value used here is SEASONALLY_ADJUSTED. Candidate mapping to SDMX CL_SEASONAL_ADJUST must be verified separately."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "MANUFACTURING"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 2993
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Manufacturing                               2025-01                                  2993                                 Open positions                                 Seasonally adjusted"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "MANUFACTURING"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-02"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 4162
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Manufacturing                               2025-02                                  4162                                 Open positions                                 Seasonally adjusted"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "MANUFACTURING"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-03"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 2479
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Manufacturing                               2025-03                                  2479                                 Open positions                                 Seasonally adjusted"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "CONSTRUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 1343
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Construction                                 2025-01                                  1343                                 Open positions                                 Seasonally adjusted"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "CONSTRUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-02"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 3884
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Construction                                 2025-02                                  3884                                 Open positions                                 Seasonally adjusted"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "CONSTRUCTION"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-03"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 2804
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Construction                                 2025-03                                  2804                                 Open positions                                 Seasonally adjusted"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "INFORMATION_SERVICES"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-01"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 1009
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Information services                          2025-01                                  1009                                 Open positions                                 Seasonally adjusted"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "INFORMATION_SERVICES"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-02"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 4118
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Information services                          2025-02                                  4118                                 Open positions                                 Seasonally adjusted"
+        },
+        {
+          "dsd_id": "KF_SYNTHETIC_LABOUR_VACANCIES_M",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "M"
+            },
+            {
+              "column_id": "ACTIVITY",
+              "value": "INFORMATION_SERVICES"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2025-03"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 4054
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "OPEN_POSITIONS"
+            },
+            {
+              "column_id": "SEASONAL_ADJUST",
+              "value": "SEASONALLY_ADJUSTED"
+            }
+          ],
+          "evidence_quote": "Information services                          2025-03                                  4054                                 Open positions                                 Seasonally adjusted"
+        }
+      ]
+    }
+  ]
+}

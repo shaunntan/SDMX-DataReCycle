@@ -1,0 +1,276 @@
+DSD / KEY FAMILY
+================
+
+1. Definition
+-------------
+A Data Structure Definition defines the structure of a statistical dataset:
+- Dimensions: identify the observation.
+- Time dimension: identifies the observation period.
+- Measure: holds the observed value.
+- Attributes: qualify the dataset, series, group or observation.
+
+In SDMX 2.0 the formal term is Key Family.
+
+2. Best practices
+-----------------
+A. Start from the statistical observation, not from the visual table.
+
+For every number, ask:
+"What is measured, for which population/entity, for which geography, for which
+period, under which breakdowns, in which unit and with which status?"
+
+B. Do not assume one report = one DSD.
+A report can contain several genuinely different structures.
+
+C. Do not assume one table = one DSD.
+Several tables may simply be filtered/pivoted presentations of one DSD.
+
+D. Identify the observation grain.
+The combination of dimension values plus time must uniquely identify the
+observation.
+
+E. Dimensions normally represent coordinates that identify the observation.
+Typical examples:
+REF_AREA
+FREQ
+SEX
+AGE
+ACTIVITY
+OCCUPATION
+INDICATOR
+COUNTERPART_AREA
+TIME_PERIOD
+
+F. Use attributes for qualifiers that do not identify a different statistical
+observation.
+Typical examples:
+UNIT_MEASURE
+UNIT_MULT
+DECIMALS
+OBS_STATUS
+CONF_STATUS
+BREAK_REASON
+
+Whether UNIT_MEASURE is an attribute or a dimension is a modelling decision:
+- attribute is often suitable when it qualifies a series and is constant there;
+- dimension may be appropriate when multiple units are an essential user-facing
+  coordinate and can coexist for the same other dimensions.
+
+G. Attach an attribute at the highest level at which it is constant.
+SDMX 2.0 supports dataset, group/series and observation attachment levels.
+Do not repeat dataset-level metadata at every observation without reason.
+
+H. Use TIME_PERIOD as the time dimension rather than inventing columns for each year.
+
+I. OBS_VALUE should normally be the primary measure for a generic statistical
+observation structure.
+
+J. All dimensions should normally be coded except the time dimension.
+Use authoritative codelists.
+
+K. Keep reference metadata out of the DSD.
+Methodology, publication information, long source notes and caveats belong in an
+MSD/Metadata Set unless a concise item directly qualifies data and genuinely needs
+to travel as a data attribute.
+
+L. Test the DSD against multiple tables/editions before freezing it.
+
+M. Prefer parsimony.
+A dimension should exist because it changes the identity/meaning of an observation,
+not merely because a report happens to display a label.
+
+3. Example: how it looks
+------------------------
+Example statistical structure:
+
+DIMENSIONS
+Position  Concept       Representation
+1         FREQ          CL_FREQ
+2         REF_AREA      CL_AREA
+3         INDICATOR     CL_INDICATOR
+4         SEX           CL_SEX
+5         AGE           CL_AGE
+          TIME_PERIOD   Time
+
+PRIMARY MEASURE
+OBS_VALUE               Numeric
+
+ATTRIBUTES
+UNIT_MEASURE            CL_UNIT_MEASURE   series/group level
+UNIT_MULT               CL_UNIT_MULT      series/group level
+DECIMALS                CL_DECIMALS       series/group level
+OBS_STATUS              CL_OBS_STATUS     observation level
+CONF_STATUS             CL_CONF_STATUS    observation level
+
+A flat observation representation could look like:
+
+FREQ,REF_AREA,INDICATOR,SEX,AGE,TIME_PERIOD,OBS_VALUE,UNIT_MEASURE,UNIT_MULT,OBS_STATUS
+A,FRA,EMP_RATE,F,Y25T54,2024,78.4,PC,0,A
+A,DEU,EMP_RATE,F,Y25T54,2024,80.1,PC,0,A
+
+Illustrative SDMX-ML-style structure skeleton:
+
+<KeyFamily id="KF_EMPLOYMENT" agencyID="MY_AGENCY" version="1.0">
+  <Components>
+    <Dimension conceptRef="FREQ" codelist="CL_FREQ"/>
+    <Dimension conceptRef="REF_AREA" codelist="CL_AREA"/>
+    <Dimension conceptRef="INDICATOR" codelist="CL_INDICATOR"/>
+    <Dimension conceptRef="SEX" codelist="CL_SEX"/>
+    <TimeDimension conceptRef="TIME_PERIOD"/>
+    <PrimaryMeasure conceptRef="OBS_VALUE"/>
+    <Attribute conceptRef="UNIT_MEASURE" attachmentLevel="Series"/>
+    <Attribute conceptRef="OBS_STATUS" attachmentLevel="Observation"/>
+  </Components>
+</KeyFamily>
+
+This XML is illustrative, not a complete schema-valid SDMX 2.0 structure message.
+
+4. Formal / practical formats
+-----------------------------
+Formal SDMX 2.0:
+- SDMX-ML XML structure definition using the SDMX 2.0 schemas.
+
+Practical design representation:
+- XLSX/CSV component matrix.
+
+Recommended columns:
+POSITION
+CONCEPT_ID
+ROLE (DIMENSION / TIME / MEASURE / ATTRIBUTE)
+REPRESENTATION
+CODELIST_AGENCY
+CODELIST_ID
+CODELIST_VERSION
+DATA_TYPE
+USAGE_STATUS
+ATTACHMENT_LEVEL
+NOTES
+
+5. Common DSD components and usual handling
+-------------------------------------------
+REF_AREA
+- Usually a dimension.
+- Prefer domain-specific authoritative area codelist; check SDMX CL_AREA, UN M49,
+  ISO 3166 and the source domain.
+- Distinguish reference area from counterpart area.
+
+FREQ
+- Usually a dimension.
+- Use SDMX CL_FREQ where compatible.
+
+TIME_PERIOD
+- Time dimension.
+- Not normally represented by a codelist.
+- Preserve the actual temporal meaning (year, quarter, month, etc.).
+
+OBS_VALUE
+- Usually primary measure.
+- Numeric where the phenomenon is numeric.
+- The SDMX Glossary describes it as the field holding the data value.
+
+UNIT_MEASURE
+- Usually an attribute or sometimes a dimension.
+- Search domain-standard unit codelists.
+
+UNIT_MULT
+- Typically an attribute.
+- Standard SDMX CL_UNIT_MULT exists in the Global Registry.
+
+DECIMALS
+- Typically an attribute.
+- Standard SDMX CL_DECIMALS exists.
+
+OBS_STATUS
+- Typically observation attribute.
+- Standard SDMX CL_OBS_STATUS exists.
+- Use the SDMX observation-status guidance when multiple status conditions apply.
+
+CONF_STATUS
+- Typically observation attribute.
+- Standard SDMX CL_CONF_STATUS exists.
+
+BREAK_REASON
+- Attribute when the data need a coded/structured explanation of a break.
+- Standard SDMX CL_BREAK_REASON exists.
+
+SEX
+- Dimension when sex disaggregation is present.
+- SDMX CL_SEX exists.
+
+AGE
+- Dimension when age disaggregation is present.
+- Choose age codes/groups appropriate to the statistical domain; do not force a
+  generic grouping.
+
+ACTIVITY
+- Dimension when economic activity is a breakdown.
+- Prefer an authoritative ISIC/NACE/national derivative matching the source.
+
+OCCUPATION
+- Dimension when occupation is a breakdown.
+- Prefer ILO ISCO where appropriate; check registry codelists too.
+
+SEASONAL_ADJUST
+- Attribute or dimension depending how the series are modelled.
+- SDMX CL_SEASONAL_ADJUST exists.
+
+6. Things that should normally NOT become DSD dimensions
+--------------------------------------------------------
+REPORT_TITLE
+REPORT_FILENAME
+PUBLICATION_DATE
+REPORT_PAGE
+TABLE_NUMBER
+METHODOLOGY_TEXT
+GENERAL_CAVEAT
+CONTACT_DETAILS
+SOURCE_URL
+
+Those belong in reference metadata or an extraction/provenance layer, unless a
+specific item genuinely changes statistical identity.
+
+7. Acceptance checks
+--------------------
+[ ] Each observation has a unique dimensional key.
+[ ] Dimensions represent statistical coordinates, not layout.
+[ ] Time is modelled explicitly.
+[ ] OBS_VALUE has one clear meaning per structure.
+[ ] Qualifiers are attributes where appropriate.
+[ ] Attribute attachment levels avoid needless repetition.
+[ ] Standard concepts and codelists were searched.
+[ ] The DSD works across representative report tables.
+[ ] Multiple DSDs are used only where structures are genuinely different.
+[ ] Methodology and long narrative metadata are outside the DSD.
+
+CORE OFFICIAL SOURCES (checked 2026-09-16)
+-----------------------------------------------
+SDMX 2.0 standards landing page
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+SDMX 2.0 Information Model
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+SDMX 2.0 Implementor's Guide
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+SDMX Guidelines
+https://sdmx.org/guidelines/
+
+Guidelines for the Design of Data Structure Definitions
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+SDMX Glossary 2.1
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Standardising Reference Metadata Reporting in SDMX
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Global Registry - Codelists
+https://registry.sdmx.org/items/codelist.html
+
+IMPORTANT
+---------
+This package targets SDMX 2.0 as requested. In SDMX 2.0 the formal term for a
+Data Structure Definition is "Key Family". Later SDMX statistical guidelines are
+used here only for modelling good practice where the recommendation is compatible
+with the SDMX 2.0 information model.

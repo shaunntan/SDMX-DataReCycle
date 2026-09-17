@@ -1,0 +1,259 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,DSD / KEY FAMILY
+"[""source_report""]",source_report,string,example_04_agriculture.pdf
+"[""source_sha256""]",source_sha256,string,0fecbc45c712ed4d38ab69a2560148bd401a96f50c8a37812a2b80fdcfe6630f
+"[""principles_file""]",principles_file,string,03_DSD_KEY_FAMILY.txt
+"[""principles_sha256""]",principles_sha256,string,b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Codelist catalog
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Global Registry codelists
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,"The fetched official registry page confirms that codelists are a searchable SDMX registry artifact type. The supplied excerpt does not confirm the individual entries or versions for CL_FREQ, CL_UNIT_MEASURE, or other candidate codelists used in this draft."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX Glossary
+"[""standard_references"",1,""version""]",version,string,2.1
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",1,""evidence""]",evidence,string,"The fetched glossary excerpt describes cross-domain concepts and codelist conventions, including that the Observation Status term has concept ID OBS_STATUS and codelist ID CL_OBS_STATUS, and includes examples where Reference area is a DSD dimension. It does not confirm all concept/codelist versions needed for production use."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",2,""version""]",version,string,not confirmed in supplied external evidence
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"CL_FREQ is a candidate reuse based on SDMX common modelling practice and the registry being the official codelist source. The fetched registry excerpt does not show the CL_FREQ entry, code values, maintenance agency, or version."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,CL_OBS_STATUS
+"[""standard_references"",3,""version""]",version,string,not confirmed in supplied external evidence
+"[""standard_references"",3,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",3,""evidence""]",evidence,string,"The fetched glossary excerpt states that Observation Status has concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. The supplied evidence does not confirm the codelist version or whether report values such as Final, Forecast, and Observed map exactly to standard codes."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,UNSD
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Geographic classification
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,UN M49
+"[""standard_references"",4,""version""]",version,string,not stated
+"[""standard_references"",4,""url""]",url,string,https://unstats.un.org/unsd/methodology/m49/
+"[""standard_references"",4,""evidence""]",evidence,string,"The fetched UN M49 excerpt confirms country and area code entries such as Ethiopia, France, Germany, India, and others. The report uses synthetic regions rather than countries or confirmed UN M49 areas, so UN M49 is a checked candidate source but not confirmed as reusable for the report's region values."
+"[""standard_references"",4,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The exact SDMX codelist versions for FREQ, OBS_STATUS, UNIT_MEASURE, and any related unit codelists are not confirmed by the supplied external evidence."
+"[""limitations"",1]",1,string,Crop names require classification review; the report explicitly states that common labels are used.
+"[""limitations"",2]",2,string,Fertilizer products are local market categories and are not verified CPC codes.
+"[""limitations"",3]",3,string,"The local currency used in the fertilizer price unit is deliberately unnamed, so no ISO 4217 currency code can be assigned from the report evidence."
+"[""limitations"",4]",4,string,"The regions Northland, Centralia, and South Coast appear to be report-specific or synthetic regions; no authoritative geographic codelist is confirmed."
+"[""limitations"",5]",5,string,"The report status values Final, Forecast, and Observed need mapping review before using a standard OBS_STATUS codelist in production."
+"[""limitations"",6]",6,string,"No explicit decimals, unit multiplier, confidentiality-status, or frequency-code fields are supplied in the report tables."
+"[""data_structures""]",data_structures,array,
+"[""data_structures"",0]",0,object,
+"[""data_structures"",0,""dsd_id""]",dsd_id,string,KF_AGR_CROP_AREA_PRODUCTION
+"[""data_structures"",0,""name""]",name,string,Crop area and production by crop and region
+"[""data_structures"",0,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",0,""version""]",version,string,1.0-draft
+"[""data_structures"",0,""statistical_scope""]",statistical_scope,string,"Annual farm-survey crop harvested area and production aggregates by crop, region, year, and indicator."
+"[""data_structures"",0,""components""]",components,array,
+"[""data_structures"",0,""components"",0]",0,object,
+"[""data_structures"",0,""components"",0,""position""]",position,integer,1
+"[""data_structures"",0,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""data_structures"",0,""components"",0,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",0,""representation""]",representation,string,Coded frequency; candidate reuse of SDMX CL_FREQ with annual value expected
+"[""data_structures"",0,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""data_structures"",0,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""data_structures"",0,""components"",0,""codelist_version""]",codelist_version,string,not confirmed in supplied external evidence
+"[""data_structures"",0,""components"",0,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",0,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",0,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",0,""notes""]",notes,string,Frequency is included as a dimension because the crop structure is annual. Exact standard codelist version is not confirmed by supplied external evidence.
+"[""data_structures"",0,""components"",0,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""data_structures"",0,""components"",1]",1,object,
+"[""data_structures"",0,""components"",1,""position""]",position,integer,2
+"[""data_structures"",0,""components"",1,""concept_id""]",concept_id,string,CROP
+"[""data_structures"",0,""components"",1,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",1,""representation""]",representation,string,Coded local crop list requiring classification review
+"[""data_structures"",0,""components"",1,""codelist_agency""]",codelist_agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",0,""components"",1,""codelist_id""]",codelist_id,string,CL_CROP_LOCAL
+"[""data_structures"",0,""components"",1,""codelist_version""]",codelist_version,string,not stated
+"[""data_structures"",0,""components"",1,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",0,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",1,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",1,""notes""]",notes,string,"Local crop dimension is required to identify observations. Candidate values observed include Rice, Maize, and Cassava, but the report warns that classification review is required."
+"[""data_structures"",0,""components"",1,""evidence_quote""]",evidence_quote,string,Crop names are common labels and require classification review.
+"[""data_structures"",0,""components"",2]",2,object,
+"[""data_structures"",0,""components"",2,""position""]",position,integer,3
+"[""data_structures"",0,""components"",2,""concept_id""]",concept_id,string,REF_AREA
+"[""data_structures"",0,""components"",2,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",2,""representation""]",representation,string,Coded local region list; no authoritative external region codelist confirmed
+"[""data_structures"",0,""components"",2,""codelist_agency""]",codelist_agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",0,""components"",2,""codelist_id""]",codelist_id,string,CL_AGR_REGION_LOCAL
+"[""data_structures"",0,""components"",2,""codelist_version""]",codelist_version,string,not stated
+"[""data_structures"",0,""components"",2,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",0,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",2,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",2,""notes""]",notes,string,"Reference area is represented by the report's Region column. Observed region labels include Northland, Centralia, and South Coast; no standard geography mapping is confirmed."
+"[""data_structures"",0,""components"",2,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""data_structures"",0,""components"",3]",3,object,
+"[""data_structures"",0,""components"",3,""position""]",position,integer,4
+"[""data_structures"",0,""components"",3,""concept_id""]",concept_id,string,INDICATOR
+"[""data_structures"",0,""components"",3,""role""]",role,string,DIMENSION
+"[""data_structures"",0,""components"",3,""representation""]",representation,string,Coded local indicator list for harvested area and production
+"[""data_structures"",0,""components"",3,""codelist_agency""]",codelist_agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",0,""components"",3,""codelist_id""]",codelist_id,string,CL_AGR_CROP_INDICATOR
+"[""data_structures"",0,""components"",3,""codelist_version""]",codelist_version,string,not stated
+"[""data_structures"",0,""components"",3,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",0,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",3,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",3,""notes""]",notes,string,"Area and production are modelled as values of an indicator dimension rather than as separate primary measures, so OBS_VALUE has a single numeric role."
+"[""data_structures"",0,""components"",3,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes.
+"[""data_structures"",0,""components"",4]",4,object,
+"[""data_structures"",0,""components"",4,""position""]",position,integer,5
+"[""data_structures"",0,""components"",4,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""data_structures"",0,""components"",4,""role""]",role,string,TIME
+"[""data_structures"",0,""components"",4,""representation""]",representation,string,Annual time period from Year column
+"[""data_structures"",0,""components"",4,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",4,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",4,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",4,""data_type""]",data_type,string,Gregorian year
+"[""data_structures"",0,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",4,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",4,""notes""]",notes,string,The report uses years 2024 and 2025 for crop observations.
+"[""data_structures"",0,""components"",4,""evidence_quote""]",evidence_quote,string,Crop                   Region                  Year                    Area                    Area unit                 Production               Production unit           Status
+"[""data_structures"",0,""components"",5]",5,object,
+"[""data_structures"",0,""components"",5,""position""]",position,null,
+"[""data_structures"",0,""components"",5,""concept_id""]",concept_id,string,OBS_VALUE
+"[""data_structures"",0,""components"",5,""role""]",role,string,MEASURE
+"[""data_structures"",0,""components"",5,""representation""]",representation,string,Numeric observation value
+"[""data_structures"",0,""components"",5,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",0,""components"",5,""codelist_id""]",codelist_id,null,
+"[""data_structures"",0,""components"",5,""codelist_version""]",codelist_version,null,
+"[""data_structures"",0,""components"",5,""data_type""]",data_type,string,Decimal
+"[""data_structures"",0,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",5,""attachment_level""]",attachment_level,null,
+"[""data_structures"",0,""components"",5,""notes""]",notes,string,Holds the numeric value for the selected INDICATOR: harvested area or production.
+"[""data_structures"",0,""components"",5,""evidence_quote""]",evidence_quote,string,Rice                         Northland                  2024                     60388                       Hectares                  315315                   Tonnes                         Final
+"[""data_structures"",0,""components"",6]",6,object,
+"[""data_structures"",0,""components"",6,""position""]",position,null,
+"[""data_structures"",0,""components"",6,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""data_structures"",0,""components"",6,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",6,""representation""]",representation,string,Coded unit list; local mapping needed for Hectares and Tonnes
+"[""data_structures"",0,""components"",6,""codelist_agency""]",codelist_agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",0,""components"",6,""codelist_id""]",codelist_id,string,CL_AGR_UNIT_MEASURE_LOCAL
+"[""data_structures"",0,""components"",6,""codelist_version""]",codelist_version,string,not stated
+"[""data_structures"",0,""components"",6,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",0,""components"",6,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",6,""attachment_level""]",attachment_level,string,SERIES
+"[""data_structures"",0,""components"",6,""notes""]",notes,string,Unit is constant by indicator in this structure: hectares for harvested area and metric tonnes for production. A standard unit codelist mapping is not confirmed by supplied evidence.
+"[""data_structures"",0,""components"",6,""evidence_quote""]",evidence_quote,string,Harvested area counts hectares harvested. Production is crop output in metric tonnes.
+"[""data_structures"",0,""components"",7]",7,object,
+"[""data_structures"",0,""components"",7,""position""]",position,null,
+"[""data_structures"",0,""components"",7,""concept_id""]",concept_id,string,OBS_STATUS
+"[""data_structures"",0,""components"",7,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",0,""components"",7,""representation""]",representation,string,Coded status list; local values require mapping review against SDMX CL_OBS_STATUS
+"[""data_structures"",0,""components"",7,""codelist_agency""]",codelist_agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",0,""components"",7,""codelist_id""]",codelist_id,string,CL_AGR_OBS_STATUS_LOCAL
+"[""data_structures"",0,""components"",7,""codelist_version""]",codelist_version,string,not stated
+"[""data_structures"",0,""components"",7,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",0,""components"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",0,""components"",7,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""data_structures"",0,""components"",7,""notes""]",notes,string,"The report distinguishes Final and Forecast crop observations. Forecast production is not observed output, so status affects observation qualification but does not create a separate statistical phenomenon."
+"[""data_structures"",0,""components"",7,""evidence_quote""]",evidence_quote,string,Footnote: 2025 area and production are forecasts.
+"[""data_structures"",1]",1,object,
+"[""data_structures"",1,""dsd_id""]",dsd_id,string,KF_AGR_FERTILIZER_RETAIL_PRICE
+"[""data_structures"",1,""name""]",name,string,Fertilizer retail prices by product and month
+"[""data_structures"",1,""agency_id""]",agency_id,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",1,""version""]",version,string,1.0-draft
+"[""data_structures"",1,""statistical_scope""]",statistical_scope,string,Monthly fertilizer retail price observations by local fertilizer product category.
+"[""data_structures"",1,""components""]",components,array,
+"[""data_structures"",1,""components"",0]",0,object,
+"[""data_structures"",1,""components"",0,""position""]",position,integer,1
+"[""data_structures"",1,""components"",0,""concept_id""]",concept_id,string,FREQ
+"[""data_structures"",1,""components"",0,""role""]",role,string,DIMENSION
+"[""data_structures"",1,""components"",0,""representation""]",representation,string,Coded frequency; candidate reuse of SDMX CL_FREQ with monthly value expected
+"[""data_structures"",1,""components"",0,""codelist_agency""]",codelist_agency,string,SDMX
+"[""data_structures"",1,""components"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""data_structures"",1,""components"",0,""codelist_version""]",codelist_version,string,not confirmed in supplied external evidence
+"[""data_structures"",1,""components"",0,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",1,""components"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",0,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",0,""notes""]",notes,string,Frequency is included as a dimension because the fertilizer price structure is monthly. Exact standard codelist version is not confirmed by supplied external evidence.
+"[""data_structures"",1,""components"",0,""evidence_quote""]",evidence_quote,string,Crop area and production are annual farm-survey aggregates. Fertilizer retail prices come from a monthly outlet panel and form a separate price structure.
+"[""data_structures"",1,""components"",1]",1,object,
+"[""data_structures"",1,""components"",1,""position""]",position,integer,2
+"[""data_structures"",1,""components"",1,""concept_id""]",concept_id,string,PRODUCT
+"[""data_structures"",1,""components"",1,""role""]",role,string,DIMENSION
+"[""data_structures"",1,""components"",1,""representation""]",representation,string,Coded local fertilizer product list; CPC mapping not verified
+"[""data_structures"",1,""components"",1,""codelist_agency""]",codelist_agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",1,""components"",1,""codelist_id""]",codelist_id,string,CL_FERTILIZER_PRODUCT_LOCAL
+"[""data_structures"",1,""components"",1,""codelist_version""]",codelist_version,string,not stated
+"[""data_structures"",1,""components"",1,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",1,""components"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",1,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",1,""notes""]",notes,string,"Product is required to identify the price observation. Observed labels include Urea and Compound NPK, but they are local market categories and not verified CPC codes."
+"[""data_structures"",1,""components"",1,""evidence_quote""]",evidence_quote,string,"Footnote: Products are local market categories, not verified CPC codes."
+"[""data_structures"",1,""components"",2]",2,object,
+"[""data_structures"",1,""components"",2,""position""]",position,integer,3
+"[""data_structures"",1,""components"",2,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""data_structures"",1,""components"",2,""role""]",role,string,TIME
+"[""data_structures"",1,""components"",2,""representation""]",representation,string,Monthly time period from Month column
+"[""data_structures"",1,""components"",2,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",1,""components"",2,""codelist_id""]",codelist_id,null,
+"[""data_structures"",1,""components"",2,""codelist_version""]",codelist_version,null,
+"[""data_structures"",1,""components"",2,""data_type""]",data_type,string,Gregorian month
+"[""data_structures"",1,""components"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",2,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",2,""notes""]",notes,string,The report uses month values such as 2025-01 through 2025-04.
+"[""data_structures"",1,""components"",2,""evidence_quote""]",evidence_quote,string,Product                             Month                                     Price                                      Unit                                      Status
+"[""data_structures"",1,""components"",3]",3,object,
+"[""data_structures"",1,""components"",3,""position""]",position,null,
+"[""data_structures"",1,""components"",3,""concept_id""]",concept_id,string,OBS_VALUE
+"[""data_structures"",1,""components"",3,""role""]",role,string,MEASURE
+"[""data_structures"",1,""components"",3,""representation""]",representation,string,Numeric retail price value
+"[""data_structures"",1,""components"",3,""codelist_agency""]",codelist_agency,null,
+"[""data_structures"",1,""components"",3,""codelist_id""]",codelist_id,null,
+"[""data_structures"",1,""components"",3,""codelist_version""]",codelist_version,null,
+"[""data_structures"",1,""components"",3,""data_type""]",data_type,string,Decimal
+"[""data_structures"",1,""components"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",3,""attachment_level""]",attachment_level,null,
+"[""data_structures"",1,""components"",3,""notes""]",notes,string,Holds the median observed retail price for the product and month.
+"[""data_structures"",1,""components"",3,""evidence_quote""]",evidence_quote,string,Retail price is the median observed price per 50 kg bag.
+"[""data_structures"",1,""components"",4]",4,object,
+"[""data_structures"",1,""components"",4,""position""]",position,null,
+"[""data_structures"",1,""components"",4,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""data_structures"",1,""components"",4,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",1,""components"",4,""representation""]",representation,string,Local unit string or coded local unit pending currency identification
+"[""data_structures"",1,""components"",4,""codelist_agency""]",codelist_agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",1,""components"",4,""codelist_id""]",codelist_id,string,CL_FERTILIZER_UNIT_LOCAL
+"[""data_structures"",1,""components"",4,""codelist_version""]",codelist_version,string,not stated
+"[""data_structures"",1,""components"",4,""data_type""]",data_type,string,String (coded or controlled text)
+"[""data_structures"",1,""components"",4,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",4,""attachment_level""]",attachment_level,string,DATASET
+"[""data_structures"",1,""components"",4,""notes""]",notes,string,All fertilizer price observations in the supplied table use the same unit. The currency cannot be mapped to ISO 4217 because it is deliberately unnamed.
+"[""data_structures"",1,""components"",4,""evidence_quote""]",evidence_quote,string,Local currency per 50 kg bag
+"[""data_structures"",1,""components"",5]",5,object,
+"[""data_structures"",1,""components"",5,""position""]",position,null,
+"[""data_structures"",1,""components"",5,""concept_id""]",concept_id,string,OBS_STATUS
+"[""data_structures"",1,""components"",5,""role""]",role,string,ATTRIBUTE
+"[""data_structures"",1,""components"",5,""representation""]",representation,string,Coded status list; local value Observed requires mapping review against SDMX CL_OBS_STATUS
+"[""data_structures"",1,""components"",5,""codelist_agency""]",codelist_agency,string,SYNTHETIC_AGRICULTURAL_STATISTICS_BUREAU
+"[""data_structures"",1,""components"",5,""codelist_id""]",codelist_id,string,CL_PRICE_OBS_STATUS_LOCAL
+"[""data_structures"",1,""components"",5,""codelist_version""]",codelist_version,string,not stated
+"[""data_structures"",1,""components"",5,""data_type""]",data_type,string,String (coded)
+"[""data_structures"",1,""components"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""data_structures"",1,""components"",5,""attachment_level""]",attachment_level,string,OBSERVATION
+"[""data_structures"",1,""components"",5,""notes""]",notes,string,The report status column marks fertilizer price observations as Observed. Mapping to standard OBS_STATUS is not confirmed by supplied evidence.
+"[""data_structures"",1,""components"",5,""evidence_quote""]",evidence_quote,string,Urea                                       2025-01                                     313.28                                         Local currency per 50 kg bag                  Observed
+"[""structure_separation_rationale""]",structure_separation_rationale,string,"Two Key Families are justified because the report explicitly distinguishes annual farm-survey crop area/production aggregates from a monthly outlet-panel fertilizer price structure. The crop structure has crop, region, annual time, and an indicator dimension for area versus production; the fertilizer structure has product and monthly time with one retail-price measure and no reported region dimension."

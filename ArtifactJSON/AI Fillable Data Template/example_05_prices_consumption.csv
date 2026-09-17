@@ -1,0 +1,575 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,AI-FILLABLE DATA TEMPLATE
+"[""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""source_sha256""]",source_sha256,string,71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5
+"[""principles_file""]",principles_file,string,07_AI_FILLABLE_DATA_TEMPLATE.txt
+"[""principles_sha256""]",principles_sha256,string,3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Codelist catalogue
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX Global Registry - Codelists
+"[""standard_references"",0,""version""]",version,string,not stated
+"[""standard_references"",0,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",0,""evidence""]",evidence,string,The fetched official SDMX Registry page is a codelist catalogue/search page and supports checking codelist details. The provided excerpt does not confirm individual codelist versions or code contents.
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Glossary / Cross-domain concept guidance
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX Glossary 2.1
+"[""standard_references"",1,""version""]",version,string,2.1
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",1,""evidence""]",evidence,string,"The supplied glossary excerpt states that cross-domain concepts support reuse across organisations and gives Observation Status as an example with concept ID OBS_STATUS and codelist ID CL_OBS_STATUS. The excerpt supports using common SDMX concept IDs where appropriate, but does not confirm the exact mappings for Final or Provisional and does not support treating Survey estimate as an observation-status code."
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Codelist
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,CL_FREQ
+"[""standard_references"",2,""version""]",version,string,not confirmed
+"[""standard_references"",2,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",2,""evidence""]",evidence,string,"The reference package identifies CL_FREQ as the SDMX frequency codelist to check, and the official registry catalogue was fetched. The supplied excerpt does not confirm the exact CL_FREQ version or code definitions, so M and A remain candidate standard frequency mappings pending registry verification."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,UNSD / SDMX candidate
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Classification / codelist candidate
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,COICOP / CL_COICOP_2018
+"[""standard_references"",3,""version""]",version,string,not confirmed
+"[""standard_references"",3,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""standard_references"",3,""evidence""]",evidence,string,"COICOP is identified as the relevant consumption classification source to check. The report states that consumption divisions resemble COICOP but the revision is not confirmed, so the template uses the local DSD codelist CL_SYNTH_CONSUMPTION_DIVISION rather than COICOP codes."
+"[""standard_references"",3,""verification_status""]",verification_status,string,UNVERIFIED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,ISO
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Currency standard candidate
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,ISO 4217
+"[""standard_references"",4,""version""]",version,string,not confirmed
+"[""standard_references"",4,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""standard_references"",4,""evidence""]",evidence,string,"ISO 4217 is the standard source to check for currency identity. The report does not name the local currency and no ISO 4217 code evidence was supplied, so household-spending values use a local unit code rather than a confirmed currency code."
+"[""standard_references"",4,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"Template codelist bindings have been harmonised to the accepted DSD / Key Family identifiers: CL_SYNTH_CONSUMPTION_DIVISION, CL_SYNTH_RESIDENCE, CL_SYNTH_EXPENDITURE_QUINTILE, CL_SYNTH_UNIT_MEASURE, CL_SYNTH_CPI_OBS_STATUS and CL_SYNTH_ESTIMATION_TYPE."
+"[""limitations"",1]",1,string,"The CPI UNIT_MEASURE value is modelled as the plain index unit code IDX, while BASE_PERIOD separately carries 2023=100, avoiding duplicate base-period semantics in both fields."
+"[""limitations"",2]",2,string,Exact SDMX codelist versions and standard code definitions for CL_FREQ and CL_OBS_STATUS were not confirmed by supplied external evidence; local CPI status codes are therefore used for Final and Provisional.
+"[""limitations"",3]",3,string,Consumption divisions are coded locally because the report states that the divisions resemble COICOP but the revision is not confirmed.
+"[""limitations"",4]",4,string,"The report does not state a reference area or country, so REF_AREA is omitted from the template; it should be added if later supplied."
+"[""limitations"",5]",5,string,"The report does not name the local currency, so the household-spending unit cannot be converted into an ISO 4217-denominated standard unit code."
+"[""limitations"",6]",6,string,Residence categories are retained as local codes because the report does not define an authoritative urban/rural or degree-of-urbanisation classification.
+"[""limitations"",7]",7,string,Only the lowest and highest expenditure quintiles are shown in the report extract; the template does not infer unobserved middle quintile rows.
+"[""limitations"",8]",8,string,"The template repeats dataset-level attributes such as UNIT_MEASURE, BASE_PERIOD and ESTIMATION_TYPE in each observation row for simple AI filling; an implementation may store them once at dataset level according to the accepted DSD attachment levels."
+"[""limitations"",9]",9,string,Survey estimates are subject to sampling error; this is a reference-metadata caveat and not a dimension or observation value in the template.
+"[""limitations"",10]",10,string,Household estimates are revised only for processing errors or new calibration weights; this is a reference-metadata/revision-policy note and not a dimension in the template.
+"[""limitations"",11]",11,string,"All records and values are synthetic, limiting production use without institutional validation."
+"[""templates""]",templates,array,
+"[""templates"",0]",0,object,
+"[""templates"",0,""template_id""]",template_id,string,TPL_SYNTH_CPI_DIVISION_MONTHLY_AI_FILL
+"[""templates"",0,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""columns""]",columns,array,
+"[""templates"",0,""columns"",0]",0,object,
+"[""templates"",0,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""columns"",0,""role""]",role,string,DIMENSION
+"[""templates"",0,""columns"",0,""required""]",required,boolean,true
+"[""templates"",0,""columns"",0,""data_type""]",data_type,string,String
+"[""templates"",0,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""templates"",0,""columns"",0,""description""]",description,string,Observation frequency. Use M for monthly CPI observations; CL_FREQ mapping is candidate pending registry verification.
+"[""templates"",0,""columns"",1]",1,object,
+"[""templates"",0,""columns"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""columns"",1,""role""]",role,string,DIMENSION
+"[""templates"",0,""columns"",1,""required""]",required,boolean,true
+"[""templates"",0,""columns"",1,""data_type""]",data_type,string,String
+"[""templates"",0,""columns"",1,""codelist_id""]",codelist_id,string,CL_SYNTH_CONSUMPTION_DIVISION
+"[""templates"",0,""columns"",1,""description""]",description,string,"Local CPI consumption division code from the accepted DSD codelist. Allowed report-derived values shown here are FOOD_NAB, HOUS_UTIL and TRANSPORT."
+"[""templates"",0,""columns"",2]",2,object,
+"[""templates"",0,""columns"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""columns"",2,""role""]",role,string,TIME
+"[""templates"",0,""columns"",2,""required""]",required,boolean,true
+"[""templates"",0,""columns"",2,""data_type""]",data_type,string,TimePeriod
+"[""templates"",0,""columns"",2,""codelist_id""]",codelist_id,null,
+"[""templates"",0,""columns"",2,""description""]",description,string,Monthly observation period in YYYY-MM format; must be consistent with FREQ=M.
+"[""templates"",0,""columns"",3]",3,object,
+"[""templates"",0,""columns"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""columns"",3,""role""]",role,string,MEASURE
+"[""templates"",0,""columns"",3,""required""]",required,boolean,true
+"[""templates"",0,""columns"",3,""data_type""]",data_type,string,Decimal
+"[""templates"",0,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""templates"",0,""columns"",3,""description""]",description,string,Numeric CPI index observation value. Do not include unit or base-period text in this field.
+"[""templates"",0,""columns"",4]",4,object,
+"[""templates"",0,""columns"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""columns"",4,""role""]",role,string,ATTRIBUTE
+"[""templates"",0,""columns"",4,""required""]",required,boolean,true
+"[""templates"",0,""columns"",4,""data_type""]",data_type,string,String
+"[""templates"",0,""columns"",4,""codelist_id""]",codelist_id,string,CL_SYNTH_UNIT_MEASURE
+"[""templates"",0,""columns"",4,""description""]",description,string,Plain unit code for CPI index observations from the accepted DSD unit codelist. Use IDX; the base period is held separately in BASE_PERIOD.
+"[""templates"",0,""columns"",5]",5,object,
+"[""templates"",0,""columns"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""templates"",0,""columns"",5,""required""]",required,boolean,true
+"[""templates"",0,""columns"",5,""data_type""]",data_type,string,String
+"[""templates"",0,""columns"",5,""codelist_id""]",codelist_id,null,
+"[""templates"",0,""columns"",5,""description""]",description,string,Base-period qualifier for the CPI index. Use 2023=100 for the shown CPI rows.
+"[""templates"",0,""columns"",6]",6,object,
+"[""templates"",0,""columns"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""templates"",0,""columns"",6,""required""]",required,boolean,true
+"[""templates"",0,""columns"",6,""data_type""]",data_type,string,String
+"[""templates"",0,""columns"",6,""codelist_id""]",codelist_id,string,CL_SYNTH_CPI_OBS_STATUS
+"[""templates"",0,""columns"",6,""description""]",description,string,CPI-specific local observation status code. Allowed evidenced values are FINAL and PROVISIONAL; SURVEY_ESTIMATE is not valid for CPI OBS_STATUS.
+"[""templates"",0,""observations""]",observations,array,
+"[""templates"",0,""observations"",0]",0,object,
+"[""templates"",0,""observations"",0,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",0,""values""]",values,array,
+"[""templates"",0,""observations"",0,""values"",0]",0,object,
+"[""templates"",0,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",0,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",0,""values"",1]",1,object,
+"[""templates"",0,""observations"",0,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",0,""values"",1,""value""]",value,string,FOOD_NAB
+"[""templates"",0,""observations"",0,""values"",2]",2,object,
+"[""templates"",0,""observations"",0,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",0,""values"",2,""value""]",value,string,2025-01
+"[""templates"",0,""observations"",0,""values"",3]",3,object,
+"[""templates"",0,""observations"",0,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",0,""values"",3,""value""]",value,number,108.92
+"[""templates"",0,""observations"",0,""values"",4]",4,object,
+"[""templates"",0,""observations"",0,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",0,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",0,""values"",5]",5,object,
+"[""templates"",0,""observations"",0,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",0,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",0,""values"",6]",6,object,
+"[""templates"",0,""observations"",0,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",0,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",0,""evidence_quote""]",evidence_quote,string,"Food and non-alcoholic beverages              2025-01                                     108.92                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",1]",1,object,
+"[""templates"",0,""observations"",1,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",1,""values""]",values,array,
+"[""templates"",0,""observations"",1,""values"",0]",0,object,
+"[""templates"",0,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",1,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",1,""values"",1]",1,object,
+"[""templates"",0,""observations"",1,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",1,""values"",1,""value""]",value,string,FOOD_NAB
+"[""templates"",0,""observations"",1,""values"",2]",2,object,
+"[""templates"",0,""observations"",1,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",1,""values"",2,""value""]",value,string,2025-02
+"[""templates"",0,""observations"",1,""values"",3]",3,object,
+"[""templates"",0,""observations"",1,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",1,""values"",3,""value""]",value,number,111.76
+"[""templates"",0,""observations"",1,""values"",4]",4,object,
+"[""templates"",0,""observations"",1,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",1,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",1,""values"",5]",5,object,
+"[""templates"",0,""observations"",1,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",1,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",1,""values"",6]",6,object,
+"[""templates"",0,""observations"",1,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",1,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",1,""evidence_quote""]",evidence_quote,string,"Food and non-alcoholic beverages              2025-02                                     111.76                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",2]",2,object,
+"[""templates"",0,""observations"",2,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",2,""values""]",values,array,
+"[""templates"",0,""observations"",2,""values"",0]",0,object,
+"[""templates"",0,""observations"",2,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",2,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",2,""values"",1]",1,object,
+"[""templates"",0,""observations"",2,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",2,""values"",1,""value""]",value,string,FOOD_NAB
+"[""templates"",0,""observations"",2,""values"",2]",2,object,
+"[""templates"",0,""observations"",2,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",2,""values"",2,""value""]",value,string,2025-03
+"[""templates"",0,""observations"",2,""values"",3]",3,object,
+"[""templates"",0,""observations"",2,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",2,""values"",3,""value""]",value,number,105.03
+"[""templates"",0,""observations"",2,""values"",4]",4,object,
+"[""templates"",0,""observations"",2,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",2,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",2,""values"",5]",5,object,
+"[""templates"",0,""observations"",2,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",2,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",2,""values"",6]",6,object,
+"[""templates"",0,""observations"",2,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",2,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",2,""evidence_quote""]",evidence_quote,string,"Food and non-alcoholic beverages              2025-03                                     105.03                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",3]",3,object,
+"[""templates"",0,""observations"",3,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",3,""values""]",values,array,
+"[""templates"",0,""observations"",3,""values"",0]",0,object,
+"[""templates"",0,""observations"",3,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",3,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",3,""values"",1]",1,object,
+"[""templates"",0,""observations"",3,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",3,""values"",1,""value""]",value,string,FOOD_NAB
+"[""templates"",0,""observations"",3,""values"",2]",2,object,
+"[""templates"",0,""observations"",3,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",3,""values"",2,""value""]",value,string,2025-04
+"[""templates"",0,""observations"",3,""values"",3]",3,object,
+"[""templates"",0,""observations"",3,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",3,""values"",3,""value""]",value,number,112.16
+"[""templates"",0,""observations"",3,""values"",4]",4,object,
+"[""templates"",0,""observations"",3,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",3,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",3,""values"",5]",5,object,
+"[""templates"",0,""observations"",3,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",3,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",3,""values"",6]",6,object,
+"[""templates"",0,""observations"",3,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",3,""values"",6,""value""]",value,string,PROVISIONAL
+"[""templates"",0,""observations"",3,""evidence_quote""]",evidence_quote,string,"Food and non-alcoholic beverages              2025-04                                     112.16                                           Index, 2023=100                                  Provisional"
+"[""templates"",0,""observations"",4]",4,object,
+"[""templates"",0,""observations"",4,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",4,""values""]",values,array,
+"[""templates"",0,""observations"",4,""values"",0]",0,object,
+"[""templates"",0,""observations"",4,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",4,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",4,""values"",1]",1,object,
+"[""templates"",0,""observations"",4,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",4,""values"",1,""value""]",value,string,HOUS_UTIL
+"[""templates"",0,""observations"",4,""values"",2]",2,object,
+"[""templates"",0,""observations"",4,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",4,""values"",2,""value""]",value,string,2025-01
+"[""templates"",0,""observations"",4,""values"",3]",3,object,
+"[""templates"",0,""observations"",4,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",4,""values"",3,""value""]",value,number,106.22
+"[""templates"",0,""observations"",4,""values"",4]",4,object,
+"[""templates"",0,""observations"",4,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",4,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",4,""values"",5]",5,object,
+"[""templates"",0,""observations"",4,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",4,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",4,""values"",6]",6,object,
+"[""templates"",0,""observations"",4,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",4,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",4,""evidence_quote""]",evidence_quote,string,"Housing and utilities                          2025-01                                     106.22                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",5]",5,object,
+"[""templates"",0,""observations"",5,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",5,""values""]",values,array,
+"[""templates"",0,""observations"",5,""values"",0]",0,object,
+"[""templates"",0,""observations"",5,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",5,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",5,""values"",1]",1,object,
+"[""templates"",0,""observations"",5,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",5,""values"",1,""value""]",value,string,HOUS_UTIL
+"[""templates"",0,""observations"",5,""values"",2]",2,object,
+"[""templates"",0,""observations"",5,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",5,""values"",2,""value""]",value,string,2025-02
+"[""templates"",0,""observations"",5,""values"",3]",3,object,
+"[""templates"",0,""observations"",5,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",5,""values"",3,""value""]",value,number,107.36
+"[""templates"",0,""observations"",5,""values"",4]",4,object,
+"[""templates"",0,""observations"",5,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",5,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",5,""values"",5]",5,object,
+"[""templates"",0,""observations"",5,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",5,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",5,""values"",6]",6,object,
+"[""templates"",0,""observations"",5,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",5,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",5,""evidence_quote""]",evidence_quote,string,"Housing and utilities                          2025-02                                     107.36                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",6]",6,object,
+"[""templates"",0,""observations"",6,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",6,""values""]",values,array,
+"[""templates"",0,""observations"",6,""values"",0]",0,object,
+"[""templates"",0,""observations"",6,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",6,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",6,""values"",1]",1,object,
+"[""templates"",0,""observations"",6,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",6,""values"",1,""value""]",value,string,HOUS_UTIL
+"[""templates"",0,""observations"",6,""values"",2]",2,object,
+"[""templates"",0,""observations"",6,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",6,""values"",2,""value""]",value,string,2025-03
+"[""templates"",0,""observations"",6,""values"",3]",3,object,
+"[""templates"",0,""observations"",6,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",6,""values"",3,""value""]",value,number,117.6
+"[""templates"",0,""observations"",6,""values"",4]",4,object,
+"[""templates"",0,""observations"",6,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",6,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",6,""values"",5]",5,object,
+"[""templates"",0,""observations"",6,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",6,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",6,""values"",6]",6,object,
+"[""templates"",0,""observations"",6,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",6,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",6,""evidence_quote""]",evidence_quote,string,"Housing and utilities                          2025-03                                     117.60                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",7]",7,object,
+"[""templates"",0,""observations"",7,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",7,""values""]",values,array,
+"[""templates"",0,""observations"",7,""values"",0]",0,object,
+"[""templates"",0,""observations"",7,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",7,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",7,""values"",1]",1,object,
+"[""templates"",0,""observations"",7,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",7,""values"",1,""value""]",value,string,HOUS_UTIL
+"[""templates"",0,""observations"",7,""values"",2]",2,object,
+"[""templates"",0,""observations"",7,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",7,""values"",2,""value""]",value,string,2025-04
+"[""templates"",0,""observations"",7,""values"",3]",3,object,
+"[""templates"",0,""observations"",7,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",7,""values"",3,""value""]",value,number,115.55
+"[""templates"",0,""observations"",7,""values"",4]",4,object,
+"[""templates"",0,""observations"",7,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",7,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",7,""values"",5]",5,object,
+"[""templates"",0,""observations"",7,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",7,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",7,""values"",6]",6,object,
+"[""templates"",0,""observations"",7,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",7,""values"",6,""value""]",value,string,PROVISIONAL
+"[""templates"",0,""observations"",7,""evidence_quote""]",evidence_quote,string,"Housing and utilities                          2025-04                                     115.55                                           Index, 2023=100                                  Provisional"
+"[""templates"",0,""observations"",8]",8,object,
+"[""templates"",0,""observations"",8,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",8,""values""]",values,array,
+"[""templates"",0,""observations"",8,""values"",0]",0,object,
+"[""templates"",0,""observations"",8,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",8,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",8,""values"",1]",1,object,
+"[""templates"",0,""observations"",8,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",8,""values"",1,""value""]",value,string,TRANSPORT
+"[""templates"",0,""observations"",8,""values"",2]",2,object,
+"[""templates"",0,""observations"",8,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",8,""values"",2,""value""]",value,string,2025-01
+"[""templates"",0,""observations"",8,""values"",3]",3,object,
+"[""templates"",0,""observations"",8,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",8,""values"",3,""value""]",value,number,112.55
+"[""templates"",0,""observations"",8,""values"",4]",4,object,
+"[""templates"",0,""observations"",8,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",8,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",8,""values"",5]",5,object,
+"[""templates"",0,""observations"",8,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",8,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",8,""values"",6]",6,object,
+"[""templates"",0,""observations"",8,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",8,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",8,""evidence_quote""]",evidence_quote,string,"Transport                                   2025-01                                     112.55                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",9]",9,object,
+"[""templates"",0,""observations"",9,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",9,""values""]",values,array,
+"[""templates"",0,""observations"",9,""values"",0]",0,object,
+"[""templates"",0,""observations"",9,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",9,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",9,""values"",1]",1,object,
+"[""templates"",0,""observations"",9,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",9,""values"",1,""value""]",value,string,TRANSPORT
+"[""templates"",0,""observations"",9,""values"",2]",2,object,
+"[""templates"",0,""observations"",9,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",9,""values"",2,""value""]",value,string,2025-02
+"[""templates"",0,""observations"",9,""values"",3]",3,object,
+"[""templates"",0,""observations"",9,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",9,""values"",3,""value""]",value,number,107.11
+"[""templates"",0,""observations"",9,""values"",4]",4,object,
+"[""templates"",0,""observations"",9,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",9,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",9,""values"",5]",5,object,
+"[""templates"",0,""observations"",9,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",9,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",9,""values"",6]",6,object,
+"[""templates"",0,""observations"",9,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",9,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",9,""evidence_quote""]",evidence_quote,string,"Transport                                   2025-02                                     107.11                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",10]",10,object,
+"[""templates"",0,""observations"",10,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",10,""values""]",values,array,
+"[""templates"",0,""observations"",10,""values"",0]",0,object,
+"[""templates"",0,""observations"",10,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",10,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",10,""values"",1]",1,object,
+"[""templates"",0,""observations"",10,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",10,""values"",1,""value""]",value,string,TRANSPORT
+"[""templates"",0,""observations"",10,""values"",2]",2,object,
+"[""templates"",0,""observations"",10,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",10,""values"",2,""value""]",value,string,2025-03
+"[""templates"",0,""observations"",10,""values"",3]",3,object,
+"[""templates"",0,""observations"",10,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",10,""values"",3,""value""]",value,number,118.88
+"[""templates"",0,""observations"",10,""values"",4]",4,object,
+"[""templates"",0,""observations"",10,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",10,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",10,""values"",5]",5,object,
+"[""templates"",0,""observations"",10,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",10,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",10,""values"",6]",6,object,
+"[""templates"",0,""observations"",10,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",10,""values"",6,""value""]",value,string,FINAL
+"[""templates"",0,""observations"",10,""evidence_quote""]",evidence_quote,string,"Transport                                   2025-03                                     118.88                                           Index, 2023=100                                   Final"
+"[""templates"",0,""observations"",11]",11,object,
+"[""templates"",0,""observations"",11,""dsd_id""]",dsd_id,string,KF_SYNTH_CPI_DIVISION_MONTHLY
+"[""templates"",0,""observations"",11,""values""]",values,array,
+"[""templates"",0,""observations"",11,""values"",0]",0,object,
+"[""templates"",0,""observations"",11,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",0,""observations"",11,""values"",0,""value""]",value,string,M
+"[""templates"",0,""observations"",11,""values"",1]",1,object,
+"[""templates"",0,""observations"",11,""values"",1,""column_id""]",column_id,string,CONSUMPTION_DIVISION
+"[""templates"",0,""observations"",11,""values"",1,""value""]",value,string,TRANSPORT
+"[""templates"",0,""observations"",11,""values"",2]",2,object,
+"[""templates"",0,""observations"",11,""values"",2,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",0,""observations"",11,""values"",2,""value""]",value,string,2025-04
+"[""templates"",0,""observations"",11,""values"",3]",3,object,
+"[""templates"",0,""observations"",11,""values"",3,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",0,""observations"",11,""values"",3,""value""]",value,number,111.7
+"[""templates"",0,""observations"",11,""values"",4]",4,object,
+"[""templates"",0,""observations"",11,""values"",4,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",0,""observations"",11,""values"",4,""value""]",value,string,IDX
+"[""templates"",0,""observations"",11,""values"",5]",5,object,
+"[""templates"",0,""observations"",11,""values"",5,""column_id""]",column_id,string,BASE_PERIOD
+"[""templates"",0,""observations"",11,""values"",5,""value""]",value,string,2023=100
+"[""templates"",0,""observations"",11,""values"",6]",6,object,
+"[""templates"",0,""observations"",11,""values"",6,""column_id""]",column_id,string,OBS_STATUS
+"[""templates"",0,""observations"",11,""values"",6,""value""]",value,string,PROVISIONAL
+"[""templates"",0,""observations"",11,""evidence_quote""]",evidence_quote,string,"Transport                                   2025-04                                     111.70                                           Index, 2023=100                                  Provisional"
+"[""templates"",1]",1,object,
+"[""templates"",1,""template_id""]",template_id,string,TPL_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL_AI_FILL
+"[""templates"",1,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""templates"",1,""columns""]",columns,array,
+"[""templates"",1,""columns"",0]",0,object,
+"[""templates"",1,""columns"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",1,""columns"",0,""role""]",role,string,DIMENSION
+"[""templates"",1,""columns"",0,""required""]",required,boolean,true
+"[""templates"",1,""columns"",0,""data_type""]",data_type,string,String
+"[""templates"",1,""columns"",0,""codelist_id""]",codelist_id,string,CL_FREQ
+"[""templates"",1,""columns"",0,""description""]",description,string,Observation frequency. Use A for annual household-spending survey estimates; CL_FREQ mapping is candidate pending registry verification.
+"[""templates"",1,""columns"",1]",1,object,
+"[""templates"",1,""columns"",1,""column_id""]",column_id,string,RESIDENCE
+"[""templates"",1,""columns"",1,""role""]",role,string,DIMENSION
+"[""templates"",1,""columns"",1,""required""]",required,boolean,true
+"[""templates"",1,""columns"",1,""data_type""]",data_type,string,String
+"[""templates"",1,""columns"",1,""codelist_id""]",codelist_id,string,CL_SYNTH_RESIDENCE
+"[""templates"",1,""columns"",1,""description""]",description,string,Local residence category code from the accepted DSD codelist. Allowed report-derived values shown here are URBAN and RURAL.
+"[""templates"",1,""columns"",2]",2,object,
+"[""templates"",1,""columns"",2,""column_id""]",column_id,string,EXPENDITURE_QUINTILE
+"[""templates"",1,""columns"",2,""role""]",role,string,DIMENSION
+"[""templates"",1,""columns"",2,""required""]",required,boolean,true
+"[""templates"",1,""columns"",2,""data_type""]",data_type,string,String
+"[""templates"",1,""columns"",2,""codelist_id""]",codelist_id,string,CL_SYNTH_EXPENDITURE_QUINTILE
+"[""templates"",1,""columns"",2,""description""]",description,string,Local expenditure-quintile code from the accepted DSD codelist. Only LOWEST and HIGHEST are evidenced in the supplied extract.
+"[""templates"",1,""columns"",3]",3,object,
+"[""templates"",1,""columns"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",1,""columns"",3,""role""]",role,string,TIME
+"[""templates"",1,""columns"",3,""required""]",required,boolean,true
+"[""templates"",1,""columns"",3,""data_type""]",data_type,string,TimePeriod
+"[""templates"",1,""columns"",3,""codelist_id""]",codelist_id,null,
+"[""templates"",1,""columns"",3,""description""]",description,string,Annual observation period in YYYY format; must be consistent with FREQ=A.
+"[""templates"",1,""columns"",4]",4,object,
+"[""templates"",1,""columns"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",1,""columns"",4,""role""]",role,string,MEASURE
+"[""templates"",1,""columns"",4,""required""]",required,boolean,true
+"[""templates"",1,""columns"",4,""data_type""]",data_type,string,Decimal
+"[""templates"",1,""columns"",4,""codelist_id""]",codelist_id,null,
+"[""templates"",1,""columns"",4,""description""]",description,string,Numeric mean monthly consumption expenditure per household. Do not include currency or unit text in this field.
+"[""templates"",1,""columns"",5]",5,object,
+"[""templates"",1,""columns"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",1,""columns"",5,""role""]",role,string,ATTRIBUTE
+"[""templates"",1,""columns"",5,""required""]",required,boolean,true
+"[""templates"",1,""columns"",5,""data_type""]",data_type,string,String
+"[""templates"",1,""columns"",5,""codelist_id""]",codelist_id,string,CL_SYNTH_UNIT_MEASURE
+"[""templates"",1,""columns"",5,""description""]",description,string,Unit code for household-spending values from the accepted DSD unit codelist. Use LCU_PER_HH_PER_MONTH because the report does not name the currency.
+"[""templates"",1,""columns"",6]",6,object,
+"[""templates"",1,""columns"",6,""column_id""]",column_id,string,ESTIMATION_TYPE
+"[""templates"",1,""columns"",6,""role""]",role,string,ATTRIBUTE
+"[""templates"",1,""columns"",6,""required""]",required,boolean,true
+"[""templates"",1,""columns"",6,""data_type""]",data_type,string,String
+"[""templates"",1,""columns"",6,""codelist_id""]",codelist_id,string,CL_SYNTH_ESTIMATION_TYPE
+"[""templates"",1,""columns"",6,""description""]",description,string,Dedicated estimation-type qualifier from the accepted DSD codelist. Use SURVEY_ESTIMATE for shown rows; FINAL and PROVISIONAL are not valid for this field.
+"[""templates"",1,""observations""]",observations,array,
+"[""templates"",1,""observations"",0]",0,object,
+"[""templates"",1,""observations"",0,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""templates"",1,""observations"",0,""values""]",values,array,
+"[""templates"",1,""observations"",0,""values"",0]",0,object,
+"[""templates"",1,""observations"",0,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",1,""observations"",0,""values"",0,""value""]",value,string,A
+"[""templates"",1,""observations"",0,""values"",1]",1,object,
+"[""templates"",1,""observations"",0,""values"",1,""column_id""]",column_id,string,RESIDENCE
+"[""templates"",1,""observations"",0,""values"",1,""value""]",value,string,URBAN
+"[""templates"",1,""observations"",0,""values"",2]",2,object,
+"[""templates"",1,""observations"",0,""values"",2,""column_id""]",column_id,string,EXPENDITURE_QUINTILE
+"[""templates"",1,""observations"",0,""values"",2,""value""]",value,string,LOWEST
+"[""templates"",1,""observations"",0,""values"",3]",3,object,
+"[""templates"",1,""observations"",0,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",1,""observations"",0,""values"",3,""value""]",value,string,2024
+"[""templates"",1,""observations"",0,""values"",4]",4,object,
+"[""templates"",1,""observations"",0,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",1,""observations"",0,""values"",4,""value""]",value,integer,7072
+"[""templates"",1,""observations"",0,""values"",5]",5,object,
+"[""templates"",1,""observations"",0,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",1,""observations"",0,""values"",5,""value""]",value,string,LCU_PER_HH_PER_MONTH
+"[""templates"",1,""observations"",0,""values"",6]",6,object,
+"[""templates"",1,""observations"",0,""values"",6,""column_id""]",column_id,string,ESTIMATION_TYPE
+"[""templates"",1,""observations"",0,""values"",6,""value""]",value,string,SURVEY_ESTIMATE
+"[""templates"",1,""observations"",0,""evidence_quote""]",evidence_quote,string,"Urban                               Lowest quintile                      2024                                 7,072                                  Local currency per household per month  Survey estimate"
+"[""templates"",1,""observations"",1]",1,object,
+"[""templates"",1,""observations"",1,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""templates"",1,""observations"",1,""values""]",values,array,
+"[""templates"",1,""observations"",1,""values"",0]",0,object,
+"[""templates"",1,""observations"",1,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",1,""observations"",1,""values"",0,""value""]",value,string,A
+"[""templates"",1,""observations"",1,""values"",1]",1,object,
+"[""templates"",1,""observations"",1,""values"",1,""column_id""]",column_id,string,RESIDENCE
+"[""templates"",1,""observations"",1,""values"",1,""value""]",value,string,URBAN
+"[""templates"",1,""observations"",1,""values"",2]",2,object,
+"[""templates"",1,""observations"",1,""values"",2,""column_id""]",column_id,string,EXPENDITURE_QUINTILE
+"[""templates"",1,""observations"",1,""values"",2,""value""]",value,string,HIGHEST
+"[""templates"",1,""observations"",1,""values"",3]",3,object,
+"[""templates"",1,""observations"",1,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",1,""observations"",1,""values"",3,""value""]",value,string,2024
+"[""templates"",1,""observations"",1,""values"",4]",4,object,
+"[""templates"",1,""observations"",1,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",1,""observations"",1,""values"",4,""value""]",value,integer,2734
+"[""templates"",1,""observations"",1,""values"",5]",5,object,
+"[""templates"",1,""observations"",1,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",1,""observations"",1,""values"",5,""value""]",value,string,LCU_PER_HH_PER_MONTH
+"[""templates"",1,""observations"",1,""values"",6]",6,object,
+"[""templates"",1,""observations"",1,""values"",6,""column_id""]",column_id,string,ESTIMATION_TYPE
+"[""templates"",1,""observations"",1,""values"",6,""value""]",value,string,SURVEY_ESTIMATE
+"[""templates"",1,""observations"",1,""evidence_quote""]",evidence_quote,string,"Urban                                 Highest quintile                      2024                                 2,734                                  Local currency per household per month  Survey estimate"
+"[""templates"",1,""observations"",2]",2,object,
+"[""templates"",1,""observations"",2,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""templates"",1,""observations"",2,""values""]",values,array,
+"[""templates"",1,""observations"",2,""values"",0]",0,object,
+"[""templates"",1,""observations"",2,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",1,""observations"",2,""values"",0,""value""]",value,string,A
+"[""templates"",1,""observations"",2,""values"",1]",1,object,
+"[""templates"",1,""observations"",2,""values"",1,""column_id""]",column_id,string,RESIDENCE
+"[""templates"",1,""observations"",2,""values"",1,""value""]",value,string,RURAL
+"[""templates"",1,""observations"",2,""values"",2]",2,object,
+"[""templates"",1,""observations"",2,""values"",2,""column_id""]",column_id,string,EXPENDITURE_QUINTILE
+"[""templates"",1,""observations"",2,""values"",2,""value""]",value,string,LOWEST
+"[""templates"",1,""observations"",2,""values"",3]",3,object,
+"[""templates"",1,""observations"",2,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",1,""observations"",2,""values"",3,""value""]",value,string,2024
+"[""templates"",1,""observations"",2,""values"",4]",4,object,
+"[""templates"",1,""observations"",2,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",1,""observations"",2,""values"",4,""value""]",value,integer,7708
+"[""templates"",1,""observations"",2,""values"",5]",5,object,
+"[""templates"",1,""observations"",2,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",1,""observations"",2,""values"",5,""value""]",value,string,LCU_PER_HH_PER_MONTH
+"[""templates"",1,""observations"",2,""values"",6]",6,object,
+"[""templates"",1,""observations"",2,""values"",6,""column_id""]",column_id,string,ESTIMATION_TYPE
+"[""templates"",1,""observations"",2,""values"",6,""value""]",value,string,SURVEY_ESTIMATE
+"[""templates"",1,""observations"",2,""evidence_quote""]",evidence_quote,string,"Rural                               Lowest quintile                      2024                                 7,708                                  Local currency per household per month  Survey estimate"
+"[""templates"",1,""observations"",3]",3,object,
+"[""templates"",1,""observations"",3,""dsd_id""]",dsd_id,string,KF_SYNTH_HH_SPENDING_RESIDENCE_QUINTILE_ANNUAL
+"[""templates"",1,""observations"",3,""values""]",values,array,
+"[""templates"",1,""observations"",3,""values"",0]",0,object,
+"[""templates"",1,""observations"",3,""values"",0,""column_id""]",column_id,string,FREQ
+"[""templates"",1,""observations"",3,""values"",0,""value""]",value,string,A
+"[""templates"",1,""observations"",3,""values"",1]",1,object,
+"[""templates"",1,""observations"",3,""values"",1,""column_id""]",column_id,string,RESIDENCE
+"[""templates"",1,""observations"",3,""values"",1,""value""]",value,string,RURAL
+"[""templates"",1,""observations"",3,""values"",2]",2,object,
+"[""templates"",1,""observations"",3,""values"",2,""column_id""]",column_id,string,EXPENDITURE_QUINTILE
+"[""templates"",1,""observations"",3,""values"",2,""value""]",value,string,HIGHEST
+"[""templates"",1,""observations"",3,""values"",3]",3,object,
+"[""templates"",1,""observations"",3,""values"",3,""column_id""]",column_id,string,TIME_PERIOD
+"[""templates"",1,""observations"",3,""values"",3,""value""]",value,string,2024
+"[""templates"",1,""observations"",3,""values"",4]",4,object,
+"[""templates"",1,""observations"",3,""values"",4,""column_id""]",column_id,string,OBS_VALUE
+"[""templates"",1,""observations"",3,""values"",4,""value""]",value,integer,2499
+"[""templates"",1,""observations"",3,""values"",5]",5,object,
+"[""templates"",1,""observations"",3,""values"",5,""column_id""]",column_id,string,UNIT_MEASURE
+"[""templates"",1,""observations"",3,""values"",5,""value""]",value,string,LCU_PER_HH_PER_MONTH
+"[""templates"",1,""observations"",3,""values"",6]",6,object,
+"[""templates"",1,""observations"",3,""values"",6,""column_id""]",column_id,string,ESTIMATION_TYPE
+"[""templates"",1,""observations"",3,""values"",6,""value""]",value,string,SURVEY_ESTIMATE
+"[""templates"",1,""observations"",3,""evidence_quote""]",evidence_quote,string,"Rural                                  Highest quintile                      2024                                 2,499                                  Local currency per household per month  Survey estimate"

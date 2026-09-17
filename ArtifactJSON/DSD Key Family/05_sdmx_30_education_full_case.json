@@ -1,0 +1,137 @@
+{
+  "artifact_type": "DSD_KEY_FAMILY",
+  "source_report": "05_sdmx_30_education_full_case.xml",
+  "source_sha256": "bde4885296220119913bea8c4105b0fdb48a58fb35d1bb47a373cc1eaf4c19dd",
+  "principles_file": "03_DSD_KEY_FAMILY.txt",
+  "principles_sha256": "b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "data_structures": [
+    {
+      "dsd_id": "DSD_EDU",
+      "name": "Education Statistics DSD",
+      "agency_id": "DEMO",
+      "version": "1.0.0",
+      "statistical_scope": "Education Statistics",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_EDU_FREQ",
+          "codelist_agency": "DEMO",
+          "codelist_id": "CL_EDU_FREQ",
+          "codelist_version": "1.0.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Education Statistics DSD"
+        },
+        {
+          "position": 2,
+          "concept_id": "REF_AREA",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_EDU_REF_AREA",
+          "codelist_agency": "DEMO",
+          "codelist_id": "CL_EDU_REF_AREA",
+          "codelist_version": "1.0.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Education Statistics DSD"
+        },
+        {
+          "position": 3,
+          "concept_id": "INDICATOR",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_EDU_INDICATOR",
+          "codelist_agency": "DEMO",
+          "codelist_id": "CL_EDU_INDICATOR",
+          "codelist_version": "1.0.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Education Statistics DSD"
+        },
+        {
+          "position": 4,
+          "concept_id": "EDU_LEVEL",
+          "role": "DIMENSION",
+          "representation": "Coded by CL_EDU_EDU_LEVEL",
+          "codelist_agency": "DEMO",
+          "codelist_id": "CL_EDU_EDU_LEVEL",
+          "codelist_version": "1.0.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Dimension.",
+          "evidence_quote": "Education Statistics DSD"
+        },
+        {
+          "position": 5,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "ObservationalTimePeriod",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "ObservationalTimePeriod",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML TimeDimension.",
+          "evidence_quote": "Education Statistics DSD"
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Coded by CL_EDU_UNIT",
+          "codelist_agency": "DEMO",
+          "codelist_id": "CL_EDU_UNIT",
+          "codelist_version": "1.0.0",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "OBSERVATION",
+          "notes": "Mechanically extracted from XML Attribute.",
+          "evidence_quote": "Education Statistics DSD"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "representation": "Coded by CL_EDU_OBS_STATUS",
+          "codelist_agency": "DEMO",
+          "codelist_id": "CL_EDU_OBS_STATUS",
+          "codelist_version": "1.0.0",
+          "data_type": "String",
+          "usage_status": "OPTIONAL",
+          "attachment_level": "OBSERVATION",
+          "notes": "Mechanically extracted from XML Attribute.",
+          "evidence_quote": "Education Statistics DSD"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Double",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Double",
+          "usage_status": "OPTIONAL",
+          "attachment_level": null,
+          "notes": "Mechanically extracted from XML Measure.",
+          "evidence_quote": "Education Statistics DSD"
+        }
+      ]
+    }
+  ],
+  "structure_separation_rationale": "Each distinct DSD/Key Family present in the XML is preserved as a separate structure."
+}

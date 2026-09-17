@@ -1,0 +1,176 @@
+METADATA SET
+============
+
+1. Definition
+-------------
+A Metadata Set is the actual collection of reference metadata values conforming
+to an MSD.
+
+MSD = schema.
+Metadata Set = content.
+
+If the MSD defines METHODOLOGY, CONTACT and DATA_REV, the Metadata Set contains
+the actual methodology text, contact details and revision description for the
+specific report/dataflow/object.
+
+2. Best practices
+-----------------
+A. Every value should point to a metadata concept defined by the MSD.
+
+B. Record what object the metadata describes:
+- report/publication;
+- Dataflow;
+- DSD;
+- dataset;
+- series/partial key;
+- other identifiable SDMX object as appropriate.
+
+C. Keep source wording when substantive interpretation could be lost by paraphrase.
+
+D. Do not turn absent information into invented content.
+Use explicit missing/not-found handling.
+
+E. Separate metadata that applies globally from metadata that varies by series.
+
+F. Keep dates as dates where possible rather than free text.
+
+G. Where a standard coded metadata value exists, use it; otherwise narrative text
+is valid for methodology/reference metadata.
+
+H. Do not mix extraction/audit confidence with statistical reference metadata.
+Those workflow fields can be added later in a separate audit layer.
+
+3. Example: how it looks
+------------------------
+Human-readable metadata record:
+
+METADATA_ID       VALUE
+----------------  ------------------------------------------------------------
+REPORT_TITLE      Labour Market Annual Report 2025
+PUBLISHER         National Statistical Office
+PUBLICATION_DATE  2025-06-30
+DATA_DESCRIPTION  Annual labour-market indicators by sex and age
+METHODOLOGY       Estimates are based on the labour force survey...
+DATA_REV           Provisional observations may be revised in the next release...
+COMPARABILITY     A questionnaire redesign in 2022 affects comparison...
+CONTACT           labour.stats@example.org
+META_UPDATE       2025-06-30
+
+Target:
+DATAFLOW = DF_LABOUR_MARKET
+
+Illustrative XML-like representation:
+
+<MetadataSet>
+  <TargetObject>DF_LABOUR_MARKET</TargetObject>
+  <ReportedAttribute conceptRef="METHODOLOGY">
+    Estimates are based on the labour force survey...
+  </ReportedAttribute>
+  <ReportedAttribute conceptRef="DATA_REV">
+    Provisional observations may be revised...
+  </ReportedAttribute>
+</MetadataSet>
+
+Illustrative only.
+
+4. Formal / practical formats
+-----------------------------
+Formal SDMX 2.0:
+- SDMX-ML metadata message conforming to an MSD.
+
+Practical extraction formats:
+- JSON
+- CSV/XLSX key-value table
+- structured database record
+
+Recommended practical columns:
+TARGET_TYPE
+TARGET_ID
+METADATA_ID
+LANGUAGE
+VALUE
+VALUE_DATE
+SOURCE_SECTION
+SOURCE_URL
+NOTES
+
+SOURCE_SECTION is useful for traceability but is an operational field, not
+necessarily part of the formal metadata structure.
+
+5. Common report metadata values to capture
+-------------------------------------------
+REPORT_TITLE
+PUBLISHER
+PUBLICATION_DATE
+EDITION
+SOURCE_URL
+CONTACT
+DATA_DESCRIPTION
+STATISTICAL_POPULATION
+GEOGRAPHIC_COVERAGE
+REFERENCE_PERIOD_DESCRIPTION
+METHODOLOGY
+SOURCE_DATA
+COLLECTION_METHOD
+SAMPLING_METHOD
+COMPILATION_METHOD
+ESTIMATION_METHOD
+ADJUSTMENT_METHOD
+REVISION_POLICY
+REVISION_PRACTICE
+CONFIDENTIALITY_POLICY
+COMPARABILITY
+COHERENCE
+TIMELINESS
+COMPLETENESS
+LIMITATIONS
+DEFINITIONS
+QUALITY_DOCUMENTATION
+LEGAL_OR_INSTITUTIONAL_MANDATE
+META_UPDATE
+
+Before fixing IDs, map these to the SDMX Global Reference Metadata Concept Scheme
+and Glossary where possible.
+
+6. Acceptance checks
+--------------------
+[ ] Every metadata value is allowed by the MSD.
+[ ] Target object is explicit.
+[ ] No substantive text was invented.
+[ ] Publication/source details are captured.
+[ ] Methodology/caveats are preserved.
+[ ] Dates and coded values are typed where possible.
+[ ] Missing metadata is marked as missing, not guessed.
+
+CORE OFFICIAL SOURCES (checked 2026-09-16)
+-----------------------------------------------
+SDMX 2.0 standards landing page
+https://sdmx.org/startpage/sdmx-standards-version-20/
+
+SDMX 2.0 Information Model
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+
+SDMX 2.0 Implementor's Guide
+https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_06_ImplementorsGuide.pdf
+
+SDMX Guidelines
+https://sdmx.org/guidelines/
+
+Guidelines for the Design of Data Structure Definitions
+https://sdmx.org/wp-content/uploads/SDMX_Guidelines_for_DSDs_1.0.pdf
+
+SDMX Glossary 2.1
+https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+
+Standardising Reference Metadata Reporting in SDMX
+https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+
+SDMX Global Registry - Codelists
+https://registry.sdmx.org/items/codelist.html
+
+IMPORTANT
+---------
+This package targets SDMX 2.0 as requested. In SDMX 2.0 the formal term for a
+Data Structure Definition is "Key Family". Later SDMX statistical guidelines are
+used here only for modelling good practice where the recommendation is compatible
+with the SDMX 2.0 information model.

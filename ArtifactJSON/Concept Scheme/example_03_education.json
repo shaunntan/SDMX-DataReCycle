@@ -1,0 +1,273 @@
+{
+  "artifact_type": "CONCEPT_SCHEME",
+  "source_report": "example_03_education.pdf",
+  "source_sha256": "e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6",
+  "principles_file": "01_CONCEPT_SCHEME.txt",
+  "principles_sha256": "618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Concept glossary",
+      "artifact_id": "SDMX_Glossary_Version_2_1",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The fetched SDMX Glossary excerpt identifies Cross-Domain Concepts as reusable concepts that should conform to specified names, IDs, representations and codelists. It specifically states that the Observation Status term has Concept ID OBS_STATUS and Codelist ID CL_OBS_STATUS. The excerpt also lists terms including Education level, Frequency of observation, Indicator and Reference area, but does not provide full concept scheme identifiers or complete definitions for all concepts used here.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Registry catalog",
+      "artifact_id": "SDMX_Global_Registry_Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The fetched SDMX Global Registry page shows a codelist search/catalog interface and other structural artefact areas including Concept Schemes and Codelists. The supplied excerpt does not confirm particular codelist versions or code mappings for sex, units, education level, wealth quintile, or observation status values in the report.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNESCO Institute for Statistics / UNESCO",
+      "artifact_type": "Education classification",
+      "artifact_id": "ISCED",
+      "version": "not confirmed",
+      "url": "https://www.uis.unesco.org/en/methods-and-tools/isced",
+      "evidence": "The supplied reference catalog identifies UNESCO ISCED as the authoritative source to check for education level classification. No fetched official ISCED excerpt or mapping table was supplied, and the report itself says education-level labels require ISCED mapping review.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic classification",
+      "artifact_id": "UN_M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The fetched UN M49 excerpt lists country and area entries. The report does not provide a reference area or country dimension, so UN M49 is not used in the proposed concept scheme.",
+      "verification_status": "CONFIRMED"
+    }
+  ],
+  "limitations": [
+    "The report gives no reference area; REF_AREA is therefore not included even though it is a common SDMX concept.",
+    "The report uses years 2024 and 2025 but does not explicitly state observation frequency; FREQ is not included, while TIME_PERIOD is represented as a year.",
+    "Education-level labels require ISCED mapping review; no confirmed ISCED code mapping or version is available from the supplied evidence.",
+    "Wealth quintiles are explicitly survey-specific and should not be silently mapped to a standard income classification.",
+    "The supplied official-source evidence confirms OBS_STATUS as an SDMX concept/codelist example, but it does not confirm exact mappings for Final, Provisional, or Modelled estimate.",
+    "Exact SDMX concept scheme IDs and versions for SEX, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE and INDICATOR were not confirmed by the supplied external evidence; they are retained as candidate SDMX/common concepts where semantically appropriate.",
+    "The report contains reference metadata text, but exact mappings to a global reference metadata concept scheme were not confirmed from supplied external evidence."
+  ],
+  "concept_schemes": [
+    {
+      "scheme_id": "CS_EDU_PARTICIPATION_COMPLETION_DATA",
+      "name": "Education participation and completion data concepts",
+      "agency_id": "SYNTHETIC_MINISTRY_OF_LEARNING",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "INDICATOR",
+          "name": "Indicator",
+          "definition": "The education statistic being measured, distinguishing enrollment headcount from completion rate.",
+          "context": "Used because the report contains at least two statistical measures with different meanings: administrative enrollment counts and modelled completion rates.",
+          "recommended_representation": "Codelist; local education indicator list unless an authoritative education-domain indicator list is confirmed later.",
+          "standard_source_agency": "SDMX candidate; local domain representation required",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+          "local_notes": "The SDMX Glossary excerpt lists Indicator, but the exact reusable SDMX concept scheme ID/version was not confirmed. Candidate values implied by the report are enrollment count and lower-secondary completion rate.",
+          "evidence_quote": "Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex."
+        },
+        {
+          "concept_id": "EDUCATION_LEVEL",
+          "name": "Education level",
+          "definition": "Education cycle or level to which an education observation refers.",
+          "context": "Used for enrollment counts by Primary, Lower secondary and Upper secondary, and relevant to completion rates for the stated lower-secondary cycle.",
+          "recommended_representation": "Codelist; UNESCO ISCED candidate after mapping review; otherwise local education-level codelist pending review.",
+          "standard_source_agency": "UNESCO Institute for Statistics / UNESCO candidate",
+          "standard_scheme_id": "ISCED not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://www.uis.unesco.org/en/methods-and-tools/isced",
+          "local_notes": "Do not confirm ISCED mappings from the labels alone. The report explicitly requires ISCED mapping review.",
+          "evidence_quote": "Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification."
+        },
+        {
+          "concept_id": "WEALTH_QUINTILE",
+          "name": "Wealth quintile",
+          "definition": "Survey-specific wealth quintile used to disaggregate completion-rate estimates.",
+          "context": "Used only for lower-secondary completion rates from the household survey estimates.",
+          "recommended_representation": "Local codelist; do not map to a standard income or wealth classification without separate evidence.",
+          "standard_source_agency": "LOCAL",
+          "standard_scheme_id": "not applicable",
+          "standard_version": "1.0",
+          "source_url": "not stated",
+          "local_notes": "The report warns that wealth quintiles are survey-specific. Candidate local values appearing in the report are Lowest quintile, Middle quintile and Highest quintile.",
+          "evidence_quote": "Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification."
+        },
+        {
+          "concept_id": "SEX",
+          "name": "Sex",
+          "definition": "Sex category used for disaggregation of education observations.",
+          "context": "Used for both enrollment and completion-rate observations. The report includes Female and Male, and enrollment also includes Total.",
+          "recommended_representation": "Codelist; SDMX CL_SEX candidate, with review needed for treatment of Total as an aggregate category.",
+          "standard_source_agency": "SDMX candidate",
+          "standard_scheme_id": "CL_SEX not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://registry.sdmx.org/items/codelist.html",
+          "local_notes": "Semantic use matches the common SDMX SEX concept, but the supplied registry excerpt does not confirm CL_SEX details or version.",
+          "evidence_quote": "    Education level                 Sex                             Year                             Value                               Unit                               Status"
+        },
+        {
+          "concept_id": "TIME_PERIOD",
+          "name": "Time period",
+          "definition": "The calendar year to which the observation refers.",
+          "context": "Used for the Year column in both tables. The report contains observations for 2024 and 2025.",
+          "recommended_representation": "Time period, year format; not a codelist.",
+          "standard_source_agency": "SDMX candidate",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+          "local_notes": "The report labels this field Year. FREQ is not included because frequency is not explicitly stated.",
+          "evidence_quote": "    Education level                 Sex                             Year                             Value                               Unit                               Status"
+        },
+        {
+          "concept_id": "OBS_VALUE",
+          "name": "Observation value",
+          "definition": "Numeric value of the measured education statistic.",
+          "context": "Carries enrollment headcounts and completion percentages, with interpretation determined by the indicator and unit.",
+          "recommended_representation": "Numeric decimal.",
+          "standard_source_agency": "SDMX candidate",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+          "local_notes": "Do not store formatted strings such as percentages in OBS_VALUE; the unit is represented separately by UNIT_MEASURE.",
+          "evidence_quote": "    Education level                 Sex                             Year                             Value                               Unit                               Status"
+        },
+        {
+          "concept_id": "UNIT_MEASURE",
+          "name": "Unit of measure",
+          "definition": "Unit in which the observation value is expressed.",
+          "context": "The report uses Students for enrollment counts and Percent for completion rates.",
+          "recommended_representation": "Codelist; authoritative unit list should be checked before creating local unit codes.",
+          "standard_source_agency": "SDMX candidate / domain unit list not confirmed",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://registry.sdmx.org/items/codelist.html",
+          "local_notes": "Exact standard unit codelist and code mappings for Students and Percent were not confirmed from supplied evidence.",
+          "evidence_quote": "    Wealth quintile                  Sex                             Year                             Value                               Unit                               Status"
+        },
+        {
+          "concept_id": "OBS_STATUS",
+          "name": "Observation status",
+          "definition": "Status, finality or estimation qualification associated with an observation value.",
+          "context": "Used for Final, Provisional and Modelled estimate status values in the report.",
+          "recommended_representation": "Codelist; SDMX CL_OBS_STATUS is confirmed as a standard codelist ID in the supplied SDMX Glossary excerpt, but local value mapping must be reviewed.",
+          "standard_source_agency": "SDMX",
+          "standard_scheme_id": "OBS_STATUS / CL_OBS_STATUS",
+          "standard_version": "2.1 glossary evidence; codelist version not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+          "local_notes": "Final, Provisional and Modelled estimate may not map one-to-one to standard observation-status codes without code-level verification.",
+          "evidence_quote": "Footnote: All completion rates are modelled estimates."
+        }
+      ]
+    },
+    {
+      "scheme_id": "CS_EDU_PARTICIPATION_COMPLETION_METADATA",
+      "name": "Education participation and completion reference metadata concepts",
+      "agency_id": "SYNTHETIC_MINISTRY_OF_LEARNING",
+      "version": "1.0",
+      "concepts": [
+        {
+          "concept_id": "METHODOLOGY",
+          "name": "Methodology",
+          "definition": "Text describing how the reported statistics are compiled or estimated.",
+          "context": "Reference metadata for distinguishing administrative headcount enrollment from modelled household-survey completion estimates.",
+          "recommended_representation": "String / reference metadata text.",
+          "standard_source_agency": "SDMX reference metadata candidate",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+          "local_notes": "Exact reusable reference metadata concept mapping was not confirmed from supplied evidence.",
+          "evidence_quote": "Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex."
+        },
+        {
+          "concept_id": "SOURCE_DESCRIPTION",
+          "name": "Source description",
+          "definition": "Text identifying the data systems or surveys from which the statistics are derived.",
+          "context": "Reference metadata for the administrative and household-survey sources used in the report.",
+          "recommended_representation": "String / reference metadata text.",
+          "standard_source_agency": "SDMX reference metadata candidate",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+          "local_notes": "Could later be mapped to a standard source or data source metadata concept if confirmed.",
+          "evidence_quote": "Synthetic Education Management Information System and Synthetic Household Learning Survey."
+        },
+        {
+          "concept_id": "STATISTICAL_DEFINITIONS",
+          "name": "Statistical definitions",
+          "definition": "Text giving the source definitions of the reported statistics.",
+          "context": "Reference metadata for enrollment counts and completion rates.",
+          "recommended_representation": "String / reference metadata text.",
+          "standard_source_agency": "SDMX reference metadata candidate",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+          "local_notes": "Kept separate from coded data concepts because the report provides narrative definitions.",
+          "evidence_quote": "Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle."
+        },
+        {
+          "concept_id": "LIMITATIONS",
+          "name": "Caveats and limitations",
+          "definition": "Text describing known constraints, caveats or limitations affecting interpretation.",
+          "context": "Reference metadata for ISCED mapping needs and survey-specific wealth quintiles.",
+          "recommended_representation": "String / reference metadata text.",
+          "standard_source_agency": "SDMX reference metadata candidate",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+          "local_notes": "The exact standard metadata concept for limitations was not confirmed from supplied evidence.",
+          "evidence_quote": "Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification."
+        },
+        {
+          "concept_id": "REVISION_POLICY",
+          "name": "Revision policy",
+          "definition": "Text describing whether and why reported values may be revised.",
+          "context": "Reference metadata for final administrative counts and revised modelled completion estimates.",
+          "recommended_representation": "String / reference metadata text.",
+          "standard_source_agency": "SDMX reference metadata candidate",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+          "local_notes": "Could later be aligned with a standard data revision metadata concept if confirmed.",
+          "evidence_quote": "Administrative counts become final after duplicate removal. Modelled completion estimates may change with revised survey weights."
+        },
+        {
+          "concept_id": "CONFIDENTIALITY_NOTE",
+          "name": "Confidentiality note",
+          "definition": "Text describing confidentiality characteristics of the report or dataset.",
+          "context": "Reference metadata stating that the report is synthetic and contains no person-level or confidential data.",
+          "recommended_representation": "String / reference metadata text.",
+          "standard_source_agency": "SDMX reference metadata candidate",
+          "standard_scheme_id": "not confirmed",
+          "standard_version": "not confirmed",
+          "source_url": "https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf",
+          "local_notes": "Do not confuse this narrative confidentiality note with observation-level confidentiality status unless a coded attribute is later required.",
+          "evidence_quote": "All records and values are synthetic. No person-level or confidential data are included."
+        },
+        {
+          "concept_id": "PUBLICATION_DATE",
+          "name": "Publication date",
+          "definition": "Date on which the report was published.",
+          "context": "Reference metadata for the report publication date.",
+          "recommended_representation": "Date.",
+          "standard_source_agency": "LOCAL",
+          "standard_scheme_id": "not applicable",
+          "standard_version": "1.0",
+          "source_url": "not stated",
+          "local_notes": "No exact SDMX standard concept ID/version for this report-level date was confirmed from supplied evidence.",
+          "evidence_quote": "Publication date: 12 June 2026"
+        }
+      ]
+    }
+  ]
+}

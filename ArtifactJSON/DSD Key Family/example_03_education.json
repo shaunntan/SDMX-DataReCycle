@@ -1,0 +1,287 @@
+{
+  "artifact_type": "DSD / Key Family",
+  "source_report": "example_03_education.pdf",
+  "source_sha256": "e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6",
+  "principles_file": "03_DSD_KEY_FAMILY.txt",
+  "principles_sha256": "b160507103daef8b6531de6e8048ac34026007c3e7b2d46926176d0533671611",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Technical standard",
+      "artifact_id": "SDMX_2_0_INFORMATION_MODEL",
+      "version": "2.0",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf",
+      "evidence": "The principles identify the SDMX 2.0 Information Model as the formal source for SDMX 2.0 artefact definitions and Key Family mechanics, but no fetched excerpt from this specific PDF was supplied in the online evidence block.",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Glossary / cross-domain concepts",
+      "artifact_id": "SDMX_GLOSSARY",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "Fetched glossary evidence includes entries or index references for education level, measure, metadata structures, and notes that codelist identifiers are often the concept ID prefixed by CL_; it specifically gives Observation Status with Concept ID OBS_STATUS and Codelist ID CL_OBS_STATUS.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist catalog",
+      "artifact_id": "SDMX_GLOBAL_REGISTRY_CODELISTS",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "Fetched registry evidence confirms the SDMX Global Registry has a Codelists search/catalog and codelist detail/export functions. The supplied excerpt does not confirm the contents, versions, or fitness of specific codelists such as CL_FREQ or CL_SEX for this report.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographic classification",
+      "artifact_id": "UN_M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "Fetched UN M49 evidence shows country or area numeric and alpha-3 code entries. The education report does not state a reference area, so no UN M49 code is applied in these DSDs.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "UNESCO UIS",
+      "artifact_type": "Education classification",
+      "artifact_id": "ISCED",
+      "version": "not confirmed",
+      "url": "https://www.uis.unesco.org/en/methods-and-tools/isced",
+      "evidence": "The shared source catalog identifies UNESCO ISCED as the education-level classification source to check. No fetched ISCED excerpt or exact mapping evidence was supplied, and the report itself says education-level labels require ISCED mapping review.",
+      "verification_status": "CANDIDATE"
+    }
+  ],
+  "limitations": [
+    "The report does not state a reference area or country; REF_AREA is therefore not included, and geographic scope should be handled as a documented gap rather than inferred from the ministry name.",
+    "Frequency is modelled as annual because the report column is Year and values are calendar years, but no explicit SDMX frequency code is printed in the report.",
+    "Exact versions and semantic fitness of SDMX CL_FREQ, CL_SEX, and unit/status codelists were not confirmed from supplied external evidence; candidate reuse is recorded without claiming confirmation.",
+    "Education-level labels require ISCED mapping review; the enrollment structure therefore uses a local education-level representation pending authoritative mapping.",
+    "Wealth quintiles are explicitly survey-specific; they are modelled with a local codelist and are not silently mapped to an income or distribution classification.",
+    "The report provides no unit multiplier, decimal metadata, confidentiality status code, or observation-level quality flags beyond the printed Unit and Status columns.",
+    "The completion-rate structure treats lower-secondary completion as the fixed statistical scope because the report supplies only a lower-secondary completion table; additional completion cycles in future editions may require adding an education-cycle or indicator dimension.",
+    "The agency identifier SML is a local shorthand for Synthetic Ministry of Learning and is not confirmed as an official SDMX maintenance agency identifier."
+  ],
+  "data_structures": [
+    {
+      "dsd_id": "KF_EDU_ENROLLMENT",
+      "name": "Education enrollment headcount by education level, sex and year",
+      "agency_id": "SML",
+      "version": "1.0-draft",
+      "statistical_scope": "Administrative headcount enrollment counts by education level, sex, and annual time period, with unit and source status qualifiers.",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Coded value; candidate reuse of SDMX CL_FREQ",
+          "codelist_agency": "SDMX",
+          "codelist_id": "CL_FREQ",
+          "codelist_version": "not confirmed",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Annual frequency is inferred from the Year column; the report does not print an explicit frequency code.",
+          "evidence_quote": "Year"
+        },
+        {
+          "position": 2,
+          "concept_id": "EDUCATION_LEVEL",
+          "role": "DIMENSION",
+          "representation": "Local coded value pending ISCED mapping review",
+          "codelist_agency": "SML",
+          "codelist_id": "CL_EDUCATION_LEVEL_LOCAL",
+          "codelist_version": "1.0-draft",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Source values include Primary, Lower secondary, and Upper secondary. ISCED reuse is not confirmed and must be reviewed before production mapping.",
+          "evidence_quote": "Education-level labels require ISCED mapping review."
+        },
+        {
+          "position": 3,
+          "concept_id": "SEX",
+          "role": "DIMENSION",
+          "representation": "Coded value; candidate reuse of SDMX CL_SEX subject to code-level confirmation",
+          "codelist_agency": "SDMX",
+          "codelist_id": "CL_SEX",
+          "codelist_version": "not confirmed",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Source values include Female, Male, and Total. Candidate standard concept/codelist reuse is plausible but exact code mapping was not confirmed from supplied external evidence.",
+          "evidence_quote": "Sex"
+        },
+        {
+          "position": null,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "Calendar year time period",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "GregorianYear",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "The table uses yearly periods 2024 and 2025.",
+          "evidence_quote": "Year"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Numeric observed value",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Decimal",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Primary measure for enrollment headcount; values are counts of learners registered on census day.",
+          "evidence_quote": "Enrollment counts learners registered on census day."
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Local coded value",
+          "codelist_agency": "SML",
+          "codelist_id": "CL_EDU_UNIT_MEASURE_LOCAL",
+          "codelist_version": "1.0-draft",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "The unit is constant as Students for this enrollment table. No authoritative unit codelist mapping was confirmed from supplied evidence.",
+          "evidence_quote": "Unit"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "representation": "Local coded value pending review against SDMX CL_OBS_STATUS or other appropriate status codelist",
+          "codelist_agency": "SML",
+          "codelist_id": "CL_EDU_OBS_STATUS_LOCAL",
+          "codelist_version": "1.0-draft",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "OBSERVATION",
+          "notes": "Source status values include Final and Provisional. The 2025 provisional qualifier varies by period and is modelled at observation level because the DSD does not define a year-specific group.",
+          "evidence_quote": "Footnote: 2025 enrollment is provisional."
+        }
+      ]
+    },
+    {
+      "dsd_id": "KF_EDU_LOWER_SECONDARY_COMPLETION",
+      "name": "Lower-secondary completion rate by wealth quintile, sex and year",
+      "agency_id": "SML",
+      "version": "1.0-draft",
+      "statistical_scope": "Modelled household-survey estimates of lower-secondary completion rates by survey-specific wealth quintile, sex, and annual time period, with unit and modelled-estimate status qualifiers.",
+      "components": [
+        {
+          "position": 1,
+          "concept_id": "FREQ",
+          "role": "DIMENSION",
+          "representation": "Coded value; candidate reuse of SDMX CL_FREQ",
+          "codelist_agency": "SDMX",
+          "codelist_id": "CL_FREQ",
+          "codelist_version": "not confirmed",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Annual frequency is inferred from the Year column; the report does not print an explicit frequency code.",
+          "evidence_quote": "Year"
+        },
+        {
+          "position": 2,
+          "concept_id": "WEALTH_QUINTILE",
+          "role": "DIMENSION",
+          "representation": "Local survey-specific coded value",
+          "codelist_agency": "SML",
+          "codelist_id": "CL_WEALTH_QUINTILE_SURVEY_LOCAL",
+          "codelist_version": "1.0-draft",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Source values include Lowest quintile, Middle quintile, and Highest quintile. The report explicitly warns against silent standard-income-classification mapping.",
+          "evidence_quote": "Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification."
+        },
+        {
+          "position": 3,
+          "concept_id": "SEX",
+          "role": "DIMENSION",
+          "representation": "Coded value; candidate reuse of SDMX CL_SEX subject to code-level confirmation",
+          "codelist_agency": "SDMX",
+          "codelist_id": "CL_SEX",
+          "codelist_version": "not confirmed",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Source values include Female and Male. Candidate standard concept/codelist reuse is plausible but exact code mapping was not confirmed from supplied external evidence.",
+          "evidence_quote": "Sex"
+        },
+        {
+          "position": null,
+          "concept_id": "TIME_PERIOD",
+          "role": "TIME",
+          "representation": "Calendar year time period",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "GregorianYear",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "The table uses yearly period 2024.",
+          "evidence_quote": "Year"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "representation": "Numeric observed value",
+          "codelist_agency": null,
+          "codelist_id": null,
+          "codelist_version": null,
+          "data_type": "Decimal",
+          "usage_status": "MANDATORY",
+          "attachment_level": null,
+          "notes": "Primary measure for the lower-secondary completion rate; values are percentages of the relevant cohort completing the stated education cycle.",
+          "evidence_quote": "Completion rate is the percentage of the relevant cohort completing the stated education cycle."
+        },
+        {
+          "position": null,
+          "concept_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "representation": "Local coded value",
+          "codelist_agency": "SML",
+          "codelist_id": "CL_EDU_UNIT_MEASURE_LOCAL",
+          "codelist_version": "1.0-draft",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "The unit is constant as Percent for this completion-rate table. No authoritative unit codelist mapping was confirmed from supplied evidence.",
+          "evidence_quote": "Unit"
+        },
+        {
+          "position": null,
+          "concept_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "representation": "Local coded value pending review against SDMX CL_OBS_STATUS or another appropriate status codelist",
+          "codelist_agency": "SML",
+          "codelist_id": "CL_EDU_OBS_STATUS_LOCAL",
+          "codelist_version": "1.0-draft",
+          "data_type": "String",
+          "usage_status": "MANDATORY",
+          "attachment_level": "DATASET",
+          "notes": "All reported completion-rate observations are modelled estimates, so the status is attached at dataset level for this structure.",
+          "evidence_quote": "Footnote: All completion rates are modelled estimates."
+        }
+      ]
+    }
+  ],
+  "structure_separation_rationale": "Two Key Families are preserved because the report states that enrollment is an administrative headcount by education level, while completion rates are separately modelled household-survey estimates by wealth quintile and sex. The observations have different statistical measures, units, sources, and identifying dimensions: enrollment requires EDUCATION_LEVEL and uses Students, whereas lower-secondary completion requires WEALTH_QUINTILE and uses Percent. This is a genuine structural difference rather than a visual table split."
+}

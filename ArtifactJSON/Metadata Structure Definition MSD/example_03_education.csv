@@ -1,0 +1,271 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,METADATA_STRUCTURE_DEFINITION
+"[""source_report""]",source_report,string,example_03_education.pdf
+"[""source_sha256""]",source_sha256,string,e105fb9e3f0aed588ecebc84669a8ce8b1002353d5aadef5a7394cdd39f42fe6
+"[""principles_file""]",principles_file,string,05_METADATA_STRUCTURE_DEFINITION_MSD.txt
+"[""principles_sha256""]",principles_sha256,string,f68a27e9065cddc6f9a37f0300505c3f464a60fc4f983f051f8f3b1ea591f257
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concepts
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"Fetched official-source excerpt identifies the SDMX Glossary Version 2.1 and includes entries for Metadata Structure Definition, Metadata update, Institutional mandate, Education level, Geographical coverage, and the cross-domain concept ID COVERAGE_GEO with recommended representation String; Codelist."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Guideline
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,STANDARDISING_REFERENCE_METADATA_REPORTING_IN_SDMX
+"[""standard_references"",1,""version""]",version,string,1.0
+"[""standard_references"",1,""url""]",url,string,https://sdmx.org/wp-content/uploads/Standardising-Reference-Metadata-Reporting-in-SDMX-v1-0.pdf
+"[""standard_references"",1,""evidence""]",evidence,string,The supplied principles identify this guideline as the SDMX reference metadata guideline and as a source for a standard list of reference metadata concepts; no fetched excerpt in the supplied context confirms the exact concept inventory or version details beyond the citation.
+"[""standard_references"",1,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,SDMX
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Technical standard
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,SDMX_2_0_INFORMATION_MODEL
+"[""standard_references"",2,""version""]",version,string,2.0
+"[""standard_references"",2,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_2_0_SECTION_02_InformationModel.pdf
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied principles identify the SDMX 2.0 Information Model as the formal source for SDMX 2.0 artefact definitions, including metadata structures; no fetched excerpt in the supplied context confirms detailed MSD mechanics."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,SDMX
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Registry catalog
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",3,""version""]",version,string,not stated
+"[""standard_references"",3,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",3,""evidence""]",evidence,string,Fetched official-source excerpt shows the SDMX Global Registry interface with Codelists and Metadata Structures among searchable artefact types; it does not confirm any education-specific metadata concept or codelist for this report.
+"[""standard_references"",3,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",4]",4,object,
+"[""standard_references"",4,""agency""]",agency,string,UNESCO-UIS
+"[""standard_references"",4,""artifact_type""]",artifact_type,string,Classification reference
+"[""standard_references"",4,""artifact_id""]",artifact_id,string,ISCED
+"[""standard_references"",4,""version""]",version,string,not stated
+"[""standard_references"",4,""url""]",url,string,https://www.uis.unesco.org/en/methods-and-tools/isced
+"[""standard_references"",4,""evidence""]",evidence,string,The shared source catalog lists UNESCO ISCED as the authoritative source to check for education level classifications. No fetched external excerpt confirming applicable ISCED codes or revision was supplied.
+"[""standard_references"",4,""verification_status""]",verification_status,string,UNVERIFIED
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The report does not state contact information, geographic coverage, source URL, legal or institutional mandate, or a metadata update date distinct from the publication date."
+"[""limitations"",1]",1,string,No exact SDMX Global Reference Metadata Concept Scheme artefact ID and version were confirmed from supplied external evidence for most metadata concepts; candidate SDMX mappings are preserved rather than asserted as confirmed.
+"[""limitations"",2]",2,string,"Education-level labels require ISCED mapping review, so the MSD treats that issue as methodology/comparability metadata and does not assert a confirmed ISCED mapping."
+"[""limitations"",3]",3,string,Wealth quintiles are survey-specific according to the report; the MSD includes them in methodological and limitations metadata and does not silently map them to a standard income classification.
+"[""limitations"",4]",4,string,"Enrollment and completion are methodologically distinct statistical structures: enrollment is an administrative headcount, while completion rates are modelled household-survey estimates. This MSD supports separate dataflow-level metadata, but it is not a DSD."
+"[""limitations"",5]",5,string,Publication date is captured as publication metadata and is not treated as a confirmed metadata update date.
+"[""metadata_structures""]",metadata_structures,array,
+"[""metadata_structures"",0]",0,object,
+"[""metadata_structures"",0,""msd_id""]",msd_id,string,MSD_EDU_REPORT_REFMETA
+"[""metadata_structures"",0,""name""]",name,string,Report-level reference metadata for Education Participation and Completion 2025
+"[""metadata_structures"",0,""agency_id""]",agency_id,string,LOCAL
+"[""metadata_structures"",0,""version""]",version,string,1.0
+"[""metadata_structures"",0,""concepts""]",concepts,array,
+"[""metadata_structures"",0,""concepts"",0]",0,object,
+"[""metadata_structures"",0,""concepts"",0,""concept_id""]",concept_id,string,REPORT_TITLE
+"[""metadata_structures"",0,""concepts"",0,""name""]",name,string,Report title
+"[""metadata_structures"",0,""concepts"",0,""definition""]",definition,string,Title of the statistical report or publication being documented.
+"[""metadata_structures"",0,""concepts"",0,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",0,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",0,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,Extract from the page 1 heading: Education Participation and Completion 2025.
+"[""metadata_structures"",0,""concepts"",0,""source_standard""]",source_standard,string,Local concept; possible mapping to SDMX reference metadata title/publication concept not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",0,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",1]",1,object,
+"[""metadata_structures"",0,""concepts"",1,""concept_id""]",concept_id,string,PUBLISHER
+"[""metadata_structures"",0,""concepts"",1,""name""]",name,string,Publisher
+"[""metadata_structures"",0,""concepts"",1,""definition""]",definition,string,Organisation named as publishing the report.
+"[""metadata_structures"",0,""concepts"",1,""representation""]",representation,string,InternationalString / free text; coded organisation representation may be introduced only if an authoritative organisation scheme is available.
+"[""metadata_structures"",0,""concepts"",1,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",1,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,Extract from page 1 immediately below the report title: Synthetic Ministry of Learning.
+"[""metadata_structures"",0,""concepts"",1,""source_standard""]",source_standard,string,"Local concept; possible relationship to SDMX COMPILING_ORG is unconfirmed because the report states publisher, not necessarily compiling organisation."
+"[""metadata_structures"",0,""concepts"",1,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",2]",2,object,
+"[""metadata_structures"",0,""concepts"",2,""concept_id""]",concept_id,string,PUBLICATION_DATE
+"[""metadata_structures"",0,""concepts"",2,""name""]",name,string,Publication date
+"[""metadata_structures"",0,""concepts"",2,""definition""]",definition,string,Date on which the report was published.
+"[""metadata_structures"",0,""concepts"",2,""representation""]",representation,string,"Date, ISO 8601 recommended for implementation"
+"[""metadata_structures"",0,""concepts"",2,""required""]",required,boolean,true
+"[""metadata_structures"",0,""concepts"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",0,""concepts"",2,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Extract from page 1 line beginning Publication date: 12 June 2026.
+"[""metadata_structures"",0,""concepts"",2,""source_standard""]",source_standard,string,Local concept; no exact SDMX concept ID confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",2,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",0,""concepts"",3]",3,object,
+"[""metadata_structures"",0,""concepts"",3,""concept_id""]",concept_id,string,CONTACT
+"[""metadata_structures"",0,""concepts"",3,""name""]",name,string,Contact
+"[""metadata_structures"",0,""concepts"",3,""definition""]",definition,string,"Contact point for questions about the report, data or metadata."
+"[""metadata_structures"",0,""concepts"",3,""representation""]",representation,string,"InternationalString / free text, or structured contact fields in a later implementation"
+"[""metadata_structures"",0,""concepts"",3,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",3,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",3,""target_attachment""]",target_attachment,string,REPORT
+"[""metadata_structures"",0,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,"The report context does not state a contact. If a metadata set is created from this report alone, populate as not stated."
+"[""metadata_structures"",0,""concepts"",3,""source_standard""]",source_standard,string,SDMX Glossary / Global Reference Metadata candidate concept CONTACT; exact concept definition/version not confirmed from supplied external evidence.
+"[""metadata_structures"",0,""concepts"",3,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",0,""concepts"",4]",4,object,
+"[""metadata_structures"",0,""concepts"",4,""concept_id""]",concept_id,string,META_UPDATE
+"[""metadata_structures"",0,""concepts"",4,""name""]",name,string,Metadata update
+"[""metadata_structures"",0,""concepts"",4,""definition""]",definition,string,"Date or statement identifying when the reference metadata were last updated, if supplied separately from publication date."
+"[""metadata_structures"",0,""concepts"",4,""representation""]",representation,string,Date or InternationalString / free text where only narrative update information is supplied
+"[""metadata_structures"",0,""concepts"",4,""required""]",required,boolean,false
+"[""metadata_structures"",0,""concepts"",4,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",0,""concepts"",4,""target_attachment""]",target_attachment,string,METADATA
+"[""metadata_structures"",0,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,Do not infer this from the publication date. The report context does not state a separate metadata update date; populate as not stated if required.
+"[""metadata_structures"",0,""concepts"",4,""source_standard""]",source_standard,string,SDMX Glossary candidate; fetched excerpt confirms the presence of a Metadata update entry but does not provide enough evidence here to confirm the exact concept ID/version.
+"[""metadata_structures"",0,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1]",1,object,
+"[""metadata_structures"",1,""msd_id""]",msd_id,string,MSD_EDU_DATAFLOW_REFMETA
+"[""metadata_structures"",1,""name""]",name,string,Dataflow-level reference metadata for education participation and completion statistics
+"[""metadata_structures"",1,""agency_id""]",agency_id,string,LOCAL
+"[""metadata_structures"",1,""version""]",version,string,1.0
+"[""metadata_structures"",1,""concepts""]",concepts,array,
+"[""metadata_structures"",1,""concepts"",0]",0,object,
+"[""metadata_structures"",1,""concepts"",0,""concept_id""]",concept_id,string,DATA_DESCRIPTION
+"[""metadata_structures"",1,""concepts"",0,""name""]",name,string,Data description
+"[""metadata_structures"",1,""concepts"",0,""definition""]",definition,string,"Narrative description of the statistical content covered by the dataflow, including the distinction between enrollment counts and completion rates where applicable."
+"[""metadata_structures"",1,""concepts"",0,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",0,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",0,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",0,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",0,""extraction_guidance""]",extraction_guidance,string,"Use the report title, table titles, methodology and definitions to describe the content. Preserve the distinction between Table 1 enrollment and Table 2 lower-secondary completion; do not treat table layout alone as the metadata structure."
+"[""metadata_structures"",1,""concepts"",0,""source_standard""]",source_standard,string,Local concept; possible SDMX reference metadata equivalent not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",0,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",1]",1,object,
+"[""metadata_structures"",1,""concepts"",1,""concept_id""]",concept_id,string,SOURCE_DATA
+"[""metadata_structures"",1,""concepts"",1,""name""]",name,string,Source data
+"[""metadata_structures"",1,""concepts"",1,""definition""]",definition,string,"Source system, survey, administrative register or other data source used to compile the statistics."
+"[""metadata_structures"",1,""concepts"",1,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",1,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",1,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",1,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",1,""extraction_guidance""]",extraction_guidance,string,"Extract from the page 1 Source description section: Synthetic Education Management Information System and Synthetic Household Learning Survey. Where metadata are attached to separate dataflows, associate the administrative system with enrollment and the household survey with completion, consistent with the Methodology section."
+"[""metadata_structures"",1,""concepts"",1,""source_standard""]",source_standard,string,Local concept; possible SDMX reference metadata source-data concept not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",1,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",2]",2,object,
+"[""metadata_structures"",1,""concepts"",2,""concept_id""]",concept_id,string,METHODOLOGY
+"[""metadata_structures"",1,""concepts"",2,""name""]",name,string,Methodology
+"[""metadata_structures"",1,""concepts"",2,""definition""]",definition,string,"Narrative description of the methods used to produce the statistics, including administrative counting, survey estimation, modelling or other compilation methods."
+"[""metadata_structures"",1,""concepts"",2,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",2,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",2,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",2,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",2,""extraction_guidance""]",extraction_guidance,string,Extract from page 1 Methodology section: Enrollment is an administrative headcount by education level. Completion rates are separately modelled household-survey estimates by wealth quintile and sex.
+"[""metadata_structures"",1,""concepts"",2,""source_standard""]",source_standard,string,Local concept; use narrative metadata rather than forcing methodology into DSD dimensions or short data attributes. Exact SDMX concept ID not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",2,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",3]",3,object,
+"[""metadata_structures"",1,""concepts"",3,""concept_id""]",concept_id,string,STAT_CONCEPT_DEF
+"[""metadata_structures"",1,""concepts"",3,""name""]",name,string,Statistical concepts and definitions
+"[""metadata_structures"",1,""concepts"",3,""definition""]",definition,string,Definitions of the principal statistical concepts and measures used in the dataflow.
+"[""metadata_structures"",1,""concepts"",3,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",3,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",3,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",3,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",3,""extraction_guidance""]",extraction_guidance,string,Extract from page 1 Definitions section: Enrollment counts learners registered on census day. Completion rate is the percentage of the relevant cohort completing the stated education cycle.
+"[""metadata_structures"",1,""concepts"",3,""source_standard""]",source_standard,string,Local concept; possible SDMX statistical concepts/definitions metadata mapping not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",3,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",4]",4,object,
+"[""metadata_structures"",1,""concepts"",4,""concept_id""]",concept_id,string,STATISTICAL_UNIT
+"[""metadata_structures"",1,""concepts"",4,""name""]",name,string,Statistical unit
+"[""metadata_structures"",1,""concepts"",4,""definition""]",definition,string,"Entity or unit to which the statistics relate, such as learners, cohorts or survey respondents, as stated or implied by the definitions."
+"[""metadata_structures"",1,""concepts"",4,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",4,""required""]",required,boolean,false
+"[""metadata_structures"",1,""concepts"",4,""usage_status""]",usage_status,string,CONDITIONAL
+"[""metadata_structures"",1,""concepts"",4,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",4,""extraction_guidance""]",extraction_guidance,string,"For enrollment, derive cautiously from the definition referring to learners registered on census day. For completion rates, derive cautiously from the definition referring to the relevant cohort. If the metadata set requires an explicit unit and no further documentation is available, record the uncertainty in free text."
+"[""metadata_structures"",1,""concepts"",4,""source_standard""]",source_standard,string,Local concept; no exact SDMX concept ID confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",4,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",5]",5,object,
+"[""metadata_structures"",1,""concepts"",5,""concept_id""]",concept_id,string,COVERAGE_TIME
+"[""metadata_structures"",1,""concepts"",5,""name""]",name,string,Time coverage
+"[""metadata_structures"",1,""concepts"",5,""definition""]",definition,string,"Time periods covered by the dataflow or report, expressed as a narrative range or list when needed for reference metadata."
+"[""metadata_structures"",1,""concepts"",5,""representation""]",representation,string,Time period range/list as text; derive from TIME_PERIOD values and do not create an unnecessary codelist
+"[""metadata_structures"",1,""concepts"",5,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",5,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",5,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",5,""extraction_guidance""]",extraction_guidance,string,Derive from the Year column in the relevant tables: enrollment includes 2024 and 2025; lower-secondary completion includes 2024 in the supplied table.
+"[""metadata_structures"",1,""concepts"",5,""source_standard""]",source_standard,string,Local concept; related SDMX Glossary time coverage terms are not fully confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",5,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",6]",6,object,
+"[""metadata_structures"",1,""concepts"",6,""concept_id""]",concept_id,string,COVERAGE_GEO
+"[""metadata_structures"",1,""concepts"",6,""name""]",name,string,Geographical coverage
+"[""metadata_structures"",1,""concepts"",6,""definition""]",definition,string,"Geographic extent covered by the statistics, distinct from a DSD reference area dimension."
+"[""metadata_structures"",1,""concepts"",6,""representation""]",representation,string,String; Codelist
+"[""metadata_structures"",1,""concepts"",6,""required""]",required,boolean,false
+"[""metadata_structures"",1,""concepts"",6,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",1,""concepts"",6,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",6,""extraction_guidance""]",extraction_guidance,string,"The report context does not state geographic coverage. If a metadata set is created from this report alone, populate as not stated; do not infer national coverage from the ministry name."
+"[""metadata_structures"",1,""concepts"",6,""source_standard""]",source_standard,string,SDMX Glossary 2.1 cross-domain concept confirmed in supplied official-source excerpt for concept ID COVERAGE_GEO.
+"[""metadata_structures"",1,""concepts"",6,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",7]",7,object,
+"[""metadata_structures"",1,""concepts"",7,""concept_id""]",concept_id,string,DATA_REV
+"[""metadata_structures"",1,""concepts"",7,""name""]",name,string,Data revision
+"[""metadata_structures"",1,""concepts"",7,""definition""]",definition,string,"Revision policy or practice affecting the reported statistics, including finalisation of administrative counts or changes to modelled estimates."
+"[""metadata_structures"",1,""concepts"",7,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",7,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",7,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",7,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",7,""extraction_guidance""]",extraction_guidance,string,Extract from page 1 Revision policy section: Administrative counts become final after duplicate removal. Modelled completion estimates may change with revised survey weights.
+"[""metadata_structures"",1,""concepts"",7,""source_standard""]",source_standard,string,SDMX Glossary / Global Reference Metadata candidate concept DATA_REV; exact concept definition/version not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",7,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",8]",8,object,
+"[""metadata_structures"",1,""concepts"",8,""concept_id""]",concept_id,string,CONF
+"[""metadata_structures"",1,""concepts"",8,""name""]",name,string,Confidentiality
+"[""metadata_structures"",1,""concepts"",8,""definition""]",definition,string,"Confidentiality policy, confidentiality status, or statement about confidential data in the report or dataflow."
+"[""metadata_structures"",1,""concepts"",8,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",8,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",8,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",8,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",8,""extraction_guidance""]",extraction_guidance,string,Extract from page 1 Confidentiality section: All records and values are synthetic. No person-level or confidential data are included.
+"[""metadata_structures"",1,""concepts"",8,""source_standard""]",source_standard,string,SDMX Glossary / Global Reference Metadata candidate concept CONF; exact concept definition/version not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",8,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",9]",9,object,
+"[""metadata_structures"",1,""concepts"",9,""concept_id""]",concept_id,string,LIMITATIONS
+"[""metadata_structures"",1,""concepts"",9,""name""]",name,string,Caveats and limitations
+"[""metadata_structures"",1,""concepts"",9,""definition""]",definition,string,"Caveats, warnings, restrictions on interpretation, or recommended limitations on use of the statistics."
+"[""metadata_structures"",1,""concepts"",9,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",9,""required""]",required,boolean,true
+"[""metadata_structures"",1,""concepts"",9,""usage_status""]",usage_status,string,MANDATORY
+"[""metadata_structures"",1,""concepts"",9,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",9,""extraction_guidance""]",extraction_guidance,string,Extract from page 1 Caveats and limitations section: Education-level labels require ISCED mapping review. Wealth quintiles are survey-specific and should not be silently mapped to a standard income classification. Also retain relevant table footnotes about provisional enrollment and modelled completion estimates when preparing metadata values.
+"[""metadata_structures"",1,""concepts"",9,""source_standard""]",source_standard,string,Local concept; possible mapping to a SDMX recommended uses and limitations metadata concept is unconfirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",9,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",10]",10,object,
+"[""metadata_structures"",1,""concepts"",10,""concept_id""]",concept_id,string,COMPARABILITY
+"[""metadata_structures"",1,""concepts"",10,""name""]",name,string,Comparability
+"[""metadata_structures"",1,""concepts"",10,""definition""]",definition,string,"Information on comparability issues affecting interpretation across classifications, categories, data sources or periods."
+"[""metadata_structures"",1,""concepts"",10,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",10,""required""]",required,boolean,false
+"[""metadata_structures"",1,""concepts"",10,""usage_status""]",usage_status,string,CONDITIONAL
+"[""metadata_structures"",1,""concepts"",10,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",10,""extraction_guidance""]",extraction_guidance,string,"Populate when classification or source comparability issues are relevant. For this report, use the caveats on ISCED mapping review and survey-specific wealth quintiles. Do not assert an ISCED or income-classification mapping until reviewed."
+"[""metadata_structures"",1,""concepts"",10,""source_standard""]",source_standard,string,SDMX Glossary / Global Reference Metadata candidate concept COMPARABILITY; exact concept definition/version not confirmed from supplied external evidence.
+"[""metadata_structures"",1,""concepts"",10,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""metadata_structures"",1,""concepts"",11]",11,object,
+"[""metadata_structures"",1,""concepts"",11,""concept_id""]",concept_id,string,STATUS_NOTE
+"[""metadata_structures"",1,""concepts"",11,""name""]",name,string,Status note
+"[""metadata_structures"",1,""concepts"",11,""definition""]",definition,string,Narrative note explaining status statements or footnotes that affect interpretation but are not themselves structural dimensions.
+"[""metadata_structures"",1,""concepts"",11,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",11,""required""]",required,boolean,false
+"[""metadata_structures"",1,""concepts"",11,""usage_status""]",usage_status,string,CONDITIONAL
+"[""metadata_structures"",1,""concepts"",11,""target_attachment""]",target_attachment,string,DATASET
+"[""metadata_structures"",1,""concepts"",11,""extraction_guidance""]",extraction_guidance,string,"Use for dataset-level notes such as page 2 Footnote: 2025 enrollment is provisional. and page 3 Footnote: All completion rates are modelled estimates. Keep coded observation status, if modelled in the DSD, separate from this narrative metadata."
+"[""metadata_structures"",1,""concepts"",11,""source_standard""]",source_standard,string,"Local concept; observation status codelist reuse belongs to DSD/data attributes, not to this MSD."
+"[""metadata_structures"",1,""concepts"",11,""source_url""]",source_url,string,not stated
+"[""metadata_structures"",1,""concepts"",12]",12,object,
+"[""metadata_structures"",1,""concepts"",12,""concept_id""]",concept_id,string,INST_MANDATE
+"[""metadata_structures"",1,""concepts"",12,""name""]",name,string,Institutional mandate
+"[""metadata_structures"",1,""concepts"",12,""definition""]",definition,string,"Legal or institutional mandate under which the statistics are collected, compiled or disseminated."
+"[""metadata_structures"",1,""concepts"",12,""representation""]",representation,string,InternationalString / free text
+"[""metadata_structures"",1,""concepts"",12,""required""]",required,boolean,false
+"[""metadata_structures"",1,""concepts"",12,""usage_status""]",usage_status,string,OPTIONAL
+"[""metadata_structures"",1,""concepts"",12,""target_attachment""]",target_attachment,string,DATAFLOW
+"[""metadata_structures"",1,""concepts"",12,""extraction_guidance""]",extraction_guidance,string,"The report context does not state a legal or institutional mandate. If a metadata set is created from this report alone, populate as not stated."
+"[""metadata_structures"",1,""concepts"",12,""source_standard""]",source_standard,string,SDMX Glossary candidate; fetched excerpt confirms the presence of Institutional mandate entries but not a full concept definition or exact concept ID/version for this implementation.
+"[""metadata_structures"",1,""concepts"",12,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm

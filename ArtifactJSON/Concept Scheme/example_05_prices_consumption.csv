@@ -1,0 +1,205 @@
+﻿JSON_PATH,FIELD,VALUE_TYPE,VALUE
+[],$,object,
+"[""artifact_type""]",artifact_type,string,CONCEPT_SCHEME
+"[""source_report""]",source_report,string,example_05_prices_consumption.pdf
+"[""source_sha256""]",source_sha256,string,71328bdafe5e983b274bb367c812a1461dce96de5c4fd9f853b4780c67e9d7d5
+"[""principles_file""]",principles_file,string,01_CONCEPT_SCHEME.txt
+"[""principles_sha256""]",principles_sha256,string,618bb9784690488e3247b9e36acd0973bc8e6b4542b5bff1cc7ba73b7aa49362
+"[""retrieved_chunk_ids""]",retrieved_chunk_ids,array,
+"[""retrieved_chunk_ids"",0]",0,integer,1
+"[""retrieved_chunk_ids"",1]",1,integer,2
+"[""retrieved_chunk_ids"",2]",2,integer,3
+"[""retrieved_chunk_ids"",3]",3,integer,4
+"[""standard_references""]",standard_references,array,
+"[""standard_references"",0]",0,object,
+"[""standard_references"",0,""agency""]",agency,string,SDMX
+"[""standard_references"",0,""artifact_type""]",artifact_type,string,Glossary / cross-domain concept guidance
+"[""standard_references"",0,""artifact_id""]",artifact_id,string,SDMX_GLOSSARY
+"[""standard_references"",0,""version""]",version,string,2.1
+"[""standard_references"",0,""url""]",url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""standard_references"",0,""evidence""]",evidence,string,"The supplied official-source excerpt states that Cross-Domain Concepts are intended for reuse in statistical data and metadata exchange and that, when used, they should conform to specified names, IDs, representations and codelists. The excerpt explicitly gives OBS_STATUS as the Concept ID for Observation Status and CL_OBS_STATUS as its associated codelist example."
+"[""standard_references"",0,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",1]",1,object,
+"[""standard_references"",1,""agency""]",agency,string,SDMX
+"[""standard_references"",1,""artifact_type""]",artifact_type,string,Registry catalog
+"[""standard_references"",1,""artifact_id""]",artifact_id,string,SDMX_GLOBAL_REGISTRY_CODELISTS
+"[""standard_references"",1,""version""]",version,string,not stated
+"[""standard_references"",1,""url""]",url,string,https://registry.sdmx.org/items/codelist.html
+"[""standard_references"",1,""evidence""]",evidence,string,The supplied official-source excerpt confirms that the SDMX Global Registry provides searchable structural artefacts including Concept Schemes and Codelists. It does not by itself confirm that any specific codelist codes fit this report.
+"[""standard_references"",1,""verification_status""]",verification_status,string,CONFIRMED
+"[""standard_references"",2]",2,object,
+"[""standard_references"",2,""agency""]",agency,string,UNSD
+"[""standard_references"",2,""artifact_type""]",artifact_type,string,Classification candidate
+"[""standard_references"",2,""artifact_id""]",artifact_id,string,COICOP
+"[""standard_references"",2,""version""]",version,string,not confirmed
+"[""standard_references"",2,""url""]",url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""standard_references"",2,""evidence""]",evidence,string,"The supplied reference catalog identifies COICOP as the relevant authoritative classification area for consumption-purpose classifications. The report states that the consumption divisions resemble COICOP but that the revision is not confirmed, so COICOP reuse is only a candidate pending verification of revision and scope."
+"[""standard_references"",2,""verification_status""]",verification_status,string,CANDIDATE
+"[""standard_references"",3]",3,object,
+"[""standard_references"",3,""agency""]",agency,string,ISO
+"[""standard_references"",3,""artifact_type""]",artifact_type,string,Currency code standard candidate
+"[""standard_references"",3,""artifact_id""]",artifact_id,string,ISO_4217
+"[""standard_references"",3,""version""]",version,string,not confirmed
+"[""standard_references"",3,""url""]",url,string,https://www.iso.org/standard/64758.html
+"[""standard_references"",3,""evidence""]",evidence,string,"The supplied reference catalog identifies ISO 4217 as the currency standard to check. The report only says local currency and does not name the currency, so a specific ISO 4217 currency code cannot be confirmed."
+"[""standard_references"",3,""verification_status""]",verification_status,string,CANDIDATE
+"[""limitations""]",limitations,array,
+"[""limitations"",0]",0,string,"The report explicitly states that household spending is not a CPI observation, so at least two statistical structures are likely justified even though they can share concepts in one concept scheme."
+"[""limitations"",1]",1,string,"The exact SDMX cross-domain concept scheme identifiers and versions for FREQ, TIME_PERIOD, OBS_VALUE, UNIT_MEASURE and several other common concepts were not fully confirmed by supplied external evidence; reuse is therefore documented as candidate or locally constrained rather than confirmed."
+"[""limitations"",2]",2,string,"Consumption divisions resemble COICOP, but the report says the COICOP revision is not confirmed; no definitive COICOP codelist or revision is assigned."
+"[""limitations"",3]",3,string,"The report does not name the local currency, so the CURRENCY concept is retained as a gap and no ISO 4217 code is assigned."
+"[""limitations"",4]",4,string,No explicit reference area or country field appears in the tables; the national context is implied by the publishing institute name only and is not modelled here as REF_AREA.
+"[""limitations"",5]",5,string,"Mappings for source statuses such as Final, Provisional and Survey estimate to any standard SDMX observation-status codelist are not confirmed from the supplied evidence."
+"[""concept_schemes""]",concept_schemes,array,
+"[""concept_schemes"",0]",0,object,
+"[""concept_schemes"",0,""scheme_id""]",scheme_id,string,CS_EX05_PRICES_CONSUMPTION
+"[""concept_schemes"",0,""name""]",name,string,Concept scheme for consumer prices and household spending
+"[""concept_schemes"",0,""agency_id""]",agency_id,string,SYNTH_NSI
+"[""concept_schemes"",0,""version""]",version,string,1.0
+"[""concept_schemes"",0,""concepts""]",concepts,array,
+"[""concept_schemes"",0,""concepts"",0]",0,object,
+"[""concept_schemes"",0,""concepts"",0,""concept_id""]",concept_id,string,FREQ
+"[""concept_schemes"",0,""concepts"",0,""name""]",name,string,Frequency
+"[""concept_schemes"",0,""concepts"",0,""definition""]",definition,string,Rate at which observations are observed or reported over time.
+"[""concept_schemes"",0,""concepts"",0,""context""]",context,string,Used to distinguish the monthly CPI observations from the annual household spending survey estimates where frequency is required by the data structure.
+"[""concept_schemes"",0,""concepts"",0,""recommended_representation""]",recommended_representation,string,"Codelist, candidate SDMX CL_FREQ; fixed value may be used at dataflow or structure level if not present as a reported field."
+"[""concept_schemes"",0,""concepts"",0,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",0,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",0,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",0,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",0,""local_notes""]",local_notes,string,"Candidate reuse of the SDMX cross-domain frequency concept. The report evidences monthly CPI and annual household spending, but supplied external evidence does not confirm the exact concept scheme ID/version or code mappings."
+"[""concept_schemes"",0,""concepts"",0,""evidence_quote""]",evidence_quote,string,"The CPI is a monthly fixed-basket index classified by consumption division. Household spending is an annual survey estimate by residence and expenditure quintile and is
+not a CPI observation."
+"[""concept_schemes"",0,""concepts"",1]",1,object,
+"[""concept_schemes"",0,""concepts"",1,""concept_id""]",concept_id,string,TIME_PERIOD
+"[""concept_schemes"",0,""concepts"",1,""name""]",name,string,Time period
+"[""concept_schemes"",0,""concepts"",1,""definition""]",definition,string,Time period to which the observation refers.
+"[""concept_schemes"",0,""concepts"",1,""context""]",context,string,"CPI rows use a month, while household spending rows use a year."
+"[""concept_schemes"",0,""concepts"",1,""recommended_representation""]",recommended_representation,string,Time period; monthly period for CPI and annual period for household spending.
+"[""concept_schemes"",0,""concepts"",1,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",1,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",1,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",1,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",1,""local_notes""]",local_notes,string,Candidate reuse of the SDMX common time-period concept. Exact SDMX concept scheme ID/version was not confirmed in the supplied external evidence.
+"[""concept_schemes"",0,""concepts"",1,""evidence_quote""]",evidence_quote,string,Residence                        Expenditure quintile               Year                             Value                               Unit                               Status
+"[""concept_schemes"",0,""concepts"",2]",2,object,
+"[""concept_schemes"",0,""concepts"",2,""concept_id""]",concept_id,string,OBS_VALUE
+"[""concept_schemes"",0,""concepts"",2,""name""]",name,string,Observation value
+"[""concept_schemes"",0,""concepts"",2,""definition""]",definition,string,Numeric value of the measured variable.
+"[""concept_schemes"",0,""concepts"",2,""context""]",context,string,Carries the CPI index value in the price structure and the mean monthly household spending value in the spending structure.
+"[""concept_schemes"",0,""concepts"",2,""recommended_representation""]",recommended_representation,string,Numeric decimal.
+"[""concept_schemes"",0,""concepts"",2,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",2,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",2,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",2,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",2,""local_notes""]",local_notes,string,Candidate reuse of the SDMX common observation-value concept. The source uses the labels Index and Value for the two statistical measures.
+"[""concept_schemes"",0,""concepts"",2,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100. Household spending is mean monthly consumption expenditure per household.
+"[""concept_schemes"",0,""concepts"",3]",3,object,
+"[""concept_schemes"",0,""concepts"",3,""concept_id""]",concept_id,string,UNIT_MEASURE
+"[""concept_schemes"",0,""concepts"",3,""name""]",name,string,Unit of measure
+"[""concept_schemes"",0,""concepts"",3,""definition""]",definition,string,Unit in which the observation value is expressed.
+"[""concept_schemes"",0,""concepts"",3,""context""]",context,string,CPI uses an index unit with base 2023=100; household spending uses local currency per household per month.
+"[""concept_schemes"",0,""concepts"",3,""recommended_representation""]",recommended_representation,string,Codelist or controlled string; local unit list required unless a suitable standard unit list is verified.
+"[""concept_schemes"",0,""concepts"",3,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",3,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",3,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",3,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",3,""local_notes""]",local_notes,string,Candidate reuse of the SDMX common unit-of-measure concept. Specific standard unit codes are not confirmed; the source unit strings should be mapped later.
+"[""concept_schemes"",0,""concepts"",3,""evidence_quote""]",evidence_quote,string,Unit
+"[""concept_schemes"",0,""concepts"",4]",4,object,
+"[""concept_schemes"",0,""concepts"",4,""concept_id""]",concept_id,string,OBS_STATUS
+"[""concept_schemes"",0,""concepts"",4,""name""]",name,string,Observation status
+"[""concept_schemes"",0,""concepts"",4,""definition""]",definition,string,Status or quality information associated with an observation value.
+"[""concept_schemes"",0,""concepts"",4,""context""]",context,string,"Used for source statuses such as final, provisional and survey estimate. Survey estimate may require local status treatment if no standard code fits."
+"[""concept_schemes"",0,""concepts"",4,""recommended_representation""]",recommended_representation,string,"Codelist, candidate SDMX CL_OBS_STATUS; local extension may be needed."
+"[""concept_schemes"",0,""concepts"",4,""standard_source_agency""]",standard_source_agency,string,SDMX
+"[""concept_schemes"",0,""concepts"",4,""standard_scheme_id""]",standard_scheme_id,string,not confirmed
+"[""concept_schemes"",0,""concepts"",4,""standard_version""]",standard_version,string,"2.1 glossary confirms concept ID example, not full concept scheme version"
+"[""concept_schemes"",0,""concepts"",4,""source_url""]",source_url,string,https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm
+"[""concept_schemes"",0,""concepts"",4,""local_notes""]",local_notes,string,"The supplied SDMX Glossary excerpt confirms OBS_STATUS as a concept ID example and CL_OBS_STATUS as the associated codelist pattern. Specific mappings of Final, Provisional and Survey estimate are not confirmed."
+"[""concept_schemes"",0,""concepts"",4,""evidence_quote""]",evidence_quote,string,The latest CPI month is provisional. Household estimates are revised only for processing errors or new calibration weights.
+"[""concept_schemes"",0,""concepts"",5]",5,object,
+"[""concept_schemes"",0,""concepts"",5,""concept_id""]",concept_id,string,CONSUMPTION_DIVISION
+"[""concept_schemes"",0,""concepts"",5,""name""]",name,string,Consumption division
+"[""concept_schemes"",0,""concepts"",5,""definition""]",definition,string,Consumption-purpose division used to classify CPI observations.
+"[""concept_schemes"",0,""concepts"",5,""context""]",context,string,Applies to the CPI structure only. The report says the divisions resemble COICOP but does not confirm the COICOP revision.
+"[""concept_schemes"",0,""concepts"",5,""recommended_representation""]",recommended_representation,string,Codelist; local consumption-division list with candidate mapping to COICOP after revision verification.
+"[""concept_schemes"",0,""concepts"",5,""standard_source_agency""]",standard_source_agency,string,UNSD candidate
+"[""concept_schemes"",0,""concepts"",5,""standard_scheme_id""]",standard_scheme_id,string,COICOP not confirmed
+"[""concept_schemes"",0,""concepts"",5,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",5,""source_url""]",source_url,string,https://unstats.un.org/unsd/classifications/coicop
+"[""concept_schemes"",0,""concepts"",5,""local_notes""]",local_notes,string,"Do not assign a confirmed COICOP concept or codelist until the revision and scope are verified. Source labels include Food and non-alcoholic beverages, Housing and utilities, and Transport."
+"[""concept_schemes"",0,""concepts"",5,""evidence_quote""]",evidence_quote,string,Consumption divisions resemble COICOP but the revision is not confirmed. The report does not name the local currency. Survey estimates are subject to sampling error.
+"[""concept_schemes"",0,""concepts"",6]",6,object,
+"[""concept_schemes"",0,""concepts"",6,""concept_id""]",concept_id,string,BASE_PERIOD
+"[""concept_schemes"",0,""concepts"",6,""name""]",name,string,Base period
+"[""concept_schemes"",0,""concepts"",6,""definition""]",definition,string,Reference period to which an index value is set equal to its base value.
+"[""concept_schemes"",0,""concepts"",6,""context""]",context,string,Used to qualify CPI observations where the index is expressed relative to 2023=100.
+"[""concept_schemes"",0,""concepts"",6,""recommended_representation""]",recommended_representation,string,Time period or controlled string.
+"[""concept_schemes"",0,""concepts"",6,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",6,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",6,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",6,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""concept_schemes"",0,""concepts"",6,""local_notes""]",local_notes,string,Model as a CPI attribute if the base period is not embedded in UNIT_MEASURE. No authoritative standard concept/version was confirmed from supplied evidence.
+"[""concept_schemes"",0,""concepts"",6,""evidence_quote""]",evidence_quote,string,CPI measures price change relative to 2023=100. Household spending is mean monthly consumption expenditure per household.
+"[""concept_schemes"",0,""concepts"",7]",7,object,
+"[""concept_schemes"",0,""concepts"",7,""concept_id""]",concept_id,string,RESIDENCE_TYPE
+"[""concept_schemes"",0,""concepts"",7,""name""]",name,string,Residence type
+"[""concept_schemes"",0,""concepts"",7,""definition""]",definition,string,Type of household residence used to disaggregate household spending estimates.
+"[""concept_schemes"",0,""concepts"",7,""context""]",context,string,"Applies to the household spending structure, with source categories Urban and Rural."
+"[""concept_schemes"",0,""concepts"",7,""recommended_representation""]",recommended_representation,string,Codelist; local residence-type list unless a suitable standard degree-of-urbanisation or residence classification is verified.
+"[""concept_schemes"",0,""concepts"",7,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",7,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",7,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",7,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""concept_schemes"",0,""concepts"",7,""local_notes""]",local_notes,string,Not mapped to an external degree-of-urbanisation codelist because the report only says residence and provides Urban/Rural values without a classification definition.
+"[""concept_schemes"",0,""concepts"",7,""evidence_quote""]",evidence_quote,string,"Household spending is an annual survey estimate by residence and expenditure quintile and is
+not a CPI observation."
+"[""concept_schemes"",0,""concepts"",8]",8,object,
+"[""concept_schemes"",0,""concepts"",8,""concept_id""]",concept_id,string,EXPENDITURE_QUINTILE
+"[""concept_schemes"",0,""concepts"",8,""name""]",name,string,Expenditure quintile
+"[""concept_schemes"",0,""concepts"",8,""definition""]",definition,string,Household expenditure distribution quintile used to disaggregate household spending estimates.
+"[""concept_schemes"",0,""concepts"",8,""context""]",context,string,Applies to the household spending structure; the report includes lowest and highest quintile values and defines quintiles within the synthetic survey distribution.
+"[""concept_schemes"",0,""concepts"",8,""recommended_representation""]",recommended_representation,string,Codelist; local quintile list.
+"[""concept_schemes"",0,""concepts"",8,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",8,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",8,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",8,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""concept_schemes"",0,""concepts"",8,""local_notes""]",local_notes,string,A local codelist is required unless an external survey-distribution quintile scheme is later verified. The report does not define middle quintiles in the extracted rows.
+"[""concept_schemes"",0,""concepts"",8,""evidence_quote""]",evidence_quote,string,Footnote: Quintiles are defined within the synthetic survey distribution.
+"[""concept_schemes"",0,""concepts"",9]",9,object,
+"[""concept_schemes"",0,""concepts"",9,""concept_id""]",concept_id,string,CURRENCY
+"[""concept_schemes"",0,""concepts"",9,""name""]",name,string,Currency
+"[""concept_schemes"",0,""concepts"",9,""definition""]",definition,string,Currency in which a monetary observation value is expressed.
+"[""concept_schemes"",0,""concepts"",9,""context""]",context,string,"Needed to make household spending values interpretable, but the report only states local currency and does not name the currency."
+"[""concept_schemes"",0,""concepts"",9,""recommended_representation""]",recommended_representation,string,"Codelist, candidate ISO 4217 if the local currency can be identified."
+"[""concept_schemes"",0,""concepts"",9,""standard_source_agency""]",standard_source_agency,string,ISO candidate
+"[""concept_schemes"",0,""concepts"",9,""standard_scheme_id""]",standard_scheme_id,string,ISO_4217
+"[""concept_schemes"",0,""concepts"",9,""standard_version""]",standard_version,string,not confirmed
+"[""concept_schemes"",0,""concepts"",9,""source_url""]",source_url,string,https://www.iso.org/standard/64758.html
+"[""concept_schemes"",0,""concepts"",9,""local_notes""]",local_notes,string,Specific currency code cannot be assigned from the report. Preserve as an explicit gap for later enrichment.
+"[""concept_schemes"",0,""concepts"",9,""evidence_quote""]",evidence_quote,string,The report does not name the local currency.
+"[""concept_schemes"",0,""concepts"",10]",10,object,
+"[""concept_schemes"",0,""concepts"",10,""concept_id""]",concept_id,string,STAT_UNIT
+"[""concept_schemes"",0,""concepts"",10,""name""]",name,string,Statistical unit
+"[""concept_schemes"",0,""concepts"",10,""definition""]",definition,string,Entity about which the household spending observation is measured.
+"[""concept_schemes"",0,""concepts"",10,""context""]",context,string,"For household spending, the reported mean consumption expenditure is per household."
+"[""concept_schemes"",0,""concepts"",10,""recommended_representation""]",recommended_representation,string,Codelist or controlled string.
+"[""concept_schemes"",0,""concepts"",10,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",10,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",10,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",10,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""concept_schemes"",0,""concepts"",10,""local_notes""]",local_notes,string,"The household statistical unit is evidenced by the report, but no authoritative standard concept/version was confirmed from supplied external evidence."
+"[""concept_schemes"",0,""concepts"",10,""evidence_quote""]",evidence_quote,string,Household spending is mean monthly consumption expenditure per household.
+"[""concept_schemes"",0,""concepts"",11]",11,object,
+"[""concept_schemes"",0,""concepts"",11,""concept_id""]",concept_id,string,SOURCE_DATASET
+"[""concept_schemes"",0,""concepts"",11,""name""]",name,string,Source dataset
+"[""concept_schemes"",0,""concepts"",11,""definition""]",definition,string,Survey or source collection from which the observations are derived.
+"[""concept_schemes"",0,""concepts"",11,""context""]",context,string,Can be used as metadata or an attribute to identify that CPI and spending values come from different synthetic source surveys.
+"[""concept_schemes"",0,""concepts"",11,""recommended_representation""]",recommended_representation,string,String or local codelist.
+"[""concept_schemes"",0,""concepts"",11,""standard_source_agency""]",standard_source_agency,string,not stated
+"[""concept_schemes"",0,""concepts"",11,""standard_scheme_id""]",standard_scheme_id,string,not stated
+"[""concept_schemes"",0,""concepts"",11,""standard_version""]",standard_version,string,not stated
+"[""concept_schemes"",0,""concepts"",11,""source_url""]",source_url,string,example_05_prices_consumption.pdf
+"[""concept_schemes"",0,""concepts"",11,""local_notes""]",local_notes,string,Prefer reference metadata for narrative source descriptions; include as a concept only if a structure needs a compact source attribute.
+"[""concept_schemes"",0,""concepts"",11,""evidence_quote""]",evidence_quote,string,Synthetic Consumer Price Survey and Synthetic Household Budget Survey.

@@ -1,0 +1,27 @@
+{
+  "artifact_type": "DATAFLOW",
+  "source_report": "04_sdmx_21_external_trade_full_case.xml",
+  "source_sha256": "d67c55d4a879120a8b471479157d48475620e2b1f1536f3193f84677503eb720",
+  "principles_file": "04_DATAFLOW.txt",
+  "principles_sha256": "0d9fa0d18ab9a48af64e7949ab46e4890a841e3f801789a6d8edaf89c512dd74",
+  "retrieved_chunk_ids": [],
+  "standard_references": [],
+  "limitations": [
+    "Mechanically converted from XML; no AI interpretation was used.",
+    "Fields absent from the XML are explicitly marked as not stated or inferred only from XML structure."
+  ],
+  "dataflows": [
+    {
+      "dataflow_id": "DF_TRD",
+      "name": "External Trade Statistics",
+      "agency_id": "DEMO",
+      "version": "1.0",
+      "dsd_id": "DSD_TRD",
+      "dsd_agency_id": "DEMO",
+      "dsd_version": "1.0",
+      "description": "External Trade Statistics",
+      "coverage": "External Trade Statistics",
+      "evidence_quote": "External Trade Statistics"
+    }
+  ]
+}

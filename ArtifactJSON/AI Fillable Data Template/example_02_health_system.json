@@ -1,0 +1,1274 @@
+{
+  "artifact_type": "AI-FILLABLE DATA TEMPLATE",
+  "source_report": "example_02_health_system.pdf",
+  "source_sha256": "5809bc66126763ceddfa055d1b6e31010f5e34aba18bb9d5c2413fbe8f3ace23",
+  "principles_file": "07_AI_FILLABLE_DATA_TEMPLATE.txt",
+  "principles_sha256": "3a509323649b36f6b30b01403a9fd91c3d0de9f8e89165ff13a9e862fb01752b",
+  "retrieved_chunk_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "standard_references": [
+    {
+      "agency": "SDMX",
+      "artifact_type": "Concepts / cross-domain concepts",
+      "artifact_id": "SDMX Glossary / Cross-Domain Concepts",
+      "version": "2.1",
+      "url": "https://sdmx.org/wp-content/uploads/SDMX_Glossary_Version_2_1_December_2020.htm",
+      "evidence": "The supplied glossary excerpt supports reuse of common SDMX concept identifiers, including OBS_STATUS with codelist ID CL_OBS_STATUS, and refers to Reference area as a DSD dimension. It does not confirm all detailed codelist versions or code memberships used in this template.",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "agency": "SDMX",
+      "artifact_type": "Codelist catalog",
+      "artifact_id": "SDMX Global Registry Codelists",
+      "version": "not stated",
+      "url": "https://registry.sdmx.org/items/codelist.html",
+      "evidence": "The supplied registry excerpt confirms that the SDMX Global Registry provides a searchable codelist catalog with codelist details and export functions. It does not provide detailed entries or versions for CL_FREQ, CL_OBS_STATUS, unit codelists, or the local health codelists used here.",
+      "verification_status": "CANDIDATE"
+    },
+    {
+      "agency": "UNSD",
+      "artifact_type": "Geographical classification",
+      "artifact_id": "UN M49",
+      "version": "not stated",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "evidence": "The supplied UN M49 excerpt lists recognized countries and areas with numeric and alpha-3 codes. The synthetic report areas Northland, Centralia and South Coast are not confirmed as UN M49 areas in the supplied evidence.",
+      "verification_status": "CANDIDATE"
+    }
+  ],
+  "limitations": [
+    "The report states that all records and values are synthetic; template rows are therefore based on synthetic report evidence and should not be treated as production data.",
+    "This template resolves the package codelist-reference conflict by using the accepted CODELISTS artifact identifiers as the authoritative validation references for local coded fields: SYNTH_PH_AGENCY codelists with *_LOCAL suffixes and version 1.0-proposed.",
+    "The exact SDMX version and code membership for CL_FREQ were not confirmed from supplied external evidence; FREQ=A is retained only as a CANDIDATE annual-frequency value pending validation against the SDMX Global Registry before strict production loading.",
+    "Strict loaders should route FREQ=A to unresolved-code handling unless SDMX CL_FREQ code membership and version are confirmed; all local coded fields should validate against the codebook references stated in column descriptions.",
+    "Cause labels resemble broad ICD families, but no ICD version is confirmed; CAUSE_OF_DEATH values use local broad-cause codes rather than ICD codes.",
+    "Northland, Centralia and South Coast are synthetic/local reporting areas and are not confirmed in the supplied external area-code evidence.",
+    "Mappings from FINAL, PROVISIONAL and ESTIMATED to SDMX CL_OBS_STATUS are not confirmed from supplied code-level external evidence, so the template uses the local observation-status codelist declared in the accepted CODELISTS artifact.",
+    "Private-sector bed reporting is incomplete in 2024; the reported Private for-profit 2024 hospital bed observation is marked estimated."
+  ],
+  "templates": [
+    {
+      "template_id": "TPL_HEALTH_REGISTERED_DEATHS",
+      "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency. Codebook reference: SDMX:CL_FREQ:version not confirmed; validation status CANDIDATE/UNVERIFIED for value A pending confirmation of code membership/version. Annual frequency is inferred from calendar-year death counts and year values."
+        },
+        {
+          "column_id": "REF_AREA",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_HEALTH_AREA_LOCAL",
+          "description": "Synthetic/local health reporting area. Codebook reference: SYNTH_PH_AGENCY:CL_HEALTH_AREA_LOCAL:1.0-proposed. Allowed values used here are NORTHLAND, CENTRALIA and SOUTH_COAST."
+        },
+        {
+          "column_id": "CAUSE_OF_DEATH",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_HEALTH_CAUSE_LOCAL",
+          "description": "Local broad underlying-cause category for registered deaths; not confirmed as ICD. Codebook reference: SYNTH_PH_AGENCY:CL_HEALTH_CAUSE_LOCAL:1.0-proposed. Allowed values used here are CIRCULATORY_DISEASES and NEOPLASMS."
+        },
+        {
+          "column_id": "AGE",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_HEALTH_AGE_GROUP_LOCAL",
+          "description": "Report-specific age group for registered deaths. Codebook reference: SYNTH_PH_AGENCY:CL_HEALTH_AGE_GROUP_LOCAL:1.0-proposed. Allowed values used here are Y45T64 and Y65_PLUS."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "ObservationalTimePeriod",
+          "codelist_id": null,
+          "description": "Reference year as a machine-readable time period, e.g. 2023 or 2024. No codelist applies."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Integer",
+          "codelist_id": null,
+          "description": "Count of registered death events for the full dimensional key and time period. Numeric measure, not coded."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_HEALTH_UNIT_MEASURE_LOCAL",
+          "description": "Unit of measure kept separate from OBS_VALUE. Codebook reference: SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed. For this template use DEATHS."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_HEALTH_OBS_STATUS_LOCAL",
+          "description": "Observation status using local validation codes. Codebook reference: SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed. Allowed values for this deaths template are FINAL and PROVISIONAL."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 266
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Northland                           Circulatory diseases              45-64                         2023                         266                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 567
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Northland                           Circulatory diseases              45-64                         2024                         567                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 691
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Northland                           Circulatory diseases             65+                          2023                         691                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 387
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Northland                           Circulatory diseases             65+                          2024                         387                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 622
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Northland                     Neoplasms                      45-64                         2023                         622                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 570
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Northland                     Neoplasms                      45-64                         2024                         570                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 274
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Northland                     Neoplasms                    65+                          2023                         274                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "NORTHLAND"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 111
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Northland                     Neoplasms                    65+                          2024                         111                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 157
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Centralia                            Circulatory diseases              45-64                         2023                         157                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 129
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Centralia                            Circulatory diseases              45-64                         2024                         129                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 453
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Centralia                            Circulatory diseases             65+                          2023                         453                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 105
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Centralia                            Circulatory diseases             65+                          2024                         105                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 412
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Centralia                      Neoplasms                      45-64                         2023                         412                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 568
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Centralia                      Neoplasms                      45-64                         2024                         568                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 345
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Centralia                      Neoplasms                    65+                          2023                         345                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "CENTRALIA"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 496
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "Centralia                      Neoplasms                    65+                          2024                         496                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 702
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "South Coast                         Circulatory diseases              45-64                         2023                         702                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 130
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "South Coast                         Circulatory diseases              45-64                         2024                         130                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 537
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "South Coast                         Circulatory diseases             65+                          2023                         537                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "CIRCULATORY_DISEASES"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 626
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "South Coast                         Circulatory diseases             65+                          2024                         626                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 681
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "South Coast                   Neoplasms                      45-64                         2023                         681                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y45T64"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 390
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "South Coast                   Neoplasms                      45-64                         2024                         390                            Deaths                             Provisional"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 205
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "South Coast                   Neoplasms                    65+                          2023                         205                            Deaths                              Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_REGISTERED_DEATHS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "REF_AREA",
+              "value": "SOUTH_COAST"
+            },
+            {
+              "column_id": "CAUSE_OF_DEATH",
+              "value": "NEOPLASMS"
+            },
+            {
+              "column_id": "AGE",
+              "value": "Y65_PLUS"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 707
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "DEATHS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "PROVISIONAL"
+            }
+          ],
+          "evidence_quote": "South Coast                   Neoplasms                    65+                          2024                         707                            Deaths                             Provisional"
+        }
+      ]
+    },
+    {
+      "template_id": "TPL_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+      "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+      "columns": [
+        {
+          "column_id": "FREQ",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_FREQ",
+          "description": "Observation frequency. Codebook reference: SDMX:CL_FREQ:version not confirmed; validation status CANDIDATE/UNVERIFIED for value A pending confirmation of code membership/version. Annual frequency is inferred from year values and the 31 December stock definition."
+        },
+        {
+          "column_id": "OWNERSHIP",
+          "role": "DIMENSION",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_HEALTH_OWNERSHIP_LOCAL",
+          "description": "Local hospital ownership category. Codebook reference: SYNTH_PH_AGENCY:CL_HEALTH_OWNERSHIP_LOCAL:1.0-proposed. Allowed values used here are PUBLIC, PRIVATE_NON_PROFIT and PRIVATE_FOR_PROFIT."
+        },
+        {
+          "column_id": "TIME_PERIOD",
+          "role": "TIME",
+          "required": true,
+          "data_type": "ObservationalTimePeriod",
+          "codelist_id": null,
+          "description": "Reference year as a machine-readable time period, e.g. 2023 or 2024. No codelist applies."
+        },
+        {
+          "column_id": "OBS_VALUE",
+          "role": "MEASURE",
+          "required": true,
+          "data_type": "Integer",
+          "codelist_id": null,
+          "description": "Count of available staffed hospital beds for the ownership category and time period. Numeric measure, not coded."
+        },
+        {
+          "column_id": "UNIT_MEASURE",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_HEALTH_UNIT_MEASURE_LOCAL",
+          "description": "Unit of measure kept separate from OBS_VALUE. Codebook reference: SYNTH_PH_AGENCY:CL_HEALTH_UNIT_MEASURE_LOCAL:1.0-proposed. For this template use BEDS."
+        },
+        {
+          "column_id": "OBS_STATUS",
+          "role": "ATTRIBUTE",
+          "required": true,
+          "data_type": "String",
+          "codelist_id": "CL_HEALTH_OBS_STATUS_LOCAL",
+          "description": "Observation status using local validation codes. Codebook reference: SYNTH_PH_AGENCY:CL_HEALTH_OBS_STATUS_LOCAL:1.0-proposed. Allowed values for this hospital-beds template are FINAL and ESTIMATED."
+        }
+      ],
+      "observations": [
+        {
+          "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "OWNERSHIP",
+              "value": "PUBLIC"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 1677
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "BEDS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Public                                    2023                                     1677                                    Beds                                               Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "OWNERSHIP",
+              "value": "PUBLIC"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 1419
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "BEDS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Public                                    2024                                     1419                                    Beds                                               Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "OWNERSHIP",
+              "value": "PRIVATE_NON_PROFIT"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 4272
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "BEDS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Private non-profit                           2023                                     4272                                    Beds                                               Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "OWNERSHIP",
+              "value": "PRIVATE_NON_PROFIT"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 3560
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "BEDS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Private non-profit                           2024                                     3560                                    Beds                                               Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "OWNERSHIP",
+              "value": "PRIVATE_FOR_PROFIT"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2023"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 3747
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "BEDS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "FINAL"
+            }
+          ],
+          "evidence_quote": "Private for-profit                            2023                                     3747                                    Beds                                               Final"
+        },
+        {
+          "dsd_id": "KF_HEALTH_AVAILABLE_HOSPITAL_BEDS",
+          "values": [
+            {
+              "column_id": "FREQ",
+              "value": "A"
+            },
+            {
+              "column_id": "OWNERSHIP",
+              "value": "PRIVATE_FOR_PROFIT"
+            },
+            {
+              "column_id": "TIME_PERIOD",
+              "value": "2024"
+            },
+            {
+              "column_id": "OBS_VALUE",
+              "value": 2083
+            },
+            {
+              "column_id": "UNIT_MEASURE",
+              "value": "BEDS"
+            },
+            {
+              "column_id": "OBS_STATUS",
+              "value": "ESTIMATED"
+            }
+          ],
+          "evidence_quote": "Private for-profit                            2024                                     2083                                    Beds                                         Estimated"
+        }
+      ]
+    }
+  ]
+}
