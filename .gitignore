@@ -1,2 +1,13 @@
 .DS_Store
 __pycache__/
+
+# PrototypeCodes runtime setup (see README "What's excluded")
+PrototypeCodes/.venv/
+PrototypeCodes/model_cache/
+
+# Pipeline-generated working dirs/files (auto-created at repo root on first run)
+/pipeline_control.xlsx
+/Inputs/
+/Inputs_TXT/
+/Inputs_Embeddings/
+/Artifact JSON/
