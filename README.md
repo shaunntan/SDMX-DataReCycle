@@ -1,5 +1,22 @@
 # Data Re-cycle — minimum app bundle
 
+## What this app does
+
+Data Re-cycle turns an unstructured statistical report (e.g. a `.xlsx`
+workbook, PDF, or Word doc) into a full set of SDMX-compliant artifacts. A
+user uploads a report through the webapp, which breaks the document into
+chunks and uses an LLM to draft each SDMX artifact in dependency order —
+starting from concept and code definitions, then building up the data
+structure, dataflow, and metadata definitions, and finally a fillable data
+template and a source-to-artifact mapping — cross-checking each artifact
+against the ones it depends on so IDs and definitions stay consistent.
+Every generated draft is validated against schemas that mirror the real
+SDMX object model, and the webapp lets a curator review and hand-edit the
+results before re-validating and exporting. The goal is to take a curator
+from "a spreadsheet of numbers" to "structurally valid SDMX metadata and
+data artifacts" with an AI-assisted, human-in-the-loop workflow rather than
+fully manual authoring.
+
 This folder is the minimum set of files needed to run the "Data Re-cycle"
 webapp as a fresh repository:
 
